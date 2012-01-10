@@ -1,0 +1,13 @@
+<!--#set var="title" value="Previous Competitions"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul> 
+<li> <a href="../2010/">SMT-COMP 2010</a> </li>
+<li> <a href="../2009/">SMT-COMP 2009</a> </li>
+<li> <a href="../2008/">SMT-COMP 2008</a> </li>
+<li> <a href="../2007/">SMT-COMP 2007</a> </li>
+<li> <a href="../2006/">SMT-COMP 2006</a> </li>
+<li> <a href="../2005/">SMT-COMP 2005</a> </li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

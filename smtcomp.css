@@ -1,0 +1,841 @@
+body {
+	font-family:"Nimbus Sans L",Arial,"Helvetica New",sans-serif;
+	font-size:9pt;
+}
+
+td {
+	text-align:center;
+}
+
+th {
+	font-weight:bold;
+	border-width:0px 0px 2px 0px;
+	border-style:groove;
+	border-color:#bbb;
+	cursor:pointer;
+}
+
+th.first, th.firstinactive, th.firstd_inactive { /* IE :first-child is broken */
+	text-align:left;
+	padding-left:8px;
+}
+
+th:hover {
+	background-color:#fff;
+}
+
+th:active {
+	background-color:#ccf;
+}
+
+th.inactive:hover, th.inactive:active, th.firstinactive:hover, th.firstinactive:active {
+	background-color:inherit;
+}
+
+.alterview {
+	text-align:center;
+	margin-top:-15px;
+	clear:both;
+	padding:10px 0px;
+}
+
+.alterview a, .button a {
+	padding:0px .33em;
+	margin:0px 2px;
+}
+
+.alterview a:hover, .button a:hover {
+	background-color:#ff0;
+	text-decoration:none;
+}
+
+table {
+	background-color:#f0e68c;
+	width:95%;
+	border-width:2px;
+	border-style:groove;
+	border-color:#bbb;
+	margin-left:auto;
+	margin-right:auto;
+	border-collapse:collapse;
+}
+
+table.summaryResults {
+	margin-left:0px;
+	margin-right:0px;
+	width:100%;
+}
+
+div.summaryResultsL {
+	width:30%;
+	margin-right:2.5%;
+	margin-left:2.5%;
+	float:left;
+}
+
+div.summaryResultsC {
+	width:30%;
+	margin-right:2.5%;
+	margin-left:2.5%;
+}
+
+div.summaryResultsR {
+	width:30%;
+	margin-right:2.5%;
+	margin-left:2.5%;
+	float:right;
+}
+
+div.summaryResultsContainer {
+	clear:both;
+	padding-top:10px;
+	width:100%;
+}
+
+table.summaryResults tr.caption {
+	font-size:large;
+	font-weight:bold;
+	background-color:#eef;
+	border-width:2px;
+	border-style:groove;
+	border-color:#bbb;
+	cursor:pointer;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+table.summaryResults tr.caption:hover {
+	background-color:#fff;
+}
+
+table.summaryResults tr.caption:active {
+	background-color:#ccf;
+}
+
+table.summaryResults tr.caption a:hover {
+	text-decoration:none;
+}
+
+table.invis, table.invisbottom, table.bottom, table.jobs {
+	background-color:transparent; /* "inherit" broken on IE */
+	width:95%;
+	border-width:0px;
+	font-size:90%;
+	padding-bottom:0px;
+	margin-bottom:-2px;
+	margin-top:-10px;
+}
+
+div.footnotes {
+	background-color:transparent;
+	width:95%;
+	border-width:0px;
+	font-size:90%;
+	padding-top:0px;
+	margin-top:-1px;
+	padding-bottom:5px;
+	margin-bottom:3px;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom:1px solid black;
+}
+
+table.jobs {
+	width:100%;
+	margin-top:-5px;
+}
+
+table.jobs a.selected, #jobhelp span.selected, table.invisbottom a.selected {
+	background-color:#adf;
+	text-decoration:underline;
+}
+
+table.jobs a.unselected, #jobhelp span.unselected, table.invisbottom a.unselected {
+}
+
+table.invis {
+	margin-top:5px;
+}
+
+table.invisbottom {
+	margin-top:-3px;
+	padding-top:0px;
+}
+
+body#summaryView table.invisbottom {
+	clear:both;
+	margin-top:0px;
+	border-top:2px groove #bbb;
+}
+
+table.bottom {
+	width:100%;
+}
+
+table.invis td, table.invisbottom td, table.bottom td, table.jobs td {
+	text-align:right;
+	vertical-align:text-top;
+}
+table.invis td {
+	vertical-align:bottom;
+}
+
+table.jobs td#timezone {
+	text-align:left;
+	padding-left:0px;
+}
+
+table.jobs td#timezone a {
+	padding:0px 2px;
+	margin:0px 2px;
+}
+
+table.jobs td#timezone a#timezonelink {
+	font-weight:bold;
+}
+
+table.jobs td span#header {
+	padding-right:.7em;
+}
+
+table.jobs td span#header a, table.jobs td span#header span, #jobhelp .button {
+	padding:0px .2em;
+	margin:0px 2px;
+}
+
+table.jobs td span#header a:hover, table.jobs td span#jobhelplinks a:hover, #jobhelp .button, table.jobs td#timezone a:hover {
+	background-color:#ff0;
+	text-decoration:underline;
+}
+
+table.jobs td span#joblinks, table.invisbottom span#autolinks {
+	margin-right:-4px;
+}
+
+table.jobs td span#joblinks a, table.invisbottom span#autolinks a {
+	padding:0px 2px;
+	margin:0px 2px;
+	cursor:pointer;
+}
+
+table.jobs td span#jobcount {
+	padding-right:.7em;
+}
+
+table.jobs td span.disabled {
+	color:#aaa;
+}
+
+table.jobs {
+	border-spacing:0px;
+	padding:0px;
+	margin:0px;
+}
+
+table.jobs tr, table.jobs td {
+	padding:0px;
+	margin:0px;
+}
+
+a.helplink {
+	padding:2px;
+	margin:2px;
+}
+
+table.invis td .correctAnswer {
+	font-weight:bold;
+}
+
+table.invis form {
+	margin-bottom:0px;
+}
+
+table td.first, table td.firstrefresh { /* Ie :first-child is broken */
+	text-align:left;
+	padding-left:8px;
+}
+
+#loading {
+	color:red;
+	font-weight:bold;
+}
+
+div#legend span.r0,
+tr.r0, tr.r00, tr.r00_inactive {
+	background-color:#f0e68c;
+	cursor:pointer;
+}
+
+div#legend span.hcfirst_r0,
+tr.hc_r0, tr.hcfirst_r0 {
+	background-color:#d0c66c;
+	cursor:pointer;
+}
+
+tr.r10, tr.r10_inactive {
+	background-color:#9cff9c;
+	cursor:pointer;
+}
+
+div#legend span.r1,
+tr.r1, tr.r01, tr.r01_inactive {
+	background-color:#fff6a4;
+	cursor:pointer;
+}
+
+div#legend span.hcfirst_r1,
+tr.hc_r1, tr.hcfirst_r1 {
+	background-color:#dfd684;
+	cursor:pointer;
+}
+
+tr.r11, tr.r11_inactive {
+	background-color:#c5ffc5;
+	cursor:pointer;
+}
+
+tr.r00_inactive, tr.r01_inactive, tr.r10_inactive, tr.r11_inactive {
+	cursor:default;
+}
+
+div#legend span.c0,
+tr.c0 {
+	background-color:#f0e68c;
+	cursor:pointer;
+}
+
+tr.hc_c0, tr.hcfirst_c0 {
+	background-color:#d0c66c;
+	cursor:pointer;
+}
+
+div#legend span.c1,
+tr.c1 {
+	background-color:#fff6a4;
+	cursor:pointer;
+}
+
+tr.hc_c1, tr.hcfirst_c1 {
+	background-color:#dfd684;
+	cursor:pointer;
+}
+
+div#legend span.hcfirst_r0, div#legend span.hcfirst_r1,
+tr.hcfirst_r0, tr.hcfirst_r1, tr.hcfirst_c0, tr.hcfirst_c1, tr.hcfirst_d0, tr.hcfirst_d1 {
+	border-top:2px groove #bbb;
+}
+
+body#benchmarkResults div#legend span.c0, body#solverResults div#legend span.c0, body#agreement div#legend span.c0, body#disagreement div#legend span.c0, body#difficulty div#legend span.c0,
+body#benchmarkResults tr.c0, body#solverResults tr.c0, body#agreement tr.c0, body#disagreement tr.c0, body#difficulty tr.c0 {
+	background-color:#99ff99;
+}
+
+body#benchmarkResults div#legend span.c1, body#solverResults div#legend span.c1, body#agreement div#legend span.c1, body#disagreement div#legend span.c1, body#difficulty div#legend span.c1,
+body#benchmarkResults tr.c1, body#solverResults tr.c1, body#agreement tr.c1, body#disagreement tr.c1, body#difficulty tr.c1 {
+	background-color:#bbffbb;
+}
+
+body#benchmarkResults tr.c0:hover, body#benchmarkResults tr.c1:hover, body#solverResults tr.c0:hover, body#solverResults tr.c1:hover, body#agreement tr.c0:hover, body#agreement tr.c1:hover, body#disagreement tr.c0:hover, body#disagreement tr.c1:hover, body#difficulty tr.c0:hover, body#difficulty tr.c1:hover {
+	background-color:#fff;
+}
+
+body#benchmarkResults tr.c0:active, body#benchmarkResults tr.c1:active, body#solverResults tr.c0:active, body#solverResults tr.c1:active, body#agreement tr.c0:active, body#agreement tr.c1:active, body#disagreement tr.c0:active, body#disagreement tr.c1:active, body#difficulty tr.c0:active, body#difficulty tr.c1:active {
+	background-color:#ccf;
+}
+
+tr.d1 td.solver1, tr.c1 td.solver1, tr.r1 td.solver1 {
+	background-color:#cceeff;
+}
+tr.d0 td.solver1, tr.c0 td.solver1, tr.r0 td.solver1 {
+	background-color:#bbddff;
+}
+tr.d1 td.solver2, tr.c1 td.solver2, tr.r1 td.solver2 {
+	background-color:#ffccee;
+}
+tr.d0 td.solver2, tr.c0 td.solver2, tr.r0 td.solver2 {
+	background-color:#ffbbdd;
+}
+tr.r1:hover td.solver1, tr.r0:hover td.solver1, tr.r1:hover td.solver2, tr.r0:hover td.solver2 {
+	background-color:#fff;
+}
+
+tr.r0:hover, tr.r1:hover, tr.c0:hover, tr.c1:hover, tr.r10:hover, tr.r11:hover, tr.r00:hover, tr.r01:hover, tr.hc_r0:hover, tr.hc_r1:hover, tr.hc_c0:hover, tr.hc_c1:hover, tr.hcfirst_r0:hover, tr.hcfirst_r1:hover, tr.hcfirst_c0:hover, tr.hcfirst_c1:hover {
+	background-color:#fff;
+}
+
+tr.r0:active, tr.r1:active, tr.c0:active, tr.c1:active, tr.r10:active, tr.r11:active, tr.r00:active, tr.r01:active, tr.hc_r0:active, tr.hc_r1:active, tr.hc_c0:active, tr.hc_c1:active, tr.hcfirst_r0:active, tr.hcfirst_r1:active, tr.hcfirst_c0:active, tr.hcfirst_c1:active {
+	background-color:#ccf;
+}
+
+div#legend span.r0refresh,
+tr.r0 td.refresh, tr.r0 td.firstrefresh,
+tr.c0 td.refresh, tr.c0 td.firstrefresh,
+tr.d0 td.refresh, tr.d0 td.firstrefresh,
+tr.hc_r0 td.refresh, tr.hc_r0 td.firstrefresh,
+tr.hc_c0 td.refresh, tr.hc_c0 td.firstrefresh,
+tr.hc_d0 td.refresh, tr.hc_d0 td.firstrefresh,
+tr.hcfirst_r0 td.refresh, tr.hcfirst_r0 td.firstrefresh,
+tr.hcfirst_c0 td.refresh, tr.hcfirst_c0 td.firstrefresh,
+tr.hcfirst_d0 td.refresh, tr.hcfirst_d0 td.firstrefresh {
+	background-color:#ffa64c;
+	cursor:pointer;
+}
+
+div#legend span.r1refresh,
+tr.r1 td.refresh, tr.r1 td.firstrefresh,
+tr.c1 td.refresh, tr.c1 td.firstrefresh,
+tr.d1 td.refresh, tr.d1 td.firstrefresh,
+tr.hc_r1 td.refresh, tr.hc_r1 td.firstrefresh,
+tr.hc_c1 td.refresh, tr.hc_c1 td.firstrefresh,
+tr.hc_d1 td.refresh, tr.hc_d1 td.firstrefresh,
+tr.hcfirst_r1 td.refresh, tr.hcfirst_r1 td.firstrefresh,
+tr.hcfirst_c1 td.refresh, tr.hcfirst_c1 td.firstrefresh,
+tr.hcfirst_d1 td.refresh, tr.hcfirst_d1 td.firstrefresh {
+	background-color:#ffb65c;
+	cursor:pointer;
+}
+
+tr.total0, tr.total1 {
+	background-color:#e0e0e0;
+	cursor:default;
+}
+
+tr.total0 td, tr.total1 td {
+	border-top:2px groove #bbb;
+}
+
+tr.total0 td.refresh, tr.total1 td.refresh, tr.total0 td.firstrefresh, tr.total1 td.firstrefresh {
+	background-color:#ffa64c;
+	cursor:default;
+}
+
+tr.total0 td.first, tr.total1 td.first, tr.total0 td.firstrefresh, tr.total1.firstrefresh { /* IE :first-child is broken */
+	font-weight:bold;
+}
+
+div#legend span.c0, div#legend span.c1, div#legend span.ctext,
+tr.c0 td.first, tr.c1 td.first, tr.c0 td.firstrefresh, tr.c1 td.firstrefresh, tr.hc_c0 td.first, tr.hc_c1 td.first, tr.hc_c0 td.firstrefresh, tr.hc_c1 td.firstrefresh, tr.hcfirst_c0 td.first, tr.hcfirst_c1 td.first, tr.hcfirst_c0 td.firstrefresh, tr.hcfirst_c1 td.firstrefresh {
+	font-weight:bold;
+	font-style:italic;
+}
+
+div#legend span.d0,
+tr.d0, tr.hc_d0, tr.hcfirst_d0 {
+	background-color:#e0e0e0;
+	cursor:pointer;
+}
+
+div#legend span.d1,
+tr.d1, tr.hc_d1, tr.hcfirst_d1, th.d_inactive, th.d_inactive:hover, th.d_inactive:active, th.firstd_inactive, th.firstd_inactive:hover, th.firstd_inactive:active {
+	background-color:#eaeaea;
+	cursor:pointer;
+}
+
+tr.d0:hover, tr.d1:hover, tr.hc_d0:hover, tr.hc_d1:hover, tr.hcfirst_d0:hover, tr.hcfirst_d1:hover {
+	/*background-color:#ddf;*/
+	background-color:#f4f4f4;
+}
+
+tr.d0:active, tr.d1:active, tr.hc_d0:active, tr.hc_d1:active, tr.hcfirst_d0:active, tr.hcfirst_d1:active {
+	/*background-color:#ccf;(*/
+	background-color:#f4f4f4;
+}
+
+td.nodata {
+	text-align:left;
+	font-weight:bold;
+	font-style:italic;
+}
+
+#submissionform tr.r0:hover, #submissionform tr.r0:active {
+	background-color:#f0e68c;
+	cursor:auto;
+}
+#submissionform tr.r1:hover, #submissionform tr.r1:active {
+	background-color:#fff6a4;
+	cursor:auto;
+}
+#submissionform tr.d0:hover, #submissionform tr.d0:active {
+	background-color:#e0e0e0;
+	cursor:auto;
+}
+#submissionform tr.d1:hover, #submissionform tr.d1:active {
+	background-color:#ccf;
+	cursor:auto;
+}
+#submissionform th:hover, #submissionform th:active {
+	background-color:inherit;
+	cursor:auto;
+}
+
+tr.inactive:hover, tr.inactive:active {
+	background-color:inherit;
+}
+
+.wrong, .WARNING, .inlineWARNING {
+	color:red;
+	font-weight:bold;
+}
+
+div.inlineWARNING { /* <span> not allowed in <noscript>?! so we cheat and use <div> instead */
+	display:inline;
+}
+
+.correctyes, .progressComplete, .agreement {
+	color:green;
+	font-weight:bold;
+}
+
+.correctno, .progressIncomplete {
+	color:red;
+	font-weight:bold;
+}
+
+.correcttimeout, .correctunknown {
+}
+
+.correctERROR, .progressERROR, .ERROR {
+	color:white;
+	font-weight:bold;
+	background-color:red;
+	padding-left:3px;
+	padding-right:3px;
+}
+
+div#reloadNotice, div#reloadErrorNotice, div#reloadNotice2, div#reloadErrorNotice2 {
+	color:white;
+	font-weight:bold;
+	background-color:red;
+	text-align:center;
+	font-size:larger;
+	display:none;
+	visibility:hidden;
+}
+
+#jobDetail #jobname, #jobDetail #brevision, #jobDetail #srevision, .setting, .myzone, .important {
+	font-weight:bold;
+}
+
+a {
+	text-decoration:none; /* "inherit" broken on IE */
+}
+
+a {
+	color:#000;
+}
+
+a:hover, a.selected {
+	text-decoration:underline;
+}
+
+th a:hover {
+	text-decoration:inherit; /* broken on IE */
+}
+
+th a.selected {
+	text-decoration:underline;
+}
+
+.code {
+	font-family:monospace;
+	text-align:left;
+}
+
+div.code {
+	font-family:monospace;
+	font-size:small;
+	text-align:left;
+	white-space:pre-wrap;
+	/*white-space:-pre-wrap;		/* Opera 4-6 */
+	/*white-space:-o-pre-wrap;	/* Opera 7 */
+	/*word-wrap:break-word;		/* Internet Explorer 5.5+ */
+	/*_white-space:pre;		/* IE only hack to re-specify in addition to word-wrap */
+}
+
+div.search, form.search {
+	display:inline;
+	margin:0px 10px;
+	cursor:text;
+}
+
+div.searchvis {
+	display:inline;
+	margin:0px 10px;
+}
+
+div.searchinvis {
+	display:none;
+	margin:0px 10px;
+}
+
+div.searchexpand {
+	display:none;
+	margin:0px 10px;
+}
+
+input.nocurrentsearch {
+	background-color:#fff;
+}
+
+input.currentsearch {
+	background-color:#dfd;
+}
+
+h1 {
+	text-align:center;
+	width:auto;
+	border-width:2px 0px 2px 0px;
+	border-color:black;
+	border-style:groove;
+	margin-bottom:0px;
+	font-size:12pt;
+}
+
+h2 {
+	text-align:center;
+	margin-top:0px;
+	font-size:17pt;
+}
+
+h1 + h2 {
+	margin-top:10px;
+}
+
+img, a img {
+	border:0px;
+}
+
+div.notice, p.notice, div.hidden_notice, p.hidden_notice {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	padding:15px;
+	background-color:#fdd;
+	border:3px groove red;
+}
+
+div.hidden_notice, p.hidden_notice {
+	display:none;
+}
+
+ul.tzsetcollapsed {
+	display:none;
+}
+
+a.tzsetbutton {
+	cursor:pointer;
+	padding:0px 2px;
+	margin:0px 2px;
+}
+
+a.tzsetbutton:hover {
+	background-color:#ff0;
+	text-decoration:underline;
+}
+
+.checkboxText {
+	cursor:default;
+}
+
+.status {
+	text-align:center;
+}
+
+.leftstatus {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+
+.foreign {
+	font-style:italic;
+}
+
+div.sidenote {
+	border:2px groove #bbb;
+	margin-top:1ex;
+	background-color:#eed;
+	padding:4px;
+	float:right;
+	width:50%;
+	/*text-align:justify;*/
+}
+
+div#legend {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	visibility:hidden;
+	background-color:#bbf;
+	border-top:2px outset #bbb;
+	border-right:2px outset #bbb;
+	padding:0px;
+	cursor:default;
+	width:100%;
+	z-index:2;
+}
+
+div#legend div#legendclose {
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:20px;
+	/*height:25px;*/
+	cursor:pointer;
+	background-color:#f44;
+	color:white;
+	font-weight:bold;
+	font-size:10pt;
+	border-left:3px ridge #bbb;
+	border-bottom:3px ridge #bbb;
+	text-align:center;
+	vertical-align:middle;
+}
+
+div#legend div#legendclose:hover {
+	color:black;
+}
+
+div#legend div#legendclose:active {
+	border-left:3px ridge #000;
+	border-bottom:3px ridge #000;
+	color:red;
+	background-color:black;
+}
+
+body#solverResults div#legend div#hccolorbar,
+body#results div#legend div#hccolorbar,
+body#solverStandings div#legend div#hccolorbar,
+body#jobStatus div#legend div#rcolorbar,
+body#jobStatus div#legend div#ccolorbar,
+body#jobStatus div#legend div#dcolorbar,
+body#jobStatus div#legend div#hccolorbar {
+	display:none;
+}
+
+div#legend div#donecolorbar,
+div#legend div#notdonecolorbar {
+	display:none;
+}
+
+body#jobStatus div#legend div#donecolorbar,
+body#jobStatus div#legend div#notdonecolorbar {
+	display:block;
+}
+
+div#legend span.r0, div#legend span.r1,
+div#legend span.d0, div#legend span.d1,
+div#legend span.c0, div#legend span.c1,
+div#legend span.r0refresh, div#legend span.r1refresh,
+div#legend span.hcfirst_r0, div#legend span.hcfirst_r1 {
+	width:90px;
+	/*border:3px solid green;*/
+	display:inline;
+	padding-left:0px;
+	padding-right:90px;
+	padding-top:0px;
+	padding-bottom:0px;
+	cursor:default;
+}
+
+div#legend div.help {
+	float:right;
+	width:50%;
+	text-align:justify;
+	margin:10px 40px 10px 0px;
+}
+
+body#jobDetail div#legend {
+	width:50%;
+}
+
+body#jobDetail div#legend div.help {
+	float:none;
+	width:auto;
+	margin-left:10px;
+}
+
+body#jobDetail div#legend div#legendbars {
+	display:none;
+}
+
+div#legend div#legendbars {
+	padding:10px;
+}
+
+div#legendbtn {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	font-weight:bold;
+	font-size:large;
+	cursor:pointer;
+	background-color:#bbf;
+	border-top:2px outset #bbb;
+	border-right:2px outset #bbb;
+	padding:0px 5px;
+	z-index:1;
+}
+
+div#legendbtn:hover {
+	background-color:#ddf;
+}
+
+div#legendbtn:active {
+	border-top:2px inset #bbb;
+	border-right:2px inset #bbb;
+	background-color:#77f;
+}
+
+div.login {
+	margin:0px auto;
+	width:400px;
+	background-color:#f0e68c;
+	padding:20px;
+	border:4px ridge #bbb;
+}
+div.login span.prompt {
+	text-align:right;
+	padding-right:10px;
+	font-weight:bold;
+	min-width:100px;
+	margin-top:10px;
+	clear:left;
+	float:left;
+	vertical-align:baseline;
+}
+div.login input {
+	position:relative;
+	left:120px;
+	margin-top:10px;
+	padding:3px;
+	display:block;
+	vertical-align:baseline;
+}
+div.login .ERROR {
+	font-size:large;
+	padding:5px 0px;
+	text-align:center;
+}
+body#divisionResults table.invisbottom td {
+	vertical-align:bottom;
+}
+div#plots {
+	text-align:center;
+	margin-bottom:10px;
+	width:100%;
+}
+div#plots img {
+	/*max-width:48%;
+	min-width:480px;*/
+}
+div#plots img#scatterimg {
+	margin-left:3em;
+}
+tr.inactiveheader th {
+	cursor:default;
+}
+tr.inactiveheader th:hover, tr.inactiveheader th:active {
+	background-color:inherit;
+}

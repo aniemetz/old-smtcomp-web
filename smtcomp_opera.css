@@ -1,0 +1,18 @@
+/* Opera-specific CSS */
+
+table.summaryResults {
+	display:inline-table;
+	width:30%;
+	margin-left:1.5%;
+	margin-right:1.5%;
+	vertical-align:top;
+	white-space:nowrap;
+}
+
+div.summaryResultsContainer {
+	display:block;
+	width:100%;
+	margin:10px 0px;
+	text-align:center;
+	padding:0px 0px;
+}

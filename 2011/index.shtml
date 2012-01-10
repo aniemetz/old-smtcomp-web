@@ -1,0 +1,41 @@
+<!--#set var="title" value="SMT-COMP 2011"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The 2011 edition of the Satisfiability Modulo Theories Competition
+(SMT-COMP) is a satellite event of
+<a href="http://www.cs.utah.edu/events/conferences/cav2011/">CAV 2011</a>
+(July&nbsp;14&nbsp;-&nbsp;20, 2011, Snowbird, Utah).
+</p>
+
+<ul>
+<li> <a href="introduction.shtml">Introduction</a> </li>
+<li> News
+     <ul>
+          <li> <strong><a href="rules.shtml">Rules for this year's SMT-COMP posted</a></strong> </li>
+          <li> <strong><a href="application.shtml">Application track benchmarks and tools posted for comment</a></strong> </li>
+          <li> <a href="https://es.fbk.eu/people/griggio/misc/smtlib2parser.html">SMT-LIBv2 parser available</a> </li>
+          <li> <a href="http://www.grammatech.com/resources/smt/">SMT-LIBv2 tutorial and resources</a> (thanks to GrammaTech's David Cok!) </li>
+     </ul> </li>
+<li> <a href="rules.shtml">Rules &amp; Submission</a> </li>
+<li> <a href="application.shtml">Application track benchmarks and tools</a> </li>
+<li> <a href="tools.shtml">Tools</a> </li>
+<li> <a href="specs.shtml">Machine Specifications</a></li>
+<li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a></li>
+<li> <strong><a href="http://www.smtexec.org/exec/competitors2011.php">Participants</a></strong></li>
+<!--<li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)</li>-->
+<li> <strong>Results [&nbsp;<a href="http://www.smtexec.org/exec/?jobs=856">main track</a>&nbsp;|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=859">application track</a>&nbsp;]</strong> </li>
+<li> <a href="docs.shtml">Papers</a></li>
+<li> <a href="acknowledgments.shtml">Acknowledgments</a></li>
+<li> <a href="http://www.smtlib.org/">SMT-LIB</a> </li>
+<li> <a href="previous.shtml">Previous SMT-COMPs</a></li>
+</ul>
+
+<p>
+The organizers of SMT-COMP 2011 are
+<a href="http://www.inf.usi.ch/postdoc/bruttomesso/">Roberto Bruttomesso</a>,
+<a href="http://www.cs.nyu.edu/~mdeters/">Morgan Deters</a>, and
+<a href="https://es.fbk.eu/people/griggio/">Alberto Griggio</a>.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

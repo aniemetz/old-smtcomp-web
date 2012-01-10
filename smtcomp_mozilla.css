@@ -1,0 +1,5 @@
+/* Firefox-specific extensions to stylesheet; nonstandard CSS */
+
+div.code {
+	white-space:-moz-pre-wrap;
+}

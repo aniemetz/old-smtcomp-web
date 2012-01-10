@@ -1,0 +1,49 @@
+body { margin-left: 4%; margin-right: 4%;
+       font-family: ariel, helvetica, sans-serif;
+       background-color: white; }
+hr { padding-bottom: 0em; margin: .5em 0em;
+     text-align: left; clear: both; }
+h1, h2, h3, h4, h5, h6 { text-align: left;
+                         font-weight: normal;
+                         color: #115511; }
+h2.hilite { color: #ffffff;
+            background-color: #115511;
+	    font-weight: bold;
+	    line-height: 1.1em;
+	    padding-left: .2em; }
+h5 { font-weight: bold; }
+dt, dl, ul { font-weight: normal;}
+dd { font-weight: normal; margin-bottom: 1.00em;}
+li { font-weight: normal; margin-bottom: 0.50em;}
+li em { font-style: normal; font-size: larger; font-weight: normal; }
+tt, pre { font-family: Courier, monospace; font-size: 1.1em}
+td.label {font-style: italic; font-weight: bold; text-align: right;}
+pre.block {font-family: ariel, helvetica, sans-serif; padding-left: 2em; }
+table.centered-small { width: 100%; background-color: #fff8dc;
+                       border-style: solid; border-width: thin;
+                       font-size: small; text-decoration: none;
+                       margin:20px 0px 0px 0px; }
+
+p + table.centered-small,
+ul + table.centered-small,
+ol + table.centered-small { margin-top:4ex; }
+
+table.centered-small a:link { text-decoration: none; }
+table.centered-small a:visited { text-decoration: none; }
+table.centered-small a:active { text-decoration: none; }
+
+table.score { width: 80%; background-color: #fff8dc;
+              border-style: solid; border-width: thin; 
+              text-decoration: none; margin: 1em} 
+
+table.score2 { width: 90%; background-color: #fff8dc;
+              border-style: solid; border-width: thin; 
+              text-decoration: none; margin: 1em} 
+
+
+p.bottom { font-size: small; text-align: right; margin:5px 0px; }
+p.bottom img { border:0px; }
+pre sup { font-size:inherit; }
+a {color: #115511; }
+img.rfloat { float: right; padding: 1ex; }
+img.lfloat { float: left; padding: 1ex; background: white; }

@@ -1,0 +1,21 @@
+/* Modern Konqueror is really pretty good about CSS compliance; stuff in
+ * here is more a reflection on how every other browser sucks so much
+ * that we treat Konqueror's near-perfection as a special case. */
+
+/* Konqueror supports inline-table; Firefox doesn't */
+table.summaryResults {
+	display:inline-table;
+	width:30%;
+	margin-left:2%;
+	margin-right:2%;
+	vertical-align:top;
+	white-space:nowrap;
+}
+
+div.summaryResultsContainer {
+	display:block;
+	width:100%;
+	margin:10px 0px;
+	text-align:center;
+	padding:0px 0px;
+}

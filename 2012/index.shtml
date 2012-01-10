@@ -1,0 +1,39 @@
+<!--#set var="title" value="SMT-COMP 2012"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<h2>THIS PAGE IS NOT YET UPDATED FOR 2012</h2>
+
+<p>
+The 2012 edition of the Satisfiability Modulo Theories Competition
+(SMT-COMP) is part of the SMT workshop at
+<a href="http://ijcar.cs.manchester.ac.uk/">IJCAR 2012</a>
+(June&nbsp;30&nbsp;-&nbsp;July&nbsp;1, 2012, Manchester, UK).
+</p>
+
+<ul>
+<li> <a href="introduction.shtml">Introduction</a> </li>
+<li> News
+     <ul>
+     </ul> </li>
+<li> <a href="rules.shtml">Rules &amp; Submission</a> </li>
+<li> <a href="application.shtml">Application track benchmarks and tools</a> </li>
+<li> <a href="tools.shtml">Tools</a> </li>
+<li> <a href="specs.shtml">Machine Specifications</a></li>
+<li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a></li>
+<li> <a href="http://www.smtexec.org/exec/competitors2012.php">Participants</a></li>
+<!--<li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)</li>-->
+<li> Results [&nbsp;<a href="http://www.smtexec.org/exec/?jobs=856">main track</a>&nbsp;|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=859">application track</a>&nbsp;] </li>
+<li> <a href="docs.shtml">Papers</a></li>
+<li> <a href="acknowledgments.shtml">Acknowledgments</a></li>
+<li> <a href="http://www.smtlib.org/">SMT-LIB</a> </li>
+<li> <a href="previous.shtml">Previous SMT-COMPs</a></li>
+</ul>
+
+<p>
+The organizers of SMT-COMP 2012 are
+<a href="http://www.inf.usi.ch/postdoc/bruttomesso/">Roberto Bruttomesso</a>,
+David Cok, and
+<a href="https://es.fbk.eu/people/griggio/">Alberto Griggio</a>.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
