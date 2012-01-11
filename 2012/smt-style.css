@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 { text-align: left;
                          font-weight: normal;
                          color: #3f1a02; }
 h2.hilite { color: #ffffff;
-            background-color: #115511;
+            background-color: #3F1A02;
 	    font-weight: bold;
 	    line-height: 1.1em;
 	    padding-left: .2em; }
@@ -44,6 +44,6 @@ table.score2 { width: 90%; background-color: #B97340;
 p.bottom { font-size: small; text-align: right; margin:5px 0px; }
 p.bottom img { border:0px; }
 pre sup { font-size:inherit; }
-a {color: #115511; }
+a {color: #3F1A02; }
 img.rfloat { float: right; padding: 1ex; }
 img.lfloat { float: left; padding: 1ex; background: white; }
