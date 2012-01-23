@@ -1,10 +1,10 @@
 ================
 
-THIS IS NOT YET UPDATED TO 2012
+STILL A DRAFT
 
 ======================================================================
 
-    7th International Satisfiability Modulo Theories Competition
+    8th International Satisfiability Modulo Theories Competition
                             (SMT-COMP'12)
 
                         June 30 - July 1, 2012
@@ -27,17 +27,30 @@ http://www.smtcomp.org/
 Main changes with respect to SMT-COMP 2011
 ------------------------------------------
 
-THESE POINTS NOT YET UPDATED
+- We are concentrating on just a few of the benchmark divisions this year.
+  Some divisions, such as QF_UF, are subsumed into more expressive
+  logics; others have received only light interest. Our goal is to 
+  focus the competition on divisions of particular interest to 
+  applications. To encourage new entrants, we will also accept 
+  solvers against any benchmark class in an exhibition category: 
+  results will be displayed and publicly reported.
 
-- introduction of an "application track", based on (simulated) 
-  incremental model-checking queries, to promote the integration of 
-  SMT solvers within actual verification frameworks;
+- We are retaining and accenting last year's "application track" and
+  encourage submission of benchmarks and competition against these
+  benchmarks.
 
-- divisions without two competitors will not be run as part of the
-  competition; however, divisions may be combined more aggressively
-  than in years past to ensure competitiveness.  This will largely
-  depend on the final submissions, and will be done with the input
-  of the community.
+- The penalty for producing an incorrect result is increased. Competitors
+  producing all correct results are ranked above those producing
+  incorrect results (a "soft" disqualification for unsound tools).
+
+- We are adding an "unsat core" division.
+
+- We will have an exhibition division of solvers that produce proofs.
+
+- The competition will be run with a new StarExec service, replacing
+  the previous SMT-Exec service. At this writing, the new service is
+  still being completed and tested; it will be announced later. (The
+  previous service will be maintained in reserve.)
 
 For more detailed information please refer to the rules posted at
 http://www.smtcomp.org/.
@@ -46,61 +59,23 @@ http://www.smtcomp.org/.
 Benchmarks for Main and Parallel Track
 --------------------------------------
 
-The potential benchmark divisions for this year include all of the
-divisions represented last year. We do not anticipate new divisions
-this year unless quality benchmarks are collected. For detailed
-descriptions of the divisions, refer to the SMT-LIB web page at
-http://www.smtlib.org/
+New benchmarks in all categories are welcome, particularly those
+representative of applications and those relevant to this year's competition.
 
-* QF_UF (Uninterpreted Functions): quantifier-free formulas whose
-  satisfiability is to be decided modulo the empty theory. Each
-  benchmark may introduce its own uninterpreted function and predicate
-  symbols.
+The potential benchmark divisions for this year include the following 
+divisions. For detailed descriptions of the divisions, refer to the 
+SMT-LIB web page at http://www.smtlib.org/
 
-* QF_IDL (Integer Difference Logic): quantifier-free formulas to be
-  tested for satisfiability modulo a background theory of integer
-  arithmetic.  The syntax of atomic formulas is restricted to
-  difference logic, i.e. x - y op c, where op is either equality or
-  inequality and c is an integer constant.
+* QF_BV
+* QF_AUFBV
+* QF_UFLIA, including benchmarks from QF_LIA
+* QF_UFLRA, including benchmarks from QF_LRA
+* QF_IDL
+* AUFLIA+p 
+* AUFLIA-p 
+* AUFNIRA
 
-* QF_RDL (Real Difference Logic): this division is like QF_IDL, except
-  that the background theory is real arithmetic.
-
-* QF_UFIDL (Integer Difference Logic with Uninterpreted Functions):
-  this division contains benchmarks in a logic which is similar to
-  QF_IDL, except that it also allows uninterpreted functions and
-  predicates.
-
-* QF_LIA (Linear Integer Arithmetic): quantifier-free formulas to be
-  tested for satisfiability modulo a background theory of integer
-  arithmetic.  The syntax of atomic formulas is restricted to contain
-  only linear terms.
-
-* QF_LRA (Linear Real Arithmetic): this division is like QF_LIA,
-  except that the background theory is real arithmetic.
-
-* QF_NIA (Nonlinear Integer Arithmetic): quantifier-free formulas to be
-  tested for satisfiability modulo a background theory of integer
-  arithmetic.  There is no restriction to linear terms.
-
-* QF_UFLIA (Linear Integer Arithmetic with Uninterpreted Functions):
-  this division contains benchmarks in a logic which is similar to
-  QF_LIA, except that it also allows uninterpreted functions and
-  predicates.
-
-* QF_UFLRA (Linear Real Arithmetic with Uninterpreted Functions):
-  this division is similar to QF_LRA, except that it also allows
-  uninterpreted functions and predicates.
-
-* QF_AX (Arrays with Extensionality): quantifier-free formulas to be
-  tested for satisfiability modulo a background theory of arrays which
-  includes the extensionality axiom.
-
-* QF_AUFLIA (Linear Integer Arithmetic with Uninterpreted Functions
-  and Arrays): quantifier-free formulas to be tested for
-  satisfiability modulo a background theory combining linear integer
-  arithmetic, uninterpreted function and predicate symbols, and
-  extensional arrays.
+where the benchmark categories are described below
 
 * QF_BV (Fixed-size Bit-vectors): quantifier-free formulas over bit
   vectors of fixed size.
@@ -120,14 +95,28 @@ http://www.smtlib.org/
   Arrays, without patterns): formulas from AUFLIA+p once all patterns
   have been removed.
 
-* AUFLIRA (Arrays, Uninterpreted Functions, and Linear Arithmetic):
-  quantifier formulas with arrays of reals indexed by integers
-  (Array1), arrays of Array1 indexed by integers (Array2), and linear
-  arithmetic over the integers and reals.
+* QF_LIA (Linear Integer Arithmetic): quantifier-free formulas to be
+  tested for satisfiability modulo a background theory of integer
+  arithmetic.  The syntax of atomic formulas is restricted to contain
+  only linear terms.
 
-* UFNIA+p (Uninterpreted Functions and Nonlinear Arithmetic, patterns
-  included): quantifier formulas with uninterpreted functions and
-  nonlinear integer arithmetic.
+* QF_LRA (Linear Real Arithmetic): this division is like QF_LIA,
+  except that the background theory is real arithmetic.
+
+* QF_UFLIA (Linear Integer Arithmetic with Uninterpreted Functions):
+  this division contains benchmarks in a logic which is similar to
+  QF_LIA, except that it also allows uninterpreted functions and
+  predicates.
+
+* QF_UFLRA (Linear Real Arithmetic with Uninterpreted Functions):
+  this division is similar to QF_LRA, except that it also allows
+  uninterpreted functions and predicates.
+
+* QF_IDL (Integer Difference Logic): quantifier-free formulas to be
+  tested for satisfiability modulo a background theory of integer
+  arithmetic.  The syntax of atomic formulas is restricted to
+  difference logic, i.e. x - y op c, where op is either equality or
+  inequality and c is an integer constant.
 
 * AUFNIRA (Arrays, Uninterpreted Functions, and Nonlinear Arithmetic):
   quantifier formulas with arrays of reals indexed by integers
@@ -158,7 +147,7 @@ Please refer to the rules for more details.
 *** We strongly encourage submissions of benchmarks for this track. *** 
 
 In order to deliver high-quality benchmarks and to allow participants
-to test their solvers we consider the deadline of May 15 strict. 
+to test their solvers we consider the deadline of April 15 strict. 
 Benchmarks arriving thereafter will be included in the library but
 not used for SMT-COMP 2012.
 
@@ -166,15 +155,13 @@ not used for SMT-COMP 2012.
 Solvers
 -------
 
-Solvers will be submitted via the STAR-Exec service
-(http://www.smtexec.org/).  Please refer to http://www.smtcomp.org/
+Solvers will be submitted via the StarExec service, which will be
+announced later.  Please refer to http://www.smtcomp.org/
 for complete details on entering the competition.
 
 ---------------
 Important Dates
 ---------------
-
->>> UPDATE : When is STAR-Exec available
 
 * March 15          First version of the benchmark library for the
                     application track posted for comment. First version of
@@ -184,23 +171,22 @@ Important Dates
 * April 15          Final version of the benchmark scrambler, benchmark
                     selector and trace exector made available.
                     
-* May 1             No new benchmarks can be added after this date, but 
+* April 15          No new benchmarks can be added after this date, but 
                     problems with existing benchmarks may be fixed.
-                    
+
 * June 1            Benchmark libraries are frozen.
                     
-* June 25 (7pm BST) Solvers due via SMT-Exec (for all tracks), including
+* June 15 (7pm EDT) Solvers due via StarExec (for all tracks), including
                     system descriptions and magic numbers for benchmark
                     scrambling.
 
-* June 27 (7pm BST) Final versions due, fixing any last-minute bugs (this
-                    marks the end of the two day grace period for
+* June 18 (7pm EDT) Final versions due, fixing any last-minute bugs (this
+                    marks the end of the weekend grace period for
                     submissions).
 
-* June 28           Opening value of NYSE Composite Index used to complete 
+* June 25           Opening value of NYSE Composite Index used to complete 
                     random seed.
 
-* July 14-20
 * June 30 - July 1  Anticipated dates for SMT-COMP 2012.
 
 ----------
@@ -208,7 +194,7 @@ Organizers
 ----------
 
 Roberto Bruttomesso (University of Lugano, roberto.bruttomesso at usi.ch)
-David Cok           (GrammaTech, Inc., cok at frontiernet.net)
+David Cok - chief organizer  (GrammaTech, Inc., cok at frontiernet.net)
 Alberto Griggio     (FBK, griggio at fbk.eu)
 
 ----------------
@@ -222,4 +208,4 @@ For more information on the SMT-LIB format, see
 http://www.smtlib.org/
 
 For more information about the SMT Workshop, see
-UPDATE>>>>> http://uclid.eecs.berkeley.edu/smt11
+http://smt2012.loria.fr/
