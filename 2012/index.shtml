@@ -19,9 +19,18 @@ The SMT workshop will include a block of time to present the competitors and res
 <li> <a href="tools.shtml">Tools</a> </li>
 <li> <a href="specs.shtml">Machine Specifications</a></li>
 <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a></li>
+
+<!--
 <li> <a href="http://www.smtexec.org/exec/competitors2012.php">Participants</a></li>
+-->
+<li> <A href="participants.shtml">Participants</a></li>
+
 <!--<li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)</li>-->
+<!--
 <li> Results [&nbsp;<a href="http://www.smtexec.org/exec/?jobs=856">main track</a>&nbsp;|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=859">application track</a>&nbsp;] </li>
+-->
+<li> The results will be available here once the competition begins </li>
+
 <li> <a href="docs.shtml">Papers</a></li>
 <li> <a href="acknowledgments.shtml">Acknowledgments</a></li>
 <li> <a href="http://www.smtlib.org/">SMT-LIB</a> </li>

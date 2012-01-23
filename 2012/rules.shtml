@@ -1,7 +1,11 @@
 <!--#set var="title" value="Rules"
 --><!--#include virtual="smt-comp-prelude.shtml" -->
 
+<p>The official 2012 rules will be released shortly.
+
+<!--
 <p>Download the <a href="rules12.pdf">official rules</a>.<br/>
+-->
 
 <p><a href="call12.txt">The 2012 CFP is also available,</a> but the
 official rules PDF above is the authoritative source, and takes
