@@ -1,7 +1,3 @@
-================
-
-STILL A DRAFT
-
 ======================================================================
 
     8th International Satisfiability Modulo Theories Competition
@@ -16,24 +12,37 @@ STILL A DRAFT
 ======================================================================
 
 SMT-COMP is the annual competition for Satisfiability Modulo Theories
-(SMT). The goals of SMT-COMP are to spur solver advances, collect of
+(SMT). The goals of SMT-COMP are to spur solver advances, collect relevant
 benchmarks, and encourage adoption of the SMT-LIB standard, through
 friendly competition. Highlights of SMT-COMP 2012 are covered below.
+The competition has been highly successful and is now in its 8th year.
 For the latest information, please see the SMT-COMP web page at:
 
 http://www.smtcomp.org/
+
+The organizers of the competition and the SMT workshop strongly request
+and encourage the submission of new benchmarks and new or improved solvers.
+
+The event has several tracks: a main track, a parallel track, an
+application track, an unsat-core track, and a proof-generation track.
+Within a track there are one or more divisions, where each division
+uses benchmarks from a specific SMT-LIB logic (or group of logics).
+Some tracks-divisions are competitive, in that the results will be scored
+and winners announced; others are exhibition, meaning that the solvers
+will be evaluated and the results publicized, but no winners will be awarded.
 
 ------------------------------------------
 Main changes with respect to SMT-COMP 2011
 ------------------------------------------
 
-- We are concentrating on just a few of the benchmark divisions this year.
-  Some divisions, such as QF_UF, are subsumed into more expressive
-  logics; others have received only light interest. Our goal is to 
-  focus the competition on divisions of particular interest to 
-  applications. To encourage new entrants, we will also accept 
-  solvers against any benchmark class in an exhibition category: 
-  results will be displayed and publicly reported.
+- We are concentrating on just a few of the benchmark divisions this 
+  year for the main competition. Some divisions, such as QF_UF, are 
+  subsumed into more expressive logics; others have received only 
+  light interest. Our goal is to focus the competition on divisions 
+  of particular interest to applications. All non-competition divisions
+  will be run in exhibition mode, if solvers are submitted against them,
+  and the results will be displayed and publicly reported.
+  As always, we encourage entrants from new research groups.
 
 - We are retaining and accenting last year's "application track" and
   encourage submission of benchmarks and competition against these
@@ -43,9 +52,9 @@ Main changes with respect to SMT-COMP 2011
   producing all correct results are ranked above those producing
   incorrect results (a "soft" disqualification for unsound tools).
 
-- We are adding an "unsat core" division.
+- We are adding an "unsat core" track.
 
-- We will have an exhibition division of solvers that produce proofs.
+- We will have an exhibition track of solvers that produce proofs.
 
 - The competition will be run with a new StarExec service, replacing
   the previous SMT-Exec service. At this writing, the new service is
@@ -55,6 +64,11 @@ Main changes with respect to SMT-COMP 2011
 For more detailed information please refer to the rules posted at
 http://www.smtcomp.org/.
 
+In order to deliver high-quality benchmarks and to allow participants
+to test their solvers we consider the deadline of April 15 strict. 
+Benchmarks arriving thereafter will be included in the library but
+not used for SMT-COMP 2012.
+
 --------------------------------------
 Benchmarks for Main and Parallel Track
 --------------------------------------
@@ -62,8 +76,8 @@ Benchmarks for Main and Parallel Track
 New benchmarks in all categories are welcome, particularly those
 representative of applications and those relevant to this year's competition.
 
-The potential benchmark divisions for this year include the following 
-divisions. For detailed descriptions of the divisions, refer to the 
+The potential main competition benchmark divisions for this year include the 
+following divisions. For detailed descriptions of the divisions, refer to the 
 SMT-LIB web page at http://www.smtlib.org/
 
 * QF_BV
@@ -146,10 +160,25 @@ Please refer to the rules for more details.
 
 *** We strongly encourage submissions of benchmarks for this track. *** 
 
-In order to deliver high-quality benchmarks and to allow participants
-to test their solvers we consider the deadline of April 15 strict. 
-Benchmarks arriving thereafter will be included in the library but
-not used for SMT-COMP 2012.
+We will execute the competition for any benchmark divisions for 
+which we have adequate benchmarks and entrants.  This is expected to
+include at least the divisions used in 2011: QF_BV, QF_LIA, QF_UFLIA,
+and QF_LRA.
+
+--------------------------------
+Benchmarks for the unsat-core and proof-generation tracks
+--------------------------------
+
+We will develop initial benchmarks for these tracks from existing
+benchmarks. However, we highly encourage submission of benchmarks
+that elucidate particular problems or challenges in determining
+unsatisfiable cores or generating proofs.
+
+Note that, in SMT-LIB format, an unsat-core benchmark must have 
+its asserted formulae named (see the standard or contact the organizers).
+
+The organizers are considering and accepting comment on which divisions
+to use for these tracks; those divisions will be announced later.
 
 -------
 Solvers
@@ -166,7 +195,7 @@ Important Dates
 * March 15          First version of the benchmark library for the
                     application track posted for comment. First version of
                     the benchmark scrambler, benchmark selector and trace
-                    exector made available.
+                    executor made available.
                     
 * April 15          Final version of the benchmark scrambler, benchmark
                     selector and trace exector made available.
@@ -184,16 +213,17 @@ Important Dates
                     marks the end of the weekend grace period for
                     submissions).
 
-* June 25           Opening value of NYSE Composite Index used to complete 
+* June 20           Opening value of NYSE Composite Index used to complete 
                     random seed.
 
-* June 30 - July 1  Anticipated dates for SMT-COMP 2012.
+* June 26 - June 29 Dates of IJCAR main conference
+* June 30 - July 1  Dates of IJCAR workshops, including the SMT workshop.
 
 ----------
 Organizers
 ----------
 
-Roberto Bruttomesso (University of Lugano, roberto.bruttomesso at usi.ch)
+Roberto Bruttomesso (University of Milan, roberto.bruttomesso at unimi.it)
 David Cok - chief organizer  (GrammaTech, Inc., cok at frontiernet.net)
 Alberto Griggio     (FBK, griggio at fbk.eu)
 
