@@ -1,0 +1,16 @@
+<!--#set var="title" value="Benchmarks"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The final version of the benchmarks for SMT-COMP 2008 is available on
+the SMT-LIB <a href="http://combination.cs.uiowa.edu/smtlib/">web
+page</a>.  They are also available on the <a
+href="http://www.smtexec.org">SMT-EXEC</a> service.
+</p>
+
+<p>
+<a href="smtcomp2008.scrambled.tgz">You can also download</a> just the
+set of benchmarks used for SMT-COMP 2008, in scrambled form.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

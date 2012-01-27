@@ -1,0 +1,24 @@
+<!--#set var="title" value="SMT-COMP'05" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+The Satisfiability Modulo Theories Competition (SMT-COMP) is a satellite
+event of <a href="http://www.cav2005.inf.ed.ac.uk">CAV'05</a> (July 6 - 10, 2005,
+University of Edinburgh, Scotland, UK).
+
+<ul>
+
+<li> <a href="introduction.shtml">Introduction</a> </li>
+<li> <a href="rules.shtml">Rules</a> </li>
+<li> <a href="format.shtml">Format</a> </li>
+<li> <a href="tools.shtml">Tools</a> </li>
+<li> <a href="participants.shtml">Participants</a> </li>
+<li> <a href="results.shtml"><b>Results</b></a> </li>
+<li> <a href="benchmarks.shtml">Benchmarks</a> </li>
+<!-- <li> <a href="registration.shtml">Competitor Registration</a> </li> -->
+<!-- <li> <a href="timeline.shtml">Timeline</a> </li> -->
+<li> <a href="organizers.shtml">Organizers</a> </li>
+<li> <a href="http://goedel.cs.uiowa.edu/smtlib/">SMT-LIB</a> </li>
+
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

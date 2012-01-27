@@ -1,0 +1,49 @@
+<!--#set var="title" value="Benchmarks" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+We intend to use benchmarks from the current
+<a href="http://goedel.cs.uiowa.edu/smtlib/">SMT-LIB</a> release
+(June 19, 2007) in the following divisions.
+</p>
+
+<ul>
+<li><a href="benchmarks/QF_UF.tar.gz">QF_UF</a></li>
+<li><a href="benchmarks/QF_RDL.tar.gz">QF_RDL</a></li>
+<li><a href="benchmarks/QF_IDL.tar.gz">QF_IDL</a></li>
+<li><a href="benchmarks/QF_UFIDL.tar.gz">QF_UFIDL</a></li>
+<li><a href="benchmarks/QF_UFLIA.tar.gz">QF_UFLIA</a></li>
+<li><a href="benchmarks/QF_LRA.tar.gz">QF_LRA</a></li>
+<li><a href="benchmarks/QF_LIA.tar.gz">QF_LIA</a></li>
+<li><a href="benchmarks/QF_BV.tar.gz">QF_BV</a></li>
+<li><a href="benchmarks/QF_AUFBV.tar.gz">QF_AUFBV</a></li>
+<li><a href="benchmarks/QF_AUFLIA.tar.gz">QF_AUFLIA</a></li>
+<li><a href="benchmarks/AUFLIA.tar.gz">AUFLIA</a></li>
+<li><a href="benchmarks/AUFLIRA.tar.gz">AUFLIRA</a></li>
+</ul>
+
+<p>
+The benchmark files themselves will be unmodified (except for scrambling)
+for the competition.  However, for benchmark selection, please note:
+</p>
+
+<ul>
+<li>We have recomputed difficulties based on SMT-COMP'06 solvers.
+In the new divisions QF_BV and QF_AUFBV, difficulties are estimated
+rather than calculated.  The new difficulties are not encoded in the
+above files, but are available in a file on the
+<a href="bench_selection.shtml">benchmark selection page</a>.
+<a href="difficulty_stats.shtml">Statistics on the difficulty recalculation are available.</a></li>
+<li>In the above SMT-LIB release of QF_UFIDL, benchmark categories are
+omitted for 44 UCLID benchmarks.  These are in fact industrial benchmarks and
+for benchmark selection will be considered so.</li>
+<li>For benchmarks with &ldquo;unknown&rdquo; status as of the
+June 19, 2007 release of SMT-LIB, we have decided that they will remain
+unknown and will not be included in competition this year.</li>
+<li>Some benchmarks with &ldquo;sat&rdquo; or &ldquo;unsat&rdquo;
+status have recently come under suspicion; in particular, all AUFLIA
+benchmarks in the &ldquo;boogie&rdquo; family with an encoded status of
+&ldquo;sat&rdquo; are being left out of SMT-COMP'07.</li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

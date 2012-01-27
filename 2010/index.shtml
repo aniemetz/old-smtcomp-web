@@ -1,0 +1,34 @@
+<!--#set var="title" value="SMT-COMP 2010"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The 2010 edition of the Satisfiability Modulo Theories Competition
+(SMT-COMP) is a satellite event of
+<a href="http://www.floc-conference.org/CAV-home.html">CAV 2010</a>
+(July&nbsp;15&nbsp;-&nbsp;19, 2010, Edinburgh).
+</p>
+
+<ul>
+<li> <a href="introduction.shtml">Introduction</a> </li>
+<li> <a href="rules.shtml">Rules &amp; Submission</a> </li>
+<li> <a href="tools.shtml">Tools</a> </li>
+<li> <a href="specs.shtml">Machine Specifications</a></li>
+<li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a></li>
+<li> <strong><a href="http://www.smtexec.org/exec/competitors2010.php">Participants</a></strong></li>
+<li> <a href="benchmarks.shtml">Benchmarks</a><!-- (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)--></li>
+<li> <strong>Results [&nbsp;<a href="http://www.smtexec.org/exec/?jobs=684">main track</a>&nbsp;|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=683">parallel track</a>&nbsp;]</strong> </li>
+<li> <a href="docs.shtml">Papers</a></li>
+<li> <a href="travel.shtml">Travel Grants</a></li>
+<li> <a href="acknowledgments.shtml">Acknowledgments</a></li>
+<li> <a href="http://combination.cs.uiowa.edu/smtlib/">SMT-LIB</a> </li>
+<li> <a href="previous.shtml">Previous SMT-COMPs</a></li>
+</ul>
+
+<p>
+Feedback/concerns about this website can be directed to
+<a href="http://www.cs.uiowa.edu/~astump/">Aaron Stump</a> or
+<a href="http://www.cs.nyu.edu/~mdeters/">Morgan Deters</a>.
+</p>
+
+<p>Our friends at CASC have invited us and all other FLoC solver competitions to join their <a href="http://www.cs.miami.edu/~tptp/CASC/J5/CASCRegistration.html">CASC dinner</a>.  Sign up directly at that web site if you'd like to attend.</p>
+<!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,71 @@
+<!--#set var="title" value="Introduction" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+Decision procedures for checking satisfiability of logical formulas
+are crucial for many verification applications.
+Of particular recent interest are solvers for Satisfiability Modulo
+Theories (SMT).  SMT solvers decide logical satisfiability (or dually,
+validity) with respect to a background theory expressed in classical
+first-order logic with equality.  The success of SMT for verification
+applications is largely due to the suitability of supported background
+theories for expressing verification conditions.  These theories
+include:
+</p>
+
+<ul>
+<li> the empty theory, which gives rise to the so-called logic of
+equality and uninterpreted functions (EUF).
+</li>
+
+<li> real or integer arithmetic </li>
+
+<li> theories of program or hardware structures such as
+bitvectors, arrays, and recursive datatypes. </li>
+
+</ul>
+
+<p>
+It is usually necessary to adopt some syntactic restriction on the
+input formulas to be checked in order to ensure efficient
+decidability.  For example, formulas are often required to be
+quantifier-free.  For arithmetic, more efficient algorithms are known
+for <i>difference formulas</i>, where atomic formulas consist just of
+difference constraints of the form <tt>x - y &lt;= c</tt>, with <tt>x</tt> and <tt>y</tt>
+variables and <tt>c</tt> a numeric constant.
+Many solvers further increase expressivity by taking the background
+theory to be a combination of several individual theories, and some
+solvers include limited support for user-supplied quantified axioms,
+further increasing expressive power.
+</p>
+
+<p>
+Public competitions are a well-known means of stimulating
+advancement in software tools.  For example, in automated reasoning,
+the <a href="http://www.cs.miami.edu/~tptp/CASC/19/">CASC competition</a> for first-order reasoning tools has seen steady
+improvement in the systems entered since the competition began in
+1996.  The <a href="http://www.satlive.org/SATCompetition/index.jsp">SAT competition</a> for propositional SAT solvers
+has also seen similar, sometimes dramatic, improvements from year to
+year.  Exactly what role the competitions play in
+these improvements is hard to measure, but anecdotal evidence suggests
+that they act as a significant catalyst for tool implementors.  
+</p>
+
+<p>
+The idea of holding SMT-COMP came out of discussions surrounding the
+<a href="http://goedel.cs.uiowa.edu/smtlib">SMT-LIB</a> initiative at
+the 2nd International Workshop on Pragmatics of Decision Procedures in
+Automated Reasoning (<a
+href="http://www.loria.fr/~ranise/pdpar04/">PDPAR</a>) at <a
+href="http://4c.ucc.ie/ijcar">IJCAR 2004</a>.  <a
+href="http://goedel.cs.uiowa.edu/smtlib">SMT-LIB</a> is an initiative
+of the SMT community to build a library of SMT benchmarks in a
+proposed standard format.  SMT-COMP will help serve this goal by
+contributing collected benchmark formulas used for the competition to
+the library, and by providing an incentive for implementors of SMT
+solvers to support the <a
+href="http://goedel.cs.uiowa.edu/smtlib/papers.html">SMT-LIB
+format</a>.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

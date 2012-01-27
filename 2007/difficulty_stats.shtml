@@ -1,0 +1,90 @@
+<!--#set var="title" value="Benchmarks" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+Difficulties were assigned by running several SMT-COMP'06 solvers
+on all 65205 benchmarks in the June 19, 2007 release of SMT-LIB.
+Difficulties are equal to <code>5*(1 - correct/total)</code>, rounded
+to the nearest integer, where <code>correct</code> is the number of
+solvers answering correctly within 10 minutes, and <code>total</code>
+is the total number of solvers tried.
+</p>
+
+<p>
+The below table shows how many benchmarks have the old and new
+difficulties shown.  Difficulties of -1 are invalid; a value of -1
+for difficulty means that a benchmark had never before been assigned
+a difficulty.
+</p>
+
+<pre>
++----------------+------------+-------+
+| old_difficulty | difficulty | #     |
++----------------+------------+-------+
+|             -1 |          0 | 24628 |
+|             -1 |          1 |    33 |
+|             -1 |          2 |   873 |
+|             -1 |          3 |  5708 |
+|             -1 |          4 |   482 |
+|             -1 |          5 |   125 |
+|              0 |          0 |  5030 |
+|              0 |          1 |    66 |
+|              0 |          2 |    57 |
+|              1 |          0 |   327 |
+|              1 |          1 | 15530 |
+|              1 |          2 |   361 |
+|              1 |          4 |     3 |
+|              2 |          0 |   183 |
+|              2 |          1 |   202 |
+|              2 |          2 |   622 |
+|              2 |          3 |    68 |
+|              2 |          4 |     3 |
+|              3 |          0 |    64 |
+|              3 |          1 |   154 |
+|              3 |          2 |   176 |
+|              3 |          3 |   806 |
+|              3 |          4 |    13 |
+|              4 |          0 |    32 |
+|              4 |          1 |    49 |
+|              4 |          2 |    92 |
+|              4 |          3 |    59 |
+|              4 |          4 |   431 |
+|              4 |          5 |    27 |
+|              5 |          0 |  3930 |
+|              5 |          1 |     4 |
+|              5 |          2 |  1462 |
+|              5 |          3 |    71 |
+|              5 |          4 |    74 |
+|              5 |          5 |  3460 |
++----------------+------------+-------+
+</pre>
+
+<p>
+Ignoring the -1 difficulties, benchmarks with the given change in
+difficulty were as follows:
+</p>
+
+<pre>
++----------------------+-------+
+| change_in_difficulty | #     |
++----------------------+-------+
+|                   -5 |  3930 |
+|                   -4 |    36 |
+|                   -3 |  1575 |
+|                   -2 |   500 |
+|                   -1 |   838 |
+|                    0 | 25879 |
+|                    1 |   535 |
+|                    2 |    60 |
+|                    3 |     3 |
++----------------------+-------+
+</pre>
+
+<p>
+We intend to incorporate the newly-assigned difficulties into a
+post-competition release of SMT-LIB.  For now, they are available
+in a file on the <a href="bench_selection.shtml">benchmark selection
+tool</a> page.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

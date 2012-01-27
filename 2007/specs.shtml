@@ -1,0 +1,21 @@
+<!--#set var="title" value="Specifications" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The competition will run on a cluster of 9 machines at Washington
+University in St. Louis.  Some relevant specifications of these machines
+are:
+</p>
+
+<ul>
+<li> 2.4 GHz AMD Opteron 250, configured for single core, 32-bit processing.</li>
+<li> 1 MB cache.</li>
+<li> 3.5 GB main memory.</li>
+<li> Linux, kernel version 2.6.9-55.EL.  </li>
+<li> CentOS release 4.5 (Final)</li>
+<li> glibc-2.3.4-2.36</li>
+<li> gcc-3.4.6-8 (if a solver needs a higher version of GCC, this
+can be accomodated)</li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

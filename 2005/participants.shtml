@@ -1,0 +1,68 @@
+<!--#set var="title" value="Participants" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p> <a href="welcome.pdf">Welcome</a> to the participants: </p>
+
+<ul>
+<li> ARIO: <a href="http://www.eecs.umich.edu/~ario">website</a>, 
+           <a href="descriptions/ARIOintro.pdf">description</a>,
+           <a href="solvers/ario.tar.gz">download</a>
+</li>
+<li> BarcelogicTools: <a href="http://www.lsi.upc.edu/~oliveras/bclt-main.html">website</a>,
+                      <a href="descriptions/BarcelogicSMT.ps">description</a> 
+</li>
+<li> CVC: <a href="http://cl.cse.wustl.edu/CVC/">website</a>,
+          <a href="descriptions/cvc.pdf">description</a>, 
+					<a href="solvers/cvc-smtcomp.tgz">download</a>
+</li>
+
+<li> CVC Lite: 
+               <a href="http://verify.stanford.edu/CVCL">website</a>,
+               <a href="descriptions/cvcl.ps">description</a>, 
+      				 <a href="solvers/cvcl-smtcomp.tar.gz">download</a>
+</li>
+
+<li> HTP (Heuristic Theorem Prover): <a href="descriptions/htp.ps">description</a> </li>
+
+<li> MathSAT: 
+             <a href="http://mathsat.itc.it">website</a>,
+             <a href="descriptions/mathsat.ps">description</a>
+</li>
+
+<li> Sammy: <a href="http://goedel.cs.uiowa.edu/Sammy/">website</a>,
+            <a href="descriptions/sammy.pdf">description</a>,
+            download (<a href="solvers/sammy.gz">binaries</a>,
+						<a href="sammy-smtcomp2005.tar.gz">source</a>)
+</li>
+
+<li> Sateen: 
+             <a href="descriptions/sateen.pdf">description</a>, 
+             <a href="solvers/sateen.gz">download</a>
+</li>
+
+<li> SBT (SatBox with Theories): <a href="descriptions/sbtdescr.pdf">description</a>,
+             <a href="solvers/sbt.tgz">download</a>
+</li>
+
+<li> Simplics: 
+          <a href="http://fm.csl.sri.com/simplics">website</a>,
+          <a href="descriptions/simplics_description.pdf">decription</a>,
+          <a href="http://fm.csl.sri.com/simplics/download.shtml">download</a>
+</li>
+
+<li> SVC: <a href="http://chicory.stanford.edu/SVC/">website</a>,
+          <a href="descriptions/svc.ps">description</a>,
+					<a href="solvers/svc-smtcomp.tar.gz">download</a>
+          
+</li>
+
+<li> Yices:
+        <a href="http://fm.csl.sri.com/yices">website</a>,
+        <a href="descriptions/yices.pdf">description</a>,
+        <a href="http://fm.csl.sri.com/yices/download.shtml">download</a>
+</li>
+
+</ul>
+
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

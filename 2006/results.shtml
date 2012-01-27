@@ -1,0 +1,18 @@
+<!--#set var="title" value="Results" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+<li> <a href="results-QF_UF.shtml">QF_UF</a></li>
+<li> <a href="results-QF_RDL.shtml">QF_RDL</a></li>
+<li> <a href="results-QF_IDL.shtml">QF_IDL</a></li>
+<li> <a href="results-QF_UFIDL.shtml">QF_UFIDL</a></li>
+<li> <a href="results-QF_LRA.shtml">QF_LRA</a></li>
+<li> <a href="results-QF_LIA.shtml">QF_LIA</a></li>
+<li> <a href="results-QF_UFLIA.shtml">QF_UFLIA</a></li>
+<li> <a href="results-QF_UFBV32.shtml">QF_UFBV32</a></li>
+<li> <a href="results-QF_AUFLIA.shtml">QF_AUFLIA</a></li>
+<li> <a href="results-AUFLIA.shtml">AUFLIA</a></li>
+<li> <a href="results-AUFLIRA.shtml">AUFLIRA</a></li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

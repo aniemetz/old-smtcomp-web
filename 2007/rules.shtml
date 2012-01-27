@@ -1,0 +1,8 @@
+<!--#set var="title" value="Rules" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p><a href="rules.pdf">Download the rules.</a></p>
+
+<p><a href="upload.php">Online submission (closed).</a></p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

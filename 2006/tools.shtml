@@ -1,0 +1,19 @@
+<!--#set var="title" value="Tools" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+
+<li> <a href="smtlib-parser.tar.gz">Download</a> updated OCAML source code for the SMT-LIB input format parser and checker (<a href="old-smtlib-parser.tar.gz">previous version</a>).</li>
+
+<li> <a href="cvc2smt.tar.gz">Download</a> CVC to SMT-LIB translator. The translator requires the latest version of <a href="http://verify.stanford.edu/CVCL">CVC Lite</a>.</li>
+
+<li> <a href="scrambler.shtml">SMT-LIB benchmark scrambler</a>.</li>
+
+<li> <a href="bench_selection.shtml">Benchmark selection</a>.</li>
+
+<li> <a href="smtcomp06-scripts.tar.gz">Download</a> the shell and awk
+scripts used to run SMT-COMP 2006.</li>
+
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

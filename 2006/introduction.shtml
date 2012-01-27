@@ -1,0 +1,65 @@
+<!--#set var="title" value="Introduction" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+Decision procedures for checking satisfiability of logical formulas
+are crucial for many verification applications.
+Of particular recent interest are solvers for Satisfiability Modulo
+Theories (SMT).  SMT solvers decide logical satisfiability (or dually,
+validity) with respect to a background theory expressed in classical
+first-order logic with equality.  The success of SMT for verification
+applications is largely due to the suitability of supported background
+theories for expressing verification conditions.  These theories
+include:
+</p>
+
+<ul>
+<li> the empty theory, which gives rise to the so-called logic of
+equality and uninterpreted functions (EUF).
+</li>
+
+<li> real or integer arithmetic </li>
+
+<li> theories of program or hardware structures such as
+bitvectors, arrays, and recursive datatypes. </li>
+
+</ul>
+
+<p>
+Public competitions are a well-known means of stimulating
+advancement in software tools.  For example, in automated reasoning,
+the <a href="http://www.cs.miami.edu/~tptp/CASC/19/">CASC competition</a> for first-order reasoning tools has seen steady
+improvement in the systems entered since the competition began in
+1996.  The <a href="http://www.satlive.org/SATCompetition/index.jsp">SAT competition</a> for propositional SAT solvers
+has also seen similar, sometimes dramatic, improvements from year to
+year.  Exactly what role the competitions play in
+these improvements is hard to measure, but anecdotal evidence suggests
+that they act as a significant catalyst for tool implementors.  
+</p>
+
+<p>
+The first <a href="2005/">SMT-COMP</a> was held July 6-8, 2005, as a
+satellite event of <a href="http://www.cav2005.inf.ed.ac.uk">CAV'05</a> first three days of the conference, with
+results updated in real-time on the web as they came in. This format
+created an exciting atmosphere, where competitors and others could
+continously monitor how the contest was proceeding. Twelve submitted
+solvers competed in some or all of seven competition divisions, with
+each division corresponding to an SMT-LIB logic.  Each division had
+around 50 problems, drawn from a larger set of 1338 benchmarks which
+the organizers, with the help of a number of other researchers, had
+collected and translated into <a href="http://goedel.cs.uiowa.edu/smtlib/papers.html">SMT-LIB format</a>. Solvers ran with a time
+limit of 10 minutes and a memory limit of a little over 512 MB, which
+was the amount of physical memory on the Linux machines made available
+by the University of Edinburghsolvers (which parse 
+<a href="http://goedel.cs.uiowa.edu/smtlib/papers.html">SMT-LIB format</a>).
+</p>
+
+<p>
+<a href="/2005">SMT-COMP'05</a> appears to be viewed as having been very successful,
+due to the creation of so many benchmarks in <a href="http://goedel.cs.uiowa.edu/smtlib/papers.html">SMT-LIB format</a>, and the larger than
+expected number of entered solvers. <a href="/2005">SMT-COMP'05</a> provided just the kind of jump
+start to the <a href="http://goedel.cs.uiowa.edu/smtlib/">SMT-LIB</a> initiative's standardization and benchmark collection 
+activities that it had been proposed to provide.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

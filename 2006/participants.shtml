@@ -1,0 +1,129 @@
+<!--#set var="title" value="Participants" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+<!-- <li>CVC</li> -->
+<!-- <li>CVC Lite</li> -->
+<!-- <li>ExtSAT</li> -->
+
+<li>Ario 1.2 <a href="http://www.eecs.umich.edu/~ario/">website</a>,
+         <a href="descriptions/ario.pdf">description</a>,
+				 <a href="solvers/ario12.tar.gz">download</a> <br>
+Divisions: QF_UF, QF_RDL, QF_IDL, QF_UFIDL, QF_LIA, QF_UFLIA
+</li>
+
+<li>Barcelogic 1.1
+    <a href="http://www.lsi.upc.edu/~oliveras/bclt-main.html">website</a>,
+    <a href="descriptions/bclt.pdf">description</a>,
+		<a href="solvers/bclt.tar.gz">download</a> <br>
+Divisions: QF_UF, QF_RDL, QF_IDL, QF_UFIDL, QF_AUFLIA
+</li>
+
+<li>CVC <a href="http://cl.cse.wustl.edu/CVC/">website</a>,
+        <a href="descriptions/cvc-description.pdf">description</a>,
+				<a href="solvers/cvc-smtcomp06.tgz">download</a> <br>
+Divisions: QF_UF, QF_LRA, QF_AUFLIA
+</li>
+
+<li>CVC3 <a href="http://www.cs.nyu.edu/acsys/cvcl/">website</a>,
+         <a href="descriptions/CVC3-description.pdf">description</a>,
+				 <a href="solvers/CVC3.tar.gz">download</a>  <br>
+Divisions: all
+</li>
+
+<li>ExtSAT 
+    <a href="http://sat.inesc-id.pt/~pocm/extsat">website</a>,
+		<a href="descriptions/extsat_description.pdf">description</a>,
+    <a href="solvers/extsat-smtcomp06.tar.gz">download</a> <br>
+Divisions: QF_RDL, QF_IDL, QF_LRA, QF_LIA
+</li>
+
+<li>HTP
+    <a href="http://www.fordocsys.com/htp.htm">website</a>,
+		<a href="descriptions/htp.pdf">description</a>,
+    <a href="solvers/htp-complete.tar">download</a> <br>
+<!-- 		<a href="solvers/htp.tar.gz">download</a> version without Barcelogic 1.0 and Yices 0.1 (not used in the competition). <br> -->
+Divisions: QF_UF, QF_IDL, QF_RDL, QF_LRA, QF_LIA, QF_UFLIA
+</li>
+
+<li>Jat
+    <a href="descriptions/Jat-description.txt">description</a>
+		<a href="solvers/Jat.tgz">download</a> <br>
+Divisions: QF_RDL
+</li>
+
+<li>MathSAT 3.4
+    <a href="http://mathsat.itc.it">website</a>,
+    <a href="descriptions/mathsat.ps">description</a>,
+    <a href="solvers/mathsat_smtcomp06.tar.gz">download</a> <br>
+Divisions: QF_UF, QF_RDL, QF_IDL, QF_UFIDL, QF_LRA, QF_LIA, QF_UFLIA, QF_UFBV32
+</li>
+
+<li>NuSMV
+    <a href="http://nusmv.irst.itc.it">website</a>,
+		<a href="descriptions/nusmv_description.pdf">description</a>,
+		<a href="solvers/NuSMV.tgz">download</a> <br>
+Divisions: QF_UFBV32
+</li>
+
+<li>Sateen 
+     <a href="descriptions/sateen.pdf">description</a>,
+     <a href="solvers/sateen.tgz">download</a> <br>
+Divisions: QF_IDL
+</li>
+
+<li>STP 
+     <a href="descriptions/stp.ps">description</a>,
+		 <a href="solvers/smtcomp-vijay-david-dill.tar.gz">download</a> <br>
+Divisions: QF_UFBV32
+</li>
+
+<li>Yices 1.0
+     <a href="http://yices.csl.sri.com">website</a>,
+		 <a href="descriptions/yices-smtcomp06.pdf">description</a>,
+     <a href="solvers/yices-1.0-smtcomp.tar.gz">download</a> <br>
+Divisions: all
+</li>
+
+</ul>
+
+<h2> Previous Winners </h2>
+<p> As suggested in PDPAR'05, the <a href="2005/results.shtml">winners from 2005</a> will automatically enter.</p>
+<ul> 
+<li> <a href="http://www.lsi.upc.edu/~oliveras/bclt-main.html">Barcelogic 1.0</a>: 
+<a href="2005/results-QF_UF.shtml">QF_UF</a>, 
+<a href="2005/results-QF_RDL.shtml">QF_RDL</a>,
+<a href="2005/results-QF_IDL.shtml">QF_IDL</a>,
+<a href="2005/results-QF_UFIDL.shtml">QF_UFIDL</a>.</li>
+<li> <a href="http://fm.csl.sri.com/simplics">Simplics</a>: <a href="2005/results-QF_LRA.shtml">QF_LRA</a> </li>
+<li> <a href="http://fm.csl.sri.com/yices">Yices 0.1</a>: <a href="2005/results-QF_LIA.shtml">QF_LIA</a>, <a href="2005/results-QF_AUFLIA.shtml">QF_AUFLIA</a> </li> 
+</ul>
+
+<h2> Hors-concours</h2>
+
+<p> Solvers submitted after the submission deadline. They will not participate in the competition, but we will post their results on the website.</p>
+<ul>
+<li>Bat <a href="descriptions/bat.pdf">description</a>
+        <a href="solvers/bat.tar.gz">download</a> <br>
+Divisions: QF_UFBV32
+ </li>
+</ul>
+
+
+<h2>Magic numbers</h2>
+<pre>
+   extsat  : 1235230984501
+   sateen  : 12
+   mathsat : 54507995
+   nusmv   : 16052002
+   bclt    : 34235234
+   jat     : 1
+   stp     : 6503879950
+   ario    : 2393809
+   htp     : 1929
+</pre>
+
+<h2>Composite random seed</h2>
+<pre>    107190980</pre>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

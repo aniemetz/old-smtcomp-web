@@ -1,0 +1,14 @@
+<!--#set var="title" value="Scattergraphs" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+<li> Each point represents a benchmark. </li>
+<li> The running times are in seconds. </li>
+<li> Points above (below) the diagonal correspond to examples where the
+system on the x (y) axis is faster than the other. </li>
+<li> Points one division above are an order of magnitude faster. </li>
+<li> A scatter that is shallower (steeper) than the diagonal indicates the performance of the system
+on the x (y) axis deteriorates relative to the other as problem complexity increases. </li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

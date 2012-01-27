@@ -1,0 +1,32 @@
+<!--#set var="title" value="Benchmark Scrambler" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+<li><a href="scrambler.gz">Linux binary</a></li>
+<li><a href="scrambler.scm">Source</a> (<a href="scrambler.scm.back">old source</a>)</li>
+</ul>
+
+<p>
+Usage: <tt>./scrambler [seed] [file.smt]</tt>
+</p>
+
+<p> <tt>[seed]</tt> is a seed for the pseudo-random number generator.</p>
+
+<p>
+You must have <tt>sed (4.1.2 or newer)</tt> installed in your system to be able to
+use the formula scrambler.
+</p>
+
+<p>
+If the benchmark is too big, the scrambler may run out of stack space and
+produce a segmentation fault.
+This problem can be avoided by executing the following command: <tt>ulimit -s unlimited</tt>
+</p>
+
+<p> The formula scrambler was implemented in Scheme using the 
+<a href="http://www-sop.inria.fr/mimosa/fp/Bigloo/">Bigloo</a> compiler.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
+
+

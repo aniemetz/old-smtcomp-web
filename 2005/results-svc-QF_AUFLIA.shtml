@@ -1,0 +1,190 @@
+<!--#set var="title" value="Detailed results for SVC at QF_AUFLIA" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+<table class="score"><tr><th align="center">Benchmark</th><th align="left">Answer</th><th align="left">Time</th><th align="center">Correct?</th></tr></hr>
+<tr><td>array_benchmarks/pipeline-invalid.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/pointer-invalid-10.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/pointer-invalid-15.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/pointer-invalid-20.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/pointer-invalid-5.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/pointer-safe-10.smt</td><td align="center">unsat</td>
+<td align="center">1.4</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>array_benchmarks/pointer-safe-15.smt</td><td align="center">unsat</td>
+<td align="center">5.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>array_benchmarks/pointer-safe-20.smt</td><td align="center">unsat</td>
+<td align="center">15.9</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>array_benchmarks/pointer-safe-5.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>array_benchmarks/qlock-bug-10.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/qlock-bug-15.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/qlock-bug-20.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/qlock-bug-5.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/qlock-bug2-10.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/qlock-bug2-15.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/qlock-bug2-20.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/qlock-mutex-10.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/qlock-mutex-15.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/qlock-mutex-20.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/qlock-mutex-5.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/queue-th1-6.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>array_benchmarks/queue-th2-6.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>array_benchmarks/stack-invalid-6.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>array_benchmarks/stack-th1-6.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>array_benchmarks/stack-th2-6.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>check/array_incompleteness1.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>check/int_incompleteness1.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>cvc/add4.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/add5.smt</td><td align="center">unsat</td>
+<td align="center">2.3</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/add6.smt</td><td align="center">unsat</td>
+<td align="center">0.5</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/dlx-dmem.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/dlx-pc.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/dlx-regfile.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/fb_var_12_11.smt</td><td align="center">unsat</td>
+<td align="center">0.6</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/fb_var_27_8.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>cvc/fb_var_33_6.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/fb_var_5_12.smt</td><td align="center">unsat</td>
+<td align="center">2.6</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/fb_var_6_12.smt</td><td align="center">unsat</td>
+<td align="center">0.9</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/pp-TakenBranch-s2e.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>cvc/pp-bloaddata-a.smt</td><td align="center">unsat</td>
+<td align="center">0.6</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/pp-bloaddata.smt</td><td align="center">unsat</td>
+<td align="center">3.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/pp-dmem-a.smt</td><td align="center">unsat</td>
+<td align="center">0.7</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/pp-dmem.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>cvc/pp-dmem2.smt</td><td align="center">unsat</td>
+<td align="center">4.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/pp-invariant.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/pp-pc-s2i.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/pp-regfile.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>cvc/read2.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/read5.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/read6.smt</td><td align="center">unsat</td>
+<td align="center">1.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/read7.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>cvc/read8.smt</td><td align="center">unsat</td>
+<td align="center">44.3</td>
+<td align="center">yes</td>
+</tr>
+</table><!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,6 @@
+<!--#set var="title" value="Format" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>An entrant to SMT-COMP must accept the <a href="http://goedel.cs.uiowa.edu/smtlib/papers.html">SMT-LIB standard format</a>.</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

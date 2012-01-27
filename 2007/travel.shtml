@@ -1,0 +1,31 @@
+<!--#set var="title" value="Travel Grants" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<a href="http://research.microsoft.com">Microsoft Research</a> has
+generously donated funds to help pay for travel for participants,
+especially students, who might otherwise be unable to attend.  Because
+funds are limited, we will use a bidding process to assign grants.
+The process works like this:
+
+<ol>
+<li>
+Those interested should send an email by June 1 to
+<a href="http://www.cs.nyu.edu/~barrett/">Clark Barrett</a> indicating:
+<ul>  <li> Your name and affiliation.</li>
+  <li> Whether you are a student.</li>
+  <li> The name of the solver you are submitting and your role in the development
+    of the solver.</li>
+ <li> The amount of assistance you would need to be able to attend.</li>
+</ul></li>
+
+<li> On or before June 11, we will notify those whose bids have been accepted
+   (acceptance will be based primarily on the amount requested, with lower bids
+   having precedence, but we will also take into account the role of the
+   applicant in the development of the solver and whether or not the applicant
+   is a student).</li>
+
+<li> Following the conclusion of the competition, reimbursement checks will be
+   issued to those whose bids were accepted and who attended.</li>
+</ol>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

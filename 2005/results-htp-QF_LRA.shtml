@@ -1,0 +1,198 @@
+<!--#set var="title" value="Detailed results for HTP at QF_LRA" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+<table class="score"><tr><th align="center">Benchmark</th><th align="left">Answer</th><th align="left">Time</th><th align="center">Correct?</th></tr></hr>
+<tr><td>TM/p-0-bucket_s13.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>TM/p-1-bucket_s9.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>TM/p-2-bucket_s11.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>TM/p-3-bucket_s10.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>TM/p3-driverlogNumeric_s8.smt</td><td align="center">sat</td>
+<td align="center">9.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>TM/p4-driverlogNumeric_s8.smt</td><td align="center">sat</td>
+<td align="center">35.4</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>TM/p5-driverlogNumeric_s8.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>TM/p5-driverlogNumeric_s9.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>sal/Carpark2-ausgabe-5.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/gasburner-prop3-10.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/gasburner-prop3-15.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/gasburner-prop3-20.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/gasburner-prop3-5.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/pursuit-safety-10.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/pursuit-safety-15.smt</td><td align="center">unsat</td>
+<td align="center">0.3</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/pursuit-safety-20.smt</td><td align="center">unsat</td>
+<td align="center">0.4</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/pursuit-safety-5.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/tgc_io-nosafe-5.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/tgc_io-safe-10.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/tgc_io-safe-15.smt</td><td align="center">unsat</td>
+<td align="center">0.4</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/tgc_io-safe-20.smt</td><td align="center">unsat</td>
+<td align="center">0.7</td>
+<td align="center"><b><font color="#FF0000">no</font></b></td>
+</tr>
+<tr><td>sal/tgc_io-safe-5.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/windowreal-no_t_deadlock-10.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/windowreal-no_t_deadlock-15.smt</td><td align="center">unsat</td>
+<td align="center">0.4</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/windowreal-no_t_deadlock-20.smt</td><td align="center">unsat</td>
+<td align="center">0.8</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>sal/windowreal-no_t_deadlock-5.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/frame_prop.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/fs_frame_gap.base.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/fs_frame_gap.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/fs_init_no_op_accs.base.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/fs_init_no_op_accs.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/fs_no_op_accs.base.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/fs_no_op_accs.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/fs_not_sc_seen.base.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/fs_not_sc_seen.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/fs_window.base.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/fs_window.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/good_frame_update.base.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/good_frame_update.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/op_seen_less2.base.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/op_seen_less2.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/op_seen_more1.base.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/op_seen_more1.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/pd_no_op_accs.base.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/pd_no_op_accs.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/reint_to_least.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/sc_init_frame_gap.base.smt</td><td align="center">unsat</td>
+<td align="center">0.1</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/sc_init_frame_gap.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.0</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/synched.base.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>spider_benchmarks/synched.induction.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+</table><!--#include virtual="smt-comp-postlude.shtml" -->

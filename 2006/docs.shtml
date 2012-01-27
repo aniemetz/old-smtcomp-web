@@ -1,0 +1,26 @@
+<!--#set var="title" value="SMT-COMP Papers" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+
+<li> <b>SMT-COMP: Satisfiability Modulo Theories Competition</b>
+<p>Clark Barrett, Leonardo de Moura, and Aaron Stump</p>
+<p>Presented at CAV 05, Edinburgh, Scotland, UK, 2005.</p>
+<p><a href="smtcomp05_short_paper.pdf">paper</a>, <a href="smtcomp05_slides.pdf">slides</a> </p>
+<p><a href="smtcomp05.bib"><b>BibTeX Entry</b></a></p>
+<pre>
+@inproceedings{barrett+05,
+      author= "C. Barrett and L. de Moura and A. Stump",
+      title={{SMT-COMP: Satisfiability Modulo Theories Competition}},
+      booktitle="17th International Conference on Computer Aided Verification",
+      editor="K. Etessami and S. Rajamani",
+      pages={20--23},
+      publisher="Springer",
+      year="2005"}
+</pre>
+
+</li>
+
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

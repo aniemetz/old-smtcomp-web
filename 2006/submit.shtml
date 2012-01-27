@@ -1,0 +1,5 @@
+<!--#set var="title" value="Entrant Registration" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

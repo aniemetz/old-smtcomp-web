@@ -1,0 +1,69 @@
+<!--#set var="title" value="Benchmark Selection" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<h3>Benchmark Attributes</h3>
+
+<p>
+The benchmark selection program is somewhat different from last year's.
+It uses the status, difficulty, and category of the benchmarks, but
+doesn't read them from the benchmark files themselves.  Rather, this
+information is extracted from a MySQL database used for SMT-COMP'07,
+and a benchmark selection program is run on this extracted metadata to
+form the final list of selected benchmarks.
+</p>
+
+<p>
+The metadata differs from the values encoded in the benchmark files
+in three ways:
+</p>
+
+<ul>
+<li> Where the status encoded in a benchmark file is &ldquo;unknown&rdquo;
+but we can verify that the benchmark is in fact satisfiable or
+unsatisfiable. </li>
+<li> Where the category is missing from the benchmark file (as it is
+in some of QF_UFIDL's uclid benchmarks). </li>
+<li> Where the difficulty in the benchmark file is obsolete.  The
+difficulty values have been recomputed for SMT-COMP'07 (based on
+the SMT-COMP'06 solvers Ario 1.2, Barcelogic 1.1, CVC, CVC3, HTP,
+MathSAT 3.4, Sateen, and Yices 1.0).  For the new divisions QF_BV and
+QF_AUFBV, difficulty values have been estimated rather than computed. </li>
+</ul>
+
+<h3>Selection Algorithm</h3>
+
+<p>For each division, the <tt>check</tt> benchmarks are always included. In addition, the selection script will randomly select 100 benchmarks from each division with the following distribution (when possible): 85 <tt>industrial</tt>, 10 <tt>crafted</tt>, and 5 <tt>random</tt>.
+In each category, the script selects (when possible) 25% <tt>easy-sat</tt>, 25% <tt>easy-unsat</tt>, 25% <tt>hard-sat</tt>, and 25% <tt>hard-unsat</tt>. 
+A benchmark is <strong>easy</strong> if it has difficulty 0, 1, or 2. 
+A benchmark is <strong>hard</strong> if it has difficulty 3, 4, or 5. 
+</p>
+
+<p>
+If there aren't enough <tt>random</tt> and <tt>crafted</tt>, then 
+the slack is &ldquo;inherited&rdquo; by the <tt>industrial</tt> category. 
+It there aren't enough <tt>industrial</tt>, then the slack 
+is &ldquo;inherited&rdquo; by the <tt>crafted</tt> category. 
+</p>
+
+<p>
+More detail on this procedure is included in a comment at the top of the
+source file, and in the <a href="rules.pdf">rules PDF</a> for this year's
+competition.
+</p>
+
+<p>
+The actual benchmarks selected for competition this year are listed
+on the <a href="selected-benchmarks.shtml">selected benchmarks</a> page.
+</p>
+
+<h3>Tool Download</h3>
+
+<ul>
+<li> <strong>select_benchmarks</strong>: given an input file of benchmarks, selects benchmarks according to the rules; statistics on stderr, benchmarks on stdout.  Some changes may be made to this program before it is used officially for the competition benchmark selection; it is intended that these changes be limited to bug fixes, removal of obsolete debugging code, and documentation cleanups.
+<a href="select_benchmarks.c">Source</a>. </li>
+<li> <strong>smtcomp2007-benchs.txt</strong>: input to the above script.  Some changes may be made before the final selection, and the official input file will be posted here then.  This file lists SMT-COMP'07 benchmarks and their metadata; the file format is described in the C source above.
+<a href="smtcomp2007-benchs.txt">Download</a>. </li>
+</ul>
+
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

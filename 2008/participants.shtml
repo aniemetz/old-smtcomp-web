@@ -1,0 +1,8 @@
+<!--#set var="title" value="Participants"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+<a href="http://www.smtexec.org/exec/competitors2008.php">Information about SMT-COMP&rsquo;08 participants is here.</a>
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

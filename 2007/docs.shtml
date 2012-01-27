@@ -1,0 +1,39 @@
+<!--#set var="title" value="SMT-COMP Papers" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+
+<li> <strong><a href="/papers/smtcomp06_fmsd.pdf">Design and Results of the 2nd Satisfiability Modulo Theories Competition (SMT-COMP 2006).</a></strong> Clark Barrett, Leonardo de Moura, and Aaron Stump.  To appear in Formal Methods in System Design (accepted June, 2007).
+</li>
+
+<li> <strong><a href="/papers/smtcomp05_jar.pdf">Design and Results of the 1st Satisfiability Modulo Theories Competition (SMT-COMP 2005).</a></strong> Clark Barrett, Leonardo de Moura, and Aaron Stump.
+<pre>
+@article{barrett+05,
+      author= "C. Barrett and L. de Moura and A. Stump",
+      title={{Design and Results of the 1st Satisfiability Modulo Theories Competition (SMT-COMP 2005)}},
+      journal="Journal of Automated Reasoning",
+      pages={373--390},
+      publisher="Springer",
+      volume=35,
+      number=4,
+      year="2005"}
+</pre>
+</li>
+
+<li> <strong><a href="/papers/smtcomp05_short_paper.pdf">SMT-COMP: Satisfiability Modulo Theories Competition.</a></strong>
+Clark Barrett, Leonardo de Moura, and Aaron Stump. [<a href="/papers/smtcomp05_slides.pdf">Slides</a>]
+<pre>
+@inproceedings{barrett+05,
+      author= "C. Barrett and L. de Moura and A. Stump",
+      title={{SMT-COMP: Satisfiability Modulo Theories Competition}},
+      booktitle="17th International Conference on Computer Aided Verification",
+      editor="K. Etessami and S. Rajamani",
+      pages={20--23},
+      publisher="Springer",
+      year="2005"}
+</pre>
+</li>
+
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

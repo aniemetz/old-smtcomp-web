@@ -1,0 +1,44 @@
+<!--#set var="title" value="Proofs and Models" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+In recognition of the importance of exporting the results of SMT
+solvers for the benefit of systems like proof assistants or
+applications like <a href="http://citeseer.ist.psu.edu/necula00proof.html">proof-carrying code</a>, 
+SMT-COMP will recognize entrants which produce suitable evidence for the results
+they report.  Entrants which can produce proofs for unsatisfiable
+formulas will be recognized as proof-producing, and entrants which can
+produce models for satisfiable formulas will be recognized as
+model-generating.  No award other than this recognition will be given
+on the basis of such capabilities, and such capabilities are strictly
+optional for SMT-COMP entrants.
+</p>
+
+<p>
+To be eligible for recognition as proof-producing or model-generating,
+the submission of an SMT-COMP entrant must be accompanied by either a
+reference to an existing publicly available 3rd-party proof checker or
+model certifier, or source code for such if the submitting team has
+developed their own.  The system description must also include a short
+description of the proof or model format used.  Acceptable formats
+must be such that they can be checked by a very simple algorithm.  The
+Competition Panel will judge whether or not the proof or model format
+used by an SMT-COMP entrant is acceptable.
+</p>
+
+<p>
+In recognition of the enormous size proofs of complex formulas can
+require, proof-producing or model-generating entrants need produce
+proofs or models only when run with a single command-line argument
+<b>"--evidence"</b>.  If run with that argument, the solver should
+dump a proof or model to a file in the current directory called
+<b>evidence</b>.  The Competition Panel will verify, separately
+from the main part of the competition, that solvers seeking to be
+recognized as proof-producing or model-generating can produce output
+which can be checked by the checker they specify.  This check will be
+performed only for relatively small formulas from the Problem
+Divisions in which the solver is competing.  Solvers need not produce
+proofs or models during the main part of the competition.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

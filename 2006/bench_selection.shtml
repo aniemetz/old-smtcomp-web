@@ -1,0 +1,62 @@
+<!--#set var="title" value="Benchmark Selection" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<h3>Benchmark Attributes</h3>
+
+<p>The benchmark selection script uses the following benchmark attributes:</p>
+
+<ul>
+
+<li> <strong>:status</strong> - specifies the benchmark result - possible values: <tt>unsat</tt>, <tt>sat</tt>, <tt>unknown</tt>.</li>
+
+<li> <strong>:difficulty</strong> - specifies how difficult a benchmark is - possible values: <tt>0</tt> (easiest), <tt>1</tt>, <tt>2</tt>, <tt>3</tt>, <tt>4</tt>, <tt>5</tt> (hardest). 
+
+<p>The score was computed using the formula <tt>(int)(5 * (1 - SOLVED/TOTAL))</tt>, where <tt>SOLVED</tt> is the number of SMT solvers that could solved the benchmark in 10 minutes, and <tt>TOTAL</tt> is the number of SMT solvers that were tried.</p>
+
+<p> The following tools were used to compute this attribute: Ario 1.1, Barcelogic, CVC, CVC Lite 2.0, MathSAT 3.3.1, Sateen, Simplics, Yices. </p> 
+
+<p> In the quantifier division, some trivial benchmarks have difficulty -1, and will not be used in SMT-COMP. </p>
+
+<p> A different approach was used to compute the degree of difficulty in QF_UFBV[32] and AUFLIRA, because none of the solvers above support these divisions and/or the SMT-LIB extensions used.
+</p>
+
+</li>
+
+<li> <strong>:category</strong> - possible values: <tt>industrial</tt>, <tt>crafted</tt>, <tt>random</tt>, <tt>check</tt>. </li>
+   <ul>
+	 <li> <strong>industrial</strong> - come from a real application (e.g., WiSA benchmarks) and were produced by 
+a tool such as bounded model checkers, static analyzers, extended static checkers, etc. </li>
+   <li> <strong>check</strong> - are used to test specific features (e.g., integer completeness and big number support). </li>
+	 <li> <strong>random</strong> - are randomly generated (e.g., DTP benchmarks). </li>
+   <li> <strong>crafted</strong> - all others - they are usually designed to give a hard time to SMT solvers (e.g., scheduling benchmarks).</li>
+</ul> 
+
+</ul>
+
+<h3>Selection Algorithm</h3>
+
+<p>For each division, the <tt>check</tt> benchmarks are always included. In addition, the selection script will randomly select N benchmarks with the following distribution (when possible): 85% <tt>industrial</tt>, 10% <tt>crafted</tt>, and 5% <tt>random</tt>.
+In each category, the script selects (when possible) 25% <tt>easy-sat</tt>, 25% <tt>easy-unsat</tt>, 
+25% <tt>hard-sat</tt>, and 25% <tt>hard-unsat</tt>. 
+A benchmark is <strong>easy</strong> if it has difficulty 0, 1, or 2. 
+A benchmark is <strong>hard</strong> if it has difficulty 3, 4, or 5. 
+</p>
+
+<p>
+If there aren't enough <tt>random</tt> and <tt>crafted</tt>, then 
+the slack is "inherited" by the <tt>industrial</tt> category. 
+It there aren't enough <tt>industrial</tt>, then the slack 
+is "inherited" by the <tt>crafted</tt> category. 
+</p>
+
+<h3>Tool Download</h3>
+
+<ul>
+<li> <strong>bench_select</strong>: randomly select a subset of lines of a specified size from an ASCII text data file.
+<a href="bench_select.c">Source</a>, <a href="bench_select">Linux Binary</a>. </li>
+<li> <strong>select.sh</strong>: main (bash) script on top of bench_select. It displays statistics on the standard error, and
+the selected benchmarks in the standard output. <a href="select.sh">Source</a>. </li>
+</ul>
+
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,93 @@
+<!--#set var="title" value="Problem Divisions" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p><strong>
+Important: the QF_AUFLIA division of SMT-COMP is going to use extensional
+instead of non-extensional arrays. The reason for the change is that our
+benchmarks rely on extensional arrays.
+ </strong></p>
+
+<p>
+The set of Problem Divisions to be used in SMT-COMP are as follows.  Some
+divisions contain formulas satisfying special syntactic restrictions, for which
+special-purpose algorithms have been proposed in the literature.  Each problem
+will be in the SMT-LIB format, version 1.1.  Note that although the SMT-LIB
+format provides a mechanism for annotating formulas with user-defined
+information, all formulas used in SMT-COMP will be presented without any
+annotations.  Definitions of all the theories and logics to be used in SMT-COMP
+can be found on the SMT-LIB web page.  Entrants need not process theory and
+logic definitions; they are provided just to define the interpreted function
+and predicate symbols, together with their sorts, which are used by the
+corresponding Problem Divisions.  All formulas used in SMT-COMP will be
+well-sorted. Divisions will contain a range of problems from relatively small
+and easy to large and difficult.  The descriptions given below are informal.
+For a formal description of each division, see the SMT-LIB documentation and
+web page.
+</p>
+
+<ul>
+
+<li> <b>QF_UF(Uninterpreted Functions)</b>:
+This division consists of quantifier-free
+  formulas whose satisfiability is to be decided modulo the empty theory. Each
+  benchmark may introduce its own uninterpreted function and predicate symbols.
+</li>
+
+
+<li> <b>QF_IDL (Integer Difference Logic)</b>: This division consists of quantifier-free
+  formulas to be tested for satisfiability modulo a background theory of
+  integer arithmetic.  The syntax of atomic formulas is restricted to
+  difference logic, i.e. x - y op c, where op is either equality or inequality
+  and c is an integer constant.</li>
+
+<li> <b>QF_RDL (Real Difference Logic)</b>: This division is like QF_IDL, except that the
+  background theory is real arithmetic.</li>
+
+<li> <b>QF_UFIDL (Integer Difference Logic with Uninterpreted Functions)</b>: This
+  division contains benchmarks in a logic which is similar to QF_IDL, except
+  that it also allows uninterpreted functions and predicates. </li>
+
+<li><b>QF_LIA (Linear Integer Arithmetic)</b>: This division consists of quantifier-free
+  formulas to be tested for satisfiability modulo a background theory of
+  integer arithmetic.  The syntax of atomic formulas is restricted to contain
+  only linear terms.</li>
+
+<li><b>QF_LRA (Linear Real Arithmetic)</b>: This division is like QF_LIA, except that
+  the background theory is real arithmetic.</li>
+
+<li><b>QF_UFLIA (Linear Integer Arithmetic with Uninterpreted Functions)</b>: This
+  division contains benchmarks in a logic which is similar to QF_LIA, except
+  that it also allows uninterpreted functions and predicates.</li>
+
+<li><b>QF_UFLRA (Linear Real Arithmetic with Uninterpreted Functions)</b>: This division
+  contains benchmarks in a logic which is similar to QF_LRA, except that it
+  also allows uninterpreted functions and predicates.</li>
+
+<li><b>QF_A (Non-extensional Arrays)</b>: Quantifier-free formulas over the theory
+  of extensional arrays.</li>
+
+<li><b>QF_AUFLIA (Linear Integer Arithmetic with Uninterpreted Functions and Arrays)</b>: This division consists of quantifier-free formulas to be tested for
+  satisfiability modulo a background theory combining linear integer
+  arithmetic, uninterpreted function and predicate symbols, and extensional
+  arrays.</li>
+
+<li><b>AUFLIA: (Linear Integer Arithmetic with Uninterpreted Functions and Arrays)</b>:
+  This division consists of formulas with quantifiers to be tested for
+  satisfiability modulo a background theory combining linear integer
+  arithmetic, uninterpreted function and predicate symbols, and extensional
+  arrays.</li>
+
+</ul>
+
+<p>
+Sample benchmarks for most of these categories are available on this web site.
+We are continuing to collect benchmarks and are especially interested in
+obtaining benchmarks for problem divisions we do not already have.  A subset of
+the collected benchmarks will be used for the competition.  A division will be
+included in the competition as long as there are a sufficient number of
+benchmarks available for that division as well as at least 3 entrants who
+request to compete in the division.  Suitable measures like variable renaming
+and structure modification will be used to discourage recognition of formulas.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

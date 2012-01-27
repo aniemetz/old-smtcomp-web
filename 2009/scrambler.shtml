@@ -1,0 +1,38 @@
+<!--#set var="title" value="Benchmark Scrambler"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+This year we intend to use the same scrambler as in 2008, modified
+slightly to be aware of new SMT-COMP divisions and to handle non-standard
+SMT-LIB formulas in many :pat annotations in UFNIA benchmarks.  The
+implementation is thanks to
+<a href="http://www.cse.wustl.edu/~stump/">Aaron Stump</a>.
+</p>
+
+<ul>
+<li><a href="scrambler.tgz">Source tarball</a></li>
+</ul>
+
+<p>
+<strong>To build:</strong> <tt>tar xfz scrambler.tgz; cd scrambler; make allj</tt><br/>
+<strong>To use:</strong> <tt>java -jar scrambler.jar [+pats] <i>seed</i> <i>file.smt</i></tt>
+</p>
+
+<p> <tt>+pats</tt> (if specified) directs the scrambler to scramble (but leave in) :pat annotations in quantified logics, rather than the default of removing them.</p>
+<p> <tt>[seed]</tt> is a seed for the pseudo-random number generator.</p>
+<p> You can do "make" instead of "make allj", if you have gcj installed.  The executable will then appear in opt/.</p>
+<p>
+The scrambler performs the following functions:
+</p>
+
+<ul>
+<li>it drops annotations (except for :pat annotations when +pats is specified);</li>
+<li>it hides benchmark name and status;</li>
+<li>it renames all variables; and</li>
+<li>it randomly permutes arguments to AC logical connectives and theory
+function symbols.</li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
+
+

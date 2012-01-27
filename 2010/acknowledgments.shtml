@@ -1,0 +1,45 @@
+<!--#set var="title" value="Acknowledgments"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+SMT-COMP is supported by:
+</p>
+
+<ul>
+  <li> The U.S. <a href="http://www.nsf.gov">National Science
+Foundation</a>, under grant CNS-0551697.  This grant has purchased the
+cluster on which the competition runs, as well as provided partial
+support for staff at the organizers' institutions running the competition.</li>
+
+</ul>
+
+<p>
+SMT-COMP 2010 is co-organized by:
+</p>
+
+<ul>
+  <li> <a href="http://www.cs.nyu.edu/~barrett/">Clark Barrett </a> : Computer Science, New York University </li>
+
+  <li> <a href="http://www.cse.wustl.edu/~mdeters/">Morgan Deters</a> : Computer Science, New York University </li>
+
+  <li> <a href="http://www.lsi.upc.es/~oliveras/">Albert Oliveras </a> : LSI Department, Technical University of Catalonia </li>
+
+  <li> <a href="http://www.cse.wustl.edu/~stump/"> Aaron Stump </a> : Computer Science, The University of Iowa </li>
+
+</ul>
+
+<p>
+The <a href="http://www.smtexec.org/">SMT-COMP benchmark execution
+infrastructure (SMT-Exec)</a> is implemented by:
+</p>
+
+<ul>
+<li> <a href="http://www.cs.nyu.edu/~mdeters/">Morgan Deters</a>: Computer Science, New York University </li>
+</ul>
+
+<p>
+An earlier version was written by Jon Fox (Washington University in
+St. Louis).
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

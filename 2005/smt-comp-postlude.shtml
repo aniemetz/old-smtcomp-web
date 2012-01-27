@@ -1,0 +1,11 @@
+<!--#include file="navbar.shtml" -->
+
+<!--#config timefmt="%a %d %b %Y %H:%M %Z" -->
+
+<p class="bottom">
+<i>
+Last modified: <!--#flastmod virtual="$DOCUMENT_URI" --><br />
+</i>
+</p>
+</body>
+</html>

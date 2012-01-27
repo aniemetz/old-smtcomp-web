@@ -1,0 +1,10 @@
+<!--#set var="title" value="Travel Grants"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+SMT-COMP is not offering funding separately from the SMT Workshop.  Please
+<a href="http://ie.technion.ac.il/SMT09/page.html#student">apply through
+the SMT Workshop</a> if you are interested in a travel grant for SMT-COMP.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

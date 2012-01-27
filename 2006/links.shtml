@@ -1,0 +1,10 @@
+<!--#set var="title" value="External Links" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+
+<li> <a href="http://www.fordocsys.com/htp.htm">HTP</a>: SMT solver and preprocessor.</li>
+
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

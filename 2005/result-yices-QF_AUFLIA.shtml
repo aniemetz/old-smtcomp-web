@@ -1,0 +1,4 @@
+<!--#set var="title" value="Results for yices : QF_AUFLIA" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+<!--#set var="title" value="Results for yices : QF_AUFLIA" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->

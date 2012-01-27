@@ -1,0 +1,16 @@
+<!--#set var="title" value="Machine Specifications" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>Machines used in the competition will have the
+following specifications:</p>
+
+<ul>
+<li> <strong>OS</strong>: GNU/Linux version 2.6.14 </li>
+<li> <strong>Processor</strong>: Pentium 4, 3.00 GHz</li>
+<li> <strong>Memory</strong>: 2 Gb (1.5 GB memory limit for solver processes enforced)</li>
+<li> <strong>Cache</strong>: 2 Mb </li>
+<li> <strong>GCC</strong>: version 4.0.2 </li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
+

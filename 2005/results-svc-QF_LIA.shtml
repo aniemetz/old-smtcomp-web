@@ -1,0 +1,171 @@
+<!--#set var="title" value="Detailed results for SVC at QF_LIA" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+<table class="score"><tr><th align="center">Benchmark</th><th align="left">Answer</th><th align="left">Time</th><th align="center">Correct?</th></tr></hr>
+<tr><td>CIRC/MULTIPLIER_10.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/MULTIPLIER_14.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/MULTIPLIER_16.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/MULTIPLIER_5.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/MULTIPLIER_8.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/MULTIPLIER_PRIME_10.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/MULTIPLIER_PRIME_15.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/MULTIPLIER_PRIME_3.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/MULTIPLIER_PRIME_5.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/MULTIPLIER_PRIME_8.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/SIMPLEBITADDER_COMPOSE_10.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/SIMPLEBITADDER_COMPOSE_15.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/SIMPLEBITADDER_COMPOSE_3.msat.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>CIRC/SIMPLEBITADDER_COMPOSE_32.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>CIRC/SIMPLEBITADDER_COMPOSE_5.msat.smt</td><td align="center">unsat</td>
+<td align="center">6.7</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>CIRC/SIMPLEBITADDER_COMPOSE_8.msat.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>RTCL/b04_tf_15/ckt_PROP0_tf_15.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>RTCL/b04_tf_20/ckt_PROP0_tf_20.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>RTCL/b13_tf_100/b13_tf_100.smt</td><td align="center">unsat</td>
+<td align="center">8.3</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>check/int_incompleteness2.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>check/int_incompleteness3.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER10-10-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER10-12-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER10-15-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER10-4-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER10-5-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER10-8-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER10-9-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER11-10-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER11-12-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER11-13-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER11-14-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER11-15-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER11-16-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER11-5-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER2-2-fair.smt</td><td align="center">unsat</td>
+<td align="center">0.2</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>mathsat/FISCHER2-5-fair.smt</td><td align="center">unsat</td>
+<td align="center">4.7</td>
+<td align="center">yes</td>
+</tr>
+<tr><td>mathsat/FISCHER6-10-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER6-11-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER6-5-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER7-10-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER7-12-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER7-5-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER8-10-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER8-13-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER8-5-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER9-10-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER9-14-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>mathsat/FISCHER9-5-fair.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>wisa/wisa1.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>wisa/wisa2.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>wisa/wisa3.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>wisa/wisa4.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+<tr><td>wisa/wisa5.smt</td><td align="center">unknown</td>
+<td align="center">-</td><td align="center">-</td>
+</tr>
+</table><!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,82 @@
+<!--#set var="title" value="Judging and Scoring" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+SMT-COMP will be overseen by a Competition Panel consisting of the
+organizers plus one distinguished researcher from outside the SMT
+community, to be invited by the organizers.  This researcher will
+serve as chair of the Competition Panel.  The chair is responsible for certifying, as far as
+possible, the fairness of the competition.  The Competition Panel will
+be in physical attendance for the duration of SMT-COMP (from the
+beginning of competition July 6 until after the final results are
+announced July 10).
+</p>
+
+<p>
+Winners in each Problem Division for which there are at least three
+entrants from distinct research groups competing will be taken to be
+those with the highest score, according to the system of points and
+penalties in Table below.  As indicated, correct answers
+are awarded a positive number of points, while incorrect answers are
+penalized by assigning a negative number of points.  In recognition of
+the greater difficulty of achieving completeness than soundness in SMT
+systems, smaller penalties are assessed for incompleteness than for
+unsoundness.  The organizers take responsibility for determining in
+advance whether formulas are satisfiable or not.  In the event of a
+tie in total number of points, the solver with the lower average CPU
+time on formulas for which it did not timeout will be considered the
+winner.  For Problem Divisions with fewer than three entrants, the
+results will be reported but no winner officially declared.
+</p>
+
+<center>
+<table class="score">
+
+<tr> 
+<th align="center"> Reported </th> 
+<th align="center"> Correct? </th>
+<th align="center"> Point/Penalty </th>
+</tr>
+
+</hr>
+
+<tr>
+<td align="center"> unsat </td> 
+<td align="center"> yes </td>
+<td align="center"> +1 </td> 
+</tr>
+
+<tr>
+<td align="center"> unsat </td> 
+<td align="center"> no </td>
+<td align="center"> -8 </td> 
+</tr>
+
+<tr>
+<td align="center"> sat </td> 
+<td align="center"> yes </td>
+<td align="center"> +1 </td> 
+</tr>
+
+<tr>
+<td align="center"> sat </td> 
+<td align="center"> no </td>
+<td align="center"> -4 </td> 
+</tr>
+
+<tr>
+<td align="center"> unknown </td> 
+<td align="center"> n.a. </td>
+<td align="center"> 0 </td> 
+</tr>
+
+<tr>
+<td align="center"> timeout </td> 
+<td align="center"> n.a. </td>
+<td align="center"> 0 </td> 
+</tr>
+
+</table>
+</center>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

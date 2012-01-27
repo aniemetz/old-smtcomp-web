@@ -1,0 +1,59 @@
+<!--#set var="title" value="AUFLIA Results" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+<meta http-equiv="refresh" content="180"; URL="/homes/demoura/public_html/smt-comp/results-AUFLIA.shtml" />
+<center><table class="score"><tr><th align="left">Solver</th><th align="center">Score</th><th align="center">Time</th><th align="center">Unsat</th>
+<th align="center">Sat</th><th align="center">Unknown</th><th align="center">Timeout</th>
+<th align="center">Wrong</th></tr></hr>
+<tr><td><a href="results-AUFLIA-yices_06.shtml">Yices 1.0</a></td>
+<td align="center">96</td>
+<td align="center">104.7</td>
+<td align="center">96</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">0</td>
+</tr>
+<tr><td><a href="results-AUFLIA-CVC3.shtml">CVC3</a></td>
+<td align="center">50</td>
+<td align="center">296.3</td>
+<td align="center">50</td>
+<td align="center">0</td>
+<td align="center">51</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+</tr>
+</table></center>
+<p>Remarks:</p> 
+<ul>
+<li> Column <b>Time</b> has the accumulated time (secs) used to solve the <b>unsat</b> and <b>sat</b> instances. </li>
+<li> Column <b>Unknown</b> has the number of unknown answers produced. </li>
+<li> Column <b>Wrong</b> has the number of wrong answers.</li>
+</ul>
+<center><form method=get action="http://sal.csl.sri.com/cgi-bin/smtcomp-scatter.cgi">
+<p>
+<select NAME="result1">
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_06-AUFLIA.results">Yices 1.0</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/CVC3-AUFLIA.results">CVC3</option>
+</select>
+<select NAME="result2">
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_06-AUFLIA.results">Yices 1.0</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/CVC3-AUFLIA.results">CVC3</option>
+</select>
+<input TYPE="submit" NAME="Request" VALUE="Scattergraph">
+<a href="http://www.csl.sri.com/users/demoura/smt-comp/scattergraphs.shtml">help</a>
+</p></form></center>
+<center><form method=get action="http://sal.csl.sri.com/cgi-bin/smtcomp-compare.cgi">
+<p>
+<select NAME="result1">
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_06-AUFLIA.results">Yices 1.0</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/CVC3-AUFLIA.results">CVC3</option>
+</select>
+<select NAME="result2">
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_06-AUFLIA.results">Yices 1.0</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/CVC3-AUFLIA.results">CVC3</option>
+</select>
+<input TYPE="submit" NAME="Request" VALUE="  Compare  ">
+</p></form></center>
+<p><center><image src="AUFLIA-summary.png"></center></p>
+<!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,22 @@
+<!--#set var="title" value="Timeline" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+
+<li> <strong>Pre-Registration</strong>: The competitors must notify the organizers they are planning
+to enter the competition. The notification should be performed by email. It is not
+necessary to submit the system binaries or source code. <strong>Deadline: 15th of May</strong>.
+</li>
+
+<li> <strong>System Submission</strong>: The competitors must email the organizers a tarball
+with their system (sources or Linux executable). The tarball must include
+a README on compilation (if necessary) and installation;
+as well as a 1-2 page system description as explained in the <a href="entrants.shtml">rules</a> relating to Entrants.
+<strong>Deadline: 1st of July</strong>.
+</li>
+
+<li> <strong>Beginning of the Competition</strong>: <strong>6th of July</strong></li>
+
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

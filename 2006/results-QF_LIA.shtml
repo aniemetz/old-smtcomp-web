@@ -1,0 +1,132 @@
+<!--#set var="title" value="QF_LIA Results" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+<meta http-equiv="refresh" content="180"; URL="/homes/demoura/public_html/smt-comp/results-QF_LIA.shtml" />
+<center><table class="score"><tr><th align="left">Solver</th><th align="center">Score</th><th align="center">Time</th><th align="center">Unsat</th>
+<th align="center">Sat</th><th align="center">Unknown</th><th align="center">Timeout</th>
+<th align="center">Wrong</th></tr></hr>
+<tr><td><a href="results-QF_LIA-yices_06.shtml">Yices 1.0</a></td>
+<td align="center">92</td>
+<td align="center">214.4</td>
+<td align="center">48</td>
+<td align="center">44</td>
+<td align="center">0</td>
+<td align="center">13</td>
+<td align="center">0</td>
+</tr>
+<tr><td><a href="results-QF_LIA-mathsat.shtml">MathSAT 3.4</a></td>
+<td align="center">85</td>
+<td align="center">2080.8</td>
+<td align="center">46</td>
+<td align="center">39</td>
+<td align="center">0</td>
+<td align="center">20</td>
+<td align="center">0</td>
+</tr>
+<tr><td><a href="results-QF_LIA-ario1_2.shtml">Ario 1.2</a></td>
+<td align="center">53</td>
+<td align="center">2888.3</td>
+<td align="center">29</td>
+<td align="center">24</td>
+<td align="center">22</td>
+<td align="center">30</td>
+<td align="center">0</td>
+</tr>
+<tr><td><a href="results-QF_LIA-htp.shtml">HTP</a></td>
+<td align="center">53</td>
+<td align="center">3220.2</td>
+<td align="center">44</td>
+<td align="center">33</td>
+<td align="center">7</td>
+<td align="center">18</td>
+<td align="center">3</td>
+</tr>
+<tr><td><a href="results-QF_LIA-CVC3.shtml">CVC3</a></td>
+<td align="center">43</td>
+<td align="center">703.7</td>
+<td align="center">33</td>
+<td align="center">26</td>
+<td align="center">43</td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr><td><a href="results-QF_LIA-extsat.shtml">ExtSAT 1.1</a></td>
+<td align="center">-34</td>
+<td align="center">2.5</td>
+<td align="center">6</td>
+<td align="center">0</td>
+<td align="center">58</td>
+<td align="center">36</td>
+<td align="center">5</td>
+</tr>
+</tr>
+</table></center>
+
+<h3>Hors-concours</h3>
+
+<center><table class="score"><tr><th align="left">Solver</th><th align="center">Score</th><th align="center">Time</th><th align="center">Unsat</th>
+<th align="center">Sat</th><th align="center">Unknown</th><th align="center">Timeout</th>
+<th align="center">Wrong</th></tr></hr>
+<tr><td><a href="results-QF_LIA-yices_05.shtml">Yices 0.1 (2005 winner)</a></td>
+<td align="center">77</td>
+<td align="center">3291.1</td>
+<td align="center">45</td>
+<td align="center">40</td>
+<td align="center">0</td>
+<td align="center">19</td>
+<td align="center">1</td>
+</tr>
+</table></center>
+
+<p>Remarks:</p> 
+<ul>
+<li> Column <b>Time</b> has the accumulated time (secs) used to solve the <b>unsat</b> and <b>sat</b> instances. </li>
+<li> Column <b>Unknown</b> has the number of unknown answers produced. </li>
+<li> Column <b>Wrong</b> has the number of wrong answers.</li>
+</ul>
+<center><form method=get action="http://sal.csl.sri.com/cgi-bin/smtcomp-scatter.cgi">
+<p>
+<select NAME="result1">
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_06-QF_LIA.results">Yices 1.0</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/mathsat-QF_LIA.results">MathSAT 3.4</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_05-QF_LIA.results">Yices 0.1 (2005 winner)</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/ario1_2-QF_LIA.results">Ario 1.2</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/htp-QF_LIA.results">HTP</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/CVC3-QF_LIA.results">CVC3</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/extsat-QF_LIA.results">ExtSAT 1.1</option>
+</select>
+<select NAME="result2">
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_06-QF_LIA.results">Yices 1.0</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/mathsat-QF_LIA.results">MathSAT 3.4</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_05-QF_LIA.results">Yices 0.1 (2005 winner)</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/ario1_2-QF_LIA.results">Ario 1.2</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/htp-QF_LIA.results">HTP</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/CVC3-QF_LIA.results">CVC3</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/extsat-QF_LIA.results">ExtSAT 1.1</option>
+</select>
+<input TYPE="submit" NAME="Request" VALUE="Scattergraph">
+<a href="http://www.csl.sri.com/users/demoura/smt-comp/scattergraphs.shtml">help</a>
+</p></form></center>
+<center><form method=get action="http://sal.csl.sri.com/cgi-bin/smtcomp-compare.cgi">
+<p>
+<select NAME="result1">
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_06-QF_LIA.results">Yices 1.0</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/mathsat-QF_LIA.results">MathSAT 3.4</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_05-QF_LIA.results">Yices 0.1 (2005 winner)</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/ario1_2-QF_LIA.results">Ario 1.2</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/htp-QF_LIA.results">HTP</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/CVC3-QF_LIA.results">CVC3</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/extsat-QF_LIA.results">ExtSAT 1.1</option>
+</select>
+<select NAME="result2">
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_06-QF_LIA.results">Yices 1.0</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/mathsat-QF_LIA.results">MathSAT 3.4</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/yices_05-QF_LIA.results">Yices 0.1 (2005 winner)</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/ario1_2-QF_LIA.results">Ario 1.2</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/htp-QF_LIA.results">HTP</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/CVC3-QF_LIA.results">CVC3</option>
+<option VALUE="/homes/demoura/public_html/smt-comp/extsat-QF_LIA.results">ExtSAT 1.1</option>
+</select>
+<input TYPE="submit" NAME="Request" VALUE="  Compare  ">
+</p></form></center>
+<p><center><image src="QF_LIA-summary.png"></center></p>
+<!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,16 @@
+<!--#set var="title" value="Benchmark Scrambler"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+For the 2010 edition of SMT-COMP, we used a new scrambler,
+thanks to
+<a href="http://www.lsi.upc.edu/~oliveras/">Albert Oliveras</a>.
+</p>
+
+<ul>
+<li><a href="scramblerV2.tgz">Source tarball</a></li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
+
+

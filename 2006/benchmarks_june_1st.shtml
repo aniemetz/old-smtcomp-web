@@ -1,0 +1,45 @@
+<!--#set var="title" value="Benchmarks" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+<strong>New: The first version of the benchmark library is available.</strong>
+</p>
+
+<p> The benchmarks are also available in the <a href="http://goedel.cs.uiowa.edu/smtlib/">SMT-LIB website</a>. 
+</p>
+
+<p> <a href="old_benchmarks.shtml">Link</a> to the old benchmark page.</p>
+
+
+<h2>Current version: 28-06-2005</h2>
+<ul>
+<li> QF_AUFLIA: <a href="smtlib-2006-1/QF_AUFLIA.tar.gz">tarball</a> </li>
+<li> QF_IDL: <a href="smtlib-2006-1/QF_IDL.tar.gz">tarball</a> </li>
+<li> QF_LIA: <a href="smtlib-2006-1/QF_LIA.tar.gz">tarball</a> </li>
+<li> QF_LRA: <a href="smtlib-2006-1/QF_LRA.tar.gz">tarball</a> </li>
+<li> QF_RDL: <a href="smtlib-2006-1/QF_RDL.tar.gz">tarball</a> </li>
+<li> QF_UF: <a href="smtlib-2006-1/QF_UF.tar.gz">tarball</a> </li>
+<li> QF_UFIDL: <a href="smtlib-2006-1/QF_UFIDL.tar.gz">tarball</a> </li>
+</ul>
+
+<h2>Pending</h2>
+
+<p>The following sets of benchmarks have been submitted for inclusion in SMT-LIB, pending testing and categorization.
+</p>
+
+<ul>
+<li> cellar: <a href="smtlib-2006-1/pending/cellar.tar.gz">tarball</a> </li>
+<li> queens_bench: <a href="smtlib-2006-1/pending/queens_bench.tar.gz">tarball</a> </li>
+<li> smtlib-new-benchmarks: <a href="smtlib-2006-1/pending/smtlib-new-benchmarks.tar.gz">tarball</a> </li>
+<li> smtlib-predabs: <a href="smtlib-2006-1/pending/smtlib-predabs.tar.gz">tarball</a> </li>
+<li> wisas: <a href="smtlib-2006-1/pending/wisas.tar.gz">tarball</a> </li>
+<li> job shop scheduling: <a href="smtlib-2006-1/pending/job_shop.tgz">tarball</a> </li>
+<li> piVC: <a href="smtlib-2006-1/pending/piVC.tar.gz">tarball</a> </li>
+<li> haRVey: <a href="smtlib-2006-1/pending/haRVey.tar.gz">tarball</a> </li>
+<li> Averest: <a href="smtlib-2006-1/pending/averest.tar.gz">tarball</a> </li>
+<li> Big proof engines as little engines: <a href="smtlib-2006-1/pending/big-proof-engines.tar.gz">tarball</a> </li>
+<li> qlock revised: <a href="smtlib-2006-1/pending/qlock.tar.gz">tarball</a> </li>
+</ul>
+
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

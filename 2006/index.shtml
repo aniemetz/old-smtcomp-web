@@ -1,0 +1,38 @@
+<!--#set var="title" value="SMT-COMP'06" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+The Satisfiability Modulo Theories Competition (SMT-COMP) is a satellite
+event of <a href="http://research.microsoft.com/floc06/cav.htm">CAV'06</a> (August 16 - 20, 2006,
+Seattle, Washington, USA). Previous competition: <a href="2005/">SMT-COMP'05</a>.</strong></p>
+
+<ul>
+
+<li> <a href="introduction.shtml">Introduction</a> </li>
+<li> <a href="rules.shtml">Rules</a> </li>
+<li> <a href="tools.shtml">Tools</a> </li>
+<li> <a href="machines.shtml">Machine Specifications</a> </li>
+<li> <a href="http://lists.csl.sri.com/mailman/listinfo/smtcomp">Mailing List</a></li>
+<li> <strong><a href="participants.shtml">Participants</a></strong></li>
+<li> <a href="benchmarks.shtml">Benchmarks</a> </li>
+<li> <strong><a href="selected-benchmarks.shtml">Selected Benchmarks</a></strong></li>
+<li> <strong><a href="results.shtml">Results</a></strong> </li>
+<li> <a href="organizers.shtml">Organizers</a> </li>
+<li> <a href="http://goedel.cs.uiowa.edu/smtlib/">SMT-LIB</a> </li>
+
+</ul>
+
+<!--#include file="navbar.shtml" -->
+
+<!--#config timefmt="%a %d %b %Y %H:%M %Z" -->
+
+<p class="bottom">
+<i>
+Last modified: <!--#flastmod virtual="$DOCUMENT_URI" -->
+
+
+<br />
+</i>
+</p>
+
+</body>
+</html>

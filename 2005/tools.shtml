@@ -1,0 +1,12 @@
+<!--#set var="title" value="Tools" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+
+<li> <a href="smtlib-parser.tar.gz">Download</a> updated OCAML source code for the SMT-LIB input format parser and checker (<a href="old-smtlib-parser.tar.gz">previous version</a>).</li>
+
+<li> <a href="cvc2smt.tar.gz">Download</a> CVC to SMT-LIB translator. The translator requires the latest version of <a href="http://verify.stanford.edu/CVCL">CVC Lite</a>.</li>
+
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

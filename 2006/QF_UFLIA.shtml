@@ -1,0 +1,3 @@
+<!--#set var="title" value="QF_UFLIA"-->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+<!--#include virtual="smt-comp-postlude.shtml" -->

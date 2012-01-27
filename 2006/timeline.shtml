@@ -1,0 +1,17 @@
+<!--#set var="title" value="Timeline" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+
+<li> <strong>June 1</strong>: First version of the benchmark library posted for comment.</li>
+<li> <strong>July 1</strong>: Revised version of the benchmark library posted. Pseudo-random benchmark
+selector becomes available.</li>
+<li> <strong>August 1</strong>: Final version of the benchmark library posted, and system submission opened.</li>
+<li> <strong>August 8</strong>: Final system description due, with magic numbers for pseudo-random selection of
+benchmarks.</li>
+<li> <strong>August 9</strong>: Selected benchmarks posted.</li>
+<li> <strong>August 16</strong>: Competition begins, coinciding with the start of CAV.</li>
+
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

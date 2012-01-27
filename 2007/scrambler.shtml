@@ -1,0 +1,36 @@
+<!--#set var="title" value="Benchmark Scrambler" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+<strong>Please note that</strong> this is a different scrambler than
+<a href="../2006/scrambler.shtml">the one used last year</a>.  This
+scrambler is a new implementation by
+<a href="http://www.cse.wustl.edu/~stump/">Aaron Stump</a> in Java.
+</p>
+
+<ul>
+<li><a href="scrambler.tgz">Source tarball</a></li>
+</ul>
+
+<p>
+<strong>To build:</strong> <tt>tar xfz scrambler.tgz; cd scrambler; make</tt><br/>
+<strong>To use:</strong> <tt>java -jar scrambler.jar <i>seed</i> <i>file.smt</i></tt>
+</p>
+
+<p> <tt>[seed]</tt> is a seed for the pseudo-random number generator.</p>
+
+<p>
+The scrambler performs the following functions:
+</p>
+
+<ul>
+<li>it drops annotations;</li>
+<li>it hides benchmark name and status;</li>
+<li>it renames all variables; and</li>
+<li>it randomly permutes arguments to AC logical connectives and theory
+function symbols.</li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
+
+

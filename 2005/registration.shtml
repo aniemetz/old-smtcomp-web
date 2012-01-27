@@ -1,0 +1,30 @@
+<!--#set var="title" value="Competitor Registration" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<strong>System pre-registration and submission is now open.</strong>
+
+<ul>
+<li> <strong>Pre-Registration</strong>: submit an email to the organizers 
+(<a href="mailto: barrett@cs.nyu.edu">Clark Barrett</a>,
+ <a href="mailto: demoura@csl.sri.com">Leonardo de Moura</a>,
+ <a href="mailto: stump@cse.wustl.edu">Aaron Stump</a>). The subject must be
+<i>smt-comp pre-registration</i>. The email must contain the system
+name, authors and their affiliations. It is not
+necessary to submit the system binaries or source code. <strong>Deadline: 15th of May</strong>.
+</li>
+
+<li> <strong>System Submission</strong>: submit an email to the organizers
+(<a href="mailto: barrett@cs.nyu.edu">Clark Barrett</a>,
+ <a href="mailto: demoura@csl.sri.com">Leonardo de Moura</a>,
+ <a href="mailto: stump@cse.wustl.edu">Aaron Stump</a>).
+The subject must be <i>smt-comp system submission</i>.
+The email must contain a tarball with the system (sources or
+  Linux executable). The tarball must include a README on compilation (if
+  necessary) and installation; as well as a 1-2 page system description as
+  explained in the <a href="entrants.shtml">rules</a> relating to Entrants. <strong>Deadline: 1st of July</strong>.
+</li>
+
+</ul>
+
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

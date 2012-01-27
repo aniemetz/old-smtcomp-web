@@ -1,0 +1,11 @@
+<!--#set var="title" value="Tools" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+
+<li> <a href="scrambler.shtml">Benchmark scrambler</a></li>
+<li> <a href="bench_selection.shtml">Benchmark selection</a></li>
+
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

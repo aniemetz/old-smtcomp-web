@@ -1,0 +1,45 @@
+<!--#set var="title" value="Entrants" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>An entrant to SMT-COMP is an SMT solver submitted in either source
+code or binary format to the organizers.  Binary format submissions
+must be compatible with the competition hardware and operating system.
+Due to limitations on computational resource, the organizers reserve
+the right not to accept more than one version (defined as sharing 50%
+or more of its source code) of the same solver.  The organizers
+reserve the right to submit their own systems, or other systems of
+interest, to the competition.  For solvers submitted in source code
+form, the organizers will make reasonable efforts to ensure that the
+source code is not viewed by anyone other than the Competition Panel
+(see <a href="judging.shtml">Judging</a>).  Submitters of an SMT-COMP
+entrant are encouraged to be physically present at SMT-COMP, but are
+not required to be so to participate or win.
+</p>
+
+<p>
+Each SMT-COMP entrant must include a README file explaining how to
+compile and install the solver.  Solvers must compile using publicly
+available compilers on the machines to be used for the competition.
+The competiton is going to use Linux machines (<a href="machines.shtml">specifications</a>).
+Installation and execution of solvers must not require root access (so
+that the organizers do not need to request such from the conference
+site).  The organizers will make reasonable efforts to install each
+system, including communication with the submitters of the system in
+case of difficulties.  Nevertheless, the organizers reserve the right
+to reject an entrant if its compilation or installation process proves
+overly difficult.
+</p>
+
+<p>
+Finally, an entrant to SMT-COMP must include a short (1-2 pages) description of
+the system. This should include a list of all authors of the system and their
+present institutional affiliations. It should list the Problem Divisions in
+which the entrant wishes to compete. The programming language(s) and an
+overview of the software architecture of the system should also be included.
+We also encourage system descriptions to include any crucial algorithms or
+data structures that are not standardly used in such systems as well as a
+prediction as to the likely performance of the system in SMT-COMP. System
+descriptions will be posted on the SMT-COMP website.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,21 @@
+<!--#set var="title" value="Results" -->
+<!--#set var="competitors" value="CVC SVC yices" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p><b>The competition has finished.</b></p>
+<p> <a href="answers.shtml">Answers</a> for the benchmarks used in
+the competition.</p>
+
+<ul>
+<li> <a href="results-QF_UF.shtml">QF_UF</a>  </li>
+<li> <a href="results-QF_RDL.shtml">QF_RDL</a>  </li>
+<li> <a href="results-QF_IDL.shtml">QF_IDL</a>  </li>
+<li> <a href="results-QF_UFIDL.shtml">QF_UFIDL</a>  </li>
+<li> <a href="results-QF_LRA.shtml">QF_LRA </a>  </li>
+<li> <a href="results-QF_LIA.shtml">QF_LIA</a>  </li>
+<li> <a href="results-QF_AUFLIA.shtml">QF_AUFLIA</a> </li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
+
+

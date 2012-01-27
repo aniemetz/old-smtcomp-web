@@ -1,0 +1,23 @@
+<!--#set var="title" value="Benchmarks" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p> <a href="benchmarks_june_1st.shtml">Link</a> to the previous version of the benchmark library.</p>
+
+<ul>
+<li> AUFLIRA: <a href="smtlib-2006-3/AUFLIRA.tar.gz">tarball</a> </li>
+<li> AUFLIA: <a href="smtlib-2006-3/AUFLIA.tar.gz">tarball</a> </li>
+<li> QF_AUFLIA: <a href="smtlib-2006-3/QF_AUFLIA.tar.gz">tarball</a> </li>
+<li> QF_IDL: <a href="smtlib-2006-3/QF_IDL.tar.gz">tarball</a> </li>
+<li> QF_LIA: <a href="smtlib-2006-3/QF_LIA.tar.gz">tarball</a> </li>
+<li> QF_LRA: <a href="smtlib-2006-3/QF_LRA.tar.gz">tarball</a> </li>
+<li> QF_RDL: <a href="smtlib-2006-3/QF_RDL.tar.gz">tarball</a> </li>
+<li> QF_UF: <a href="smtlib-2006-3/QF_UF.tar.gz">tarball</a> </li>
+<li> QF_UFBV32: <a href="smtlib-2006-3/QF_UFBV32.tar.gz">tarball</a> </li>
+<li> QF_UFIDL: <a href="smtlib-2006-3/QF_UFIDL.tar.gz">tarball</a> </li>
+<li> QF_UFLIA: <a href="smtlib-2006-3/QF_UFLIA.tar.gz">tarball</a> </li>
+</ul>
+
+<p><a href="selected-benchmarks.shtml">List of selected benchmarks</a> used in SMT-COMP'06.</p>
+
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

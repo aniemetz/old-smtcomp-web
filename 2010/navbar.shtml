@@ -1,0 +1,29 @@
+
+<table class="centered-small">
+  <tr>
+    <th> <a href="<!--#echo var="base" -->index.shtml">Home</a> </th>
+    <th> &bull; </th>
+    <th> <a href="<!--#echo var="base" -->introduction.shtml">Intro</a> </th>
+    <th> &bull; </th>
+    <th> <a href="<!--#echo var="base" -->rules.shtml">Rules &amp; Submission</a> </th>
+    <th> &bull; </th>
+    <th> <a href="http://www.smtexec.org/exec/competitors2010.php">Participants</a> </th>
+    <th> &bull; </th>
+    <!--
+    <th> <a href="http://www.smtexec.org/exec/?jobs=311">Results</a> </th>
+    <th> &bull; </th>
+    -->
+    <th> <a href="<!--#echo var="base" -->tools.shtml">Tools</a> </th>
+    <th> &bull; </th>
+    <th> <a href="<!--#echo var="base" -->specs.shtml">Specs</a> </th>
+    <th> &bull; </th>
+    <th> <a href="<!--#echo var="base" -->travel.shtml">Travel Grants</a> </th>
+    <th> &bull; </th>
+    <th> <a href="<!--#echo var="base" -->acknowledgments.shtml">Thanks</a></th>
+    <th> &bull; </th>
+    <th> <a href="http://goedel.cs.uiowa.edu/smtlib/">SMT-LIB</a> </th>
+    <th> &bull; </th>
+    <th> <a href="<!--#echo var="base" -->previous.shtml">Previous</a> </th>
+  </tr>
+</table>
+

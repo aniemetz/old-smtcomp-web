@@ -1,0 +1,32 @@
+<!--#set var="title" value="SMT-COMP'07" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The Satisfiability Modulo Theories Competition (SMT-COMP) is a satellite
+event of <a href="http://www.cav2007.org/">CAV'07</a>
+(July&nbsp;3&nbsp;-&nbsp;7, 2007, Berlin, Germany).
+</p>
+
+<ul>
+<li> <a href="introduction.shtml">Introduction</a> </li>
+<li> <a href="rules.shtml">Rules and Submission</a> </li>
+<li> <a href="tools.shtml">Tools</a> </li>
+<li> <a href="specs.shtml">Machine Specifications</a></li>
+<li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a></li>
+<li> <strong><a href="participants.shtml">Participants</a></strong></li>
+<li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>)</li>
+<li> <strong><a href="http://www.smtexec.org/exec/?jobs=20">Results</a></strong></li>
+<li> <strong><a href="docs.shtml">Papers</a></strong></li>
+<li> <a href="travel.shtml">Travel Grants</a></li>
+<li> <a href="acknowledgments.shtml">Acknowledgments</a></li>
+<li> <a href="http://combination.cs.uiowa.edu/smtlib/">SMT-LIB</a> </li>
+<li> <a href="previous.shtml">Previous SMT-COMPs</a></li>
+</ul>
+
+<p>
+A mailing list for announcements and discussion about the competition
+is <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">here</a>
+(hosted by NYU&nbsp;-- the old list hosted by SRI is no longer used).
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,55 @@
+<!--#set var="title" value="Benchmark Selection"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<h3>Benchmark Eligibility</h3>
+
+<p>
+First, benchmarks that are of <tt>unknown</tt> status are ineligible.
+</p>
+
+<p>
+Benchmarks that are &ldquo;too easy&rdquo; are similarly ineligible.  &ldquo;Too easy&rdquo;
+is understood to mean that all of last year's solvers can solve the benchmark correctly
+in 30 seconds or less.  However, if removing such benchmarks leaves a division with fewer
+than 300 eligible (non-check) benchmarks, then the easiest benchmarks are removed until
+300 non-check benchmarks remain.
+</p>
+
+<h3>Selection Algorithm</h3>
+
+<p>For each division, the <tt>check</tt> benchmarks are always included. In addition, the selection script will randomly select 200 benchmarks from each division with the following distribution (when possible): 170 <tt>industrial</tt>, 20 <tt>crafted</tt>, and 10 <tt>random</tt>.
+In each category, the script selects (when possible) 25% <tt>easy-sat</tt>, 25% <tt>easy-unsat</tt>, 25% <tt>hard-sat</tt>, and 25% <tt>hard-unsat</tt>. 
+A benchmark is <strong>easy</strong> if it has difficulty 0, 1, or 2. 
+A benchmark is <strong>hard</strong> if it has difficulty 3, 4, or 5. 
+</p>
+
+<p>
+If there aren't enough <tt>random</tt> and <tt>crafted</tt>, then 
+the slack is &ldquo;inherited&rdquo; by the <tt>industrial</tt> category. 
+It there aren't enough <tt>industrial</tt>, then the slack 
+is &ldquo;inherited&rdquo; by the <tt>crafted</tt> category.
+</p>
+
+<p>
+In QF_UFLRA there are only <tt>random</tt> benchmarks; in this case <tt>random</tt>
+benchmarks are allocated all 200 slots.
+</p>
+
+<p>
+More detail on this procedure is included in a comment at the top of the
+source file.
+</p>
+
+<h3>Tool Download</h3>
+
+<ul>
+<li> <strong>select_benchmarks</strong>: given an input file of benchmarks, selects benchmarks according to the rules; statistics on stderr, benchmarks on stdout.  Some changes may be made to this program before it is used officially for the competition benchmark selection; it is intended that these changes be limited to bug fixes, removal of obsolete debugging code, and documentation cleanups.
+<a href="select_benchmarks.c">Source</a>. </li>
+<li> <strong>smtcomp2008-benchs.txt</strong>: these are the eligible 2008 benchmarks for inclusion.  This file lists SMT-COMP'08 benchmarks and their metadata; the file format is described in the C source above.
+<a href="smtcomp2008-benchs.txt">Download</a>. </li>
+<li> <strong>smtcomp2008-allbenchs.txt</strong>: this is the total list of 2008 benchmarks, including ineligible benchmarks.
+<a href="smtcomp2008-allbenchs.txt">Download</a>. </li>
+</ul>
+
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

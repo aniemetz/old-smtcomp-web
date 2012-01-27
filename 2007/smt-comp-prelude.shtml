@@ -1,0 +1,21 @@
+<!--#if expr="$base = ''" -->
+<!--#set var="base" value="" -->
+<!--#endif -->
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta name="author" content="Aaron Stump, Morgan Deters" />
+<meta name="description" content="SMT-COMP: Satisfiability Modulo Theories Competition" />
+<meta name="keywords" content="satisfiability, decision procedures, first-order logic with equality, separation logic, difference logic, EUF, solvers" />
+<link rel="stylesheet" href="smt-style.css" type="text/css" />
+<title><!--#echo var="title" --></title>
+</head>
+
+<body>
+
+<!--#include file="navbar.shtml" -->
+
+<!-- <img class="rfloat" src="<!--#echo var="base" -->images/sal3.jpg" alt="SAL" /> -->
+<h1><!--#echo var="title" --></h1>

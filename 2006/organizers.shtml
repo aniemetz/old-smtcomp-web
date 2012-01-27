@@ -1,0 +1,15 @@
+<!--#set var="title" value="Organizers" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+
+<ul>
+  <li> <a href="mailto: barrett@cs.nyu.edu"> Clark Barrett </a> : Computer Science, New York University </li>
+
+  <li> <a href="mailto: demoura@csl.sri.com"> Leonardo de Moura </a> : Computer Science Laboratory, SRI International </li>
+
+  <li> <a href="mailto: stump@cse.wustl.edu"> Aaron Stump </a> : Computer Science Engineering, Washington University in St. Louis </li>
+
+</ul>
+
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

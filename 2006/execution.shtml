@@ -1,0 +1,59 @@
+<!--#set var="title" value="Execution of Solvers" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+Each SMT-COMP entrant, when executed, must read a single input formula
+presented on its standard input channel.  All formulas will be given
+in the concrete syntax of the 
+<a href="http://goedel.cs.uiowa.edu/smtlib/papers.html">SMT-LIB format</a>,
+version 1.1.  By requiring all entrants to parse <a href="http://goedel.cs.uiowa.edu/smtlib/papers.html">SMT-LIB
+format</a>, we will advance the field by encouraging standardization,
+which in turn facilitates comparison and interchangeability of
+systems.  Solvers will be given formulas just from the 
+<a href="divisions.shtml">Problem Divisions</a> 
+indicated in their system
+descriptions.  Solvers must run without any command-line arguments or
+special environment variable settings.
+</p>
+
+<p>
+For its given input formula, each SMT-COMP entrant is expected to
+attempt to report on its standard output channel essentially whether
+the formula is satisfiable (<b>"sat"</b>, without the quotation
+marks) or unsatisfiable (<b>"unsat"</b>).  In recognition that
+some entrants may not be able to handle all formulas even within a
+single Problem Division, an entrant may report <b>"unknown"</b> to
+indicate that it cannot determine satisfiability of the formula.
+</p>
+
+<p>
+Each SMT-COMP solver will be executed on an unloaded competition
+machine for each given formula, up to a fixed time limit.  This time
+limit will be determined by the organizers when the number of machines
+and kinds and numbers of benchmark formulas are known.  Depending on
+resources, we expect this number to be at least 5 minutes.  Solvers that
+take more CPU time than the time limit or more wall clock time than
+this time limit plus 30 seconds will first be sent the signal SIGXCPU
+and then, 3 seconds later, killed.  This protocol is chosen to allow
+solvers a last chance to emit some output before being terminated.
+Solvers are allowed to spawn other processes, but these will not be
+sent SIGXCPU.  They will be killed at approximately the same time as
+the first started process, in some unspecified order.  The time spent
+by a solver is considered to be the CPU time until it terminates
+(either by its own choice or by being killed).
+</p>
+
+<p>
+Solvers will be started in a clean directory without any other files
+or subdirectories.  Solvers are allowed to create and write to files
+and directories during the course of an execution, but they are not
+allowed to read such files or directories back during later
+executions.  Any files written should be put in the directory in which
+the tool is started, or in a subdirectory.  Solvers are not
+responsible for cleaning up files or subdirectories they generate.
+The restriction on not reading in files or directories created in
+previous runs will not be rigorously enforced, but entrants found to
+have willfully violated it will be considered to have cheated.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

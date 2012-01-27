@@ -1,0 +1,22 @@
+<!--#set var="title" value="Benchmarks" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p><strong>A new benchmark set is available. It includes all benchmarks used in the competition.</strong></p>
+
+<p> <a href="smtlib.tar.gz">Download</a> the complete benchmark suite (<a href="smtlib_old.tar.gz">previous benchmark suite</a>).</p>
+
+<p> Browse benchmarks online </p>
+<ul>
+<li><a href="QF_UF.shtml">Quantifier free with uninterpreted sort, function and predicate symbols</a></li>
+<li><a href="QF_RDL.shtml">Quantifier free real difference logic</a></li>
+<li><a href="QF_IDL.shtml">Quantifier free integer difference logic</a></li>
+<li><a href="QF_LRA.shtml">Quantifier free linear real arithmetic</a></li>
+<li><a href="QF_LIA.shtml">Quantifier free linear integer arithmetic</a></li>
+<li><a href="QF_UFIDL.shtml">Quantifier free integer difference logic and uninterpreted functions</a></li>
+<li><a href="QF_AUFLIA.shtml">Quantifier free linear integer arithmetic, arrays, and uninterpreted functions</a></li>
+</ul>
+
+<p> <a href="answers.shtml">Answers</a> for the benchmarks used in
+the competition.</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

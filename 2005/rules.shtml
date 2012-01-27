@@ -1,0 +1,21 @@
+<!--#set var="title" value="Rules" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+This Section presents the rules and competition format for SMT-COMP.
+</p>
+
+<ul>
+
+<li> <a href="entrants.shtml">Entrants</a> </li>
+<li> <a href="machines.shtml">Machine Specifications</a> </li>
+<li> <a href="format.shtml">Input Format</a></li>
+<li> <a href="execution.shtml">Execution of Solvers</a> </li>
+<li> <a href="judging.shtml">Judging and Scoring</a> </li>
+<li> <a href="divisions.shtml">Problem Divisions</a> </li>
+<li> <a href="proof-models.shtml">Proofs and Models</a> </li>
+
+</ul>
+
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

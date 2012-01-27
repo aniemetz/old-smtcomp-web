@@ -1,0 +1,21 @@
+<!--#set var="title" value="Benchmarks"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+For the 2009 competition, QF_UF eq_diamond benchmarks are ineligible
+for competition, as are (of course) any unknown-status benchmarks, as
+are bitvector benchmarks that depend on the semantics of divide-by-zero
+(<a href="tcc_sat.txt">a list of such bitvector benchmarks is here</a>,
+the satisifiability of all other bitvector benchmarks in SMT-LIB with
+division operators at the time of writing does not depend on the
+interpretation of divide-by-zero).  This list was determined by CVC3's
+<i>type correctness conditions</i>, which were then checked by several
+independent SMT solvers.
+</p>
+
+<p>
+<a href="smtcomp2009.scrambled.tgz">You can download</a> just the
+set of benchmarks used for SMT-COMP 2009, in scrambled form.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

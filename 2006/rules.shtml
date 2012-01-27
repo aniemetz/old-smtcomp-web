@@ -1,0 +1,6 @@
+<!--#set var="title" value="Rules" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p><a href="rules.pdf">Download the rules.</a></p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

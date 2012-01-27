@@ -1,0 +1,33 @@
+<!--#set var="title" value="Benchmarks"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The 2010 SMT competition is the first to use benchmarks conforming to
+the <a href="http://smtlib.org/">SMT-LIB 2.0 specification</a>.
+</p>
+
+<p>
+<a href="http://smtexec.org/exec/smtlib2_benchmarks.php">SMT-LIB 2.0
+benchmarks are available here.</a>
+</p>
+
+<p>
+For the 2010 competition, QF_UF eq_diamond benchmarks are ineligible
+for competition, as are (of course) any unknown-status benchmarks, as
+are bitvector benchmarks that depend on the semantics of divide-by-zero
+(<a href="tcc_sat.txt">a list of such bitvector benchmarks is here</a>,
+the satisifiability of all other bitvector benchmarks in SMT-LIB with
+division operators at the time of writing does not depend on the
+interpretation of divide-by-zero).  This list was determined by CVC3's
+<i>type correctness conditions</i>, which were then checked by several
+independent SMT solvers.
+</p>
+
+<!--
+<p>
+<a href="smtcomp2010.scrambled.tgz">You can download</a> just the
+set of benchmarks used for SMT-COMP 2010, in scrambled form.
+</p>
+-->
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,9 @@
+<!--#set var="title" value="Participants"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+Information about SMT-COMP 2010 participants will be added to this page
+at the competition deadline.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

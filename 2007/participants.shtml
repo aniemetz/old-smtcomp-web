@@ -1,0 +1,92 @@
+<!--#set var="title" value="Participants" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<ul>
+<li>ArgoLib v3.5 [&nbsp;<a href="http://www.matf.bg.ac.yu/~janicic/argo/">website</a>&nbsp;|&nbsp;<a href="descriptions/argo-lib-smtcomp07.pdf">description</a>&nbsp;|&nbsp;<a href="solvers/ArgoLib-v3.5.zip">download</a>&nbsp;]<br/>
+Divisions: QF_RDL, QF_LRA</li>
+
+<li>Barcelogic 1.2 [&nbsp;<a href="http://www.lsi.upc.edu/~oliveras/bclt-main.html">website</a>&nbsp;|&nbsp;<a href="descriptions/barcelogic.pdf">description</a>&nbsp;|&nbsp;<a href="solvers/barcelogic.tar.gz">download</a>&nbsp;]<br/>
+Divisions: QF_UF, QF_RDL, QF_IDL, QF_UFIDL, QF_UFLIA, QF_LRA, QF_LIA</li>
+
+<li>CVC3 1.2 [&nbsp;<a href="http://www.cs.nyu.edu/acsys/cvc3">website</a>&nbsp;|&nbsp;<a href="descriptions/cvc3.ps">description</a>&nbsp;|&nbsp;<a href="solvers/cvc3-1.2.tar.gz">download</a>&nbsp;]<br/>
+Divisions: QF_UF, QF_UFLIA, QF_LRA, QF_LIA, QF_AUFLIA, AUFLIA, AUFLIRA</li>
+
+<li>Fx7 [&nbsp;<a href="http://nemerle.org/~malekith/smt/en.html">website</a>&nbsp;|&nbsp;<a href="descriptions/fx7.pdf">description</a>&nbsp;|&nbsp;<a href="solvers/fx7-smtcomp.tar.bz2">download</a>&nbsp;]<br/>
+Divisions: AUFLIA</li>
+
+<li>MathSAT 4.0 [&nbsp;<a href="http://mathsat.itc.it/">website</a>&nbsp;|&nbsp;<a href="descriptions/mathsat_system_description.pdf">description</a>&nbsp;|&nbsp;<a href="solvers/mathsat-4.0.tar.gz">download</a>&nbsp;]<br/>
+Divisions: QF_UF, QF_RDL, QF_IDL, QF_UFIDL, QF_UFLIA, QF_LRA, QF_LIA</li>
+
+<li>Sateen [&nbsp;<a href="descriptions/sateen.pdf">description</a>&nbsp;|&nbsp;<a href="solvers/Sateen.tar.gz">download</a>&nbsp;]<br/>
+Divisions: QF_IDL</li>
+
+<li>Spear v1.9 [&nbsp;<a href="http://www.cs.ubc.ca/~babic/index_spear.htm">website</a>&nbsp;|&nbsp;<a href="descriptions/spear.pdf">description</a>&nbsp;|&nbsp;<a href="solvers/spear-smt-competition.tar.bz2">download</a>&nbsp;]<br/>
+Divisions: QF_BV</li>
+
+<li>Yices 1.0.10 [&nbsp;<a href="http://yices.csl.sri.com/">website</a>&nbsp;|&nbsp;<a href="descriptions/yices-07.pdf">description</a>&nbsp;|&nbsp;<a href="solvers/yices-1.0.10-smtcomp.tar.gz">download</a>&nbsp;]<br/>
+Divisions: all</li>
+
+<li>Z3 0.1 [&nbsp;<a href="http://research.microsoft.com/projects/z3">website</a>&nbsp;|&nbsp;<a href="descriptions/z3.pdf">description</a>&nbsp;|&nbsp;<a href="solvers/z3.tar.gz">download</a>&nbsp;]<br/>
+Divisions: all</li>
+</ul>
+
+<h2 style="font-style:italic;"> Hors Concours </h2>
+
+<ul>
+<li>CVC3 1.2 (patched) [&nbsp;<a href="http://www.cs.nyu.edu/acsys/cvc3">website</a>&nbsp;|&nbsp;<a href="descriptions/cvc3.ps">description</a>&nbsp;|&nbsp;<a href="solvers/cvc3-1.2-patched.tar.gz">download</a>&nbsp;]<br/>
+Divisions: QF_LRA</li>
+
+<li>Spear v1.9 (alternate command line) [&nbsp;<a href="http://www.cs.ubc.ca/~babic/index_spear.htm">website</a>&nbsp;|&nbsp;<a href="descriptions/spear.pdf">description</a>&nbsp;|&nbsp;<a href="solvers/spear-sw-v.tar.bz2">download</a>&nbsp;]<br/>
+Divisions: QF_BV</li>
+
+<li>Z3 0.1 (fixed BV) [&nbsp;<a href="http://research.microsoft.com/projects/z3">website</a>&nbsp;|&nbsp;<a href="descriptions/z3.pdf">description</a>&nbsp;|&nbsp;<a href="solvers/z3-fixed-bv.tar.gz">download</a>&nbsp;]<br/>
+Divisions: QF_BV, QF_AUFBV</li>
+</ul>
+
+<h2> Previous Winners </h2>
+<p> <a href="../2006/results.shtml">Division winners from 2006</a> automatically enter <i>hors concours</i>.</p>
+
+<ul>
+<li><a href="../2006/results-QF_UF.shtml">QF_UF</a>: <a href="../2006/descriptions/yices-smtcomp06.pdf">Yices 1.0</a></li>
+<li><a href="../2006/results-QF_RDL.shtml">QF_RDL</a>: <a href="../2006/descriptions/yices-smtcomp06.pdf">Yices 1.0</a></li>
+<li><a href="../2006/results-QF_IDL.shtml">QF_IDL</a>: <a href="../2006/descriptions/yices-smtcomp06.pdf">Yices 1.0</a></li>
+<li><a href="../2006/results-QF_UFIDL.shtml">QF_UFIDL</a>: <a href="../2006/descriptions/yices-smtcomp06.pdf">Yices 1.0</a></li>
+<li><a href="../2006/results-QF_UFLIA.shtml">QF_UFLIA</a>: <a href="../2006/descriptions/yices-smtcomp06.pdf">Yices 1.0</a></li>
+<li><a href="../2006/results-QF_LRA.shtml">QF_LRA</a>: <a href="../2006/descriptions/yices-smtcomp06.pdf">Yices 1.0</a></li>
+<li><a href="../2006/results-QF_LIA.shtml">QF_LIA</a>: <a href="../2006/descriptions/yices-smtcomp06.pdf">Yices 1.0</a></li>
+<li><a href="../2006/results-QF_AUFLIA.shtml">QF_AUFLIA</a>: <a href="../2006/descriptions/yices-smtcomp06.pdf">Yices 1.0</a></li>
+<li><a href="../2006/results-AUFLIA.shtml">AUFLIA</a>: <a href="../2006/descriptions/yices-smtcomp06.pdf">Yices 1.0</a></li>
+<li><a href="../2006/results-AUFLIRA.shtml">AUFLIRA</a>: <a href="../2006/descriptions/CVC3-description.pdf">CVC3</a>, <a href="../2006/descriptions/yices-smtcomp06.pdf">Yices 1.0</a> (tie score &amp; time)</li>
+</ul>
+
+<p>
+These previous winners are downloadable from the
+<a href="http://www.smtcomp.org/2006/">SMT-COMP'06 site</a>.
+</p>
+
+<h2>Random Seed</h2>
+
+<p>
+In accordance with <a href="rules.pdf">the rules</a>,
+the <a href="bench_selection.shtml">benchmark selection</a> program
+seeds a PRNG with &ldquo;the sum, modulo 2<sup>30</sup>, of the numbers
+provided...by all SMT-COMP entrants other than the organizers.&rdquo;
+(Numbers provided by <i>hors concours</i> entries are not used.)
+</p>
+
+<pre>
+ArgoLib v3.5       63432546    
+Barcelogic 1.2      2309847  (competition organizer submission)
+CVC3 1.2            4261980  (competition organizer submission)
+Fx7                      42    
+MathSAT 4.0        54507995    
+Sateen                21223    
+Spear v1.9       1548658345    
+Yices 1.0.10        7952367    
+Z3 0.1                    1    
+===========================
+total            1674572519  (ignoring organizer submissions)
+<span>mod 2<sup>30</sup></span>           600830695  (random seed for competition)
+</pre>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
