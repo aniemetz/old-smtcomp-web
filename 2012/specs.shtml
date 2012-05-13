@@ -1,7 +1,6 @@
 <!--#set var="title" value="Specifications"
 --><!--#include virtual="smt-comp-prelude.shtml" -->
 
-<h2>THIS PAGE IS NOT YET UPDATED FOR 2012</h2>
 
 <p>
 The competition will run on a cluster of 11 machines at
@@ -39,5 +38,12 @@ SMT-COMP through the <a href="http://www.smtexec.org/">SMT-Exec service</a>,
 it is checked for compatibility with the competition infrastructure on simple
 benchmarks supported by your solver.
 </b></p>
+
+<p>
+Note that the organizers had expected the Star-Exec service to be ready for 
+the 2012 competition; the Star-Exec service would have provided considerably
+more resources. However, development delays have required us (as of mid-May 
+2012) to plan to use SMT-Exec again this year.
+</p>
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
