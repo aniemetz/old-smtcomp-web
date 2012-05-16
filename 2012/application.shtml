@@ -6,10 +6,10 @@ These benchmarks and tools are subject to change until their respective freeze
 dates, as documented in the <a href="rules.shtml">SMT-COMP rules</a>.
 </p>
 
-<h2>This page lists the 2011 benchmarks; 2012 benchmarks will be listed when they are received and processed.</h2>
 
 <h2>Benchmarks</h2>
 <ul>
+  <LI><a href="http://www.smtexec.org/2012_benchmarks/incremental">2012 additions</a>
   <li><a href="http://www.smtcomp.org/2011/application/blast_simplify_calls_QF_UFLIA.tar">QF_UFLIA benchmarks, from Blast (128MB)</a><br/>
  These are just logs of the calls to the Simplify theorem prover, used
  by Blast when trying to model check some C programs (the name of the
@@ -52,6 +52,11 @@ description of the benchmarks can be found in the following paper:<br/>
 Alberti, A. Armando, and S. Ranise.
  <a href="http://st.fbk.eu/sites/st.fbk.eu/files/asiaccs174-alberti.pdf">http://st.fbk.eu/sites/st.fbk.eu/files/asiaccs174-alberti.pdf</a><br/>
       <a href="http://www.smtcomp.org/2011/application/asasp_20110626_results.tgz">Results (updated 26 June 2011)</a></li>
+</ul>
+
+<h2>Unsat core benchmarks</h2>
+<ul>
+<li><a href="http://www.smtexec.org/2012_benchmarks/unsat_core">2012 unsat core benchmarks</a>
 </ul>
 
 <h2>Format for results files</h2>
