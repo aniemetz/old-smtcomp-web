@@ -56,7 +56,11 @@ Alberti, A. Armando, and S. Ranise.
 
 <h2>Unsat core benchmarks</h2>
 <ul>
-<li><a href="http://www.smtexec.org/2012_benchmarks/unsat_core">2012 unsat core benchmarks</a>
+<!-- li><a href="http://www.smtexec.org/2012_benchmarks/unsat_core">2012 unsat core benchmarks</a -->
+<li><a href="http://www.oprover.org/files/smtlib_uc_QF_LRA.tgz">QF_LRA unsat core benchmarks</a>
+<li><a href="http://www.oprover.org/files/smtlib_uc_QF_LIA.tgz">QF_LIA unsat core benchmarks</a>
+<li><a href="http://www.oprover.org/files/smtlib_uc_QF_IDL.tgz">QF_IDL unsat core benchmarks</a>
+<li><a href="http://www.oprover.org/files/smtlib_uc_QF_BV.tgz">QF_BV unsat core benchmarks</a>
 </ul>
 
 <h2>Format for results files</h2>
