@@ -4,8 +4,8 @@
 Tools specifically for the competition:
 <ul>
 
-<li> <a href="https://es.fbk.eu/people/griggio/smtcomp11/smtcomp11_scrambler.tar.gz">Benchmark scrambler</a></li>
-<li> <a href="https://es.fbk.eu/people/griggio/smtcomp11/smtcomp11_trace_executor.tar.gz">Trace executor</a> (for the application track only)
+<li> <a href="https://es.fbk.eu/people/griggio/smtcomp/smtcomp2012_scrambler.tar.gz">Benchmark scrambler</a></li>
+<li> <a href="https://es.fbk.eu/people/griggio/smtcomp/smtcomp2012_trace_executor.tar.gz">Trace executor</a> (for the application track only)
 <li> <a href="bench_selection.shtml">Benchmark selection</a></li>
 <li> <a href="TreeLimitedRun.c">TreeLimitedRun wrapper (borrowed from CASC and modified)</a></li>
 </ul>
