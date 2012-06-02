@@ -14,9 +14,10 @@ The SMT workshop will include a block of time to present the competitors and res
 <li> News
      <ul>
      <li>23 January: <a href="call12.txt">call for benchmarks and solvers</a>, and <a href="rules12.pdf">draft rules for comment</a> are made public
+     <li>2 June: revised rules posted; new benchmarks available; call for solvers restated
      </ul> </li>
 <li> <a href="rules.shtml">Rules &amp; Submission</a> </li>
-<li> <a href="application.shtml">Benchmarks and tools</a> </li>
+<li> <a href="application.shtml">Benchmarks</a> </li>
 <li> <a href="tools.shtml">Tools</a> </li>
 <li> <a href="specs.shtml">Machine Specifications</a></li>
 <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a></li>

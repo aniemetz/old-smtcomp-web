@@ -1,13 +1,15 @@
 <!--#set var="title" value="Benchmark Selection"
 --><!--#include virtual="smt-comp-prelude.shtml" -->
 
-<H2>THIS PAGE IS NOT YET UPDATED FOR 2012</H2>
 
 <p>
-The benchmark selector will likely be the same as the one used for 2010.
+The benchmark selector used for 2012 is a slight modification of the one used for 2011.
 </p>
 
 <h3>Benchmark Eligibility</h3>
+
+The rules for benchmark eligibility are summraized here, but stated more
+completely in the <a href="rules12.pdf">rules document</a>.
 
 <p>
 First, benchmarks that are of <tt>unknown</tt> status are ineligible.
@@ -63,12 +65,10 @@ source file.  A less algorithmic description can be found in the
 <ul>
 <li> <strong>select_benchmarks</strong>: given an input file of benchmarks, selects benchmarks according to the rules; statistics on stderr, benchmarks on stdout.  Some changes may be made to this program before it is used officially for the competition benchmark selection; it is intended that these changes be limited to bug fixes, removal of obsolete debugging code, and documentation cleanups.
 <a href="select_benchmarks_2011.c">Source</a>. </li>
-<li> <strong>smtcomp2011-benchs.txt</strong>: these are the eligible 2011 benchmarks for inclusion.  This file lists SMT-COMP 2011 benchmarks and their metadata; the file format is described in the C source above.
-<i>Not yet available.</i>
-<!--<a href="smtcomp2011-benchs.txt">Download</a>.--> </li>
-<li> <strong>smtcomp2011-allbenchs.txt</strong>: this is the total list of 2011 benchmarks, including ineligible benchmarks.
-<i>Not yet available.</i>
-<!--<a href="smtcomp2011-allbenchs.txt">Download</a>.--> </li>
+<li> <strong>Eligible benchmarks</strong>: these are the eligible 2012 benchmarks for inclusion.  This file lists SMT-COMP 2012 benchmarks and their metadata.
+<a href="smtcomp2012-eligible.txt.bz2">Download</a>. </li>
+<li> <strong>All benchmarks</strong>: this is the total list of 2012 benchmarks, including ineligible benchmarks.
+<a href="smtlib2012-benchs.txt.bz2">Download</a>.</li>
 </ul>
 
 

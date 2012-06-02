@@ -5,9 +5,14 @@ Tools specifically for the competition:
 <ul>
 
 <li> <a href="https://es.fbk.eu/people/griggio/smtcomp/smtcomp2012_scrambler.tar.gz">Benchmark scrambler</a></li>
+<li> <a href="generate_benchmark_selection_list.py">Benchmark selection tool</a>
+<li> <a href="get_selected_benchmarks_paths.py">Benchmark retrieval tool</a>
 <li> <a href="https://es.fbk.eu/people/griggio/smtcomp/smtcomp2012_trace_executor.tar.gz">Trace executor</a> (for the application track only)
 <li> <a href="bench_selection.shtml">Benchmark selection</a></li>
 <li> <a href="TreeLimitedRun.c">TreeLimitedRun wrapper (borrowed from CASC and modified)</a></li>
+<li> <a href="smtlib2012-benchs.txt.bz2">Information about the SMT-LIB benchmarks</a>
+<li> <a href="smtcomp2012-eligible.txt.bz2">Benchmarks eligible for the 2012 competition</a>
+<li> <a href="run_unsat_core_track.sh">Script to run the unsat core track</a>
 </ul>
 
 Independent tools:
