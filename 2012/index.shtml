@@ -15,6 +15,7 @@ The SMT workshop will include a block of time to present the competitors and res
      <ul>
      <li>23 January: <a href="call12.txt">call for benchmarks and solvers</a>, and <a href="rules12.pdf">draft rules for comment</a> are made public
      <li>2 June: revised rules posted; new benchmarks available; call for solvers restated
+	<li>23 June: Competition started - results online.
      </ul> </li>
 <li> <a href="rules.shtml">Rules &amp; Submission</a> </li>
 <li> <a href="application.shtml">Benchmarks</a> </li>
@@ -28,10 +29,14 @@ The SMT workshop will include a block of time to present the competitors and res
 -->
 
 <!--<li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)</li>-->
-<!--
-<li> Results [&nbsp;<a href="http://www.smtexec.org/exec/?jobs=856">main track</a>&nbsp;|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=859">application track</a>&nbsp;] </li>
+<li> The competition is in progress: Current status: 
+[&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1004">main track</a>&nbsp;
+|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1005">application track</a>&nbsp; 
+|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1006"><B>unsat core track</B></a>&nbsp; 
+|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1007"><B>exhibition tracks</B></a>&nbsp;] </li>
+<!-- <li> The results will be available here once the competition begins </li>
 -->
-<li> The results will be available here once the competition begins </li>
+
 
 <li> <a href="docs.shtml">Papers</a></li>
 <li> <a href="acknowledgments.shtml">Acknowledgments</a></li>
