@@ -3,21 +3,24 @@
 
 <p>
 The 2014 edition of the Satisfiability Modulo Theories Competition
-(SMT-COMP) is part of the <a href="http://vsl2014.at/pages/SMT-index.html">SMT 2014 workshop</a>,
+(SMT-COMP) (July 17-18, 2014) is part of the <a href="http://vsl2014.at/pages/SMT-index.html">SMT 2014 workshop</a>,
 associated with <a href="http://vsl2014.at/pages/SAT-index.html">SAT 2014</a> at the
 <a href="http://vsl2014.at//">Vienna Summer of Logic</a>
-(June&nbsp;30&nbsp;-&nbsp;July&nbsp;17-18, 2014, Vienna, AU).
+(July&nbsp;9-24, 2014, Vienna, AU).
 The SMT workshop will include a block of time to present the competitors and results of the SMTCOMP competition.
 </p>
 
 <ul>
 <li> <a href="introduction.shtml">Introduction</a> </li>
 <li> News
- </li>
-<li> <a href="rules.shtml">Rules &amp; Submission</a> </li>
-<li> <a href="application.shtml">Benchmarks</a> </li>
-<li> <a href="tools.shtml">Tools</a> </li>
-<li> <a href="specs.shtml">Machine Specifications</a></li>
+ <ul>
+ <li> Jan 21 : <a href="call14.txt">Call for comments</A> issued
+ </ul>
+</li>
+<li> <a href="rules.shtml">Rules &amp; Submission : in process</a> </li>
+<li> <a href="application.shtml">Benchmarks : in process</a> </li>
+<li> <a href="tools.shtml">Tools : being updated</a> </li>
+<li> <a href="specs.shtml">Machine Specifications : being updated</a></li>
 <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a></li>
 
 <!--
