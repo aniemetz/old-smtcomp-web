@@ -1,0 +1,59 @@
+<!--#set var="title" value="SMT-COMP 2014"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The 2014 edition of the Satisfiability Modulo Theories Competition
+(SMT-COMP) is part of the <a href="http://vsl2014.at/pages/SMT-index.html">SMT 2014 workshop</a>,
+associated with <a href="http://vsl2014.at/pages/SAT-index.html">SAT 2014</a> at the
+<a href="http://vsl2014.at//">Vienna Summer of Logic</a>
+(June&nbsp;30&nbsp;-&nbsp;July&nbsp;17-18, 2014, Vienna, AU).
+The SMT workshop will include a block of time to present the competitors and results of the SMTCOMP competition.
+</p>
+
+<ul>
+<li> <a href="introduction.shtml">Introduction</a> </li>
+<li> News
+ </li>
+<li> <a href="rules.shtml">Rules &amp; Submission</a> </li>
+<li> <a href="application.shtml">Benchmarks</a> </li>
+<li> <a href="tools.shtml">Tools</a> </li>
+<li> <a href="specs.shtml">Machine Specifications</a></li>
+<li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a></li>
+
+<!--
+<li> <a href="http://www.smtexec.org/exec/competitors2012.php">Participants</a></li>
+
+<li> <A href="participants.shtml">Participants</a></li>
+-->
+
+<!--
+<li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)</li>
+-->
+<!-- 
+<li> The competition is complete: Final status: 
+[&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1004"><B>main track</B></a>&nbsp;
+|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1005"><B>application track</B></a>&nbsp; 
+|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1006"><B>unsat core track</B></a>&nbsp; 
+|&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1007"><B>exhibition tracks</B></a>&nbsp;] </li>
+-->
+<li> The results will be available here once the competition begins </li>
+
+
+<!--
+<li> <a href="reports/SMTCOMP2012.pdf">Competition report</a> and <a href="reports">final system descriptions</a></li>
+-->
+
+<li> <a href="docs.shtml">Papers</a></li>
+<li> <a href="acknowledgments.shtml">Acknowledgments</a></li>
+<li> <a href="http://www.smtlib.org/">SMT-LIB</a> </li>
+<li> <a href="previous.shtml">Previous SMT-COMPs</a></li>
+</ul>
+
+<p>
+The organizers of SMT-COMP 2014 are
+David Cok,
+David Deharbe, and
+Tjark Weber.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
