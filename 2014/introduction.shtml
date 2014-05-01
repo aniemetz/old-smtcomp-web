@@ -64,7 +64,7 @@ have
 provided further evidence that such a competition can stimulate
 improvement in solver implementations: solvers entered in each competition
 have improved significantly over those in previous competitions.
-[In 2013, an <a href="http://www.smtcomp.org/2013">evaluation</a> was conducted, rather than a competition. ]
+[In 2013, an <a href="../2013">evaluation</a> was conducted, rather than a competition. ]
 </p>
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
