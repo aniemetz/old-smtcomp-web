@@ -137,7 +137,7 @@ The particular goals of SMT-COMP include the following\tjarkx{Reference?}:
 
 \subsection{Concerns prompting an evaluation}
 
-In 2013, the SMT Steering committee decided to take a collective breath and sponsor an evaluation of the current state of the art, without the pressure of a competition. In particular, the implementation teams found that preparing for a competition required considerable engineering work that detracted from other goals. On the one hand, the engineering work is necessary for users to use the tools as off-the-shelf applications. But holding the competition every year was causing some otherwise highly involved teams to withdraw. Thus there was a collective desire to pause the competition cycle for a year.
+In 2013, the SMT Steering Committee decided to take a collective breath and sponsor an evaluation of the current state of the art, without the pressure of a competition. In particular, the implementation teams found that preparing for a competition required considerable engineering work that detracted from other goals. On the one hand, the engineering work is necessary for users to use the tools as off-the-shelf applications. But holding the competition every year was causing some otherwise highly involved teams to withdraw. Thus there was a collective desire to pause the competition cycle for a year.
 
 Second, there was a desire to evaluate the state of the SMT community and the competition. The competition had become focused on details of performance on a particular set of benchmarks for particular logics and\tjarkx{This contradicts our main conclusion~(1).  Suggestion: insert ``there was a feeling that''} its results had become somewhat predictable. Perhaps other goals need to be reemphasized. For example, more benchmarks from applications are needed, not just crafted challenge problems. In addition, an evaluation of progress of the SMT community was desired, not just winning narrowly focused competitions. Perhaps a variety of metrics would be useful.
  
@@ -172,37 +172,38 @@ the following topics:
 
 \end{itemize}
 
-\section{Evaluation tools}
-\subsection{SMTLIB benchmarks}
 
-One goal of the SMT project since its inception has been collecting benchmarks by which to evaluate SMT solvers and to represent challenge problems in the field. The growth in the number of benchmarks available is shown in the graphics of Fig.~\ref{Fig:history}. {\em All} of the non-incremental benchmarks currently present in Star-Exec (95491 benchmarks) were used for the evaluation. Note that in any previous year, only some of these benchmarks were available. Furthermore, the competition each year used a random selection of benchmarks (guided by a difficulty distribution). The fact that the set of benchmarks used in competition was different each year muddied any year-to-year comparison of results. By using all of the benchmarks in the evaluation, we intend that any comparative assessments across years or solvers be more accurate. The various kinds of benchmarks and their distribution across logics are discussed below in section \ref{Evaluations}.
+\section{Evaluation tools}
+
+\subsection{SMT-LIB benchmarks}
+
+One goal of the SMT project since its inception has been collecting benchmarks by which to evaluate SMT solvers and to represent challenge problems in the field. The growth in the number of benchmarks available is shown in the graphics of Fig.~\ref{Fig:history}. {\em All} of the non-incremental\tjarkx{Aren't all of the SMT benchmarks currently present in Star-Exec non-incremental?} benchmarks currently present in Star-Exec (95\,491\tjarkx{I believe we had 95492 benchmarks.  (I remember I discovered one benchmark that was in SMT-LIB but missing from Star-Exec, and Aaron or I added this before the evaluation started.)} benchmarks) were used for the evaluation. Note that in any previous year, only some of these benchmarks were available.\tjarkx{This is a bit misleading.  Our set of benchmarks does not include some benchmarks used for SMT-COMP 2012 that were not incorporated into SMT-LIB (yet).  And according to Fig.~\ref{Fig:history}, there were $> 100,000$ benchmarks already in 2011, while we used less than $100,000$.  How to explain this difference?} Furthermore, the competition each year used a random selection of benchmarks (guided by a difficulty distribution). The fact that the set of benchmarks used in competition was different each year muddied any year-to-year comparison of results. By using all of the benchmarks in the evaluation, we intend that any comparative assessments across years or solvers be more accurate. The various kinds of benchmarks and their distribution across logics are discussed below in Section~\ref{Evaluations}.
 
 \subsection{Solvers}
 
-The SMT competitions required that participating solvers be publicly available (Linux) applications and that they be available for any future experimenter to use on new experiments. Thus all historical solvers are still available. However, in 2010, the competition adopted the then new benchmark format, SMTLIBv2 \cite{BarST-SMT-10}. Thus solvers prior to 2010 do not run on the current benchmark set. The participating solvers are shown in Fig.~\ref{Fig:solvers}.
+The SMT competitions required that participating solvers be publicly available Linux applications, and that they be available for any future experimenter to use on new experiments. Thus all historical solvers are still available. However, in 2010, the competition adopted the then new benchmark format, SMT-LIB~v2~\cite{BarST-SMT-10}. Thus solvers prior to 2010 do not run on the current benchmark set. The participating solvers are shown in Fig.~\ref{Fig:solvers}.
 
 \begin{figure}
 \centering
 \includegraphics{Solvers}
-\caption{Solvers used in each year of SMT-COMP and SMT-EVAL. Solvers prior to 2010 (with green backgrounds) do not support SMTLIBv2 and were not used for SMT-EVAL; boxes with blue backgrounds identify solvers that are new for the evaluation; all those since 2010 (orange or blue backgrounds) were used for the evaluation.}
+\caption{Solvers used in each year of SMT-COMP and SMT-EVAL. Solvers prior to 2010 (with green backgrounds) do not support SMT-LIB~v2 and were not used for SMT-EVAL; boxes with blue backgrounds identify solvers that are new for the evaluation; all those since 2010 (orange or blue backgrounds) were used for the evaluation.\tjark{I don't understand the order of solvers.  Also, I don't understand the total number of solvers for 2005 and 2006.}}}
 \label{Fig:solvers}
 \end{figure}
 
-SMT-EVAL used all historical solvers since 2010 (32 total), added 9 versions of previous solvers that were updated in 2013, and included 4 additional experimental solvers.\footnote{These four were four variations of one portfolio-style solver from Abziz \cite{aziz:msc,aziz2012machine}.} All known solver implementation teams were apprised of the upcoming evaluation and given the opportunity to submit new versions of their solvers. Some teams simply submitted the current version of their solver or advised us to download the current public version from the team's website. Thus the solvers are not necessarily tuned to particular application domains or for competition. Any comparisons for particular applications or kinds of benchmark problems should do an independent analysis.
+SMT-EVAL used all historical solvers since~2010 (32~total), added 9 versions of previous solvers that were updated in~2013, and included 4 additional experimental solvers,\footnote{These were four variations of a portfolio-style solver from Abziz~\cite{aziz:msc,aziz2012machine}.} for a total of~45 solvers.  All solver implementation teams that we could reach were apprised of the upcoming evaluation and given the opportunity to submit new versions of their solvers. Some teams simply submitted the current version of their solver or advised us to download the current public version from the team's website. Thus the solvers are not necessarily tuned to particular application domains or for competition. Any comparisons for particular applications or kinds of benchmark problems should perform an independent analysis.
 
 \subsection{Star-Exec}
 
-SMTEVAL-2013 successfully used the new Star-Exec computational framework \cite{webStarExec,StuST-IJCAR-14}. Running SMT-EVAL on Star-Exec did indeed expose a number of bugs and user interface issues; these were corrected in the course of the SMT-EVAL runs. Thus SMT-EVAL served a valuable purpose in preparing Star-Exec for larger scale use.
+SMT-EVAL successfully used the new Star-Exec computational framework \cite{webStarExec,StuST-IJCAR-14}. Running SMT-EVAL on Star-Exec did indeed expose a number of bugs and user interface issues; these were corrected in the course of the SMT-EVAL runs. Thus SMT-EVAL served a valuable purpose in preparing Star-Exec for larger scale use.
 
 TBD:: Can Aaron say more about what was learned?? More information about the characteristics of Star-Exec??
 
-SMT-EVAL's largest computational job was running all 45 of the evaluated solvers on all of the non-incremental benchmarks in the SMT library. The benchmarks belong to different {\em logics} and solvers are characterized by which logics they support. So for each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that solve problems in that logic, for a total of 1663478 solver-benchmark combinations (called {\em job-pairs} in StarExec). This job took several months to run. We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job pairs. Because of a bug currently being corrected, the results of about 600 job-pairs were not present in the accumulated results. These were 
-identified and rerun as an additional 'mop-up' job.
+SMT-EVAL's largest computational job was running all 45 of the evaluated solvers on all of the non-incremental benchmarks in the SMT library. The benchmarks belong to different {\em logics} and solvers are characterized by which logics they support. So for each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that support problems in that logic, for a total of 1\,663\,478 solver-benchmark combinations (called {\em job-pairs} in Star-Exec). This job took several months of wall time to run. We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job pairs. Because of a bug currently being corrected, the results of about 600 job-pairs were not present in the accumulated results. These were identified and rerun as an additional ``mop-up'' job.
 
 \section{Evaluation results}
 \label{Evaluations}
 
-The evaluation team's observations on the questions it considered are presented in the following subsections; our overall conclusions are listed in section \ref{Conclusions}. The raw data used as the basis for our observations, collected from Star-Exec, are all archived on the SMTCOMP website, at \url{http://sourceforge.net/p/smtcomp/code/HEAD/tree/trunk/smtcomp-web/2013/data} as 7z-compressed files. (The largest is 25MB).
+The evaluation team's observations on the questions it considered are presented in the following subsections; our overall conclusions are listed in Section~\ref{Conclusions}.  The raw data used as the basis for our observations, collected from Star-Exec, are all archived on the SMT-COMP website, at \url{http://sourceforge.net/p/smtcomp/code/HEAD/tree/trunk/smtcomp-web/2013/data} as 7z-compressed files.  (The largest is~25MB).
 
 \subsection{Solver participation}
 \label{Solvers}
@@ -227,7 +228,7 @@ from 9-13, with most years having 10-11 participants. The data for 2013 is an an
 Table \ref{Table:participation} since they were not available in 2011, though they are included in Fig.~\ref{Fig:solvers}. In addition, three variations were contributed in 2012; we count just one participation unit in 
 Table \ref{Table:participation} for 2012, though all three (and the two 2011 entries) were used in the evaluations described in this paper.
 
-\item Though any team dropping out of future years' competitions is to be regretted, such turnover is to be expected: research projects and Ph.D. students move on to other topics. The year of the most drop-outs is 2010, when the benchmark format changed; not all teams could invest the effort to change their front-ends and to accommodate the new semantic features of SMTLIBv2. 
+\item Though any team dropping out of future years' competitions is to be regretted, such turnover is to be expected: research projects and Ph.D. students move on to other topics. The year of the most drop-outs is 2010, when the benchmark format changed; not all teams could invest the effort to change their front-ends and to accommodate the new semantic features of SMT-LIB~v2. 
 \item Accompanying the drop-outs is a roughly equal number of new participants each year; roughly 1/3 of the participants each year are new. One of the goals of an organized competition is to foster new participation, providing an venue in which it is easy to participate and self-evaluate against the state-of-the-art. Our observation is that this goal is being accomplished, despite the significant effort required to implement a reasonably competitive solver. 
 \item Despite the turnover, some teams have participated regularly throughout the history of the competition: CVC3/4 and MathSat have participated since the beginning; Boolector, OpenSMT, veriT, and STP also have participated in most of the years since they began being involved.
 \end{itemize}
@@ -497,11 +498,11 @@ The CVC4 and Z3 solvers have a high total SOTAC because they contribute to a bro
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{LogicLattice}
-\caption{Lattice of SMT logics defined in SMTLIB. {\tt QF\_ABV} is defined, but is often subsumed in {\tt QF\_AUFBV}, and is not usually listed separately in other tables in this report. {\tt Q} is not a logic by itself but is a characteristic indicating that quantified expressions are permitted in the logic.}
+\caption{Lattice of SMT logics defined in SMT-LIB. {\tt QF\_ABV} is defined, but is often subsumed in {\tt QF\_AUFBV}, and is not usually listed separately in other tables in this report. {\tt Q} is not a logic by itself but is a characteristic indicating that quantified expressions are permitted in the logic.}
 \label{Fig:lattice}
 \end{figure}
 
-SMTLIB defines a number of theories and logics. The logics are a combination of theories with additional functions or logic symbols or restrictions on the vocabulary of the theories. For example, the {\tt QF\_IDL} logic uses the underlying {\tt Ints} theory, but restricts terms to equalities and inequalities between constants and simple differences of variables.
+SMT-LIB defines a number of theories and logics. The logics are a combination of theories with additional functions or logic symbols or restrictions on the vocabulary of the theories. For example, the {\tt QF\_IDL} logic uses the underlying {\tt Ints} theory, but restricts terms to equalities and inequalities between constants and simple differences of variables.
 The combination of the {\tt Ints} theory and the {\tt Reals} theory adds functions that convert between integers and reals (among other things). Currently, no logic combines bit-vectors with integer or real arithmetic; if one did, it would be useful to provide conversions between numeric values and their corresponding (2's-complement or IEEE floating point) bit-vectors. Note that the {\tt QF\_ABV} logic is defined, but is often subsumed in {\tt QF\_AUFBV} and has no benchmarks of its own; it is not usually listed separately in other tables in this report.
 
 Leaving aside difference logics as special cases of integer and real logics, there are essentially these mostly orthogonal characteristics underlying the theories and logics:
@@ -522,7 +523,7 @@ It is possible to define a logic with any powerset of these characteristics in a
 \item the interaction between integers and reals described above, and
 \item one cannot have non-linearity without having either integers or reals,
 \end{itemize}
-Barring non-linearity without arithmetic and the useless empty set, there are then 111 combinations of characteristics (instead of the full 128). SMTLIB has definitions and benchmarks for 20 of these logics (excluding QF\_RDL, QF\_IDL, and QF\_UFIDL). There are natural containment relationships among these, as shown in Fig.~\ref{Fig:lattice}. There are no combinations of bit-vectors with arithmetic.
+Barring non-linearity without arithmetic and the useless empty set, there are then 111 combinations of characteristics (instead of the full 128). SMT-LIB has definitions and benchmarks for 20 of these logics (excluding QF\_RDL, QF\_IDL, and QF\_UFIDL). There are natural containment relationships among these, as shown in Fig.~\ref{Fig:lattice}. There are no combinations of bit-vectors with arithmetic.
 
 The naming convention for logics is almost but not quite simply a combination of the letters indicated in the list above,
 corresponding to the characteristics of the logic, with the letters listed in order by convention: {\tt [QF\_][A|AX][UF][BV][N|L][IA|RA|IRA]}. The non-uniformities are these:
@@ -563,9 +564,9 @@ more restricted benchmarks but is not deemed competitive and thus was not formal
 \subsection{Benchmarks}
 \label{Benchmarks}
 
-The number of benchmarks has successfully grown since SMTLIB was established; there are now more than 100,000 in all of the logics combined. However, the logics differ significantly in the number of available benchmarks and in their overall difficulty.
+The number of benchmarks has successfully grown since SMT-LIB was established; there are now more than 100,000 in all of the logics combined. However, the logics differ significantly in the number of available benchmarks and in their overall difficulty.
 
-Fig.~\ref{Fig:quintiles} has a column showing the number of benchmarks for each logic. The numbers vary considerably. Some logics, such as UFLRA, have just a very few benchmarks, while others have tens of thousands. SMTLIB distinguishes four kinds of benchmarks:
+Fig.~\ref{Fig:quintiles} has a column showing the number of benchmarks for each logic. The numbers vary considerably. Some logics, such as UFLRA, have just a very few benchmarks, while others have tens of thousands. SMT-LIB distinguishes four kinds of benchmarks:
 \begin{itemize}[noitemsep,nolistsep]
 \item {\em check} benchmarks are simple tasks that are designed to ensure that a solver has the basic functionality required for a division;
 \item {\em industrial} benchmarks are generated from some application; ideally these are substantial examples showing real-world variation, but they be from toy applications running on a toy examples;
@@ -608,15 +609,15 @@ These results indicate that there is substantial room for more difficult benchma
 \subsection{Application needs}
 \label{Applications}
 
-As part of its evaluation, the SMT-EVAL team solicited input on applications that use SMTLIB. The response was not broad enough to be representative. In addition, the authors 
-have encountered, by happenstance, enough users of SMTLIB who are not active in the user community to indicate that there is likely a wide variety of uses that are not well-organized or well-represented in benchmarks on specific logics. A few application domains are fairly well-known, including software verification, scheduling optimization, and function and predicate synthesis. Software verification applications in particular will benefit from broader support for combinations of theories and better heuristics for quantification. 
+As part of its evaluation, the SMT-EVAL team solicited input on applications that use SMT-LIB. The response was not broad enough to be representative. In addition, the authors 
+have encountered, by happenstance, enough users of SMT-LIB who are not active in the user community to indicate that there is likely a wide variety of uses that are not well-organized or well-represented in benchmarks on specific logics. A few application domains are fairly well-known, including software verification, scheduling optimization, and function and predicate synthesis. Software verification applications in particular will benefit from broader support for combinations of theories and better heuristics for quantification. 
 
 In general, a better understanding of the variety of application needs is needed to target future development of SMT solvers and the SMT benchmark library.
  
 %{\em Scheduling problems} typically use difference logics, either integer or real. A recent example is the Mihal's paper \cite{Mihal2013} at the SMT 2013 workshop.
 %
 %
-%{\em Software verification} research uses SMT solvers to discharge verification conditions. In a purely model checking formalism, without user supplied axioms and specifications, a {\tt QF\_BV} or {\tt QF\_UFBV} logic would be sufficient (the latter is not defined, but would seem straightforward). However, in the formalism used by tools such as OpenJML \cite{Cok-2014-OpenJML,Cok-2011-OpenJML}, Dafny \cite{Leino:Dafny:LPAR16,Dafny2014} or Frama-C \cite{webframac}, both code and user-supplied specifications are translated to a logical form, expressed in SMTLIB. In this case, the logic requires a broad range of underlying theories, including quantification. For this purpose solvers need to support all of the characteristics listed in subsection \ref{Lattice} and add support (theories and decision procedures) for strings, partially-ordered sets (to represent programming language types), and innovative theories and decision procedures to reason about uses of dynamic memory. Similarly SMT solvers are used underneath Ada tools 
+%{\em Software verification} research uses SMT solvers to discharge verification conditions. In a purely model checking formalism, without user supplied axioms and specifications, a {\tt QF\_BV} or {\tt QF\_UFBV} logic would be sufficient (the latter is not defined, but would seem straightforward). However, in the formalism used by tools such as OpenJML \cite{Cok-2014-OpenJML,Cok-2011-OpenJML}, Dafny \cite{Leino:Dafny:LPAR16,Dafny2014} or Frama-C \cite{webframac}, both code and user-supplied specifications are translated to a logical form, expressed in SMT-LIB. In this case, the logic requires a broad range of underlying theories, including quantification. For this purpose solvers need to support all of the characteristics listed in subsection \ref{Lattice} and add support (theories and decision procedures) for strings, partially-ordered sets (to represent programming language types), and innovative theories and decision procedures to reason about uses of dynamic memory. Similarly SMT solvers are used underneath Ada tools 
 %
 %{\em Function synthesis}. A newer application of SMT constraint solving is to find functions or predicates satisfying given properties. Heizmann and Leike \cite{webLasso}
 %use QF\_LRA and QF\_NRA logics to synthesize appropriate ranking functions for loops. 
@@ -629,7 +630,7 @@ In general, a better understanding of the variety of application needs is needed
 
 The analyses described point to three principal conclusions and a number of observations.
 \begin{itemize}
-\item First, unsurprisingly, there is still a need for more and better benchmarks, despite the successful growth and current large quantity ($>$ 100,000) of benchmarks in SMTLIB. Some logics have few benchmarks. In most logics, only a small fraction of benchmarks are significantly challenging (measured by time required to solve them).
+\item First, unsurprisingly, there is still a need for more and better benchmarks, despite the successful growth and current large quantity ($>$ 100,000) of benchmarks in SMT-LIB. Some logics have few benchmarks. In most logics, only a small fraction of benchmarks are significantly challenging (measured by time required to solve them).
 \item Related to the above, a better sense of the application areas of SMT is needed. Such an analysis will drive solver research in application-oriented directions, provide focus on application-oriented logics, and guide application-relevant benchmark acquisition.
 \item Finally, we discovered that using a random subset of benchmarks as the basis for the annual competition, together with inherent non-determinism in running solvers, significantly lessens the ability of a competition to determine `best' solvers at a given point in time. Simply rerunning a competition is quite likely to result in a different ordering of results. The best mitigation is to run as large a benchmark set as possible in a competition (and to work toward application-relevant benchmark sets).
 \end{itemize}
@@ -644,7 +645,7 @@ Other observations are these:
 
 \end{itemize}
 
-\subsection{Recommendations for competitions and for SMTLIB}
+\subsection{Recommendations for competitions and for SMT-LIB}
 
 The experience of past competitions and this evaluation point to a number of ideas for future competitions. Most past policies have worked well and should be continued: openness, transparency, reproducibility, public submission of solvers. Other aspects could use improvement:
 \begin{itemize}
@@ -665,7 +666,7 @@ The most important aspect of future work is to increase and improve benchmark qu
 There are also a number of questions that we posed but did not have the time or data to answer. 
 \begin{itemize}
 \item Are there interesting differences in performance between satisfiable and unsatisfiable benchmarks?
-\item Do solvers support all of SMTLIBv2? Should the community encourage expansion to new capabilities (e.g., unsat cores, incremental, interpolants, model generation, proof generation)? Should the community define a core language that is used for the competition, with other aspects being optional?
+\item Do solvers support all of SMT-LIB~v2? Should the community encourage expansion to new capabilities (e.g., unsat cores, incremental, interpolants, model generation, proof generation)? Should the community define a core language that is used for the competition, with other aspects being optional?
 \item Which logics should be retired or deemphasized, based on solver progress or application need?
 \item Competitions primarily measure ability to solve benchmarks, with the time to do so a secondary criterion. However, in some applications it is important to discharge easy problems quickly. We did not assess this characteristic of the available solvers, but it would be worth doing so.
 \item What variations in performance measurements occur because of interference from concurrent uses of Star-Exec?
@@ -702,9 +703,16 @@ TBD:
 
 \section*{Acknowledgments} 
  
-The cost of executing the SMT competition is underwritten by the SMT Workshop. The evaluation
-used the Star-Exec cluster at the University of Iowa. This computation cluster replaces the SMT-Exec cluster used for all previous competitions. The cluster is supported by the U.S. National Science Foundation, under grant CNS-0551697.   
-Cok's contribution is supported by GrammaTech, Inc. and in part by National Science Foundation under Grant No. ACI-1314674. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
+The cost of executing the SMT competition is underwritten by the SMT
+Workshop.  The evaluation used the Star-Exec cluster at the University
+of Iowa.  This computation cluster replaces the SMT-Exec cluster used
+for all previous competitions.  The cluster is supported by the
+U.S.\ National Science Foundation under grant CNS-0551697.  Cok's
+contribution is supported by GrammaTech, Inc.\ and in part by the
+National Science Foundation under grant ACI-1314674.  Any opinions,
+findings, and conclusions or recommendations expressed in this
+material are those of the authors and do not necessarily reflect the
+views of the National Science Foundation.
  
 \bibliographystyle{plain}
 \bibliography{SMTEVAL-2013,cok,sv}
