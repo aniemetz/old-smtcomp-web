@@ -254,6 +254,9 @@ By this data, the improvements in raw SMT solver performance on the current set 
 \label{Fig:CumulativeTimes}
 \end{figure}
 
+\tjark{Fig.~\ref{Fig:CumulativeTimes}: Shouldn't the 2010-2013 column
+  be $\geq$ the maximum of the other columns?}
+
 An alternate measure of solver progress is to count, for a given logic, what fraction of the benchmarks have a better time in a given year than in the previous year, by the best solver for each year. That data is shown in Fig.~\ref{Fig:bettertime}. Though most data points indicate that most benchmarks improved year to year, the progress is not uniform. The progress from 2010 to 2013 shows nearly all logics having improvement rates above 80\%, but there are definitely some laggards.
 
 \begin{figure}
@@ -333,7 +336,7 @@ In previous competitions, the winner was determined as the solver that correctly
 \label{Fig:virtual-competition-all3}
 \end{figure}
 
-However, past competitions have not used all benchmarks, but rather a random subset of the benchmarks. It is worth asking how susceptible the competition results are to the particular subset of benchmarks used for the competition. Typically, the choice is not completely random; rather, the distribution is constrained to have roughly equal representation of various categories of difficulty. For our evaluation here, we will determine the results of a virtual competition by simply randomly selecting different equal-sized subsets (ignoring difficulty measures), determining the competition results for each, and observing whether the competition results vary significantly depending on the subset.  Fig.~\ref{Fig:virtual-competition-some} shows the result of an experiment in which a virtual competition was executed on 1000 random subsets; we tallied the fraction of times that the winner changed and that the complete order of the finishers changed. (We limited our consideration to those logics with at least 100 benchmarks and with more than one solver.)
+However, past competitions have not used all benchmarks, but rather a random subset of the benchmarks. It is worth asking how susceptible the competition results are to the particular subset of benchmarks used for the competition. Typically, the choice is not completely random; rather, the distribution is constrained to have roughly equal representation of various categories of difficulty. For our evaluation here, we will determine the results of a virtual competition by simply randomly selecting different equal-sized subsets (ignoring difficulty measures), determining the competition results for each, and observing whether the competition results vary significantly depending on the subset.  Fig.~\ref{Fig:virtual-competition-some} shows the result of an experiment in which a virtual competition was executed on 1000 random subsets; we tallied the fraction of times that the winner changed and that the complete order of the finishers changed.\tjarkx{I don't understand what ``changed'' means here.  (Change is always relative to some existing state.)  I think a better measure for Fig.~\ref{Fig:virtual-competition-some} would be the entropy of the winner/order.} (We limited our consideration to those logics with at least 100 benchmarks and with more than one solver.)
 
 The results are quite instructive. In many logics, the competition winners change in only a small fraction of trials. 
 However, in several logics, the fraction of trials in which the winner changes is quite significant, in some cases over 50\%. Inspection of the data reveals two contributing causes. 
