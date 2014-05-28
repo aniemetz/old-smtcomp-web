@@ -22,17 +22,15 @@ These solvers have expressed intention to participate in SMT_COMP 2014.
 <table>
 <tr>
   <td>Solver</td>
-  <td>Id</td>
   <td>main track</td>
   <td>application track</td>
-  <td>Preliminary version submitted</td>
-  <td>Final version submitted</td>
-  <td>System description</td>
+  <td>Preliminary version solver id</td>
+  <td>Final version solver id</td>
   <td>Seed</td>
+  <td>System description</td>
   <td>Contacts</td>
 <tr>
   <td>4Simp</td>
-  <td></td>
   <td></td>
   <td></td>
   <td></td>
@@ -50,11 +48,9 @@ These solvers have expressed intention to participate in SMT_COMP 2014.
   <td></td>
   <td></td>
   <td></td>
-  <td></td>
 </tr>
 <tr>
   <td>AProve</td>
-  <td></td>
   <td>X</td>
   <td></td>
   <td></td>
@@ -72,11 +68,9 @@ These solvers have expressed intention to participate in SMT_COMP 2014.
   <td></td>
   <td></td>
   <td></td>
-  <td></td>
 </tr>
 <tr>
   <td>CVC3</td>
-  <td></td>
   <td></td>
   <td></td>
   <td></td>
@@ -92,11 +86,9 @@ These solvers have expressed intention to participate in SMT_COMP 2014.
   <td></td>
   <td></td>
   <td></td>
-  <td></td>
 </tr>
 <tr>
   <td>Kleaver</td>
-  <td></td>
   <td></td>
   <td></td>
   <td></td>
@@ -114,7 +106,6 @@ These solvers have expressed intention to participate in SMT_COMP 2014.
   <td></td>
   <td></td>
   <td></td>
-  <td></td>
 </tr>
 <tr>
   <td>opensmt</td>
@@ -125,22 +116,19 @@ These solvers have expressed intention to participate in SMT_COMP 2014.
   <td></td>
   <td></td>
   <td></td>
-  <td></td>
 </tr>
 <tr>
   <td>SMTInterpol</td>
+  <td>X</td>
+  <td>X</td>
+  <td>861</td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>3154861623</td>
+  <td>systemsDescriptions/SMTInterpol-2014.pdf</td>
+  <td>hoenicke@informatik.uni-freiburg.de;christj@informatik.uni-freiburg.de</td>
 </tr>
 <tr>
   <td>SMT-RAT</td>
-  <td></td>
   <td></td>
   <td></td>
   <td></td>
@@ -158,7 +146,6 @@ These solvers have expressed intention to participate in SMT_COMP 2014.
   <td></td>
   <td></td>
   <td></td>
-  <td></td>
 </tr>
 <tr>
   <td>STP</td>
@@ -169,22 +156,19 @@ These solvers have expressed intention to participate in SMT_COMP 2014.
   <td></td>
   <td></td>
   <td></td>
-  <td></td>
 </tr>
 <tr>
   <td>veriT</td>
+  <td>X</td>
+  <td>-</td>
   <td>860</td>
-  <td>X</td>
-  <td>?</td>
-  <td>X</td>
-  <td></td>
   <td></td>
   <td>1027</td>
+  <td><a href="systemDescriptions/veriT.pdf">veriT</a></td>
   <td>david.deharbe@loria.fr; Pascal.Fontaine@inria.fr</td>
 </tr>
 <tr>
   <td>Yices2</td>
-  <td></td>
   <td></td>
   <td></td>
   <td></td>
@@ -292,6 +276,27 @@ These are the logic divisions in which each solver is competing.
 
 </table>
 
+<br>
+These are the solvers participating in the SL-SMTCOMP competition.
+
+<table>
+<tr>
+  <td>Solver</td>
+  <td>Preliminary version solver id</td>
+  <td>Final version solver id</td>
+  <td>Seed</td>
+  <td>System description</td>
+  <td>Contacts</td>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+</table>
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
 
