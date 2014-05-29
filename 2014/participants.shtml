@@ -17,7 +17,7 @@ td {
 
 <h1>Solvers participating in SMT-COMP 2014</h1>
 
-These solvers have expressed intention to participate in SMT_COMP 2014.
+These solvers have expressed intention to participate in SMT-COMP 2014.
 
 <table>
 <tr>
@@ -57,7 +57,7 @@ These solvers have expressed intention to participate in SMT_COMP 2014.
   <td></td>
   <td></td>
   <td></td>
-  <td></td>
+  <td>Carsten Fuhs &lt;c.fuhs@cs.ucl.ac.uk&gt;</td>
 </tr>
 <tr>
   <td>Boolector</td>
