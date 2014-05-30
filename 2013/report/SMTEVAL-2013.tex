@@ -243,6 +243,34 @@ Table \ref{Table:participation} for 2012, though all three (and the two 2011 ent
 \end{itemize}
 
 
+\subsection{Interpreting solver output}
+
+Given the large number of solver-benchmark combinations, it was not
+feasible to manually inspect the output of each job pair.  Thus, we
+needed to determine mechanically whether a solver reported a benchmark
+as satisfiable, unsatisfiable or unknown (or did not return a result
+within the time limit).
+
+On StarExec, this is done by providing a \emph{post-processor}, i.e.,
+an executable that operates on the output of each job pair.
+Unfortunately, two features of StarExec made it difficult to interpret
+solver output in a way that is fully SMT-LIB~v2 compliant.  First,
+StarExec collects the entire output of a job pair in a single file
+before passing it to the post-processor.  Thus, it is not possible to
+reliable determine which output a solver has generated specifically in
+response to a benchmark's {\tt check-sat} command.  Second, StarExec
+conflates standard output and standard error, making it impossible to
+distinguish between regular solver responses and error messages.
+
+To determine the result of each job pair, we used a post-processor
+that searched for the words {\tt sat}, {\tt unsat} and {\tt unknown}
+in the output file, and reported the corresponding result if it found
+exactly one of them; otherwise, it reported no result.  This
+conservative approach may have caused a small number of (otherwise
+valid) solver responses to be discarded.  It was taken to minimise the
+number of incorrect results reported by the post-processor.
+
+
 \subsection{Progress in solver performance}
 \label{Progress}
 
