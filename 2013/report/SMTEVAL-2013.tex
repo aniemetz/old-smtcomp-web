@@ -297,7 +297,7 @@ However, there are aspects of the competition that are not deterministic. We mea
 
 To measure the repeatability of a given solver on a given benchmark, we produced a random selection of benchmark-solver pairs (job-pairs), selecting only among job-pairs that did not timeout and had a running time of at least 0.1~seconds. The random selection produced 10\,165 job-pairs (out of the total 1\,663\,478 job-pairs). These job-pairs were run 8 times on 8 different days. One such run took only a few hours. This resulted in 8 repetitions of each of the selected job-pairs. The data is archived with the other evaluation data on the SMT-EVAL website. Star-Exec was lightly loaded on these days, so we did not measure any effect owing to interference with other uses of Star-Exec.
 
-The 8 measured values for a job-pair were sorted and the first, median, and third quartile measured (as the average of sorted values 2 and 3, 4 and 5, and 6 and 7, respectively). We noted the following points:\tjarkx{Shouldn't we provide the standard devidation?}
+The 8 measured values for a job-pair were sorted and the first, median, and third quartile measured (as the average of sorted values 2 and 3, 4 and 5, and 6 and 7, respectively). We noted the following points:\tjarkx{Shouldn't we provide the standard deviation?}
 \begin{itemize}[noitemsep,nolistsep]
 \item Of the measured job-pairs, about 78\% had a Q3-Q1 spread less that 10\% of the median value. That is, roughly 50\% of the time repeated measurements will fall within about 10\% of each other.\footnote{We did not attempt to measure skew: the degree to which Q3 and Q1 are unequally distant from the median.}
 \item 3.5\% of job-pairs showed a Q3-Q1 spread more than 50\% of the median value. 
@@ -599,6 +599,18 @@ Fig.~\ref{Fig:quintiles} has a column showing the number of benchmarks for each 
 In addition, some benchmarks are {\em incremental};\tjarkx{I mentioned this before, but I don't think that we had incremental benchmarks. In fact, I verified (using grep) that every benchmark had exactly one occurrence of {\tt check-sat}.} that is, they contain more than one {\tt check-sat} command in a command script. This is relevant to interactive applications, but is not the main focus of the competition. In 2012, there were demonstration divisions on generating unsat cores and proof generation. These did not require special benchmarks, but do require different evaluation.
 
 TBD- more on this aspect of competition design
+
+SMT-COMPs in previous years used benchmark scrambling~\cite{TODO}.  We
+did not scramble benchmarks for SMT-EVAL, mainly because support for
+this feature was not yet available in StarExec.  In principle, this
+means that solvers could have cheated by matching benchmark contents
+or filenames against a database of known SMT-LIB benchmarks, or even
+by simply extracting the {\tt :status} information present in most
+benchmarks.  Ruling out cheating with certainty would require careful
+inspection of solver sources, which are not available for all solvers.
+However, based on the evaluation data, and taking into account the
+lack of strong incentives for cheating in SMT-EVAL, we have no reason
+to believe that cheating has occurred.
 
 Several solvers reported syntax errors on some benchmarks.  We
 validated all benchmarks with two independently developed SMT-LIB~v2
