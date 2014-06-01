@@ -60,14 +60,34 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>Carsten Fuhs &lt;c.fuhs@cs.ucl.ac.uk&gt;</td>
 </tr>
 <tr>
-  <td>Boolector</td>
+  <td>Boolector I</td>
+  <td>X</td>
+  <td>-</td>
+  <td>911 config:1134</td>
   <td></td>
+  <td>42</td>
   <td></td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;(aina.niemetz@jku.at&gt;; Armin Biere &lt;(biere@jku.at&gt;</td>
+</tr>
+<tr>
+  <td>Boolector II</td>
+  <td>X</td>
+  <td>-</td>
+  <td>911 config:1135</td>
   <td></td>
+  <td>42</td>
   <td></td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;(aina.niemetz@jku.at&gt;; Armin Biere &lt;(biere@jku.at&gt;</td>
+</tr>
+<tr>
+  <td>Boolector III</td>
+  <td>X</td>
+  <td>-</td>
+  <td>911 config 1136:</td>
   <td></td>
+  <td>42</td>
   <td></td>
-  <td></td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;(aina.niemetz@jku.at&gt;; Armin Biere &lt;(biere@jku.at&gt;</td>
 </tr>
 <tr>
   <td>CVC3</td>
@@ -91,13 +111,23 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 </tr>
 <tr>
   <td>Kleaver</td>
+  <td>X</td>
+  <td>-</td>
+  <td>893</td>
   <td></td>
+  <td>12739</td>
   <td></td>
+  <td>Hristina Palikareva &lt;h.palikareva@imperial.ac.uk&gt;; Cristian Cadar &lt;c.cadar@imperial.ac.uk&gt;</td>
+</tr>
+<tr>
+  <td>Kleaver-STP</td>
+  <td>X</td>
+  <td>-</td>
+  <td>894</td>
   <td></td>
+  <td>12739</td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td>Hristina Palikareva &lt;h.palikareva@imperial.ac.uk&gt;</td>
+  <td>Hristina Palikareva &lt;h.palikareva@imperial.ac.uk&gt;; Cristian Cadar &lt;c.cadar@imperial.ac.uk&gt;</td>
 </tr>
 <tr>
   <td>MathSat</td>
@@ -228,8 +258,16 @@ These are the logic divisions in which each solver is competing.
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>Boolector</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td>Boolector I</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector II</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector III</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>CVC3</td>
@@ -241,7 +279,11 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>Kleaver</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Kleaver-STP</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>MathSat</td>
@@ -290,12 +332,36 @@ These are the solvers participating in the SL-SMTCOMP competition.
   <td>System description</td>
   <td>Contacts</td>
 <tr>
+  <td>Cyclist-SL</td>
+  <td>907</td>
+  <td></td>
+  <td></td>
+  <td><a href="systemDescriptions/Cyclist-SL.txt">Cyclist-SL</a></td>
+  <td>Nikos Gorogiannis &lt;nikos.gorogiannis@gmail.com&gt;</td>
+</tr>
+<tr>
+  <td>SLSAT</td>
+  <td>908</td>
+  <td></td>
+  <td></td>
+  <td><a href="systemDescriptions/SLSAT.txt">SLSAT</a></td>
+  <td>Nikos Gorogiannis &lt;nikos.gorogiannis@gmail.com&gt;</td>
+</tr>
+<tr>
+  <td>Asterix</td>
+  <td>906</td>
+  <td></td>
+  <td>3880747519</td>
+  <td></td>
+  <td>Juan A. Navarro Prez &lt;juan.navarro@ucl.ac.uk&gt;; Andrey Rybalchenko &lt;rybal@microsoft.com&gt;</td>
+</tr>
+<tr>
+  <td>SeLoger 0.5</td>
+  <td>892</td>
   <td></td>
   <td></td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>Christoph Haase &lt;haase@lsv.ens-cachan.fr&gt;;</td>
 </tr>
 
 </table>
