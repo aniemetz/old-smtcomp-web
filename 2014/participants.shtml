@@ -347,7 +347,7 @@ These are the solvers participating in the SL-SMTCOMP competition.
   <td>Contacts</td>
 <tr>
   <td>Cyclist-SL</td>
-  <td>907</td>
+  <td>936</td>
   <td></td>
   <td></td>
   <td><a href="systemDescriptions/Cyclist-SL.txt">Cyclist-SL</a></td>
@@ -355,7 +355,7 @@ These are the solvers participating in the SL-SMTCOMP competition.
 </tr>
 <tr>
   <td>SLSAT</td>
-  <td>908</td>
+  <td>937</td>
   <td></td>
   <td></td>
   <td><a href="systemDescriptions/SLSAT.txt">SLSAT</a></td>
