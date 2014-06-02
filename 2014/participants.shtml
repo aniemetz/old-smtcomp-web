@@ -31,22 +31,22 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>Contacts</td>
 <tr>
   <td>4Simp</td>
+  <td>X</td>
+  <td>-</td>
+  <td>916</td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>20324</td>
+  <td>?</td>
   <td>thansen@csse.unimelb.edu.au</td>
 </tr>
 <tr>
   <td>Abziz</td>
+  <td>?</td>
+  <td>?</td>
+  <td>912</td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>?</td>
+  <td>?</td>
   <td>Mohammad Abdul Aziz &lt;mohammad.abdulaziz8@gmail.com&gt;</td>
 </tr>
 <tr>
@@ -56,7 +56,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>865</td>
   <td></td>
   <td>2094937</td>
-  <td></td>
+  <td>?</td>
   <td>Carsten Fuhs &lt;c.fuhs@cs.ucl.ac.uk&gt;</td>
 </tr>
 <tr>
@@ -66,7 +66,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>911 config:1134</td>
   <td></td>
   <td>42</td>
-  <td></td>
+  <td>?</td>
   <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;(aina.niemetz@jku.at&gt;; Armin Biere &lt;(biere@jku.at&gt;</td>
 </tr>
 <tr>
@@ -76,7 +76,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>911 config:1135</td>
   <td></td>
   <td>42</td>
-  <td></td>
+  <td>?</td>
   <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;(aina.niemetz@jku.at&gt;; Armin Biere &lt;(biere@jku.at&gt;</td>
 </tr>
 <tr>
@@ -86,27 +86,27 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>911 config 1136:</td>
   <td></td>
   <td>42</td>
-  <td></td>
+  <td>?</td>
   <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;(aina.niemetz@jku.at&gt;; Armin Biere &lt;(biere@jku.at&gt;</td>
 </tr>
 <tr>
   <td>CVC3</td>
+  <td>X</td>
+  <td>X</td>
+  <td>900</td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>33333</td>
+  <td>?</td>
   <td>Clark Barrett &lt;barrett@cs.nyu.edu&gt;;Morgan Deters &lt;mdeters@cs.nyu.edu&gt;</td>
 </tr>
 <tr>
   <td>CVC4</td>
+  <td>X</td>
+  <td>X</td>
+  <td>898; application track=899</td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>44444</td>
+  <td>?</td>
   <td>Clark Barrett &lt;barrett@cs.nyu.edu&gt;;Morgan Deters &lt;mdeters@cs.nyu.edu&gt;</td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>893</td>
   <td></td>
   <td>12739</td>
-  <td></td>
+  <td>?</td>
   <td>Hristina Palikareva &lt;h.palikareva@imperial.ac.uk&gt;; Cristian Cadar &lt;c.cadar@imperial.ac.uk&gt;</td>
 </tr>
 <tr>
@@ -126,7 +126,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>894</td>
   <td></td>
   <td>12739</td>
-  <td></td>
+  <td>?</td>
   <td>Hristina Palikareva &lt;h.palikareva@imperial.ac.uk&gt;; Cristian Cadar &lt;c.cadar@imperial.ac.uk&gt;</td>
 </tr>
 <tr>
@@ -161,13 +161,13 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 </tr>
 <tr>
   <td>SMT-RAT</td>
+  <td>?</td>
+  <td>?</td>
+  <td>?</td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>?</td>
+  <td>?</td>
+  <td>Florian Corzilius &lt;corzilius@informatik.rwth-aachen.de&gt;</td>
 </tr>
 <tr>
   <td>SONOLAR</td>
@@ -181,13 +181,23 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 </tr>
 <tr>
   <td>STP</td>
+  <td>X</td>
+  <td>-</td>
+  <td>914</td>
   <td></td>
+  <td>20324</td>
+  <td>?</td>
+  <td>thansen@csse.unimelb.edu.au</td>
+</tr>
+<tr>
+  <td>STP-Soos</td>
+  <td>?</td>
+  <td>?</td>
+  <td>?</td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>?</td>
+  <td>?</td>
+  <td>soos.mate@gmail.com</td>
 </tr>
 <tr>
   <td>veriT</td>
@@ -201,12 +211,12 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 </tr>
 <tr>
   <td>Yices2</td>
+  <td>X</td>
+  <td>X</td>
+  <td>919 (config=default); app track config=incremental</td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>22908</td>
+  <td>?</td>
   <td>bruno@csl.sri.com</td>
 </tr>
 
@@ -247,7 +257,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>4Simp</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Abziz</td>
@@ -271,11 +281,11 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>CVC3</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 <tr>
   <td>CVC4</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 <tr>
   <td>Kleaver</td>
@@ -307,15 +317,19 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>STP</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>STP-Soos</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>veriT</td>
-  <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td>
+  <td>X</td> <td>X</td> <td></td> <td></td> <td>?</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>?</td> <td></td>
 </tr>
 <tr>
   <td>Yices2</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 
 </table>
@@ -352,7 +366,7 @@ These are the solvers participating in the SL-SMTCOMP competition.
   <td>906</td>
   <td></td>
   <td>3880747519</td>
-  <td></td>
+  <td>?</td>
   <td>Juan A. Navarro Prez &lt;juan.navarro@ucl.ac.uk&gt;; Andrey Rybalchenko &lt;rybal@microsoft.com&gt;</td>
 </tr>
 <tr>
@@ -360,8 +374,24 @@ These are the solvers participating in the SL-SMTCOMP competition.
   <td>892</td>
   <td></td>
   <td></td>
-  <td></td>
+  <td>?</td>
   <td>Christoph Haase &lt;haase@lsv.ens-cachan.fr&gt;;</td>
+</tr>
+<tr>
+  <td>SLIDE</td>
+  <td>920</td>
+  <td></td>
+  <td></td>
+  <td><a href="systemDescriptions/SLIDE.txt">SLIDE</a></td>
+  <td>Adam Rogalewicz &lt;rogalew@fit.vutbr.cz&gt;Radu IOSIF &lt;Radu.Iosif@imag.fr&gt;; Tomas Vojnar &lt;vojnar@fit.vutbr.cz&gt; </td>
+</tr>
+<tr>
+  <td>SPEN</td>
+  <td>918</td>
+  <td></td>
+  <td></td>
+  <td><a href="systemDescriptions/spen-smtcomp14.txt">SPEN</a></td>
+  <td>Mihaela Sighireanu &lt;mihaela.sighireanu@gmail.com&gt;</td>
 </tr>
 
 </table>
