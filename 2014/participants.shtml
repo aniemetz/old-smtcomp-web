@@ -378,6 +378,14 @@ These are the solvers participating in the SL-SMTCOMP competition.
   <td>Christoph Haase &lt;haase@lsv.ens-cachan.fr&gt;;</td>
 </tr>
 <tr>
+  <td>SLEEK</td>
+  <td>926</td>
+  <td></td>
+  <td></td>
+  <td><a href="http://loris-7.ddns.comp.nus.edu.sg/~project/hip/">SLEEK</a></td>
+  <td>Le Quang Loc &lt;locle@comp.nus.edu.sg&gt;; Chin Wei Ngan &lt;chinwn@comp.nus.edu.sg&gt;</td>
+</tr>
+<tr>
   <td>SLIDE</td>
   <td>920</td>
   <td></td>
