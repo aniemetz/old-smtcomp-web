@@ -41,11 +41,21 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 </tr>
 <tr>
   <td>Abziz</td>
-  <td>?</td>
-  <td>?</td>
+  <td>X</td>
+  <td>-</td>
   <td>912</td>
   <td></td>
+  <td>21381</td>
   <td>?</td>
+  <td>Mohammad Abdul Aziz &lt;mohammad.abdulaziz8@gmail.com&gt;</td>
+</tr>
+<tr>
+  <td>Abziz2</td>
+  <td>X</td>
+  <td>-</td>
+  <td>?</td>
+  <td></td>
+  <td>21381</td>
   <td>?</td>
   <td>Mohammad Abdul Aziz &lt;mohammad.abdulaziz8@gmail.com&gt;</td>
 </tr>
@@ -130,24 +140,14 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>Hristina Palikareva &lt;h.palikareva@imperial.ac.uk&gt;; Cristian Cadar &lt;c.cadar@imperial.ac.uk&gt;</td>
 </tr>
 <tr>
-  <td>MathSat</td>
+  <td>OpenSMT2</td>
+  <td>X</td>
+  <td>-</td>
+  <td>921</td>
   <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-</tr>
-<tr>
-  <td>opensmt</td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>1984</td>
+  <td>?</td>
+  <td>antti.hyvarinen@gmail.com</td>
 </tr>
 <tr>
   <td>SMTInterpol</td>
@@ -161,11 +161,11 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 </tr>
 <tr>
   <td>SMT-RAT</td>
-  <td>?</td>
-  <td>?</td>
-  <td>?</td>
+  <td>X</td>
+  <td>=</td>
+  <td>917</td>
   <td></td>
-  <td>?</td>
+  <td>52074</td>
   <td>?</td>
   <td>Florian Corzilius &lt;corzilius@informatik.rwth-aachen.de&gt;</td>
 </tr>
@@ -191,11 +191,11 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 </tr>
 <tr>
   <td>STP-Soos</td>
-  <td>?</td>
-  <td>?</td>
+  <td>X</td>
+  <td>-</td>
   <td>?</td>
   <td></td>
-  <td>?</td>
+  <td>1337</td>
   <td>?</td>
   <td>soos.mate@gmail.com</td>
 </tr>
@@ -261,7 +261,11 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>Abziz</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> 
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> 
+</tr>
+<tr>
+  <td>Abziz2</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> 
 </tr>
 <tr>
   <td>AProve</td>
@@ -296,12 +300,8 @@ These are the logic divisions in which each solver is competing.
   <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>MathSat</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>opensmt</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td>OpenSMT2</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>SMTInterpol</td>
@@ -309,7 +309,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>SMT-RAT</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>SONOLAR</td>
@@ -321,7 +321,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>STP-Soos</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>veriT</td>
@@ -390,7 +390,7 @@ These are the solvers participating in the SL-SMTCOMP competition.
   <td>918</td>
   <td></td>
   <td></td>
-  <td><a href="systemDescriptions/spen-smtcomp14.txt">SPEN</a></td>
+  <td><a href="systemDescriptions/spen-smtcomp14.pdf">SPEN</a></td>
   <td>Mihaela Sighireanu &lt;mihaela.sighireanu@gmail.com&gt;</td>
 </tr>
 
