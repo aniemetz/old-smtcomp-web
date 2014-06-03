@@ -156,7 +156,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>?</td>
   <td></td>
   <td>?</td>
-  <td>?</td>
+  <td><a href="http://www.jaist.ac.jp/~mizuhito/tools/rasat.html">raSAT</a></td>
   <td>Tung Vu Xuan &lt;tungvx@jaist.ac.jp&gt;</td>
 </tr>
 <tr>
