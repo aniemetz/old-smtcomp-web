@@ -172,7 +172,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 <tr>
   <td>SMT-RAT</td>
   <td>X</td>
-  <td>=</td>
+  <td>-</td>
   <td>917</td>
   <td></td>
   <td>52074</td>
@@ -302,11 +302,11 @@ These are the logic divisions in which each solver is competing.
   <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 <tr>
-  <td>Kleaver</td>
+  <td>Kleaver-STP</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>Kleaver-STP</td>
+  <td>Kleaver-portfolio</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
