@@ -323,7 +323,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>CVC3</td>
-  <td>?</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>?</td> <td>X</td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>?</td> <td>X</td> <td>?</td> <td>?</td> <td>X</td> <td>X</td> 
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> 
 </tr>
 <tr>
   <td>CVC4</td>
@@ -339,7 +339,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>OpenSMT2</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>raSAT</td>
@@ -347,7 +347,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>SMTInterpol</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>SMT-RAT</td>
