@@ -203,7 +203,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>STP-Soos</td>
   <td>X</td>
   <td>-</td>
-  <td>?</td>
+  <td>968</td>
   <td></td>
   <td>1337</td>
   <td>?</td>
@@ -397,7 +397,7 @@ These are the solvers participating in the SL-SMTCOMP competition.
   <td>Contacts</td>
 <tr>
   <td>Cyclist-SL</td>
-  <td>936</td>
+  <td>972</td>
   <td></td>
   <td></td>
   <td><a href="systemDescriptions/Cyclist-SL.txt">Cyclist-SL</a></td>
@@ -405,7 +405,7 @@ These are the solvers participating in the SL-SMTCOMP competition.
 </tr>
 <tr>
   <td>SLSAT</td>
-  <td>937</td>
+  <td>973</td>
   <td></td>
   <td></td>
   <td><a href="systemDescriptions/SLSAT.txt">SLSAT</a></td>
@@ -429,7 +429,7 @@ These are the solvers participating in the SL-SMTCOMP competition.
 </tr>
 <tr>
   <td>SLEEK</td>
-  <td>926</td>
+  <td>926 (?? which configuration)</td>
   <td></td>
   <td></td>
   <td><a href="http://loris-7.ddns.comp.nus.edu.sg/~project/hip/">SLEEK</a></td>
@@ -441,11 +441,11 @@ These are the solvers participating in the SL-SMTCOMP competition.
   <td></td>
   <td></td>
   <td><a href="systemDescriptions/SLIDE.txt">SLIDE</a></td>
-  <td>Adam Rogalewicz &lt;rogalew@fit.vutbr.cz&gt;Radu IOSIF &lt;Radu.Iosif@imag.fr&gt;; Tomas Vojnar &lt;vojnar@fit.vutbr.cz&gt; </td>
+  <td>Adam Rogalewicz &lt;rogalew@fit.vutbr.cz&gt;Radu IOSIF &lt;; Radu.Iosif@imag.fr&gt;; Tomas Vojnar &lt;vojnar@fit.vutbr.cz&gt; </td>
 </tr>
 <tr>
   <td>SPEN</td>
-  <td>918</td>
+  <td>971</td>
   <td></td>
   <td></td>
   <td><a href="systemDescriptions/spen-smtcomp14.pdf">SPEN</a></td>
