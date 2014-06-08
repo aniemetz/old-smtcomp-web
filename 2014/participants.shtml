@@ -60,7 +60,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>Mohammad Abdul Aziz &lt;mohammad.abdulaziz8@gmail.com&gt;</td>
 </tr>
 <tr>
-  <td>AProVe</td>
+  <td>AProVE</td>
   <td>X</td>
   <td>-</td>
   <td>865</td>
@@ -306,7 +306,7 @@ These are the logic divisions in which each solver is competing.
   <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td> 
 </tr>
 <tr>
-  <td>AProVe</td>
+  <td>AProVE</td>
   <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td>
 </tr>
 <tr>
