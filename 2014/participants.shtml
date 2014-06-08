@@ -77,7 +77,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td></td>
   <td>42</td>
   <td>?</td>
-  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;(aina.niemetz@jku.at&gt;; Armin Biere &lt;(biere@jku.at&gt;</td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
 </tr>
 <tr>
   <td>Boolector II</td>
@@ -87,7 +87,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td></td>
   <td>42</td>
   <td>?</td>
-  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;(aina.niemetz@jku.at&gt;; Armin Biere &lt;(biere@jku.at&gt;</td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
 </tr>
 <tr>
   <td>Boolector III</td>
@@ -97,7 +97,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td></td>
   <td>42</td>
   <td>?</td>
-  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;(aina.niemetz@jku.at&gt;; Armin Biere &lt;(biere@jku.at&gt;</td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
 </tr>
 <tr>
   <td>CVC3</td>
@@ -311,15 +311,15 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>Boolector I</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td>X</td> <td>?</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Boolector II</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td>X</td> <td>?</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Boolector III</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>CVC3</td>
@@ -371,7 +371,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>Yices2</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td>X</td> <td>?</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>MathSAT5 (non-competitive)</td>
