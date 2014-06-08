@@ -53,7 +53,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>Abziz2</td>
   <td>X</td>
   <td>-</td>
-  <td>?</td>
+  <td>950</td>
   <td></td>
   <td>21381</td>
   <td>?</td>
@@ -260,36 +260,36 @@ These are the logic divisions in which each solver is competing.
     <td>ALIA</td>
   <td>AUFLIA</td>
   <td>AUFLIRA</td>
-  <td>AUFNIRA</td>
-  <td>BV</td>
-    <td>LIA</td>          <!-- 5 -->
-  <td>LRA</td>          <!-- 5 -->
-    <td>NIA</td>          <!-- 5 -->
-    <td>NRA</td>          <!-- 5 -->
-  <td>QF_ABV</td>
+  <td>AUFNIRA</td> 
+  <td>BV</td>        <!-- 5 -->
+    <td>LIA</td> 
+  <td>LRA</td>         
+    <td>NIA</td>          
+    <td>NRA</td> 
+  <td>QF_ABV</td>         <!-- 10 -->
     <td>QF_ALIA</td>
   <td>QF_AUFBV</td>
   <td>QF_AUFLIA</td>
   <td>QF_AX</td>
-  <td>QF_BV</td>        <!-- 10 -->
+  <td>QF_BV</td>        <!-- 15 -->
   <td>QF_IDL</td>
   <td>QF_LIA</td>
   <td>QF_LRA</td>
   <td>QF_NIA</td>
-  <td>QF_NRA</td>       <!-- 15 -->
+  <td>QF_NRA</td>       <!-- 20 -->
   <td>QF_RDL</td>
   <td>QF_UF</td>
   <td>QF_UFBV</td>
   <td>QF_UFIDL</td>
-  <td>QF_UFLIA</td>     <!-- 20 -->
+  <td>QF_UFLIA</td>     <!-- 25 -->
   <td>QF_UFLRA</td>
   <td>QF_UFNIA</td>
   <td>QF_UFNRA</td>
     <td>UF</td>
-  <td>UFBV</td>
+  <td>UFBV</td>         <!-- 30 -->
     <td>UFIDL</td>
     <td>UFLIA</td>
-  <td>UFLRA</td>        <!-- 25 -->
+  <td>UFLRA</td> 
   <td>UFNIA</td>
 
 </tr>
@@ -375,7 +375,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>MathSAT5 (non-competitive)</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Z3 (non-competitive)</td>
@@ -385,7 +385,10 @@ These are the logic divisions in which each solver is competing.
 </table>
 
 <br>
-These are the solvers participating in the SL-SMTCOMP competition.
+These are the solvers participating in the SL-SMTCOMP competition. 
+This is a separate competition being conducted with SMT-like solvers that solve encodings of separation logic problems. 
+It is separate from SMT-COMP, though it is using the same infrastructure and being conducted by the same organizing committee.
+The relationship of the associated logic to SMT-LIB is currently under investigation.
 
 <table>
 <tr>
@@ -456,7 +459,10 @@ These are the solvers participating in the SL-SMTCOMP competition.
 
 These are the benchmark divisions in which each solver is competing.
 
-<table >
+<!--  https://github.com/mihasighi/smtcomp14-sl/blob/master/divisions.html
+ -->
+
+<table>
 <tr>
 <td>Solver</td>
 <!------------>
@@ -500,6 +506,16 @@ These are the benchmark divisions in which each solver is competing.
 </tr>
 
 <tr>
+  <td>SLSAT</td>
+  <td>X</td> <td></td>
+  <td>X</td> <td></td>
+  <td>X</td> <td></td>
+  <td>X</td> <td></td>
+  <td>X</td> <td></td>
+  <td>X</td> <td></td>
+</tr>
+
+<tr>
   <td>SeLoger 0.5</td>
   <td></td> <td></td>
   <td>X</td> <td>X</td>
@@ -540,7 +556,6 @@ These are the benchmark divisions in which each solver is competing.
 </tr>
 
 </table>
-
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
 
