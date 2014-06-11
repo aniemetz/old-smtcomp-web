@@ -32,7 +32,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 <tr>
   <td>4Simp</td>
   <td>X</td>
-  <td>-</td>
+  <td>X</td>
   <td>916</td>
   <td></td>
   <td>20324</td>
@@ -192,7 +192,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 <tr>
   <td>STP</td>
   <td>X</td>
-  <td>-</td>
+  <td>X</td>
   <td>914</td>
   <td></td>
   <td>20324</td>
@@ -295,7 +295,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>4Simp</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Abziz</td>
@@ -359,7 +359,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>STP</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>STP-Soos</td>
