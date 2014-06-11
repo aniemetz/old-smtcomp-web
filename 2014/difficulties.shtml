@@ -30,7 +30,7 @@ The columns in the table are these:
 <LI>4: status - this is the :status value from the benchmark, as recorded in the StarExec metadata. It should be precisely the same as the starexec-expected-result.
 <LI>5:category - this is the :category value as recorded in StarExec metadata, which should have determined it from a set-info command in the benchmark. This value should be one of "industrial", "crafted", "random", or "check" (without the quotes). Values of "null" (category not set), "unknown" (category explicitly set to the value "unknown"), and "none" (value in StarExec is an empty string) are also present.
 <LI>6: logic - the SMT-LIB logic
-<LI>7: path - the pat of the benchmark within the non-incremental subspace of benchmarks.
+<LI>7: path - the path of the benchmark within the non-incremental subspace of benchmarks.
 </UL>
 
 

@@ -163,7 +163,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>SMTInterpol</td>
   <td>X</td>
   <td>X</td>
-  <td>984</td>
+  <td>1075 (smtinterpol-2.1-118-g3dada2f)</td>
   <td></td>
   <td>3154861623</td>
   <td><a href="systemDescriptions/SMTInterpol-2014.pdf">SMTInterpol</a></td>
@@ -223,7 +223,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>Yices2</td>
   <td>X</td>
   <td>X</td>
-  <td>919 (config=default); app track config=incremental</td>
+  <td>1095 (config=default); app track config=incremental</td>
   <td></td>
   <td>22908</td>
   <td>?</td>
@@ -299,11 +299,11 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>Abziz</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td> 
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> 
 </tr>
 <tr>
   <td>Abziz2</td>
-  <td>?</td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td></td> <td></td> 
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> 
 </tr>
 <tr>
   <td>AProVE</td>
@@ -385,10 +385,10 @@ These are the logic divisions in which each solver is competing.
 </table>
 
 <br>
-These are the solvers participating in the SL-SMTCOMP competition. 
+These are the solvers participating in the Separation Logic competition. 
 This is a separate competition being conducted with SMT-like solvers that solve encodings of separation logic problems. 
 It is separate from SMT-COMP, though it is using the same infrastructure and being conducted by the same organizing committee.
-The relationship of the associated logic to SMT-LIB is currently under investigation.
+The relationship of the associated logic to SMT-LIB is currently under discussion.
 
 <table>
 <tr>
@@ -432,7 +432,7 @@ The relationship of the associated logic to SMT-LIB is currently under investiga
 </tr>
 <tr>
   <td>SLEEK</td>
-  <td>1084 (?? which configuration)</td>
+  <td>1084 (default configuration)</td>
   <td></td>
   <td></td>
   <td><a href="http://loris-7.ddns.comp.nus.edu.sg/~project/hip/">SLEEK</a></td>
