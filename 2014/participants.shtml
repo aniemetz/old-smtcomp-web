@@ -34,7 +34,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>X</td>
   <td>X</td>
   <td>916</td>
-  <td></td>
+  <td>1228</td>
   <td>20324</td>
   <td>?</td>
   <td>thansen@csse.unimelb.edu.au</td>
@@ -70,31 +70,31 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>Carsten Fuhs &lt;c.fuhs@cs.ucl.ac.uk&gt;</td>
 </tr>
 <tr>
-  <td>Boolector I</td>
-  <td>X</td>
-  <td>-</td>
-  <td>911 config:1134</td>
-  <td></td>
-  <td>42</td>
-  <td>?</td>
-  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
-</tr>
-<tr>
-  <td>Boolector II</td>
-  <td>X</td>
-  <td>-</td>
-  <td>911 config:1135</td>
-  <td></td>
-  <td>42</td>
-  <td>?</td>
-  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
-</tr>
-<tr>
-  <td>Boolector III</td>
+  <td>Boolector</td>
   <td>X</td>
   <td>-</td>
   <td>911 config 1136:</td>
-  <td></td>
+  <td>1218 QF_BV configuration (1703)</td>
+  <td>42</td>
+  <td>?</td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
+</tr>
+<tr>
+  <td>Boolector-d</td>
+  <td>X</td>
+  <td>-</td>
+  <td>911 config:1134</td>
+  <td>1218 configuration 1 (1701)</td>
+  <td>42</td>
+  <td>?</td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
+</tr>
+<tr>
+  <td>Boolector-j</td>
+  <td>X</td>
+  <td>-</td>
+  <td>911 config:1135</td>
+  <td>1218 configuration 2 (1702))</td>
   <td>42</td>
   <td>?</td>
   <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
@@ -144,7 +144,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>X</td>
   <td>-</td>
   <td>921</td>
-  <td></td>
+  <td>1204 (OpenSMT2-2014-06-14b)</td>
   <td>1984</td>
   <td>?</td>
   <td>antti.hyvarinen@gmail.com</td>
@@ -189,6 +189,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td><a href="systemDescriptions/sonolar-smtcomp2014.pdf">SONOLAR</a></td>
   <td>florian@informatik.uni-bremen.de</td>
 </tr>
+<!-- 
 <tr>
   <td>STP</td>
   <td>X</td>
@@ -199,6 +200,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>?</td>
   <td>thansen@csse.unimelb.edu.au</td>
 </tr>
+-->
 <tr>
   <td>STP-Soos</td>
   <td>X</td>
@@ -214,7 +216,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>X</td>
   <td>-</td>
   <td>860</td>
-  <td></td>
+  <td>1188</td>
   <td>1027</td>
   <td><a href="systemDescriptions/veriT.pdf">veriT</a></td>
   <td>david.deharbe@loria.fr; Pascal.Fontaine@inria.fr</td>
@@ -310,16 +312,16 @@ These are the logic divisions in which each solver is competing.
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>Boolector I</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>Boolector II</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>Boolector III</td>
+  <td>Boolector</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector-d</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector-j</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>CVC3</td>
@@ -357,17 +359,19 @@ These are the logic divisions in which each solver is competing.
   <td>SONOLAR</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
+<!-- 
 <tr>
   <td>STP</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
+-->
 <tr>
   <td>STP-Soos</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>veriT</td>
-  <td>?</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>?</td> <td>?</td> <td>?</td> <td>?</td> <td></td> <td>?</td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>?</td> <td></td> <td>?</td> <td>?</td> <td>?</td> <td></td>
+  <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td>
 </tr>
 <tr>
   <td>Yices2</td>
