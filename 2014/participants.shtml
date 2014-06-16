@@ -124,9 +124,9 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>X</td>
   <td>-</td>
   <td>893</td>
-  <td></td>
+  <td>1196 (config 1738)</td>
   <td>12739</td>
-  <td>?</td>
+  <td><a href="systemDescriptions/kleaver-description.txt">Kleaver</a></td>
   <td>Hristina Palikareva &lt;h.palikareva@imperial.ac.uk&gt;; Cristian Cadar &lt;c.cadar@imperial.ac.uk&gt;</td>
 </tr>
 <tr>
@@ -134,9 +134,9 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>X</td>
   <td>-</td>
   <td>894</td>
-  <td></td>
+  <td>1196 (config 1740)</td>
   <td>12739</td>
-  <td>?</td>
+  <td><a href="systemDescriptions/kleaver-description.txt">Kleaver</a></td>
   <td>Hristina Palikareva &lt;h.palikareva@imperial.ac.uk&gt;; Cristian Cadar &lt;c.cadar@imperial.ac.uk&gt;</td>
 </tr>
 <tr>
@@ -169,6 +169,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td><a href="systemDescriptions/SMTInterpol-2014.pdf">SMTInterpol</a></td>
   <td>hoenicke@informatik.uni-freiburg.de;christj@informatik.uni-freiburg.de</td>
 </tr>
+<!-- 
 <tr>
   <td>SMT-RAT</td>
   <td>X</td>
@@ -179,6 +180,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>?</td>
   <td>Florian Corzilius &lt;corzilius@informatik.rwth-aachen.de&gt;</td>
 </tr>
+-->
 <tr>
   <td>sonolar (sonolar_smtcomp-2014)</td>
   <td>X</td>
@@ -333,11 +335,11 @@ These are the logic divisions in which each solver is competing.
 </tr>
 <tr>
   <td>Kleaver-STP</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Kleaver-portfolio</td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>OpenSMT2</td>
@@ -351,10 +353,12 @@ These are the logic divisions in which each solver is competing.
   <td>SMTInterpol</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
+<!-- 
 <tr>
   <td>SMT-RAT</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
+-->
 <tr>
   <td>SONOLAR</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
