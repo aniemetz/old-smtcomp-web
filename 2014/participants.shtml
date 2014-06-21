@@ -202,7 +202,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 </tr>
 -->
 <tr>
-  <td>STP-Soos</td>
+  <td>STP-CryptoMiniSat4</td>
   <td>X</td>
   <td>-</td>
   <td>968</td>
@@ -368,7 +368,7 @@ These are the logic divisions in which each solver is competing.
 </tr>
 -->
 <tr>
-  <td>STP-Soos</td>
+  <td>STP-CryptoMiniSat4</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
@@ -436,7 +436,7 @@ The relationship of the associated logic to SMT-LIB is currently under discussio
 <tr>
   <td>SLEEK</td>
   <td>1084 (default configuration)</td>
-  <td>1277 sleek-05<br>config 1806 default<br>pre: 115 SL-SLEEK3</td>
+  <td>1277 sleek-05<br>config 1806 default<br>pre: 115 SL-SLEEK3;<br> late correction for output format: 1297 sleek-06, config 1834 default</td>
   <td><a href="http://loris-7.ddns.comp.nus.edu.sg/~project/hip/">SLEEK</a></td>
   <td>Le Quang Loc &lt;locle@comp.nus.edu.sg&gt;; Chin Wei Ngan &lt;chinwn@comp.nus.edu.sg&gt;</td>
 </tr>
@@ -451,7 +451,7 @@ The relationship of the associated logic to SMT-LIB is currently under discussio
   <td>SPEN</td>
   <td>971</td>
   <td>1280 SPEN 1.09<br>config 1809 spen.sh<br>pre: 118 SL-SPEN3</td>
-  <td><a href="systemDescriptions/spen-smtcomp14.pdf">SPEN</a></td>
+  <td><a href="systemDescriptions/spen-smtcomp14b.pdf">SPEN</a></td>
   <td>Mihaela Sighireanu &lt;mihaela.sighireanu@gmail.com&gt;</td>
 </tr>
 
