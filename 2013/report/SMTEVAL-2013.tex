@@ -17,6 +17,8 @@
 \usepackage{caption}
 \usepackage{array}
 \usepackage{color}
+\usepackage{colortab}
+\usepackage{xcolor}
 
 %%\usepackage{subcaption}
 
@@ -46,6 +48,7 @@
 \def\titlerunning{SMTEVAL-2013}
 \def\authorrunning{Cok, Stump, Weber}
 
+\newcommand{\tb}{\textbullet}
 \newcommand{\tjark}[1]{\marginpar{\footnotesize{#1}}}
 \newcommand{\tjarkx}[1]{\makebox[0pt][c]{\raisebox{0pt}[0pt][0pt]{\Large\textcolor{red}{${}^*$}}}\marginpar{\footnotesize{#1}}}
 
@@ -183,7 +186,13 @@ The SMT competitions required that participating solvers be publicly available L
 
 \begin{figure}
 \centering
-\includegraphics{Solvers}
+%%\includegraphics{Solvers}
+
+\begin{tabular}{|l|l|rrrrrrrrrr|}
+\hline
+\input{solvers2}
+\end{tabular}
+
 \caption{Solvers used in each year of SMT-COMP and SMT-EVAL. Solvers prior to 2010 (with green backgrounds) do not support SMT-LIB~v2 and were not used for SMT-EVAL; boxes with blue backgrounds identify solvers that are new for the evaluation; all those since 2010 (orange or blue backgrounds) were used for the evaluation.}
 \label{Fig:solvers}
 \end{figure}
@@ -268,7 +277,7 @@ year                & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 20
 \# dropping out     &      &  4   & 6    &  2   &  3   &  7   &  2   &  4   & \\ \hline
 \# new participants & (11) &  4   & 4    &  6   &  2   &  5   &  3   &  4   &      \\ \hline
 \end{tabular}
-\caption{Turnover in solver team participation. There are no entries for 2013 because it is not a competition with entrants.}
+\caption{Turnover in solver team participation. There are no entries for changes in 2013 because in that year there was no competition with entrants.}
 \label{Fig:participation}
 \end{table}
 \begin{itemize}
@@ -337,15 +346,20 @@ also make it easier to accurately characterize new benchmarks and to summarize t
 \label{Coverage}
 
 \begin{figure}
+
 \centering
-\includegraphics[width=\textwidth]{LogicSupportBySolvers}
-\caption{Support for each logic as stated by solver implementors. Darker highlighting identifies the 2013 versions of solvers.}
+\resizebox{\columnwidth}{!}{
+%%\includegraphics[width=\textwidth]{LogicSupportBySolvers}
+\input{LogicSupportBySolvers}
+}
+
+\caption{Support for each logic as stated by solver implementors. The dots instead of Xs identify the 2013 versions of solvers. The numbers in the bottom row are the number of 2013 solvers for each logic.}
 \label{Fig:solversupport}
 \end{figure}
 
 Each solver supports some subset of the SMT logics and the corresponding theories and characteristics described in the previous section. The set of logics supported by solvers (as stated by the solver teams) is shown in Fig.~\ref{Fig:solversupport}. CVC and Z3 support all or nearly all logics, with CVC4 just missing full support for non-linear arithmetic (it does have partial support, with full support in the 2014 competition); veriT and MathSat support a significant number of logics.
 
-The numbers in the bottom row of the figure state the number of current (2013) solvers that support a given logic. The logics with support from 4 or more solvers are highlighted. The characteristics most lacking are quantifiers and nonlinearity. Those with the most support are bitvectors, uninterpreted functions and arithmetic.
+The numbers in the bottom row of the figure state the number of current (2013) solvers that support a given logic. The characteristics most lacking are quantifiers and nonlinearity. Those with the most support are bitvectors, uninterpreted functions and arithmetic.
 
 Note that the support indicated is that stated by the solver supplier. In some cases, a solver supports one logic but is not listed as supporting a subset of that logic. The general reason is that the subset, with restricted characteristics, allows for specific optimizations that are not implemented. The more general solver could act on problems of the
 more restricted benchmarks but is not deemed competitive and thus was not formally entered into the competition for the restricted logic.
