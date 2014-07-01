@@ -202,23 +202,23 @@ SMT-EVAL used all historical solvers since~2010 (32~total), added 9 versions of 
 \subsection{Interpreting solver output}
 
 Given the large number of solver-benchmark combinations, it was not
-feasible to manually inspect the output of each job pair.  Thus, we
+feasible to manually inspect the output of each job-pair.\tjarkx{The term ``job-pair'' is only introduced below. Move this section after the section on StarExec?}  Thus, we
 needed to determine mechanically whether a solver reported a benchmark
 as satisfiable, unsatisfiable or unknown (or did not return a result
 within the time limit).
 
 On StarExec, this is done by providing a \emph{post-processor}, i.e.,
-an executable that operates on the output of each job pair.
+an executable that operates on the output of each job-pair.
 Unfortunately, two features of StarExec made it difficult to interpret
 solver output in a way that is fully SMT-LIB~v2 compliant.  First,
-StarExec collects the entire output of a job pair in a single file
+StarExec collects the entire output of a job-pair in a single file
 before passing it to the post-processor.  Thus, it is not possible to
 reliably determine which output a solver has generated specifically in
 response to a benchmark's {\tt check-sat} command.  Second, StarExec
 conflates standard output and standard error, making it impossible to
 distinguish between regular solver responses and error messages.
 
-To determine the result of each job pair, we used a post-processor
+To determine the result of each job-pair, we used a post-processor
 that searched for the words {\tt sat}, {\tt unsat} and {\tt unknown}
 in the output file, and reported the corresponding result if it found
 exactly one of them; otherwise, it reported no result.  This
@@ -254,7 +254,7 @@ competitions and evaluations.
 
 SMT-EVAL successfully used the new Star-Exec computational framework \cite{webStarExec,StuST-IJCAR-14}. Running SMT-EVAL on Star-Exec did indeed expose a number of bugs and user interface issues; these were corrected in the course of the SMT-EVAL runs. Thus SMT-EVAL served a valuable purpose in preparing Star-Exec for larger scale use.
 
-SMT-EVAL's largest computational job was running all 45 of the evaluated solvers on all of the non-incremental benchmarks in the SMT library. The benchmarks belong to different {\em logics} and solvers are characterized by which logics they support. So for each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that support problems in that logic, for a total of 1\,663\,478 solver-benchmark combinations (called {\em job-pairs} in Star-Exec). This job took several months of wall time to run. We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job pairs. Because of a bug (now corrected), the results of about 600 job-pairs were not present in the accumulated results. These were identified and rerun as an additional ``mop-up'' job. Each job-pair was run in an independent environment, on a computation node by itself. Each node has four cores. The job-pair was limited to 25 minutes of wall-clock time, 100 minutes of cpu time, and 1GB of memory.
+SMT-EVAL's largest computational job was running all 45 of the evaluated solvers on all of the non-incremental benchmarks in the SMT library. The benchmarks belong to different {\em logics} and solvers are characterized by which logics they support. So for each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that support problems in that logic, for a total of 1\,663\,478 solver-benchmark combinations (called {\em job-pairs} in Star-Exec). This job took several months of wall time to run. We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job-pairs. Because of a bug (now corrected), the results of about 600 job-pairs were not present in the accumulated results. These were identified and rerun as an additional ``mop-up'' job. Each job-pair was run in an independent environment, on a computation node by itself. Each node has four cores. The job-pair was limited to 25 minutes of wall-clock time, 100 minutes of cpu time, and 1GB of memory.
 
 \section{Evaluation results}
 \label{Evaluations}
