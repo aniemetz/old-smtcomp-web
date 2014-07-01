@@ -30,7 +30,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
 <tr>
   <td>4Simp</td>
   <td>X</td>
-  <td>X</td>
+  <td>-</td>
   <td>916</td>
   <td>1228 (4-Simp 2014) <br>config 1720 default</td>
   <td>20324</td>

@@ -23,9 +23,15 @@ The competition uses the
 The U.S. <a href="http://www.nsf.gov">National Science
 Foundation</a>, under grant CNS-0551697 supported the earlier SMTExec computational cluster.
 </p>
+<p>Cok's contribution is supported by GrammaTech, Inc. and by the NSF under grant ACI-1314674.
+</p>
 <p>
 The SMTCOMP web site is hosted on sourceforge, at smtcomp.sourceforge.net, currently maintained by David Cok.
 </p>
-
+<p>
+Any opinions,
+findings, and conclusions or recommendations expressed in this material are those of the author(s) and
+do not necessarily reflect the views of the National Science Foundation.
+</p>
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
