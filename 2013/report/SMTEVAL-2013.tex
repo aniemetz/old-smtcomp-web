@@ -183,18 +183,16 @@ One goal of the SMT project since its inception has been collecting benchmarks b
 
 \subsection{Solvers}
 
-The SMT competitions required that participating solvers be publicly available Linux applications, and that they be available for any future experimenter to use on new experiments. Thus all historical solvers are still available. However, in 2010, the competition adopted the then new benchmark format, SMT-LIB~v2~\cite{BarST-SMT-10}. Thus solvers prior to 2010 do not run on the current benchmark set. The participating solvers are shown in Fig.~\ref{Fig:solvers}.
+The SMT competitions required that participating solvers be publicly available Linux applications, and that they be available for any future experimenter to use on new experiments. Thus all historical solvers are still available. However, in 2010, the competition adopted the then new benchmark format, SMT-LIB~v2~\cite{BarST-SMT-10}. Thus solvers prior to 2010 do not run on the current benchmark set. The participating solvers are shown in Fig.~\ref{Fig:solvers}.\tjarkx{I don't quite understand why Abziz' 2011 solvers are marked as new for the evaluation.}
 
 \begin{figure}
 \centering
-%%\includegraphics{Solvers}
-
-\begin{tabular}{|l|l|rrrrrrrrrr|}
+\begin{tabular}{|l|l|c@{\hspace{-.1em}}ccccccccc|}
 \hline
 \input{solvers2}
 \end{tabular}
 
-\caption{Solvers used in each year of SMT-COMP and SMT-EVAL. Solvers prior to 2010 (marked by X) do not support SMT-LIB~v2 and were not used for SMT-EVAL; boxes marked with a * symbol identify solvers that are new for the evaluation; all those since 2010 (marked with + or * symbols) were used for the evaluation.}
+\caption{Solvers used in each year of SMT-COMP and SMT-EVAL. Solvers prior to 2010 (marked by X) do not support SMT-LIB~v2 and were not used for SMT-EVAL.  Entries marked with a~$*$ symbol identify solvers that are new for the evaluation.  All solvers since 2010 (marked with~+ or~$*$ symbols) were used for the evaluation.}
 \label{Fig:solvers}
 \end{figure}
 
