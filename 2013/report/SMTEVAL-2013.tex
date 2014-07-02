@@ -266,21 +266,25 @@ The evaluation team's observations on the questions it considered are presented 
 
 The historically participating solvers are shown in Fig.~\ref{Fig:solvers}. There are a number of observations to be made about solver participation.
 
-
 \begin{figure}
 \centering
 \begin{tabular}{|l|ccccccccc|}
 \hline
-year                & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 2013 \\ \hline
-\# of participants  & 11   & 11   & 9    & 13   & 12   & 10   & 11   & 11   & 9   \\ \hline
-\# dropping out     &      &  4   & 6    &  2   &  3   &  7   &  2   &  4   & \\ \hline
-\# new participants & (11) &  4   & 4    &  6   &  2   &  5   &  3   &  4   &      \\ \hline
+Year                & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 2013 \\ \hline
+\# of participants  & 11   & 11   & 9    & 13   & 12   & 10   & 11   & 11   & 9 \\
+\# dropping out     &      &  4   & 6    &  2   &  3   &  7   &  2   &  4   & \\
+\# new participants & (11) &  4   & 4    &  6   &  2   &  5   &  3   &  4   & \\ \hline
 \end{tabular}
 \caption{Turnover in solver team participation. There are no entries for changes in 2013 because in that year there was no competition with entrants.}
 \label{Fig:participation}
 \end{figure}
+
 \begin{itemize}
-\item As shown in Fig. \ref{Fig:participation}, the number of solvers participating each year has been fairly constant, ranging
+\item As shown in Fig. \ref{Fig:participation},\tjarkx{I don't quite
+  understand ``There are no entries for changes in 2013 because
+  in that year there was no competition with entrants.''  If we
+  provide \# of participants for 2013, can't we easily count also \#
+  dropping out and \# new?} the number of solvers participating each year has been fairly constant, ranging
 from 9-13, with a median value of 11 participants. The data for 2013 is an anomaly in two respects. The count of 9 only includes those solvers that were explicitly submitted new for 2013. Second, Abziz contributed a portfolio solver that makes an automatic choice, based on machine learning, of which among other existing solvers to apply to a benchmark using observed features of the benchmark. Abziz submitted two instances of his portfolio that used solvers from 2011; those instances of his portfolio solver are not counted in
 Fig. \ref{Fig:participation} since they were not available in 2011, though they are included in Fig.~\ref{Fig:solvers}. In addition, three variations were contributed in 2012; we count just one participation unit in
 Fig. \ref{Fig:participation} for 2012, though all three (and the two 2011 entries) were used in the evaluations described in this paper.
@@ -345,7 +349,6 @@ also make it easier to accurately characterize new benchmarks and to summarize t
 \label{Coverage}
 
 \begin{figure}
-
 \centering
 \resizebox{\columnwidth}{!}{
 %%\includegraphics[width=\textwidth]{LogicSupportBySolvers}
@@ -355,6 +358,11 @@ also make it easier to accurately characterize new benchmarks and to summarize t
 \caption{Support for each logic as stated by solver implementors. The dots instead of Xs identify the 2013 versions of solvers. The numbers in the bottom row are the number of 2013 solvers for each logic.}
 \label{Fig:solversupport}
 \end{figure}
+
+\tjark{In Fig.~\ref{Fig:solversupport}, solver names need some
+  clean-up: what do the (numbers) mean, why are some solver names
+  (like Z3-\ldots) abbreviated to the point of no longer indicating
+  the solver version?}
 
 Each solver supports some subset of the SMT logics and the corresponding theories and characteristics described in the previous section. The set of logics supported by solvers (as stated by the solver teams) is shown in Fig.~\ref{Fig:solversupport}. CVC and Z3 support all or nearly all logics, with CVC4 just missing full support for non-linear arithmetic (it does have partial support, with full support in the 2014 competition); veriT and MathSat support a significant number of logics.
 
