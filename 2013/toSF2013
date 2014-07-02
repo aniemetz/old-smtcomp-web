@@ -26,22 +26,12 @@ cd `dirname $0`/..
 
 sftp $username,smtcomp@web.sourceforge.net  << HERE
 put [a-z]* htdocs
-mkdir htdocs/$year
 cd htdocs/$year
 lcd $year
+put SMTEVAL-2013.pdf .
+cd data
+lcd data
 put * .
-cd reports
-rm toSF2013
-cd ..
-rmdir reports
-cd report
-lcd report
-put * .
-rm toSF2013
-cd ../data
-lcd ../data
-put * .
-rm toSF2013
 exit
 HERE
 

@@ -53,6 +53,11 @@
 \newcommand{\tjark}[1]{\marginpar{\footnotesize{#1}}}
 \newcommand{\tjarkx}[1]{\makebox[0pt][c]{\raisebox{0pt}[0pt][0pt]{\Large\textcolor{red}{${}^*$}}}\marginpar{\footnotesize{#1}}}
 
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.75}
+
 \begin{document}
 
 \title{The 2013 SMT Evaluation}
@@ -183,7 +188,7 @@ One goal of the SMT project since its inception has been collecting benchmarks b
 
 \subsection{Solvers}
 
-The SMT competitions required that participating solvers be publicly available Linux applications, and that they be available for any future experimenter to use on new experiments. Thus all historical solvers are still available. However, in 2010, the competition adopted the then new benchmark format, SMT-LIB~v2~\cite{BarST-SMT-10}. Thus solvers prior to 2010 do not run on the current benchmark set. The participating solvers are shown in Fig.~\ref{Fig:solvers}.\tjarkx{I don't quite understand why Abziz' 2011 solvers are marked as new for the evaluation.}
+The SMT competitions required that participating solvers be publicly available Linux applications, and that they be available for any future experimenter to use on new experiments. Thus all historical solvers are still available. However, in 2010, the competition adopted the then new benchmark format, SMT-LIB~v2~\cite{BarST-SMT-10}. Thus solvers prior to 2010 do not run on the current benchmark set. The participating solvers are shown in Fig.~\ref{Fig:solvers}.
 
 \begin{figure}
 \centering
@@ -198,33 +203,6 @@ The SMT competitions required that participating solvers be publicly available L
 
 SMT-EVAL used all historical solvers since~2010 (32~total), added 9 versions of previous solvers that were updated in~2013, and included 4 additional experimental solvers,\footnote{These were four variations of a portfolio-style solver submitted by Abziz~\cite{aziz:msc,aziz2012machine}.} for a total of~45 solvers.  All solver implementation teams that we could reach were apprised of the upcoming evaluation and given the opportunity to submit new versions of their solvers. Some teams simply submitted the current version of their solver or advised us to download the current public version from the team's website. Thus the solvers are not necessarily tuned to particular application domains or for competition. Any comparisons for particular applications or kinds of benchmark problems should perform an independent analysis.
 
-
-\subsection{Interpreting solver output}
-
-Given the large number of solver-benchmark combinations, it was not
-feasible to manually inspect the output of each job-pair.\tjarkx{The term ``job-pair'' is only introduced below. Move this section after the section on StarExec?}  Thus, we
-needed to determine mechanically whether a solver reported a benchmark
-as satisfiable, unsatisfiable or unknown (or did not return a result
-within the time limit).
-
-On StarExec, this is done by providing a \emph{post-processor}, i.e.,
-an executable that operates on the output of each job-pair.
-Unfortunately, two features of StarExec made it difficult to interpret
-solver output in a way that is fully SMT-LIB~v2 compliant.  First,
-StarExec collects the entire output of a job-pair in a single file
-before passing it to the post-processor.  Thus, it is not possible to
-reliably determine which output a solver has generated specifically in
-response to a benchmark's {\tt check-sat} command.  Second, StarExec
-conflates standard output and standard error, making it impossible to
-distinguish between regular solver responses and error messages.
-
-To determine the result of each job-pair, we used a post-processor
-that searched for the words {\tt sat}, {\tt unsat} and {\tt unknown}
-in the output file, and reported the corresponding result if it found
-exactly one of them; otherwise, it reported no result.  This
-conservative approach may have caused a small number of (otherwise
-valid) solver responses to be discarded.  It was adopted to minimize the
-number of incorrect results reported by the post-processor.
 
 
 \subsection{Benchmark scrambling}
@@ -256,6 +234,34 @@ SMT-EVAL successfully used the new Star-Exec computational framework \cite{webSt
 
 SMT-EVAL's largest computational job was running all 45 of the evaluated solvers on all of the non-incremental benchmarks in the SMT library. The benchmarks belong to different {\em logics} and solvers are characterized by which logics they support. For each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that support problems in that logic, for a total of 1\,663\,478 solver-benchmark combinations (called {\em job-pairs} in Star-Exec). This job took several months of wall time to run. We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job-pairs. Because of a bug (now corrected), the results of about 600 job-pairs were not present in the accumulated results. These were identified and rerun as an additional ``mop-up'' job. Each job-pair was run in an independent environment, on a computation node by itself. Each node has four cores. The job-pair was limited to 25 minutes of wall-clock time, 100 minutes of cpu time, and 1GB of memory.
 
+\subsection{Interpreting solver output}
+
+Given the large number of solver-benchmark combinations, it was not
+feasible to manually inspect the output of each job-pair. Thus, we
+needed to determine mechanically whether a solver reported a benchmark
+as satisfiable, unsatisfiable or unknown (or did not return a result
+within the time limit).
+
+On StarExec, this is done by providing a \emph{post-processor}, i.e.,
+an executable that operates on the output of each job-pair.
+Unfortunately, two features of StarExec made it difficult to interpret
+solver output in a way that is fully SMT-LIB~v2 compliant.  First,
+StarExec collects the entire output of a job-pair in a single file
+before passing it to the post-processor.  Thus, it is not possible to
+reliably determine which output a solver has generated specifically in
+response to a benchmark's {\tt check-sat} command.  Second, StarExec
+conflates standard output and standard error, making it impossible to
+distinguish between regular solver responses and error messages.
+
+To determine the result of each job-pair, we used a post-processor
+that searched for the words {\tt sat}, {\tt unsat} and {\tt unknown}
+in the output file, and reported the corresponding result if it found
+exactly one of them; otherwise, it reported no result.  This
+conservative approach may have caused a small number of (otherwise
+valid) solver responses to be discarded.  It was adopted to minimize the
+number of incorrect results reported by the post-processor.
+
+
 \section{Evaluation results}
 \label{Evaluations}
 
@@ -268,7 +274,7 @@ The historically participating solvers are shown in Fig.~\ref{Fig:solvers}. Ther
 
 \begin{figure}
 \centering
-\begin{tabular}{|l|ccccccccc|}
+\begin{tabular}{|l|cccccccc|c|}
 \hline
 Year                & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 2013 \\ \hline
 \# of participants  & 11   & 11   & 9    & 13   & 12   & 10   & 11   & 11   & 9 \\
@@ -280,12 +286,8 @@ Year                & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 20
 \end{figure}
 
 \begin{itemize}
-\item As shown in Fig. \ref{Fig:participation},\tjarkx{I don't quite
-  understand ``There are no entries for changes in 2013 because
-  in that year there was no competition with entrants.''  If we
-  provide \# of participants for 2013, can't we easily count also \#
-  dropping out and \# new?} the number of solvers participating each year has been fairly constant, ranging
-from 9-13, with a median value of 11 participants. The data for 2013 is an anomaly in two respects. The count of 9 only includes those solvers that were explicitly submitted new for 2013. Second, Abziz contributed a portfolio solver that makes an automatic choice, based on machine learning, of which among other existing solvers to apply to a benchmark using observed features of the benchmark. Abziz submitted two instances of his portfolio that used solvers from 2011; those instances of his portfolio solver are not counted in
+\item As shown in Fig. \ref{Fig:participation}, the number of solvers participating each year has been fairly constant, ranging
+from 9-13, with a median value of 11 participants. The data for 2013 is an anomaly in two respects. The count of 9 only includes those solvers that were explicitly submitted new for 2013; some teams were glad to be included but did not upgrade their 2012 solvers. Second, Abziz contributed a portfolio solver that makes an automatic choice, based on machine learning, of which among other existing solvers to apply to a benchmark using observed features of the benchmark. Abziz submitted two instances of his portfolio that used solvers from 2011; those instances of his portfolio solver are not counted in
 Fig. \ref{Fig:participation} since they were not available in 2011, though they are included in Fig.~\ref{Fig:solvers}. In addition, three variations were contributed in 2012; we count just one participation unit in
 Fig. \ref{Fig:participation} for 2012, though all three (and the two 2011 entries) were used in the evaluations described in this paper.
 
@@ -323,7 +325,7 @@ Leaving aside difference logics as special cases of integer and real logics, the
 This list of characteristics partially corresponds to the set of SMT-LIB theories. The exceptions are quantification and non-linearity, both of which designate lifting restrictions on the kinds of terms allowed in the resulting logic. (Since they do not correspond exactly to underlying SMT theories, the term {\em characteristics} is used in this discussion.)
 
 It is possible to define a logic for any set of these characteristics in an almost purely combinatorial sense.
-Barring non-linearity without arithmetic and the useless empty set, there are 111 combinations of characteristics (instead of the full 128). SMT-LIB has definitions and benchmarks for 20 of these logics (excluding QF\_RDL, QF\_IDL, and QF\_UFIDL).\tjarkx{Why ``excluding ...''? Can't we just say ``SMT-LIB has definitions and benchmarks for 23 of these logics.''?} Fig.~\ref{Fig:lattice} shows what might be expected to be natural containment relationships among the logics defined at the time of this evaluation.
+Barring non-linearity without arithmetic and the useless empty set, there are 111 combinations of characteristics (instead of the full 128). SMT-LIB has definitions and benchmarks for 23 of these logics. Fig.~\ref{Fig:lattice} shows what might be expected to be natural containment relationships among the logics defined at the time of this evaluation.
 
 However, these containment relationships are not actually sub-logic relationships. That more accurate relationship is shown in a diagram on the SMT-LIB website: \url{http://smtlib.cs.uiowa.edu/logics.shtml} (due to Cesare Tinelli). The principal cause of this lack of sub-logic relationship is that many of the logics supporting arrays support only specific sorts of arrays. For example, the basic QF\_AX logic allows arbitrary new sort symbols, including arrays over those free sorts. However, QF\_ABV (arrays and bit-vectors) does not allow new sort symbols and only allows arrays over bit-vector sorts.
 
@@ -355,14 +357,9 @@ also make it easier to accurately characterize new benchmarks and to summarize t
 \input{LogicSupportBySolvers}
 }
 
-\caption{Support for each logic as stated by solver implementors. The dots instead of Xs identify the 2013 versions of solvers. The numbers in the bottom row are the number of 2013 solvers for each logic.}
+\caption{Support for each logic as stated by solver implementors. The dots instead of Xs identify the 2013 versions of solvers. The numbers in the bottom row are the number of 2013 solvers for each logic. In some cases, indicated by numbers in parentheses in the left-hand column, there are multiple versions of the same tool in different years with the same support for logics.}
 \label{Fig:solversupport}
 \end{figure}
-
-\tjark{In Fig.~\ref{Fig:solversupport}, solver names need some
-  clean-up: what do the (numbers) mean, why are some solver names
-  (like Z3-\ldots) abbreviated to the point of no longer indicating
-  the solver version?}
 
 Each solver supports some subset of the SMT logics and the corresponding theories and characteristics described in the previous section. The set of logics supported by solvers (as stated by the solver teams) is shown in Fig.~\ref{Fig:solversupport}. CVC and Z3 support all or nearly all logics, with CVC4 just missing full support for non-linear arithmetic (it does have partial support, with full support in the 2014 competition); veriT and MathSat support a significant number of logics.
 
@@ -377,7 +374,7 @@ more restricted benchmarks but is not deemed competitive and thus was not formal
 
 We can obtain a measure of the overall year-by-year improvement in solver performance by applying each year's solvers to all the benchmarks (within each logic), observing the best performance on each benchmark. That is, the data shows a {\em virtual best performer}, obtained by an all-knowing oracle choosing, for each benchmark, the solver that performs best on that benchmark.
 
-Fig.~\ref{Fig:CumulativeTimes} shows the fraction of benchmarks completed (y-axis) within a given time (in seconds, on the x-axis);\tjarkx{The legend for 2011 is not dashed.} thus points toward the upper left are better (more completed in less time). The results for all logics are shown together. The four curves are the data for the four years from 2010 to 2013. The lowest (marked with fine dots) curve is that for 2010. There is clearly significant progress made from 2010 to later years: the number of benchmarks completed within a given time is noticeably higher. The curves for 2011 and 2012 (heavy dashes and short dashes, respectively) are clearly above 2010, but are not substantially different from each other. The solvers for 2013 (heavy solid line) are uniformly above those for previous years, but not by a large amount.
+Fig.~\ref{Fig:CumulativeTimes} shows the fraction of benchmarks completed (y-axis) within a given time (in seconds, on the x-axis); thus points toward the upper left are better (more completed in less time). The results for all logics are shown together. The four curves are the data for the four years from 2010 to 2013. The lowest (marked with fine dots) curve is that for 2010. There is clearly significant progress made from 2010 to later years: the number of benchmarks completed within a given time is noticeably higher. The curves for 2011 and 2012 (heavy dashes and short dashes, respectively) are clearly above 2010, but are not substantially different from each other. The solvers for 2013 (heavy solid line) are uniformly above those for previous years, but not by a large amount.
 
 By this data, the improvements in raw SMT solver performance on the current set of benchmark problems have slowed down, though they may have improved by other measures.
 
@@ -433,7 +430,7 @@ Any variation due to non-determinism within a solver we consider part of that so
 
 \subsubsection{Accuracy of competitions}
 \label{BenchmarkSelection}
-The data we collected allows us to simulate various competition organizations. One such competition design would be, for each logic, to run all solvers for the given year on all benchmarks. The result of such an exercise is shown in Figs.~\ref{Fig:virtual-competition-all}, \ref{Fig:virtual-competition-all2} and~\ref{Fig:virtual-competition-all3} for the set of 9 solvers for the year 2013. By summing all the cpu times\tjarkx{Shouldn't this be wall-clock times?} for each benchmark-solver combination, we obtain that such a competition would use about 443 days of wall-clock time (using one computational node); for this computation we consider all timeout and memory exhaustion results to have taken the full timeout value (1500 sec) of time. It is possible that in some cases a solver may exhaust memory prior to the timeout.
+The data we collected allows us to simulate various competition organizations. One such competition design would be, for each logic, to run all solvers for the given year on all benchmarks. The result of such an exercise is shown in Figs.~\ref{Fig:virtual-competition-all}, \ref{Fig:virtual-competition-all2} and~\ref{Fig:virtual-competition-all3} for the set of 9 solvers for the year 2013. By summing all the reported wall-clock times for each benchmark-solver combination, we obtain that such a competition would use about 443 days of wall-clock time (using one computational node); for this computation we consider all timeout and memory exhaustion results to have taken the full timeout value (1500 sec) of time. It is possible that in some cases a solver may exhaust memory prior to the timeout.
 
 In previous competitions, the winner was determined as the solver that correctly solved the most benchmarks within the timeout limit (solvers producing incorrect results are disqualified). Ties among solvers solving the same number of benchmarks are resolved in favor of the solver taking the least amount of time to produce its solutions. In the tables showing the results, for each logic, the results are reported in the order of a virtual winner.
 
@@ -467,23 +464,14 @@ In previous competitions, the winner was determined as the solver that correctly
 \label{Fig:virtual-competition-all3}
 \end{figure}
 
-\tjark{Maybe experiment with (see \LaTeX{} source)
-%\renewcommand{\textfraction}{0.05}
-%\renewcommand{\topfraction}{0.8}
-%\renewcommand{\bottomfraction}{0.8}
-%\renewcommand{\floatpagefraction}{0.75}
-or similar to change the float layout, so that, e.g.,
-Fig.~\ref{Fig:virtual-competition-all3} doesn't end up on a page by
-itself.}
-
-However, past competitions have not used all benchmarks, but rather a random subset of the benchmarks. It is worth asking how susceptible the competition results are to the particular subset of benchmarks used for the competition. Typically, the choice is not completely random; rather, the distribution is constrained to have roughly equal representation of various categories of difficulty. For our evaluation here, we determined the results of a virtual competition by simply randomly selecting different equal-sized subsets (ignoring difficulty measures), determining the competition results for each, and observing whether the competition results vary significantly depending on the subset.  Fig.~\ref{Fig:virtual-competition-some} shows the result of an experiment in which a virtual competition was executed on 1000 random subsets; we tallied the fraction of times that the winner was different than the winner in the full virtual competition (Figs.~\ref{Fig:virtual-competition-all}--\ref{Fig:virtual-competition-all3}) and the fraction of times that the complete order of the finishers was different. (We limited our consideration to those logics with at least 100 benchmarks and with more than one solver.)
+However, past competitions have not used all benchmarks, but rather a random subset of the benchmarks. It is worth asking how susceptible the competition results are to the particular subset of benchmarks used for the competition. Typically, the choice is not completely random; rather, the distribution is constrained to have roughly equal representation of various categories of difficulty. For our evaluation here, we determined the results of a virtual competition by simply randomly selecting different equal-sized subsets (ignoring difficulty measures), determining the competition results for each, and observing whether the competition results vary significantly depending on the subset.  Fig.~\ref{Fig:virtual-competition-some} shows the result of an experiment in which 1000 virtual competitions were executed each using a different random subset; we tallied the fraction of times that the winner was different than the winner in the full virtual competition (Figs.~\ref{Fig:virtual-competition-all}--\ref{Fig:virtual-competition-all3}) and the fraction of times that the complete order of the finishers was different. (We limited our consideration to those logics with at least 100 benchmarks and with more than one solver.)
 
 The results are quite instructive. In many logics, the competition winners change in only a small fraction of trials.
 However, in several logics, the fraction of trials in which the winner changes is quite significant, in some cases over~60\%. Inspection of the data reveals two contributing causes.
 \begin{itemize}
 \item First, some logics have a relatively large number of benchmarks that are unsolved by some solver within the timeout limit.  The fraction of benchmarks that are not solved is shown in the final column of Fig.~\ref{Fig:virtual-competition-some} (this is the average fraction over all the solvers for that logic). Random selection of benchmarks can readily change the subset of unsolved benchmarks included in the virtual competition or change the balance of benchmarks solved by one solver vs. another. Since ``winning'' the virtual competition is determined primarily by the number of benchmarks solved, rather than the time, any change in the relative number of solved benchmarks may change the order of winners.
 
-For example, the logic QF\_AUFBV has 14\,335 benchmarks. Of those, 520 are unsolved by Boolector and 543 are unsolved by SONOLAR (the winner and runner up of the virtual competition). Of these only 346 are unsolved by both, leaving 174 unsolved only by Boolector and 197 unsolved only by SONOLAR. Choosing 1433 benchmarks at random, over 1000 trials, yields more benchmarks unsolvable by Boolector about 31\% of the time, more unsolved by SONOLAR about 62\% of the time, and the same about 7\% of the time. Thus, the random selection of the competition benchmark set would allow SONOLAR to best Boolector about 1/3 of the time, despite Boolector being better on the overall benchmark population for this logic.
+For example, the logic QF\_AUFBV has 14\,335 benchmarks. Of those, 520 are unsolved by Boolector and 543 are unsolved by SONOLAR (the winner and runner up of the virtual competition). Of these only 346 are unsolved by both, leaving 174 unsolved only by Boolector and 197 unsolved only by SONOLAR. Choosing 1433 benchmarks at random, over 1000 trials, yields more benchmarks unsolvable by Boolector about 31\% of the time, more unsolved by SONOLAR about 62\% of the time, and the same about 7\% of the time. Thus, the random selection of (in this case, 10\% of) the competition benchmark set would allow SONOLAR to best Boolector about 1/3 of the time, despite Boolector being better on the overall benchmark population for this logic.
 
 \item Second, even when unsolved benchmarks are not a contributing factor, some pairs of solvers have total times that are close. Variations in time caused by slightly different choices of benchmarks might cause changes in winning order. The experiment described next explores this phenomenon further.
 
@@ -679,8 +667,9 @@ Part of the effort of benchmark curation for the 2014 competition is to more car
 \label{Fig:category}
 \end{figure}
 
-Some benchmarks are {\em incremental}; that is, they contain more than one {\tt check-sat} command in a command script. This is relevant to interactive applications, but is not the main focus of the competition. In 2012, there were demonstration divisions on generating unsat cores and proof generation. These did not require special benchmarks, but do require different evaluation. The evaluation reported here did not consider the incremental benchmarks.
+Some benchmarks are {\em incremental}; that is, they contain more than one {\tt check-sat} command in a command script. This is relevant to interactive applications, but is not the main focus of the competition. The evaluation reported here did not consider the incremental benchmarks.
 
+In addition, in 2012, there were demonstration divisions on generating unsat cores and proof generation. These did not require special benchmarks, but do require different evaluation. We did not evaluate these variations either.
 
 Fig.~\ref{Fig:completion} shows the fraction of benchmarks (for each logic and year) that are solved within the 25 minute timeout period. For each combination of solver and year we report the fraction of benchmarks that are completed by all solvers and the fraction that are completed by at least one solver. In 2013, in about half of the logics, all benchmarks are completed by at least one solver within the timeout period (though not necessarily the same solver); in all but one logic (QF\_RDL), at least 95\% of the benchmarks are completed by at least one solver. The values for the fraction of benchmarks completed by all solvers are not as high, since some of the solvers may be initial experimental versions and not tuned for competition. Even so, in more than half of the logics, at least 85\% of benchmarks were completed by all solvers.
 
@@ -709,14 +698,14 @@ An additional question that we did not address in detail is the degree to which 
 \input{quintiles}
 \hline
 \end{tabular}
-\caption{The distribution of winning benchmark times by logic (for 2013 solvers).}
+\caption{The distribution of winning benchmark times, in seconds, by logic (for 2013 solvers).}
 \label{Fig:quintiles}
 \end{figure}
 
 \subsection{Application needs}
 \label{Applications}
 
-As part of its evaluation, the SMT-EVAL team solicited input on applications that use SMT-LIB. The response was not broad enough to be representative. In addition, the authors
+As part of its evaluation, the SMT-EVAL team solicited input on applications that use SMT-LIB. The response was not broad enough to be representative. However, the authors
 have encountered, by happenstance, enough users of SMT-LIB who are not active in the user community to indicate that there is likely a wide variety of uses that are not well-organized or well-represented in benchmarks on specific logics. A few application domains are fairly well-known, including software verification and synthesis, scheduling, planning and routing optimization, and invariant inference. Software verification applications in particular will benefit from broader support for combinations of theories and better heuristics for quantification.
 
 In general, a better understanding of the variety of application needs is needed to target future development of SMT solvers and the SMT benchmark library.
@@ -748,7 +737,7 @@ Other observations are these:
 \item {\em Participation}. The number of participants is relatively stable (9-13) with an average turnover of 35\% (low of 16\%, high of 50\%) each year. There is also a core of continuing participants (about 1/3 of the total).
 \item {\em Progress in solver performance}. Solver performance increased significantly from 2010 to 2013, but most of that improvement occurred from 2010 to 2011. There is improvement across nearly all logics, but some logics are lagging.
 \item {\em Repeatability}. The repeatability of benchmarks is reduced by solver nondeterminism. Most importantly, however, competition repeatability is compromised by significant differences in performance of solvers on particular benchmarks, such that different random subsets of benchmarks will produce different assessments of solvers. The relevance of competitions is also threatened by the relevance of the total benchmark set.
-\item {\em Competitiveness of solvers}. Within a logic nearly all solvers contribute something (e.g., a solution that no other solver produces). However, generally the winning times across benchmarks within a logic are obtained by 2-3 solvers that dominate that division. Comparing first-place times to second-place times shows that (a) in many logics the runner-up is quite close to the winner, but (b) in some logics, presumably with state-of-the-art tuning and advanced algorithms, the winner far outstrips the other competitors. It is also relevant that most benchmarks change winner from one year to the next. Overall, we judge that there is a moderate degree of competitiveness among solvers - a few tend to dominate in any logic, but other solvers do also make their contribution.
+\item {\em Competitiveness of solvers}. Within a logic nearly all solvers contribute something (e.g., a solution that no other solver produces). However, generally the winning times across benchmarks within a logic are obtained by 2-3 solvers that dominate that division. Comparing first-place times to second-place times shows that (a) in many logics the runner-up is quite close to the winner, but (b) in some logics, presumably with state-of-the-art tuning and advanced algorithms, the winner far outstrips the other competitors. It is also relevant that most benchmarks change winner from one year to the next. Overall, we judge that there is a moderate degree of competitiveness among solvers---a few tend to dominate in any logic, but other solvers do also make their contribution.
 \item {\em Difficulty of Benchmarks}. A relatively low fraction of benchmarks require more than the timeout period to solve. Most benchmarks are solved by all solvers within the timeout period.
 
 \end{itemize}
@@ -757,7 +746,7 @@ Other observations are these:
 
 The experience of past competitions and this evaluation point to a number of ideas for future competitions. Most past policies have worked well and should be continued: openness, transparency, reproducibility, public submission of solvers. Other aspects could use improvement. Some of these have already begun for 2014.
 \begin{itemize}
-\item To reduce potential variation caused by choice of benchmarks in a competition, a competition should include as many benchmarks as possible.
+\item Include as many benchmarks as possible in a competition, to reduce potential variation caused by choice of benchmarks in a competition.
 \item Invigorate the collection of benchmarks and promote a round of curating the existing benchmarks. This might include discontinuing or combining some logics.
 \item Encourage the participation of new entrants through tool support and recognition. Some ideas are recognizing the best new entrant and promoting reference infrastructure for elements like parsing input files or standard reporting mechanisms.
 \item Encourage broad participation by measuring performance in all logics, even when some logics are deemed more relevant than others.
@@ -775,7 +764,8 @@ The most important aspect of future work is to increase and improve benchmark qu
 There are also a number of questions that we posed but did not have the time or data to answer.
 \begin{itemize}
 \item Are there interesting differences in performance between satisfiable and unsatisfiable benchmarks?
-\item Do solvers support all of SMT-LIB~v2? Should the community encourage expansion to new capabilities (e.g., unsat cores, incremental, interpolants, model generation, proof generation)? Should the community define a core language that is used for the competition, with other aspects being optional?
+\item Do solvers support all of SMT-LIB~v2? Should the community define a core language that is used for the competition, with other aspects being optional?
+\item Should the community encourage expansion to new capabilities (e.g., unsat cores, incremental, interpolants, model generation, proof generation)? 
 \item Which logics should be retired or deemphasized, based on solver progress or application need?
 \item Competitions primarily measure ability to solve benchmarks, with the time to do so a secondary criterion. However, in some applications it is important to discharge easy problems quickly. We did not assess this characteristic of the available solvers, but it would be worth doing so.
 \item It would also be worth extending our study with an evaluation of incremental benchmarks and means of measuring performance in an interactive environment.
@@ -787,8 +777,8 @@ As this report is being finalized, the 2014 SMT Competition is underway. Some of
 
 \section*{Acknowledgments}
 
-The cost of executing the SMT competition is underwritten by the SMT
-Workshop.  The evaluation used the Star-Exec cluster at the University
+The cost of executing SMT competitions is underwritten by the SMT
+Workshop.  This evaluation used the Star-Exec cluster at the University
 of Iowa.  This computation cluster replaces the SMT-Exec cluster used
 for all previous competitions.  The cluster is supported by the
 U.S.\ National Science Foundation under grants \#1058748 and \#1058925.  Cok's
