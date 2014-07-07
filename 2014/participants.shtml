@@ -74,7 +74,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>911 : config 1136:</td>
   <td>1218 <br>config 1703 boolector</td>
   <td>42</td>
-  <td>?</td>
+  <td><a href="systemDescriptions/boolector-sc2014.pdf">Boolector</a></td>
   <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
 </tr>
 <tr>
@@ -208,7 +208,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>968</td>
   <td>1240 stp-cryptominisat4<br>config 1750 default</td>
   <td>1337</td>
-  <td>?</td>
+  <td><a href="systemDescriptions/STP-descr.pdf">STP-CryptoMiniSat4</a></td>
   <td>soos.mate@gmail.com</td>
 </tr>
 <tr>
