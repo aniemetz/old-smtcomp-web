@@ -104,7 +104,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>900</td>
   <td>1262 <br>config 1785 default</td>
   <td>33333</td>
-  <td><a href="systemDescriptions/boolector-sc2014.pdf">Boolector</a></td>
+  <td>?</td>
   <td>Clark Barrett &lt;barrett@cs.nyu.edu&gt;;Morgan Deters &lt;mdeters@cs.nyu.edu&gt;</td>
 </tr>
 <tr>
