@@ -228,7 +228,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>1095 (config=default); app track config=incremental</td>
   <td>1259 Yices-2.2.1-smtcomp2014 <br>config 1781 default <br>app config 1782 incremental</td>
   <td>22908</td>
-  <td><a href="systemDescriptions/Yices2-description.pdf">veriT</a></td>
+  <td><a href="systemDescriptions/Yices2-description.pdf">Yices</a></td>
   <td>bruno@csl.sri.com</td>
 </tr>
 <tr>
