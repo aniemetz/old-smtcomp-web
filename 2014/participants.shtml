@@ -144,7 +144,7 @@ These solvers have expressed intention to participate in SMT-COMP 2014.
   <td>921</td>
   <td>1204 OpenSMT2-2014-06-14b <br>config 1789 default</td>
   <td>1984</td>
-  <td>?</td>
+  <td><a href="systemDescriptions/OpenSMT.txt">OpenSMT</a></td>
   <td>antti.hyvarinen@gmail.com</td>
 </tr>
 <tr>
