@@ -1,0 +1,150 @@
+%% Based on a TeXnicCenter-Template by Tino Weinkauf.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% TODO
+%%   fix fonts - which font; do headings also change?
+%%   fix Tex path to find fonts; pick a font
+%%   printed vs. displayed hyperlinks
+%%   hypersetup customization?
+%%   widen margins - DONE
+%%   use oneside or twoside? 10, 11 12pt ?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[12pt,oneside]{report}
+\documentclass{llncs}
+
+%% Language %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[USenglish]{babel} %francais, polish, spanish, ...
+%\usepackage[T1]{fontenc}
+%\usepackage{textcomp}
+%\usepackage[ansinew]{inputenc}
+%\usepackage{makeidx}	  %% needed to create an index
+\usepackage{hyperref}   %% sets hyperlinks within a pdf
+
+%%\usepackage{lmodern} %Type1-font for non-english texts and characters
+
+
+%% Packages for Graphics & Figures %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{graphicx} %%For loading graphic files
+%\usepackage{subfig} %%Subfigures inside a figure
+%\usepackage{tikz} %%Generate vector graphics from within LaTeX
+
+%\usepackage{mathptmx} %% Times fonts, for math as well
+
+
+%%\makeindex
+
+%% The adjustment amounts depend on the font
+%% -.5 for 12pt, -.875 for 10pt
+%% FIXME: should these be set instead of adjusted?
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\begin{document}
+
+
+\title{The 2012 SMT Competition}
+
+\author{David R. Cok (author and chair of organizing committee)\inst{1} \and \\ 
+Alberto Griggio (co-organizer)\inst{2} \and \\ 
+Roberto Bruttomesso (co-organizer)\inst{3} \and \\
+Morgan Deters (competition execution) \inst{4} \\
+}
+
+\institute{GrammaTech, Inc.,  \email{dcok@grammatech.com} \and
+Fondazione Bruno Kessler (FBK),  \email{griggio@fbk.eu} \and
+Atrenta France,  \email{roberto@atrenta.com} \and
+NYU, New York, USA \email{mdeters@cs.nyu.edu}
+}
+
+
+
+\maketitle
+
+\centerline{12 June 2012}
+
+\section*{}
+
+The 2012 SMT Competition continues the series of competitions in SMT solver capability and performance that began in 2005.
+The competition is held to spur advances in
+SMT solver implementations acting on benchmark formulas of practical interest. Public competitions are
+a well-known means of stimulating advancement in software tools. For example, in automated
+reasoning, the SAT and CASC competitions for first-order and propositional reasoning tools, respectively,
+have spurred significant innovation in their fields \cite{leberre+03,PSS02}.
+
+As this summary is written prior to the deadline for 2012 submissions, we do not yet know the 
+entrants or the results for 2012. Those will be reported at IJCAR'12. Information about the winners
+and results of the competition will be available online at \url{www.smtcomp.org}; information
+about previous years' competitions is also available at that website.
+
+\paragraph{The 2012 Competition.} In planning the 2012 competition, the organizers desired to encourage breadth
+in the capability of SMT solvers. Previous years have challenged solvers to support a variety of logics and
+have measured them on raw performance on individual problems. This year we have two additional goals. First, we
+are focusing the competition on a subset of the logics that are the more relevant to applications. Some of the 
+simpler logics are now routine for nearly all solvers and therefore not a good base for a competition. Others have 
+received only light interest in the past. Some of the less expressive logics are subsumed into the more expressive logics
+for selecting competition benchmarks.
+
+Second, we
+want to encourage support for additional capabilities, namely, determining unsatisfiable cores and generating proofs.
+Finding small unsatisfiable cores is important, for example, in finding contradictions within sets of assertions; compact unsatisfiable cores also produce more compact proofs. Finding a {\em minimal} unsatisfiable core is a hard problem with no known practical algorithm;
+thus, good heuristics that apply to problems of interest are valuable and worth a competition. So, the organizers added
+an unsat core track to the 2012 competition. The winner of that track will be the solver that, without producing any erroneous results, produces the smallest unsatisfiable cores on the benchmark set within the timeout period.
+
+Similarly, constructing proofs of unsatisfiability is also useful, particularly if quantified assertions are included.
+Since there is as yet no standard method to express proofs and thus no easy way to check them, the organizers added a proof generation track solely in demonstration mode. We encourage submission of solvers with this capability and will highlight this capability in the results of the competition, but we will not attempt to measure the speed or accuracy of such solvers this year. We do hope that
+attention to proof generation will encourage standardization of proof format and of proof checkers.
+
+The competition uses a subset of benchmarks from those available at \url{www.smtlib.org}. The full benchmark suite contains nearly 100,000 benchmarks. New benchmarks are continually being added --- additional benchmarks were added to the main and aplication tracks for 2012. The unsat core benchmarks are adapted from main track benchmarks that are unsatisfiable. The benchmarks are a collection of more or less relevant problems, rather than benchmarks that measure specific metrics.
+Some benchmarks are families of constructed problems of arbitrary size; these can test the scalability of a solver as
+the size of the benchmark instance is increased. Other benchmarks are formed from problems that arise in actual 
+applications. For example, software verification of real programs produces many SMT problems that are suitable as benchmarks.
+
+The full description of the 2012 SMT competition's rules is found in the rules document (\url{www.smtcomp.org/2012/rules12.pdf}). The document describes the procedures for determining benchmark difficulties, selecting benchmarks for competition, and for judging the results.
+
+\paragraph{Procedure.} 
+
+The competition's traditional `main' track tests a solver's ability to determine the satisfiability or unsatisfiability of a single problem (perhaps with multiple assertions) within a given logic. A second track tests the performance of solvers that are multi-threaded on similar problems.
+
+The `application' or incremental track, introduced last year, tests a qualitatively different capability. Software verification tools often use SMT solvers as a back-end proof engine. These tools repeatedly invoke the solver with different, related satisfiability problems; the problems may have a substantially similar set of assertions, produced by the tool's adjusting, correcting, adding, or retracting assertions interactively; in batch mode different properties may be checked using subsantially the same set of assertions.
+The effect is that the solver must respond to a sequence of requests to assert or retract logical statements, check satisfiability, produce counterexamples, and so on. The application track tests a solver's performance in responding to such a sequence of commands, as produced by actual application problems.
+
+The benchmarks are each assigned a {\em difficulty}. The difficulty is based on how long it takes a group of solvers to produce a correct answer to the benchmark. For competition, benchmarks are selected, at random, from each difficulty category. 
+
+The winning solver in each category is the one that produces the most correct answers in the least time. An additional change this year is that incorrect answers are a disqualifier: the organizers considered that solver technology has progressed sufficiently in capability and importance that incorrect answers should not be tolerated (a solver can always produce an answer of 'unknown'). Each solver is given a fixed timeout period in which to answer a benchmark. The winner is the solver that produces the most correct (non-{\em unknown}) answers; in the case of ties, the winner is the solver that took the least time to produce its correct answers.\footnote{There is an anomaly in this scoring system. Solvers A and B may produce the same correct answers, with A taking slightly less time to do so than B, and thus being the winner. Answers of {\em unknown} do not count towards correct answers, but the time taken also does not penalize the total time used. It may be the case the A takes a long time to determine an answer of {\em unknown} on some benchmarks, where as B can do so quickly. Thus B may be overall preferable in an application, even though A is the competition winner.}
+In the unsat-core track, it is the size reduction of the core that is measured, rather than the number of correct answers.
+
+\paragraph{The competition infrastructure.} The competition is actually executed on a cluster of machines at the University of Iowa, under the control of the SMT-EXEC software suite (cf. \url{www.smtexec.org}). This software suite has been used in past years as well. A new hardware and software infrastructure, Star-Exec (cf. \url{www.starexec.org}), is under development and is expected to be announced at IJCAR'12. Interested persons can experiment with Star-Exec at the Star-Exec workshop, a satellite event of the IJCAR conference.
+
+\paragraph{The SMTLIB language.} A competition based on benchmark problems needs a standard language in which to express those problems.
+For SMTCOMP, that language is the SMT-LIB language (cf. \url{www.smtlib.org}, \cite{BarST-SMT-10} \cite{Cok-SMTLIBTutorial-2011}). 
+In 2010, a significantly reworked version of the language was agreed upon.
+This version 2 increased the flexibility and expressiveness of the language while also simplifying the syntax. 
+It also includes a command language that improves the language's usefulness for interactive applications.
+In particular, the standard specifies a typed (sorted), first-order logical language for terms and formulas, a language for specifying background logical theories and logics, and the command language. Some other tools that process SMT-LIBv2 are listed in the SMT-LIB web pages (cf. \url{http://www.smtlib.org/utilities.html}).
+
+\paragraph{History.} The number of solvers competing each year has consistently remained in the range of 9-13 entrants.
+Some solvers have competed for several consecutive years. Others are new entrants. The introduction of SMT-LIBv2 as the standard language for benchmarks was a significant event. The new language required solvers to revise their front-ends and to add new capabilities.
+As a result, some solvers did not continue participating, at least not immediately. However, the use of SMTLIBv2 also increased the expressiveness of benchmarks. Thus benchmarks representing the needs of industrial applications were able to be added; 
+the application track of the competition was added to demonstrate this capability and the corresponding abilities of solvers.
+
+\paragraph{Solvers.} The competition registration includes information about each competing solver. In addition, some solver groups provided summaries of their solvers and their recent technical advances. The provided summaries are included in these proceedings as additional papers.\footnote{Not all competing solvers submitted summaries for the proceedings; it may also be that a solver with a summary for some reason was not able to compete.}
+
+\paragraph{Acknowledgments.} Particular thanks is due to Morgan Deters, who is running the computational details of
+ SMT-COMP 2012 on SMT-Exec, when it be came clear that the competition would need to reuse SMT-Exec in 2012.
+The cost of executing the SMT competition is underwritten by the SMT Workshop. The SMT-Exec computational resources are hosted by the University of Iowa Computer Science Department and maintained by Aaron Stump and the university's IT group. Funds for the SMT-Exec cluster were provided by the U.S. National Science Foundation, under grant CNS-0551697. David Cok is chairing the SMT-COMP organizing commmittee for 2012, with Alberto Griggio and Roberto Bruttomesso as co-organizers. Morgan Deters and Aaron Stump designed and
+implemented the SMT-Exec service. 
+
+\bibliographystyle{plain}
+\bibliography{SMTCOMP}
+
+\end{document}
+
+\thebibliography
+

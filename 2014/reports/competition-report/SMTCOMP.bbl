@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+
+\bibitem{springerlink:10.1007/s10817-012-9246-5}
+Clark Barrett, Morgan Deters, Leonardo de~Moura, Albert Oliveras, and Aaron
+  Stump.
+\newblock 6 years of smt-comp.
+\newblock {\em Journal of Automated Reasoning}, pages 1--35, 2012.
+\newblock 10.1007/s10817-012-9246-5.
+
+\bibitem{BarST-SMT-10}
+Clark Barrett, Aaron Stump, and Cesare Tinelli.
+\newblock {The SMT-LIB Standard: Version 2.0}.
+\newblock In A.~Gupta and D.~Kroening, editors, {\em Proceedings of the 8th
+  International Workshop on Satisfiability Modulo Theories (Edinburgh, UK)},
+  2010.
+
+\bibitem{leberre+03}
+D.~Le Berre and L.~Simon.
+\newblock {The essentials of the SAT 2003 competition}.
+\newblock In {\em Sixth International Conference on Theory and Applications of
+  Satisfiability Testing}, volume 2919 of {\em LNCS}, pages 452--467.
+  Springer-Verlag, 2003.
+
+\bibitem{ag+rb+12}
+R.~Bruttomesso and A.~Griggio.
+\newblock {Broadening the Scope of SMT-COMP: the Application Track}.
+\newblock In {\em First International Conference on Comparative Empirical
+  Evaluation of Reasoning Systems}, 2012.
+
+\bibitem{Cok-SMTLIBTutorial-2011}
+D.~R. Cok.
+\newblock {The SMT-LIBv2 Language and Tools: A Tutorial}.
+\newblock Technical report, {GrammaTech, Inc.}, 2011.
+
+\bibitem{PSS02}
+F.J. Pelletier, G.~Sutcliffe, and C.B. Suttner.
+\newblock {The Development of CASC}.
+\newblock {\em AI Communications}, 15(2-3):79--90, 2002.
+
+\end{thebibliography}

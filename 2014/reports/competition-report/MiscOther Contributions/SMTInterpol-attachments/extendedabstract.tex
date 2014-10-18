@@ -1,0 +1,114 @@
+\documentclass[11pt,a4paper]{easychair}
+\usepackage[english]{babel}
+\usepackage{xspace}
+\hypersetup{colorlinks,linkcolor=blue,filecolor=black,urlcolor=blue,citecolor=black}
+
+\newcommand\si{SMTInterpol\xspace}
+\newcommand\T{$\mathit{T}$\xspace}
+\newcommand\version{2.0\xspace}
+
+\newtheorem{example}{Example}
+
+\title{\si\\{\large Version \version}}
+
+\author{J\"urgen Christ \qquad Jochen Hoenicke \qquad Alexander Nutz\\
+  University of Freiburg\\
+  \texttt{\{christj,hoenicke,nutz\}@informatik.uni-freiburg.de}}
+
+\titlerunning{\si}
+\authorrunning{Christ, Hoenicke, and Nutz}
+
+\begin{document}
+\maketitle
+\section*{Introduction}
+\si~\cite{smtinterpol} is a proof-producing and interpolating SMT-solver written in Java.  
+It is available from 
+\url{http://ultimate.informatik.uni-freiburg.de/smtinterpol}
+under the GNU Lesser General Public License (LGPL) version~3.0.
+The solver reads input in SMTLIB format.  It includes a parser for version
+1.2, and a parser for the current version.  All required and some optional
+commands of the SMTLIB standard are supported.
+\si supports the quantifier-free combination of uninterpreted functions and
+linear (real and integer) arithmetic, i.\,e., the SMTLIB logics QF\_UF,
+QF\_LIA, QF\_LRA, QF\_UFLIA, and QF\_UFLRA.
+For all these logics,
+\si supports the computation of inductive sequences of Craig interpolants,
+which are used by 
+several interpolation-based model
+checkers~\cite{HHP09,HHP10,DBLP:conf/vmcai/ErmisHP12}.
+
+All formulas are stored in a central term repository.  The repository
+type-checks the formulas.  Asserted formulas are converted to CNF using
+Plaisted--Greenbaum encoding~\cite{DBLP:journals/jsc/PlaistedG86}.  The core
+of the solver is a CDCL engine that is connected to multiple theories.  The
+engine uses these theories during constraint propagation, backtracking, and
+consistency checking.
+
+For uninterpreted functions and predicates, we use a theory solver based on
+the congruence closure algorithm.  An extension to arrays and quantifiers via
+e-matching is under development.  For linear arithmetic, we use a theory
+solver based on the Simplex algorithm~\cite{DBLP:conf/cav/DutertreM06}.  It
+always computes the strongest bounds that can be derived for a variable and
+uses them during satisfiability checks.  If a conflict cannot be explained
+using known literals, the solver derives new literals and uses them in
+conflict explanation.  Disequalities are used to
+strengthen bounds, or are delayed until final checks.  The
+solver supports integer arithmetic using a variant of the cuts from proof
+technique~\cite{DBLP:conf/cav/DilligDA09} together with a branch-and-bound
+engine.
+
+\si uses a variant of model-based theory
+combination~\cite{DBLP:journals/entcs/MouraB08}.  The linear arithmetic solver
+does not propagate equalities between shared variables but introduces them as
+decision points.  The model mutation algorithm resolves disequalities
+and tries to create as many distinct equivalence classes as possible.
+
+\section*{Interpolation}
+
+\si produces inductive sequences of interpolants for the SMTLIB logics QF\_UF,
+QF\_LRA, QF\_UFLRA, QF\_LIA, and QF\_UFLIA.  Since the integer logics defined
+in the SMTLIB standard are not closed under interpolation, \si extends these
+logics with the division and modulo operators with constant divisor.
+
+The architecture of the interpolation engine roughly follows the DPLL(\T)
+paradigm: A \emph{core interpolator} produces \emph{partial interpolants} for
+the resolution steps while theory specific interpolators produce partial
+interpolants for \T-lemmas.  In the presence of \emph{mixed literals}, i.e.,
+literals that use symbols from more than one block of the interpolation
+problem,  an approach loosely based on the method of Yorsh et
+al.~\cite{DBLP:conf/cade/YorshM05} is used.  The basic idea of the approach used in \si
+is to virtually purify each mixed literal using an auxiliary variable, to
+restrict the places where the variable may occur in partial interpolants, and
+to use special resolution rules to eliminate the variable when the mixed
+literal is used as a pivot.  In essence, for convex theories, this approach
+can be seen as a lazy version of the method of Yorsh et al.  The approach also
+works for non-convex theories using disjunctions in the interpolants.  
+
+\section*{New Developments}
+Compared to the version that participated in the SMT competition in 2011,
+several performance improvements have been implemented.  These include clause
+minimization techniques and a new pivot strategy in the linear arithmetic
+solver.  Additionally, the assertion stack management has been reworked to be
+more stable.
+
+%What we can do with proofs
+For unsatisfiable formulas, \si supports the optional SMTLIB command
+\verb+get-unsat-core+.  This command extracts an unsatisfiable core from a
+proof tree.  This technique does not guarantee minimality of the returned
+core.  The optional command \verb+get-proof+ was already supported in last
+year's version.  Additionally, the non-standard command
+\verb+get-interpolants+ can be used to compute an inductive sequence of
+Craig interpolants.  The interpolation engine is complete for all logics
+supported by \si.
+
+%Models
+For satisfiable formulas, \si supports the optional SMTLIB command
+\verb+get-value+ and the non-standard command \verb+get-model+.  These
+commands can be used to inspect the model produced by \si.  For uninterpreted
+sorts, \si generates a finite sort interpretation.  The domain of this
+interpretation contains input terms instead of abstract values (see the SMTLIB
+standard).
+
+\bibliography{sysdec}
+\bibliographystyle{alpha}
+\end{document}
