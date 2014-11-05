@@ -40,7 +40,11 @@
 %\addtolength{\textheight}{1.0in}
 
 %\newcommand{\tjark}[1]{\marginpar{\footnotesize{#1}}}
-\newcommand{\tjark}[1]{\begin{quote}\sc #1\marginpar{\textcolor{red}{$\ast^{\mbox{TW}}$}}\end{quote}}
+\newcommand{\comment}[2]{\begin{quote}\sc #1\marginpar{\textcolor{red}{$\ast^{\mbox{#2}}$}}\end{quote}}
+
+\newcommand{\tjark}[1]{\comment{#1}{TW}}
+\newcommand{\davidd}[1]{\comment{#1}{DD}}
+\newcommand{\davidc}[1]{\comment{#1}{DC}}
 
 \newcommand{\tjarkx}[1]{\tjark{#1}}
 
@@ -71,7 +75,9 @@
 
 \abstract{The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014~\cite{FLoC2014}, at the Vienna Summer of Logic~\cite{VSL} in July 2014. Eighteen solvers participated from fourteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.} 
 \tjarkx{A couple sentences on notable innovations or results}
+The 2014 edition of the SMT Competition was executed for the first time on the Star-Exec~\cite{DBLP:conf/cade/StumpST14} logic solving service. Several records were broken: number of participating solvers, number of logic divisions and number of benchmarks.
 
+\davidd{Comment on qualitative evolution of solvers?}
 \keywords{SMT-solver, competition}
 
 %\published{November 2014}{revision date}{publication date}
@@ -87,11 +93,13 @@ a well-known means of stimulating advancement in software tools. For example, in
 reasoning, the SAT and CASC competitions for propositional and first-order reasoning tools, respectively,
 have spurred significant innovation in their fields~\cite{leberre+03,PSS02}.
 
-The competition is sponsored by the SMT workshop, which was hled in conjunction with the
+The competition is sponsored by the SMT workshop, which was held in conjunction with the
 CAV, IJCAR, and SAT conferences at FLoC 2014~\cite{FLoC2014}, at the Vienna Summer of Logic\cite{VSL} in July 2014.
 Information about the winners
 and results of the competition is summarized in this report and is available online at \url{www.smtcomp.org}; information
-about previous years' competitions is also available at that website and in a published summary reports~\cite{springerlink:10.1007/s10817-012-9246-5}.\tjark{Cite 2012 and 2013 as well}
+about previous years' competitions is also available at that website and in a published summary reports~\cite{springerlink:10.1007/s10817-012-9246-5,DBLP:conf/cade/CokGBD12,it:2014-017}.%[DD: done]\tjark{Cite 2012 and 2013 as well}
+
+\davidd{Overview of the paper}
 
 \section{Context of the competition}
 \label{sec:context}
@@ -107,7 +115,7 @@ The benchmark problems are expressed in the concrete syntax defined in the SMT-L
 SMT (Satisfiability Modulo Theories) solvers are automated tools that seek to find a satisfying assignment for a given SMT-LIB problem, or to assure that the problem is \textit{unsatisfiable}.
 Tools may not be able to solve a given problem, because, for example the tool exhausts available memory or time; a tool is permitted to answer \textit{unknown}. However, giving an incorrect answer (\textit{sat} instead of \textit{unsat}, or vice versa) is considered \textit{unsound} and a serious fault in the tool.
 
-SMT differs from the CASC competition \cite{TBD} in directly addressing sorted logics. SMT also focuses on fragments of first-order logic that are \textit{decidable}. For example, a subset of the benchmarks are problems in an integer-difference logic, for which there are specific decision procedures. The competition among tools is to create very efficient implementations of a breadth of decision procedures. Accordingly, SMT solvers have historically also not handled logics with quantified expressions, though several currently now do so.
+SMT differs from the CASC competition~\cite{PSS02} in directly addressing sorted logics. SMT also focuses on fragments of first-order logic that are \textit{decidable}. For example, a subset of the benchmarks are problems in an integer-difference logic, for which there are specific decision procedures. The competition among tools is to create very efficient implementations of a breadth of decision procedures. Accordingly, SMT solvers have historically also not handled logics with quantified expressions, though several currently now do so.
 
 \section{The Competition Goals and Organization}
 \label{sec:goals}
