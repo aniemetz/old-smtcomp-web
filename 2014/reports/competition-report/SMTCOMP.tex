@@ -27,18 +27,6 @@
 
 %\usepackage{mathptmx} %% Times fonts, for math as well
 
-
-%%\makeindex
-
-%% The adjustment amounts depend on the font
-%% -.5 for 12pt, -.875 for 10pt
-%% FIXME: should these be set instead of adjusted?
-%\addtolength{\oddsidemargin}{-.5in}
-%\addtolength{\evensidemargin}{-.5in}
-%\addtolength{\textwidth}{1.0in}
-%\addtolength{\topmargin}{-.5in}
-%\addtolength{\textheight}{1.0in}
-
 %\newcommand{\tjark}[1]{\marginpar{\footnotesize{#1}}}
 \newcommand{\comment}[2]{\begin{quote}\sc #1\marginpar{\textcolor{red}{$\ast^{\mbox{#2}}$}}\end{quote}}
 
@@ -78,7 +66,7 @@
 The 2014 edition of the SMT Competition was executed for the first time on the Star-Exec~\cite{DBLP:conf/cade/StumpST14} logic solving service. Several records were broken: number of participating solvers, number of logic divisions and number of benchmarks.
 
 \davidd{Comment on qualitative evolution of solvers?}
-\keywords{SMT-solver, competition}
+\keywords{SMT-solver, competition} \tjarkx{more keywords}
 
 %\published{November 2014}{revision date}{publication date}
 
@@ -124,7 +112,8 @@ In planning the 2014 competition, the organizers' overall goal was to encourage 
 in the capability of SMT solvers. SMTCOMP 2014 benefited from the evaulation that was performed in 2013 and the experience of the 2012 competition. As a result we established the following emphases:
 \begin{itemize}
 \item In 2012 we narrowed the competition to a smaller number of more significant logics. In response to feedback, in 2014 we reverted to the practice of evaluating solvers in all available divisions.
-
+\item We ran the competition with all available benchmarks. To be eligible, a benchmark must be well-formed and have a known answer. We were able to use all benchmarks because we had nearly exclusive use of the Star-Exec cluster during the time we were executing SMT-COMP.
+\tjarkx{More emphases?}
 
 \end{itemize}
 
