@@ -61,7 +61,7 @@
 
 \maketitle
 
-\abstract{The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014~\cite{FLoC2014}, at the Vienna Summer of Logic~\cite{VSL} in July 2014. Eighteen solvers participated from fourteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.} 
+\abstract{The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014~\cite{FLoC2014}, at the Vienna Summer of Logic~\cite{VSL} in July 2014. Eighteen solvers participated from thirteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.} 
 \tjarkx{A couple sentences on notable innovations or results}
 The 2014 edition of the SMT Competition was executed for the first time on the Star-Exec~\cite{DBLP:conf/cade/StumpST14} logic solving service. Several records were broken: number of participating solvers, number of logic divisions and number of benchmarks.
 
@@ -177,9 +177,7 @@ In particular, the standard specifies a typed (sorted), first-order logical lang
 \section{Participants}
 \label{sec:participants}
 
-THIS IS ALL FROM 2012
-
-\paragraph{Solvers.} The competition registration includes information about each competing solver. In addition, some solver groups provided summaries of their solvers and their recent technical advances.
+The competition registration includes information about each competing solver. In addition, some solver groups provided summaries of their solvers and their recent technical advances.
  Note that although one person is listed as the `submitter', there is generally a team of contributors behind each tool. Some teams submitted more than one tool. The 2014 participants were the following:
 \begin{itemize}
 \item 4Simp - submitted by Trevor Hansen (U. Melbourne)
@@ -204,11 +202,9 @@ There were a few solvers that we hoped would be submitted but were not: Tiffany 
 Other than those omissions, every competitive solver known to the organizers was represented. Indeed, the
  participation by solver teams was a record high in 2014. 
 
-\tjarkx{What about STP/STP2}
-
 \begin{table}[t]
 \centering
-\begin{tabular}{|l|l|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|l|l|c|c|c|c|c|c|c|c|c|}
 \hline
 Solver & Affiliation & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 2014 \\
 \hline
@@ -262,7 +258,7 @@ SVC	                   &   & X &   &   &   &   &   &   &   \\
 
 \begin{table}
 \centering
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
 \hline
  & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 2014\\
 \hline
@@ -286,10 +282,79 @@ The introduction in 2010 of SMT-LIBv2 as the standard language for benchmarks wa
 As a result, some solvers did not continue participating, at least not immediately. However, the use of SMTLIBv2 also increased the expressiveness of benchmarks. Thus benchmarks representing the needs of industrial applications were able to be added; 
 the application track of the competition was added to demonstrate this capability and the corresponding abilities of solvers.
 
-\section{Competition benchmarks}
+\section{Competition divisions and benchmarks}
 \label{sec:benchmarks}
 
-\tjarkx{Need material.}
+The SMT-LIB benchmarks each belong to a specific logic. Each logic is one competition division. For each division we ran the solvers that entered that division on the benchmarks for that division as one event in the overall competition.
+
+SMT-LIB currently defines 34 logics, shown in Table \ref{TBD}. The rightmost column shows the number of benchmarks for that logic in the SMT-LIB collection. Two considerations may make a benchmark ineligible to be used in a competition. First, the benchmark may not have a known result. For newly submitted benchmarks
+we made an attempt to determine the correct result of the benchmark. the SMT-LIB coordinators require two 
+different solvers to solve the problem and report the same result to admit the benchmark into the collection.
+However, for benchmarks already in the collection we did not attempt to determine their answer. We did do this analysis after the competition was over (see section \ref{TBD}).
+
+The second consideration is that the benchmark must be \textit{non-trivial}; a benchmark is deemed trivial if TBD.
+
+The numbers of unknown, trivial, and remaining eligible benchmarks are also shown in Table \ref{TBD}. A few other comments are in order:
+\begin{itemize}
+\item We, with the SMT-LIB coordinators, performed a curation step on the benchmarks prior to the competition. We determined the actual logic to which a benchmark belonged, rather than the super-logic
+to which it had previously been assigned. This resulted in an expansion of logics with benchmarks from 23 to 34, and also created a number of divisions with only a very few benchmarks.
+\item Two divisions were not held because they had no eligible benchmarks.
+\item The numbers of eligible, trivial, unknown, and total benchmarks vary widely from division to division. We will comment later on the need to review and improve the benchmark collection.
+\end{itemize}
+
+\begin{table}
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+\hline
+       & \# of & Eligible & Unknown  & Trivial  & Total  \\
+ Logic & solvers & benchmarks &  benchmarks &  benchmarks &  benchmarks \\
+\hline
+ALIA & 4 & 29 & 0 & 13 & 42 \\
+AUFLIA & 4 & 4 & 0 & 0 & 4\\
+AUFLIRA & 4 & 10791 & 168 & 9055 & 20014 \\
+AUFNIRA & 4 & 564 & 443 & 488 & 1495 \\
+BV &   & 0 & 191 & 0 & 191 \\
+LIA & 4 & 46 & 0 & 0 & 46 \\
+LRA & 4 & 171 & 364 & 86 & 621\\
+NIA & 3 & 9 & 0 & 0 & 9\\
+NRA & 3 & 3747 & 66 & 0 & 3813 \\
+QF\_ABV & 9 & 6457 & 2906 & 5728 & 15091 \\
+QF\_ALIA & 5 & 97 & 0 & 29 & 126 \\
+QF\_AUFBV & 4 & 37 & 0 & 0 & 37 \\
+QF\_AUFLIA & 6 & 610 & 0 & 399 & 1009\\
+QF\_AX & 5 & 335 & 0 & 216 & 551 \\
+QF\_BV & 11 & 2488 & 17728 & 12284 & 32500 \\
+QF\_IDL & 4 & 1315 & 520 & 354 & 2189 \\
+QF\_LIA & 7 & 4381 & 1192 & 568 & 6141 \\
+QF\_LRA & 6 & 1343 & 167 & 172 & 1682\\ 
+QF\_NIA & 4 & 8327 & 919 & 113 & 9359 \\
+Qf\_NRA & 4 & 10121 & 1382 & 37 & 11540 \\
+QF\_RDL & 4 & 132 & 64 & 59 & 255 \\
+QF\_UF & 7 & 4124 & 4 & 2522 & 6650 \\
+QF\_UFBV & 4 & 31 & 0 & 0 & 31 \\
+QF\_UFIDL & 4 & 311 & 0 & 130 & 441\\
+QF\_UFLIA & 6 & 484 & 0 & 114 & 598 \\
+QF\_UFLRA & 6 & 1176 & 73 & 381 & 1630 \\
+QF\_UFNIA & 3 & 7 & 0 &0 & 7 \\
+QF\_UFNRA & 3 & 32 & 10 & 1 & 43\\
+UF & 4 & 2830 & 2911 & 7 & 5748 \\
+UFBV & 0 & 0 & 191 & 0 & 191 \\
+UFIDL & 3 & 49 & 12 & 19 & 80 \\
+UFLIA & 4 & 5766 & 4680 & 1692 & 12138 \\
+UFLRA & 4 & 25 & 0 & 0 & 25\\
+UFNIA & 3 & 1587 & 1029 & 735 & 3351 \\
+\hline
+Total & 18 & 67426 & 35020 & 35202 & 137648 \\
+\hline
+\end{tabular}
+\vspace{.2in}
+\caption{Numbers of main-track benchmarks}
+\label{Table:benchmarks}
+\end{table}
+
+\tjarkx{Also want categories of benchmarks and numbers of sat or unsat}
+
+\tjarkx{Added benchmarks - how many? }
 
 \section{Main track results}
 \label{sec:main-results}
@@ -389,7 +454,7 @@ The system description for SMTInterpol included in the SMTCOMP'12 proceedings in
 
 - using all benchmarks may not be the best design - over emphasis on some problem types
 
-- still need a focus on applications; more representative benchmarks
+- still need a focus on applications; more representative benchmarks; more benchmarks needed in many logics
 
 THIS IS ALL FROM 2012
 
