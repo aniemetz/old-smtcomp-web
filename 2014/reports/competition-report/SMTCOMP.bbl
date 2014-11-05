@@ -18,7 +18,7 @@ Clark Barrett, Aaron Stump, and Cesare Tinelli.
 D.~Le Berre and L.~Simon.
 \newblock {The essentials of the SAT 2003 competition}.
 \newblock In {\em Sixth International Conference on Theory and Applications of
-  Satisfiability Testing}, volume 2919 of {\em LNCS}, pages 452--467.
+  Satisfiability Testing}, ~{\bf 2919} of {\em LNCS}, pages 452--467.
   Springer-Verlag, 2003.
 
 \bibitem{ag+rb+12}
@@ -32,9 +32,24 @@ D.~R. Cok.
 \newblock {The SMT-LIBv2 Language and Tools: A Tutorial}.
 \newblock Technical report, {GrammaTech, Inc.}, 2011.
 
+\bibitem{it:2014-017}
+David~R. Cok, Aaron Stump, and Tjark Weber.
+\newblock The 2013 {SMT} evaluation.
+\newblock Technical Report 2014-017, Department of Information Technology,
+  Uppsala University, July 2014.
+
 \bibitem{PSS02}
 F.J. Pelletier, G.~Sutcliffe, and C.B. Suttner.
 \newblock {The Development of CASC}.
-\newblock {\em AI Communications}, 15(2-3):79--90, 2002.
+\newblock {\em AI Communications}, {\bf 15}(2-3):79--90, 2002.
+
+\bibitem{FLoC2014}
+{F}ederated {L}ogic {C}onference ({FLoC}), July 2014.
+\newblock H.~Veith, M.~Baaz, M.Y.~Vardi and S. Szeider organizers. Vienna,
+  Austria.
+
+\bibitem{VSL}
+{V}ienna {S}ummer of {L}ogic ({VSL}), July 2014.
+\newblock \url{http://vsl2014.at}, Vienna, Austria.
 
 \end{thebibliography}
