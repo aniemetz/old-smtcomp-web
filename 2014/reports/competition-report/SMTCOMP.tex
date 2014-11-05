@@ -92,13 +92,14 @@ about previous years' competitions is also available at that website and in a pu
 \section{Context of the competition}
 \label{sec:context}
 
-The SMT Competition is a competition among SMT solvers on a set of benchmark logic problems expressed in the SMT-LIB \cite{TBD} language. Each benchmark problem is a combination of definitions and logical assertions expressed with respect to an underlying logical theory and, perhaps, some constraints on the kinds of expressions in that theory. Each problem has a set of constant or function symbols; a solution to the problem is an assignment of each constant and function evalution to logical values in a way that satisfies all the problem's assertions. That is, the problem is to find a \textit{satisfying assignment} for the benchmark problem. For example, a problem might be simply a set of assertions in 
+The SMT Competition is a competition among SMT solvers on a set of benchmark logic problems expressed in the SMT-LIB~\cite{BarST-RR-10} language. Each benchmark problem is a combination of definitions and logical assertions expressed with respect to an underlying logical theory and, perhaps, some constraints on the kinds of expressions in that theory. Each problem has a set of constant or function symbols; a solution to the problem is an assignment of each constant and function evalution to logical values in a way that satisfies all the problem's assertions. That is, the problem is to find a \textit{satisfying assignment} for the benchmark problem. For example, a problem might be simply a set of assertions in 
 propositional logic, in terms of Boolean constants such as $P$, $Q$, and $R$.
 
 As stated, the goal is the same as the SAT competition. The SMT benchmarks extend SAT by incorporating defined theories, such as the theory of arrays, or of undefined functions, or of arithmetic, or of bit-vectors. In addition, there may be constraints on the set of expressions allowed, such as only linear arithmetic, or only integer difference arithmetic. The theories also define \textit{sorts}, which make the theories a kind of typed first-order logic. Examples of sorts used in current theories are Boolean, Int, Real, bit-vectors of various lengths, and arrays with arbitrary sorts as index and value. Each combination of underlying theories and language constraints is a \textit{logic}.
 
-The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB (v2) standard \cite{TBD}. This standard has been used since 2010, and a previous version was used prior to that. One of the goals of the SMT competition is to encourage use and tool implementations of the SMT-LIB standard.
+The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB (v2) standard \cite{BarST-RR-10}. This standard has been used since 2010, and a previous version was used prior to that. One of the goals of the SMT competition is to encourage use and tool implementations of the SMT-LIB standard.
 \tjark{Give an example of a benchmark in SMT-LIB} \tjark{Provide information about the sizes of benchmarks}
+\davidd{Shall we say something about command language?}
 
 SMT (Satisfiability Modulo Theories) solvers are automated tools that seek to find a satisfying assignment for a given SMT-LIB problem, or to assure that the problem is \textit{unsatisfiable}.
 Tools may not be able to solve a given problem, because, for example the tool exhausts available memory or time; a tool is permitted to answer \textit{unknown}. However, giving an incorrect answer (\textit{sat} instead of \textit{unsat}, or vice versa) is considered \textit{unsound} and a serious fault in the tool.
@@ -109,7 +110,7 @@ SMT differs from the CASC competition~\cite{PSS02} in directly addressing sorted
 \label{sec:goals}
 
 In planning the 2014 competition, the organizers' overall goal was to encourage breadth
-in the capability of SMT solvers. SMTCOMP 2014 benefited from the evaulation that was performed in 2013 and the experience of the 2012 competition. As a result we established the following emphases:
+in the capability of SMT solvers. SMTCOMP 2014 benefited from the evaluation that was performed in 2013 and the experience of the 2012 competition. As a result we established the following emphases:
 \begin{itemize}
 \item In 2012 we narrowed the competition to a smaller number of more significant logics. In response to feedback, in 2014 we reverted to the practice of evaluating solvers in all available divisions.
 \item We ran the competition with all available benchmarks. To be eligible, a benchmark must be well-formed and have a known answer. We were able to use all benchmarks because we had nearly exclusive use of the Star-Exec cluster during the time we were executing SMT-COMP.
