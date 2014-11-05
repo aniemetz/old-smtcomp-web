@@ -50,47 +50,76 @@
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
+\newcommand{\tjark}[1]{\marginpar{\footnotesize{#1}}}
+\newcommand{\tjarkx}[1]{\makebox[0pt][c]{\raisebox{0pt}[0pt][0pt]{\Large\textcolor{red}{${}^*$}}}\marginpar{\footnotesize{#1}}}
+
 
 \begin{document}
 
 
-\title{The 2012 SMT Competition}
+\title{The 2014 SMT Competition}
 
-\author{David R. Cok (author and chair of organizing committee)\inst{1} \and \\ 
-Alberto Griggio (co-organizer)\inst{2} \and \\ 
-Roberto Bruttomesso (co-organizer)\inst{3} \and \\
-Morgan Deters (competition execution) \inst{4} \\
+\author{David R. Cok (chair of organizing committee)\inst{1} \and \\ 
+David DeHarbe (co-organizer)\inst{2} \and \\ 
+Tjark Weber (co-organizer)\inst{3} 
 }
 
-\institute{GrammaTech, Inc.,  \email{dcok@grammatech.com} \and
-Fondazione Bruno Kessler (FBK),  \email{griggio@fbk.eu} \and
-Atrenta France,  \email{roberto@atrenta.com} \and
-NYU, New York, USA, \email{mdeters@cs.nyu.edu}
+\institute{GrammaTech, Inc.,  \email{dcok@grammatech.com} \\
+\and
+Federal University of Rio Grande do Norte, Brazil \email{David.Deharbe@loria.fr} \\
+\and
+Uppsala University, Sweden \email{tjark.weber@it.uu.se} 
 }
 
 \maketitle
 \pagestyle{plain}
-\centerline{20 July 2012}
-
-\abstract{The 2012 SMT Competition was held in conjunction with the SMT workshop at IJCAR 2012. Eleven solvers participated, showing improvements over 2011 in some but not all divisions. The competition featured a new unsat-core-generation track and encouraged the demonstration of proof-generation solvers. The series of competitions is expected to be continued at SAT 2013.}
-
 \pagenumbering{arabic}
+
+\abstract{The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014\cite{TBD}, at the Vienna Summer of Logic\cite{TBD} in July 2014. Eighteen solvers participated from fourteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.} 
+\tjarkx{A couple sentences on notable innovations or results}
+
+
 \section{Introduction}
-The 2012 SMT Competition continued the series of annual competitions in SMT solver capability and performance that began in 2005.
+The 2014 SMT Competition continued the series of annual competitions in SMT solver capability and performance that began in 2005. This is the 9th competition in the series, skipping only 2013; in that year an evaluation \cite{TBD} was performed, rather than a competition.
+
 The competition is held to spur advances in
 SMT solver implementations acting on benchmark formulas of practical interest. Public competitions are
 a well-known means of stimulating advancement in software tools. For example, in automated
 reasoning, the SAT and CASC competitions for propositional and first-order reasoning tools, respectively,
 have spurred significant innovation in their fields \cite{leberre+03,PSS02}.
 
-The 2012 competition was held in conjunction with IJCAR'12 and the SMT workshop at that conference. Information about the winners
+The competition is sponsored by the SMT workshop, which was hled in conjunction with the
+CAV, IJCAR, and SAT conferences at FLoC 2014\cite{TBD}, at the Vienna Summer of Logic\cite{TBD} in July 2014.
+Information about the winners
 and results of the competition is summarized in this report and is available online at \url{www.smtcomp.org}; information
-about previous years' competitions is also available at that website and in a published summary report \cite{springerlink:10.1007/s10817-012-9246-5}.
+about previous years' competitions is also available at that website and in a published summary reports \cite{springerlink:10.1007/s10817-012-9246-5}.\tjark{Cite 2012 and 2013 as well}
+
+\section{Context of the competition}
+
+The SMT Competition is a competition among SMT solvers on a set of benchmark logic problems expressed in the SMT-LIB \cite{TBD} language. Each benchmark problem is a combination of definitions and logical assertions expressed with respect to an underlying logical theory and, perhaps, some constraints on the kinds of expressions in that theory. Each problem has a set of constant or function symbols; a solution to the problem is an assignment of each constant and function evalution to logical values in a way that satisfies all the problem's assertions. That is, the problem is to find a \textit{satisfying assignment} for the benchmark problem. For example, a problem might be simply a set of assertions in 
+propositional logic, in terms of Boolean constants such as $P$, $Q$, and $R$.
+
+As stated, the goal is the same as the SAT competition. The SMT benchmarks extend SAT by incorporating defined theories, such as the theory of arrays, or of undefined functions, or of arithmetic, or of bit-vectors. In addition, there may be constraints on the set of expressions allowed, such as only linear arithmetic, or only integer difference arithmetic. The theories also define \textit{sorts}, which make the theories a kind of typed first-order logic. Examples of sorts used in current theories are Boolean, Int, Real, bit-vectors of various lengths, and arrays with arbitrary sorts as index and value. Each combination of underlying theories and language constraints is a \textit{logic}.
+
+The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB (v2) standard \cite{TBD}. This standard has been used since 2010, and a previous version was used prior to that. One of the goals of the SMT competition is to encourage use and tool implementations of the SMT-LIB standard.
+\tjark{Give an example of a benchmark in SMT-LIB} \tjark{Provide information about the sizes of benchmarks}
+
+SMT (Satisfiability Modulo Theories) solvers are automated tools that seek to find a satisfying assignment for a given SMT-LIB problem, or to assure that the problem is \textit{unsatisfiable}.
+Tools may not be able to solve a given problem, because, for example the tool exhausts available memory or time; a tool is permitted to answer \textit{unknown}. However, giving an incorrect answer (\textit{sat} instead of \textit{unsat}, or vice versa) is considered \textit{unsound} and a serious fault in the tool.
+
+SMT differs from the CASC competition \cite{TBD} in directly addressing sorted logics. SMT also focuses on fragments of first-order logic that are \textit{decidable}. For example, a subset of the benchmarks are problems in an integer-difference logic, for which there are specific decision procedures. The competition among tools is to create very efficient implementations of a breadth of decision procedures. Accordingly, SMT solvers have historically also not handled logics with quantified expressions, though several currently now do so.
 
 \section{The Competition Goals and Organization}
 
-In planning the 2012 competition, the organizers desired to encourage breadth
-in the capability of SMT solvers. Previous years have challenged solvers to support a variety of logics and
+In planning the 2014 competition, the organizers' overall goal was to encourage breadth
+in the capability of SMT solvers. SMTCOMP 2014 benefited from the evaulation that was performed in 2013 and the experience of the 2012 competition. As a result we established the following emphases:
+\begin{itemize}
+\item In 2012 we narrowed the competition to a smaller number of more significant logics. In response to feedback, in 2014 we reverted to the practice of evaluating solvers in all available divisions.
+
+
+\end{itemize}
+
+Previous years have challenged solvers to support a variety of logics and
 have measured them on raw performance on individual problems. This year we have two additional goals. First, we
 focused the competition on a subset of the logics that are the more relevant to applications. Some of the 
 simpler logics are now routine for nearly all solvers and therefore not a good basis for a competition. Others have 
