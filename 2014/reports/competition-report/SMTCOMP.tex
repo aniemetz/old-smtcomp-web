@@ -65,11 +65,11 @@
 \maketitle
 
 \abstract{The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014~\cite{FLoC2014}, at the Vienna Summer of Logic~\cite{VSL} in July 2014. Eighteen solvers participated from thirteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.} 
-\tjarkx{A couple sentences on notable innovations or results}
+\davidc{A couple sentences on notable innovations or results}
 The 2014 edition of the SMT Competition was executed for the first time on the Star-Exec~\cite{DBLP:conf/cade/StumpST14} logic solving service. Several records were broken: number of participating solvers, number of logic divisions and number of benchmarks.
 
 \davidd{Comment on qualitative evolution of solvers?}
-\keywords{SMT-solver, competition} \tjarkx{more keywords}
+\keywords{SMT-solver, competition} \davidc{more keywords}
 
 %\published{November 2014}{revision date}{publication date}
 
@@ -119,7 +119,7 @@ in the capability of SMT solvers. SMTCOMP 2014 benefited from the evaluation tha
 \item We ran the competition with all available benchmarks. To be eligible, a benchmark must be well-formed and have a known answer. We were able to use all benchmarks because we had nearly exclusive use of the Star-Exec cluster during the time we were executing SMT-COMP. This point is discussed further in section \ref{TBD}.
 \item In 2012 some experimental tracks were held: parallel performance, unsat cores and proof generation. The participation in those was light. Since in 2014 we also had to migrate to using Star-Exec, we held only a main track and an application (incremental) track in the 2014 competition. The organizers still maintain the value of measuring the performance of solvers on new features such as model generation, unsat core determination and proof generation and recommend that they be reinstated in some future competition.
 
-\tjarkx{More emphases?}
+\davidc{More emphases?}
 
 \end{itemize}
 
@@ -142,7 +142,7 @@ The preparation and execution of SMT-COMP 2014 took place over about 7 months, r
 \item 22 June 2014 - deadline for application track solvers
 \item 28 June 2014 - application track computation
 \item 17 July 2014 - SMT Workshop at which results were announced
-\item 20 July 2014 - FLoC awards ceremony \tjarkx{CHECK DATE - was it 20 or 21 or 22?}
+\item 20 July 2014 - FLoC awards ceremony \davidc{CHECK DATE - was it 20 or 21 or 22?}
 \end{itemize}
 
 \section{Competition procedure} 
@@ -151,7 +151,7 @@ The preparation and execution of SMT-COMP 2014 took place over about 7 months, r
 
 The full description of the 2014 SMT competition's rules is found in the rules document (\url{www.smtcomp.org/2014/rules14.pdf}). The document describes the procedures for determining benchmark difficulties, selecting benchmarks for competition, and judging the results.
 
-\tjarkx{The rest of the material in this section includes material from 2012 and needs editing}
+\davidc{The rest of the material in this section includes material from 2012 and needs editing}
 
 The competition's traditional `main' track tests a solver's ability to determine the satisfiability or unsatisfiability of a single problem (perhaps with multiple assertions) within a given logic. A second track tests the performance of multi-threaded solvers on similar problems.
 
@@ -185,7 +185,7 @@ The competition registration includes information about each competing solver. I
 \item AbzizPortfolio~\cite{TBD} - two versions - submitted by Mohammed Adbul Aziz, U. Cairo. (This solver is unusual in that it is a portfolio solver: based on automated learning over benchmark characteristics, it chooses among other solvers to apply to the problem at hand.)
 \item AProVe~\cite{AProVE2014} - submitted by Carsten Fuhs (UCL)
 \item Boolector~\cite{TBD} - three versions - submitted by Armin Biere, Aina Niemetz, Mathias Preiner (Johnnes Kepler University)
-\item CVC3 v. 2.4.3~\cite{TBD} - submitted by Morgan Deters (NYU)
+\item CVC3 v. 2.4.3~\cite{BT07} - submitted by Morgan Deters (NYU)
 \item CVC4 v. 1.4~\cite{BCD+11} - submitted by the ACSys Group (NYU)
 \item Kleaver~\cite{TBD} - 2 versions - submitted by Hristina Palikareva, Cristian Cadar (Imperial College)
 \item OpenSMT2~\cite{TBD} - submitted by Antti Hyv\"arinen \davidc{Affiliation?}
@@ -194,7 +194,7 @@ The competition registration includes information about each competing solver. I
 \item SONOLAR~\cite{TBD} - submitted by Florian Lapschies (U. Bremen)
 \item STP-CryptoMiniSat4~\cite{DBLP:conf/cav/GaneshD07,DBLP:conf/cav/2007} - submitted by M\'at\'e So\'os \davidc{Affiliation?}, based on previous work by Trevor Hansen (U. Melbourne) and Vijay Ganesh (MIT)
 \item veriT~\cite{TBD} - submitted by David D\'{e}harbe, Pascal Fontaine \davidc{Affiliation?}
-\item Yices2~\cite{cav2014} - submitted by Bruno Dutertre (SRI)
+\item Yices2~\cite{Dutertre:cav2014} - submitted by Bruno Dutertre (SRI)
 \end{itemize}
 \davidc{Need references for each of the above}
 \davidc{Lists are inconsistent on STP2}
@@ -360,7 +360,7 @@ Total & 16+[2] & 67426 & 35020 & 35202 & 137648 \\
 
 A sizeable number, on the order of 30000, of benchmarks were added during the lead up to the competition. Some of these were submitted in previous years but never assessed and uploaded. Many others were supplied by solver developers (including some competitors). All of them went through an iterative curation process to be sure that they were syntactically valid, appropriate metadata was included, and a correct result was established. (Not all of these submissions were through the competition organizers.)
 
-\tjarkx{Also want categories of benchmarks and numbers of sat or unsat}
+\davidc{Also want categories of benchmarks and numbers of sat or unsat}
 
 
 
@@ -455,9 +455,8 @@ UFNIA & 	3 & 	1587 & 	CVC4 & 	[Z3]; CVC4; CVC3; \\
 \end{table}
 
 
-\tjarkx{Include table of main track results - in preparation}
 
-\tjarkx{Include discussion of main track results - what points to make?}
+\davidc{Include discussion of main track results - what points to make?}
 
 
 \section{Application track results}
@@ -473,9 +472,9 @@ response to each command. The driver presents commands only one at a time to emu
 
 Four solvers participated in this competition track: CVC3, CVC4, SMTInterpol, and Yices2; Z3 was added as a demonstration-only historical comparison.
 
-\tjarkx{Include table of application track results - need to reduce the data!!!}
+\davidc{Include table of application track results - need to reduce the data!!!}
 
-\tjarkx{Include discussion of application track results - what points to make?}
+\davidc{Include discussion of application track results - what points to make?}
 
 
 \section{FLoC Olympic games}
@@ -577,7 +576,7 @@ abziz\_all\_features &	9  &		2093 	 &	 	122540.04 \\
 \label{Table:bronze}
 \end{table}
 
-\tjarkx{In the bronze medal table, CVC4-with-bugfix, MathSat, and Z3 should  be in square brackets, but I keep getting errors for that in table environment}
+\davidc{In the bronze medal table, CVC4-with-bugfix, MathSat, and Z3 should  be in square brackets, but I keep getting errors for that in table environment}
 
 
 \section{Concluding observations}
@@ -604,6 +603,8 @@ abziz\_all\_features &	9  &		2093 	 &	 	122540.04 \\
 - Metrics: include the time for non-success computations
 
 - Difficulty of preparing new submissions
+
+- add notes from presentation slide 18
 
 THIS IS ALL FROM 2012
 
@@ -641,14 +642,14 @@ intersection of the two domains, express them in the two different problem forma
    
 \section{Recommendations for future competitions}
 
-The SMT steering committee has decided that SMT-COMP 2015 will be held in association with the SMT Workshop, which itself will be affiliated with \tjarkx{WHO} in \tjarkx{WHERE} from \tjarkx{WHEN}.
-The Workshop is being organized by \tjarkx{WHO}; the organizers of the competition are not yet appointed.
+The SMT steering committee has decided that SMT-COMP 2015 will be held in association with the SMT Workshop, which itself will be affiliated with \davidc{WHO} in \davidc{WHERE} from \davidc{WHEN}.
+The Workshop is being organized by \davidc{WHO}; the organizers of the competition are not yet appointed.
 
 Based on the experience of 2014, the 2014 organizers have the following recommendations or topics for consideration for future competitions.
 \begin{itemize}
 \item
 \end{itemize}
-\tjarkx{More recommendations}
+\davidc{More recommendations}
 \section*{Acknowledgments} 
 \begin{itemize}
 \item The organizers were supported by their respective institutions (GrammaTech, Federal University of Rio Grande do Norte, Brazil and Uppsala University, Sweden respectively). 
