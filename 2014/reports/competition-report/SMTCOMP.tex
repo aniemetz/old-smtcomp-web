@@ -48,7 +48,7 @@
 \author{
 \name David R. Cok (chair of organizing committee)
 \email{dcok@grammatech.com} \\
-\addr Grammatech, Inc. \\
+\addr GrammaTech, Inc. \\
 \AND
 \name David D\'{e}harbe (co-organizer)
 \email{david@dimap.ufrn.br} \\
@@ -113,34 +113,14 @@ In planning the 2014 competition, the organizers' overall goal was to encourage 
 in the capability of SMT solvers. SMTCOMP 2014 benefited from the evaluation that was performed in 2013 and the experience of the 2012 competition. As a result we established the following emphases:
 \begin{itemize}
 \item In 2012 we narrowed the competition to a smaller number of more significant logics. In response to feedback, in 2014 we reverted to the practice of evaluating solvers in all available divisions.
-\item We ran the competition with all available benchmarks. To be eligible, a benchmark must be well-formed and have a known answer. We were able to use all benchmarks because we had nearly exclusive use of the Star-Exec cluster during the time we were executing SMT-COMP.
+\item We ran the competition with all available benchmarks. To be eligible, a benchmark must be well-formed and have a known answer. We were able to use all benchmarks because we had nearly exclusive use of the Star-Exec cluster during the time we were executing SMT-COMP. This point is discussed further in section \ref{TBD}.
+\item In 2012 some experimental tracks were held: parallel performance, unsat cores and proof generation. The participation in those was light. Since in 2014 we also had to migrate to using Star-Exec, we held only a main track and an application (incremental) track in the 2014 competition. The organizers still maintain the value of measuring the performance of solvers on new features such as model generation, unsat core determination and proof generation and recommend that they be reinstated in some future competition.
+
 \tjarkx{More emphases?}
 
 \end{itemize}
 
-Previous years have challenged solvers to support a variety of logics and
-have measured them on raw performance on individual problems. This year we have two additional goals. First, we
-focused the competition on a subset of the logics that are the more relevant to applications. Some of the 
-simpler logics are now routine for nearly all solvers and therefore not a good basis for a competition. Others have 
-received only light interest in the past. Some of the less expressive logics are subsumed into the more expressive logics
-for selecting competition benchmarks.
 
-Second, we
-wished to encourage support for additional capabilities, namely, determining unsatisfiable cores and generating proofs.
-Finding small unsatisfiable cores is important, for example, in finding contradictions within sets of assertions; compact unsatisfiable cores also produce more compact proofs. Finding a {\em minimal} unsatisfiable core is a hard problem with no known practical algorithm;
-thus, good heuristics that apply to problems of interest are valuable and worth a competition. So, the organizers added
-an unsat core track to the 2012 competition. The winner of that track is the solver that, without producing any erroneous results, produces the smallest unsatisfiable cores on the benchmark set within the timeout period.
-
-Similarly, constructing proofs of unsatisfiability is also useful, particularly if quantified assertions are included.
-Since there is as yet no standard method to express proofs and thus no easy way to check them, the organizers added a proof generation track solely in demonstration mode. We encouraged submission of solvers with this capability, but we did not attempt to measure the speed or accuracy of such solvers this year. We do hope that
-attention to proof generation will encourage standardization of proof format and of proof checkers.
-
-The competition used a subset of benchmarks from those available at \url{www.smtlib.org}. The full benchmark suite contains about 100,000 benchmarks. New benchmarks are continually being added --- additional benchmarks were added to the main and application tracks for 2012. The unsat core benchmarks were adapted from main track benchmarks that are unsatisfiable. The benchmarks are a collection of more or less relevant problems, rather than benchmarks that measure specific metrics.
-Some benchmarks are families of constructed problems of arbitrary size; these can test the scalability of a solver as
-the size of the benchmark instance is increased. Other benchmarks are formed from problems that arise in actual 
-applications. For example, software verification of real programs produces many SMT problems that are suitable as benchmarks.
-
-The full description of the 2014 SMT competition's rules is found in the rules document (\url{www.smtcomp.org/2014/rules14.pdf}). The document describes the procedures for determining benchmark difficulties, selecting benchmarks for competition, and judging the results.
 
 \section{Competition timeline}
 \label{sec:timeline}
@@ -150,7 +130,10 @@ The full description of the 2014 SMT competition's rules is found in the rules d
 \section{Competition procedure} 
 \label{sec:procedure}
 
-THIS IS ALL FROM 2012
+
+The full description of the 2014 SMT competition's rules is found in the rules document (\url{www.smtcomp.org/2014/rules14.pdf}). The document describes the procedures for determining benchmark difficulties, selecting benchmarks for competition, and judging the results.
+
+\tjarkx{The rest of the material in this section includes material from 2012 and needs editing}
 
 The competition's traditional `main' track tests a solver's ability to determine the satisfiability or unsatisfiability of a single problem (perhaps with multiple assertions) within a given logic. A second track tests the performance of multi-threaded solvers on similar problems.
 
@@ -201,6 +184,8 @@ There were a few solvers that we hoped would be submitted but were not: Tiffany 
 
 Other than those omissions, every competitive solver known to the organizers was represented. Indeed, the
  participation by solver teams was a record high in 2014. 
+
+In addition to the competing solvers, the organizers, as in past competitions, included some publicly available historical solvers. These solvers are run in the competition for comparison, but are designated as demonstartion only and are not eligible for any awards or designations of having won the competition. In result tables, these solvers are listed with their names in square brackets (e.g., [MathSat]). The organizers included current versions of MathSat and Z3. Also, during the competition, a bug-fix release of CVC4 (named CVC4-with-bugfix) was submitted and included as a demonstration only version (cf. section \ref{sec:floc}.
 
 \begin{table}[t]
 \centering
@@ -359,55 +344,9 @@ Total & 18 & 67426 & 35020 & 35202 & 137648 \\
 \section{Main track results}
 \label{sec:main-results}
 
-THIS IS ALL FROM 2012
+\tjarkx{The rest of the material in this section is all from 2012 and needs editing}
 
 \paragraph{New benchmarks.} One of the goals of the SMT competition is to accumulate benchmark problems. These are, of course, used in the competition. But they are also useful as part of the overall SMT endeavor. Researchers can use the SMT benchmarks for studies of benchmark characteristics, solver evaluation, and their own solver testing quite apart from any competition. In particular, it is important to accumulate increasing numbers of benchmarks relevant to actual application areas. More benchmarks are needed that reflect software verification problems, but other constraint satisfaction domains, such as planning and optimization, are also needed.
-
-Benchmark submissions come from the SMT community; the organizers check the benchmarks and prepare them for competition and for the SMT benchmark library.
-SMT-LIB currently has about 100,000 benchmarks. An additional 13,811 main track benchmarks were submitted in 2012 (though they were not ready in time to be used in the competition). They fell into these categories:
-\begin{itemize}
-\item Main track benchmarks were added in these divisions (cf. \url{http://smtexec.org/2012_benchmarks/main/list.txt}):
-\begin{itemize}
-\item AUFNIRA: 190
-\item NIA: 26
-\item NRA: 21
-\item QF\_AUFBV: 39
-\item QF\_IDL: 30
-\item QF\_LIA: 513
-\item QF\_NRA: 12949
-\item UFNIA: 39
-\item UFRIA: 4
-\end{itemize}
-As the list above shows, a large number of QF\_NRA benchmarks were added, but only small numbers in other divisions.
-\item The application track has about 1056 benchmarks from 2011. In 2012 we added about 150.
-\item Unsat core benchmarks were derived from selected main track benchmarks by adding the command to generate unsat cores. The competition benchmarks were selected from these divisions
-\begin{itemize}
-\item 2584 QF\_LIA benchmarks
-\item  317 QF\_LRA benchmarks
-\item  683 QF\_IDL benchmarks
-\item 1399 QF\_BV benchmarks
-\end{itemize}
-\end{itemize}
-
-\paragraph{Main track.} The organizers invited submissions to 8 competitive divisions in the main track; of those, 4 had sufficient participation to be competitive. Note that the previous year's winners are automatically included for comparison but are not counted in the `participants' and are not eligible to be declared the winner for the year:
-\begin{itemize}
-\item QF\_BV: 9 participants; Winner: Boolector; Open-source winner: Boolector; improved over 2011 winner (Z3)
-\item QF\_AUFBV: 6 participants; Winner: Boolector; Open-source winner: Boolector; improved over 2011 winner (Boolector)
-\item QF\_UFLIA: 4 participants; Winner: MathSAT5; Open-source winner: SMTInterpol; not improved over 2011 (Z3)
-\footnote{CVC4 scored lower than the others because a rare bug caused an incorrect result on one benchmark, and any solver with errors scores lower than those without; the patched resubmission would have placed second and would have been the open-source winner.}
-\item QF\_UFLRA: 4 participants; Winner: CVC4; Open-source winner: CVC4; improved over one but not the other of the co-winners in 2011.
-\end{itemize}
-
-Four additional divisions (QF\_IDL, AUFLIA+p, AUFLIA-p, and AUFNIRA) had only two submissions (CVC3 and CVC4) and so were run only as demonstrations. These did not improve over the 2011 winner (Z3).
-
-In addition, any other division was run as a demonstration, if there were submissions in that division. Since these were advertised only as demonstration runs, the participants did not necessarily optimize or test their solvers for these divisions. Thus conclusions should not be drawn from their performance. These divisions were
-\begin{itemize}
-\item QF\_UF: 4 participants
-\item QF\_AUFLIA: 3 participants
-\item QF\_LRA: 4 participants
-\item QF\_LIA: 4 participants
-\end{itemize}
-In each case, the 2011 winner (Z3) still out-performed the 2012 participants.
 
 \paragraph{Application track.}
 
@@ -437,6 +376,105 @@ The system description for SMTInterpol included in the SMTCOMP'12 proceedings in
 \section{FLoC Olympic games}
 \label{sec:floc}
 
+The main track and the application track described in previous sections are staples of recent SMT competitions. The 2014 edition was unique in also being associated with the FLoC Olympic Games~\cite{TBD}.
+This association was positive in providing a platform, along with the other competitions, to present the
+rationale, methodology and results of the SMT competition to a wider audience than just the SMT community.
+
+One additional aspect that resulted from the Olympic Games was the awarding of three medals to the three ``winners" of the competition. Since SMT-COMP is organized into many separate divisions, with winners determined in each division independently, the organizers had to determine how to award three global prizes.
+The metrics for doing so were the subject of significant discussion both before and after the competition.
+The metrics were decided by the organizers before the competition began (and before the deadline for solver registration) and were maintained unchanged after the competition.
+
+The organizers chose to award the bronze medal for the best performance in a single division. We chose  the QF\_BV division for this medal because it is significant to applications and because it traditionally has received the most solver submissions. Indeed in 2014, there were 11 participants. Determining the winner was straightforward: we used the same metric as is used for each division - the most problems solved without errors, with ties broken by speed of solution. The Boolector~\cite{TBD} solver won this division and the bronze medal. The results for all participating solvers are shown in Table \ref{Table:bronze}.
+
+The organizers chose to award the silver and gold medals for best performance across the most divisions. Thus we needed a metric that combined the results across divisions. We considered two metrics. For a given solver, let 
+\begin{itemize}
+\item $e_i$ be the number of benchmarks in division $i$ for which an incorrect result was produced
+\item $c_i$ be the number of benchmarks in division $i$ solved correctly
+\item $t_i$ be the total time to solve the benchmarks in division $i$ that were solved correctly
+\item $N_i$ be the total number of benchmarks in division $i$.
+\end{itemize}
+The normal metric for a division is that the winning solver is the one with the
+smallest value of $e_i$, the largest value of $c_i$ and then the smallest value of $t_i$, for each division taken separately; that is, the metric is a lexicographic ordering by smallest value of $[ e_i, -c_i, t_i ]$.
+The the two global metrics we considered are
+\begin{itemize}
+\item Metric A: The winning solver is the one with the smallest value of $\sum_i e_i$, then the largest value of $\sum_i c_i/N_i \log N_i$, then the smallest value of $sum_i t_i \log N_i$, where for a given solver the sums are over all competitive divisions in which that solver participated
+\item Metric B: The winning solver is the one with the smallest value of $\sum_i e_i$, then the largest value of $\sum_i (e_i == 0 ? c_i/N_i \log N_i : - \log N_i )$, then the smallest value of $sum_i t_i \log N_i$ 
+\end{itemize}
+Note that incorrect results are very rare, but do occur; for almost all solvers and divisions the value of $e_i$ is 0 and the competition hinges on the values of $c_i$. The speed of the solver is important in two ways. First, if the solver is slow, it will time out before a solution is found and thus the value of $c_i$ will be lower. Second, if there is a tie in the number of errors and correctly solved problems, the total time taken on the correctly solved problems is used as the tie-breaker; this is a rare occurrence but does happen if, for example, all the benchmark problems in a division are solvable within the time limit.
+
+Only \textit{competitive divisions} were included in the scoring. For determining medals, a division is competitive if there are at least two officially registered, participating solvers \textit{from different teams}. This prevents a team from gaming the scoring by submitting multiple solvers to divisions in which no one else is participating. This criterion excluded a number of divisions from medal scoring: AUFNIRA, BV, NIA, NRA, QF\_UFNIA, QF\_UFNRA, UFBV, UFIDL, UFNIA.
+
+The log scaling of the scores for each division is a somewhat arbitrary means to adjust the scores for the wide variety of numbers of benchmarks. It seemed a reasonable compromise between linearly combining numbers of benchmarks, which would have overweighted large divisions (in the organizers' view), and simply summing the fraction of benchmarks solved correctly, which would have overweighted small divisions.
+
+These two metrics differ in how errors are treated. If a solver has no errors, it is always better off to participate in as many divisions as possible. However, an error in a division penalizes a solver so that it would be better not to have participated in the division; hence the organizers ruled that once the competition had started, a solver could not be withdrawn from a division in which it was registered.
+
+The penalty for an error is globally significant in Metric A: a single error in one division out of many would put the solver behind any other solver with no errors, even if that solver participated in just one division. The penalty for an error is more local for Metric B: the error results in a large negative score for that division. Both metrics satisfy the criterion of putting heavy weight on correctness of solvers.
+The organizers published the choice of Metric A as the metric for the Olympic Games gold and silver medals in the rules prior to the beginning of the competition with no objection at the time.
+
+Though all solvers were scored for the medal metrics, five solvers participated in more than two divisions and were the most competitive during the course of the competition. The final results are shown in Table \ref{Table:medals}. The choice of metric did have a significant effect on the result. CVC4 and Yices2 participated in the most divisions, solved the most problems, and did so the most efficiently. However, Yices2 had a crash on one problem in QF\_ABV, but had emitted an erroneous answer prior to the crash (a simple crash without an answer is scored the same as an `unknown' response, marked neither wrong nor correct). CVC4 had bugs that affected AUFNIRA, which was not a competitive division, and QF\_LIA,
+which was competitive. Consequently, by the competition metric, these two otherwise leading solvers placed much further back in the pack.
+
+The resulting winning teams, veriT and SMTInterpol, put an appeal to the organizers to use Metric B instead, arguing that (a) CVC4 and Yices2 were clearly the more capable solvers and (b) there were known bugs in the winning solvers as well, which, simply by good fortune, were not triggered by the competition benchmarks. However, after public comment acknowledging the good will of the winners, the appeal was not accepted by the organizers. The medal ceremony did highlight the differing contributions of all four teams as well as those of the bronze medal winner. Note that the discovered bugs were promptly fixed. In fact, CVC4 submitted an additional demonstration-only version, named CVC4-with-bugfix in the result tables, which the organizers ran in conjunction with the rest of the competition.
+
+\begin{table}
+\centering
+\begin{tabular}{|l|r|rr|r|}
+\hline
+Solver  & Competitive & Metric A & & Metric B \\
+ & Divisions & Weighted errors & Weighted solved & \\
+\hline
+veriT & 17 &	0.000 	& 	25.325 & 25.325 \\
+SMTInterpol & 8 &	0.000 	& 	22.831 & 22.831 \\
+CVC3 & 10	& 	0.000 	& 	9.618 & 9.618 \\
+SONOLAR 	& 2	&  	0.000 	& 	5.978 & 	5.978\\
+AProVE 		& 1 & 	0.000 	& 	3.776	& 	3.776\\
+Boolector (justification) & 1	&  	0.000 	& 	3.758	& 	3.758\\
+Boolector (dual propagation) & 1		&  	0.000 	& 	3.755 & 	3.755\\
+OpenSMT2 	& 1	&  	0.000 &	3.582 &	3.582\\
+Boolector & 1		&  	0.000 &	3.058  &	3.058 \\
+STP-CryptoMiniSat4 	& 1	&  	0.000 &	2.859 &	2.859\\
+4Simp 	& 1	& 	0.000 	& 	2.468  	& 	2.468 \\
+raSAT 	& 1	& 	0.000 	& 	0.000 	& 	0.000 \\
+Yices2 	& 17	&  	3.810 	& 	38.624 & 31.059 \\
+CVC4 		& 25 &  	7.283 	& 	54.152 & 43.509 \\
+abziz\_min\_features 	& 1	& 	30.563 	& 	2.548 & -30.563 \\
+abziz\_all\_features 	& 1	&  	30.563 	& 	2.403 & -30.563 \\
+Kleaver-STP 	& 1	&  	213.362 	& 	3.103 & -213.362 \\
+Kleaver-portfolio & 1		&  	346.713 	& 	3.073  & -346.713 \\
+\hline
+\end{tabular}
+\vspace{.2in}
+\caption{Gold and silver medal competition, in winning order by Metric A. By Metric B the order is the same except that CVC4 and Yices2 are in first and second place.}
+\label{Table:medals}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{|l|rrr|}
+\hline
+ Solver & Errors & Solved & Time (sec)\\
+\hline
+Boolector &	0  &		2361  &		138077.59 \\
+STP-CryptoMiniSat4 & 0  &		2283  &		190660.82 	\\
+CVC4-with-bugfix &	0  &		2237 	 &		139205.24 \\
+MathSAT  &	0  &		2199 	 &		262349.39 \\
+ Z3  & 	0  &		2180 	 &		214087.66 	\\
+CVC4  &	0  &		2166 	 &		87954.62 	\\
+4Simp &	0 &	2121 	 &		187966.86 \\
+SONOLAR &	0  &		2026  &	 	174134.49 \\
+Yices2 &	0  &		1770  &	 	159991.55 \\
+abziz\_min\_features &	9  &		2155 	 &	 	134385.22 \\
+abziz\_all\_features &	9  &		2093 	 &	 	122540.04 \\
+\hline
+\end{tabular}
+\vspace{.2in}
+\caption{Bronze medal competition (QF\_BV division - 2488 benchmarks), in winning order}
+\label{Table:bronze}
+\end{table}
+
+\tjarkx{In the bronze medal table, CVC4-with-bugfix, MathSat, and Z3 should  be in square brackets, but I keep getting errors for that in table environment}
+
+
 \section{Concluding observations}
 \label{sec:conclusion}
 
@@ -455,6 +493,12 @@ The system description for SMTInterpol included in the SMTCOMP'12 proceedings in
 - using all benchmarks may not be the best design - over emphasis on some problem types
 
 - still need a focus on applications; more representative benchmarks; more benchmarks needed in many logics
+
+- spawning of SL\_COMP
+
+- Metrics: include the time for non-success computations
+
+- Difficulty of preparing new submissions
 
 THIS IS ALL FROM 2012
 
@@ -524,8 +568,16 @@ The emphasis of SMT is solving constraint problems consisting of ground formulae
 At IJCAR'12 the organizers of the two competitions (David Cok and Geoff Sutcliffe) discussed ways of bringing the advantages and strengths of each community to the other. The driving motivation is that many application problems are best expressed using SMT-like theories but with quantification. A first step may be to find interesting problems at the 
 intersection of the two domains, express them in the two different problem formats, and apply tools from each domain, comparing the results. A set of problems the organizers are considering is CASC's TFA division --- typed first-order theorems with Arithmetic. These would correspond variously to SMT-LIB's AUFLIRA and AUFNIRA logics or more specialized subsets of those (and without explicit arrays). Such a set of common problems would allow a direct comparison of ATP and SMT system's capabilities.
    
+\section{Recommendations for future competitions}
 
+The SMT steering committee has decided that SMT-COMP 2015 will be held in association with the SMT Workshop, which itself will be affiliated with \tjarkx{WHO} in \tjarkx{WHERE} from \tjarkx{WHEN}.
+The Workshop is being organized by \tjarkx{WHO}; the organizers of the competition are not yet appointed.
 
+Based on the experience of 2014, the 2014 organizers have the following recommendations or topics for consideration for future competitions.
+\begin{itemize}
+\item
+\end{itemize}
+\tjarkx{More recommendations}
 \section*{Acknowledgments} 
 \begin{itemize}
 \item The organizers were supported by their respective institutions (GrammaTech, Federal University of Rio Grande do Norte, Brazil and Uppsala University, Sweden respectively). 
