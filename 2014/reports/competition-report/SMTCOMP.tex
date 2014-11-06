@@ -313,48 +313,50 @@ to which it had previously been assigned. This resulted in an expansion of logic
        & \# of & Eligible & Unknown  & Trivial  & Total  \\
  Logic & solvers & benchmarks &  benchmarks &  benchmarks &  benchmarks \\
 \hline
-ALIA & 4 & 29 & 0 & 13 & 42 \\
-AUFLIA & 4 & 4 & 0 & 0 & 4\\
-AUFLIRA & 4 & 10791 & 168 & 9055 & 20014 \\
-AUFNIRA & 4 & 564 & 443 & 488 & 1495 \\
-BV &   & 0 & 191 & 0 & 191 \\
-LIA & 4 & 46 & 0 & 0 & 46 \\
-LRA & 4 & 171 & 364 & 86 & 621\\
-NIA & 3 & 9 & 0 & 0 & 9\\
-NRA & 3 & 3747 & 66 & 0 & 3813 \\
-QF\_ABV & 9 & 6457 & 2906 & 5728 & 15091 \\
-QF\_ALIA & 5 & 97 & 0 & 29 & 126 \\
-QF\_AUFBV & 4 & 37 & 0 & 0 & 37 \\
-QF\_AUFLIA & 6 & 610 & 0 & 399 & 1009\\
-QF\_AX & 5 & 335 & 0 & 216 & 551 \\
-QF\_BV & 11 & 2488 & 17728 & 12284 & 32500 \\
-QF\_IDL & 4 & 1315 & 520 & 354 & 2189 \\
-QF\_LIA & 7 & 4381 & 1192 & 568 & 6141 \\
-QF\_LRA & 6 & 1343 & 167 & 172 & 1682\\ 
-QF\_NIA & 4 & 8327 & 919 & 113 & 9359 \\
-QF\_NRA & 4 & 10121 & 1382 & 37 & 11540 \\
-QF\_RDL & 4 & 132 & 64 & 59 & 255 \\
-QF\_UF & 7 & 4124 & 4 & 2522 & 6650 \\
-QF\_UFBV & 4 & 31 & 0 & 0 & 31 \\
-QF\_UFIDL & 4 & 311 & 0 & 130 & 441\\
-QF\_UFLIA & 6 & 484 & 0 & 114 & 598 \\
-QF\_UFLRA & 6 & 1176 & 73 & 381 & 1630 \\
-QF\_UFNIA & 3 & 7 & 0 &0 & 7 \\
-QF\_UFNRA & 3 & 32 & 10 & 1 & 43\\
-UF & 4 & 2830 & 2911 & 7 & 5748 \\
-UFBV & 0 & 0 & 191 & 0 & 191 \\
-UFIDL & 3 & 49 & 12 & 19 & 80 \\
-UFLIA & 4 & 5766 & 4680 & 1692 & 12138 \\
-UFLRA & 4 & 25 & 0 & 0 & 25\\
-UFNIA & 3 & 1587 & 1029 & 735 & 3351 \\
+ALIA & 3+[1] & 29 & 0 & 13 & 42 \\
+AUFLIA & 3+[1] & 4 & 0 & 0 & 4\\
+AUFLIRA & 3+[1] & 10791 & 168 & 9055 & 20014 \\
+AUFNIRA & 2+[2] & 564 & 443 & 488 & 1495 \\
+BV & 2+[1] & 0 & 191 & 0 & 191 \\
+LIA & 3+[1] & 46 & 0 & 0 & 46 \\
+LRA & 3+[1] & 171 & 364 & 86 & 621\\
+NIA & 2+[1] & 9 & 0 & 0 & 9\\
+NRA & 2+[1] & 3747 & 66 & 0 & 3813 \\
+QF\_ABV & 7+[2] & 6457 & 2906 & 5728 & 15091 \\
+QF\_ALIA & 3+[2] & 97 & 0 & 29 & 126 \\
+QF\_AUFBV & 2+[2] & 37 & 0 & 0 & 37 \\
+QF\_AUFLIA & 4+[2] & 610 & 0 & 399 & 1009\\
+QF\_AX & 3+[2] & 335 & 0 & 216 & 551 \\
+QF\_BV & 8+[2] & 2488 & 17728 & 12284 & 32500 \\
+QF\_IDL & 3+[1] & 1315 & 520 & 354 & 2189 \\
+QF\_LIA & 4+[3] & 4381 & 1192 & 568 & 6141 \\
+QF\_LRA & 4+[2] & 1343 & 167 & 172 & 1682\\ 
+QF\_NIA & 3+[1] & 8327 & 919 & 113 & 9359 \\
+QF\_NRA & 3+[1] & 10121 & 1382 & 37 & 11540 \\
+QF\_RDL & 3+[1] & 132 & 64 & 59 & 255 \\
+QF\_UF & 5+[2] & 4124 & 4 & 2522 & 6650 \\
+QF\_UFBV & 2+[2] & 31 & 0 & 0 & 31 \\
+QF\_UFIDL & 3+[1] & 311 & 0 & 130 & 441\\
+QF\_UFLIA & 4+[2] & 484 & 0 & 114 & 598 \\
+QF\_UFLRA & 4+[2] & 1176 & 73 & 381 & 1630 \\
+QF\_UFNIA & 2+[1] & 7 & 0 &0 & 7 \\
+QF\_UFNRA & 2+[1] & 32 & 10 & 1 & 43\\
+UF & 3+[1] & 2830 & 2911 & 7 & 5748 \\
+UFBV & 0+[2] & 0 & 191 & 0 & 191 \\
+UFIDL & 2+[1] & 49 & 12 & 19 & 80 \\
+UFLIA & 3+[1] & 5766 & 4680 & 1692 & 12138 \\
+UFLRA & 3+[1] & 25 & 0 & 0 & 25\\
+UFNIA & 2+[1] & 1587 & 1029 & 735 & 3351 \\
 \hline
-Total & 18 & 67426 & 35020 & 35202 & 137648 \\
+Total & 16+[2] & 67426 & 35020 & 35202 & 137648 \\
 \hline
 \end{tabular}
 \vspace{.2in}
-\caption{Numbers of main-track benchmarks}
+\caption{Numbers of main-track benchmarks. The second column shows the number of competitive solvers and, in square brackets, the number of demonstration-only solvers.}
 \label{Table:benchmarks}
 \end{table}
+
+\davidc{Recheck the numbers of solvers in the benchmarks table}
 
 A sizeable number, on the order of 30000, of benchmarks were added during the lead up to the competition. Some of these were submitted in previous years but never assessed and uploaded. Many others were supplied by solver developers (including some competitors). All of them went through an iterative curation process to be sure that they were syntactically valid, appropriate metadata was included, and a correct result was established. (Not all of these submissions were through the competition organizers.)
 
