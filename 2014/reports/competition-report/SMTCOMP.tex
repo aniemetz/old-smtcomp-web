@@ -71,7 +71,7 @@ The 2014 edition of the SMT Competition was executed for the first time on the S
 \davidd{Comment on qualitative evolution of solvers?}
 \keywords{SMT-solver, competition} \davidc{more keywords}
 
-%\published{November 2014}{revision date}{publication date}
+%\published{Decembber 2014}{revision date}{publication date}
 
 \davidc{Material to include, from the call: Full articles by competition organizers reporting on SAT-related competitions
   within FLoC Olympic Games 2014. The articles should describe the competition,
@@ -81,11 +81,17 @@ The 2014 edition of the SMT Competition was executed for the first time on the S
   technical contributions to the field, as well as discussions on lessons
   learned and suggestions for improvements for future competitions. }
 	
-	\davidc{Page limit? I don't see one mentioned anywhere.}
+\davidc{Page limit? I don't see one mentioned anywhere.}
 	
 	
 \section{Introduction}
 \label{sec:intro}
+
+\davidd{{\it (describe why it is interesting to the SAT research community:)}
+
+  Introduce the SMT problem, and its relationship with the SAT
+  problem. Define SMT solver and state that it often embeds and
+  extends a SAT solver.}
 
 The 2014 SMT Competition continued the series of annual competitions in SMT solver capability and performance that began in 2005. This is the 9th competition in the series, skipping only 2013; in that year an evaluation~\cite{it:2014-017} was performed, rather than a competition.
 
@@ -164,9 +170,9 @@ The full description of the 2014 SMT competition's rules is found in the rules d
 
 \davidc{The rest of the material in this section includes material from 2012 and needs editing}
 
-The competition's traditional `main' track tests a solver's ability to determine the satisfiability or unsatisfiability of a single problem (perhaps with multiple assertions) within a given logic. A second track tests the performance of multi-threaded solvers on similar problems.
+The competition's traditional `main' track tests a solver's ability to determine the satisfiability or unsatisfiability of a single problem (perhaps with multiple assertions) within a given logic. 
 
-The `application' or incremental track, introduced last year, tests a qualitatively different capability. Software verification tools often use SMT solvers as a back-end proof engine. These tools repeatedly invoke the solver with different, related satisfiability problems; the problems may have a substantially similar set of assertions, produced by the tool's adjusting, correcting, adding, or retracting assertions interactively; in batch mode different properties may be checked using substantially the same set of assertions.
+The `application' or incremental track, introduced in 2011, tests a qualitatively different capability. Software verification tools often use SMT solvers as a back-end proof engine. These tools repeatedly invoke the solver with different, related satisfiability problems; the problems may have a substantially similar set of assertions, produced by the tool's adjusting, correcting, adding, or retracting assertions interactively; in batch mode different properties may be checked using substantially the same set of assertions.
 The effect is that the solver must respond to a sequence of requests to assert or retract logical statements, check satisfiability, produce counterexamples, and so on. The application track tests a solver's performance in responding to such a sequence of commands, as produced by actual application problems. To implement the application track benchmarks, the 
 competition uses a simulation engine that communicates with the solver just like an application (or a user at a keyboard) would, presenting each command and waiting for a response before presenting the next command; this mechanism (appropriately) prevents a solver from optimizing its effort based on knowing the entire sequence of commands all at once. A report
 on the first (2011) year's application track and the overall design was presented by Griggio and Bruttomesso at the 
@@ -195,7 +201,7 @@ The competition registration includes information about each competing solver. I
 \item 4Simp~\cite{TBD}- submitted by Trevor Hansen (U. Melbourne)
 \item AbzizPortfolio~\cite{TBD} - two versions - submitted by Mohammed Adbul Aziz, U. Cairo. (This solver is unusual in that it is a portfolio solver: based on automated learning over benchmark characteristics, it chooses among other solvers to apply to the problem at hand.)
 \item AProVe~\cite{AProVE2014} - submitted by Carsten Fuhs (UCL)
-\item Boolector~\cite{TBD} - three versions - submitted by Armin Biere, Aina Niemetz, Mathias Preiner (Johnnes Kepler University)
+\item Boolector~\cite{TBD} - three versions: Boolector (default), Boolector-j (justification), Boolector-d (dual propagation) - submitted by Armin Biere, Aina Niemetz, Mathias Preiner (Johnnes Kepler University)
 \item CVC3 v. 2.4.3~\cite{BT07} - submitted by Morgan Deters (NYU)
 \item CVC4 v. 1.4~\cite{BCD+11} - submitted by the ACSys Group (NYU)
 \item Kleaver~\cite{TBD} - 2 versions - submitted by Hristina Palikareva, Cristian Cadar (Imperial College)
@@ -203,7 +209,7 @@ The competition registration includes information about each competing solver. I
 \item raSAT~\cite{TBD} - submitted by Tung Vu Xuan \davidc{Affiliation?}
 \item SMTInterpol~\cite{DBLP:conf/spin/ChristHN12,DBLP:conf/spin/2012} - submitted by Jochen Hoenicke, J\"urgen Christ (U. Freiburg)
 \item SONOLAR~\cite{TBD} - submitted by Florian Lapschies (U. Bremen)
-\item STP-CryptoMiniSat4~\cite{DBLP:conf/cav/GaneshD07,DBLP:conf/cav/2007} - submitted by M\'at\'e So\'os \davidc{Affiliation?}, based on previous work by Trevor Hansen (U. Melbourne) and Vijay Ganesh (MIT)
+\item STP-CryptoMiniSat4~\cite{DBLP:conf/cav/GaneshD07,DBLP:conf/cav/2007} - submitted by M\'at\'e So\'os (Security Research Lab.), based on previous work by Trevor Hansen (U. Melbourne) and Vijay Ganesh (MIT)
 \item veriT~\cite{veriT} - submitted by David D\'{e}harbe (UFRN), Pascal Fontaine (U. Lorraine, INRIA)
 \item Yices2~\cite{Dutertre:cav2014} - submitted by Bruno Dutertre (SRI)
 \end{itemize}
@@ -219,18 +225,19 @@ In addition to the competing solvers, the organizers, as in past competitions, i
 
 \begin{table}[t]
 \centering
+\setlength{\tabcolsep}{1pt}
 \begin{tabular}{|l|l|c|c|c|c|c|c|c|c|c|}
 \hline
 Solver & Affiliation & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 2014 \\
 \hline
 
 4Simp                  & U. Melbourne 	&   &   &   &   &   &   &   &   & X  \\							
-STP-CryptoMiniSat4     & TBD?           &   &   &   &   &   &   &   &   & X\\								
+STP-CryptoMiniSat4     & Security Res. Lab.  &   &   &   &   &   &   &   &   & X\\								
 Kleaver	               & Imperial       &   &   &   &   &   &   &   &   & (2) \\								
-raSAT  	               & TBD?           &   &   &   &   &   &   &   &   & X \\								
+raSAT  	               & JAIST          &   &   &   &   &   &   &   &   & X \\								
 Tiffany de Wintermonte & U. Melbourne 	&   &   &   &   &   &   &   & X &  \\							
 AbzizPortfolio         & U. Cairo       &   &   &   &   &   &   &   & X & (2)\\							
-Boolector              & J.K. U.        &   &   &   & X & X &   & X & X & (3)\\
+Boolector              & JKU            &   &   &   & X & X &   & X & X & (3)\\
 CVC/CVCLite/CVC3       & NYU, U. Iowa   & X & X & X & X & X & X & X & X & X \\
 CVC4	                 & NYU, U. Iowa   &   &   &   &   &   & X & X & X & X \\
 MathSat-HeavyBV        & U. Trento      &   &   &   &   &   &   &   & X &   \\								
@@ -240,8 +247,8 @@ SONOLAR                & U. Bremen      &   &   &   &   &   & X & X & X & X \\
 STP, STP2              & MIT            &   & X &   &   & X &   & X & X &   \\
 AProVE NIA             & RWTH Aachen    &   &   &   &   &   & X & X &   & X \\
 opensmt, opensmt2      & U. Lugano      &   &   &   & X & X & X & X &   & X \\
-veriT                  & UFRN           &   &   &   &   & X & X & X &   & X \\
-Z3                & Microsoft Research  &   &   & X & X &   &   & X &   &   \\
+veriT                  & Loria, UFRN           &   &   &   &   & X & X & X &   & X \\
+Z3                & Microsoft Res.  &   &   & X & X &   &   & X &   &   \\
 MiniSMT                & U. Innsbruck   &   &   &   &   &   & X &   &   &   \\	
 simplifyingSTP         & U. Melbourne   &   &   &   &   &   & X &   &   &   \\	
 test\_pmathsat         & FBK-IRST       &   &   &   &   &   & X &   &   &   \\	
@@ -251,23 +258,24 @@ clsat                  & Washington U.  &   &   &   & X & X &   &   &   &   \\
 Sateen                 & U. Col-Boulder & X & X & X & X & X &   &   &   &   \\		
 sword                  & U. Bremen      &   &   &   & X & X &   &   &   &   \\		
 Yices, Yices2          & SRI            & X & X & X & X & X &   &   &   & X \\		
-Spear                  &   &   &   & X & X &   &   &   &   \\		
-Alt-Ergo               &   &   &   &   & X &   &   &   &   \\			
-ArgoLib                &   &   &   & X &   &   &   &   &   \\				
-Fx7                    &   &   &   & X &   &   &   &   &   \\				
-Ario                   &   & X & X &   &   &   &   &   &   \\					
-ExtSat                 &   &   & X &   &   &   &   &   &   \\					
-HTP                    &   & X & X &   &   &   &   &   &   \\					
-Jat                    &   &   & X &   &   &   &   &   &   \\					
-NuSMV                  &   &   & X &   &   &   &   &   &   \\					
-Sammy                  &   & X &   &   &   &   &   &   &   \\						
-SBT                    &   & X &   &   &   &   &   &   &   \\						
-Simplics               &   & X &   &   &   &   &   &   &   \\					
-SVC	                   &   & X &   &   &   &   &   &   &   \\	
+Spear                  &   &   &   & X & X &   &   &   &  &   \\		
+Alt-Ergo               & U. Paris Sud  &   &   &   & X &   &   &   &  &   \\			
+ArgoLib                &   &   &   & X &   &   &   &   &  &   \\				
+Fx7                    &   &   &   & X &   &   &   &   &  &   \\				
+Ario                   &   & X & X &   &   &   &   &   &  &   \\					
+ExtSat                 &   &   & X &   &   &   &   &   &  &   \\					
+HTP                    &   & X & X &   &   &   &   &   &  &   \\					
+Jat                    &   &   & X &   &   &   &   &   &  &   \\					
+NuSMV                  & FBK &   & X &   &   &   &   &   &  &   \\					
+Sammy                  &   & X &   &   &   &   &   &   &  &   \\						
+SBT                    &   & X &   &   &   &   &   &   &  &   \\						
+Simplics               & SRI & X &   &   &   &   &   &   &  &   \\					
+SVC	               & Stanford U.  & X &   &   &   &   &   &   &  &   \\	
 \hline					
 \end{tabular}
 \vspace{.2in}
-\caption{History of solver participation}
+\caption{History of solver participation (numbers in parenthesis indicate
+the number of versions submitted for the tool.}
 \label{Table:participants}
 \end{table}
 
@@ -288,9 +296,9 @@ Not ever participating again &  4 &  5 & 2 &  2 &  6 &  3 &  4 &  4 &  \\
 \label{Table:changes}
 \end{table}
 
-\paragraph{History.} Table \ref{Table:participants} shows the
+\paragraph{History.} Table~\ref{Table:participants} shows the
  historical participation of each solver; note that sometimes versions and names change, or there are multiple related versions from the same team. 
-Table \ref{} summarizes that data in numbers of continuing participants. Except for the record turnout in
+Table~\ref{Table:changes} summarizes that data in numbers of continuing participants. Except for the record turnout in
  2014, there has been a steady 9-13 participants each year; each year there are an average of 4 new
  participants, about the same number of drop-outs, and an average of 7 continuing participants. 
 The introduction in 2010 of SMT-LIBv2 as the standard language for benchmarks was a significant event. The new language required solvers to revise their front-ends and to add new capabilities.
@@ -303,7 +311,7 @@ the application track of the competition was added to demonstrate this capabilit
 The SMT-LIB benchmarks each belong to a specific logic. Each logic is one competition division. For each division we ran the solvers that entered that division on the benchmarks for that division as one event in the overall competition.
 
 SMT-LIB currently defines 34 logics, shown in Table \ref{Table:benchmarks}. The rightmost column shows the number of benchmarks for that logic in the SMT-LIB collection. Two considerations may make a benchmark ineligible to be used in a competition. First, the benchmark may not have a known result. For newly submitted benchmarks
-we made an attempt to determine the correct result of the benchmark. the SMT-LIB coordinators require two 
+we made an attempt to determine the correct result of the benchmark. The SMT-LIB coordinators now require two 
 different solvers to solve the problem and report the same result to admit the benchmark into the collection.
 However, for benchmarks already in the collection we did not attempt to determine their answer. We did do this analysis after the competition was over (see section \ref{TBD}).
 
@@ -321,8 +329,8 @@ to which it had previously been assigned. This resulted in an expansion of logic
 \centering
 \begin{tabular}{|l|r|r|r|r|r|}
 \hline
-       & \# of & Eligible & Unknown  & Trivial  & Total  \\
- Logic & solvers & benchmarks &  benchmarks &  benchmarks &  benchmarks \\
+       & \multicolumn{1}{|c|}{\# of} & \multicolumn{4}{|c|}{\# of benchmarks} \\
+ Logic & solvers & eligible & unknown  & trivial  & total  \\
 \hline
 ALIA & 3+[1] & 29 & 0 & 13 & 42 \\
 AUFLIA & 3+[1] & 4 & 0 & 0 & 4\\
@@ -375,10 +383,11 @@ A sizeable number, on the order of 30000, of benchmarks were added during the le
 
 
 
-Solvers could participate in any or all divisions at their team's discretion. Most solvers are designed for just one selected logic, but others are intended to be as broadly applicable as their developers have had time to implement. Table \ref{Table:logics} shows the participation of solvers in various divisions.
+Solvers could participate in any or all divisions at their team's discretion. Most solvers are designed for just one selected logic, but others are intended to be as broadly applicable as their developers have had time to implement. Table~\ref{Table:logics} shows the participation of solvers in various divisions.
 
 \begin{sidewaystable}
 \centering
+\renewcommand{\mark}[0]{$\times$}
 %%\small
 \setlength\tabcolsep{3pt}
 %%\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -386,27 +395,27 @@ Solvers could participate in any or all divisions at their team's discretion. Mo
 \hline
 Solver & 	\rot{ALIA} & 	\rot{AUFLIA} & 	\rot{AUFLIRA} & 	\rot{AUFNIRA} & 	\rot{BV} & 	\rot{LIA} & 	\rot{LRA} & 	\rot{NIA} & 	\rot{NRA} & 	\rot{QF\_ABV} & 	\rot{QF\_ALIA} & 	\rot{QF\_AUFBV} & 	\rot{QF\_AUFLIA} & 	\rot{QF\_AX} & 	\rot{QF\_BV} & 	\rot{QF\_IDL} & 	\rot{QF\_LIA} & 	\rot{QF\_LRA} & 	\rot{QF\_NIA} & 	\rot{QF\_NRA} & 	\rot{QF\_RDL} & 	\rot{QF\_UF} & 	\rot{QF\_UFBV} & 	\rot{QF\_UFIDL} & 	\rot{QF\_UFLIA} & 	\rot{QF\_UFLRA} & 	\rot{QF\_UFNIA} & 	\rot{QF\_UFNRA} & 	\rot{UF} & 	\rot{UFBV} & 	\rot{UFIDL} & 	\rot{UFLIA} & 	\rot{UFLRA} & 	\rot{UFNIA} \\ 
 \hline
-4Simp & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-Abziz & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-Abziz2 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-AProVE & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-Boolector & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-Boolector-d & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-Boolector-j & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-CVC3 & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X \\ 
-CVC4 & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X \\ 
-Kleaver-STP & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-Kleaver-portfolio & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-OpenSMT2 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-raSAT & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-SMTInterpol & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 		X & 	X & 	 & 	 & 	X & 	X & 	 & 	 & 	 & 	X & 	 & 	 & 	X & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 &  &	 \\ 
-SONOLAR & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-STP-Crypto... & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-veriT & 	X & 	X & 	X & 	 & 	 & 	X & 	X & 	 & 	 & 	 & 	 & 	 & 	X & 			X & 	X & 	X & 	 & 	 & 	X & 	X & 		X & 	X & 	X & 	 & 	 & 	X & 	 & 	 & 	X & 	X &  & & &	 \\ 
-Yices2 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	 & 	 & 	X & 	X & 	X & 	X & 	X & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+4Simp & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+Abziz & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+Abziz2 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+AProVE & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+Boolector & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+Boolector-d & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+Boolector-j & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+CVC3 & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark \\ 
+CVC4 & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark \\ 
+Kleaver-STP & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+Kleaver-portfolio & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+OpenSMT2 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+raSAT & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+SMTInterpol & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 		\mark & 	\mark & 	 & 	 & 	\mark & 	\mark & 	 & 	 & 	 & 	\mark & 	 & 	 & 	\mark & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 &  &	 \\ 
+SONOLAR & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+STP-Crypto... & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+veriT & 	\mark & 	\mark & 	\mark & 	 & 	 & 	\mark & 	\mark & 	 & 	 & 	 & 	 & 	 & 	\mark & 			\mark & 	\mark & 	\mark & 	 & 	 & 	\mark & 	\mark & 		\mark & 	\mark & 	\mark & 	 & 	 & 	\mark & 	 & 	 & 	\mark & 	\mark &  & & &	 \\ 
+Yices2 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	 & 	 & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
 \hline
-{[}MathSAT5] & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	 & 	 & 	 & 	X & 	X & 	 & 	X & 	X & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
-{[}Z3] & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X & 	X \\ 
+{[}MathSAT5] & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	 & 	 & 	 & 	\mark & 	\mark & 	 & 	\mark & 	\mark & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 \\ 
+{[}Z3] & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark & 	\mark \\ 
 \hline
 \end{tabular}
 \vspace{.2in}
@@ -422,42 +431,55 @@ division is on the competition website: \url{http://smtcomp.sourceforge.net/2014
  
 \begin{table}
 \centering
-\begin{tabular}{|l|r|r|l|l|}
+\newcommand{\win}[1]{\textbf{#1}}
+\begin{tabular}{|l|r|r|l|}
 \hline
-Logic &	Solvers &	Benchmarks & Winner &	Order \\
+Logic &	Solvers &	Benchmarks & Order (winner in bold) \\
 \hline
-ALIA & 		4 & 	29 & 	CVC4 & 	[Z3]; CVC4; veriT; CVC3; \\
-AUFLIA & 	4 & 	4 & 	CVC4 & 	CVC4; [Z3]; CVC3; veriT; \\
-AUFLIRA & 	4 & 	10791 & CVC4 & 	[Z3]; CVC4; CVC3; veriT; \\
-AUFNIRA & 	4 & 	564 & 	CVC3 & 	[CVC4-with-bugfix]; [Z3]; CVC3; CVC4; \\
-LIA & 		4 & 	46 & 	CVC4 & 	[Z3]; CVC4; CVC3; veriT; \\
-LRA & 		4 & 	171 & 	CVC4 & 	CVC4; [Z3]; CVC3; veriT; \\
-NIA & 		3 & 	9 & 	CVC4 & 	[Z3]; CVC4; CVC3; \\
-NRA & 		3 & 	3747 & 	CVC4 & 	[Z3]; CVC4; CVC3; \\
-QF\_ABV & 	9 & 	6457 & 	Boolector (justification) & 	Boolector (justification); Boolector (dual propagation); [MathSAT]; SONOLAR; CVC4; [Z3]; Yices2; Kleaver-STP; Kleaver-portfolio; \\
-QF\_ALIA & 	5 & 	97 & 	Yices2 & 	Yices2; SMTInterpol; [Z3]; [MathSAT]; CVC4; \\
-QF\_AUFBV & 	4 & 	37 & 	CVC4 & 	CVC4; Yices2; [Z3]; [MathSAT]; \\
-QF\_AUFLIA & 	6 & 	610 & 	Yices2 & 	Yices2; [MathSAT]; [Z3]; SMTInterpol; CVC4; veriT; \\
-QF\_AX & 	5 & 	335 & 	Yices2 & 	Yices2; [MathSAT]; [Z3]; CVC4; SMTInterpol; \\
-QF\_BV & 	11 & 	2488 & 	Boolector & 	Boolector; STP-CryptoMiniSat4; [CVC4-with-bugfix]; [MathSAT]; [Z3]; CVC4; 4Simp; SONOLAR; Yices2; abziz\_min\_features; abziz\_all\_features; \\
-QF\_IDL & 	4 & 	1315 & 	Yices2 & 	[Z3]; Yices2; CVC4; veriT; \\
-QF\_LIA & 	7 & 	4381 & 	SMTInterpol & 	[CVC4-with-bugfix]; [MathSAT]; SMTInterpol; Yices2; [Z3]; veriT; CVC4; \\
-QF\_LRA & 	6 & 	1343 & 	CVC4 & 	CVC4; Yices2; [MathSAT]; SMTInterpol; veriT; [Z3]; \\
-QF\_NIA & 	4 & 	8327 & 	AProVE & 	[Z3]; AProVE; CVC3; CVC4; \\
-QF\_NRA & 	4 & 	10121 & CVC3 & 	[Z3]; CVC3; CVC4; raSAT; \\
-QF\_RDL & 	4 & 	132 & 	Yices2 & 	Yices2; [Z3]; veriT; CVC4; \\
-QF\_UF & 	7 & 	4124 & 	Yices2 & 	Yices2; veriT; CVC4; OpenSMT2; [Z3]; [MathSAT]; SMTInterpol; \\
-QF\_UFBV & 	4 & 	31 & 	Yices2 & 	Yices2; [Z3]; [MathSAT]; CVC4; \\
-QF\_UFIDL & 	4 & 	311 & 	Yices2 & 	[Z3]; Yices2; CVC4; veriT; \\
-QF\_UFLIA & 	6 & 	484 & 	Yices2 & 	[Z3]; Yices2; CVC4; SMTInterpol; [MathSAT]; veriT; \\
-QF\_UFLRA & 	6 & 	1176 & 	Yices2 & 	[Z3]; Yices2; [MathSAT]; CVC4; SMTInterpol; veriT; \\
-QF\_UFNIA & 	3 & 	7 & 	CVC4 & 	CVC4; [Z3]; CVC3; \\
-QF\_UFNRA & 	3 & 	32 & 	CVC3 & 	[Z3]; CVC3; CVC4; \\
-UF & 		4 & 	2830 & 	CVC4 & 	CVC4; [Z3]; CVC3; veriT; \\
-UFIDL & 	3 & 	49 & 	CVC4 & 	[Z3]; CVC4; CVC3; \\
-UFLIA & 	4 & 	5766 & 	CVC4 & 	CVC4; [Z3]; veriT; CVC3; \\
-UFLRA & 	4 & 	25 & 	veriT & 	[Z3]; veriT; CVC3; CVC4; \\
-UFNIA & 	3 & 	1587 & 	CVC4 & 	[Z3]; CVC4; CVC3; \\
+ALIA & 		4 & 	29  & 	[Z3]; \win{CVC4}; veriT; CVC3. \\
+AUFLIA & 	4 & 	4   & 	\win{CVC4}; [Z3]; CVC3; veriT. \\
+AUFLIRA & 	4 & 	10791 & 	[Z3]; \win{CVC4}; CVC3; veriT. \\
+AUFNIRA & 	4 & 	564 & 	[CVC4-with-bugfix]; [Z3]; \win{CVC3}; CVC4. \\
+LIA & 		4 & 	46 & 	[Z3]; \win{CVC4}; CVC3; veriT. \\
+LRA & 		4 & 	171 & 	\win{CVC4}; [Z3]; CVC3; veriT. \\
+NIA & 		3 & 	9 &  	[Z3]; \win{CVC4}; CVC3. \\
+NRA & 		3 & 	3747 & 	[Z3]; \win{CVC4}; CVC3. \\
+QF\_ABV & 	9 & 	6457 & \win{Boolector-j}; Boolector-d; [MathSAT]; \\
+& & & SONOLAR; CVC4; [Z3]; Yices2; \\
+& & & Kleaver-STP; Kleaver-portfolio. \\
+QF\_ALIA & 	5 & 	97 & \win{Yices2}; SMTInterpol; [Z3]; [MathSAT]; CVC4. \\
+QF\_AUFBV & 	4 & 	37 & \win{CVC4}; Yices2; [Z3]; [MathSAT]. \\
+QF\_AUFLIA & 	6 & 	610 & \win{Yices2}; [MathSAT]; [Z3] \\
+& & & SMTInterpol; CVC4; veriT. \\
+QF\_AX & 	5 & 	335 & \win{Yices2}; [MathSAT]; [Z3]; CVC4; \\
+& & & SMTInterpol. \\
+QF\_BV & 	11 & 	2488 & \win{Boolector}; STP-CryptoMiniSat4; \\
+& & & [CVC4-with-bugfix]; [MathSAT]; [Z3]; \\
+& & & CVC4; 4Simp; SONOLAR; Yices2; \\
+& & & abziz\_min\_features; abziz\_all\_features. \\
+QF\_IDL & 	4 & 	1315 & 	[Z3]; \win{Yices2}; CVC4; veriT. \\
+QF\_LIA & 	7 & 	4381 & 	[CVC4-with-bugfix]; [MathSAT]; \\
+& & & \win{SMTInterpol}; Yices2; [Z3]; veriT; CVC4. \\
+QF\_LRA & 	6 & 	1343  & \win{CVC4}; Yices2; [MathSAT]; SMTInterpol; \\
+& & & veriT; [Z3]. \\
+QF\_NIA & 	4 & 	8327 & 	[Z3]; \win{AProVE}; CVC3; CVC4. \\
+QF\_NRA & 	4 & 	10121 & [Z3]; \win{CVC3}; CVC4; raSAT. \\
+QF\_RDL & 	4 & 	132 & 	\win{Yices2}; [Z3]; veriT; CVC4. \\
+QF\_UF & 	7 & 	4124 & 	\win{Yices2}; veriT; CVC4; OpenSMT2; [Z3]; \\
+& & & [MathSAT]; SMTInterpol. \\
+QF\_UFBV & 	4 & 	31 & 	\win{Yices2}; [Z3]; [MathSAT]; CVC4. \\
+QF\_UFIDL & 	4 & 	311 & 	[Z3]; \win{Yices2}; CVC4; veriT. \\
+QF\_UFLIA & 	6 & 	484 & 	[Z3]; \win{Yices2}; CVC4; SMTInterpol; \\
+& & & [MathSAT]; veriT. \\
+QF\_UFLRA & 	6 & 	1176 & 	[Z3]; \win{Yices2}; [MathSAT]; CVC4; \\
+& & & SMTInterpol; veriT. \\
+QF\_UFNIA & 	3 & 	7 & 	\win{CVC4}; [Z3]; CVC3. \\
+QF\_UFNRA & 	3 & 	32 & 	[Z3]; \win{CVC3}; CVC4. \\
+UF & 		4 & 	2830 & 	\win{CVC4}; [Z3]; CVC3; veriT. \\
+UFIDL & 	3 & 	49 & 	[Z3]; \win{CVC4}; CVC3. \\
+UFLIA & 	4 & 	5766 & 	\win{CVC4}; [Z3]; veriT; CVC3. \\
+UFLRA & 	4 & 	25 & 	[Z3]; \win{veriT}; CVC3; CVC4. \\
+UFNIA & 	3 & 	1587 & 	[Z3]; \win{CVC4}; CVC3. \\
 \hline
 \end{tabular}
 \vspace{.2in}
@@ -543,8 +565,8 @@ SMTInterpol & 8 &	0.000 	& 	22.831 & 22.831 \\
 CVC3 & 10	& 	0.000 	& 	9.618 & 9.618 \\
 SONOLAR 	& 2	&  	0.000 	& 	5.978 & 	5.978\\
 AProVE 		& 1 & 	0.000 	& 	3.776	& 	3.776\\
-Boolector (justification) & 1	&  	0.000 	& 	3.758	& 	3.758\\
-Boolector (dual propagation) & 1		&  	0.000 	& 	3.755 & 	3.755\\
+Boolector-j & 1	&  	0.000 	& 	3.758	& 	3.758\\
+Boolector-d & 1		&  	0.000 	& 	3.755 & 	3.755\\
 OpenSMT2 	& 1	&  	0.000 &	3.582 &	3.582\\
 Boolector & 1		&  	0.000 &	3.058  &	3.058 \\
 STP-CryptoMiniSat4 	& 1	&  	0.000 &	2.859 &	2.859\\
