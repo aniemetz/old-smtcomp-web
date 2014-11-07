@@ -175,16 +175,7 @@ The competition rules are largely the same from year to year, but each year ther
 One notable difference in 2014 was lengthening the time-out period for each benchmark. In 2013, this was set at 25 minutes; in 2014, we used 40 minutes. The effect of this is discussed in section \ref{sec:zzz}.
 \davidc{Analyze and report the effect of timeout}
 
-The competition's traditional `main' track tests a solver's ability to determine the satisfiability or unsatisfiability of a single problem (perhaps with multiple assertions) within a given logic. 
-
 \paragraph{Invite and validate solver submissions.} The 2014 competition saw the first use of the Star-Exec computational cluster (described below \davidc{Where}) for executing the competition. Each solver had to be wrapped in appropriate scripts to be able to run in the StarExec environment. Though this was largely the responsibility of the solver submitter, teams submitting solvers for the first time required guidance and assistance from the organizers and the StarExec development team. This was a significant hurdle; not all solver teams were able to complete it in time. The most significant problem was the need to create a fully staticly linked version of the solver that ran on the particular version of Linux used by Star-Exec. The organizers stipulated a first solver submission deadline and a final solver submission deadline, separated by two weeks, to enable (and encourage) trials and debugging of solver submissions.
-
-\davidc{Move this paragraph}
-The `application' or incremental track, introduced in 2011, tests a qualitatively different capability. Software verification tools often use SMT solvers as a back-end proof engine. These tools repeatedly invoke the solver with different, related satisfiability problems; the problems may have a substantially similar set of assertions, produced by the tool's adjusting, correcting, adding, or retracting assertions interactively; in batch mode different properties may be checked using substantially the same set of assertions.
-The effect is that the solver must respond to a sequence of requests to assert or retract logical statements, check satisfiability, produce counterexamples, and so on. The application track tests a solver's performance in responding to such a sequence of commands, as produced by actual application problems. To implement the application track benchmarks, the 
-competition uses a simulation engine that communicates with the solver just like an application (or a user at a keyboard) would, presenting each command and waiting for a response before presenting the next command; this mechanism (appropriately) prevents a solver from optimizing its effort based on knowing the entire sequence of commands all at once. A report
-on the first (2011) year's application track and the overall design was presented by Griggio and Bruttomesso at the 
-2012 COMPARE Workshop \cite{ag+rb+12}.
 
 Solver submissions comprise the solver itself, a short system description describing what is new or novel about the solver, and an integer seed. All the submitted seeds and an additional seed derived from a value unknowable until after the solver submission deadline are summed and used as the starting seed for any random selection processes in the competition.
 
@@ -453,9 +444,6 @@ Benchmarks are also labeled by category: either as simple checks, as randomly ge
 In addition, some kinds of problems may be over-represented in the benchmarks. This may be the case particularly because benchmarks may be submitted by solver developers; a team might add a large number of benchmarks that would then over-represent problems that a particular solver is known to handle well. The rules allow the organizers to limit the selections from sub-population. 
 
 In the end, there was sufficient time to use all eligible benchmarks and no subselection was performed. The 2014 organizers did not have the data to make a principled decision on over-representation of particular problem types and so did not subselect on this basis either. The absence of subselection may have affected the competition results and future organizing teams should consider whether to subselect even if there are sufficient computational resources to execute all benchmarks. The data from SMT-COMP 2014 could be used to inform this decision.
-
-\davidc{The rest of the material in this section includes material from 2012 and needs editing}
-
 
 \paragraph{The SMTLIB language.} A competition based on benchmark problems needs a standard language in which to express those problems.
 For SMTCOMP, that language is the SMT-LIB language (cf. \url{www.smtlib.org}, \cite{BarST-SMT-10} \cite{Cok-SMTLIBTutorial-2011}). 
