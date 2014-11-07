@@ -135,12 +135,13 @@ in the capability of SMT solvers. SMTCOMP 2014 benefited from the evaluation tha
 \item In 2012 we narrowed the competition to a smaller number of more significant logics. In response to feedback, in 2014 we reverted to the practice of evaluating solvers in all available divisions.
 \item We ran the competition with all available benchmarks. To be eligible, a benchmark must be well-formed and have a known answer. We were able to use all benchmarks because we had nearly exclusive use of the Star-Exec cluster during the time we were executing SMT-COMP. This point is discussed further in section \ref{TBD}.
 \item In 2012 some experimental tracks were held: parallel performance, unsat cores and proof generation. The participation in those was light. Since in 2014 we also had to migrate to using Star-Exec, we held only a main track and an application (incremental) track in the 2014 competition. The organizers still maintain the value of measuring the performance of solvers on new features such as model generation, unsat core determination and proof generation and recommend that they be reinstated in some future competition.
+\item A significant change in 2014 was to increase the time-out limit for a solver solving a given benchmark from 25 minute (in 2012) to 40 minutes.
 
 \davidc{More emphases?}
 
 \end{itemize}
 
-
+An important difference between the 2014 competition and previous competitions was that this year's competition was executed on the Star-Exec cluster, described below in section \ref{sec:starexec}. All the supporting tools and related procedures needed to be ported to this new framework. With watchful eyes by the organizers and the Star-Exec team, and with some debugging, the Star-Exec framework worked well and enabled a larger scale of competition than in previous years.
 
 \section{Competition timeline}
 \label{sec:timeline}
@@ -166,31 +167,51 @@ The preparation and execution of SMT-COMP 2014 took place over about 7 months, r
 \label{sec:procedure}
 
 
-The full description of the 2014 SMT competition's rules is found in the rules document (\url{www.smtcomp.org/2014/rules14.pdf}). The document describes the procedures for determining benchmark difficulties, selecting benchmarks for competition, and judging the results.
+The full description of the 2014 SMT competition's rules is found in the rules document (\url{http://smtcomp.sourceforge.net/2014/rules14.pdf}). The document describes the procedures for determining benchmark difficulties, selecting benchmarks for competition, and judging the results. The preparation and execution of the competition required the following matters to be decided and executed.
 
-\davidc{The rest of the material in this section includes material from 2012 and needs editing}
+\paragraph{Settle any adjustments on the rules and competition timeline, with time for comment.} 
+The competition rules are largely the same from year to year, but each year there are adjustments and improvements. Matters to be decided are the timeline for the competition, communication vehicles (including instantiating the website for the new competition), the various tracks and divisions, any adjustments to the benchmark selection procedure, the scoring rules, policies on similar submissions and portfolio solvers. A novel aspect in 2014 was the need for polices regarding the FLoC Olympic Games, described in section \ref{sec:floc}. During the competition, the organizers had to rule on whether solvers could be withdrawn from divisions after the competition began and \davidc{There was another issue - review the email}.
+
+One notable difference in 2014 was lengthening the time-out period for each benchmark. In 2013, this was set at 25 minutes; in 2014, we used 40 minutes. The effect of this is discussed in section \ref{sec:zzz}.
+\davidc{Analyze and report the effect of timeout}
 
 The competition's traditional `main' track tests a solver's ability to determine the satisfiability or unsatisfiability of a single problem (perhaps with multiple assertions) within a given logic. 
 
+\paragraph{Invite and validate solver submissions.} The 2014 competition saw the first use of the Star-Exec computational cluster (described below \davidc{Where}) for executing the competition. Each solver had to be wrapped in appropriate scripts to be able to run in the StarExec environment. Though this was largely the responsibility of the solver submitter, teams submitting solvers for the first time required guidance and assistance from the organizers and the StarExec development team. This was a significant hurdle; not all solver teams were able to complete it in time. The most significant problem was the need to create a fully staticly linked version of the solver that ran on the particular version of Linux used by Star-Exec. The organizers stipulated a first solver submission deadline and a final solver submission deadline, separated by two weeks, to enable (and encourage) trials and debugging of solver submissions.
+
+\davidc{Move this paragraph}
 The `application' or incremental track, introduced in 2011, tests a qualitatively different capability. Software verification tools often use SMT solvers as a back-end proof engine. These tools repeatedly invoke the solver with different, related satisfiability problems; the problems may have a substantially similar set of assertions, produced by the tool's adjusting, correcting, adding, or retracting assertions interactively; in batch mode different properties may be checked using substantially the same set of assertions.
 The effect is that the solver must respond to a sequence of requests to assert or retract logical statements, check satisfiability, produce counterexamples, and so on. The application track tests a solver's performance in responding to such a sequence of commands, as produced by actual application problems. To implement the application track benchmarks, the 
 competition uses a simulation engine that communicates with the solver just like an application (or a user at a keyboard) would, presenting each command and waiting for a response before presenting the next command; this mechanism (appropriately) prevents a solver from optimizing its effort based on knowing the entire sequence of commands all at once. A report
 on the first (2011) year's application track and the overall design was presented by Griggio and Bruttomesso at the 
 2012 COMPARE Workshop \cite{ag+rb+12}.
 
-The benchmarks are each assigned a {\em difficulty}. The difficulty is based on how long it takes a group of solvers to produce a correct answer to the benchmark. For competition, benchmarks are selected, at random, from each difficulty category. 
+Solver submissions comprise the solver itself, a short system description describing what is new or novel about the solver, and an integer seed. All the submitted seeds and an additional seed derived from a value unknowable until after the solver submission deadline are summed and used as the starting seed for any random selection processes in the competition.
 
-The winning solver in each category is the one that produces the most correct answers in the least time. An additional change this year is that incorrect answers are a disqualifier: the organizers considered that solver technology has progressed sufficiently in capability and importance that incorrect answers should not be tolerated (a solver can always intentionally produce an answer of `unknown'). Each solver is given a fixed timeout period (this year the timeout was 20 minutes) in which to answer a benchmark. The winner is the solver that produces the most correct (non-{\em unknown}) answers and no incorrect answers; in the case of ties, the winner is the solver that took the least time to produce its correct answers.\footnote{There is an anomaly in this scoring system. Solvers A and B may produce the same correct answers, with A taking slightly less time to do so than B, and thus being the winner. Answers of {\em unknown} do not count towards correct answers, but the time taken also does not penalize the total time used. It may be the case the A takes a long time to determine an answer of {\em unknown} on some benchmarks, where as B can do so quickly. Thus B may be overall preferable in an application, even though A is the competition winner.}
-In the unsat-core track, it is the size reduction of the core that is measured, rather than the number of correct answers.
+\paragraph{Invite and validate benchmark submissions.} New benchmarks are always welcome but the impending competition is an opportunity to encourage new submissions. Benchmarks are the responsibility of SMT-LIB coordinators, not the competition organizers. Nevertheless, the organizers worked with the coordinators to ensure that new benchmarks were included in SMT-LIB in time for the competition. Initial submissions are often incomplete; to be useful they must be syntactically correct, which includes a designation of the logic in which they fit, contain relevant metadata about the source and category of the benchmark, and have a known, validated answer. (Benchmarks with unknown answers may also be interesting and worth keeping, but cannot be used in the competition.)
 
-\paragraph{The competition infrastructure.} The competition is executed on a cluster of machines at the University of Iowa, under the control of the SMT-EXEC software suite (cf. \url{www.smtexec.org}). This software suite has been used in past years as well. A new hardware and software infrastructure, Star-Exec (cf. \url{www.starexec.org}), is under development and was the subject of the Star-Exec workshop at IJCAR'12.
+\paragraph{Create an appropriate selection of benchmarks.} Not all benchmarks in the SMT-LIB database are used in the competition. The details of this selection, as executed for the 2014 competition, are described in section \ref{sec:benchmarks}. Part of the work in preparing the competition to run on the Star-Exec cluster was to port the benchmark selector to Star-Exec.
 
-\paragraph{The SMTLIB language.} A competition based on benchmark problems needs a standard language in which to express those problems.
-For SMTCOMP, that language is the SMT-LIB language (cf. \url{www.smtlib.org}, \cite{BarST-SMT-10} \cite{Cok-SMTLIBTutorial-2011}). 
-In 2010, a significantly reworked version of the language was agreed upon.
-This version 2 increased the flexibility and expressiveness of the language while also simplifying the syntax. 
-It also includes a command language that improves the language's usefulness for interactive applications.
-In particular, the standard specifies a typed (sorted), first-order logical language for terms and formulas, a language for specifying background logical theories and logics, and the command language. Some other tools that process SMT-LIBv2 are listed in the SMT-LIB web pages (cf. \url{http://www.smtlib.org/utilities.html}).
+\paragraph{Prepare the benchmark scrambler.} All the benchmarks are public and known to the solver developers. Indeed, part of the point of the benchmark database is to serve as a testbed for solver development, outside of competitions. However, that raises the possibility that a solver will recognize a benchmark problem by its syntactic structure and look up an answer from a learned database, without doing any logic solving. This is explicitly considered cheating. As a slight impediment against such behavior, the benchmarks are individually scrambled before being presented to a solver, using the random seed described above. For 2014, the benchmark scrambler had to be ported to Star-Exec.
+
+The scrambling does not change the semantic meaning of the benchmark. It does rename identifiers and \davidc{TJARK: Describe what the scrambling does}.
+
+The scrambling had another, unappreciated effect. A scrambled benchmark uses different identifiers than the original. Although most of the solvers are deterministic for a given input, using different identifier names can change the order of search. For example, iterating over the contents of a hashed set may occur in a different order if identifiers have different names. Consequently, the success of the solver on a given benchmark, the time it takes to find an answer, and even whether a latent bug in the solver is triggered may all depend on just how the benchmark is scrambled. Thus the scrambling adds a measure of uncertainty to the competition and prevents full testing on the benchmark set before the competition. Indeed, one solver encountered a bug during the competition that was directly related to the specific, randomly-chosen scrambling used during the competition.
+
+\paragraph{Prepare the real-time results display.} The participants are interested in the progress of the competition as it proceeds. The organizers also need to know if the competition is proceeding correctly and at a reasonable pace. As the competition takes several days, an automatic real-time display of results is helpful and encourages interest.  Star-Exec does not have such a facility, since different competitions have different needs. Instead the organizers used Star-Exec's command-line API to regularly (every 10 minutes or so) download the status of all of the executing jobs, extract the results for each solver-benchmark pair, create HTML web pages displaying the current status, and uploading them to the competition website. The current (now final) status of each division and a summary page can be seen at 
+\url{http://smtcomp.sourceforge.net/2014/results-toc.shtml}.
+
+\paragraph{Execute the competition.} Executing the competition required preparing a Star-Exec job for each 
+division. A job executes the cross-product of a set of solvers and a set of benchmarks. Because each division has different sets of solvers and benchmarks, each division was a separate job (or jobs). This also allowed a restart of portions of the competition if a particular division was incorrectly configured or if a Star-Exec job stalled for some reason (both of which happened).
+
+In addition, with the new cluster, the new benchmarks, and a longer timeout period the organizers were unsure how long the competition would take. Our conservative estimate was that a month of computing was needed; in fact it only took about a week, because we had more Star-Exec nodes available than anticipated and jobs took on average less time than estimated. However, to hedge against the competition taking longer than anticipated, we divided larger divisions into \textit{heats}, with each heat comprising about 1000 benchmarks, and with the option (stated in the rules) to terminate the competition befor eall hearts were executed to ensure a timely end prior to FLoC. This required handling a much larger number of Star-Exec jobs. In the end it was entirely unnecessary for timely completion, but, as mentioned, dividing the jobs into manageable pieces was useful for restarting portions of the computation when Star-Exec stalled.
+\footnote{Stalling - that is, no longer making forward progress on a job - was less a concern after some bug fixes during the competition, but was till observed during some post-competition computations.}
+
+In past competitions, the competition was timed to have its last portion overlap with the conference with which it was affiliated. In 2014, because the computation took less time than anticipated, the competition finished well before the conference.
+
+\paragraph{Report the results.} The results of the competition were reported at the SMT Workshop and in this paper.
+
+
 
 \section{Participants}
 \label{sec:participants}
@@ -208,7 +229,7 @@ The competition registration includes information about each competing solver. I
 \item OpenSMT2~\cite{TBD} - submitted by Antti Hyv\"arinen \davidc{Affiliation?}
 \item raSAT~\cite{TBD} - submitted by Tung Vu Xuan \davidc{Affiliation?}
 \item SMTInterpol~\cite{DBLP:conf/spin/ChristHN12,DBLP:conf/spin/2012} - submitted by Jochen Hoenicke, J\"urgen Christ (U. Freiburg)
-\item SONOLAR~\cite{TBD} - submitted by Florian Lapschies (U. Bremen)
+\item SONOLAR~\cite{Peleska:2011:ATC:1986308.1986333} - submitted by Florian Lapschies (U. Bremen)
 \item STP-CryptoMiniSat4~\cite{DBLP:conf/cav/GaneshD07,DBLP:conf/cav/2007} - submitted by M\'at\'e So\'os (Security Research Lab.), based on previous work by Trevor Hansen (U. Melbourne) and Vijay Ganesh (MIT)
 \item veriT~\cite{veriT} - submitted by David D\'{e}harbe (UFRN), Pascal Fontaine (U. Lorraine, INRIA)
 \item Yices2~\cite{Dutertre:cav2014} - submitted by Bruno Dutertre (SRI)
@@ -423,6 +444,26 @@ Yices2 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	\mark & 	\mark & 	\mark &
 \label{Table:logics}
 \end{sidewaystable}
 
+\paragraph{Selection of benchmarks.} In addition to whether benchmarks have a known result or is trivial (solved in under 5 seconds) for all solvers in the 2013 evaluation, there are two other factors that affect the selection of benchmarks for a competition: the benchmark's difficulty and the desire for a distribution of problems.
+
+Each benchmark is assigned a difficulty rating; in 2014, we used the time taken to solve the benchmark by the best performing solver in the 2013 SMT Evaluation. These values were publicly available prior to the competition. The difficulty ratings are used to divide the benchmarks into 5 quintiles. The rules describe a procedure for selecting N out of the eligible benchmarks for a division, with the intent of selecting roughly equal numbers, if they are available, from each of the quintiles.
+
+Benchmarks are also labeled by category: either as simple checks, as randomly generated problems from some template (e.g., N-queens problems for various values of N), problems crafted to test a certain capability, and problems obtained from applications. The sub-selection rules favor application-oriented benchmarks.
+
+In addition, some kinds of problems may be over-represented in the benchmarks. This may be the case particularly because benchmarks may be submitted by solver developers; a team might add a large number of benchmarks that would then over-represent problems that a particular solver is known to handle well. The rules allow the organizers to limit the selections from sub-population. 
+
+In the end, there was sufficient time to use all eligible benchmarks and no subselection was performed. The 2014 organizers did not have the data to make a principled decision on over-representation of particular problem types and so did not subselect on this basis either. The absence of subselection may have affected the competition results and future organizing teams should consider whether to subselect even if there are sufficient computational resources to execute all benchmarks. The data from SMT-COMP 2014 could be used to inform this decision.
+
+\davidc{The rest of the material in this section includes material from 2012 and needs editing}
+
+
+\paragraph{The SMTLIB language.} A competition based on benchmark problems needs a standard language in which to express those problems.
+For SMTCOMP, that language is the SMT-LIB language (cf. \url{www.smtlib.org}, \cite{BarST-SMT-10} \cite{Cok-SMTLIBTutorial-2011}). 
+In 2010, a significantly reworked version of the language was agreed upon.
+This version 2 increased the flexibility and expressiveness of the language while also simplifying the syntax. 
+It also includes a command language that improves the language's usefulness for interactive applications.
+In particular, the standard specifies a typed (sorted), first-order logical language for terms and formulas, a language for specifying background logical theories and logics, and the command language. Some other tools that process SMT-LIBv2 are listed in the SMT-LIB web pages (cf. \url{http://www.smtlib.org/utilities.html}).
+
 \section{Main track results}
 \label{sec:main-results}
 
@@ -508,6 +549,16 @@ Four solvers participated in this competition track: CVC3, CVC4, SMTInterpol, an
 \davidc{Include table of application track results - need to reduce the data!!!}
 
 \davidc{Include discussion of application track results - what points to make?}
+
+\davidc{The rest of the material in this section includes material from 2012 and needs editing}
+
+
+
+The `application' or incremental track, introduced last year, tests a qualitatively different capability. Software verification tools often use SMT solvers as a back-end proof engine. These tools repeatedly invoke the solver with different, related satisfiability problems; the problems may have a substantially similar set of assertions, produced by the tool's adjusting, correcting, adding, or retracting assertions interactively; in batch mode different properties may be checked using substantially the same set of assertions.
+The effect is that the solver must respond to a sequence of requests to assert or retract logical statements, check satisfiability, produce counterexamples, and so on. The application track tests a solver's performance in responding to such a sequence of commands, as produced by actual application problems. To implement the application track benchmarks, the 
+competition uses a simulation engine that communicates with the solver just like an application (or a user at a keyboard) would, presenting each command and waiting for a response before presenting the next command; this mechanism (appropriately) prevents a solver from optimizing its effort based on knowing the entire sequence of commands all at once. A report
+on the first (2011) year's application track and the overall design was presented by Griggio and Bruttomesso at the 
+2012 COMPARE Workshop \cite{ag+rb+12}.
 
 
 \section{FLoC Olympic games}
