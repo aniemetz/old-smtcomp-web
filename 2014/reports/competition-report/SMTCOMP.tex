@@ -5,7 +5,7 @@
 
 %% Language %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\usepackage[USenglish]{babel} %francais, polish, spanish, ...
-%\usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc}
 %\usepackage{textcomp}
 %\usepackage[ansinew]{inputenc}
 %\usepackage{makeidx}	  %% needed to create an index
@@ -87,11 +87,18 @@ The 2014 edition of the SMT Competition was executed for the first time on the S
 \section{Introduction}
 \label{sec:intro}
 
-\davidd{{\it (describe why it is interesting to the SAT research community:)}
-
-  Introduce the SMT problem, and its relationship with the SAT
-  problem. Define SMT solver and state that it often embeds and
-  extends a SAT solver.}
+The SAT-solving decision problem can be generalized by replacing
+boolean variables with atomic predicates built with symbols from a
+background theory, or a combination of background theories. The
+resulting decision problem is called \emph{Satisfiability Modulo
+  Theory\/} (SMT). The background theories considered stem from
+industry formal verification applications and include arrays,
+bit-vectors, equality with uninterpreted functions, linear and
+non-linear arithmetics over integers and real numbers. Also, a theory
+may explicitly allow or disallow quantification. Tools addressing the
+SMT problem are called \emph{SMT solvers\/}. An SMT solver is often
+built by combining a SAT solver with (semi-)decision procedures for
+specific theories.
 
 The 2014 SMT Competition continued the series of annual competitions in SMT solver capability and performance that began in 2005. This is the 9th competition in the series, skipping only 2013; in that year an evaluation~\cite{it:2014-017} was performed, rather than a competition.
 
@@ -117,8 +124,31 @@ propositional logic, in terms of Boolean constants such as $P$, $Q$, and $R$.
 
 As stated, the goal is the same as the SAT competition. The SMT benchmarks extend SAT by incorporating defined theories, such as the theory of arrays, or of undefined functions, or of arithmetic, or of bit-vectors. In addition, there may be constraints on the set of expressions allowed, such as only linear arithmetic, or only integer difference arithmetic. The theories also define \textit{sorts}, which make the theories a kind of typed first-order logic. Examples of sorts used in current theories are Boolean, Int, Real, bit-vectors of various lengths, and arrays with arbitrary sorts as index and value. Each combination of underlying theories and language constraints is a \textit{logic}.
 
-The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB (v2) standard \cite{BarST-RR-10}. This standard has been used since 2010, and a previous version was used prior to that. One of the goals of the SMT competition is to encourage use and tool implementations of the SMT-LIB standard.
-\tjark{Give an example of a benchmark in SMT-LIB} \tjark{Provide information about the sizes of benchmarks}
+The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB (v2) standard \cite{BarST-RR-10}. This standard has been used since 2010, and a previous version was used prior to that. One of the goals of the SMT competition is to encourage use and tool implementations of the SMT-LIB standard. The following example illustrates part of this concrete syntax:
+\begin{verbatim}
+(set-logic UFLIA)
+(declare-fun max (Int Int) Int)
+(assert (forall ((x Int) (y Int))
+   (let ((m (max x y)))
+      (and (>= m x) (>= m y) (or (= m x) (= m y))))))
+(assert (not (forall ((x Int) (y Int))
+   (let ((m (max x y)))
+      (= (max (max x y) x) (max x y))))))
+(check-sat)
+\end{verbatim}
+The command \verb'set-logic' sets the background theory; in that
+example, \verb'UFLIA' is the combination of equality with uninterpreted
+functions (\verb'UF') and linear integer arithmetics
+(\verb'LIA'). Next, the command \verb'declare-fun' introduces a
+function symbol, named \verb'max', which has two integer arguments
+(sort \verb'Int') and returns an integer value. Next, two formulas are
+asserted. The first essentially restricts the interpretations of the
+function named \verb'max' to the standard interpretation. The second
+expresses (the negation of) a property of this operator. The command
+\verb'check-sat' instructs the SMT-solver to check if the formula is
+satisfiable. Here the expected result is \verb'unsat'.
+
+\tjark{Provide information about the sizes of benchmarks}
 \davidd{Shall we say something about command language?}
 
 SMT (Satisfiability Modulo Theories) solvers are automated tools that seek to find a satisfying assignment for a given SMT-LIB problem, or to assure that the problem is \textit{unsatisfiable}.
@@ -511,6 +541,7 @@ UFNIA & 	3 & 	1587 & 	[Z3]; \win{CVC4}; CVC3. \\
 \label{Table:maintrack}
 \end{table}
 
+\davidd{Contents of columns 2 and 3 has been presented in preceding table: should we remove them to keep the table smaller?}
 \davidc{Include discussion of main track results - what points to make?}
 
 \section{Application track results}
@@ -707,7 +738,8 @@ intersection of the two domains, express them in the two different problem forma
 \section{Recommendations for future competitions}
 
 The SMT steering committee has decided that SMT-COMP 2015 will be held in association with the SMT Workshop, which itself will be affiliated with \davidc{WHO} in \davidc{WHERE} from \davidc{WHEN}.
-The Workshop is being organized by \davidc{WHO}; the organizers of the competition are not yet appointed.
+The Workshop is being organized by \davidc{WHO}
+\davidd{Vijay Ganesh (\url{mailto:vganesh@uwaterloo.ca}) has been appointed co-chair of SMT 2015}; the organizers of the competition are not yet appointed.
 
 Based on the experience of 2014, the 2014 organizers have the following recommendations or topics for consideration for future competitions.
 \begin{itemize}
