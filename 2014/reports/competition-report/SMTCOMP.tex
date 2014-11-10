@@ -166,6 +166,7 @@ in the capability of SMT solvers. SMTCOMP 2014 benefited from the evaluation tha
 \item We ran the competition with all available benchmarks. To be eligible, a benchmark must be well-formed and have a known answer. We were able to use all benchmarks because we had nearly exclusive use of the Star-Exec cluster during the time we were executing SMT-COMP. This point is discussed further in section~\ref{sec:procedure}.
 \item In 2012 some experimental tracks were held: parallel performance, unsat cores and proof generation. The participation in those was light. Since in 2014 we also had to migrate to using Star-Exec, we held only a main track and an application (incremental) track in the 2014 competition. The organizers still maintain the value of measuring the performance of solvers on new features such as model generation, unsat core determination and proof generation and recommend that they be reinstated in some future edition of the competition.
 \item A significant change in 2014 was to increase the time-out limit for a solver processing a given benchmark from 25 minutes (in 2012) to 40 minutes.
+\item A significant result of the 20113 Evaluation was that the result of a competition was highly sensitive to the selection of benchmarks: different random selections of benchmarks resulted in different winning orders in a large fraction of samples. Hence, an aim for 2014 was to use a large a benchmark set as possible in the competition to minimize this effect.
 
 \davidc{More emphases?}
 
@@ -238,10 +239,10 @@ In past competitions, the competition was timed to have its last portion overlap
 The competition registration includes information about each competing solver. In addition, some solver groups provided summaries of their solvers and their recent technical advances.
  Note that although one person is listed as the `submitter', there is generally a team of contributors behind each tool. Some teams submitted more than one tool. The 2014 participants were the following:
 \begin{itemize}
-\item 4Simp~\cite{TBD}- submitted by Trevor Hansen (U. Melbourne).
+\item 4Simp~\cite{TBD}- submitted by Trevor Hansen (U. Melbourne)
 \item AbzizPortfolio~\cite{TBD} - two versions - submitted by Mohammed Adbul Aziz (U. Cairo); this solver is unusual in that it is a portfolio solver: based on automated learning over benchmark characteristics, it chooses among other solvers to apply to the problem at hand.
-\item AProVe~\cite{AProVE2014} - submitted by Carsten Fuhs (UCL).
-\item Boolector~\cite{boolector} - three versions: Boolector (default), Boolector-j (justification), Boolector-d (dual propagation) - submitted by Armin Biere, Aina Niemetz, Mathias Preiner (Johannes Kepler University)
+\item AProVe~\cite{AProVE2014} - submitted by Carsten Fuhs (UCL)
+\item Boolector~\cite{Boolector2015} - three versions: Boolector (default), Boolector-j (justification), Boolector-d (dual propagation) - submitted by Armin Biere, Aina Niemetz, Mathias Preiner (Johnnes Kepler University)
 \item CVC3 v. 2.4.3~\cite{BT07} - submitted by Morgan Deters (NYU)
 \item CVC4 v. 1.4~\cite{BCD+11} - submitted by the ACSys Group (NYU)
 \item Kleaver~\cite{TBD} - 2 versions - submitted by Hristina Palikareva, Cristian Cadar (Imperial College)
@@ -384,9 +385,9 @@ NRA & 2+[1] & 3747 & 66 & 0 & 3813 \\
 QF\_ABV & 7+[2] & 6457 & 2906 & 5728 & 15091 \\
 QF\_ALIA & 3+[2] & 97 & 0 & 29 & 126 \\
 QF\_AUFBV & 2+[2] & 37 & 0 & 0 & 37 \\
-QF\_AUFLIA & 4+[2] & 610 & 0 & 399 & 1009\\
+QF\_AUFLIA & 4+[3] & 610 & 0 & 399 & 1009\\
 QF\_AX & 3+[2] & 335 & 0 & 216 & 551 \\
-QF\_BV & 8+[2] & 2488 & 17728 & 12284 & 32500 \\
+QF\_BV & 8+[3] & 2488 & 17728 & 12284 & 32500 \\
 QF\_IDL & 3+[1] & 1315 & 520 & 354 & 2189 \\
 QF\_LIA & 4+[3] & 4381 & 1192 & 568 & 6141 \\
 QF\_LRA & 4+[2] & 1343 & 167 & 172 & 1682\\ 
@@ -401,7 +402,7 @@ QF\_UFLRA & 4+[2] & 1176 & 73 & 381 & 1630 \\
 QF\_UFNIA & 2+[1] & 7 & 0 &0 & 7 \\
 QF\_UFNRA & 2+[1] & 32 & 10 & 1 & 43\\
 UF & 3+[1] & 2830 & 2911 & 7 & 5748 \\
-UFBV & 0+[2] & 0 & 191 & 0 & 191 \\
+UFBV & 2+[1] & 0 & 191 & 0 & 191 \\
 UFIDL & 2+[1] & 49 & 12 & 19 & 80 \\
 UFLIA & 3+[1] & 5766 & 4680 & 1692 & 12138 \\
 UFLRA & 3+[1] & 25 & 0 & 0 & 25\\
