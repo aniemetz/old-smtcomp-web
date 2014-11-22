@@ -545,6 +545,34 @@ UFNIA & 	3 & 	1587 & 	[Z3]; \win{CVC4}; CVC3. \\
 \davidd{Contents of columns 2 and 3 has been presented in preceding table: should we remove them to keep the table smaller?}
 \davidc{Include discussion of main track results - what points to make?}
 
+\subsection{Effect of timeout}
+In the main track competition, the organizers set a timeout of 40 minutes, much longer than in previous competitions (e.g., 25 minutes in 2012).  A common question users have is how much benefit is gained by longer timeouts. The data from the competition allows us to analyze this question somewhat.
+
+A first question is how many additional problems are solved if the timeout is lengthened. An approximation
+of an answer is shown in Fig.~\ref{Fig:timeouts}. This figure shows the number of benchmarks solved,  combined over all the solvers in the competition, with a solution time less than given timeout values, for the QF\_BV benchmark set.
+Most of the benchmarks are solved quickly: 39\% in less than a second, more than half in under 3.5 seconds, 
+62\% by 10 seconds, and then a slow increase to 88\% by 2400 seconds. There is continual improvement for long timeouts, but the return on time invested certainly decreases. 
+
+There are two caveats to this observation. First, the results depend heavily on the character of the benchmarks set. Some logics have only easy benchmarks, some have purposefully crafted difficult benchmarks, others are a mix. The benchmarks are not at all a representative sampling of problems that might be encountered in practice.  Second, the results described are obtained by observing the wall-clock solution time when the timeout value is set at 2400 seconds. Solvers, if told what the timeout value is, have the option to adjust their search strategies based on the timeout; the solvers might then exhibit even better behavior for shorter timeout.
+
+Fig.~\ref{Fig:winners} shows a different view of the same data. Here we note the number of problems solved by each solver within a given wall-clock solution time, subject to the same caveats. The point to observe is that the winning solver changes depending on the timeout chosen. For these benchmarks and this set of solvers: Yices2 performs best for timeouts under a second; CVC4 does best in the middle range from 1 to 200 seconds; Boolector does best above 400 seconds. Other logics, but not all, show changes in winning order as well. This phenomenon could be a result of engineering of the individual solvers or it could be a result of characteristics of the benchmark set.
+
+
+
+%\begin{table}
+%\centering
+%\input{QF_BV-timeout}
+%\caption{Solver success for QF\_BV benchmarks vs. timeout limit (in seconds)}
+%\label{Fig:timeouts}
+%\end{table} 
+
+\begin{table}
+\centering
+\input{QF_BV-winners.tex}
+\caption{Solver success per individual solver for 2488 QF\_BV benchmarks}
+\label{Fig:winners}
+\end{table}
+
 \section{Application track results}
 \label{sec:application-results}
 
