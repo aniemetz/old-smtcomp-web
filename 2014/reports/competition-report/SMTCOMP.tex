@@ -148,6 +148,20 @@ expresses (the negation of) a property of this operator. The command
 \verb'check-sat' instructs the SMT-solver to check if the formula is
 satisfiable. Here the expected result is \verb'unsat'.
 
+As of June 2014, the SMT-LIB repository contains over 130,000
+non-incremental benchmarks divided into 34 background theories. The
+size of a benchmark file may vary from a few hundred bytes to several
+dozen megabytes (see figure~\ref{fig:smtlib-bysize} for a distribution
+of the benchmarks by file size).
+
+\begin{figure}
+\begin{center}
+\includegraphics[angle=270,width=.8\textwidth]{smtlib2-file-count-by-size.pdf}
+\end{center}
+\caption{Distribution of non-incremental SMT-LIB2 benchmarks by size.
+\label{fig:smtlib-bysize}}
+\end{figure}
+
 \tjark{Provide information about the sizes of benchmarks}
 \davidd{Shall we say something about command language?}
 
