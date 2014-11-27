@@ -17,7 +17,19 @@
 \usepackage{subcaption}
 \usepackage{xcolor}
 \usepackage{rotating}
-
+\usepackage{listings}
+\lstdefinelanguage{smtlib2}
+  {alsoletter={-, =},
+   morekeywords={let,forall,and,or,not,=},
+   morekeywords={[2]set-logic,declare-fun,assert,check-sat},
+   sensitive=false,
+   morecomment=[l]{;}}
+\lstset{language=smtlib2,
+basicstyle=\small\sffamily,
+numbers=none,
+keywordstyle=\small\bfseries\sffamily,
+keywordstyle={[2]\small\bfseries\sffamily\underbar}
+}
 %%\usepackage{lmodern} %Type1-font for non-english texts and characters
 
 
@@ -67,7 +79,6 @@
 \abstract{The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014~\cite{FLoC2014}, at the Vienna Summer of Logic~\cite{VSL} in July 2014. Eighteen solvers participated from thirteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.} 
 The 2014 edition of the SMT Competition was executed for the first time on the StarExec~\cite{DBLP:conf/cade/StumpST14} logic solving service. Several records were broken: number of participating solvers, number of new entrants, number of logic divisions, number of benchmarks, and amount of computation.
 
-\davidd{Comment on qualitative evolution of solvers?}
 \keywords{SMT solver, SMTCOMP, SMT-LIB, Satisfiability Modulo Theories, competitions} 
 
 %\published{Decembber 2014}{revision date}{publication date}
@@ -122,41 +133,62 @@ propositional logic, in terms of Boolean constants such as $P$, $Q$, and $R$.
 As stated, the goal is the same as the SAT competition. The SMT benchmarks extend SAT by incorporating defined theories, such as the theory of arrays, or of undefined functions, or of arithmetic, or of bit-vectors. In addition, there may be constraints on the set of expressions allowed, such as only linear arithmetic, or only integer difference arithmetic. The theories also define \textit{sorts}, which make the theories a kind of typed first-order logic. Examples of sorts used in current theories are Boolean, Int, Real, bit-vectors of various lengths, and arrays with arbitrary sorts as index and value. Each combination of underlying theories and language constraints is a \textit{logic}.
 
 The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB (v2) standard \cite{BarST-RR-10}. This standard has been used since 2010; a previous version was used prior to that. One of the goals of the SMT competition is to encourage use and tool implementations of the SMT-LIB standard. The following example illustrates part of this concrete syntax:
-\begin{verbatim}
-          (set-logic UFLIA)
-          (declare-fun max (Int Int) Int)
-          (assert (forall ((x Int) (y Int))
-             (let ((m (max x y)))
-                (and (>= m x) (>= m y) (or (= m x) (= m y))))))
-          (assert (not (forall ((x Int) (y Int))
-             (let ((m (max x y)))
-                (= (max (max x y) x) (max x y))))))
-          (check-sat)
-\end{verbatim}
-
-The command \verb'set-logic' sets the background theory: \verb'UFLIA' is the combination of equality with uninterpreted
-functions (\verb'UF') and linear integer arithmetic
-(\verb'LIA'). Next, the command \verb'declare-fun' introduces a
-function symbol, named \verb'max', which has two arguments
-of sort \verb'Int' and returns an \verb'Int' value. Next, two formulas are
-asserted. The first essentially restricts the interpretations of the
-function named \verb'max' to the standard interpretation. The second
-expresses (the negation of) a property of this operator. The command
-\verb'check-sat' instructs the SMT-solver to check if the formula is
-satisfiable. Here the expected result is \verb'unsat', indicating that
-the desired property is valid.
+\begin{quote}
+\lstset{frameround=fttt}
+\begin{lstlisting}[frame=trBL]
+(set-logic UFLIA)
+(declare-fun max (Int Int) Int)
+(assert (forall ((x Int) (y Int))
+   (let ((m (max x y)))
+      (and (>= m x) (>= m y) (or (= m x) (= m y))))))
+(assert (not (forall ((x Int) (y Int))
+   (let ((m (max x y)))
+      (= (max (max x y) x) (max x y))))))
+(check-sat)
+\end{lstlisting}
+\end{quote}
+Keywords are either logic operators or commands. They are typeset in bold;
+commands are also underlined.  The command \lstinline{set-logic}
+sets the background theory: \lstinline{UFLIA} is the combination of
+equality with uninterpreted functions (\lstinline{UF}) and linear
+integer arithmetic (\lstinline{LIA}). Next, the command
+\lstinline{declare-fun} introduces a function symbol, named
+\lstinline{max}, which has two arguments of sort \lstinline{Int} and
+returns an \lstinline{Int} value. Next, two formulas are asserted. The
+first essentially restricts the interpretations of the function named
+\lstinline{max} to the standard interpretation. The second expresses
+(the negation of) a property of this operator. The command
+\lstinline{check-sat} instructs the SMT-solver to check if the formula
+is satisfiable. Here the expected result is \lstinline{unsat},
+indicating that the desired property is valid. The language includes
+commands that allow a fine-grained interaction with the solver,
+whereby client tools may incrementally push and pop symbol
+declarations and assertions while running several satisfiability
+checks, and inspecting models or get unsatisfiability
+proofs. Benchmarks problems that have more than one
+\lstinline{check-sat} command are called \emph{application
+  benchmarks}. Not all SMT solvers support all these interaction
+facilities and the main track of the competition does not use such
+application benchmarks.
 
 As of June 2014, the SMT-LIB repository contained over 130,000
-non-incremental benchmarks divided into 34 background theories. The
-size of a benchmark file may vary from a few hundred bytes to several
-dozen megabytes (see Fig.~\ref{fig:smtlib-bysize} for a distribution
-of the benchmarks by file size).
+non-incremental benchmarks divided into 34 background theories, and
+close to 10,000 application benchmarks distributed into 8 background
+theories. The size of a benchmark file may vary from a few hundred
+bytes to several dozen megabytes (see Fig.~\ref{fig:smtlib-bysize} for
+a distribution of the benchmarks by file size).
 
 \begin{figure}
 \begin{center}
-\includegraphics[angle=270,width=.8\textwidth]{smtlib2-file-count-by-size.pdf}
+\begin{tabular}{cc}
+\includegraphics[angle=270,width=.5\textwidth]{smtlib2-file-count-by-size.pdf}
+&
+\includegraphics[angle=270,width=.5\textwidth]{smtlib2-app-file-count-by-size.pdf}
+\\
+Non-incremental benchmarks & Application benchmarks
+\end{tabular}
 \end{center}
-\caption{Distribution of non-incremental SMT-LIB2 benchmarks by size.
+\caption{Distribution of SMT-LIB2 non-incremental benchmarks by size.
 \label{fig:smtlib-bysize}}
 \end{figure}
 
