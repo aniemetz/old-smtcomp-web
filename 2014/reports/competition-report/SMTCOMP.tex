@@ -1,7 +1,7 @@
 %% Based on a TeXnicCenter-Template by Tino Weinkauf.
 
 %%\documentclass[12pt,oneside]{report}
-\documentclass[twosize,11pt]{article}
+\documentclass[twoside,11pt]{article}
 
 %% Language %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\usepackage[USenglish]{babel} %francais, polish, spanish, ...
@@ -49,15 +49,15 @@
 \title{The 2014 SMT Competition}
 
 \author{
-\name David R. Cok (chair of organizing committee)
+\name{David R. Cok (chair of organizing committee)}
 \email{dcok@grammatech.com} \\
 \addr GrammaTech, Inc. \\
 \AND
-\name David D\'{e}harbe (co-organizer)
+\name{David D\'{e}harbe (co-organizer)}
 \email{david@dimap.ufrn.br} \\
 \addr Federal University of Rio Grande do Norte, Brazil \\ 
 \AND
-\name Tjark Weber (co-organizer) \\
+\name{Tjark Weber (co-organizer)} \\
 \addr Uppsala University, Sweden
 \email{tjark.weber@it.uu.se}
 }
@@ -65,11 +65,10 @@
 \maketitle
 
 \abstract{The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014~\cite{FLoC2014}, at the Vienna Summer of Logic~\cite{VSL} in July 2014. Eighteen solvers participated from thirteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.} 
-\davidc{A couple sentences on notable innovations or results}
-The 2014 edition of the SMT Competition was executed for the first time on the Star-Exec~\cite{DBLP:conf/cade/StumpST14} logic solving service. Several records were broken: number of participating solvers, number of logic divisions and number of benchmarks.
+The 2014 edition of the SMT Competition was executed for the first time on the StarExec~\cite{DBLP:conf/cade/StumpST14} logic solving service. Several records were broken: number of participating solvers, number of new entrants, number of logic divisions, number of benchmarks, and amount of computation.
 
 \davidd{Comment on qualitative evolution of solvers?}
-\keywords{SMT-solver, competition} \davidc{more keywords}
+\keywords{SMT solver, SMTCOMP, SMT-LIB, Satisfiability Modulo Theories, competitions} 
 
 %\published{Decembber 2014}{revision date}{publication date}
 
@@ -80,9 +79,7 @@ The 2014 edition of the SMT Competition was executed for the first time on the S
   previous instantiations, if appropriate), and give a summary of the main
   technical contributions to the field, as well as discussions on lessons
   learned and suggestions for improvements for future competitions. }
-	
-\davidc{Page limit? I don't see one mentioned anywhere.}
-	
+		
 	
 \section{Introduction}
 \label{sec:intro}
@@ -91,8 +88,8 @@ The SAT-solving decision problem can be generalized by replacing
 boolean variables with atomic predicates built with symbols from a
 background theory, or a combination of background theories. The
 resulting decision problem is called \emph{Satisfiability Modulo
-  Theory\/} (SMT). The background theories considered stem from
-industry formal verification applications and include arrays,
+  Theories\/} (SMT). The background theories of interest arise from 
+	application domains, such as formal verification or scheduling problems, and include arrays,
 bit-vectors, equality with uninterpreted functions, linear and
 non-linear arithmetics over integers and real numbers. Also, a theory
 may explicitly allow or disallow quantification. Tools addressing the
@@ -100,7 +97,7 @@ SMT problem are called \emph{SMT solvers\/}. An SMT solver is often
 built by combining a SAT solver with (semi-)decision procedures for
 specific theories.
 
-The 2014 SMT Competition continued the series of annual competitions in SMT solver capability and performance that began in 2005. This is the 9th competition in the series, skipping only 2013; in that year an evaluation~\cite{it:2014-017} was performed, rather than a competition.
+The 2014 SMT Competition (SMT-COMP) continued the series of annual competitions in SMT solver capability and performance that began in 2005. This is the 9th competition in the series, skipping only 2013; in that year an evaluation~\cite{it:2014-017} was performed, rather than a competition.
 
 The competition is held to spur advances in
 SMT solver implementations acting on benchmark formulas of practical interest. Public competitions are
@@ -109,49 +106,50 @@ reasoning, the SAT and CASC competitions for propositional and first-order reaso
 have spurred significant innovation in their fields~\cite{leberre+03,PSS02}.
 
 The competition is sponsored by the SMT workshop, which was held in conjunction with the
-CAV, IJCAR, and SAT conferences at FLoC 2014~\cite{FLoC2014}, at the Vienna Summer of Logic\cite{VSL} in July 2014.
+CAV, IJCAR, and SAT conferences at FLoC 2014~\cite{FLoC2014}, at the Vienna Summer of Logic~\cite{VSL} in July 2014.
 Information about the winners
 and results of the competition is summarized in this report and is available online at \url{www.smtcomp.org}; information
-about previous years' competitions is also available at that website and in a published summary reports~\cite{springerlink:10.1007/s10817-012-9246-5,DBLP:conf/cade/CokGBD12,it:2014-017}.%[DD: done]\tjark{Cite 2012 and 2013 as well}
+about previous years' competitions is also available at that website and in published summary reports~\cite{springerlink:10.1007/s10817-012-9246-5,DBLP:conf/cade/CokGBD12,it:2014-017}.
 
-\davidd{Overview of the paper}
+In the succeeding sections we describe the context of the competition (\S\ref{sec:context}), its goals and organization (\S\ref{sec:goals}), timeline (\S\ref{sec:timeline}), procedure (\S\ref{sec:procedure}), participants (\S\ref{sec:participants}), benchmarks (\S\ref{sec:benchmarks}), computational infrastructure (\S\ref{sec:starexec}), results (\S\ref{sec:results}), and the place of SMT-COMP in the FLoC Olympic Games (\S\ref{sec:floc}). Section \ref{sec:conclusions} presents observations on this competition and recommendations for the future.
 
 \section{Context of the competition}
 \label{sec:context}
 
-The SMT Competition is a competition among SMT solvers on a set of benchmark logic problems expressed in the SMT-LIB~\cite{BarST-RR-10} language. Each benchmark problem is a combination of definitions and logical assertions expressed with respect to an underlying logical theory and, perhaps, some constraints on the kinds of expressions in that theory. Each problem has a set of constant or function symbols; a solution to the problem is an assignment of each constant and function evalution to logical values in a way that satisfies all the problem's assertions. That is, the problem is to find a \textit{satisfying assignment} for the benchmark problem. For example, a problem might be simply a set of assertions in 
+The SMT Competition is a competition among SMT solvers on a set of benchmark logic problems expressed in the SMT-LIB~\cite{BarST-RR-10} language. Each benchmark problem is a combination of definitions and logical assertions expressed with respect to an underlying logical theory and, perhaps, some constraints on the kinds of expressions in that theory. Each problem has a set of constant or function symbols; a solution to the problem is an assignment of each constant and function evalution to values in a way that satisfies all the problem's assertions. That is, the problem is to find a \textit{satisfying assignment} for the benchmark problem. For example, a problem might be simply a set of assertions in 
 propositional logic, in terms of Boolean constants such as $P$, $Q$, and $R$.
 
 As stated, the goal is the same as the SAT competition. The SMT benchmarks extend SAT by incorporating defined theories, such as the theory of arrays, or of undefined functions, or of arithmetic, or of bit-vectors. In addition, there may be constraints on the set of expressions allowed, such as only linear arithmetic, or only integer difference arithmetic. The theories also define \textit{sorts}, which make the theories a kind of typed first-order logic. Examples of sorts used in current theories are Boolean, Int, Real, bit-vectors of various lengths, and arrays with arbitrary sorts as index and value. Each combination of underlying theories and language constraints is a \textit{logic}.
 
-The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB (v2) standard \cite{BarST-RR-10}. This standard has been used since 2010, and a previous version was used prior to that. One of the goals of the SMT competition is to encourage use and tool implementations of the SMT-LIB standard. The following example illustrates part of this concrete syntax:
+The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB (v2) standard \cite{BarST-RR-10}. This standard has been used since 2010; a previous version was used prior to that. One of the goals of the SMT competition is to encourage use and tool implementations of the SMT-LIB standard. The following example illustrates part of this concrete syntax:
 \begin{verbatim}
-(set-logic UFLIA)
-(declare-fun max (Int Int) Int)
-(assert (forall ((x Int) (y Int))
-   (let ((m (max x y)))
-      (and (>= m x) (>= m y) (or (= m x) (= m y))))))
-(assert (not (forall ((x Int) (y Int))
-   (let ((m (max x y)))
-      (= (max (max x y) x) (max x y))))))
-(check-sat)
+          (set-logic UFLIA)
+          (declare-fun max (Int Int) Int)
+          (assert (forall ((x Int) (y Int))
+             (let ((m (max x y)))
+                (and (>= m x) (>= m y) (or (= m x) (= m y))))))
+          (assert (not (forall ((x Int) (y Int))
+             (let ((m (max x y)))
+                (= (max (max x y) x) (max x y))))))
+          (check-sat)
 \end{verbatim}
-The command \verb'set-logic' sets the background theory; in that
-example, \verb'UFLIA' is the combination of equality with uninterpreted
-functions (\verb'UF') and linear integer arithmetics
+
+The command \verb'set-logic' sets the background theory: \verb'UFLIA' is the combination of equality with uninterpreted
+functions (\verb'UF') and linear integer arithmetic
 (\verb'LIA'). Next, the command \verb'declare-fun' introduces a
-function symbol, named \verb'max', which has two integer arguments
-(sort \verb'Int') and returns an integer value. Next, two formulas are
+function symbol, named \verb'max', which has two arguments
+of sort \verb'Int' and returns an \verb'Int' value. Next, two formulas are
 asserted. The first essentially restricts the interpretations of the
 function named \verb'max' to the standard interpretation. The second
 expresses (the negation of) a property of this operator. The command
 \verb'check-sat' instructs the SMT-solver to check if the formula is
-satisfiable. Here the expected result is \verb'unsat'.
+satisfiable. Here the expected result is \verb'unsat', indicating that
+the desired property is valid.
 
-As of June 2014, the SMT-LIB repository contains over 130,000
+As of June 2014, the SMT-LIB repository contained over 130,000
 non-incremental benchmarks divided into 34 background theories. The
 size of a benchmark file may vary from a few hundred bytes to several
-dozen megabytes (see figure~\ref{fig:smtlib-bysize} for a distribution
+dozen megabytes (see Fig.~\ref{fig:smtlib-bysize} for a distribution
 of the benchmarks by file size).
 
 \begin{figure}
@@ -162,10 +160,7 @@ of the benchmarks by file size).
 \label{fig:smtlib-bysize}}
 \end{figure}
 
-\tjark{Provide information about the sizes of benchmarks}
-\davidd{Shall we say something about command language?}
-
-SMT (Satisfiability Modulo Theories) solvers are automated tools that seek to find a satisfying assignment for a given SMT-LIB problem, or to assure that the problem is \textit{unsatisfiable}.
+SMT solvers are automated tools that seek to find a satisfying assignment for a given SMT-LIB problem, or to assure that the problem is \textit{unsatisfiable}.
 Tools may not be able to solve a given problem, because, for example the tool exhausts available memory or time; a tool is permitted to answer \textit{unknown}. However, giving an incorrect answer (\textit{sat} instead of \textit{unsat}, or vice versa) is considered \textit{unsound} and a serious fault in the tool.
 
 SMT differs from the CASC competition~\cite{PSS02} in directly addressing sorted logics. SMT also focuses on fragments of first-order logic that are \textit{decidable}. For example, a subset of the benchmarks are problems in an integer-difference logic, for which there are specific decision procedures. The competition among tools is to create very efficient implementations of a breadth of decision procedures. Accordingly, SMT solvers have historically also not handled logics with quantified expressions, though several currently now do so.
@@ -174,24 +169,26 @@ SMT differs from the CASC competition~\cite{PSS02} in directly addressing sorted
 \label{sec:goals}
 
 In planning the 2014 competition, the organizers' overall goal was to encourage breadth
-in the capability of SMT solvers. SMTCOMP 2014 benefited from the evaluation that was performed in 2013 and the experience of the 2012 competition. As a result we established the following emphases:
+in the capability of SMT solvers. SMT-COMP 2014 benefited from the evaluation that was performed in 2013 and the experience of previous competitions. As a result we established the following emphases:
 \begin{itemize}
 \item In 2012 we narrowed the competition to a smaller number of more significant logics. In response to feedback, in 2014 we reverted to the practice of evaluating solvers in all available divisions.
-\item We ran the competition with all available benchmarks. To be eligible, a benchmark must be well-formed and have a known answer. We were able to use all benchmarks because we had nearly exclusive use of the Star-Exec cluster during the time we were executing SMT-COMP. This point is discussed further in section~\ref{sec:procedure}.
-\item In 2012 some experimental tracks were held: parallel performance, unsat cores and proof generation. The participation in those was light. Since in 2014 we also had to migrate to using Star-Exec, we held only a main track and an application (incremental) track in the 2014 competition. The organizers still maintain the value of measuring the performance of solvers on new features such as model generation, unsat core determination and proof generation and recommend that they be reinstated in some future edition of the competition.
+\item We ran the competition with all available benchmarks. To be eligible, a benchmark must be well-formed and have a known answer. We were able to use all benchmarks because we had nearly exclusive use of the StarExec cluster during the time we were executing SMT-COMP. This point is discussed further in \S\ref{sec:procedure}.
+\item In 2012 some experimental tracks were held: parallel performance, unsat cores, and proof generation. The participation in those tracks was light. Since in 2014 we also had to migrate to using StarExec, we held only a main track and an application (incremental) track in the 2014 competition. The organizers still maintain the value of measuring the performance of solvers on new features such as model generation, unsat core determination, and proof generation, and recommend that they be reinstated in some future edition of the competition.
 \item A significant change in 2014 was to increase the time-out limit for a solver processing a given benchmark from 25 minutes (in 2012) to 40 minutes.
-\item A significant result of the 20113 Evaluation was that the result of a competition was highly sensitive to the selection of benchmarks: different random selections of benchmarks resulted in different winning orders in a large fraction of samples. Hence, an aim for 2014 was to use a large a benchmark set as possible in the competition to minimize this effect.
+\item A significant result of the 2013 Evaluation was that the result of a competition was highly sensitive to the selection of benchmarks: different random selections of benchmarks resulted in different winning orders in a large fraction of samples. Hence, an aim for 2014 was to use a large a benchmark set as possible in the competition to minimize this effect.
 
 \davidc{More emphases?}
 
+\davidc{Figures vs. tables - label and use terminology consistently }
+
 \end{itemize}
 
-An important difference between the 2014 competition and previous competitions was that this year's competition was executed on the Star-Exec cluster, described below in section~\ref{sec:starexec}. All the supporting tools and related procedures needed to be ported to this new framework. With watchful eyes by the organizers and the Star-Exec team, and with some debugging, the Star-Exec framework worked well and enabled a larger scale of competition than in previous years.
+An important difference between the 2014 competition and previous competitions was that this year's competition was executed on the StarExec cluster, described below in \S\ref{sec:starexec}. All the supporting tools and related procedures needed to be ported to this new framework. With watchful eyes by the organizers and the StarExec team, and with some debugging, the StarExec framework worked well and enabled a larger scale of competition than in previous years.
 
 \section{Competition timeline}
 \label{sec:timeline}
 
-The preparation and execution of SMT-COMP 2014 took place over about 7 months, relying on the experience of previous competitions, the 2013 SMT Evaluation, and development activity on Star-Exec:
+The preparation and execution of SMT-COMP 2014 took place over about 7 months, relying on the experience of previous competitions, the 2013 SMT Evaluation, and development activity on StarExec:
 \begin{itemize}
 \item July 2013 - Cok appointed as chair of the organizing committee.
 \item December 2013 - D\'{e}harbe and Weber appointed as co-coordinators.
@@ -201,7 +198,7 @@ The preparation and execution of SMT-COMP 2014 took place over about 7 months, r
 \item 1 June 2014 - deadline for initial solver registration; final rules posted.
 \item 15 June 2014 - deadline for final solver registration.
 \item 16 June 2014 - computation begins.
-\item 22 June 2014- main track computation ends; official results posted on 6/27. 
+\item 22 June 2014 - main track computation ends; official results posted on 6/27. 
 \item 22 June 2014 - deadline for application track solvers.
 \item 28 June 2014 - application track computation.
 \item 17 July 2014 - SMT Workshop at which results were announced.
@@ -214,33 +211,34 @@ The preparation and execution of SMT-COMP 2014 took place over about 7 months, r
 
 The full description of the 2014 SMT competition's rules is found in the rules document (\url{http://smtcomp.sourceforge.net/2014/rules14.pdf}). The document describes the procedures for determining benchmark difficulties, selecting benchmarks for competition, and judging the results. The preparation and execution of the competition required the following matters to be decided and executed.
 
+\paragraph{Decide the competition parameters}. We set a timeout of 40 minutes for both wall clock and cpu time; the memory limit was 100GB. A single solver-benchmark combination (job-pair) was run on a node at a given time. The benchmarks were scrambled; all benchmarks were run. StarExec made about 150 nodes available for the duration of the competition. The timeout setting was a notable difference in 2014; in 2013, this was set at 25 minutes. The effect of this is discussed in \S\ref{sec:timeouts}.
+
+\davidc{Check if any job-pair exceeded the memory limit.}
+
 \paragraph{Settle any adjustments on the rules and competition timeline, with time for comment.} 
-The competition rules are largely the same from year to year, but each year there are adjustments and improvements. Matters to be decided are the timeline for the competition, communication vehicles (including instantiating the website for the new competition), the various tracks and divisions, any adjustments to the benchmark selection procedure, the scoring rules, policies on similar submissions and portfolio solvers. A novel aspect in 2014 was the need for policies regarding the FLoC Olympic Games, described in section~\ref{sec:floc}. During the competition, the organizers had to rule on whether solvers could be withdrawn from divisions after the competition began and \davidc{There was another issue - review the email}.
+The competition rules are largely the same from year to year, but each year there are adjustments and improvements. Matters to be decided are the timeline for the competition, communication vehicles (including instantiating the website for the new competition), the various tracks and divisions, any adjustments to the benchmark selection procedure, the scoring rules, policies on similar submissions and portfolio solvers. A novel aspect in 2014 was the need for policies regarding the FLoC Olympic Games~\cite{FLoCGames}, described in \S\ref{sec:floc}. During the competition, the organizers had to rule on whether solvers could be withdrawn from divisions after the competition began and \davidc{There was another issue - review the email}. The organizers also received and adjudicated an appeal (cf. \S\ref{sec:floc}).
 
-One notable difference in 2014 was lengthening the time-out period for solving each benchmark. In 2013, this was set at 25 minutes; in 2014, we used 40 minutes. The effect of this is discussed in section \ref{sec:zzz}.
-\davidc{Analyze and report the effect of timeout}
-
-\paragraph{Invite and validate solver submissions.} The 2014 competition saw the first use of the Star-Exec computational cluster (described below \davidc{Where}) for executing the competition. Each solver had to be wrapped in appropriate scripts to be able to run in the StarExec environment. Though this was largely the responsibility of the solver submitter, teams submitting solvers for the first time required guidance and assistance from the organizers and the StarExec development team. This was a significant hurdle; not all solver teams were able to complete it in time. The most significant problem was the need to create a fully statically linked version of the solver that ran on the particular version of Linux used by Star-Exec. The organizers stipulated a first solver submission deadline and a final solver submission deadline, separated by two weeks, to enable (and encourage) trials and debugging of solver submissions.
+\paragraph{Invite and validate solver submissions.} The 2014 competition saw the first use of the StarExec computational cluster (cf. \S\ref{sec:starexec}) for executing the competition. Each solver had to be wrapped in appropriate scripts to be able to run in the StarExec environment. Though this was largely the responsibility of the solver submitter, teams submitting solvers for the first time required guidance and assistance from the organizers and the StarExec development team. This was a significant hurdle; not all solver teams were able to complete it in time. The most significant problem was the need to create a fully statically linked version of the solver that ran on the particular version of Linux used by StarExec. The organizers stipulated a first solver submission deadline and a final solver submission deadline, separated by two weeks, to enable (and encourage) trials and debugging of solver submissions.
 
 Solver submissions comprise the solver itself, a short system description describing what is new or novel about the solver, and an integer seed. All the submitted seeds and an additional seed derived from a value unknowable until after the solver submission deadline are summed and used as the starting seed for any random selection processes in the competition.
 
-\paragraph{Invite and validate benchmark submissions.} New benchmarks are always welcome but the impending competition is an opportunity to encourage new submissions. Benchmarks are the responsibility of SMT-LIB coordinators, not the competition organizers. Nevertheless, the organizers worked with the coordinators to ensure that new benchmarks were included in SMT-LIB in time for the competition. Initial submissions are often incomplete; to be useful they must be syntactically correct, which includes a designation of the logic in which they fit, contain relevant metadata about the source and category of the benchmark, and have a known, validated answer (benchmarks with unknown answers may also be interesting and worth keeping, but cannot be used in the competition.)
+\paragraph{Invite and validate benchmark submissions.} New benchmarks are always welcome but an impending competition is a particular opportunity to encourage new submissions. Benchmarks are the responsibility of SMT-LIB coordinators, not the competition organizers. Nevertheless, the organizers worked with the coordinators to ensure that new benchmarks were included in SMT-LIB in time for the competition. Initial submissions are often incomplete; to be useful they must be syntactically correct, include a designation of the logic in which they fit, contain relevant metadata about the source and category of the benchmark, and have a known, validated answer. Benchmarks with unknown answers may also be interesting and worth keeping, but cannot be used in the competition.
 
-\paragraph{Create an appropriate selection of benchmarks.} Not all benchmarks in the SMT-LIB database are used in the competition. The details of this selection, as executed for the 2014 competition, are described in section \ref{sec:benchmarks}. Part of the work in preparing the competition to run on the Star-Exec cluster was to port the benchmark selector to Star-Exec.
+\paragraph{Create an appropriate selection of benchmarks.} Not all benchmarks in the SMT-LIB database are used in the competition. The details of this selection, as executed for the 2014 competition, are described in \S\ref{sec:benchmarks}. Part of the work in preparing the competition to run on the StarExec cluster was to port the benchmark selector to StarExec.
 
-\paragraph{Prepare the benchmark scrambler.} All the benchmarks are public and known to the solver developers beforehand. Indeed, part of the point of the benchmark database is to serve as a testbed for solver development, outside of competitions. However, that raises the possibility that a solver will recognize a benchmark problem by its syntactic structure and look up an answer from a learned database, without doing any logic solving. This is explicitly considered cheating. As a slight impediment against such behavior, the benchmarks are individually scrambled before being presented to a solver, using the random seed described above. For 2014, the benchmark scrambler had to be ported to Star-Exec.
+\paragraph{Prepare the benchmark scrambler.} All the benchmarks are public and known to the solver developers beforehand. Indeed, part of the point of the benchmark database is to serve as a testbed for solver development, outside of competitions. However, that raises the possibility that a solver will recognize a benchmark problem by its syntactic structure and look up an answer from a learned database, without doing any logic solving. This is explicitly considered cheating. As a slight impediment against such behavior, the benchmarks are individually scrambled before being presented to a solver, using the random seed described above. For 2014, the benchmark scrambler had to be ported to StarExec.
 
 The scrambling does not change the semantic meaning of the benchmark. It does rename identifiers and alter the position of the arguments in the application of associative commutative operators\davidc{TJARK: Verify if the scrambling does this}.
 
 The scrambling had another, unappreciated effect. A scrambled benchmark uses different identifiers than the original. Although most of the solvers are deterministic for a given input, using different identifier names can change the order of search. For example, iterating over the contents of a hashed set may occur in a different order if identifiers have different names. Consequently, the success of the solver on a given benchmark, the time it takes to find an answer, and even whether a latent bug in the solver is triggered may all depend on just how the benchmark is scrambled. Thus the scrambling adds a measure of uncertainty to the competition and prevents full testing on the benchmark set before the competition. Indeed, one solver encountered a bug during the competition that was directly related to the specific, randomly-chosen scrambling used during the competition.
 
-\paragraph{Prepare the real-time results display.} The participants are interested in the progress of the competition as it proceeds. The organizers also need to know if the competition is proceeding correctly and at a reasonable pace. As the competition takes several days, an automatic real-time display of results is helpful and encourages interest.  Star-Exec does not have such a facility, since different competitions have different needs. Instead the organizers used Star-Exec's command-line API to regularly (every 10 minutes or so) download the status of all of the executing jobs, extract the results for each solver-benchmark pair, create HTML web pages displaying the current status, and uploading them to the competition website. The current (now final) status of each division and a summary page can be seen at 
+\paragraph{Prepare the real-time results display.} The participants are interested in the progress of the competition as it proceeds. The organizers also need to know if the competition is proceeding correctly and at a reasonable pace. As the competition takes several days, an automatic real-time display of results is helpful and encourages interest.  StarExec does not have such a facility, since different competitions have different needs. Instead the organizers used StarExec's command-line API to regularly (every 10 minutes or so) download the status of all of the executing jobs, extract the results for each solver-benchmark pair, create HTML web pages displaying the current status, and upload them to the competition website. The current (now final) status of each division and a summary page can be seen at 
 \url{http://smtcomp.sourceforge.net/2014/results-toc.shtml}.
 
-\paragraph{Execute the competition.} Executing the competition required preparing a Star-Exec job for each 
-division. A job executes the cross-product of a set of solvers and a set of benchmarks. Because each division has different sets of solvers and benchmarks, each division was a separate job (or jobs). This also allowed a restart of portions of the competition if a particular division was incorrectly configured or if a Star-Exec job stalled for some reason (both of which happened).
+\paragraph{Execute the competition.} Executing the competition required preparing a StarExec job for each 
+division. A job executes the cross-product of a set of solvers and a set of benchmarks. Because each division has different sets of solvers and benchmarks, each division was a separate job (or jobs). This also allowed a restart of portions of the competition if a particular division was incorrectly configured or if a StarExec job stalled for some reason (both of which happened).
 
-In addition, with the new cluster, the new benchmarks, and a longer timeout period, the organizers were unsure how long the competition would take. Our conservative estimate was that a month of computing was needed; in fact it only took about a week, because we had more Star-Exec nodes available than anticipated and jobs took on average less time than estimated. However, to hedge against the competition taking longer than anticipated, we divided larger divisions into \textit{heats}, with each heat comprising about 1000 benchmarks, and with the option (stated in the rules) to terminate the competition before all heats were executed to ensure a timely end prior to FLoC. This required handling a much larger number of Star-Exec jobs. In the end it was entirely unnecessary for timely completion, but, as mentioned, dividing the jobs into manageable pieces was useful for restarting portions of the computation when Star-Exec stalled.
+In addition, with the new cluster, the new benchmarks, and a longer timeout period, the organizers were unsure how long the competition would take. Our conservative estimate was that a month of computing was needed; in fact it only took about a week, because we had 3x more StarExec nodes available than anticipated and jobs took on average less time than estimated. However, to hedge against the competition taking longer than anticipated, we divided larger divisions into \textit{heats}, with each heat comprising about 1000 benchmarks, and with the option (stated in the rules) to terminate the competition before all heats were executed to ensure a timely end prior to FLoC. This required handling a much larger number of StarExec jobs. In the end it was entirely unnecessary for timely completion, but, as mentioned, dividing the jobs into manageable pieces was useful for restarting portions of the computation when Star-Exec stalled.
 \footnote{Stalling - that is, no longer making forward progress on a job - was less a concern after some bug fixes during the competition, but was still observed during some post-competition computations.}
 
 In past competitions, the competition was timed to have its last portion overlap with the conference with which it was affiliated. In 2014, because the computation took less time than anticipated, the competition finished well before the conference.
@@ -255,28 +253,27 @@ The competition registration includes information about each competing solver. I
 \begin{itemize}
 \item 4Simp~\cite{TBD}- submitted by Trevor Hansen (U. Melbourne)
 \item AbzizPortfolio~\cite{TBD} - two versions - submitted by Mohammed Adbul Aziz (U. Cairo); this solver is unusual in that it is a portfolio solver: based on automated learning over benchmark characteristics, it chooses among other solvers to apply to the problem at hand.
-\item AProVe~\cite{AProVE2014} - submitted by Carsten Fuhs (UCL)
+\item AProVe~\cite{AProVE2014} - submitted by Carsten Fuhs (University College London)
 \item Boolector~\cite{Boolector2015} - three versions: Boolector (default), Boolector-j (justification), Boolector-d (dual propagation) - submitted by Armin Biere, Aina Niemetz, Mathias Preiner (Johnnes Kepler University)
-\item CVC3 v. 2.4.3~\cite{BT07} - submitted by Morgan Deters (NYU)
-\item CVC4 v. 1.4~\cite{BCD+11} - submitted by the ACSys Group (NYU)
+\item CVC3 v. 2.4.3~\cite{BT07} - submitted by Morgan Deters (New York University)
+\item CVC4 v. 1.4~\cite{BCD+11} - submitted by the ACSys Group (New York University)
 \item Kleaver~\cite{TBD} - 2 versions - submitted by Hristina Palikareva, Cristian Cadar (Imperial College)
 \item OpenSMT2~\cite{TBD} - submitted by Antti Hyv\"arinen (U. Lugano)
-\item raSAT~\cite{TBD} - submitted by Tung Vu Xuan (JAIST)
+\item raSAT~\cite{TBD} - submitted by Tung Vu Xuan (Japan Advanced Insitute of Science and Technology)
 \item SMTInterpol~\cite{DBLP:conf/spin/ChristHN12,DBLP:conf/spin/2012} - submitted by Jochen Hoenicke, J\"urgen Christ (U. Freiburg)
 \item SONOLAR~\cite{Peleska:2011:ATC:1986308.1986333} - submitted by Florian Lapschies (U. Bremen)
-\item STP-CryptoMiniSat4~\cite{DBLP:conf/cav/GaneshD07,DBLP:conf/cav/2007} - submitted by M\'at\'e So\'os (Security Research Lab.), based on previous work by Trevor Hansen (U. Melbourne) and Vijay Ganesh (MIT)
-\item veriT~\cite{veriT} - submitted by David D\'{e}harbe (UFRN), Pascal Fontaine (U. Lorraine, INRIA)
+\item STP-CryptoMiniSat4~\cite{DBLP:conf/cav/GaneshD07,DBLP:conf/cav/2007} - submitted by M\'at\'e So\'os (Security Research Lab.), based on previous work by Trevor Hansen (U. Melbourne) and Vijay Ganesh (Massachusetts Institute of Technology)
+\item veriT~\cite{veriT} - submitted by David D\'{e}harbe (UFRN - Universidade Federal do Rio Grande do Norte), Pascal Fontaine (U. Lorraine, INRIA - Institut national de recherche en informatique et en automatique)
 \item Yices2~\cite{Dutertre:cav2014} - submitted by Bruno Dutertre (SRI)
 \end{itemize}
-\davidd{Put the complete name of the institutions in this list.}
-\davidc{Need references for each of the above}
-\davidc{Lists are inconsistent on STP2}
 
-There were a few solvers that we hoped would be submitted but were not: Tiffany de Wintermonte was submitted in the past by Trevor Hansen, but could not be prepared in time for this competition; similarly SMT-RAT was withdrawn because of last minute bugs; MathSat has been a frequent competitor in the past, but changes in priorities of the development team caused it not to compete in 2014; MiniSMT also was not able to be submitted; similarly, Z3, from Microsoft, though a strong tool has chosen not to take the time to prepare competition versions.
+\davidc{Need references for each of the above}
+
+There were a few solvers that the organizers hoped would be submitted but were not: Tiffany de Wintermonte was submitted in the past by Trevor Hansen, but could not be prepared in time for this competition; similarly SMT-RAT was withdrawn because of last minute bugs; MathSat has been a frequent competitor in the past, but changes in priorities of the development team caused it not to compete in 2014; MiniSMT also was not able to be submitted; similarly, the Z3 team, from Microsoft, though Z3 is a strong tool, has chosen not to take the time to prepare competition versions.
 
 Other than those omissions, every competitive solver known to the organizers was represented. Indeed, the participation by solver teams was a record high in 2014. 
 
-In addition to the competing solvers, the organizers, as in past competitions, included some publicly available historical solvers. These solvers are run in the competition for comparison, but are designated as demonstration only and are not eligible for any awards or designations of having won the competition. In result tables, these solvers are listed with their names in square brackets (e.g., [MathSat]). The organizers included current versions of MathSat and Z3. Also, during the competition, a bug-fix release of CVC4 (named CVC4-with-bugfix) was submitted and included as a demonstration only version (cf. section \ref{sec:floc}).
+As in past competitions, the organizers included some publicly available historical solvers. These solvers are run in the competition for comparison, but are designated as demonstration only and are not eligible for any awards or designations of having won the competition. In result tables, these solvers are listed with their names in square brackets (e.g., [MathSat]). The organizers included current versions of MathSat and Z3. Also, during the competition, a bug-fix release of CVC4 (named CVC4-with-bugfix) was submitted and included as a demonstration only version (cf. \S\ref{sec:floc}).
 
 \begin{table}[t]
 \renewcommand{\mark}[0]{$\times$}
@@ -296,6 +293,7 @@ AbzizPortfolio         & U. Cairo       &   &   &   &   &   &   &   & \mark & (2
 Boolector              & JKU            &   &   &   & \mark & \mark &   & \mark & \mark & (3)\\
 CVC/CVCLite/CVC3       & NYU, U. Iowa   & \mark & \mark & \mark & \mark & \mark & \mark & \mark & \mark & \mark \\
 CVC4	                 & NYU, U. Iowa   &   &   &   &   &   & \mark & \mark & \mark & \mark \\
+
 MathSat-HeavyBV        & U. Trento      &   &   &   &   &   &   &   & \mark &   \\								
 MathSAT 3,4,5          & U. Trento, FBK & \mark & \mark & \mark & \mark & \mark & \mark & \mark & \mark &   \\
 SMTInterpol            & U. Freiburg    &   &   &   &   &   &   & \mark & \mark & \mark \\
@@ -331,7 +329,7 @@ SVC	               & Stanford U.  & \mark &   &   &   &   &   &   &  &   \\
 \end{tabular}
 \vspace{.2in}
 \caption{History of solver participation (numbers in parenthesis indicate
-the number of versions submitted for the tool.}
+the number of versions submitted for the tool). Complete records of early competitions were not available to the 2014 organizers.}
 \label{Table:participants}
 \end{table}
 
@@ -357,9 +355,12 @@ Not ever participating again &  4 &  5 & 2 &  2 &  6 &  3 &  4 &  4 &  \\
 Table~\ref{Table:changes} summarizes that data in numbers of continuing participants. Except for the record turnout in
  2014, there has been a steady 9-13 participants each year; each year there are an average of 4 new
  participants, about the same number of drop-outs, and an average of 7 continuing participants. 
+
 The introduction in 2010 of SMT-LIBv2 as the standard language for benchmarks was a significant event. The new language required solvers to revise their front-ends and to add new capabilities.
 As a result, some solvers did not continue participating, at least not immediately. However, the use of SMTLIBv2 also increased the expressiveness of benchmarks. SMTLIBv2 introduced a set of (optional) commands to enable richer interactions with solvers. Thus benchmarks representing the needs of industrial applications were able to be added; 
 the application track of the competition was added to demonstrate the interactive capability and the corresponding abilities of solvers.
+
+\davidc{INclude cvc4-with-bugfix in the table and in the counts.}
 
 \section{Competition divisions and benchmarks}
 \label{sec:benchmarks}
@@ -367,18 +368,17 @@ the application track of the competition was added to demonstrate the interactiv
 The SMT-LIB benchmarks each belong to a specific logic. Each logic is one competition division. For each division we ran the solvers that entered that division on the benchmarks for that division as one event in the overall competition.
 
 SMT-LIB currently defines 34 logics, shown in Table \ref{Table:benchmarks}. The rightmost column shows the number of benchmarks for that logic in the SMT-LIB collection. Two considerations may make a benchmark ineligible for a competition. First, the benchmark may not have a known result. For newly submitted benchmarks
-we made an attempt to determine the correct result of the benchmark and the SMT-LIB coordinators now require two 
-different solvers to solve the problem and report the same result to admit the benchmark into the collection.
-However, for benchmarks already in the collection we did not attempt to determine their answer. We did do this analysis after the competition was over (see section \ref{TBD}).
+we made an attempt to determine the correct result of the benchmark; the SMT-LIB coordinators require that two 
+different solvers solve the problem and report the same result to admit the benchmark into the collection.
+However, for benchmarks already in the collection we did not have time to determine their answer. We did do this analysis after the competition was over (see \S\ref{TBD}).
 
 The second consideration is that the benchmark must be \textit{non-trivial}; a benchmark is deemed trivial if all solvers managed to solve it in less than five seconds during SMT-EVAL 2013.
 
-The numbers of unknown, trivial, and remaining eligible benchmarks are also shown in Table \ref{Table:benchmarks}. A few other comments are in order:
-\begin{itemize}
-\item We, with the SMT-LIB coordinators, performed a curation step on the benchmarks prior to the competition. We determined the actual logic to which a benchmark belonged, rather than the super-logic to which it had previously been assigned. This resulted in an expansion of logics with benchmarks from 23 to 34, and also created a number of divisions with only a very few benchmarks.
-\item Two divisions were not held because they had no eligible benchmarks.
-\item The numbers of eligible, trivial, unknown, and total benchmarks vary widely from division to division. We will comment later on the need to review and improve the benchmark collection.
-\end{itemize}
+The numbers of unknown, trivial, and remaining eligible benchmarks are shown in Table \ref{Table:benchmarks}. Note that the numbers of eligible, trivial, unknown, and total benchmarks vary widely from division to division.
+
+A sizeable number, on the order of 30000, of benchmarks were added during the lead up to the competition. Some of these were submitted in previous years but never assessed and uploaded. Many others were supplied by solver developers (including some competitors). All of them went through an iterative curation process to be sure that they were syntactically valid, appropriate metadata was included, and a correct result was established. (Not all of these submissions were through the competition organizers.)
+
+The SMT-LIB coordinators performed a curation step on the benchmarks prior to the competition, determining the actual logic to which a benchmark belonged, rather than the super-logic to which it had previously been assigned. This resulted in an expansion of logics with benchmarks from 23 to 34, and also created a number of divisions with only a very few benchmarks. Two divisions were not held because they had no eligible benchmarks.
 
 \begin{table}
 \centering
@@ -432,10 +432,6 @@ Total & 18+[2] & 67426 & 35020 & 35202 & 137648 \\
 
 \davidc{Recheck the numbers of solvers in the benchmarks table}
 
-A sizeable number, on the order of 30000, of benchmarks were added during the lead up to the competition. Some of these were submitted in previous years but never assessed and uploaded. Many others were supplied by solver developers (including some competitors). All of them went through an iterative curation process to be sure that they were syntactically valid, appropriate metadata was included, and a correct result was established. (Not all of these submissions were through the competition organizers.)
-
-\davidc{Also want categories of benchmarks and numbers of sat or unsat}
-
 Solvers could participate in any or all divisions at their team's discretion. Most solvers are designed for just one selected logic, but others are intended to be as broadly applicable as their developers have had time to implement. Table~\ref{Table:logics} shows the participation of solvers in various divisions.
 
 \begin{sidewaystable}
@@ -476,25 +472,45 @@ Yices2 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	\mark & 	\mark & 	\mark &
 \label{Table:logics}
 \end{sidewaystable}
 
-\paragraph{Selection of benchmarks.} In addition to whether benchmarks have a known result or is trivial (solved in under 5 seconds for all solvers in the 2013 evaluation), there are two other factors that affect the selection of benchmarks for a competition: the benchmark's difficulty and the desire for a distribution of problems.
+\paragraph{Selection of benchmarks.} In addition to whether benchmarks have a known result or is trivial, there are two other factors that affect the selection of benchmarks for a competition: the benchmark's difficulty and the desire for a distribution of problems.
 
 Each benchmark is assigned a difficulty rating; in 2014, we used the time taken to solve the benchmark by the best performing solver in the 2013 SMT Evaluation. These values were publicly available prior to the competition. The difficulty ratings are used to divide the benchmarks into 5 quintiles. The rules describe a procedure for selecting $N$ out of the eligible benchmarks for a division, with the intent of selecting roughly equal numbers, if they are available, from each of the quintiles.
 
-Benchmarks are also labeled by category: either as simple checks, as randomly generated problems from some template (e.g., N-queens problems for various values of N), problems crafted to test a certain capability, and problems obtained from industrial applications. The sub-selection rules favor industrial benchmarks.
+Benchmarks are also labeled by category: either as simple checks, as randomly generated problems from some template (e.g., N-queens problems for various values of N), problems crafted to test a certain capability, and problems obtained from industrial applications. The selection rules favor industrial benchmarks.
 
-In addition, some kinds of problems may be over-represented in the benchmarks. This may be the case particularly because benchmarks may be submitted by solver developers; a team might add a large number of benchmarks that would then over-represent problems that a particular solver is known to handle well. The rules allow the organizers to limit the selections from sub-population. 
+\davidc{Also want categories of benchmarks and numbers of sat or unsat}
+
+
+In addition, some kinds of problems may be over-represented in the benchmarks. This may be the case particularly because benchmarks may be submitted by solver developers; a team might add a large number of benchmarks that would then over-represent problems that a particular solver is known to handle well. The rules allow the organizers to limit the selections from sub-populations. 
 
 In the end, there was sufficient time to use all eligible benchmarks and no further selection was performed. The 2014 organizers did not have the data to make a principled decision on over-representation of particular problem types and so did not select on this basis either. The absence of such selection may have affected the competition results and future organizing teams should reconsider this aspect even if there are sufficient computational resources to execute all benchmarks. The data from SMT-COMP 2014 could be used to inform this decision.
 
-\paragraph{The SMTLIB language.} A competition based on benchmark problems needs a standard language in which to express those problems.
-For SMTCOMP, that language is the SMT-LIB language (cf. \url{www.smtlib.org}, \cite{BarST-SMT-10} \cite{Cok-SMTLIBTutorial-2011}). 
+\paragraph{The SMT-LIB language.} A competition based on benchmark problems needs a standard language in which to express those problems.
+For SMT-COMP, that language is the SMT-LIB language (cf. \url{www.smtlib.org}, \cite{BarST-SMT-10} \cite{Cok-SMTLIBTutorial-2011}). 
 In 2010, a significantly reworked version of the language was agreed upon.
 This version 2 increased the flexibility and expressiveness of the language while also simplifying the syntax. 
 It also includes a command language that improves the language's usefulness for interactive applications.
-In particular, the standard specifies a typed (sorted), first-order logical language for terms and formulas, a language for specifying background logical theories and logics, and a command language. Some other tools that process SMT-LIBv2 are listed in the SMT-LIB web pages (cf. \url{http://www.smtlib.org/utilities.shtml}).
+In particular, the standard specifies a typed (sorted), first-order logical language for terms and formulas, a language for specifying background logical theories and logics, and a command language. Some other tools that process SMT-LIBv2 are listed in the SMT-LIB web pages (cf. \url{http://www.smtlib.org/utilities.shtml}). Further revisions were discussed at SMT 2014.
 
-\section{Main track results}
-\label{sec:main-results}
+However, it is important to note that some tools used in the competition support only a subset of SMT-LIB. This subset is only informally stated, but the benchmark set only uses this subset. This informality did not cause problems in the competition, but it would be preferable to define this subset explicitly.
+
+\section{StarExec}
+\label{sec:starexec}
+
+The competition used the NSF-funded StarExec~\cite{DBLP:conf/cade/StumpST14} computational cluster at U. Iowa for executing solvers on benchmarks. Past instances of SMT-COMP used a previous SMT-Exec infrastructure. StarExec was used for several other competitions in 2014 as well.
+
+StarExec consists of 192 computational nodes, each having TBD cores and TBD memory. In competition, processes were limited to 100GB memory. To avoid interference among job-pairs, only one job-pair was executed at a time on a node. 
+\davidc{Complete the specs}
+
+As this was the first year SMT-COMP used StarExec, a variety of tools and procedures needed to be ported to the new infrastructure. These included the benchmarks, the post-processor for scoring results, tools for creating StarExec jobs based on selections of benchmarks and solvers, the driver application for running the application track, and tools for creating real-time summaries of results in progress. These are now available to be reused in future years.
+\davidc{Did I miss some tools?}
+\davidc{Say something about experience with StarExec, amount of computation}
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Main track results}
+\label{sec:timeouts}
 
 Table \ref{Table:maintrack} shows a summary of the main track results. The detailed data for each division is on the competition website: \url{http://smtcomp.sourceforge.net/2014/results-toc.shtml}.
  
@@ -556,20 +572,20 @@ UFNIA & 	3 & 	1587 & 	[Z3]; \win{CVC4}; CVC3. \\
 \label{Table:maintrack}
 \end{table}
 
-\davidd{Contents of columns 2 and 3 has been presented in preceding table: should we remove them to keep the table smaller?}
+%%\davidd{Contents of columns 2 and 3 has been presented in preceding table: should we remove them to keep the table smaller?} I think it is useful here - DC
 \davidc{Include discussion of main track results - what points to make?}
 
-\subsection{Effect of timeout}
-In the main track competition, the organizers set a timeout of 40 minutes, much longer than in previous competitions (e.g., 25 minutes in 2012).  A common question users have is how much benefit is gained by longer timeouts. The data from the competition allows us to analyze this question somewhat.
+\paragraph{Effect of timeout}
+In the main track competition, the organizers set a timeout of 40 minutes, much longer than in previous competitions (e.g., 25 minutes in 2012).  A common practical question users have is how much benefit is gained by longer timeouts. The data from the competition allows us to analyze this question somewhat.
 
 A first question is how many additional problems are solved if the timeout is lengthened. An approximation
 of an answer is shown in Fig.~\ref{Fig:timeouts}. This figure shows the number of benchmarks solved,  combined over all the solvers in the competition, with a solution time less than given timeout values, for the QF\_BV benchmark set.
 Most of the benchmarks are solved quickly: 39\% in less than a second, more than half in under 3.5 seconds, 
 62\% by 10 seconds, and then a slow increase to 88\% by 2400 seconds. There is continual improvement for long timeouts, but the return on time invested certainly decreases. 
 
-There are two caveats to this observation. First, the results depend heavily on the character of the benchmarks set. Some logics have only easy benchmarks, some have purposefully crafted difficult benchmarks, others are a mix. The benchmarks are not at all a representative sampling of problems that might be encountered in practice.  Second, the results described are obtained by observing the wall-clock solution time when the timeout value is set at 2400 seconds. Solvers, if told what the timeout value is, have the option to adjust their search strategies based on the timeout; the solvers might then exhibit even better behavior for shorter timeout.
+There are two caveats to this observation. First, the results depend heavily on the character of the benchmarks set. Some logics have only easy benchmarks, some have purposefully crafted difficult benchmarks, others are a mix. The benchmarks are not at all a representative sampling of problems that might be encountered in practice.  Second, the results described are obtained by observing the wall-clock solution time when the timeout value is set at 2400 seconds. Solvers, if told what the timeout value is, have the option to adjust their search strategies based on the timeout; the solvers might then exhibit even better behavior for shorter timeout.\footnote{Though solvers could use the timeout value, current versions of those queried\textemdash Yices2, Z3, Boolector, CVC4\textemdash do not do so.}
 
-Fig.~\ref{Fig:winners} shows a different view of the same data. Here we note the number of problems solved by each solver within a given wall-clock solution time, subject to the same caveats. The point to observe is that the winning solver changes depending on the timeout chosen. For these benchmarks and this set of solvers: Yices2 performs best for timeouts under a second; CVC4 does best in the middle range from 1 to 200 seconds; Boolector does best above 400 seconds. Other logics, but not all, show changes in winning order as well. This phenomenon could be a result of engineering of the individual solvers or it could be a result of characteristics of the benchmark set.
+Fig.~\ref{Fig:winners} shows a different view of the same data. Here we note the number of problems solved by each solver within a given wall-clock solution time, subject to the same caveats. The point to observe is that the winning solver changes depending on the timeout chosen. For these benchmarks and this set of solvers Yices2 performs best for timeouts under a second, CVC4 does best in the middle range from 1 to 200 seconds, and Boolector does best above 400 seconds. Other logics, but not all, show changes in winning order as well. This phenomenon could be a result of differences in engineering of the individual solvers or it could be a result of characteristics of the benchmark set.
 
 
 
@@ -583,42 +599,42 @@ Fig.~\ref{Fig:winners} shows a different view of the same data. Here we note the
 \begin{table}
 \centering
 \input{QF_BV-winners.tex}
-\caption{Solver success per individual solver for 2488 QF\_BV benchmarks}
+\caption{Solver success per individual solver for 2488 QF\_BV benchmarks, for different timeouts (in seconds)}
 \label{Fig:winners}
 \end{table}
 
-\section{Application track results}
+\subsection{Application (incremental) track results}
 \label{sec:application-results}
 
-Most solvers are only concerned with raw performance on single benchmarks. However, an important application area for SMT solvers requires what the SMT-LIB standard calls 'incremental' operation.
+Most solvers are only concerned with raw performance on single benchmarks. However, an important application area for SMT solvers requires what the SMT-LIB standard calls `incremental' operation.
 In this mode, a user or some application interacts with the solver repeatedly, issuing various commands to define a problem, check for satisfiability, inspect resulting counterexample models, adjust the problem by retracting some assertions and adding other assertions, and so on. An example use case is a tool that allows a user to author formal specifications in conjunction with software. The tool would
 check using a back-end SMT solver whether the specifications are consistent with the code. If not, it might
 supply a counterexample that could be inspected in conjunction with the source code. As the user edits the source or the specifications, the problem presented to the SMT solver is modified. 
 
 The application track of the competition presents to the solver a series of SMT-LIB commands through a driver program; the solver replies to the driver with a 
-response to each command. The driver presents commands only one at a time to emulate a realistic environment and so that the solver cannot `work ahead'. The driver also measures the time taken for each response. Note that the time measured includes the response time to every command, not just to the satisfiability-checking commands.
+response to each command. The driver presents commands only one at a time to emulate a realistic environment and so that the solver cannot `work ahead'. The driver also measures the accumulated time taken for each response. Note that the time measured includes the response time to every command, not just to the satisfiability-checking commands; while \texttt{check-sat} commands might be expect to be the most time-consuming, \texttt{assert} commands, and others, might also instigate significant processing. The application track was first introduced in 2011; a report
+on that year's application track and the overall design was presented by Griggio and Bruttomesso at the 
+2012 COMPARE Workshop~\cite{ag+rb+12}. A new driver was implemented by the organizers for 2014 on the StarExec framework.
 
-Four solvers participated in this competition track: CVC3, CVC4, SMTInterpol, and Yices2; Z3 was added as a demonstration-only historical comparison.
+In 2014, the SMT-LIB contains 9926 benchmarks that  specifically  exercise the incremental solving capability of solvers. Figure \ref{Fig:apptrack-benchmarks} lists the numbers of benchmarks in various logics; UFLRA, QF\_UFLRA, and QF\_UFLIA are the only logics with significant numbers of benchmarks. All the benchmarks were used in the competition.
 
-\davidc{Include table of application track results - need to reduce the data!!!}
+Four solvers participated in this competition track: CVC3, CVC4, SMTInterpol, and Yices2; Z3 was added as a demonstration-only historical comparison. The track was run for 8 divisions; the results are shown in Fig. \ref{Fig:apptrack-results}. Within each division, solvers are listed in winning order: Yices2 won six of the eight divisions, all of the ones in which it participated. The winner is the solver that solved the most check-sat commands correctly within the timeout period. No solver produced an erroneous result. The time out (40 minutes) is applied to the entire benchmark, not to individual commands.
+
+\begin{table}
+\centering
+\input{apptrack-results.tex}
+\caption{Results of the incremental track, across eight divisions. In each division, solvers are listed in winning order.}
+\label{Fig:apptrack-results}
+\end{table}
 
 \davidc{Include discussion of application track results - what points to make?}
 
-\davidc{The rest of the material in this section includes material from 2012 and needs editing}
-
-
-
-The `application' or incremental track, introduced last year, tests a qualitatively different capability. Software verification tools often use SMT solvers as a back-end proof engine. These tools repeatedly invoke the solver with different, related satisfiability problems; the problems may have a substantially similar set of assertions, produced by the tool's adjusting, correcting, adding, or retracting assertions interactively; in batch mode different properties may be checked using substantially the same set of assertions.
-The effect is that the solver must respond to a sequence of requests to assert or retract logical statements, check satisfiability, produce counterexamples, and so on. The application track tests a solver's performance in responding to such a sequence of commands, as produced by actual application problems. To implement the application track benchmarks, the 
-competition uses a simulation engine that communicates with the solver just like an application (or a user at a keyboard) would, presenting each command and waiting for a response before presenting the next command; this mechanism (appropriately) prevents a solver from optimizing its effort based on knowing the entire sequence of commands all at once. A report
-on the first (2011) year's application track and the overall design was presented by Griggio and Bruttomesso at the 
-2012 COMPARE Workshop \cite{ag+rb+12}.
 
 
 \section{FLoC Olympic games}
 \label{sec:floc}
 
-The main track and the application track described in previous sections are staples of recent SMT competitions. The 2014 edition was unique in also being associated with the FLoC Olympic Games~\cite{TBD}.
+The main track and the application track described in previous sections are staples of recent SMT competitions. The 2014 edition was unique in also being associated with the FLoC Olympic Games~\cite{FLoCGames}.
 This association was positive in providing a platform, along with the other competitions, to present the
 rationale, methodology and results of the SMT competition to a wider audience than just the SMT community.
 
@@ -626,21 +642,21 @@ One additional aspect that resulted from the Olympic Games was the awarding of t
 The metrics for doing so were the subject of significant discussion both before and after the competition.
 The metrics were decided by the organizers before the competition began (and before the deadline for solver registration) and were maintained unchanged after the competition.
 
-The organizers chose to award the bronze medal for the best performance in a single division. We chose  the QF\_BV division for this medal because it is significant to applications and because it traditionally has received the most solver submissions. Indeed in 2014, there were 11 participants. Determining the winner was straightforward: we used the same metric as is used for each division - the most problems solved without errors, with ties broken by speed of solution. The Boolector~\cite{boolector} solver won this division and the bronze medal. The results for all participating solvers are shown in Table \ref{Table:bronze}.
+The organizers chose to award the bronze medal for the best performance in a single division. We chose  the QF\_BV division for this medal because it is significant to applications and because it traditionally received the most solver submissions. Indeed in 2014, there were 8 participants. Determining the winner was straightforward: we used the same metric as is used for each division\textemdash the most problems solved without errors, with ties broken by speed of solution. The Boolector~\cite{boolector} solver won this division and the bronze medal. The results for all participating solvers are shown in Table \ref{Table:bronze}.
 
 The organizers chose to award the silver and gold medals for best performance across the most divisions. Thus we needed a metric that combined the results across divisions. We considered two metrics. For a given solver, let 
 \begin{itemize}
 \item $e_i$ be the number of benchmarks in division $i$ for which an incorrect result was produced
 \item $c_i$ be the number of benchmarks in division $i$ solved correctly
 \item $t_i$ be the total time to solve the benchmarks in division $i$ that were solved correctly
-\item $N_i$ be the total number of benchmarks in division $i$.
+\item $N_i$ be the total number of benchmarks in division $i$, used in the competition.
 \end{itemize}
 The normal metric for a division is that the winning solver is the one with the
 smallest value of $e_i$, the largest value of $c_i$ and then the smallest value of $t_i$, for each division taken separately; that is, the metric is a lexicographic ordering by smallest value of $[ e_i, -c_i, t_i ]$.
-The the two global metrics we considered are
+The two global metrics we considered are
 \begin{itemize}
-\item Metric A: The winning solver is the one with the smallest value of $\sum_i e_i$, then the largest value of $\sum_i c_i/N_i \log N_i$, then the smallest value of $sum_i t_i \log N_i$, where for a given solver the sums are over all competitive divisions in which that solver participated
-\item Metric B: The winning solver is the one with the smallest value of $\sum_i e_i$, then the largest value of $\sum_i (e_i == 0 ? c_i/N_i \log N_i : - \log N_i )$, then the smallest value of $sum_i t_i \log N_i$ 
+\item Metric A: The winning solver is the one with the smallest value of $\sum_i e_i \log N_i$, then the largest value of $\sum_i (c_i/N_i) \log N_i$, then the smallest value of $\sum_i t_i \log N_i$, where for a given solver the sums are over all competitive divisions in which that solver participated.
+\item Metric B: The winning solver is the one with the largest value of $\sum_i (e_i == 0 ? (c_i/N_i) : - e_i ) \log N_i$, then the smallest value of $sum_i t_i \log N_i$, where for a given solver the sums are over all competitive divisions in which that solver participated.
 \end{itemize}
 Note that incorrect results are very rare, but do occur; for almost all solvers and divisions the value of $e_i$ is 0 and the competition hinges on the values of $c_i$. The speed of the solver is important in two ways. First, if the solver is slow, it will time out before a solution is found and thus the value of $c_i$ will be lower. Second, if there is a tie in the number of errors and correctly solved problems, the total time taken on the correctly solved problems is used as the tie-breaker; this is a rare occurrence but does happen if, for example, all the benchmark problems in a division are solvable within the time limit.
 
@@ -650,13 +666,13 @@ The log scaling of the scores for each division is a somewhat arbitrary means to
 
 These two metrics differ in how errors are treated. If a solver has no errors, it is always better off to participate in as many divisions as possible. However, an error in a division penalizes a solver so that it would be better not to have participated in the division; hence the organizers ruled that once the competition had started, a solver could not be withdrawn from a division in which it was registered.
 
-The penalty for an error is globally significant in Metric A: a single error in one division out of many would put the solver behind any other solver with no errors, even if that solver participated in just one division. The penalty for an error is more local for Metric B: the error results in a large negative score for that division. Both metrics satisfy the criterion of putting heavy weight on correctness of solvers.
-The organizers published the choice of Metric A as the metric for the Olympic Games gold and silver medals in the rules prior to the beginning of the competition with no objection at the time.
+The penalty for an error is globally significant in Metric A: a single error in one division out of many would put the solver behind any other solver with no errors, even if that solver participated in just one division. The penalty for an error is more local for Metric B: the error results in a large negative score for that division, which might be compensated by good performance in other divisions. Both metrics satisfy the criterion of putting heavy weight on correctness of solvers.
+The organizers published the choice of Metric A as the metric for the Olympic Games gold and silver medals in the rules prior to the beginning of the competition, with no objection during the comment period.
 
 Though all solvers were scored for the medal metrics, five solvers participated in more than two divisions and were the most competitive during the course of the competition. The final results are shown in Table \ref{Table:medals}. The choice of metric did have a significant effect on the result. CVC4 and Yices2 participated in the most divisions, solved the most problems, and did so the most efficiently. However, Yices2 had a crash on one problem in QF\_ABV, but had emitted an erroneous answer prior to the crash (a simple crash without an answer is scored the same as an `unknown' response, marked neither wrong nor correct). CVC4 had bugs that affected AUFNIRA, which was not a competitive division, and QF\_LIA,
 which was competitive. Consequently, by the competition metric, these two otherwise leading solvers placed much further back in the pack.
 
-The resulting winning teams, veriT and SMTInterpol, put an appeal to the organizers to use Metric B instead, arguing that (a) CVC4 and Yices2 were clearly the more capable solvers and (b) there were known bugs in the winning solvers as well, which, simply by good fortune, were not triggered by the competition benchmarks. However, after public comment acknowledging the good will of the winners, the appeal was not accepted by the organizers. The medal ceremony did highlight the differing contributions of all four teams as well as those of the bronze medal winner. Note that the discovered bugs were promptly fixed. In fact, CVC4 submitted an additional demonstration-only version, named CVC4-with-bugfix in the result tables, which the organizers ran in conjunction with the rest of the competition.
+When the results were published, the resulting winning teams, veriT and SMTInterpol, put an appeal to the organizers to use Metric B instead, arguing that (a) CVC4 and Yices2 were clearly the more capable solvers and (b) there were known bugs in the winning solvers as well, which, simply by good fortune, were not triggered by the competition benchmarks. However, after public comment acknowledging the good will of the winners, the appeal was not accepted by the organizers. The medal ceremony did highlight the differing contributions of all four teams as well as those of the bronze medal winner. Note that the discovered bugs were promptly fixed. In fact, CVC4 submitted an additional demonstration-only version, named CVC4-with-bugfix in the result tables, which the organizers ran in conjunction with the rest of the competition.
 
 \begin{table}
 \centering
@@ -717,83 +733,55 @@ abziz\_all\_features &	9  &		2093 	 &	 	122540.04 \\
 \davidc{Include Z3, MathSat, CVC4-with-bug-fix in the medal table?}
 
 
-\section{Concluding observations}
-\label{sec:conclusion}
+\section{Concluding observations and recommendations}
+\label{sec:conclusions}
 
-- 2015 competition is planned (where when?)
+SMT-COMP 2014 successfully executed the comparison among solvers that is the main goal
+of the competition. The new computational infrastructure, StarExec, worked very well for the purpose. The competition saw a renewed interest in participation\textemdash there were record numbers of teams participating, solvers entered, teams and solvers that had never before participated, and benchmarks used.
 
-- renewed participation
-
-- Star-Exec worked well
-
-- benchmark resolution
-
-- more focus on solving small problems quickly
-
-- still need breadth of solvers
-
-- using all benchmarks may not be the best design - over emphasis on some problem types
-
-- still need a focus on applications; more representative benchmarks; more benchmarks needed in many logics
-
-- spawning of SL\_COMP
-
-- Metrics: include the time for non-success computations
-
-- Difficulty of preparing new submissions
-
-- add notes from presentation slide 18
-
-THIS IS ALL FROM 2012
-
-\paragraph{Measuring improvement.}
+This year's competition also saw the inauguration of a new, sibling competition. The organizers helped start and execute SL-COMP~\cite{SLCOMP}, a competition among solvers for separation logic. 
 
 
-One of the goals of a repeated competition is to prod improvement from year to year. Hence one would like measures of such improvement. We currently measure such improvement only in a limited sense in that we only make year-to-year comparisons on selected benchmarks. Such measures are imperfect because the set of solvers, the competition benchmarks and the difficulty ratings all change from year to year. Recall that the difficulty ratings are calculated by running last years' solvers on the benchmarks. In general, if solvers are improving, the difficulty ratings should decrease. Unfortunately, the historical ratings were not kept with sufficient precision to enable such a comparison. 
-
-One source of comparison noise is the variation in the benchmarks. The benchmarks used in a given year are a sampling from the set of all SMT-LIB benchmarks. It is not known (and is a planned study once Star-Exec is ready) how much the sampling variation would change the performance results of individual solvers.\footnote{There is also the question of the degree to which the full benchmark suite is a representative sample of the universe of `interesting' problems -- which is another way of asking about the similarity of SMT-LIB benchmarks to any particular application space.} Another source of noise is variation in the set of solvers used; in particular, in some categories, last year's winner was not an entrant in 2012.
-
-However, a head-to-head comparison of this year's winner vs. last year's winner, in each category, on the selected 2012 benchmarks is a straightforward summary of the competition results. Such comparisons are shown in Fig. \ref{Comparisons}.
-
-We can roughly and informally compare the 2012 results to 2011 in these observations.
-\begin{itemize}
-\item The winning entrant in only a few divisions surpassed last year's winner in that division measured by the overall number of benchmarks solved. This only indicates that the leader still leads; other solvers may well be improving.
-\item The scatterplots in Fig. \ref{Comparisons} show more detail. Division QF\_AUFBV shows clear improvement with QF\_BV, QF\_LRA and QF\_LIA showing mixed results. The non-competitive divisions (AUFLIA+/-p and QF\_IDL) show CVC4 still catching up to Z3.
-\item In most categories even last year's leader did less well on this year's benchmarks (solving fewer problems). This indicates that the randomly chosen benchmarks were harder this year - that is, the benchmark difficulty ratings have become smaller, so the selection mechanism chose more hard benchmarks. This indicates at least that the 2011 solvers were better than 2010, causing the difficulty ratings on individual benchmarks to decrease.
-\end{itemize}
-
-\paragraph{Difficulty of preparing entrants.} In the post-competition discussion, solver submitters discussed the difficulty of preparing solvers for competition. This discussion highlighted a tension in competitions: the trade-off between developing new research ideas and engineering the tools. An academic researcher is rewarded for well-demonstrated new ideas in solver algorithms. However, producing a well-performing solver requires a significant amount of engineering that does not necessarily contribute to publishable papers or theses. 
-But, a person interested in using a solver in an application area of interest will definitely value a robust tool with good time and space performance that scales to industrial-size problems. The SMTCOMP competition purposely emphasizes correctness and performance; thus engineering is essential.
-
-\paragraph{Move to Star-Exec.} It is the intention of the SMT community to host future competitions on the new Star-Exec infrastructure (cf. \url{www.starexec.org}). Star-Exec was rolled out at the Star-Exec workshop at IJCAR'12; a number of organizers of competitions (including SMTCOMP) were present and had the opportunity to experiment with and comment on its 
-design, architecture, and implementation. The SMTCOMP organizing committee will be working with Star-Exec to port materials from the SMT-Exec infrastructure to Star-Exec in preparation for the next competition.
 
 
-\paragraph{The next competition.} The SMT business meeting made a tentative decision that the next SMT workshop would be held in conjunction with SAT 2013. The SMT competition will continue to be held in conjunction with the SMT workshop. However, there was some interest in holding the competition just every other year. On the other hand, the Star-Exec infrastructure is nearly ready to deploy; it would be advantageous to be exercising that infrastructure during 2012-2013 in preparation for a 2013 competition. The informal consensus, pending a decision by the SMT steering committee, is to hold a competition in 2013 on the Star-Exec framework, even if it is simply a rerun of solvers submitted for 2012.
+\davidc{add notes from presentation slide 18}
 
-\paragraph{SMTCOMP and CASC.}
 
-The emphasis of SMT is solving constraint problems consisting of ground formulae built on background theories and using known or new decision procedures. Though some benchmarks use quantifiers, SMT solvers in general are not well-suited to problems with quantification. In contrast, the CASC competition, associated with CADE (Conference on Automated Deduction) uses the TPTP problem set; these problems are typically expressed as first-order formulae, perhaps with built-in equality or arithmetic (and in a different syntactic format). Thus CASC problems are quantifier-centric and construct proofs of theorems heuristically.
 
-At IJCAR'12 the organizers of the two competitions (David Cok and Geoff Sutcliffe) discussed ways of bringing the advantages and strengths of each community to the other. The driving motivation is that many application problems are best expressed using SMT-like theories but with quantification. A first step may be to find interesting problems at the 
-intersection of the two domains, express them in the two different problem formats, and apply tools from each domain, comparing the results. A set of problems the organizers are considering is CASC's TFA division --- typed first-order theorems with Arithmetic. These would correspond variously to SMT-LIB's AUFLIRA and AUFNIRA logics or more specialized subsets of those (and without explicit arrays). Such a set of common problems would allow a direct comparison of ATP and SMT system's capabilities.
-   
-\section{Recommendations for future competitions}
-
-The SMT steering committee has decided that SMT-COMP 2015 will be held in association with the SMT Workshop, which itself will be affiliated with \davidc{WHO} in \davidc{WHERE} from \davidc{WHEN}.
-The Workshop is being organized by \davidc{WHO}
-\davidd{Vijay Ganesh (\url{mailto:vganesh@uwaterloo.ca}) has been appointed co-chair of SMT 2015}; the organizers of the competition are not yet appointed.
+The SMT steering committee is proposing that SMT-COMP 2015 will be held in association with the SMT Workshop, which itself will be affiliated with CAV 2015 in San Franciso, CA, USA from July 18-24, 2014.
+The Workshop is being organized by 
+Vijay Ganesh (\url{mailto:vganesh@uwaterloo.ca}, \url{https://ece.uwaterloo.ca/~vganesh}) and
+Dejan Jovanovi\'c (\url{http://csl.sri.com/users/dejan/}); the organizers of the competition are not yet appointed.
 
 Based on the experience of 2014, the 2014 organizers have the following recommendations or topics for consideration for future competitions.
 \begin{itemize}
-\item
+\item The 2014 competition used all available benchmarks; though the computation resources enable using all benchmarks, future competitions should consider how to make a principled selection to avoid over-representing benchmarks of particular types or origin.
+\item The competition has used numbers of solved benchmarks as the primary success criterion. Time to solve benchmarks should be considered more strongly. In particular, a separate track that emphasized fast solution of fairly simple problems might be informative.
+\item Related to the previous point, currently if a solver times-out or issues a response of `unknown', the time taken to do so is not counted in the accumulated time. Only the time taken to compute correct responses is counted towards the evaluation metric.
+A user's experience, however, is that the time taken for a solver to say `I don't know' is just as important as time to produce a useful answer. Thus we recommend that such 
+computation time be included in the evaluation metric. Omitting this time has had no effect so far because time was little used in the overall metric.
+\item A key improvement needed is better benchmark sets. Though the accumulation of benchmark problems since the inception of the competition is impressive, attention now needs to be paid to the quality and distribution of benchmarks. Some divisions are represented by only a few benchmarks; others have large numbers of similar benchmarks.
+In particular benchmarks representative of application scenarios are particularly important.
+\item Subsequent to SMT-COMP 2014, David Cok, Aaron Stump, Morgan Deters, and Clark Barrett collaborated in resolving the status of many previously unknown benchmarks. Those new expected results are not yet included in the SMT-LIB benchmarks on StarExec. They should be incorporated into SMT-LIB on StarExec prior to the next competition.
+\item If a global metric is needed again in the future (per \S\ref{sec:floc}), a review and re-discussion of the appropriate metric should be instigated.
+\item Solvers with breadth of application across many logics and solvers that address problems in new logics such as string and floating point computations are important to users. Future competitions should add tracks or otherwise find means to reward solvers that implement such capabilities.
+\item Various competition tracks used in the past should be rejuvenated: parallel processing, computation of unsat cores, computation of models, production of proofs.
+\item One missing tool is a standard SMTLIB syntax checker. jSMTLIB~\cite{TBD} has been proposed for this purpose, but is not yet integrated into StarExec. The tool also needs to be updated to include the proposed new SMT-LIB features.
+\item The difficulty in preparing a new solver for submission to StarExec for participation in SMT-COMP should be reduced.
+\item An item for study is the effect of benchmark scrambling on the outcome of solver comparisons.
+\item Clearly define the subset of SMT-LIBv2 that solvers must support for a competition and that benchmarks must use.
 \end{itemize}
 \davidc{More recommendations}
+
+\davidc{Post-competition activity}
+
+
+
 \section*{Acknowledgments} 
 \begin{itemize}
 \item The organizers were supported by their respective institutions (GrammaTech, Federal University of Rio Grande do Norte, Brazil and Uppsala University, Sweden respectively). 
 
-\item In addition Cok received partial support from the U.S. nation Science Foundation
+\item In addition Cok received partial support from the U.S. National Science Foundation
 under grant ACI-1314674.
 
 \item Clark Barrett and Morgan Deters assisted with some aspects of benchmark preparation,
