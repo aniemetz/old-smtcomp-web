@@ -540,8 +540,13 @@ The competition used the NSF-funded StarExec~\cite{DBLP:conf/cade/StumpST14} com
 StarExec consists of 192 computational 2.4GHz nodes, running Red Hat Linux 6.3. Each node has 2 CPUs with 4 cores each and having either 129GB (32 nodes) or 258GB of memory (160 nodes). In competition, processes were limited to 100GB memory. To avoid interference among job-pairs, only one job-pair was executed at a time on a node. 
 
 
-As this was the first year SMT-COMP used StarExec, a variety of tools and procedures needed to be ported to the new infrastructure. These included the benchmarks, the post-processor for scoring results, tools for creating StarExec jobs based on selections of benchmarks and solvers, the driver application for running the application track, and tools for creating real-time summaries of results in progress. These are now available to be reused in future years.
-\davidc{Did I miss some tools?}
+As this was the first year SMT-COMP used StarExec, a variety of tools and procedures needed to be ported to the new infrastructure. 
+These included the benchmarks, the post-processor for scoring results, 
+a tool to select benchmarks randomly according to the stated policies
+tools for creating StarExec jobs based on selections of benchmarks and solvers, 
+the driver application for running the application track, 
+and tools for creating real-time summaries of results in progress. 
+These are now available to be reused in future years.
 
 The execution of SMT-COMP on StarExec went well, though not flawlessly. As this was a first major use of StarExec for a competition there were some bugs to work through.
 The organizers had some bugs of their own to work through: the scripts to create sets of benchmarks and jobs did not account for spaces in filenames; some initial report generation was incorrect; the postprocessor for translating textual output from solvers into official results needed fine-tuning. These problems were all fixed before or early in the competition. The main issue with StarExec itself was that sometimes jobs would hang or the StarExec infrastructure would fail to make progress. Bugs in scheduling were
@@ -669,6 +674,8 @@ Four solvers participated in this competition track: CVC3, CVC4, SMTInterpol, an
 \centering
 \begin{tabular}{|l|r|rrrr|}
 \hline
+\multicolumn{6}{c}{\textbf{All benchmarks}}
+\hline
 &  & \multicolumn{4}{c|}{check-sat commands} \\
  Logic & Benchmarks & total & min & max & avg. \\
 \hline
@@ -680,6 +687,20 @@ QF\_LRA & 10 & 1515 & 101 & 202 & 151.5 \\
 QF\_UFLIA & 905 & 790630 & 1 & 474174 & 873.6 \\
 QF\_UFLRA & 3333 & 22103 & 2 & 3384 & 6.6 \\
 UFLRA & 5358 & 3514613 & 2 & 40758 & 656.0 \\
+\hline
+\multicolumn{6}{c}{\textbf{Eligible benchmarks}} \\
+\hline
+&  & \multicolumn{4}{c|}{check-sat commands} \\
+ Logic & Benchmarks & total & min & max & avg. \\
+\hline
+AUFNIRA & 165  & 0 & 0 & 0 & 0 \\
+QF\_AUFLIA & 72 & 4699864 & 5 & 1109912 & 65275.9 \\
+QF\_BV & 18 & 2141 & 52 & 202 & 118.9 \\
+QF\_LIA & 65 & 19689957 & 30 & 2630828 & 302922.4 \\
+QF\_LRA & 10 & 795 & 45 & 107 & 79.5 \\
+QF\_UFLIA & 905 & 766079 & 1 & 474174 & 846.5 \\
+QF\_UFLRA & 3333 & 22066 & 0 & 3384 & 6.6 \\
+UFLRA & 5358 & 223820 & 2 & 201 & 41.8 \\
 \hline
 \end{tabular}
 \caption{Numbers of application benchmarks and distribution of check-sat commands for different logics.}
