@@ -42,14 +42,11 @@ keywordstyle={[2]\small\bfseries\sffamily\underbar}
 
 %\usepackage{mathptmx} %% Times fonts, for math as well
 
-%\newcommand{\tjark}[1]{\marginpar{\footnotesize{#1}}}
 \newcommand{\comment}[2]{\begin{quote}\sc #1\marginpar{\textcolor{red}{$\ast^{\mbox{#2}}$}}\end{quote}}
 
 \newcommand{\tjark}[1]{\comment{#1}{TW}}
 \newcommand{\davidd}[1]{\comment{#1}{DD}}
 \newcommand{\davidc}[1]{\comment{#1}{DC}}
-
-\newcommand{\tjarkx}[1]{\tjark{#1}}
 
 \newcommand{\rot}[1]{\begin{turn}{90}#1\end{turn}}
 
@@ -58,7 +55,6 @@ keywordstyle={[2]\small\bfseries\sffamily\underbar}
 \firstpageno{1}
 
 \begin{document}
-
 
 \title{The 2014 SMT Competition}
 
@@ -78,8 +74,8 @@ keywordstyle={[2]\small\bfseries\sffamily\underbar}
 
 \maketitle
 
-\abstract{The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014~\cite{FLoC2014}, at the Vienna Summer of Logic~\cite{VSL} in July 2014. Eighteen solvers participated from thirteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.} 
-The 2014 edition of the SMT Competition was executed for the first time on the StarExec~\cite{DBLP:conf/cade/StumpST14} logic solving service. Several records were broken: number of participating solvers, number of new entrants, number of logic divisions, number of benchmarks, and amount of computation.
+\abstract{The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014, at the Vienna Summer of Logic in July 2014. Eighteen solvers participated from thirteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.} 
+The 2014 edition of the SMT Competition was executed for the first time on the StarExec logic solving service. Several records were broken: number of participating solvers, number of new entrants, number of logic divisions, number of benchmarks, and amount of computation.
 
 \keywords{SMT solver, SMTCOMP, SMT-LIB, Satisfiability Modulo Theories, competitions} 
 
