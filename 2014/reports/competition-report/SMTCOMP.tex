@@ -125,12 +125,12 @@ In the succeeding sections we describe the context of the competition (\S\ref{se
 \section{Context of the competition}
 \label{sec:context}
 
-The SMT Competition is a competition among SMT solvers on a set of benchmark logic problems expressed in the SMT-LIB~\cite{BarST-RR-10} language. Each benchmark problem is a combination of definitions and logical assertions expressed with respect to an underlying logical theory and, perhaps, some constraints on the kinds of expressions in that theory. Each problem has a set of constant or function symbols; a solution to the problem is an assignment of each constant and function evalution to values in a way that satisfies all the problem's assertions. That is, the problem is to find a \emph{satisfying assignment} for the benchmark problem. For example, a problem might be simply a set of assertions in 
+The SMT Competition is a competition among SMT solvers on a set of benchmark logic problems expressed in the SMT-LIB~\cite{BarST-RR-10} language. Each benchmark problem is a combination of definitions and logical assertions expressed with respect to an underlying logical theory and, perhaps, some constraints on the kinds of expressions in that theory. Each problem has a set of constant or function symbols; a solution to the problem is an assignment of each constant and function evaluation to values in a way that satisfies all the problem's assertions. That is, the task is to find a \emph{satisfying assignment} for the benchmark problem. For example, a problem might be simply a set of assertions in 
 propositional logic, in terms of Boolean constants such as $P$, $Q$, and $R$.
 
-As stated, the goal is the same as the SAT competition. The SMT benchmarks extend SAT by incorporating defined theories, such as the theory of arrays, or of undefined functions, or of arithmetic, or of bit-vectors. In addition, there may be constraints on the set of expressions allowed, such as only linear arithmetic, or only integer difference arithmetic. The theories also define \emph{sorts}, which make the theories a kind of typed first-order logic. Examples of sorts used in current theories are Boolean, Int, Real, bit-vectors of various lengths, and arrays with arbitrary sorts as index and value. Each combination of underlying theories and language constraints is a \emph{logic}.
+As stated, the goal of SMT-COMP is similar to the goal of the SAT competition. The SMT benchmarks extend SAT by incorporating defined theories, such as the theory of arrays, or of undefined functions, or of arithmetic, or of bit-vectors. In addition, there may be constraints on the set of expressions allowed, such as only linear arithmetic, or only integer difference arithmetic. The theories also define \emph{sorts}, which make the theories a kind of typed first-order logic. Examples of sorts used in current theories are Boolean, Int, Real, bit-vectors of various lengths, and arrays with arbitrary sorts as index and value. Each combination of underlying theories and language constraints is a \emph{logic}.
 
-The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB (v2) standard \cite{BarST-RR-10}. This standard has been used since 2010; a previous version was used prior to that. One of the goals of the SMT competition is to encourage use and tool implementations of the SMT-LIB standard. The following example illustrates part of this concrete syntax:
+The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB~(v2) standard \cite{BarST-RR-10}. This standard has been used since 2010; a previous version was used prior to that. One of the goals of the SMT competition is to encourage use and tool implementations of the SMT-LIB standard. The following example illustrates part of this concrete syntax:
 \begin{quote}
 \lstset{frameround=fttt}
 \begin{lstlisting}[frame=trBL]
@@ -145,18 +145,18 @@ The benchmark problems are expressed in the concrete syntax defined in the SMT-L
 (check-sat)
 \end{lstlisting}
 \end{quote}
-Keywords are either logic operators or commands. They are typeset in bold;
+Keywords are either logic operators or commands. They are typeset in bold here;
 commands are also underlined.  The command \lstinline{set-logic}
 sets the background theory: \lstinline{UFLIA} is the combination of
-equality with uninterpreted functions (\lstinline{UF}) and linear
-integer arithmetic (\lstinline{LIA}). Next, the command
+equality with uninterpreted functions~(\lstinline{UF}) and linear
+integer arithmetic~(\lstinline{LIA}). Next, the command
 \lstinline{declare-fun} introduces a function symbol, named
 \lstinline{max}, which has two arguments of sort \lstinline{Int} and
 returns an \lstinline{Int} value. Next, two formulas are asserted. The
-first essentially restricts the interpretations of the function named
+first essentially restricts the interpretation of the function named
 \lstinline{max} to the standard interpretation. The second expresses
 (the negation of) a property of this operator. The command
-\lstinline{check-sat} instructs the SMT-solver to check if the formula
+\lstinline{check-sat} instructs the SMT solver to check if the formula
 is satisfiable. Here the expected result is \lstinline{unsat},
 indicating that the desired property is valid. The language includes
 commands that allow a fine-grained interaction with the solver,
@@ -166,7 +166,7 @@ checks, and inspecting models or get unsatisfiability
 proofs. Benchmarks problems that have more than one
 \lstinline{check-sat} command are called \emph{application
   benchmarks}. Not all SMT solvers support all these interaction
-facilities and the main track of the competition does not use such
+facilities, and the main track of the competition does not use such
 application benchmarks.
 
 As of June 2014, the SMT-LIB repository contained over 130,000
