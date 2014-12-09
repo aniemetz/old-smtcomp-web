@@ -188,10 +188,11 @@ distribution of the benchmarks by file size).
 &
 \includegraphics[angle=270,width=.5\textwidth]{smtlib2-app-file-count-by-size.pdf}
 \\
+\\
 Non-incremental benchmarks & Application benchmarks
 \end{tabular}
 \end{center}
-\caption{Distribution of SMT-LIB benchmarks by size.
+\caption{Distribution of SMT-LIB benchmarks by file size.
 \label{fig:smtlib-bysize}}
 \end{figure}
 
@@ -625,12 +626,14 @@ There are two caveats to this observation. First, the results depend heavily on 
 
 Table~\ref{Fig:winners} shows a different view of the same data. Here we note the number of problems solved by each solver within a given wall-clock solution time, subject to the same caveats. The point to observe is that the winning solver changes depending on the timeout chosen. For these benchmarks and this set of solvers Yices2 performs best for timeouts under a second, CVC4 does best in the middle range from 1 to 200 seconds, and Boolector does best above 400 seconds. Other logics, but not all, show changes in winning order as well. This phenomenon could be a result of differences in engineering of the individual solvers or it could be a result of characteristics of the benchmark set.
 
-%\begin{table}
-%\centering
-%\input{QF_BV-timeout}
-%\caption{Solver success for QF\_BV benchmarks vs. timeout limit (in seconds)}
-%\label{Fig:timeouts}
-%\end{table} 
+\begin{figure}
+\begin{center}
+\includegraphics[width=.95\textwidth]{QF_BV-timeout}
+%\includegraphics[width=.95\textwidth]{QF_BV-timeout-logscale}
+\end{center}
+\caption{Solver success for QF\_BV benchmarks over time.}
+\label{Fig:timeouts}
+\end{figure} 
 
 \begin{table}
 \centering
@@ -648,8 +651,8 @@ check using a back-end SMT solver whether the specifications are consistent with
 supply a counterexample that could be inspected in conjunction with the source code. As the user edits the source or the specifications, the problem presented to the SMT solver is modified. 
 
 The application track of the competition presents to the solver a series of SMT-LIB commands through a driver program; the solver replies to the driver with a 
-response to each command. The driver presents commands only one at a time to emulate a realistic environment and so that the solver cannot ``work ahead.'' The driver also measures the accumulated time taken for each response. Note that the time measured includes the response time to every command, not just to the satisfiability-checking commands; while \lstinline{check-sat} commands might the most time-consuming, \lstinline{assert} commands, and others, might also instigate significant processing. The benchmark text contains \lstinline{(set-info :status ...)} commands that 
-indicate the expected result for subsequent \lstinline{check-sat} commands; these commands are used only by the driver program and not passed on to the solver. The \lstinline{set-info} command might indicate a status of \emph{unknown}; in that case, the driver
+response to each command. The driver presents commands only one at a time to emulate a realistic environment and so that the solver cannot ``work ahead.'' The driver also measures the accumulated time taken for each response. Note that the time measured includes the response time to every command, not just to the satisfiability-checking commands; while \lstinline{check-sat} commands might be the most time-consuming, \lstinline{assert} commands, and others, might also instigate significant processing. The benchmark text contains \lstinline{(set-info :status ...)} commands that 
+indicate the expected result for subsequent \lstinline{check-sat} commands; status information is used only by the driver program and not passed on to the solver. The \lstinline{set-info} command might indicate a status of \lstinline{unknown}; in that case, the driver
 considers the benchmark to end after the \emph{previous} \lstinline{check-sat} command for competition purposes.
 
 The application track was first introduced in 2011; a report on that year's application track and the overall design was presented by Griggio and Bruttomesso at the 2012 COMPARE Workshop~\cite{ag+rb+12}. A significantly adapted driver was implemented by the organizers for 2014 on the StarExec framework.
