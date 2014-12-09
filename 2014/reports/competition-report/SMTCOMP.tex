@@ -76,7 +76,7 @@ keywordstyle={[2]\small\bfseries\sffamily\underbar}
 
 \begin{abstract}
 The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014, at the Vienna Summer of Logic in July 2014. Eighteen solvers participated from thirteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.
-The 2014 edition of the SMT Competition was executed for the first time on the StarExec logic solving service. Several records were broken: number of participating solvers, number of new entrants, number of logic divisions, number of benchmarks, and amount of computation.
+The 2014 edition of the SMT Competition was executed for the first time on the StarExec logic solving service. Several records were broken: number of participating solvers, number of new entrants, number of logic divisions, number of benchmarks, and amount of computation. The detailed performance of each solver on each benchmark from this first year using StarExec will be a solid baseline to measure improvements in the state-of-the-art of solver performance in future years.
 \end{abstract}
 
 \keywords{SMT solver, SMTCOMP, SMT-LIB, Satisfiability Modulo Theories, competitions} 
@@ -509,7 +509,7 @@ Each benchmark is assigned a difficulty rating; in 2014, we used the time taken 
 
 Benchmarks are also labeled by category: either as simple checks, as randomly generated problems from some template (e.g., N-queens problems for various values of N), problems crafted to test a certain capability, and problems obtained from industrial applications. The selection rules favor industrial benchmarks.
 
-\davidc{Also want categories of benchmarks and numbers of sat or unsat}
+%\davidc{Also want categories of benchmarks and numbers of sat or unsat}
 
 
 In addition, some kinds of problems may be over-represented in the benchmarks. This may be the case particularly because benchmarks may be submitted by solver developers; a team might add a large number of benchmarks that would then over-represent problems that a particular solver is known to handle well. The rules allow the organizers to limit the selections from sub-populations. 
@@ -553,6 +553,8 @@ fixed during the competition but are not entirely resolved. Accordingly, jobs ne
 \label{sec:timeouts}
 
 Table \ref{Table:maintrack} shows a summary of the main track results. The detailed data for each division is on the competition website: \url{http://smtcomp.sourceforge.net/2014/results-toc.shtml}.
+
+Unfortunately, we cannot make a useful comparison with previous years for a number of reasons. First, until the evaluation in 2013, the competition was run on a different computation infrastructure, so solution times are not comparable. The SMT evaluation in 2013 and the competition in 2014 were run with different timeouts and different configurations of nodes. Finally the early data from StarExec only captured wall-clock time, not CPU time. The organizers are confident that the 2014 data will be a solid baseline for evaluating progress in solver performance in future years.
  
 \begin{table}
 \centering
@@ -612,8 +614,6 @@ UFNIA & 	3 & 	1587 & 	[Z3]; \win{CVC4}; CVC3. \\
 \label{Table:maintrack}
 \end{table}
 
-%%\davidd{Contents of columns 2 and 3 has been presented in preceding table: should we remove them to keep the table smaller?} I think it is useful here - DC
-\davidc{Include discussion of main track results - what points to make?}
 
 \paragraph{Effect of timeout.}
 In the main track competition, the organizers set a timeout of 40~minutes, much longer than in previous competitions (e.g., 25 minutes in 2012).  A common practical question users have is how much benefit is gained by longer timeouts. The data from the competition allows us to analyze this question somewhat.
@@ -854,7 +854,7 @@ The unknown incremental benchmarks have yet to be resolved.
 \label{sec:conclusions}
 
 SMT-COMP 2014 successfully executed the comparison among solvers that is the main goal
-of the competition. The new computational infrastructure, StarExec, worked very well for the purpose. The competition saw a renewed interest in participation\textemdash there were record numbers of teams participating, solvers entered, teams and solvers that had never before participated, and benchmarks used.
+of the competition. The new computational infrastructure, StarExec, worked very well for the purpose. The competition saw a renewed interest in participation\textemdash there were record numbers of teams participating, solvers entered, teams and solvers that had never before participated, and benchmarks used. Although the 2014 results are not usefully comparable to previous years, the detailed performance of each solver on each benchmark from this first year using StarExec will be a solid baseline to measure improvements in the state-of-the-art of solver performance in future years.
 
 This year's competition also saw the inauguration of a new, sibling competition. The organizers helped start and execute SL-COMP~\cite{SLCOMP}, a competition among solvers for separation logic. 
 
@@ -900,7 +900,8 @@ in this first large-scale, public use of the cluster, numerous small details nee
 The StarExec cluster is supported by 
 U.S.\ National Science Foundation under grants \#1058748 and \#1058925.
 %
-The cost of executing the SMT Competition is underwritten by the SMT Workshop. 
+\item The cost of executing the SMT Competition is underwritten by the SMT Workshop. 
+\end{itemize}
 
 Any opinions,
 findings, and conclusions or recommendations expressed in this
