@@ -51,7 +51,7 @@ keywordstyle={[2]\small\bfseries\sffamily\underbar}
 \newcommand{\rot}[1]{\begin{turn}{90}#1\end{turn}}
 
 \jsatheading{number}{year}{startpage-endpage}
-\ShortHeadings{The 2014 SMT Competition}{D. Cok et al.}
+\ShortHeadings{The 2014 SMT Competition}{D.\ Cok et al.}
 \firstpageno{1}
 
 \begin{document}
@@ -74,8 +74,10 @@ keywordstyle={[2]\small\bfseries\sffamily\underbar}
 
 \maketitle
 
-\abstract{The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014, at the Vienna Summer of Logic in July 2014. Eighteen solvers participated from thirteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.} 
+\begin{abstract}
+The 2014 SMT Competition was held in conjunction with the SMT workshop, affiliated with the CAV, IJCAR, and SAT conferences at FLoC 2014, at the Vienna Summer of Logic in July 2014. Eighteen solvers participated from thirteen different research groups, across 34 different logic divisions. The competition was also part of the FLoC Olympic Games event, which gave combined visibility to 14 different competitions related to automated logic problem solving.
 The 2014 edition of the SMT Competition was executed for the first time on the StarExec logic solving service. Several records were broken: number of participating solvers, number of new entrants, number of logic divisions, number of benchmarks, and amount of computation.
+\end{abstract}
 
 \keywords{SMT solver, SMTCOMP, SMT-LIB, Satisfiability Modulo Theories, competitions} 
 
@@ -122,7 +124,7 @@ about previous years' competitions is also available at that website and in publ
 
 In the succeeding sections we describe the context of the competition (\S\ref{sec:context}), its goals and organization (\S\ref{sec:goals}), timeline (\S\ref{sec:timeline}), procedure (\S\ref{sec:procedure}), participants (\S\ref{sec:participants}), benchmarks (\S\ref{sec:benchmarks}), computational infrastructure (\S\ref{sec:starexec}), results (\S\ref{sec:results}), and the place of SMT-COMP in the FLoC Olympic Games (\S\ref{sec:floc}). Section \ref{sec:conclusions} presents observations on this competition and recommendations for the future.
 
-\section{Context of the competition}
+\section{Context of the Competition}
 \label{sec:context}
 
 The SMT Competition is a competition among SMT solvers on a set of benchmark logic problems expressed in the SMT-LIB~\cite{BarST-RR-10} language. Each benchmark problem is a combination of definitions and logical assertions expressed with respect to an underlying logical theory and, perhaps, some constraints on the kinds of expressions in that theory. Each problem has a set of constant or function symbols; a solution to the problem is an assignment of each constant and function evaluation to values in a way that satisfies all the problem's assertions. That is, the task is to find a \emph{satisfying assignment} for the benchmark problem. For example, a problem might be simply a set of assertions in 
@@ -158,11 +160,12 @@ first essentially restricts the interpretation of the function named
 (the negation of) a property of this operator. The command
 \lstinline{check-sat} instructs the SMT solver to check if the formula
 is satisfiable. Here the expected result is \lstinline{unsat},
-indicating that the desired property is valid. The language includes
-commands that allow a fine-grained interaction with the solver,
-whereby client tools may incrementally push and pop symbol
-declarations and assertions while running several satisfiability
-checks, and inspecting models or get unsatisfiability
+indicating that the desired property is valid.
+
+The language includes commands that allow a fine-grained interaction
+with the solver, whereby client tools may incrementally push and pop
+symbol declarations and assertions while running several
+satisfiability checks, and inspecting models or get unsatisfiability
 proofs. Benchmarks problems that have more than one
 \lstinline{check-sat} command are called \emph{application
   benchmarks}. Not all SMT solvers support all these interaction
@@ -173,8 +176,8 @@ As of June 2014, the SMT-LIB repository contained over 130,000
 non-incremental benchmarks divided into 34 background theories, and
 close to 10,000 application benchmarks distributed into 8 background
 theories. The size of a benchmark file may vary from a few hundred
-bytes to several dozen megabytes (see Fig.~\ref{fig:smtlib-bysize} for
-a distribution of the benchmarks by file size).
+bytes to several gigabytes (see Fig.~\ref{fig:smtlib-bysize} for a
+distribution of the benchmarks by file size).
 
 \begin{figure}
 \begin{center}
@@ -186,14 +189,14 @@ a distribution of the benchmarks by file size).
 Non-incremental benchmarks & Application benchmarks
 \end{tabular}
 \end{center}
-\caption{Distribution of SMT-LIB2 non-incremental benchmarks by size.
+\caption{Distribution of SMT-LIB benchmarks by size.
 \label{fig:smtlib-bysize}}
 \end{figure}
 
 SMT solvers are automated tools that seek to find a satisfying assignment for a given SMT-LIB problem, or to assure that the problem is \emph{unsatisfiable}.
 Tools may not be able to solve a given problem, because, for example the tool exhausts available memory or time; a tool is permitted to answer \emph{unknown}. However, giving an incorrect answer (\emph{sat} instead of \emph{unsat}, or vice versa) is considered \emph{unsound} and a serious fault in the tool.
 
-SMT differs from the CASC competition~\cite{PSS02} in directly addressing sorted logics. SMT also focuses on fragments of first-order logic that are \emph{decidable}. For example, a subset of the benchmarks are problems in an integer-difference logic, for which there are specific decision procedures. The competition among tools is to create very efficient implementations of a breadth of decision procedures. Accordingly, SMT solvers have historically also not handled logics with quantified expressions, though several currently now do so.
+SMT differs from the CASC competition~\cite{PSS02} in directly addressing sorted logics. SMT also focuses on fragments of first-order logic that are \emph{decidable}. For example, a subset of the benchmarks are problems in an integer-difference logic, for which there are specific decision procedures. The competition among tools is to create very efficient implementations of a breadth of decision procedures. Accordingly, SMT solvers have historically not handled logics with quantified expressions, though several solvers now do so.
 
 \section{The Competition Goals and Organization}
 \label{sec:goals}
@@ -214,27 +217,27 @@ in the capability of SMT solvers. SMT-COMP 2014 benefited from the evaluation th
 
 An important difference between the 2014 competition and previous competitions was that this year's competition was executed on the StarExec cluster, described below in \S\ref{sec:starexec}. All the supporting tools and related procedures needed to be ported to this new framework. With watchful eyes by the organizers and the StarExec team, and with some debugging, the StarExec framework worked well and enabled a larger scale of competition than in previous years.
 
-\section{Competition timeline}
+\section{Competition Timeline}
 \label{sec:timeline}
 
 The preparation and execution of SMT-COMP 2014 took place over about 7 months, relying on the experience of previous competitions, the 2013 SMT Evaluation, and development activity on StarExec:
 \begin{itemize}
-\item July 2013 - Cok appointed as chair of the organizing committee.
-\item December 2013 - D\'{e}harbe and Weber appointed as co-coordinators.
+\item July 2013 -- Cok appointed as chair of the organizing committee.
+\item December 2013 - D\'{e}harbe and Weber appointed as co-organizers.
 \item 21 January 2014 - call for applications and benchmarks.
 \item 15 May 2014 - deadline for new benchmarks; benchmarks were being corrected and curated throughout May and June, until the final solver deadline.
 \item 19 May 2014 - revised rules posted.
 \item 1 June 2014 - deadline for initial solver registration; final rules posted.
 \item 15 June 2014 - deadline for final solver registration.
 \item 16 June 2014 - computation begins.
-\item 22 June 2014 - main track computation ends; official results posted on 6/27. 
+\item 22 June 2014 - main track computation ends; official results posted on 27~June.
 \item 22 June 2014 - deadline for application track solvers.
 \item 28 June 2014 - application track computation.
 \item 17 July 2014 - SMT Workshop at which results were announced.
 \item 21 July 2014 - FLoC Olympic Games Awards Ceremony.
 \end{itemize}
 
-\section{Competition procedure} 
+\section{Competition Procedure} 
 \label{sec:procedure}
 
 
@@ -396,7 +399,7 @@ The introduction in 2010 of SMT-LIBv2 as the standard language for benchmarks wa
 As a result, some solvers did not continue participating, at least not immediately. However, the use of SMTLIBv2 also increased the expressiveness of benchmarks. SMTLIBv2 introduced a set of (optional) commands to enable richer interactions with solvers. Thus benchmarks representing the needs of industrial applications were able to be added; 
 the application track of the competition was added to demonstrate the interactive capability and the corresponding abilities of solvers.
 
-\section{Competition divisions and benchmarks}
+\section{Competition Divisions and Benchmarks}
 \label{sec:benchmarks}
 
 The SMT-LIB benchmarks each belong to a specific logic. Each logic is one competition division. For each division we ran the solvers that entered that division on the benchmarks for that division as one event in the overall competition.
@@ -712,10 +715,7 @@ UFLRA & 5358 & 223820 & 2 & 201 & 41.8 \\
 
 \davidc{Include discussion of application track results - what points to make?}
 
-
-
-
-\section{FLoC Olympic games}
+\section{FLoC Olympic Games}
 \label{sec:floc}
 
 The main track and the application track described in previous sections are staples of recent SMT competitions. The 2014 edition was unique in also being associated with the FLoC Olympic Games~\cite{FLoCGames}.
@@ -816,8 +816,9 @@ abziz\_all\_features &	9  &		2093 	 &	 	122540.04 \\
 \label{Table:bronze}
 \end{table}
 
-\section{Post-competition activity}
+\section{Post-Competition Activity}
 \label{sec:post}
+
 After the competition, David Cok (competition chair) and Clark Barrett and Morgan Deters (SMT-LIB coordinators) collaborated, with the assistance of Aaron Stump (StarExec lead) in attempting to discover the status of the SMT-LIB benchmarks that were marked as unknown. For this computation, the timeout was set to 10 hours. This activity required several weeks of computation. A result confirmed by at least two solvers was obtained for 75\% of the unknown benchmarks, with another 4\% having a tentative result from just one solver.
 %The results are shown in Table~\ref{Fig:post}. 
 
@@ -860,7 +861,7 @@ The unknown incremental benchmarks have yet to be resolved.
 %\end{table}
 
 
-\section{Concluding observations and recommendations}
+\section{Concluding Observations and Recommendations}
 \label{sec:conclusions}
 
 SMT-COMP 2014 successfully executed the comparison among solvers that is the main goal
