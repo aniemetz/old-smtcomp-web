@@ -22,8 +22,7 @@
 \usepackage{listings}
 \lstdefinelanguage{smtlib2}
   {alsoletter={-, =},
-   morekeywords={let,forall,and,or,not,=},
-   morekeywords={[2]set-logic,declare-fun,assert,check-sat,set-info},
+   morekeywords={set-logic,declare-fun,assert,check-sat,set-info},
    sensitive=false,
    morecomment=[l]{;}}
 \lstset{language=smtlib2,
@@ -132,7 +131,8 @@ The SMT Competition is a competition among SMT solvers on a set of benchmark log
 As stated, the goal of SMT-COMP is similar to the goal of the SAT competition. The SMT benchmarks extend SAT by incorporating defined theories, such as the theory of arrays, or of undefined functions, or of arithmetic, or of bit-vectors. In addition, there may be constraints on the set of expressions allowed, such as only linear arithmetic, or only integer difference arithmetic. The theories also define \emph{sorts}, which make the theories a kind of typed first-order logic. Examples of sorts used in current theories are Boolean, Int, Real, bit-vectors of various lengths, and arrays with arbitrary sorts as index and value. Each combination of underlying theories and language constraints is a \emph{logic}.
 
 The benchmark problems are expressed in the concrete syntax defined in the SMT-LIB~(v2) standard \cite{BarST-RR-10}. This standard has been used since 2010; a previous version was used prior to that. One of the goals of the SMT Competition is to encourage use and tool implementations of the SMT-LIB standard. The following example illustrates part of this concrete syntax:
-\davidc{I find the underscores in the figure and the text confusing and misleading. Bold should be sufficient. Also and and or are no more keywords than >=}
+
+\begin{minipage}{\textwidth}
 \begin{quote}
 \lstset{frameround=fttt}
 \begin{lstlisting}[frame=trBL]
@@ -147,19 +147,21 @@ The benchmark problems are expressed in the concrete syntax defined in the SMT-L
 (check-sat)
 \end{lstlisting}
 \end{quote}
-Keywords are either logic operators or commands. They are typeset in bold here;
-commands are also underlined.  The command \lstinline{set-logic}
-sets the background theory: \lstinline{UFLIA} is the combination of
-equality with uninterpreted functions~(\lstinline{UF}) and linear
-integer arithmetic~(\lstinline{LIA}). Next, the command
+\end{minipage}
+
+Commands to the SMT solver are typeset in bold here.  The command
+\lstinline{set-logic} sets the background theory: \lstinline{UFLIA} is
+the combination of equality with uninterpreted
+functions~(\lstinline{UF}) and linear integer
+arithmetic~(\lstinline{LIA}). Next, the command
 \lstinline{declare-fun} introduces a function symbol, named
 \lstinline{max}, which has two arguments of sort \lstinline{Int} and
 returns an \lstinline{Int} value. Next, two formulas are asserted. The
 first essentially restricts the interpretation of the function named
 \lstinline{max} to the standard interpretation. The second expresses
 (the negation of) a property of this operator. The command
-\lstinline{check-sat} instructs the SMT solver to check if the formula
-is satisfiable. Here the expected result is \lstinline{unsat},
+\lstinline{check-sat} instructs the SMT solver to check if the assertions
+are satisfiable. Here the expected result is \lstinline{unsat},
 indicating that the desired property is valid.
 
 The language includes commands that allow a fine-grained interaction
@@ -208,7 +210,7 @@ in the capability of SMT solvers. SMT-COMP 2014 benefited from the evaluation th
 \item We ran the competition with all available benchmarks. To be eligible, a benchmark must be well-formed and have a known answer. We were able to use all benchmarks because we had nearly exclusive use of the StarExec cluster during the time we were executing SMT-COMP. This point is discussed further in \S\ref{sec:procedure}.
 \item In 2012 some experimental tracks were held: parallel performance, unsat cores, and proof generation. The participation in those tracks was light. Since in 2014 we also had to migrate to using StarExec, we held only a main track and an application (incremental) track in the 2014 competition. The organizers still maintain the value of measuring the performance of solvers on new features such as model generation, unsat core determination, and proof generation, and recommend that they be reinstated in some future edition of the competition.
 \item A significant change in 2014 was to increase the time-out limit for a solver processing a given benchmark from 25 minutes (in 2012) to 40 minutes.
-\item A significant result of the 2013 Evaluation was that the result of a competition was highly sensitive to the selection of benchmarks: different random selections of benchmarks resulted in different winning orders in a large fraction of samples. Hence, an aim for 2014 was to use a large a benchmark set as possible in the competition to minimize this effect.
+\item A significant result of the 2013 Evaluation was that the result of a competition was highly sensitive to the selection of benchmarks: different random selections of benchmarks resulted in different winning orders in a large fraction of samples. Hence, an aim for 2014 was to use as large a benchmark set as possible in the competition to minimize this effect.
 
 
 
@@ -513,8 +515,6 @@ Benchmarks are also labeled by category: either as simple checks, as randomly ge
 In addition, some kinds of problems may be over-represented in the benchmarks. This may be the case particularly because benchmarks may be submitted by solver developers; a team might add a large number of benchmarks that would then over-represent problems that a particular solver is known to handle well. The rules allow the organizers to limit the selections from sub-populations. 
 
 In the end, there was sufficient time to use all eligible benchmarks and no further selection was performed. The 2014 organizers did not have the data to make a principled decision on over-representation of particular problem types and so did not select on this basis either. The absence of such selection may have affected the competition results and future organizing teams should reconsider this aspect even if there are sufficient computational resources to execute all benchmarks. The data from SMT-COMP 2014 could be used to inform this decision.
-
-\davidc{Should the example from the introduction be included here instead.}
 
 \paragraph{The SMT-LIB language.} A competition based on benchmark problems needs a standard language in which to express those problems.
 For SMT-COMP, that language is the SMT-LIB language (cf.~\url{http://www.smtlib.org}) \cite{BarST-SMT-10,Cok-SMTLIBTutorial-2011}.
