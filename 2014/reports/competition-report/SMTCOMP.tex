@@ -170,17 +170,17 @@ with the solver, whereby client tools may incrementally push and pop
 symbol declarations and assertions while running several
 satisfiability checks, and inspecting models or get unsatisfiability
 proofs. Benchmarks problems that have more than one
-\lstinline{check-sat} command are called \emph{application
+\lstinline{check-sat} command are called \emph{application} or \emph{incremental
   benchmarks}. Not all SMT solvers support all these interaction
 facilities, and the main track of the competition does not use such
 application benchmarks.
 
 As of June 2014, the SMT-LIB repository contained over 130,000
 non-incremental benchmarks divided into 34 background theories, and
-close to 10,000 application benchmarks distributed into 8 background
+close to 10,000 incremental benchmarks distributed across 8 background
 theories. The size of a benchmark file may vary from a few hundred
-bytes to several gigabytes (see Fig.~\ref{fig:smtlib-bysize} for a
-distribution of the benchmarks by file size).
+bytes to several gigabytes. Fig.~\ref{fig:smtlib-bysize} shows the
+distribution of the benchmarks by file size.
 
 \begin{figure}
 \begin{center}
@@ -224,7 +224,7 @@ An important difference between the 2014 competition and previous competitions w
 \label{sec:timeline}
 
 The preparation and execution of SMT-COMP 2014 took place over about 7 months, relying on the experience of previous competitions, the 2013 SMT Evaluation, and development activity on StarExec:
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item July 2013 -- Cok appointed as chair of the organizing committee.
 \item December 2013 -- D\'{e}harbe and Weber appointed as co-organizers.
 \item 21 January 2014 -- call for applications and benchmarks.
@@ -257,7 +257,7 @@ The organizers also received and adjudicated an appeal after the competition com
 
 During the testing prior to the competition beginning, different solvers exhibited different behavior on some benchmarks. Investigation revealed that these differences were the result of different treatments of partial operations, divide by zero, in particular. The question is what should be the definition of divide by zero in SMT-LIB's logic of total functions. This question had been discussed at length over previous years, with proposals to clarify the SMT-LIB standard.
 There was certainly not time to resolve this matter prior to the competition, not to mention correcting solvers to the agreed behavior.\footnote{The discussion this time around can be found in the archives of the \url{smtcomp-discussion@lists.sourceforge.net} mailing list, in the few days near 2014-06-16.}
-Thus, for the competition, we decided to omit all benchmarks (6060 of them) that were affected by divide-by-zero behavior. This question, however, remains open.
+Thus, for the competition, we decided to omit all benchmarks (6060 of them, 1348 of which were otherwise eligible) that were affected by divide-by-zero behavior. This question, however, remains open.
 
 \paragraph{Invite and validate solver submissions.} The 2014 competition saw the first use of the StarExec computational cluster (cf. \S\ref{sec:starexec}) for executing the competition. Each solver had to be wrapped in appropriate scripts to be able to run in the StarExec environment. Though this was largely the responsibility of the solver submitter, teams submitting solvers for the first time required guidance and assistance from the organizers and the StarExec development team. This was a significant hurdle; not all solver teams were able to complete it in time. The most significant problem was the need to create a fully statically linked version of the solver that ran on the particular version of Linux used by StarExec. The organizers stipulated a first solver submission deadline and a final solver submission deadline, separated by two weeks, to enable (and encourage) trials and debugging of solver submissions.
 
@@ -308,7 +308,7 @@ The competition registration includes information about each competing solver. I
 
 There were a few solvers that the organizers hoped would be submitted but were not: Tiffany de Wintermonte was submitted in the past by Trevor Hansen, but could not be prepared in time for this competition; similarly SMT-RAT was withdrawn because of last minute bugs; MathSat has been a frequent competitor in the past, but changes in priorities of the development team caused it not to compete in 2014; MiniSMT also was not able to be submitted; similarly, the Z3 team, from Microsoft Research, though Z3 is a strong tool, has chosen not to take the time to prepare competition versions.
 
-Other than those omissions, every competitive solver known to the organizers was represented. Indeed, the participation by solver teams was a record high in 2014. 
+Other than those omissions, every competitive solver known to the organizers was represented. Indeed, the participation by solver teams was a record high in 2014. In addition, four teams submitting five solvers had not participated in previous competitions. 
 
 As in past competitions, the organizers included some publicly available historical solvers. These solvers are run in the competition for comparison, but are designated as demonstration only and are not eligible for any awards or designations of having won the competition. In result tables, these solvers are listed with their names in square brackets (e.g., [MathSat]). The organizers included current versions of MathSat and Z3. Also, during the competition, a bug-fix release of CVC4 (named CVC4-with-bugfix) was submitted and included as a demonstration only version (cf. \S\ref{sec:floc}).
 
@@ -416,51 +416,51 @@ The SMT-LIB coordinators performed a curation step on the entire benchmark libra
 
 \begin{table}
 \centering
-\begin{tabular}{|l|r|r|r|r|r|r|}
+\begin{tabular}{|l|r|r|r|r|r|}
 \hline
-       & \multicolumn{1}{|c|}{\# of} & \multicolumn{5}{|c|}{\# of benchmarks} \\
- Logic & solvers & eligible & unknown  & trivial & div-by-0 & total  \\
+       & \multicolumn{1}{|c|}{\# of} & \multicolumn{4}{|c|}{\# of benchmarks} \\
+ Logic & solvers & eligible & unknown  & trivial & total  \\
 \hline
-ALIA & 3+[1] & 29 & 0 & 13 &  & 42 \\
-AUFLIA & 3+[1] & 4 & 0 & 0 & & 4\\
-AUFLIRA & 3+[1] & 10791 & 168 & 9055 & & 20014 \\
-AUFNIRA & 2+[2] & 564 & 468 & 463 & & 1495 \\
-BV & 2+[1] & 0 & 170 & 0 &  & 191 \\
-LIA & 3+[1] & 46 & 0 & 0 & & 46 \\
-LRA & 3+[1] & 171 & 450 & 0 & & 621\\
-NIA & 2+[1] & 9 & 0 & 0 & & 9\\
-NRA & 2+[1] & 3747 & 66 & 0 & & 3813 \\
-QF\_ABV & 7+[2] & 6457 & 4191 & 4423 & 21 & 15091 \\
-QF\_ALIA & 3+[2] & 97 & 0 & 29 & & 126 \\
-QF\_AUFBV & 2+[2] & 37 & 0 & 0 & & 37 \\
-QF\_AUFLIA & 4+[2] & 610 & 0 & 399 & & 1009\\
-QF\_AX & 3+[2] & 335 & 0 & 216 & & 551 \\
-QF\_BV & 8+[3] & 2488 & 28138 & 546 & 1328 & 32500 \\
-QF\_IDL & 3+[1] & 1315 & 537 & 337 & & 2189 \\
-QF\_LIA & 4+[3] & 4381 & 1279 & 481 & & 6141 \\
-QF\_LRA & 4+[2] & 1343 & 208 & 131 & & 1682\\ 
-QF\_NIA & 3+[1] & 8327 & 927 & 105 & & 9359 \\
-QF\_NRA & 3+[1] & 10121 & 1392 & 27 & & 11540 \\
-QF\_RDL & 3+[1] & 132 & 85 & 38 & & 255 \\
-QF\_UF & 5+[2] & 4124 & 4 & 2522 & & 6650 \\
-QF\_UFBV & 2+[2] & 31 & 0 & 0 & & 31 \\
-QF\_UFIDL & 3+[1] & 311 & 0 & 130 & & 441\\
-QF\_UFLIA & 4+[2] & 484 & 0 & 114 & & 598 \\
-QF\_UFLRA & 4+[2] & 1176 & 87 & 367 & & 1630 \\
-QF\_UFNIA & 2+[1] & 7 & 0 &0 & & 7 \\
-QF\_UFNRA & 2+[1] & 32 & 11 & 0 & & 43\\
-UF & 3+[1] & 2830 & 2911 & 7 & & 5748 \\
-UFBV & 2+[1] & 0 & 191 & 0 & & 191 \\
-UFIDL & 2+[1] & 49 & 12 & 19 & & 80 \\
-UFLIA & 3+[1] & 5766 & 5499 & 873 & & 12138 \\
-UFLRA & 3+[1] & 25 & 0 & 0 & & 25\\
-UFNIA & 2+[1] & 1587 & 1052 & 712 & & 3351 \\
+ALIA & 3+[1] & 29 & 0 & 13 & 42 \\
+AUFLIA & 3+[1] & 4 & 0 & 0 & 4\\
+AUFLIRA & 3+[1] & 10791 & 168 & 9055 & 20014 \\
+AUFNIRA & 2+[2] & 564 & 468 & 463 & 1495 \\
+BV & 2+[1] & 0 & 191 & 0 & 191 \\
+LIA & 3+[1] & 46 & 0 & 0 & 46 \\
+LRA & 3+[1] & 171 & 450 & 0 & 621\\
+NIA & 2+[1] & 9 & 0 & 0 & 9\\
+NRA & 2+[1] & 3747 & 66 & 0 & 3813 \\
+QF\_ABV & 7+[2] & 6457* & 4191 & 4423 & 15091 \\
+QF\_ALIA & 3+[2] & 97 & 0 & 29 & 126 \\
+QF\_AUFBV & 2+[2] & 37 & 0 & 0 & 37 \\
+QF\_AUFLIA & 4+[2] & 610 & 0 & 399 & 1009\\
+QF\_AX & 3+[2] & 335 & 0 & 216 & 551 \\
+QF\_BV & 8+[3] & 2488* & 28138 & 546 & 32500 \\
+QF\_IDL & 3+[1] & 1315 & 537 & 337 & 2189 \\
+QF\_LIA & 4+[3] & 4381 & 1279 & 481 & 6141 \\
+QF\_LRA & 4+[2] & 1343 & 208 & 131 & 1682\\ 
+QF\_NIA & 3+[1] & 8327 & 927 & 105 & 9359 \\
+QF\_NRA & 3+[1] & 10121 & 1392 & 27 & 11540 \\
+QF\_RDL & 3+[1] & 132 & 85 & 38 & 255 \\
+QF\_UF & 5+[2] & 4124 & 4 & 2522 & 6650 \\
+QF\_UFBV & 2+[2] & 31 & 0 & 0 & 31 \\
+QF\_UFIDL & 3+[1] & 311 & 0 & 130 & 441\\
+QF\_UFLIA & 4+[2] & 484 & 0 & 114 & 598 \\
+QF\_UFLRA & 4+[2] & 1176 & 87 & 367 & 1630 \\
+QF\_UFNIA & 2+[1] & 7 & 0 &0 & 7 \\
+QF\_UFNRA & 2+[1] & 32 & 11 & 0 & 43\\
+UF & 3+[1] & 2830 & 2911 & 7 & 5748 \\
+UFBV & 2+[1] & 0 & 191 & 0 & 191 \\
+UFIDL & 2+[1] & 49 & 12 & 19 & 80 \\
+UFLIA & 3+[1] & 5766 & 5499 & 873 & 12138 \\
+UFLRA & 3+[1] & 25 & 0 & 0 & 25\\
+UFNIA & 2+[1] & 1587 & 1052 & 712 & 3351 \\
 \hline
-Total & 18+[3] & 67426 & 47867 & 21007 & 1349 & 137648 \\
+Total & 18+[3] & 67426 & 47867 & 21007 & 137648 \\
 \hline
 \end{tabular}
 \vspace{.2in}
-\caption{Numbers of main-track benchmarks. The second column shows the number of competitive solvers and, in square brackets, the number of demonstration-only solvers.}
+\caption{Numbers of main-track benchmarks. The second column shows the number of competitive solvers and, in square brackets, the number of demonstration-only solvers. Entries marked * exclude some benchmarks containing partial functions.}
 \label{Table:benchmarks}
 \end{table}
 
@@ -509,7 +509,7 @@ Yices2 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	\mark & 	\mark & 	\mark &
 
 Each benchmark is assigned a difficulty rating; in 2014, we used the time taken to solve the benchmark by the best performing solver in the 2013 SMT Evaluation. These values were publicly available prior to the competition. The difficulty ratings are used to divide the benchmarks into 5 quintiles. The rules describe a procedure for selecting $N$ out of the eligible benchmarks for a division, with the intent of selecting roughly equal numbers, if they are available, from each of the quintiles.
 
-Benchmarks are also labeled by category: either as simple checks, as randomly generated problems from some template (e.g., N-queens problems for various values of N), problems crafted to test a certain capability, and problems obtained from industrial applications. The selection rules favor industrial benchmarks.
+Benchmarks are also labeled by category: simple checks, randomly generated problems from some template (e.g., N-queens problems for various values of N), problems crafted to test a certain capability, and problems obtained from industrial applications. The selection rules favor industrial benchmarks.
 
 %\davidc{Also want categories of benchmarks and numbers of sat or unsat}
 
@@ -543,8 +543,11 @@ and tools for creating real-time summaries of results in progress.
 These are now available to be reused in future years.
 
 The execution of SMT-COMP on StarExec went well, though not flawlessly. As this was a first major use of StarExec for a competition there were some bugs to work through.
-The organizers had some bugs of their own: the scripts to create sets of benchmarks and jobs did not account for spaces in filenames; some initial report generation was incorrect; the postprocessor for translating textual output from solvers into official results needed fine-tuning. These problems were all fixed before or early in the competition. The main issue with StarExec itself was that sometimes jobs would hang or the StarExec infrastructure would fail to make progress. Bugs in scheduling were
+The organizers had some bugs of their own: the scripts to create sets of benchmarks and jobs did not account for spaces in filenames; some initial report generation was incorrect; the postprocessor for translating textual output from solvers into official results needed fine-tuning. These problems were all fixed before or early in the competition. The main issue with StarExec itself was that sometimes jobs would hang or the StarExec infrastructure would fail to make 
+progress or report results correctly. Bugs in scheduling were
 fixed during the competition but are not entirely resolved. Accordingly, jobs need regular monitoring that they are making progress.
+
+Overall, however, StarExec performed its function well: evaluations of 339714 solver-benchmark pairs were completed for the competition over a period of about 9 days, not even counting the restarts necessary because of bugs or misconfigurations.
 
 \section{Results}
 \label{sec:results}
@@ -554,7 +557,7 @@ fixed during the competition but are not entirely resolved. Accordingly, jobs ne
 
 Table \ref{Table:maintrack} shows a summary of the main track results. The detailed data for each division is on the competition website: \url{http://smtcomp.sourceforge.net/2014/results-toc.shtml}.
 
-Unfortunately, we cannot make a useful comparison with previous years for a number of reasons. First, until the evaluation in 2013, the competition was run on a different computation infrastructure, so solution times are not comparable. The SMT evaluation in 2013 and the competition in 2014 were run with different timeouts and different configurations of nodes. Finally the early data from StarExec only captured wall-clock time, not CPU time. The organizers are confident that the 2014 data will be a solid baseline for evaluating progress in solver performance in future years.
+Unfortunately, we cannot make a useful comparison with previous years for a number of reasons. First, until the evaluation in 2013, the competition was run on a different computation infrastructure, so solution times are not comparable. The SMT evaluation in 2013 and the competition in 2014 were both run on StarExec but with different timeouts and different configurations of nodes. Finally the early data from StarExec only captured wall-clock time, not CPU time. The organizers are confident that the 2014 data will be a solid baseline for evaluating progress in solver performance in future years.
  
 \begin{table}
 \centering
@@ -621,16 +624,16 @@ In the main track competition, the organizers set a timeout of 40~minutes, much 
 A first question is how many additional problems are solved if the timeout is lengthened. An approximation
 of an answer is shown in Fig.~\ref{Fig:timeouts}. This figure shows the number of benchmarks solved,  combined over all the solvers in the competition, with a solution time less than given timeout values, for the QF\_BV benchmark set.
 Most of the benchmarks are solved quickly: 39\% in less than a second, more than half in under 3.5 seconds, 
-62\% by 10 seconds, and then a slow increase to 88\% by 2400 seconds. There is continual improvement for long timeouts, but the return on time invested certainly decreases. 
+62\% by 10 seconds, and then a slow increase to 88\% by 2400 seconds. There is continual improvement for long timeouts, but the return on time invested certainly decreases.
 
-There are two caveats to this observation. First, the results depend heavily on the character of the benchmarks set. Some logics have only easy benchmarks, some have purposefully crafted difficult benchmarks, others are a mix. The benchmarks are not a representative sampling of problems that might be encountered in practice.  Second, the results described are obtained by observing the wall-clock solution time when the timeout value is set at 2400 seconds. Solvers, if told what the timeout value is, have the option to adjust their search strategies based on the timeout; the solvers might then exhibit even better behavior for shorter timeout.\footnote{Though solvers could use the timeout value, current versions of those queried\textemdash Yices2, Z3, Boolector\textemdash do not do so. However, CVC4 and CVC3 do build in the stated timeout into the script used for competition (though it is not used by the core solver) and so might show differences from the behavior stated here.}
+There are two caveats to this observation. First, the results depend heavily on the character of the benchmarks set. Some logics have only easy benchmarks, some have purposefully crafted difficult benchmarks, others are a mix. The benchmarks are not a representative sampling of problems that might be encountered in practice.  Second, the results described are obtained by observing the wall-clock solution time when the timeout value is set at 2400 seconds. Solvers, if told what the timeout value is, have the option to adjust their search strategies based on the timeout; the solvers might then exhibit better behavior for shorter timeout.\footnote{Though solvers could use the timeout value, current versions of those queried\textemdash Yices2, Z3, Boolector\textemdash do not do so. However, CVC4 and CVC3 do build in the stated timeout into the script used for competition (though it is not used by the core solver) and so might show differences from the behavior stated here.}
 
 Table~\ref{Fig:winners} shows a different view of the same data. Here we note the number of problems solved by each solver within a given wall-clock solution time, subject to the same caveats. The point to observe is that the winning solver changes depending on the timeout chosen. For these benchmarks and this set of solvers Yices2 performs best for timeouts under a second, CVC4 does best in the middle range from 1 to 200 seconds, and Boolector does best above 400 seconds. Other logics, but not all, show changes in winning order as well. This phenomenon could be a result of differences in engineering of the individual solvers or it could be a result of characteristics of the benchmark set.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=.95\textwidth]{QF_BV-timeout.pdf}
-%\includegraphics[width=.95\textwidth]{QF_BV-timeout-logscale.pdf}
+%\includegraphics[width=.95\textwidth]{QF_BV-timeout.pdf}
+\includegraphics[width=.95\textwidth]{QF_BV-timeout-logscale.pdf}
 \end{center}
 \caption{Solver success for QF\_BV benchmarks over time.}
 \label{Fig:timeouts}
@@ -667,8 +670,8 @@ Four solvers participated in this competition track: CVC3, CVC4, SMTInterpol, an
 \begin{tabular}{|l|r|rrrr|}
 \multicolumn{6}{c}{\textbf{All benchmarks}} \\
 \hline
-&  & \multicolumn{4}{c|}{\lstinline{check-sat} commands} \\
- Logic & Benchmarks & total & min & max & avg. \\
+&  & \multicolumn{4}{c|}{\textbf{check-sat} commands} \\
+Logic & Benchmarks & total & min & max & avg. \\
 \hline
 AUFNIRA & 165  & 3452 & 2 & 615 & 20.9 \\
 QF\_AUFLIA & 72 & 4699864 & 5 & 1109912 & 65275.9 \\
@@ -810,53 +813,53 @@ abziz\_all\_features &	9  &		2093 	 &	 	122540.04 \\
 \section{Post-Competition Activity}
 \label{sec:post}
 
-After the competition, David Cok (competition chair) and Clark Barrett and Morgan Deters (SMT-LIB coordinators) collaborated, with the assistance of Aaron Stump (StarExec lead) in attempting to discover the status of the SMT-LIB benchmarks that were marked as unknown. For this computation, the timeout was set to 10 hours. This activity required several weeks of computation. A result confirmed by at least two solvers was obtained for 75\% of the unknown benchmarks, with another 4\% having a tentative result from just one solver.
-%The results are shown in Table~\ref{Fig:post}. 
+After the competition, David Cok (competition chair) and Clark Barrett and Morgan Deters (SMT-LIB coordinators) collaborated, with the assistance of Aaron Stump (StarExec lead), in attempting to discover the status of the SMT-LIB benchmarks that were marked as unknown. For this computation, the timeout was set to 10 hours. This activity required several weeks of computation. A result confirmed by at least two solvers was obtained for 75\% of the unknown benchmarks, with another 4\% having a tentative result from just one solver.
+The results are shown in Table~\ref{Fig:post}. 
 
 The unknown incremental benchmarks have yet to be resolved.
 
-%\begin{table}
-%\centering
-%\begin{tabular}{|l|c|r|rr|rr|r|}
-%\hline
-%Logic & Solvers & Benchmarks & \multicolumn{2}{c|}{\pbox{1in}{Resolved by\\2+ solvers as}} & \multicolumn{2}{c|}{\pbox{1in}{Resolved by \\ 1 solver as}} & \pbox{.5in}{Still\\unknown} \\
- %& & & sat & unsat & sat & unsat & \\
-%\hline
-%QF\_BV & 4 & 28138 & 8838 & 19166 & 20 & 10 & 100 \\
-%AUFNIRA & 2 & 468 & 0 & 23 & 0 & 23 & 422 \\
-%AUFLIRA & 2 & 168 & 0 & 3 & 0 & 3 & 162 \\
-%BV & 2 & 191 & 29 & 56 & 42 & 37 & 27 \\
-%LRA & 2 & 450 & 20 & 148 & 241 & 23 & 18 \\
-%NRA & 2 & 66 & 0 & 41 & 0 & 16 & 9 \\
-%QF\_ABV & 4 & 4190 & 3629 & 373 & 0 & 1 & 187 \\
-%QF\_UF & 3 & 4 & 0 & 3 & 0 & 1 & 0 \\
-%UFBV & 2 & 191 & 17 & 49 & 51 & 44 & 30 \\
-%UFIDL & 2 & 12 & 0 & 0 & 0 & 0 & 12 \\
-%QF\_RDL & 2 & 85 & 50 & 0 & 2 & 1 & 32 \\
-%QF\_UFLRA & 3 & 87 & 82 & 2 & 2 & 0 & 1 \\
-%QF\_UFNRA & 2 & 11 & 0 & 2 & 7 & 0 & 2 \\
-%UF & 2 & 2911 & 0 & 2 & 51 & 50 & 2808 \\
-%QF\_IDL & 3 & 537 & 324 & 118 & 20 & 14 & 61 \\
-%QF\_LRA & 2 & 208 & 127 & 25 & 44 & 8 & 4 \\
-%QF\_LIA & 3 & 1279 & 743 & 230 & 234 & 4 & 68 \\
-%QF\_NIA & 3 & 927 & 2 & 0 & 39 & 246 & 640 \\
-%QF\_NRA & 2 & 1392 & 0 & 36 & 283 & 168 & 905 \\
-%UFLIA & 2 & 5499 & 0 & 1765 & 4 & 113 & 3617 \\
-%UFNIA & 2 & 1052 & 0 & 20 & 2 & 90 & 940 \\
-%\hline
-%TOTAL & & 47866 & 13861 & 22062 & 1042 & 852 & 10045 \\
-%\hline
-%\end{tabular}
-%\caption{Benchmarks resolved in post-competition computation}
-%\label{Fig:post}
-%\end{table}
+\begin{table}
+\centering
+\begin{tabular}{|l|c|r|rr|rr|r|}
+\hline
+Logic & Solvers & Benchmarks & \multicolumn{2}{c|}{\pbox{1in}{Resolved by\\2+ solvers as}} & \multicolumn{2}{c|}{\pbox{1in}{Resolved by \\ 1 solver as}} & \pbox{.5in}{Still\\unknown} \\
+ & & & sat & unsat & sat & unsat & \\
+\hline
+QF\_BV & 4 & 28138 & 8838 & 19166 & 20 & 10 & 100 \\
+AUFNIRA & 2 & 468 & 0 & 23 & 0 & 23 & 422 \\
+AUFLIRA & 2 & 168 & 0 & 3 & 0 & 3 & 162 \\
+BV & 2 & 191 & 29 & 56 & 42 & 37 & 27 \\
+LRA & 2 & 450 & 20 & 148 & 241 & 23 & 18 \\
+NRA & 2 & 66 & 0 & 41 & 0 & 16 & 9 \\
+QF\_ABV & 4 & 4190 & 3629 & 373 & 0 & 1 & 187 \\
+QF\_UF & 3 & 4 & 0 & 3 & 0 & 1 & 0 \\
+UFBV & 2 & 191 & 17 & 49 & 51 & 44 & 30 \\
+UFIDL & 2 & 12 & 0 & 0 & 0 & 0 & 12 \\
+QF\_RDL & 2 & 85 & 50 & 0 & 2 & 1 & 32 \\
+QF\_UFLRA & 3 & 87 & 82 & 2 & 2 & 0 & 1 \\
+QF\_UFNRA & 2 & 11 & 0 & 2 & 7 & 0 & 2 \\
+UF & 2 & 2911 & 0 & 2 & 51 & 50 & 2808 \\
+QF\_IDL & 3 & 537 & 324 & 118 & 20 & 14 & 61 \\
+QF\_LRA & 2 & 208 & 127 & 25 & 44 & 8 & 4 \\
+QF\_LIA & 3 & 1279 & 743 & 230 & 234 & 4 & 68 \\
+QF\_NIA & 3 & 927 & 2 & 0 & 39 & 246 & 640 \\
+QF\_NRA & 2 & 1392 & 0 & 36 & 283 & 168 & 905 \\
+UFLIA & 2 & 5499 & 0 & 1765 & 4 & 113 & 3617 \\
+UFNIA & 2 & 1052 & 0 & 20 & 2 & 90 & 940 \\
+\hline
+TOTAL & & 47866 & 13861 & 22062 & 1042 & 852 & 10045 \\
+\hline
+\end{tabular}
+\caption{Benchmarks resolved in post-competition computation}
+\label{Fig:post}
+\end{table}
 
 
 \section{Concluding Observations and Recommendations}
 \label{sec:conclusions}
 
 SMT-COMP 2014 successfully executed the comparison among solvers that is the main goal
-of the competition. The new computational infrastructure, StarExec, worked very well for the purpose. The competition saw a renewed interest in participation\textemdash there were record numbers of teams participating, solvers entered, teams and solvers that had never before participated, and benchmarks used. Although the 2014 results are not usefully comparable to previous years, the detailed performance of each solver on each benchmark from this first year using StarExec will be a solid baseline to measure improvements in the state-of-the-art of solver performance in future years.
+of the competition. The new computational infrastructure, StarExec, worked very well for the purpose. The competition saw a renewed interest in participation\textemdash there were record numbers of teams participating, solvers entered, teams and solvers that had never before participated, benchmarks used, and amount of computation performed. Although the 2014 results are not usefully comparable to previous years, the detailed performance of each solver on each benchmark from this first year using StarExec will be a solid baseline to measure improvements in the state-of-the-art of solver performance in future years.
 
 This year's competition also saw the inauguration of a new, sibling competition. The organizers helped start and execute SL-COMP~\cite{SLCOMP}, a competition among solvers for separation logic. 
 
@@ -868,7 +871,7 @@ Dejan Jovanovi\'c; the organizers of the competition are Tjark Weber, David D\'e
 Based on the experience of 2014, the 2014 organizers have the following recommendations or topics for consideration for future competitions.
 \begin{itemize}
 \item The 2014 competition used all available benchmarks; though the computation resources enable using all benchmarks, future competitions should consider how to make a principled selection to avoid over-representing benchmarks of particular types or origin.
-\item The competition has used numbers of solved benchmarks as the primary success criterion. Time to solve benchmarks should be considered more strongly. In particular, a separate track that emphasized fast solution of fairly simple problems might be informative.
+\item The competition has used numbers of solved benchmarks as the primary success criterion. Time to solve benchmarks should be considered more strongly. In particular, a separate track that emphasizes fast solution of fairly simple problems might be informative.
 \item Related to the previous point, currently if a solver times-out or issues a response of `unknown', the time taken to do so is not counted in the accumulated time. Only the time taken to compute correct responses is counted towards the evaluation metric.
 A user's experience, however, is that the time taken for a solver to say ``I don't know'' is just as important as time to produce a useful answer. Thus we recommend that such 
 computation time be included in the evaluation metric. Omitting this time has had no effect so far because time was little used in the overall metric.
