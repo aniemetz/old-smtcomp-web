@@ -31,6 +31,7 @@ numbers=none,
 keywordstyle=\small\bfseries\sffamily,
 keywordstyle={[2]\small\bfseries\sffamily\underbar}
 }
+\usepackage{pifont}
 %%\usepackage{lmodern} %Type1-font for non-english texts and characters
 
 
@@ -277,7 +278,7 @@ The scrambling had another effect, previously unappreciated. Although most of th
 \paragraph{Execute the competition.} Executing the competition required preparing a StarExec job for each 
 division. A job executes the cross-product of a set of solvers and a set of benchmarks. Because each division has different sets of solvers and benchmarks, each division was a separate job (or split into several jobs). This also allowed a restart of portions of the competition if a particular division was incorrectly configured or if a StarExec job stalled for some reason (both of which happened).
 
-In addition, with the new cluster, the new benchmarks, and a longer timeout period, the organizers were unsure how long the competition would take. Our conservative estimate was that a month of computing was needed; in fact it only took about a week, because we had 3x more StarExec nodes available than anticipated and jobs took on average less time than estimated. However, to hedge against the competition taking longer than anticipated, we divided larger divisions into \emph{heats}, with each heat comprising about 1000 benchmarks, and with the option (stated in the rules) to terminate the competition before all heats were executed to ensure a timely end prior to FLoC. This required handling a much larger number of StarExec jobs. In the end it was entirely unnecessary for timely completion, but, as mentioned, dividing the jobs into manageable pieces was useful for restarting portions of the computation when StarExec stalled.\footnote{Stalling---that is, no longer making forward progress on a job---was less a concern after some bug fixes during the competition, but was still observed during some post-competition computations.}
+In addition, with the new cluster, the new benchmarks, and a longer timeout period, the organizers were unsure how long the competition would take. Our conservative estimate was that a month of computing was needed; in fact it only took about a week, because we had three times more StarExec nodes available than anticipated and jobs took on average less time than estimated. However, to hedge against the competition taking longer than anticipated, we divided larger divisions into \emph{heats}, with each heat comprising about 1000 benchmarks, and with the option (stated in the rules) to terminate the competition before all heats were executed to ensure a timely end prior to FLoC. This required handling a much larger number of StarExec jobs. In the end it was entirely unnecessary for timely completion, but, as mentioned, dividing the jobs into manageable pieces was useful for restarting portions of the computation when StarExec stalled.\footnote{Stalling---that is, no longer making forward progress on a job---was less a concern after some bug fixes during the competition, but was still observed during some post-competition computations.}
 
 In past competitions, the competition was timed to have its last portion overlap with the conference with which it was affiliated. In 2014, because the computation took less time than anticipated, the competition finished well before the conference.
 
@@ -305,14 +306,14 @@ The competition registration includes information about each competing solver. I
 \item Yices2~\cite{Dutertre:cav2014} -- submitted by Bruno Dutertre (SRI)
 \end{itemize}
 
-There were a few solvers that the organizers hoped would be submitted but were not: Tiffany de Wintermonte was submitted in the past by Trevor Hansen, but could not be prepared in time for this competition; similarly SMT-RAT was withdrawn because of last minute bugs; MathSat has been a frequent competitor in the past, but changes in priorities of the development team caused it not to compete in 2014; MiniSMT also was not able to be submitted; similarly, the Z3 team, from Microsoft, though Z3 is a strong tool, has chosen not to take the time to prepare competition versions.
+There were a few solvers that the organizers hoped would be submitted but were not: Tiffany de Wintermonte was submitted in the past by Trevor Hansen, but could not be prepared in time for this competition; similarly SMT-RAT was withdrawn because of last minute bugs; MathSat has been a frequent competitor in the past, but changes in priorities of the development team caused it not to compete in 2014; MiniSMT also was not able to be submitted; similarly, the Z3 team, from Microsoft Research, though Z3 is a strong tool, has chosen not to take the time to prepare competition versions.
 
 Other than those omissions, every competitive solver known to the organizers was represented. Indeed, the participation by solver teams was a record high in 2014. 
 
 As in past competitions, the organizers included some publicly available historical solvers. These solvers are run in the competition for comparison, but are designated as demonstration only and are not eligible for any awards or designations of having won the competition. In result tables, these solvers are listed with their names in square brackets (e.g., [MathSat]). The organizers included current versions of MathSat and Z3. Also, during the competition, a bug-fix release of CVC4 (named CVC4-with-bugfix) was submitted and included as a demonstration only version (cf. \S\ref{sec:floc}).
 
 \begin{table}[t]
-\renewcommand{\mark}[0]{$\times$}
+\renewcommand{\mark}[0]{\ding{51}}
 \centering
 \setlength{\tabcolsep}{1pt}
 \begin{tabular}{|l|l|c|c|c|c|c|c|c|c|c|}
@@ -399,7 +400,7 @@ the application track of the competition was added to demonstrate the interactiv
 \section{Competition Divisions and Benchmarks}
 \label{sec:benchmarks}
 
-The SMT-LIB benchmarks each belong to a specific logic. Each logic is one competition division. For each division we ran the solvers that entered that division on the benchmarks for that division as one event in the overall competition.
+The SMT-LIB benchmarks each belong to a specific logic. Each logic is one competition division. For each division, we ran the solvers that entered that division on the benchmarks for that division as one event in the overall competition.
 
 SMT-LIB currently defines 34 logics, shown in Table \ref{Table:benchmarks}. The rightmost column shows the number of benchmarks for that logic in the SMT-LIB collection. Two considerations may make a benchmark ineligible for a competition. First, the benchmark may not have a known result. For newly submitted benchmarks
 we made an attempt to determine the correct result of the benchmark; the SMT-LIB coordinators require that two 
@@ -467,7 +468,7 @@ Solvers could participate in any or all divisions at their team's discretion. Mo
 
 \begin{sidewaystable}
 \centering
-\renewcommand{\mark}[0]{$\times$}
+\renewcommand{\mark}[0]{\ding{51}}
 %%\small
 \setlength\tabcolsep{3pt}
 %%\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -522,7 +523,7 @@ For SMT-COMP, that language is the SMT-LIB language (cf.~\url{http://www.smtlib.
 In 2010, a significantly reworked version of the language was agreed upon.
 This version~2 increased the flexibility and expressiveness of the language while also simplifying the syntax. 
 It also includes a command language that improves the language's usefulness for interactive applications.
-In particular, the standard specifies a typed (sorted), first-order logical language for terms and formulas, a language for specifying background logical theories and logics, and a command language. Some other tools that process SMT-LIB~v2 are listed in the SMT-LIB web pages (cf. \url{http://www.smtlib.org/utilities.shtml}). Further revisions were discussed at SMT 2014.
+In particular, the standard specifies a typed (sorted), first-order logical language for terms and formulas, a language for specifying background logical theories and logics, and a command language. Some other tools that process SMT-LIB~v2 are listed in the SMT-LIB web pages (cf. \url{http://www.smtlib.org/utilities.shtml}). Further revisions were discussed at the SMT Workshop 2014.
 
 However, it is important to note that some tools used in the competition support only a subset of SMT-LIB. This subset is only informally stated, but the benchmark set only uses this subset. This informality did not cause problems in the competition, but it would be preferable to define this subset explicitly.
 
@@ -652,21 +653,21 @@ supply a counterexample that could be inspected in conjunction with the source c
 
 The application track of the competition presents to the solver a series of SMT-LIB commands through a driver program; the solver replies to the driver with a 
 response to each command. The driver presents commands only one at a time to emulate a realistic environment and so that the solver cannot ``work ahead.'' The driver also measures the accumulated time taken for each response. Note that the time measured includes the response time to every command, not just to the satisfiability-checking commands; while \lstinline{check-sat} commands might be the most time-consuming, \lstinline{assert} commands, and others, might also instigate significant processing. The benchmark text contains \lstinline{(set-info :status ...)} commands that 
-indicate the expected result for subsequent \lstinline{check-sat} commands; status information is used only by the driver program and not passed on to the solver. The \lstinline{set-info} command might indicate a status of \lstinline{unknown}; in that case, the driver
+indicate the expected result for subsequent \lstinline{check-sat} commands; status information is used only by the driver program and not passed on to the solver. Such \lstinline{set-info} command might indicate a status of \lstinline{unknown}; in that case, the driver
 considers the benchmark to end after the \emph{previous} \lstinline{check-sat} command for competition purposes.
 
 The application track was first introduced in 2011; a report on that year's application track and the overall design was presented by Griggio and Bruttomesso at the 2012 COMPARE Workshop~\cite{ag+rb+12}. A significantly adapted driver was implemented by the organizers for 2014 on the StarExec framework.
 
 In 2014, the SMT-LIB contains 9,926 benchmarks that  specifically  exercise the incremental solving capability of solvers. Table \ref{Fig:apptrack-benchmarks} lists the numbers of benchmarks in various logics; UFLRA, QF\_UFLRA, and QF\_UFLIA are the only logics with significant numbers of benchmarks. All the benchmarks were used in the competition.
 
-Four solvers participated in this competition track: CVC3, CVC4, SMTInterpol, and Yices2; Z3 was added as a demonstration-only historical comparison. The track was run for 8 divisions; the results are shown in Table \ref{Fig:apptrack-results}. Within each division, solvers are listed in winning order: Yices2 won six of the eight divisions, all of the ones in which it participated. The winner is the solver that solved the most check-sat commands correctly within the timeout period. No solver produced an erroneous result. The time out (40 minutes) is applied to the entire benchmark, not to individual commands. Since the previous execution of the application track was in 2012 and not on StarExec, we did not attempt a comparison with previous results.
+Four solvers participated in this competition track: CVC3, CVC4, SMTInterpol, and Yices2; Z3 was added as a demonstration-only historical comparison. The track was run for 8 divisions; the results are shown in Table \ref{Fig:apptrack-results}. Within each division, solvers are listed in winning order: Yices2 won six of the eight divisions, all of the ones in which it participated. The winner is the solver that solved the most \lstinline{check-sat} commands correctly within the timeout period. No solver produced an erroneous result. The time out (40 minutes) is applied to the entire benchmark, not to individual commands. Since the previous execution of the application track was in 2012 and not on StarExec, we did not attempt a comparison with previous results.
 
 \begin{table}
 \centering
 \begin{tabular}{|l|r|rrrr|}
 \multicolumn{6}{c}{\textbf{All benchmarks}} \\
 \hline
-&  & \multicolumn{4}{c|}{check-sat commands} \\
+&  & \multicolumn{4}{c|}{\lstinline{check-sat} commands} \\
  Logic & Benchmarks & total & min & max & avg. \\
 \hline
 AUFNIRA & 165  & 3452 & 2 & 615 & 20.9 \\
