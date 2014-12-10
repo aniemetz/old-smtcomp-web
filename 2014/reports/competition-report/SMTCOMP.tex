@@ -313,6 +313,9 @@ Other than those omissions, every competitive solver known to the organizers was
 As in past competitions, the organizers included some publicly available historical solvers. These solvers are run in the competition for comparison, but are designated as demonstration only and are not eligible for any awards or designations of having won the competition. In result tables, these solvers are listed with their names in square brackets (e.g., [MathSat]). The organizers included current versions of MathSat and Z3. Also, during the competition, a bug-fix release of CVC4 (named CVC4-with-bugfix) was submitted and included as a demonstration only version (cf. \S\ref{sec:floc}).
 
 \begin{table}[t]
+\caption{History of solver participation (numbers in parenthesis indicate
+the number of versions submitted for the tool). Complete records of early competitions were not available to the 2014 organizers.}
+\label{Table:participants}
 \renewcommand{\mark}[0]{\ding{51}}
 \centering
 \setlength{\tabcolsep}{1pt}
@@ -364,13 +367,11 @@ Simplics               & SRI & \mark &   &   &   &   &   &   &  &   \\
 SVC	               & Stanford U.  & \mark &   &   &   &   &   &   &  &   \\	
 \hline					
 \end{tabular}
-\vspace{.2in}
-\caption{History of solver participation (numbers in parenthesis indicate
-the number of versions submitted for the tool). Complete records of early competitions were not available to the 2014 organizers.}
-\label{Table:participants}
 \end{table}
 
 \begin{table}
+\caption{Changes in participation}
+\label{Table:changes}
 \centering
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
 \hline
@@ -382,9 +383,6 @@ Continuing to the next year  &  8 &  6 & 7 & 10 &  4 &  7 &  7 &  6 &  \\
 Not ever participating again &  4 &  5 & 2 &  2 &  6 &  3 &  4 &  4 &  \\ 
 \hline
 \end{tabular}
-\vspace{.2in}
-\caption{Changes in participation}
-\label{Table:changes}
 \end{table}
 
 \paragraph{History.} Table~\ref{Table:participants} shows the
@@ -415,6 +413,8 @@ A sizeable number, on the order of 30,000, of benchmarks were added during the l
 The SMT-LIB coordinators performed a curation step on the entire benchmark library prior to the competition, determining the actual logic to which a benchmark belonged, rather than the super-logic to which it had previously been assigned. This resulted in an expansion of logics with benchmarks from 23 to 34, and also created a number of divisions with only a very few benchmarks. Two divisions were not held because they had no eligible benchmarks.
 
 \begin{table}
+\caption{Numbers of main-track benchmarks. The second column shows the number of competitive solvers and, in square brackets, the number of demonstration-only solvers. Entries marked * exclude some benchmarks containing partial functions.}
+\label{Table:benchmarks}
 \centering
 \begin{tabular}{|l|r|r|r|r|r|}
 \hline
@@ -459,14 +459,13 @@ UFNIA & 2+[1] & 1587 & 1052 & 712 & 3351 \\
 Total & 18+[3] & 67426 & 47867 & 21007 & 137648 \\
 \hline
 \end{tabular}
-\vspace{.2in}
-\caption{Numbers of main-track benchmarks. The second column shows the number of competitive solvers and, in square brackets, the number of demonstration-only solvers. Entries marked * exclude some benchmarks containing partial functions.}
-\label{Table:benchmarks}
 \end{table}
 
 Solvers could participate in any or all divisions at their team's discretion. Most solvers are designed for just one selected logic, but others are intended to be as broadly applicable as their developers have had time to implement. Table~\ref{Table:logics} shows the participation of solvers in various divisions.
 
 \begin{sidewaystable}
+\caption{Solver participation in logic divisions}
+\label{Table:logics}
 \centering
 \renewcommand{\mark}[0]{\ding{51}}
 %%\small
@@ -500,9 +499,6 @@ Yices2 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	 & 	\mark & 	\mark & 	\mark & 	\mark &
 {[}CVC4-with-bugfix] &  &  &  & \mark &  &  &  &  &  &  &  &  &  &  & \mark &  & \mark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ 
 \hline
 \end{tabular}
-\vspace{.2in}
-\caption{Solver participation in logic divisions}
-\label{Table:logics}
 \end{sidewaystable}
 
 \paragraph{Selection of benchmarks.} In addition to whether a benchmark has a known result or is trivial, there are two other factors that affect the selection of benchmarks for a competition: the benchmark's difficulty and the desire for a distribution of problems.
@@ -560,6 +556,8 @@ Table \ref{Table:maintrack} shows a summary of the main track results. The detai
 Unfortunately, we cannot make a useful comparison with previous years for a number of reasons. First, until the evaluation in 2013, the competition was run on a different computation infrastructure, so solution times are not comparable. The SMT evaluation in 2013 and the competition in 2014 were both run on StarExec but with different timeouts and different configurations of nodes. Finally the early data from StarExec only captured wall-clock time, not CPU time. The organizers are confident that the 2014 data will be a solid baseline for evaluating progress in solver performance in future years.
  
 \begin{table}
+\caption{Main track results}
+\label{Table:maintrack}
 \centering
 \newcommand{\win}[1]{\textbf{#1}}
 \begin{tabular}{|l|r|r|l|}
@@ -612,9 +610,6 @@ UFLRA & 	4 & 	25 & 	[Z3]; \win{veriT}; CVC3; CVC4. \\
 UFNIA & 	3 & 	1587 & 	[Z3]; \win{CVC4}; CVC3. \\
 \hline
 \end{tabular}
-\vspace{.2in}
-\caption{Main track results}
-\label{Table:maintrack}
 \end{table}
 
 
@@ -639,10 +634,10 @@ Table~\ref{Fig:winners} shows a different view of the same data. Here we note th
 \end{figure} 
 
 \begin{table}
+\caption{Solver success per individual solver for 2488 QF\_BV benchmarks, for different timeouts (in seconds).}
+\label{Fig:winners}
 \centering
 \input{QF_BV-winners.tex}
-\caption{Solver success per individual solver for 2488 QF\_BV benchmarks, for different timeouts (in seconds)}
-\label{Fig:winners}
 \end{table}
 
 \subsection{Application (incremental) track results}
@@ -665,6 +660,8 @@ In 2014, the SMT-LIB contains 9,926 benchmarks that  specifically  exercise the 
 Four solvers participated in this competition track: CVC3, CVC4, SMTInterpol, and Yices2; Z3 was added as a demonstration-only historical comparison. The track was run for 8 divisions; the results are shown in Table \ref{Fig:apptrack-results}. Within each division, solvers are listed in winning order: Yices2 won six of the eight divisions, all of the ones in which it participated. The winner is the solver that solved the most \lstinline{check-sat} commands correctly within the timeout period. No solver produced an erroneous result. The time out (40 minutes) is applied to the entire benchmark, not to individual commands. Since the previous execution of the application track was in 2012 and not on StarExec, we did not attempt a comparison with previous results.
 
 \begin{table}
+\caption{Numbers of application benchmarks and distribution of \lstinline{check-sat} commands for different logics.}
+\label{Fig:apptrack-benchmarks}
 \centering
 \begin{tabular}{|l|r|rrrr|}
 \multicolumn{6}{c}{\textbf{All benchmarks}} \\
@@ -681,6 +678,7 @@ QF\_UFLIA & 905 & 790630 & 1 & 474174 & 873.6 \\
 QF\_UFLRA & 3333 & 22103 & 2 & 3384 & 6.6 \\
 UFLRA & 5358 & 3514613 & 2 & 40758 & 656.0 \\
 \hline
+\multicolumn{6}{c}{}\\
 \multicolumn{6}{c}{\textbf{Eligible benchmarks}} \\
 \hline
 &  & \multicolumn{4}{c|}{\lstinline{check-sat} commands} \\
@@ -696,16 +694,13 @@ QF\_UFLRA & 3333 & 22066 & 0 & 3384 & 6.6 \\
 UFLRA & 5358 & 223820 & 2 & 201 & 41.8 \\
 \hline
 \end{tabular}
-\caption{Numbers of application benchmarks and distribution of \lstinline{check-sat} commands for different logics.}
-\label{Fig:apptrack-benchmarks}
 \end{table}
  
-
 \begin{table}
-\centering
-\input{apptrack-results.tex}
 \caption{Results of the incremental track, across eight divisions. In each division, solvers are listed in winning order.}
 \label{Fig:apptrack-results}
+\centering
+\input{apptrack-results.tex}
 \end{table}
 
 \section{FLoC Olympic Games}
@@ -754,6 +749,8 @@ which was competitive. Consequently, by the competition metric, these two otherw
 When the results were published, the resulting winning teams, veriT and SMTInterpol, put an appeal to the organizers to use Metric B instead, arguing that (i)~CVC4 and Yices2 were clearly the more capable solvers and (ii)~there were known bugs in the winning solvers as well, which, simply by good fortune, were not triggered by the competition benchmarks. However, after public comment acknowledging the good will of the winners, the appeal was not accepted by the organizers. The medal ceremony did highlight the differing contributions of all four teams as well as those of the bronze medal winner. Note that the discovered bugs were promptly fixed. In fact, CVC4 submitted an additional demonstration-only version, named CVC4-with-bugfix in the result tables, which the organizers ran in conjunction with the rest of the competition.
 
 \begin{table}
+\caption{Gold and silver medal competition, in winning order by Metric A. By Metric B the order is the same except that CVC4 and Yices2 are in first and second place.}
+\label{Table:medals}
 \centering
 \begin{tabular}{|l|r|rr|r|}
 \hline
@@ -780,12 +777,11 @@ Kleaver-STP 	& 1	&  	213.362 	& 	3.103 & -213.362 \\
 Kleaver-portfolio & 1		&  	346.713 	& 	3.073  & -346.713 \\
 \hline
 \end{tabular}
-\vspace{.2in}
-\caption{Gold and silver medal competition, in winning order by Metric A. By Metric B the order is the same except that CVC4 and Yices2 are in first and second place.}
-\label{Table:medals}
 \end{table}
 
 \begin{table}
+\caption{Bronze medal competition (QF\_BV division, 2488 benchmarks), in winning order.}
+\label{Table:bronze}
 \centering
 \begin{tabular}{|l|rrr|}
 \hline
@@ -804,9 +800,6 @@ abziz\_min\_features &	9  &		2155 	 &	 	134385.22 \\
 abziz\_all\_features &	9  &		2093 	 &	 	122540.04 \\
 \hline
 \end{tabular}
-\vspace{.2in}
-\caption{Bronze medal competition (QF\_BV division - 2488 benchmarks), in winning order}
-\label{Table:bronze}
 \end{table}
 
 \section{Post-Competition Activity}
@@ -818,6 +811,8 @@ The results are shown in Table~\ref{Fig:post}.
 The unknown incremental benchmarks have yet to be resolved.
 
 \begin{table}
+\caption{Benchmarks resolved in post-competition computation}
+\label{Fig:post}
 \centering
 \begin{tabular}{|l|c|r|rr|rr|r|}
 \hline
@@ -846,13 +841,10 @@ QF\_NRA & 2 & 1392 & 0 & 36 & 283 & 168 & 905 \\
 UFLIA & 2 & 5499 & 0 & 1765 & 4 & 113 & 3617 \\
 UFNIA & 2 & 1052 & 0 & 20 & 2 & 90 & 940 \\
 \hline
-TOTAL & & 47866 & 13861 & 22062 & 1042 & 852 & 10045 \\
+Total & & 47866 & 13861 & 22062 & 1042 & 852 & 10045 \\
 \hline
 \end{tabular}
-\caption{Benchmarks resolved in post-competition computation}
-\label{Fig:post}
 \end{table}
-
 
 \section{Concluding Observations and Recommendations}
 \label{sec:conclusions}
