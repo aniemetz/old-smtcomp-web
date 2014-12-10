@@ -547,7 +547,7 @@ The organizers had some bugs of their own: the scripts to create sets of benchma
 progress or report results correctly. Bugs in scheduling were
 fixed during the competition but are not entirely resolved. Accordingly, jobs need regular monitoring that they are making progress.
 
-Overall, however, StarExec performed its function well: evaluations of 339714 solver-benchmark pairs were completed for the competition over a period of about 9 days, not even counting the restarts necessary because of bugs or misconfigurations.
+Overall, however, StarExec performed its function well: evaluations of 339,714 job-pairs were completed for the competition over a period of about 9 days, not even counting the restarts necessary because of bugs or misconfigurations.
 
 \section{Results}
 \label{sec:results}
@@ -731,7 +731,7 @@ The organizers chose to award the silver and gold medals for best performance ac
 The normal metric for a division is that the winning solver is the one with the
 smallest value of $e_i$, the largest value of $c_i$ 
 and then the smallest value of $t_i$, for each division taken separately; 
-that is, the metric is a lexicographic ordering by smallest value of $[ e_i, -c_i, t_i ]$.
+that is, the metric is a lexicographic ordering by smallest value of $\langle e_i, -c_i, t_i \rangle$.
 The two global metrics we considered are
 \begin{itemize}[noitemsep,nolistsep]
 \item Metric A: The winning solver is the one with the smallest value of $\sum_i e_i \log N_i$, then the largest value of $\sum_i (c_i/N_i) \log N_i$, then the smallest value of $\sum_i t_i \log N_i$, where for a given solver the sums are over all competitive divisions in which that solver participated.
