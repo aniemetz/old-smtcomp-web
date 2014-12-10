@@ -185,9 +185,9 @@ distribution of the benchmarks by file size.
 \begin{figure}
 \begin{center}
 \begin{tabular}{cc}
-\includegraphics[angle=270,width=.5\textwidth]{smtlib2-file-count-by-size.pdf}
+\includegraphics[angle=270,width=.47\textwidth]{smtlib2-file-count-by-size.pdf}
 &
-\includegraphics[angle=270,width=.5\textwidth]{smtlib2-app-file-count-by-size.pdf}
+\includegraphics[angle=270,width=.47\textwidth]{smtlib2-app-file-count-by-size.pdf}
 \\
 \\
 Non-incremental benchmarks & Application benchmarks
@@ -373,7 +373,7 @@ SVC	               & Stanford U.  & \mark &   &   &   &   &   &   &  &   \\
 \caption{Changes in participation}
 \label{Table:changes}
 \centering
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+\resizebox{\textwidth}{!}{\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
 \hline
  & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 & 2014\\
 \hline
@@ -382,7 +382,7 @@ New in given year            & 12 &  4 & 4 &  6 &  2 &  6 &  1 &  4 & 5 \\
 Continuing to the next year  &  8 &  6 & 7 & 10 &  4 &  7 &  7 &  6 &  \\
 Not ever participating again &  4 &  5 & 2 &  2 &  6 &  3 &  4 &  4 &  \\ 
 \hline
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 \paragraph{History.} Table~\ref{Table:participants} shows the
@@ -557,10 +557,11 @@ Unfortunately, we cannot make a useful comparison with previous years for a numb
  
 \begin{table}
 \caption{Main track results}
+\vspace{-\smallskipamount}
 \label{Table:maintrack}
 \centering
 \newcommand{\win}[1]{\textbf{#1}}
-\begin{tabular}{|l|r|r|l|}
+\resizebox{!}{299pt}{\begin{tabular}{|l|r|r|l|}
 \hline
 Logic &	Solvers &	Benchmarks & Order (winner in bold) \\
 \hline
@@ -609,9 +610,8 @@ UFLIA & 	4 & 	5766 & 	\win{CVC4}; [Z3]; veriT; CVC3. \\
 UFLRA & 	4 & 	25 & 	[Z3]; \win{veriT}; CVC3; CVC4. \\
 UFNIA & 	3 & 	1587 & 	[Z3]; \win{CVC4}; CVC3. \\
 \hline
-\end{tabular}
+\end{tabular}}
 \end{table}
-
 
 \paragraph{Effect of timeout.}
 In the main track competition, the organizers set a timeout of 40~minutes, much longer than in previous competitions (e.g., 25 minutes in 2012).  A common practical question users have is how much benefit is gained by longer timeouts. The data from the competition allows us to analyze this question somewhat.
@@ -699,8 +699,9 @@ UFLRA & 5358 & 223820 & 2 & 201 & 41.8 \\
 \begin{table}
 \caption{Results of the incremental track, across eight divisions. In each division, solvers are listed in winning order.}
 \label{Fig:apptrack-results}
+\vspace{-\medskipamount}
 \centering
-\input{apptrack-results.tex}
+\resizebox{!}{294pt}{\input{apptrack-results.tex}}
 \end{table}
 
 \section{FLoC Olympic Games}
@@ -816,7 +817,7 @@ The unknown incremental benchmarks have yet to be resolved.
 \centering
 \begin{tabular}{|l|c|r|rr|rr|r|}
 \hline
-Logic & Solvers & Benchmarks & \multicolumn{2}{c|}{\pbox{1in}{Resolved by\\2+ solvers as}} & \multicolumn{2}{c|}{\pbox{1in}{Resolved by \\ 1 solver as}} & \pbox{.5in}{Still\\unknown} \\
+Logic & Solvers & Benchmarks & \multicolumn{2}{c|}{\pbox{1.1in}{Resolved by\\2+ solvers as}} & \multicolumn{2}{c|}{\pbox{1.1in}{Resolved by \\ 1 solver as}} & \pbox{.6in}{Still\\unknown} \\
  & & & sat & unsat & sat & unsat & \\
 \hline
 QF\_BV & 4 & 28138 & 8838 & 19166 & 20 & 10 & 100 \\
