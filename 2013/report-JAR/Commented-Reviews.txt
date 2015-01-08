@@ -25,6 +25,8 @@ Done.
 
 > Fig 2: The caption mentions *'s but the table doesn't have any of those. 
 
+The caption now mentions \textbullet instead of *.
+
 > 2.3, pg 6: I'm not sure what the SMT2 standard says about that, but he fact
 > that star-exec conflates stdout and stderr seems a fixable issue. 
 
