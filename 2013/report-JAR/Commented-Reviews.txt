@@ -21,6 +21,8 @@ Done.
 > report was not compiled by the solver developers, but by "independent
 > investigators".
 
+Done.
+
 > Fig 2: The caption mentions *'s but the table doesn't have any of those. 
 
 > 2.3, pg 6: I'm not sure what the SMT2 standard says about that, but he fact
