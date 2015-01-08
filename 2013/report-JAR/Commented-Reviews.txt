@@ -43,6 +43,8 @@ added a remark to this effect.
 
 > 3.1, pg 8: QF_: quantification. Maybe change to `quantifier freeness'?
 
+Done.
+
 > Fig 4: Q is included as a node, but N (non-linear) isn't. Instead of referring
 > to the lattice on smtlib.org, I think it would be nicer to include that one
 > instead of the one currently in Fig 4. 
