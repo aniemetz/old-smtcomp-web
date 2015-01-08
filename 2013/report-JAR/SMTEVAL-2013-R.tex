@@ -124,12 +124,11 @@ formulas of theoretical or practical interest.  Public competitions
 are a well-known means of stimulating advancement in software tools.
 For example, in automated reasoning, the SAT and CASC competitions for
 propositional and first-order reasoning tools, respectively, have
-spurred significant innovation in their fields
-\cite{leberre+03,PSS02}.  Indeed, the SMT competition increased in
+spurred significant innovation in their fields~\cite{leberre+03,PSS02}.  Indeed, the SMT competition increased in
 size each year: more benchmarks were added, new solver teams
 participated, solver performance improved, and more logic divisions were defined.
 
-The particular goals of SMT-COMP include the following\cite{smtcompweb}:
+The particular goals of SMT-COMP include the following~\cite{smtcompweb}:
 \begin{itemize}[noitemsep]
 \item enable research on SMT solvers by benchmarking and comparing performance;
 \item promote a standard format for SMT problems (SMT-LIB v2~\cite{BarST-SMT-10});
@@ -153,7 +152,7 @@ In 2013, the SMT Steering Committee decided to take a collective breath and spon
 
 Second, there was a desire to evaluate the state of the SMT community and the competition. The competition had become focused on details of performance on a particular set of benchmarks for particular logics and there was a feeling that its overall results had become somewhat predictable. An evaluation of progress of the SMT community was desired, with a consideration of other metrics and goals, not just winning narrowly focused competitions.
  
-And third, for many years the competition had relied on the SMT-Exec computational infrastructure\cite{springerlink:10.1007/s10817-012-9246-5}.  A new infrastructure, Star-Exec \cite{StuST-IJCAR-14,webStarExec} had been funded by the NSF and developed at the University of Iowa, but had not yet been tried out in earnest.  In fact, a goal in~2012 had been to use Star-Exec for SMT-COMP~2012; however, Star-Exec was not sufficiently operational and the competition had to revert to SMT-Exec.  It was anticipated that an evaluation in 2013, with less deadline pressure, would enable using Star-Exec on a shake-down cruise prior to a competition in 2014 at the Federated Logic Conference~(FLoC) Olympic Games~\cite{webOlympicGames}.
+And third, for many years the competition had relied on the SMT-Exec computational infrastructure~\cite{springerlink:10.1007/s10817-012-9246-5}.  A new infrastructure, Star-Exec~\cite{StuST-IJCAR-14,webStarExec} had been funded by the NSF and developed at the University of Iowa, but had not yet been tried out in earnest.  In fact, a goal in~2012 had been to use Star-Exec for SMT-COMP~2012; however, Star-Exec was not sufficiently operational and the competition had to revert to SMT-Exec.  It was anticipated that an evaluation in 2013, with less deadline pressure, would enable using Star-Exec on a shake-down cruise prior to a competition in 2014 at the Federated Logic Conference~(FLoC) Olympic Games~\cite{webOlympicGames}.
 
 \subsection{Evaluation topics}
 
@@ -269,9 +268,9 @@ did not do this as part of SMT-EVAL.
 
 \subsection{Star-Exec}
 
-SMT-EVAL successfully used the new Star-Exec computational framework \cite{webStarExec,StuST-IJCAR-14}. Running SMT-EVAL on Star-Exec did indeed expose a number of bugs and user interface issues; these were corrected in the course of the SMT-EVAL runs. Thus SMT-EVAL served a valuable purpose in preparing Star-Exec for larger scale use.
+SMT-EVAL successfully used the new Star-Exec computational framework~\cite{webStarExec,StuST-IJCAR-14}. Running SMT-EVAL on Star-Exec did indeed expose a number of bugs and user interface issues; these were corrected in the course of the SMT-EVAL runs. Thus SMT-EVAL served a valuable purpose in preparing Star-Exec for larger scale use.
 
-SMT-EVAL's largest computational job was running all 45 of the evaluated solvers on all of the non-incremental benchmarks in the SMT library. The benchmarks belong to different {\em logics} and solvers are characterized by which logics they support. So for each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that support problems in that logic, for a total of 1\,663\,478 solver-benchmark combinations (called {\em job-pairs} in Star-Exec). This job took several months of wall time to run. We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job pairs. Because of a bug (now corrected), the results of about 600 job-pairs were not present in the accumulated results. These were identified and rerun as an additional ``mop-up'' job. Each job-pair was run in an independent environment, on a computation node by itself. Each node has four cores. The job-pair was limited to 25 minutes of wall-clock time, 100 minutes of cpu time, and 1GB of memory.
+SMT-EVAL's largest computational job was running all 45 of the evaluated solvers on all of the non-incremental benchmarks in the SMT library. The benchmarks belong to different {\em logics} and solvers are characterized by which logics they support. So for each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that support problems in that logic, for a total of 1\,663\,478 solver-benchmark combinations (called {\em job-pairs} in Star-Exec). This job took several months of wall-clock time to run. We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job pairs. Because of a bug (now corrected), the results of about 600 job-pairs were not present in the accumulated results. These were identified and rerun as an additional ``mop-up'' job. Each job-pair was run in an independent environment, on a computation node by itself. Each node has four cores. The job-pair was limited to 25 minutes of wall-clock time, 100 minutes of CPU time, and 1GB of memory.
 
 \section{Evaluation results}
 \label{Evaluations}
@@ -418,7 +417,7 @@ However, there are aspects of the competition that are not deterministic. We mea
 \item {\em The repeatability of the time a given solver takes on a given benchmark} (Section \ref{Accuracy}). This variation is a combination of two factors: any variation in execution and timing by the Star-Exec system itself, and any non-determinism in the execution of the solver.
 \item {\em Variation caused by selection of benchmarks} (Section \ref{BenchmarkSelection}). \end{itemize}
  
- There is the additional risk that the set of benchmarks in SMT-LIB is not representative of any particular application area. We do not evaluate that risk here, but expect it to be quite likely to be the case.
+ There is the additional risk that the set of benchmarks in SMT-LIB is not representative of any particular application area. We do not evaluate that risk here, but expect that this is quite likely the case.
  
 \subsubsection{Accuracy of performance measurements}
 \label{Accuracy}
@@ -439,7 +438,7 @@ Any variation due to non-determinism within a solver we consider part of that so
 
 \subsubsection{Accuracy of competitions}
 \label{BenchmarkSelection}
-The data we collected allows us to simulate various competition organizations. One such competition design would be, for each logic, to run all solvers for the given year on all benchmarks. The result of such an exercise is shown in Figs. \ref{Fig:virtual-competition-all}, \ref{Fig:virtual-competition-all2} and \ref{Fig:virtual-competition-all3} for the set of 9 solvers for the year 2013. By summing all the cpu times for each benchmark-solver combination, we obtain that such a competition would use about 443 days of wall-clock time (using one computational node); for this computation we consider all timeout and memory exhaustion results to have taken the full timeout value (1500 sec) of time. It is possible that in some cases a solver may exhaust memory prior to the timeout.
+The data we collected allows us to simulate various competition organizations. One such competition design would be, for each logic, to run all solvers for the given year on all benchmarks. The result of such an exercise is shown in Figs. \ref{Fig:virtual-competition-all}, \ref{Fig:virtual-competition-all2} and \ref{Fig:virtual-competition-all3} for the set of 9 solvers for the year 2013. By summing all the CPU times for each benchmark-solver combination, we obtain that such a competition would use about 443 days of wall-clock time (using one computational node); for this computation we consider all timeout and memory exhaustion results to have taken the full timeout value (1500 sec) of time. It is possible that in some cases a solver may exhaust memory prior to the timeout.
 
 In previous competitions, the winner was determined as the solver that correctly solved the most benchmarks within the timeout limit (solvers producing incorrect results are disqualified). Ties among solvers solving the same number of benchmarks are resolved in favor of the solver taking the least amount of time to produce its solutions. In the tables showing the results, for each logic, the results are reported in the order of a virtual winner.
 
@@ -561,7 +560,7 @@ $1/N$ and 1.
 
 There is a trivial case of one solver, with all wins distributed equally over the N=1 solvers and an unscaled `competitiveness' measure of 1.0; in all the combinations of logic and year, there are 18 such cases. Of the other year-logic combinations, note that in all but 11 (of the 70), despite any dominance by one solver, all competitors won at least one benchmark. The 'competitiveness' metric itself shows that in most cases there are approximately 2 solvers sharing the bulk of the wins, increasing to about 3 in a few cases that have many participants. The case of the most participants -- 11 solvers for QF\_BV in 2012 -- had a distribution among about 3.5 winning solvers. Thus, although nearly all solvers contribute something, performance is dominated by a few, but not by only one, in nearly all competitive logics.
 
-\item {\em SOTAC}. As a final measurement in this subcategory, we measured the {\em state of the art contribution} (SOTAC), as proposed  in \cite{webCASC}. This measures the uniqueness of the contribution of each solver. It does not consider the time taken to solve a benchmark, but just whether a solver solves a benchmark (within the timeout period). The contribution of a benchmark to a solver's SOTAC is 0 if the solver does not solve the benchmark; the contribution is 1/(the number of solvers that solve that benchmark) if it does solve it. Thus the maximum contribution is obtained when a solver is the only one to solve a benchmark. Fig. \ref{Fig:sotac} shows the computation for each of the solvers for the year 2013. The first column shows the sum of the SOTAC over all benchmarks in which a solver participated;
+\item {\em SOTAC}. As a final measurement in this subcategory, we measured the {\em state of the art contribution} (SOTAC), as proposed  in~\cite{webCASC}. This measures the uniqueness of the contribution of each solver. It does not consider the time taken to solve a benchmark, but just whether a solver solves a benchmark (within the timeout period). The contribution of a benchmark to a solver's SOTAC is 0 if the solver does not solve the benchmark; the contribution is 1/(the number of solvers that solve that benchmark) if it does solve it. Thus the maximum contribution is obtained when a solver is the only one to solve a benchmark. Fig. \ref{Fig:sotac} shows the computation for each of the solvers for the year 2013. The first column shows the sum of the SOTAC over all benchmarks in which a solver participated;
 the second column is the average over all the benchmarks that that solver attempted (including ones that timed out), but not benchmarks in logics in which the solver did not participate; the third column\footnote{The third column corresponds to Sutcliffe's definition of SOTAC.} is the average over all benchmarks for which the solver was successful (did not time out).
 
 The CVC4 and Z3 solvers have a high total SOTAC because they contribute to a broad range of logics; MathSAT and veriT also contribute broadly. The averages in the last two columns are not significantly different from each other. MiniSMT has a high average SOTAC because it does well at just a few logics. VeriT suffers slightly on an overall average, but has a relatively higher SOTAC averaged over those benchmarks that it does solve.
@@ -639,14 +638,14 @@ The CVC4 and Z3 solvers have a high total SOTAC because they contribute to a bro
 \label{parallel}
 
 The StarExec cluster contains computation nodes with 4 cores each; solvers configured for multi-threaded computation can take advantage of the parallel processing possibilities and reduce their overall wall-clock time in solving a benchmark. Previous competitions have had demonstration divisions featuring parallel computation.
-For this evaluation we set a wall-clock timeout of 25 minutes and a cpu-time timeout of 100 minutes. Thus the evaluation measured the performance of solvers for parallel computation, if they were so configured. A competition focused on sequential processing would set the wall-clock and cpu-time timeouts at the same value.
-We did not rerun the evaluation data to assess sequential processing performance. The data showing both wall-clock and cpu time was not available when we did our 
-primary evaluation, and some of the early cpu-time data appears inconsistent with the wall-clock times. Thus we left questions about parallel vs. sequential performance for further study: 
+For this evaluation we set a wall-clock timeout of 25 minutes and a CPU-time timeout of 100 minutes. Thus the evaluation measured the performance of solvers for parallel computation, if they were so configured. A competition focused on sequential processing would set the wall-clock and CPU-time timeouts at the same value.
+We did not rerun the evaluation data to assess sequential processing performance. The data showing both wall-clock and CPU time was not available when we did our 
+primary evaluation, and some of the early CPU-time data appears inconsistent with the wall-clock times. Thus we left questions about parallel vs. sequential performance for further study: 
 \begin{itemize}
 \item what fraction of solvers use parallel computation?
 \item what is the speedup generally achieved by these solvers and the kinds of problems represented by the benchmark set?
-\item what is the observed overhead, that is, for purely sequential performance by how much does the wall-clock time exceed the cpu-time?
-\item are competition results significantly different when judged by cpu time vs. wall-clock time?
+\item what is the observed overhead, that is, for purely sequential performance by how much does the wall-clock time exceed the CPU-time?
+\item are competition results significantly different when judged by CPU time vs. wall-clock time?
 \end{itemize}
 We expect that the 2014 competition will generate a data set better able to answer these questions.
 
@@ -666,7 +665,7 @@ Fig.~\ref{Fig:category} shows the number of benchmarks for each logic and the di
 considered industrial.
 
 The same table also shows the distribution of benchmarks among those known to be satisfiable, unsatisfiable, and with an unknown status. Here there is 
-considerable variation. Some logics have nearly no sat benchmarks. Some have a large proportion (at least as of 2013) of benchmarks of unknown status.
+considerable variation. Some logics have nearly no satisfiable benchmarks. Some have a large proportion (at least as of 2013) of benchmarks of unknown status.
 This is particularly the case for the popular and important QF\_BV logic.
 Part of the effort of benchmark curation for the 2014 competition is to more carefully assign benchmarks to logics and to determine status that is currently unknown.
 

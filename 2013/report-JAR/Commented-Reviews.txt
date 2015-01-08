@@ -25,7 +25,7 @@ Done.
 
 > Fig 2: The caption mentions *'s but the table doesn't have any of those. 
 
-The caption now mentions \textbullet instead of *.
+Fixed.
 
 > 2.3, pg 6: I'm not sure what the SMT2 standard says about that, but he fact
 > that star-exec conflates stdout and stderr seems a fixable issue. 
@@ -49,6 +49,8 @@ Done.
 > to the lattice on smtlib.org, I think it would be nicer to include that one
 > instead of the one currently in Fig 4. 
 
+TODO
+
 > Fig 5: The font in this table is smaller than in other tables. 
 
 Fixed.
@@ -58,9 +60,13 @@ Fixed.
 > y-axis would also show the gaps between the years more clearly. Perhaps the
 > x-axis could also start at 0.01 or 0.1.
 
+TODO
+
 > Fig 7: This is interesting data, but it's very hard to read. Bar-graphs (four
 > for each logic) would be much easier to read, and the actual percentages are
 > not really necessary (except perhaps as appendix).
+
+TODO
 
 > 3.5: As stated here, there is a very real risk of the benchmarks not being
 > representative of any particular application area. This would indeed be a very
@@ -120,6 +126,7 @@ Fixed.
 > pg 7 and later: cpu -> CPU, sat -> SAT, unsat -> UNSAT (I prefer the
 > capitalized versions) 
 
+Fixed.
 
 > Reviewer #2: 
 > * SUMMARY 
@@ -143,6 +150,8 @@ Fixed.
 
 > My first concern is that, having this report been submitted after 2014
 > FLOC Olympic games may make its content out of date.
+
+TODO
 
 > My major concern, however, is the following. My understanding from
 > section 3.7 (page 23 from row 42: "For this evaluation...")  is that:
