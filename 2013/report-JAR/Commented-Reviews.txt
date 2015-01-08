@@ -51,6 +51,8 @@ Done.
 
 > Fig 5: The font in this table is smaller than in other tables. 
 
+Fixed.
+
 > Fig 6: This plot takes a lot of space that isn't used at all. I think it would
 > be okay to cut it off at y=0.5 or something like that. Perhaps a logarithmic
 > y-axis would also show the gaps between the years more clearly. Perhaps the

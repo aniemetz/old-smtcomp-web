@@ -198,7 +198,7 @@ The SMT competitions required that participating solvers be publicly available L
 
 \begin{figure}
 \centering
-\begin{tabular}{|l|l|p{.08in}p{.08in}p{.08in}p{.08in}p{.08in}p{.08in}p{.08in}p{.08in}p{.08in}|}
+\begin{tabular}{|l|l|*{8}{c@{\hskip 10pt}}c|}
 \hline
 \input{solvers2}
 \end{tabular}
@@ -364,13 +364,8 @@ also make it easier to accurately characterize new benchmarks and to summarize t
 \label{Coverage}
 
 \begin{figure}
-
 \centering
-\resizebox{\columnwidth}{!}{
-%%\includegraphics[width=\textwidth]{LogicSupportBySolvers}
 \input{LogicSupportBySolvers}
-}
-
 \caption{Support for each logic as stated by solver implementors. The dots instead of Xs identify the 2013 versions of solvers. The numbers in the bottom row are the number of 2013 solvers for each logic.}
 \label{Fig:solversupport}
 \end{figure}
