@@ -226,8 +226,10 @@ StarExec collects the entire output of a job pair in a single file
 before passing it to the post-processor.  Thus, it is not possible to
 reliably determine which output a solver has generated specifically in
 response to a benchmark's {\tt check-sat} command.  Second, StarExec
-conflates standard output and standard error, making it impossible to
-distinguish between regular solver responses and error messages.
+conflates standard output and standard error.  We hope that this
+behavior will be changed in the future, but for SMT-EVAL this made it
+impossible to distinguish between regular solver responses and error
+messages.
 
 To determine the result of each job pair, we used a post-processor
 that searched for the words {\tt sat}, {\tt unsat} and {\tt unknown}

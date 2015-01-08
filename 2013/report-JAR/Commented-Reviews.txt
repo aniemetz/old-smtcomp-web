@@ -30,6 +30,10 @@ The caption now mentions \textbullet instead of *.
 > 2.3, pg 6: I'm not sure what the SMT2 standard says about that, but he fact
 > that star-exec conflates stdout and stderr seems a fixable issue. 
 
+We have added a remark that we hope this behavior will be changed in
+the future. Alas, it was not feasible to change the behavior in time
+for SMT-EVAL; the required changes are non-trivial.
+
 > 2.4, pg 6: An investigation into the effects of scrambling would be very
 > interesting too. I suppose that would mean that a lot more benchmarks would
 > have to be run though.
