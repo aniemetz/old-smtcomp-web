@@ -38,6 +38,9 @@ for SMT-EVAL; the required changes are non-trivial.
 > interesting too. I suppose that would mean that a lot more benchmarks would
 > have to be run though.
 
+We agree that such an investigation would be interesting, and have
+added a remark to this effect.
+
 > 3.1, pg 8: QF_: quantification. Maybe change to `quantifier freeness'?
 
 > Fig 4: Q is included as a node, but N (non-linear) isn't. Instead of referring

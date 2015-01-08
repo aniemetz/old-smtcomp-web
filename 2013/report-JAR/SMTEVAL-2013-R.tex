@@ -254,15 +254,19 @@ However, based on the evaluation data, and taking into account the
 lack of strong incentives for cheating in SMT-EVAL, we have no reason
 to believe that such shortcuts to success occurred.
 
-An additional use of benchmark scrambling is that the change in syntax and identifiers can, for some solvers,
-change the search paths or the preprocessing that is performed. Thus scrambling serves to exercise 
-different code paths and adds an additional dimension of testing and performance measurement to 
-competitions and evaluations.
+An additional use of benchmark scrambling is that the change in syntax
+and identifiers can, for some solvers, change the search paths or the
+preprocessing that is performed. Thus scrambling serves to exercise
+different code paths and adds an additional dimension of testing and
+performance measurement to competitions and evaluations. It would be
+interesting to investigate these effects of scrambling in detail; we
+did not do this as part of SMT-EVAL.
 
 %Several solvers reported syntax errors on some benchmarks.  We
 %validated all benchmarks with two independently developed SMT-LIB~v2
 %parsers~\cite{TODO,TODO} to ensure that they are syntactically
 %conforming.
+
 \subsection{Star-Exec}
 
 SMT-EVAL successfully used the new Star-Exec computational framework \cite{webStarExec,StuST-IJCAR-14}. Running SMT-EVAL on Star-Exec did indeed expose a number of bugs and user interface issues; these were corrected in the course of the SMT-EVAL runs. Thus SMT-EVAL served a valuable purpose in preparing Star-Exec for larger scale use.
