@@ -23,12 +23,12 @@ Done.
 
 Done.
 
-> Fig 2: The caption mentions *'s but the table doesn't have any of those. 
+> Fig 2: The caption mentions *'s but the table doesn't have any of those.
 
 Fixed.
 
 > 2.3, pg 6: I'm not sure what the SMT2 standard says about that, but he fact
-> that star-exec conflates stdout and stderr seems a fixable issue. 
+> that star-exec conflates stdout and stderr seems a fixable issue.
 
 We have added a remark that we hope this behavior will be changed in
 the future. Alas, it was not feasible to change the behavior in time
@@ -47,11 +47,11 @@ Done.
 
 > Fig 4: Q is included as a node, but N (non-linear) isn't. Instead of referring
 > to the lattice on smtlib.org, I think it would be nicer to include that one
-> instead of the one currently in Fig 4. 
+> instead of the one currently in Fig 4.
 
 TODO
 
-> Fig 5: The font in this table is smaller than in other tables. 
+> Fig 5: The font in this table is smaller than in other tables.
 
 Fixed.
 
@@ -60,7 +60,7 @@ Fixed.
 > y-axis would also show the gaps between the years more clearly. Perhaps the
 > x-axis could also start at 0.01 or 0.1.
 
-TODO
+The plot has been improved.
 
 > Fig 7: This is interesting data, but it's very hard to read. Bar-graphs (four
 > for each logic) would be much easier to read, and the actual percentages are
@@ -73,12 +73,18 @@ TODO
 > interesting thing to investigate. Some evidence could perhaps be mined from the
 > data, e.g., by comparison of "industrial" benchmarks to "crafted" ones.
 
+TODO
+
 > 3.5.1, pg 14: It is expected that timing variation averages out over many
 > benchmarks, but it is not stated whether the number of benchmarks (~200?) used
 > in previous competitions qualifies as "many".
 
+TODO
+
 > Fig 8, 9, 10: These tables waste a lot of space, especially the repetition of
-> Z3's version number. Perhaps bar-graphs would again make this easier to digest.  
+> Z3's version number. Perhaps bar-graphs would again make this easier to digest.
+
+TODO
 
 > 3.5.2 , pg 17: It's very interesting to see that the random benchmark
 > selection has such a big impact on the competition results. Fig 12, 13, 14 are
@@ -90,7 +96,7 @@ TODO
 > benchmarks, # seconds in small fonts below that).
 
 > Fig 11, 15: I would again use bar-graphs for these. The actual numbers are not
-> that important and a graphical representation makes this a lot easier to read. 
+> that important and a graphical representation makes this a lot easier to read.
 
 > Fig 16, 17: There's a lot of empty space in this figure, and it's another
 > instance where bar graphs would work much better. (E.g., four bars for every
@@ -99,7 +105,7 @@ TODO
 
 > Fig 18: Same again, this data would look good in a bar-graph.
 
-> Fig 21: Sorting this table by SOTAC would help readability. 
+> Fig 21: Sorting this table by SOTAC would help readability.
 
 > Pg 28: '... we did not have time...' Sounds awkward, as this is a journal
 > paper, there would have been enough time for this. The suggestion of finding
@@ -124,12 +130,12 @@ TODO
 > multiple instances of ...\cite{} without space before the \.
 > pg 7 top: wall time -> wall-clock time
 > pg 7 and later: cpu -> CPU, sat -> SAT, unsat -> UNSAT (I prefer the
-> capitalized versions) 
+> capitalized versions)
 
 Fixed.
 
-> Reviewer #2: 
-> * SUMMARY 
+> Reviewer #2:
+> * SUMMARY
 
 > This paper presents a report of the 2013 SMT-Evaluation. The authors
 > describe with details benchmarks, participant tools, adopted criteria,
@@ -167,7 +173,7 @@ TODO
 > - If so, IMO that's a major flaw in the evaluation, in particular because
 >   --unless in particular situations-- solvers in the various
 >   competitions were not asked for running in multi-threaded mode, and
->   hence were not designed for it. 
+>   hence were not designed for it.
 > This issue cannot be left "for further study", rather it must be
 > properly addressed in this paper.
 
@@ -188,16 +194,16 @@ TODO
 > competitions, producing a bias in favour of those tools which run
 > better on big families.
 
-> Finally, here is one suggestion. 
+> Finally, here is one suggestion.
 > It could be interesting to expand this evaluation by
 > analyzing the effect of the *redundancy* of the unsatisfiable
-> formulas, that is, to 
-> (i) compute an unsat core of each unsatisfiable formula 
+> formulas, that is, to
+> (i) compute an unsat core of each unsatisfiable formula
 > (ii) evaluate how  "redundant" formula are by analyzing the distribution
 >     of the reduction in size
 > (iii) run the solvers also on unsat cores
 > (iv) analyze the difference in performances by passing from a formula
-> to its core. 
+> to its core.
 
 > *  LOCAL POINTS
 
@@ -205,11 +211,11 @@ TODO
 > comparative assessments across years or solvers be more accurate."
 > This is disputable, see above.
 
-> pag. 7 rows 15-18 "Each job pair...memory." 
+> pag. 7 rows 15-18 "Each job pair...memory."
 > This sentence is incomprehensible until one reads section 3.7.
 
 > pag 14 rows 8 onward:
-> Please specify that "Qxx" refers to the xx-th quartile, and 
+> Please specify that "Qxx" refers to the xx-th quartile, and
 > that "Q3-Q1 spread" refers to inter-quartile range.
 > (Maybe explain what it is in a footnote.)
 
