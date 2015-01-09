@@ -177,6 +177,8 @@ TODO
 > This issue cannot be left "for further study", rather it must be
 > properly addressed in this paper.
 
+TODO
+
 > Another issue is the following. I notice first that the statement of page 15
 > row 48 "[In past competitions] the distribution is constrained to have
 > roughly equal representation of various categories of difficulty."  is
@@ -194,6 +196,8 @@ TODO
 > competitions, producing a bias in favour of those tools which run
 > better on big families.
 
+TODO
+
 > Finally, here is one suggestion.
 > It could be interesting to expand this evaluation by
 > analyzing the effect of the *redundancy* of the unsatisfiable
@@ -205,20 +209,32 @@ TODO
 > (iv) analyze the difference in performances by passing from a formula
 > to its core.
 
+TODO
+
 > *  LOCAL POINTS
 
 > pag. 4 "By using all available benchmarks in the evaluation, we intend that any
 > comparative assessments across years or solvers be more accurate."
 > This is disputable, see above.
 
+We merely wanted to point out that randomly selecting benchmarks
+introduces an element of non-determinism, which is eliminated when one
+considers all benchmarks. The sentence has been rephrased accordingly.
+
 > pag. 7 rows 15-18 "Each job pair...memory."
 > This sentence is incomprehensible until one reads section 3.7.
+
+TODO
 
 > pag 14 rows 8 onward:
 > Please specify that "Qxx" refers to the xx-th quartile, and
 > that "Q3-Q1 spread" refers to inter-quartile range.
 > (Maybe explain what it is in a footnote.)
 
+TODO
+
 > pag 15 "row 48 "[In part competitions] the distribution
 > is constrained to have roughly equal representation of various
 > categories of difficulty." See above.
+
+TODO
