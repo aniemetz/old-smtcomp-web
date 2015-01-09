@@ -95,17 +95,27 @@ TODO
 > with the position number in the competition in the cells (perhaps also #
 > benchmarks, # seconds in small fonts below that).
 
+TODO
+
 > Fig 11, 15: I would again use bar-graphs for these. The actual numbers are not
 > that important and a graphical representation makes this a lot easier to read.
+
+TODO
 
 > Fig 16, 17: There's a lot of empty space in this figure, and it's another
 > instance where bar graphs would work much better. (E.g., four bars for every
 > logic/year, each of which is split into three parts according to the quartile
 > positions.)
 
+TODO
+
 > Fig 18: Same again, this data would look good in a bar-graph.
 
+TODO
+
 > Fig 21: Sorting this table by SOTAC would help readability.
+
+TODO
 
 > Pg 28: '... we did not have time...' Sounds awkward, as this is a journal
 > paper, there would have been enough time for this. The suggestion of finding
@@ -113,9 +123,13 @@ TODO
 > additional time required to do so, especially as it should be possible to get
 > that from the existing data.
 
+TODO
+
 > 4, pg 30: It seems there was a significantly larger improvement in efficiency
 > between 2010 and 2011. I don't know whether there is a reason or possible
 > explanation for this, but if so, it would be great if that could be added.
+
+TODO
 
 > Overall: Given that all the figures and tables use a lot of space, it may make
 > sense to move them to an appendix. Having to flick back and forth between text
@@ -124,6 +138,7 @@ TODO
 > help. The solver version numbers are also repeated many times, they can be
 > abbreviated in most places I think.
 
+TODO
 
 > Typos:
 
