@@ -270,7 +270,14 @@ did not do this as part of SMT-EVAL.
 
 SMT-EVAL successfully used the new Star-Exec computational framework~\cite{webStarExec,StuST-IJCAR-14}. Running SMT-EVAL on Star-Exec did indeed expose a number of bugs and user interface issues; these were corrected in the course of the SMT-EVAL runs. Thus SMT-EVAL served a valuable purpose in preparing Star-Exec for larger scale use.
 
-SMT-EVAL's largest computational job was running all 45 of the evaluated solvers on all of the non-incremental benchmarks in the SMT library. The benchmarks belong to different {\em logics} and solvers are characterized by which logics they support. So for each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that support problems in that logic, for a total of 1\,663\,478 solver-benchmark combinations (called {\em job-pairs} in Star-Exec). This job took several months of wall-clock time to run. We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job pairs. Because of a bug (now corrected), the results of about 600 job-pairs were not present in the accumulated results. These were identified and rerun as an additional ``mop-up'' job. Each job-pair was run in an independent environment, on a computation node by itself. Each node has four cores. The job-pair was limited to 25 minutes of wall-clock time, 100 minutes of CPU time, and 1GB of memory.
+SMT-EVAL's largest computational job was running all 45 of the evaluated solvers on all of the relevant non-incremental benchmarks in the SMT library. 
+The benchmarks belong to different {\em logics} and solvers are characterized by which logics they support. 
+So for each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that support problems in that logic, for a total of 1\,663\,478 solver-benchmark combinations (called {\em job-pairs} in Star-Exec). 
+This job took several months of wall-clock time to run. 
+We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job pairs. 
+Because of a bug (now corrected), the results of about 600 job-pairs were not present in the accumulated results. 
+These were identified and rerun as an additional ``mop-up'' job. 
+Each solver-benchmark was run in an independent environment, on a computation node by itself, with time and memory limits, as described in section~\ref{parallel}.
 
 \section{Evaluation results}
 \label{Evaluations}
@@ -382,7 +389,9 @@ more restricted benchmarks but is not deemed competitive and thus was not formal
 
 We can obtain a measure of the overall year-by-year improvement in solver performance by applying each year's solvers to all the benchmarks (within each logic), observing the best performance on each benchmark. That is, the data shows a {\em virtual best performer}, obtained by an all-knowing oracle choosing, for each benchmark, the solver that performs best on that benchmark.
 
-Fig.~\ref{Fig:CumulativeTimes} shows the fraction of benchmarks completed (y-axis) within a given time (in seconds, on the x-axis); thus points toward the upper left are better (more completed in less time). The results for all logics are shown together. The four curves are the data for the four years from 2010 to 2013. The lowest (marked with fine dots) curve is that for 2010. There is clearly significant progress made from 2010 to later years: the number of benchmarks completed within a given time is noticeably higher. The curves for 2011 and 2012 (heavy dashes and short dashes, respectively) are clearly above 2010, but are not substantially different from each other. The solvers for 2013 (heavy solid line) are uniformly above those for previous years, but not by a large amount.  
+Fig.~\ref{Fig:CumulativeTimes} shows the fraction of benchmarks completed (y-axis) within a given time (in seconds, on the x-axis); thus points toward the upper left are better (more completed in less time). The results for all logics are shown together. 
+The four curves are the data for the four years from 2010 to 2013. The lowest (marked with fine dots) curve is that for 2010. 
+There is clearly significant progress made from 2010 to later years: the number of benchmarks completed within a given time is noticeably higher; we did not attempt to identify the source of this historical improvement. The curves for 2011 and 2012 (heavy dashes and short dashes, respectively) are clearly above 2010, but are not substantially different from each other. The solvers for 2013 (heavy solid line) are uniformly above those for previous years, but not by a large amount.  
 
 By this data, the improvements in raw SMT solver performance on the current set of benchmark problems have slowed down, though they may have improved by other measures.
 
@@ -417,22 +426,26 @@ However, there are aspects of the competition that are not deterministic. We mea
 \item {\em The repeatability of the time a given solver takes on a given benchmark} (Section \ref{Accuracy}). This variation is a combination of two factors: any variation in execution and timing by the Star-Exec system itself, and any non-determinism in the execution of the solver.
 \item {\em Variation caused by selection of benchmarks} (Section \ref{BenchmarkSelection}). \end{itemize}
  
- There is the additional risk that the set of benchmarks in SMT-LIB is not representative of any particular application area. We do not evaluate that risk here, but expect that this is quite likely the case.
+ There is the additional risk that the set of benchmarks in SMT-LIB is not representative of any particular application area. 
+We do not evaluate that risk here, but expect that this is quite likely the case.
+As noted in our conclusions, we consider assessment of benchmarks as the most 
+important aspect of future work. It would consist of a survey of the uses of SMT solvers, determination of the corresponding characteristics needed of solvers, an assessment of the degree to which current benchmarks are representative of the identified uses, and collection of additional benchmarks.
+
  
 \subsubsection{Accuracy of performance measurements}
 \label{Accuracy}
 
 To measure the repeatability of a given solver on a given benchmark, we produced a random selection of benchmark-solver pairs (job-pairs), selecting only among job-pairs that did not timeout and had a running time of at least 0.1~seconds. The random selection produced 10\,165 job-pairs (out of the total 1\,663\,478 job-pairs). These job-pairs were run 8 times on 8 different days. One such run took only a few hours. This resulted in 8 repetitions of each of the selected job-pairs. The data set is archived with the other evaluation data on the SMT-EVAL website. Star-Exec was lightly loaded on these days, so we did not measure any effect owing to interference with other uses of Star-Exec.
 
-The 8 measured values for a job-pair were sorted and the first, median, and third quartile measured (as the average of sorted values 2 and 3, 4 and 5, and 6 and 7, respectively). We noted the following points:
+The 8 measured values for a job-pair were sorted and the first, median, and third quartile measured; these are as the average of sorted values 2 and 3, 4 and 5, and 6 and 7, respectively, and designated as Q1, Q2, and Q3. We noted the following points:
 \begin{itemize}[noitemsep,nolistsep]
-\item Of the measured job-pairs, about 78\% had a Q3-Q1 spread less than 10\% of the median value. That is, repeated measurements will fall within about 10\% of each other roughly 50\% of the time.\footnote{We did not measure skew: the degree to which Q3 and Q1 are unequally distant from the median.}
-\item 3.5\% of job-pairs showed a Q3-Q1 spread more than 50\% of the median value. 
+\item Of the measured job-pairs, about 78\% had an interquartile range (difference between Q3 and Q1) less than 10\% of the median value. That is, repeated measurements will fall within about 10\% of each other roughly 50\% of the time.\footnote{We did not measure skew: the degree to which Q3 and Q1 are unequally distant from the median.}
+\item 3.5\% of job-pairs showed an interquartile range more than 50\% of the median value. 
 \item Nine cases of the 10165 had a Q3 value more than double the median. These clearly showed multi-modal behavior among the eight data points for each benchmark-solver pair. Such behavior is likely the result of non-deterministic choices within the solver's search algorithms. 
 \item We did not expand our study to determine whether the variation in performance was correlated to the choice of solver or to certain benchmarks. Also, we did not measure any effects owing to benchmark scrambling, which we now know can change solver behavior significantly.
 \end{itemize}
 
-An approximate conclusion from the above is that variation in timing itself plays a relatively small role in any variation in the competition. We expect the variation averages out over\ many benchmarks and is not correlated with particular solvers. It might have a larger effect on benchmarks with short running times (but we did not quantify this).
+An approximate conclusion from the above is that variation in timing itself plays a relatively small role in any variation in the competition. We expect the variation averages out over\ many benchmarks and is not correlated with particular solvers. It might have a larger effect on benchmarks with short running times (but we did not quantify this). The number of benchmarks per division used in previous competitions was on the order of 200, but did vary from division to division; the standard deviation of a mean calculated from a sample of 200 observations of an approximately normal distribution would be only about 0.05 of the interquartile range. 
 
 Any variation due to non-determinism within a solver we consider part of that solver's design. Thus it is possible that in some competition a non-deterministic solver might do quite well, while in a repeat of the same competition that solver, making other internal random choices, might do poorly. 
 
@@ -472,7 +485,9 @@ In previous competitions, the winner was determined as the solver that correctly
 \label{Fig:virtual-competition-all3}
 \end{figure}
 
-However, past competitions have not used all benchmarks, but rather a random subset of the benchmarks. It is worth asking how susceptible the competition results are to the particular subset of benchmarks used for the competition. Typically, the choice is not completely random; rather, the distribution is constrained to have roughly equal representation of various categories of difficulty. For our evaluation here, we determined the results of a virtual competition by simply randomly selecting different equal-sized subsets (ignoring difficulty measures), determining the competition results for each, and observing whether the competition results vary significantly depending on the subset.  Fig.~\ref{Fig:virtual-competition-some} shows the result of an experiment in which a virtual competition was executed on 1000 random subsets; we tallied the fraction of times that the winner was different than the winner in the full virtual competition (Figs. \ref{Fig:virtual-competition-all} - \ref{Fig:virtual-competition-all3}) and the fraction of times that the complete order of the finishers was different. (We limited our consideration to those logics with at least 100 benchmarks and with more than one solver.)
+However, past competitions have not used all benchmarks, but rather a random subset of a selection of the benchmarks. It is worth asking how susceptible the competition results are to the particular subset of benchmarks used for the competition. Typically, the choice was not completely random; rather, the distribution was (a) constrained to have roughly equal representation of various categories of difficulty and (b) curated to avoid over-representation of benchmark families that contained many similar benchmarks. For our evaluation here, we determined the results of a virtual competition by simply randomly selecting different equal-sized subsets (ignoring difficulty measures), determining the competition results for each, and observing whether the competition results vary significantly depending on the subset.  Fig.~\ref{Fig:virtual-competition-some} shows the result of an experiment in which a virtual competition was executed on 1000 random subsets; we tallied the fraction of times that the winner was different than the winner in the full virtual competition (Figs. \ref{Fig:virtual-competition-all} - \ref{Fig:virtual-competition-all3}) and the fraction of times that the complete order of the finishers was different. (We limited our consideration to those logics with at least 100 benchmarks and with more than one solver.)
+
+Note that we did not curate the benchmarks to address the issue of over-representation of some benchmark families (the authors of this report are not knowledgeable about which families are at issue).  Thus the study should not be seen as a competition that ranks solvers, but as one that investigates various competition organizations.
 
 The results are quite instructive. In many logics, the competition winners change in only a small fraction of trials.
 However, in several logics, the fraction of trials in which the winner changes is quite significant, in some cases over~60\%. Inspection of the data reveals two contributing causes.
@@ -627,10 +642,10 @@ The CVC4 and Z3 solvers have a high total SOTAC because they contribute to a bro
 \centering
 \begin{tabular}{|l|rrr|}
 \hline
-\input{sotac.tex}
+\input{sotac-sorted.tex}
 \hline
 \end{tabular}
-\caption{State of the art contribution from each of the 2013 solvers.}
+\caption{State of the art contribution from each of the 2013 solvers, sorted by Total SOTAC.}
 \label{Fig:sotac}
 \end{figure}
 
@@ -746,7 +761,8 @@ Effort toward determining status of benchmarks whose status is currently unknown
 Other observations are these:
 \begin{itemize}
 \item {\em Participation}. The number of participants is relatively stable (9-13) with an average turnover of 35\% (low of 16\%, high of 50\%) each year. There is also a core of continuing participants (about 1/3 of the total).
-\item {\em Progress in solver performance}. Solver performance increased significantly from 2010 to 2013, but most of that improvement occurred from 2010 to 2011. There is improvement across nearly all logics, but some logics are lagging.
+\item {\em Progress in solver performance}. Solver performance increased significantly from 2010 to 2013. 
+Most of that improvement occurred from 2010 to 2011; we did not determine a reason for that improvement. There is improvement across nearly all logics, though some logics are lagging.  
 \item {\em Repeatability}. The repeatability of benchmarks is reduced by solver nondeterminism. Most importantly, however, competition repeatability is compromised by significant differences in performance of solvers on particular benchmarks, such that different random subsets of benchmarks will produce different assessments of solvers. The relevance of competitions is also threatened by the relevance of the total benchmark set.
 \item {\em Competitiveness of solvers}. Within a logic nearly all solvers contribute something (e.g., a solution that no other solver produces). However, generally the winning times across benchmarks within a logic are obtained by 2-3 solvers that dominate that division. Comparing first-place times to second-place times shows that (a) in many logics the runner-up is quite close to the winner, but (b) in some logics, presumably with state-of-the-art tuning and advanced algorithms, the winner far outstrips the other competitors. It is also relevant that most benchmarks change winner from one year to the next. Overall, we judge that there is a moderate degree of competitiveness among solvers - a few tend to dominate in any logic, but other solvers do also make their contribution.
 \item {\em Difficulty of Benchmarks}. A relatively low fraction of benchmarks require more than the timeout period to solve. Most benchmarks are solved by all solvers within the timeout period.
@@ -770,7 +786,10 @@ The experience of past competitions and this evaluation point to a number of ide
 \subsection{Future work}
 The most important aspect of future work is to increase and improve benchmark quality, as described above. Thus we would encourage
 \begin{itemize}
-\item a broad survey of SMT application domains and their needs in solver support, both logics and functionality beyond determining satisfiability. This would also drive collection of relevant benchmarks.
+\item a broad survey of SMT application domains and their needs in solver support, both logics and functionality beyond determining satisfiability. 
+A corresponding review of the benchmarks in SMT-LIB would determine the degree
+to which benchmarks are representative of the application domains and would 
+provide guidelines for collecting new benchmarks.
 \end{itemize}
 There are also a number of questions that we posed but did not have the time or data to answer. 
 \begin{itemize}
