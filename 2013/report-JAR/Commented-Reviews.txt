@@ -49,7 +49,7 @@ Done.
 > to the lattice on smtlib.org, I think it would be nicer to include that one
 > instead of the one currently in Fig 4.
 
-TODO
+N is now included. We retained the current version with the adjustment rather than replacing it with the smtlib.org version in order to point out the differences bewteen the containment relations a user might expect with the more complicated ones that are actually implemented.
 
 > Fig 5: The font in this table is smaller than in other tables.
 

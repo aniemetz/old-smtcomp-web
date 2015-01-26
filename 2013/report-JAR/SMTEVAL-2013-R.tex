@@ -320,8 +320,8 @@ Fig. \ref{Fig:participation} for 2012, though all three (and the two 2011 entrie
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{LogicLattice}
-\caption{Lattice of SMT logics defined in SMT-LIB. The links represent a natural inclusion by characteristics, but {\it not} a sub-logic relationship. {\tt QF\_ABV} is defined, but is often subsumed in {\tt QF\_AUFBV}, and is not usually listed separately in other tables in this report. {\tt Q} is not a logic by itself but is a characteristic indicating that quantified expressions are permitted in the logic.}
+\includegraphics[width=\textwidth]{LogicLatticeN}
+\caption{Lattice of SMT logics defined in SMT-LIB. The links represent a natural inclusion by characteristics, but {\it not} a sub-logic relationship. {\tt QF\_ABV} is defined, but is often subsumed in {\tt QF\_AUFBV}, and is not usually listed separately in other tables in this report. {\tt Q} is not a logic by itself but is a characteristic indicating that quantified expressions are permitted in the logic; similarly {\tt N} indicates non-linear aritmetic is allowed.}
 \label{Fig:lattice}
 \end{figure}
 
@@ -342,7 +342,7 @@ Leaving aside difference logics as special cases of integer and real logics, the
 This list of characteristics partially corresponds to the set of SMT-LIB theories. The exceptions are quantification and non-linearity, both of which designate lifting restrictions on the kinds of terms allowed in the resulting logic. (Since they do not correspond exactly to underlying SMT theories, the term {\em characteristics} is used in this discussion.)
 
 It is possible to define a logic with any powerset of these characteristics in an almost purely combinatorial sense. 
-Barring non-linearity without arithmetic and the useless empty set, there are 111 combinations of characteristics (instead of the full 128). SMT-LIB has definitions and benchmarks for 20 of these logics (excluding QF\_RDL, QF\_IDL, and QF\_UFIDL). Fig.~\ref{Fig:lattice} shows what might be expected to be natural containment relationships among the logics defined at the time of this evaluation. 
+Barring non-linearity without arithmetic and the useless empty set, there are 111 combinations of characteristics (instead of the full 128). SMT-LIB has definitions and benchmarks for 20 of these logics (excluding QF\_RDL, QF\_IDL, and QF\_UFIDL) at the time of the evaluation, expanded to 34 in 2014. Fig.~\ref{Fig:lattice} shows what might be expected to be natural containment relationships among the logics defined at the time of this evaluation. 
 
 However, what might be expected to be natural containment relationships are not actually sub-logic relationships. That more accurate relationship is shown in a diagram on the SMT-LIB website: \url{http://smtlib.cs.uiowa.edu/logics.shtml} (due to Cesare Tinelli). The principal cause of this lack of sub-logic relationship is that many of the logics supporting arrays support only specific sorts of arrays. For example, the basic QF\_AX logic allows arbitrary new sort symbols, including arrays over those free sorts. However, QF\_ABV (arrays and bit-vectors) does not allow new sort symbols and only allows arrays over bit-vector sorts.
 
