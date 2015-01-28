@@ -67,7 +67,7 @@ The plot has been improved.
 > for each logic) would be much easier to read, and the actual percentages are
 > not really necessary (except perhaps as appendix).
 
-TODO
+Converted to bargraphs.
 
 > 3.5: As stated here, there is a very real risk of the benchmarks not being
 > representative of any particular application area. This would indeed be a very
@@ -113,7 +113,7 @@ Similarly for Fig. 16.
 > logic/year, each of which is split into three parts according to the quartile
 > positions.)
 
-TODO
+Converted to graphics.
 
 > Fig 18: Same again, this data would look good in a bar-graph.
 
