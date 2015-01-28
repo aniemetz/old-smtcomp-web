@@ -20,6 +20,7 @@
 \usepackage{colortab}
 \usepackage{xcolor}
 \usepackage{tabularx}
+\usepackage{pdfpages}
 
 %%\usepackage{subcaption}
 
@@ -141,7 +142,7 @@ The particular goals of SMT-COMP include the following~\cite{smtcompweb}:
 
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{SMTCOMP-History}
+\includegraphics[width=\textwidth]{SMTCOMP-History}
 \caption{SMT-COMP history}
 \label{Fig:history}
 \end{figure}
@@ -406,11 +407,12 @@ An alternate measure of solver progress is to count, for a given logic, what fra
 
 \begin{figure}
 \centering
-\begin{tabular}{|l|r|rrrr|}
-\hline
-\input{bettertime}
-\hline
-\end{tabular}
+%\begin{tabular}{|l|r|rrrr|}
+%\hline
+%\input{bettertime}
+%\hline
+%\end{tabular}
+\includegraphics[width=\textwidth]{bettertime.pdf}
 \caption{The fraction of benchmarks whose best time improved between the given years.}
 \label{Fig:bettertime}
 \end{figure}
@@ -487,7 +489,7 @@ In previous competitions, the winner was determined as the solver that correctly
 
 However, past competitions have not used all benchmarks, but rather a random subset of a selection of the benchmarks. It is worth asking how susceptible the competition results are to the particular subset of benchmarks used for the competition. Typically, the choice was not completely random; rather, the distribution was (a) constrained to have roughly equal representation of various categories of difficulty and (b) curated to avoid over-representation of benchmark families that contained many similar benchmarks. For our evaluation here, we determined the results of a virtual competition by simply randomly selecting different equal-sized subsets (ignoring difficulty measures), determining the competition results for each, and observing whether the competition results vary significantly depending on the subset.  Fig.~\ref{Fig:virtual-competition-some} shows the result of an experiment in which a virtual competition was executed on 1000 random subsets; we tallied the fraction of times that the winner was different than the winner in the full virtual competition (Figs. \ref{Fig:virtual-competition-all} - \ref{Fig:virtual-competition-all3}) and the fraction of times that the complete order of the finishers was different. (We limited our consideration to those logics with at least 100 benchmarks and with more than one solver.)
 
-Note that we did not curate the benchmarks to address the issue of over-representation of some benchmark families (the authors of this report are not knowledgeable about which families are at issue).  Thus the study should not be seen as a competition that ranks solvers, but as one that investigates various competition organizations.
+Note that we did not curate the benchmarks to address the issue of over-representation of some benchmark families (the authors of this report are not knowledgeable about which families are at issue); we simply used all of the benchmarks.  Thus the study should not be seen as a competition that ranks solvers, but as one that investigates various competition organizations.
 
 The results are quite instructive. In many logics, the competition winners change in only a small fraction of trials.
 However, in several logics, the fraction of trials in which the winner changes is quite significant, in some cases over~60\%. Inspection of the data reveals two contributing causes.
@@ -582,42 +584,48 @@ The CVC4 and Z3 solvers have a high total SOTAC because they contribute to a bro
 
 \end{itemize}
 
+%\begin{figure}
+%\centering
+%\begin{tabular}{|ll|r|rrrr|}
+%\hline
+%\input{firstoversecond1.tex}
+%\end{tabular}
+%\caption{(Part 1) Runner-up: Ratio of winning time to runner-up time.}
+%\label{Fig:runnerup1}
+%\end{figure}
+%
+%\begin{figure}
+%\centering
+%\begin{tabular}{|ll|r|rrrr|}
+%\hline
+%\input{firstoversecond2.tex}
+%\end{tabular}
+%\caption{(Part 2) Runner-up: Ratio of winning time to runner-up time.}
+%\label{Fig:runnerup2}
+%\end{figure}
+
 \begin{figure}
 \centering
-\begin{tabular}{|ll|r|rrrr|}
-\hline
-\input{firstoversecond1.tex}
-\end{tabular}
-\caption{(Part 1) Runner-up: Ratio of winning time to runner-up time.}
+\includegraphics[angle=270,origin=c,width=\columnwidth]{runnerup.pdf}
+\caption{Runner-up: Ratio of winning time to runner-up time, showing median, first and third quartiles.}
 \label{Fig:runnerup1}
 \end{figure}
 
 \begin{figure}
 \centering
-\begin{tabular}{|ll|r|rrrr|}
-\hline
-\input{firstoversecond2.tex}
-\end{tabular}
-\caption{(Part 2) Runner-up: Ratio of winning time to runner-up time.}
-\label{Fig:runnerup2}
-\end{figure}
-
-
-\begin{figure}
-\centering
-\begin{tabular}{|l|rrr|p{.3in}|l|rrr|}
-\hline
-\input{turnover12.tex}
-\hline
-\end{tabular}
-\vspace{.2in}
-%\includegraphics{turnover}
+\includegraphics[width=\columnwidth]{turnover.pdf}
+%\begin{tabular}{|l|rrr|p{.3in}|l|rrr|}
+%\hline
+%\input{turnover12.tex}
+%\hline
+%\end{tabular}
 \caption{Turnover: Fraction of benchmarks for the given year and logic for which the winning solver is from a different solver family than the prior year.}
 \label{Fig:turnover}
 \end{figure}
 
 
 \begin{figure}
+\centering
 \centering
 \begin{tabular}{|ll|ccrrr|}
 \hline
@@ -664,6 +672,8 @@ primary evaluation, and some of the early CPU-time data appears inconsistent wit
 \end{itemize}
 We expect that the 2014 competition will generate a data set better able to answer these questions.
 
+With respect to this study, note that we used solvers as they were historically configured. They may have been configured solely for sequential performance, and the authors do not know in every case what the configurations of the older solvers are. Modern configurations of the same solvers might make use of multiple cores. The configuration of StarExec used for the evaluation (4 cores, 25 minute timeout), might be less than ideal from some historical solvers, but it is typical of what a user might use at the present time. Thus, to repeat a point made elsewhere in this report, the results of the virtual competitions should not be used to compare specific solvers. Rather, they offer a comparison of different modes of organizing and running the competition.
+
 \subsection{Benchmarks}
 \label{Benchmarks}
 
@@ -704,8 +714,13 @@ percentiles of each distribution are tabulated (the value for the {\em n}th perc
  
 These results indicate that there is substantial room for more difficult benchmarks in almost all of the logics. On the other hand, if the benchmarks are indeed typical of application problems, the results indicate that today's solvers are very capable.
 
-An additional question that we did not have time to address is the degree to which benchmarks discriminate among solvers. A small set of `discriminating' benchmarks would be more useful than a large set of undifferentiated ones. One could, for example, measure a quantify akin to the SOTAC measure of section \ref{Competitiveness}: benchmarks that are easy for all solvers would be discounted, ones that are hard for all would be challenges, and ones that show a wide range of performance might be discriminating benchmarks.
- 
+An additional question that would be interesting to address in a benchmark evaluation
+ is the degree to which benchmarks discriminate among solvers. A small set of `discriminating' benchmarks would be more useful than a large set of undifferentiated ones. One could, for example, measure a quantity akin to the SOTAC measure of section \ref{Competitiveness}: benchmarks that are easy for all solvers would be discounted, ones that are hard for all would be challenges, and ones that show a wide range of performance might be discriminating benchmarks.
+
+For example, consider a competition with just two solvers. There are then four categories of benchmarks corresponding to the subsets of solvers that solve the
+benchmarks. The key point is whether benchmarks that are grouped together would nearly always be grouped together in other competitions with other sets of solvers or other competition rules. To fully elucidate this question will require analysis of the characteristics of the benchmarks combined with 
+experimental assessment of their similarity in a wide variety of competition designs. We determined that the principal data collection of SMT-EVAL was not adequate to answer this question and that it deserved a full analysis in 
+conjunction with a broad evaluation of benchmarks.
 
 \begin{figure}
 \centering

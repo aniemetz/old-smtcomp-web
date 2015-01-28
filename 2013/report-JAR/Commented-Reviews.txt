@@ -49,7 +49,8 @@ Done.
 > to the lattice on smtlib.org, I think it would be nicer to include that one
 > instead of the one currently in Fig 4.
 
-N is now included. We retained the current version with the adjustment rather than replacing it with the smtlib.org version in order to point out the differences bewteen the containment relations a user might expect with the more complicated ones that are actually implemented.
+Included N as a node, but did not change the figure because we wanted to contrast the 
+naively expected inclusion relationships with the strict sublogic relationship in Tinelli's diagram.
 
 > Fig 5: The font in this table is smaller than in other tables.
 
@@ -85,7 +86,9 @@ Additional information added to clarify this point.
 > Fig 8, 9, 10: These tables waste a lot of space, especially the repetition of
 > Z3's version number. Perhaps bar-graphs would again make this easier to digest.
 
-TODO
+We tried formatting this as a barchart, but it took more space and was not particularly more instructive. 
+In the end the current form that lists tools in order, with the data given for further reference seems best.
+
 
 > 3.5.2 , pg 17: It's very interesting to see that the random benchmark
 > selection has such a big impact on the competition results. Fig 12, 13, 14 are
@@ -96,12 +99,14 @@ TODO
 > with the position number in the competition in the cells (perhaps also #
 > benchmarks, # seconds in small fonts below that).
 
-TODO
+Thanks for the suggested alternate presentation - we tried it but it seemed to be more confusing. Also, it seemed better to stay consistent with Fig 8-10.
+Granted it is a lot of numbers, but the general trends are quickly observable and the data is there for someone who wantsw to drill down.
 
 > Fig 11, 15: I would again use bar-graphs for these. The actual numbers are not
 > that important and a graphical representation makes this a lot easier to read.
 
-TODO
+A bar chart did not work well for Fig. 11, because it contains a variety of information - it also ended up taking more space.
+Similarly for Fig. 16.
 
 > Fig 16, 17: There's a lot of empty space in this figure, and it's another
 > instance where bar graphs would work much better. (E.g., four bars for every
@@ -112,7 +117,7 @@ TODO
 
 > Fig 18: Same again, this data would look good in a bar-graph.
 
-TODO
+Converted to a graphic plot.
 
 > Fig 21: Sorting this table by SOTAC would help readability.
 
@@ -124,7 +129,9 @@ Done
 > additional time required to do so, especially as it should be possible to get
 > that from the existing data.
 
-TODO
+Reworded and expanded. We considered adding an analysis of this question, 
+but in the end decided that it was worth a much fuller analysis, in conjunction 
+with an overall benchmark review - and that the existing data was not adequate to the task.
 
 > 4, pg 30: It seems there was a significantly larger improvement in efficiency
 > between 2010 and 2011. I don't know whether there is a reason or possible
@@ -193,7 +200,21 @@ Understand. The basic ideas were summarized in presentations at previous worksho
 > This issue cannot be left "for further study", rather it must be
 > properly addressed in this paper.
 
-TODO
+There indeed might be a mix of sequential vs. parallel configurations, as we used
+the historical, public versions of each solver. We added text to clarify that the
+results cannot be used to extrapolate to 2015 versions of solvers for the reason
+raised here as well as other improvements in tools: the virtual competitions reported
+in the paper do not anoint winners but rather compare, for example, the variability in
+winners depending on various ways of executing a comparision. Also, nearly any current use
+of StarExec will use a 4-core environment, however the solver was configured, so we
+believe our configuration of StarExec is appropriate.
+In addition, as pointed out in the
+paper, the data available from StarExec at the time the evaluation began to run did not, in retrospect,  
+appear to give reliable cpu time measurements - hence we used wall clock comparisons.
+We do not think that we can further evaluate the data to provide additional analysis -
+it would take a rerunning of the data in multiple modes, configuring old and new solvers
+in different ways. To my knowledge only CVC4 (and maybe CVC3) have configurations 
+explicitly tuned to the number of cores and timeout values of the StarExec configuration.
 
 > Another issue is the following. I notice first that the statement of page 15
 > row 48 "[In past competitions] the distribution is constrained to have
