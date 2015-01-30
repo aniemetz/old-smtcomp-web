@@ -153,7 +153,7 @@ In 2013, the SMT Steering Committee decided to take a collective breath and spon
 
 Second, there was a desire to evaluate the state of the SMT community and the competition. The competition had become focused on details of performance on a particular set of benchmarks for particular logics and there was a feeling that its overall results had become somewhat predictable. An evaluation of progress of the SMT community was desired, with a consideration of other metrics and goals, not just winning narrowly focused competitions.
  
-And third, for many years the competition had relied on the SMT-Exec computational infrastructure~\cite{springerlink:10.1007/s10817-012-9246-5}.  A new infrastructure, Star-Exec~\cite{StuST-IJCAR-14,webStarExec} had been funded by the NSF and developed at the University of Iowa, but had not yet been tried out in earnest.  In fact, a goal in~2012 had been to use Star-Exec for SMT-COMP~2012; however, Star-Exec was not sufficiently operational and the competition had to revert to SMT-Exec.  It was anticipated that an evaluation in 2013, with less deadline pressure, would enable using Star-Exec on a shake-down cruise prior to a competition in 2014 at the Federated Logic Conference~(FLoC) Olympic Games~\cite{webOlympicGames}.
+And third, for many years the competition had relied on the SMT-Exec computational infrastructure~\cite{springerlink:10.1007/s10817-012-9246-5}.  A new infrastructure, StarExec~\cite{StuST-IJCAR-14,webStarExec} had been funded by the NSF and developed at the University of Iowa, but had not yet been tried out in earnest.  In fact, a goal in~2012 had been to use StarExec for SMT-COMP~2012; however, StarExec was not sufficiently operational and the competition had to revert to SMT-Exec.  It was anticipated that an evaluation in 2013, with less deadline pressure, would enable using StarExec on a shake-down cruise prior to a competition in 2014 at the Federated Logic Conference~(FLoC) Olympic Games~\cite{webOlympicGames}.
 
 \subsection{Evaluation topics}
 
@@ -190,7 +190,7 @@ following topics:
 
 \subsection{SMT-LIB benchmarks}
 
-One goal of the SMT project since its inception has been collecting benchmarks by which to evaluate SMT solvers and to represent challenge problems in the field. The growth in the number of benchmarks available is shown in the graphics of Fig.~\ref{Fig:history}. All\footnote{One benchmark, added late, was not included in all of the data accumulation; hence some tables report 95\,491 benchmarks and some 95\,492.} of the benchmarks present in Star-Exec at the time of evaluation (95\,492 benchmarks) were used for the evaluation, including those with unknown status. Of course, in previous years only a subset of these were available, since new benchmarks were added from year to year. Also in 2012, some benchmarks were used in the competition that were not yet added into the SMT-LIB benchmark set and were not yet in StarExec at the time of the evaluation. The 2012 benchmark set also included some incremental benchmarks that were not used in this evaluation. Furthermore, the competition each year used a random selection of benchmarks (guided by a difficulty distribution). The fact that the set of benchmarks used in competitions was different each year muddied any year-to-year comparison of results. By using all available benchmarks in the evaluation, we intend that any comparative assessments across years or solvers be less susceptible to random choices (cf.~Section~\ref{CompetitionRepeatability}). The various kinds of benchmarks and their distribution across logics are discussed below in Section~\ref{Evaluations}.
+One goal of the SMT project since its inception has been collecting benchmarks by which to evaluate SMT solvers and to represent challenge problems in the field. The growth in the number of benchmarks available is shown in the graphics of Fig.~\ref{Fig:history}. All\footnote{One benchmark, added late, was not included in all of the data accumulation; hence some tables report 95\,491 benchmarks and some 95\,492.} of the benchmarks present in StarExec at the time of evaluation (95\,492 benchmarks) were used for the evaluation, including those with unknown status. Of course, in previous years only a subset of these were available, since new benchmarks were added from year to year. Also in 2012, some benchmarks were used in the competition that were not yet added into the SMT-LIB benchmark set and were not yet in StarExec at the time of the evaluation. The 2012 benchmark set also included some incremental benchmarks that were not used in this evaluation. Furthermore, the competition each year used a random selection of benchmarks (guided by a difficulty distribution). The fact that the set of benchmarks used in competitions was different each year muddied any year-to-year comparison of results. By using all available benchmarks in the evaluation, we intend that any comparative assessments across years or solvers be less susceptible to random choices (cf.~Section~\ref{CompetitionRepeatability}). The various kinds of benchmarks and their distribution across logics are discussed below in Section~\ref{Evaluations}.
 
 \subsection{Solvers}
 
@@ -267,15 +267,15 @@ did not do this as part of SMT-EVAL.
 %parsers~\cite{TODO,TODO} to ensure that they are syntactically
 %conforming.
 
-\subsection{Star-Exec}
+\subsection{StarExec}
 
-SMT-EVAL successfully used the new Star-Exec computational framework~\cite{webStarExec,StuST-IJCAR-14}. Running SMT-EVAL on Star-Exec did indeed expose a number of bugs and user interface issues; these were corrected in the course of the SMT-EVAL runs. Thus SMT-EVAL served a valuable purpose in preparing Star-Exec for larger scale use.
+SMT-EVAL successfully used the new StarExec computational framework~\cite{webStarExec,StuST-IJCAR-14}. Running SMT-EVAL on StarExec did indeed expose a number of bugs and user interface issues; these were corrected in the course of the SMT-EVAL runs. Thus SMT-EVAL served a valuable purpose in preparing StarExec for larger scale use.
 
 SMT-EVAL's largest computational job was running all 45 of the evaluated solvers on all of the relevant non-incremental benchmarks in the SMT library. 
 The benchmarks belong to different {\em logics} and solvers are characterized by which logics they support. 
-So for each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that support problems in that logic, for a total of 1\,663\,478 solver-benchmark combinations (called {\em job-pairs} in Star-Exec). 
+So for each logic, the evaluation executed the cross product of all benchmarks for that logic and all solvers (in all years) that support problems in that logic, for a total of 1\,663\,478 solver-benchmark combinations (called {\em job-pairs} in StarExec). 
 This job took several months of wall-clock time to run. 
-We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job pairs. 
+We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of StarExec, before running the rest of the solver-benchmark job pairs. 
 Because of a bug (now corrected), the results of about 600 job-pairs were not present in the accumulated results. 
 These were identified and rerun as an additional ``mop-up'' job. 
 Each solver-benchmark pair was run in an independent environment, on a computation node by itself, with time and memory limits, as described in Section~\ref{parallel}.
@@ -283,7 +283,7 @@ Each solver-benchmark pair was run in an independent environment, on a computati
 \section{Evaluation results}
 \label{Evaluations}
 
-The evaluation team's observations on the questions it considered are presented in the following subsections; our overall conclusions are listed in Section~\ref{Conclusions}.  The raw data used as the basis for our observations, collected from Star-Exec, are all archived on the SMT-COMP website, at \url{http://sourceforge.net/p/smtcomp/code/HEAD/tree/trunk/smtcomp-web/2013/data} as 7z-compressed files.  (The largest is~25\,MB.)
+The evaluation team's observations on the questions it considered are presented in the following subsections; our overall conclusions are listed in Section~\ref{Conclusions}.  The raw data used as the basis for our observations, collected from StarExec, are all archived on the SMT-COMP website, at \url{http://sourceforge.net/p/smtcomp/code/HEAD/tree/trunk/smtcomp-web/2013/data} as 7z-compressed files.  (The largest is~25\,MB.)
 
 \subsection{Solver participation}
 \label{Solvers}
@@ -429,7 +429,7 @@ The SMT competition aims to be a repeatable measurement of relative performance 
 
 However, there are aspects of the competition that are not deterministic. We measured two of those in this evaluation:
 \begin{itemize}[noitemsep,nolistsep]
-\item {\em The repeatability of the time a given solver takes on a given benchmark} (Section \ref{Accuracy}). This variation is a combination of two factors: any variation in execution and timing by the Star-Exec system itself, and any non-determinism in the execution of the solver.
+\item {\em The repeatability of the time a given solver takes on a given benchmark} (Section \ref{Accuracy}). This variation is a combination of two factors: any variation in execution and timing by the StarExec system itself, and any non-determinism in the execution of the solver.
 \item {\em Variation caused by selection of benchmarks} (Section \ref{BenchmarkSelection}). \end{itemize}
  
  There is the additional risk that the set of benchmarks in SMT-LIB is not representative of any particular application area. 
@@ -441,7 +441,7 @@ important aspect of future work. It would consist of a survey of the uses of SMT
 \subsubsection{Accuracy of performance measurements}
 \label{Accuracy}
 
-To measure the repeatability of a given solver on a given benchmark, we produced a random selection of benchmark-solver pairs (job-pairs), selecting only among job-pairs that did not timeout and had a running time of at least 0.1~seconds. The random selection produced 10\,165 job-pairs (out of the total 1\,663\,478 job-pairs). These job-pairs were run 8 times on 8 different days. Each such run took only a few hours. This resulted in 8 repetitions of each of the selected job-pairs. The data set is archived with the other evaluation data on the SMT-EVAL website. Star-Exec was lightly loaded on these days, so we did not measure any effect owing to interference with other uses of Star-Exec.
+To measure the repeatability of a given solver on a given benchmark, we produced a random selection of benchmark-solver pairs (job-pairs), selecting only among job-pairs that did not timeout and had a running time of at least 0.1~seconds. The random selection produced 10\,165 job-pairs (out of the total 1\,663\,478 job-pairs). These job-pairs were run 8 times on 8 different days. Each such run took only a few hours. This resulted in 8 repetitions of each of the selected job-pairs. The data set is archived with the other evaluation data on the SMT-EVAL website. StarExec was lightly loaded on these days, so we did not measure any effect owing to interference with other uses of StarExec.
 
 The 8 measured values for a job-pair were sorted and the first, median, and third quartile measured; these are as the average of sorted values 2 and 3, 4 and 5, and 6 and 7, respectively, and designated as Q1, Q2, and Q3. We noted the following points:
 \begin{itemize}[noitemsep,nolistsep]
@@ -827,7 +827,7 @@ As this report is being finalized, the 2014 SMT Competition is underway. Some of
 \begin{acknowledgements} 
  
 The cost of executing the SMT competition is underwritten by the SMT
-Workshop.  The evaluation used the Star-Exec cluster at the University
+Workshop.  The evaluation used the StarExec cluster at the University
 of Iowa.  This computation cluster replaces the SMT-Exec cluster used
 for all previous competitions.  The cluster is supported by the
 U.S.\ National Science Foundation under grants \#1058748 and \#1058925.  Cok's
