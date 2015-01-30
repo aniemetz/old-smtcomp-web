@@ -322,13 +322,13 @@ Fig. \ref{Fig:participation} for 2012, though all three (and the two 2011 entrie
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{LogicLatticeN}
-\caption{Lattice of SMT logics defined in SMT-LIB. The links represent a natural inclusion by characteristics, but {\it not} a sub-logic relationship. {\tt QF\_ABV} is defined, but is often subsumed in {\tt QF\_AUFBV}, and is not usually listed separately in other tables in this report. {\tt Q} is not a logic by itself but is a characteristic indicating that quantified expressions are permitted in the logic; similarly {\tt N} indicates non-linear arithmetic is allowed.}
+\caption{Lattice of SMT logics defined in SMT-LIB. The links represent a natural inclusion by characteristics, but {\it not} a sub-logic relationship. QF\_ABV is defined, but is often subsumed in QF\_AUFBV, and is not usually listed separately in other tables in this report. Q is not a logic by itself but is a characteristic indicating that quantified expressions are permitted in the logic; similarly N indicates non-linear arithmetic is allowed.}
 \label{Fig:lattice}
 \end{figure}
 
-SMT-LIB defines a number of theories and logics. The logics are a combination of theories with additional functions or logic symbols or restrictions on the vocabulary of the theories. For example, the {\tt QF\_IDL} logic uses the underlying {\tt Ints} theory, but restricts terms to equalities and inequalities between constants and simple differences of variables.
-The combination of the {\tt Ints} theory and the {\tt Reals} theory adds functions that convert between integers and reals (among other things). 
-Note that the {\tt QF\_ABV} logic is defined, but is often subsumed in {\tt QF\_AUFBV} and has no benchmarks of its own;\footnote{By the time of the 2014 competition, the benchmarks were reorganized and recategorized, and more benchmarks were added. So now this logic is populated as well.} it is not usually listed separately in other tables in this report.
+SMT-LIB defines a number of theories and logics. The logics are a combination of theories with additional functions or logic symbols or restrictions on the vocabulary of the theories. For example, the QF\_IDL logic uses the underlying Ints theory, but restricts terms to equalities and inequalities between constants and simple differences of variables.
+The combination of the Ints theory and the Reals theory adds functions that convert between integers and reals (among other things). 
+Note that the QF\_ABV logic is defined, but is often subsumed in QF\_AUFBV and has no benchmarks of its own;\footnote{By the time of the 2014 competition, the benchmarks were reorganized and recategorized, and more benchmarks were added. So now this logic is populated as well.} it is not usually listed separately in other tables in this report.
 
 Leaving aside difference logics as special cases of integer and real logics, there are essentially these mostly orthogonal characteristics underlying the theories and logics:
 \begin{itemize}[noitemsep,nolistsep] %% these modifiers are not supported in all document classes
@@ -350,20 +350,21 @@ However, what might be expected to be natural containment relationships are not 
 The naming convention for logics is almost but not quite simply a combination of the letters indicated in the list above,
 corresponding to the characteristics of the logic, with the letters listed in order by convention:
 \begin{center}
-{\tt [QF\_][A|AX][UF][BV][N|L][IA|RA|IRA]}.}
+[QF\_][A\textbar AX][UF][BV][N\textbar L][IA\textbar RA\textbar IRA].
 \end{center}
 
 \noindent The non-uniformities are these:
 \begin{itemize}[noitemsep,nolistsep]
-\item quantification is indicated by {\em removing} a {\tt QF\_} prefix;
-\item the absence of non-linearity ({\tt N}), i.e., linearity, is indicated by an {\tt L}, instead of by no designator; 
-\item integer and real arithmetic are indicated by two letters ({\tt IA} and {\tt RA}) and their combination by {\tt IRA}; \item the {\tt A} used in the arithmetic designators could be ambiguous with the designator for arrays, except for position;
-\item a logic with just arrays is named {\tt QF\_AX}, whereas in other combinations including arrays, just an {\tt A} instead of {\tt AX} is used.
+\item quantification is indicated by {\em removing} a QF\_ prefix;
+\item the absence of non-linearity~(N), i.e., linearity, is indicated by an~L, instead of by no designator;
+\item integer and real arithmetic are indicated by two letters (IA and~RA) and their combination by~IRA;
+\item the~A used in the arithmetic designators could be ambiguous with the designator for arrays, except for position;
+\item a logic with just arrays is named QF\_AX, whereas in other combinations including arrays, just an~A instead of~AX is used.
 \end{itemize}
-For example, {\tt UFNIA} includes quantification (no {\tt QF\_} prefix), uninterpreted functions (UF), non-linearity (N), and integer arithmetic (IA), leaving out arrays, bit-vectors, and reals.
+For example, UFNIA includes quantification (no QF\_ prefix), uninterpreted functions~(UF), non-linearity~(N), and integer arithmetic~(IA), leaving out arrays, bit-vectors, and reals.
 
-These names have roots in the history of development of SMT-LIB. Nevertheless as the set of logics grows -- 23 here and 34 by the 2014 competition -- the situation will increasingly confuse new users of SMT-LIB trying to understand the structure of logics; in addition new theories and accompanying logics are anticipated.
-It would be useful to standardize the naming convention along the lines of current use, perhaps with slight adjustments (e.g., renaming {\tt QF\_AX} to {\tt QF\_A} and removing the excess {\tt A} from {\tt IA} and {\tt RA}), in order to define precisely the logic implied by any combination of designators. A policy regarding names would provide a process for defining names for new theories and logics. This would
+These names have roots in the history of development of SMT-LIB. Nevertheless as the set of logics grows---23 here and 34 by the 2014 competition---the situation will increasingly confuse new users of SMT-LIB trying to understand the structure of logics; in addition new theories and accompanying logics are anticipated.
+It would be useful to standardize the naming convention along the lines of current use, perhaps with slight adjustments (e.g., renaming QF\_AX to QF\_A and removing the excess~A from~IA and~RA), in order to define precisely the logic implied by any combination of designators. A policy regarding names would provide a process for defining names for new theories and logics. This would
 also make it easier to accurately characterize new benchmarks and to summarize the logics supported by a given solver. This need has been raised to the SMT-LIB coordinators and some work has been started to address it.
 
 %The absence of many combinations appears to be simply a matter of ad hoc lack of research or non-existence of benchmarks. For example,
