@@ -348,9 +348,12 @@ Barring non-linearity without arithmetic and the useless empty set, there are 11
 However, what might be expected to be natural containment relationships are not actually sub-logic relationships. That more accurate relationship is shown in a diagram on the SMT-LIB website: \url{http://smtlib.cs.uiowa.edu/logics.shtml} (due to Cesare Tinelli). The principal cause of this lack of sub-logic relationship is that many of the logics supporting arrays support only specific sorts of arrays. For example, the basic QF\_AX logic allows arbitrary new sort symbols, including arrays over those free sorts. However, QF\_ABV (arrays and bit-vectors) does not allow new sort symbols and only allows arrays over bit-vector sorts.
 
 The naming convention for logics is almost but not quite simply a combination of the letters indicated in the list above,
-corresponding to the characteristics of the logic, with the letters listed in order by convention: \\
-\centerline{{\tt [QF\_][A|AX][UF][BV][N|L][IA|RA|IRA]}.}\\
- The non-uniformities are these:
+corresponding to the characteristics of the logic, with the letters listed in order by convention:
+\begin{center}
+{\tt [QF\_][A|AX][UF][BV][N|L][IA|RA|IRA]}.}
+\end{center}
+
+\noindent The non-uniformities are these:
 \begin{itemize}[noitemsep,nolistsep]
 \item quantification is indicated by {\em removing} a {\tt QF\_} prefix;
 \item the absence of non-linearity ({\tt N}), i.e., linearity, is indicated by an {\tt L}, instead of by no designator; 
