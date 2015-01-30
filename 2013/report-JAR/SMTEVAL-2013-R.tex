@@ -278,7 +278,7 @@ This job took several months of wall-clock time to run.
 We ran it in quarters, using the result of the first quarter to adjust our procedures and debug some of Star-Exec, before running the rest of the solver-benchmark job pairs. 
 Because of a bug (now corrected), the results of about 600 job-pairs were not present in the accumulated results. 
 These were identified and rerun as an additional ``mop-up'' job. 
-Each solver-benchmark was run in an independent environment, on a computation node by itself, with time and memory limits, as described in section~\ref{parallel}.
+Each solver-benchmark pair was run in an independent environment, on a computation node by itself, with time and memory limits, as described in section~\ref{parallel}.
 
 \section{Evaluation results}
 \label{Evaluations}
@@ -322,7 +322,7 @@ Fig. \ref{Fig:participation} for 2012, though all three (and the two 2011 entrie
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{LogicLatticeN}
-\caption{Lattice of SMT logics defined in SMT-LIB. The links represent a natural inclusion by characteristics, but {\it not} a sub-logic relationship. {\tt QF\_ABV} is defined, but is often subsumed in {\tt QF\_AUFBV}, and is not usually listed separately in other tables in this report. {\tt Q} is not a logic by itself but is a characteristic indicating that quantified expressions are permitted in the logic; similarly {\tt N} indicates non-linear aritmetic is allowed.}
+\caption{Lattice of SMT logics defined in SMT-LIB. The links represent a natural inclusion by characteristics, but {\it not} a sub-logic relationship. {\tt QF\_ABV} is defined, but is often subsumed in {\tt QF\_AUFBV}, and is not usually listed separately in other tables in this report. {\tt Q} is not a logic by itself but is a characteristic indicating that quantified expressions are permitted in the logic; similarly {\tt N} indicates non-linear arithmetic is allowed.}
 \label{Fig:lattice}
 \end{figure}
 
@@ -381,7 +381,8 @@ Each solver supports some subset of the SMT logics and the corresponding theorie
 
 The numbers in the bottom row of the figure state the number of current (2013) solvers that support a given logic. The characteristics most lacking are quantifiers and nonlinearity. Those with the most support are bitvectors, uninterpreted functions and arithmetic.
 
-Note that the support indicated is that stated by the solver supplier. In some cases, a solver supports one logic but is not listed as supporting a subset of that logic. The general reason is that the subset, with restricted characteristics, allows for specific optimizations that are not implemented. The more general solver could act on problems of the
+Note that the support indicated is that stated by the solver supplier at the time the solver was submitted to a competition. 
+In some cases, a solver supports one logic but is not listed as supporting a subset of that logic. The general reason is that the subset, with restricted characteristics, allows for specific optimizations that are not implemented. The more general solver could act on problems of the
 more restricted benchmarks but is not deemed competitive and thus was not formally entered into the competition for the restricted logic.
 
 
@@ -437,7 +438,7 @@ important aspect of future work. It would consist of a survey of the uses of SMT
 \subsubsection{Accuracy of performance measurements}
 \label{Accuracy}
 
-To measure the repeatability of a given solver on a given benchmark, we produced a random selection of benchmark-solver pairs (job-pairs), selecting only among job-pairs that did not timeout and had a running time of at least 0.1~seconds. The random selection produced 10\,165 job-pairs (out of the total 1\,663\,478 job-pairs). These job-pairs were run 8 times on 8 different days. One such run took only a few hours. This resulted in 8 repetitions of each of the selected job-pairs. The data set is archived with the other evaluation data on the SMT-EVAL website. Star-Exec was lightly loaded on these days, so we did not measure any effect owing to interference with other uses of Star-Exec.
+To measure the repeatability of a given solver on a given benchmark, we produced a random selection of benchmark-solver pairs (job-pairs), selecting only among job-pairs that did not timeout and had a running time of at least 0.1~seconds. The random selection produced 10\,165 job-pairs (out of the total 1\,663\,478 job-pairs). These job-pairs were run 8 times on 8 different days. Each such run took only a few hours. This resulted in 8 repetitions of each of the selected job-pairs. The data set is archived with the other evaluation data on the SMT-EVAL website. Star-Exec was lightly loaded on these days, so we did not measure any effect owing to interference with other uses of Star-Exec.
 
 The 8 measured values for a job-pair were sorted and the first, median, and third quartile measured; these are as the average of sorted values 2 and 3, 4 and 5, and 6 and 7, respectively, and designated as Q1, Q2, and Q3. We noted the following points:
 \begin{itemize}[noitemsep,nolistsep]
@@ -489,7 +490,7 @@ In previous competitions, the winner was determined as the solver that correctly
 
 However, past competitions have not used all benchmarks, but rather a random subset of a selection of the benchmarks. It is worth asking how susceptible the competition results are to the particular subset of benchmarks used for the competition. Typically, the choice was not completely random; rather, the distribution was (a) constrained to have roughly equal representation of various categories of difficulty and (b) curated to avoid over-representation of benchmark families that contained many similar benchmarks. For our evaluation here, we determined the results of a virtual competition by simply randomly selecting different equal-sized subsets (ignoring difficulty measures), determining the competition results for each, and observing whether the competition results vary significantly depending on the subset.  Fig.~\ref{Fig:virtual-competition-some} shows the result of an experiment in which a virtual competition was executed on 1000 random subsets; we tallied the fraction of times that the winner was different than the winner in the full virtual competition (Figs. \ref{Fig:virtual-competition-all} - \ref{Fig:virtual-competition-all3}) and the fraction of times that the complete order of the finishers was different. (We limited our consideration to those logics with at least 100 benchmarks and with more than one solver.)
 
-Note that we did not curate the benchmarks to address the issue of over-representation of some benchmark families (the authors of this report are not knowledgeable about which families are at issue); we simply used all of the benchmarks.  Thus the study should not be seen as a competition that ranks solvers, but as one that investigates various competition organizations.
+Note that we did not curate the benchmarks to address the issue of over-represent-ation of some benchmark families (the authors of this report are not knowledgeable about which families are at issue); we simply used all of the benchmarks.  Thus the study should not be seen as a competition that ranks solvers, but as one that investigates various competition organizations.
 
 The results are quite instructive. In many logics, the competition winners change in only a small fraction of trials.
 However, in several logics, the fraction of trials in which the winner changes is quite significant, in some cases over~60\%. Inspection of the data reveals two contributing causes.
@@ -562,7 +563,7 @@ Figs.~\ref{Fig:virtual-competition-solved}, \ref{Fig:virtual-competition-solved2
 
 To assess competitiveness of the competitions and the set of solvers, we measured four quantities:
 \begin{itemize}
-\item {\em The ratio of the first to second place times on each benchmark in each logic.} The closer this quantity is to 1.0, the closer the race and the more the runner-up is challenging the leader. The ratio is averaged over all the benchmarks for each logic and year. The results are shown in Figs. \ref{Fig:runnerup1} and \ref{Fig:runnerup2}: for each logic and year that had more than one competitor, the mean, and 1st, median, and 3rd quartiles of the distribution of runner-up ratios are shown. 
+\item {\em The ratio of the first to second place times on each benchmark in each logic.} The closer this quantity is to 1.0, the closer the race and the more the runner-up is challenging the leader. The ratio is averaged over all the benchmarks for each logic and year. The results are shown in Fig. \ref{Fig:runnerup1}: for each logic and year that had more than one competitor, the mean, and 1st, median, and 3rd quartiles of the distribution of runner-up ratios are shown. 
 
 A few logics, LRA and UFLRA, are very uncompetitive - the median case has the winner more than 10 times better than the runner-up. In a few others, such as QF\_IDL, QF\_NIA, QF\_NRA the winner is often less than half the time of the runner-up. But in most cases, the ratio is in the 50\%-100\% range. That is, the races are not neck-and-neck but the winners have only a modest lead over the next finisher. Note that the particular solver that is the winner varies from benchmark to benchmark.
 
