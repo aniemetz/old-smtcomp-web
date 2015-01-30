@@ -505,7 +505,7 @@ For example, the logic QF\_AUFBV has 14335 benchmarks. Of those, 520 are unsolve
 
 A second virtual competition can be run using only benchmarks that all competitors solved within the timeout period. This would not make a useful real competition because the result could be easily gamed: a solver could win by thoroughly optimizing performance on a few benchmarks and purposely not solving the remainder. However, in this evaluation, no solver has had the chance to do that; performing this evaluation allows comparing running times alone, without the additional factor of unsolved benchmarks.
 
-Figs.~\ref{Fig:virtual-competition-solved}, \ref{Fig:virtual-competition-solved2}, and \ref{Fig:virtual-competition-solved3} show the result of such a competition, for the nine 2013 solvers; it uses all benchmarks that all the solvers registered for a given logic solve. In addition we performed the same experiment of 1000 virtual competitions each using 10\% of these benchmarks.  Fig.~\ref{Fig:virtual-competition-solved-some} shows the variation in winning order across these trials. The variation is even more than that shown in Fig.~\ref{Fig:virtual-competition-some}. To obtain some insight into this variation, we tabulate, in columns~2 and~3 of Fig.~\ref{Fig:virtual-competition-solved}ff, the mean and standard deviation\footnote{This is the population standard devation. To obtain the sample standard deviation scale these values by $\sqrt{0.999}$ } of the total solution time for each of the solvers in each logic. The standard deviations are substantial compared to the differences in mean times between competing solvers; even though the distributions of solving times are not necessarily Gaussian, the data indicate a substantial probability that the order would change based solely on the random choice of benchmark subset.
+Figs.~\ref{Fig:virtual-competition-solved} and \ref{Fig:virtual-competition-solved2} show the result of such a competition, for the nine 2013 solvers; it uses all benchmarks that all the solvers registered for a given logic solve. In addition we performed the same experiment of 1000 virtual competitions each using 10\% of these benchmarks.  Fig.~\ref{Fig:virtual-competition-solved-some} shows the variation in winning order across these trials. The variation is even more than that shown in Fig.~\ref{Fig:virtual-competition-some}. To obtain some insight into this variation, we tabulate, in columns~2 and~3 of Fig.~\ref{Fig:virtual-competition-solved}ff, the mean and standard deviation\footnote{This is the population standard devation. To obtain the sample standard deviation scale these values by $\sqrt{0.999}$ } of the total solution time for each of the solvers in each logic. The standard deviations are substantial compared to the differences in mean times between competing solvers; even though the distributions of solving times are not necessarily Gaussian, the data indicate a substantial probability that the order would change based solely on the random choice of benchmark subset.
 
 \begin{figure}
 \centering
@@ -521,7 +521,7 @@ Figs.~\ref{Fig:virtual-competition-solved}, \ref{Fig:virtual-competition-solved2
 \centering
 \begin{tabular}{|p{.01in}rrrl|}
 \hline
-\input{virtual-competition-solved.tex}
+\input{virtual-competition-solved-alt1.tex}
 \end{tabular}
 \caption{(Part 1) A virtual competition run only on benchmarks that all solvers solve.}
 \label{Fig:virtual-competition-solved}
@@ -531,21 +531,21 @@ Figs.~\ref{Fig:virtual-competition-solved}, \ref{Fig:virtual-competition-solved2
 \centering
 \begin{tabular}{|p{.01in}rrrl|}
 \hline
-\input{virtual-competition-solved2.tex}
+\input{virtual-competition-solved-alt2.tex}
 \end{tabular}
 \caption{(Part 2) A virtual competition run only on benchmarks that all solvers solve.}
 \label{Fig:virtual-competition-solved2}
 \end{figure}
 
-\begin{figure}
-\centering
-\begin{tabular}{|p{.01in}rrrl|}
-\hline
-\input{virtual-competition-solved3.tex}
-\end{tabular}
-\caption{(Part 3) A virtual competition run only on benchmarks that all solvers solve.}
-\label{Fig:virtual-competition-solved3}
-\end{figure}
+%\begin{figure}
+%\centering
+%\begin{tabular}{|p{.01in}rrrl|}
+%\hline
+%\input{virtual-competition-solved3.tex}
+%\end{tabular}
+%\caption{(Part 3) A virtual competition run only on benchmarks that all solvers solve.}
+%\label{Fig:virtual-competition-solved3}
+%\end{figure}
 
 
 \begin{figure}
