@@ -49,9 +49,9 @@ Done.
 > to the lattice on smtlib.org, I think it would be nicer to include that one
 > instead of the one currently in Fig 4.
 
-Included N as a node, but we did not change the figure because we
-wanted to contrast the naively expected inclusion relationships with
-the strict sublogic relationship in Tinelli's diagram.
+We have included N as a node, but we did not change the figure because
+we wanted to contrast the naively expected inclusion relationships
+with the strict sublogic relationship in Tinelli's diagram.
 
 > Fig 5: The font in this table is smaller than in other tables.
 
@@ -75,14 +75,14 @@ Converted to bargraphs.
 > interesting thing to investigate. Some evidence could perhaps be mined from the
 > data, e.g., by comparison of "industrial" benchmarks to "crafted" ones.
 
-The paragraph in question is expanded to indicate that we think review
-of benchmarks is an important part of future work, as we already
-stated in the conclusions. By including the discussion here the reader
-should avoid the impression we think it is a minor problem.  However,
-we think trying to assess this representative-ness is an extensive
-task and beyond the scope of what could be accomplsihed in this
-evaluation, as it involves a survey of uses and characteristic
-problems in the various user domains.
+The paragraph in question has been expanded to indicate that we think
+review of benchmarks is an important part of future work, as we
+already stated in the conclusion. By including the discussion here,
+the reader should avoid the impression that we consider this a minor
+issue. However, we believe trying to assess this representative-ness
+is an extensive task and beyond the scope of what could be
+accomplished in this evaluation, as it involves a survey of uses and
+characteristic problems in the various user domains.
 
 > 3.5.1, pg 14: It is expected that timing variation averages out over many
 > benchmarks, but it is not stated whether the number of benchmarks (~200?) used
@@ -94,10 +94,10 @@ Additional information added to clarify this point.
 > Z3's version number. Perhaps bar-graphs would again make this easier to digest.
 
 We tried formatting this as a barchart, but it took more space and was
-not particularly more instructive.  In the end the current form that
+not particularly more instructive. In the end the current form that
 lists tools in order, with the data given for further reference seems
-best.
-However, we did note that in the JAR style the data would fit in two sections instead of 3, and made the corresponding adjustments.
+best. However, we did note that in the JAR style the data would fit in
+two figures instead of three, and made the corresponding adjustments.
 
 > 3.5.2 , pg 17: It's very interesting to see that the random benchmark
 > selection has such a big impact on the competition results. Fig 12, 13, 14 are
@@ -110,32 +110,32 @@ However, we did note that in the JAR style the data would fit in two sections in
 
 Thanks for the suggested alternate presentation - we tried it but it
 seemed to be more confusing. Also, it seemed better to stay consistent
-with Figs. 8-10. Granted it is a lot of numbers, but the general
+with Figures 8-9. Granted it is a lot of numbers, but the general
 trends are quickly observable and the data is there for someone who
-wants to drill down.
-We did however combine the data into two sections, as with figures 8-9.
+wants to drill down. We did however combine the data into two figures
+instead of three, as with Figures 8-9.
 
 > Fig 11, 15: I would again use bar-graphs for these. The actual numbers are not
 > that important and a graphical representation makes this a lot easier to read.
 
-A bar chart did not work well for Fig. 11 (now Fig. 10), because it contains 
-a variety of information - it also ended up taking more space.
-Similarly for Fig. 15. (now 13)
+A bar chart did not work well for Fig. 11 (now Fig. 10), because the
+figure contains a variety of information - it also ended up taking
+more space. Similarly for Fig. 15 (now Fig. 13).
 
 > Fig 16, 17: There's a lot of empty space in this figure, and it's another
 > instance where bar graphs would work much better. (E.g., four bars for every
 > logic/year, each of which is split into three parts according to the quartile
 > positions.)
 
-Converted to graphics. (now Fig 14)
+Converted to graphics (now Fig. 14).
 
 > Fig 18: Same again, this data would look good in a bar-graph.
 
-Converted to a graphic plot. (now Fig. 15)
+Converted to a graphic plot (now Fig. 15).
 
 > Fig 21: Sorting this table by SOTAC would help readability.
 
-Done (now Fig. 18)
+Done (now Fig. 18).
 
 > Pg 28: '... we did not have time...' Sounds awkward, as this is a journal
 > paper, there would have been enough time for this. The suggestion of finding
@@ -153,7 +153,7 @@ the existing data was not fully adequate to the task.
 > explanation for this, but if so, it would be great if that could be added.
 
 We do not have an explanation for this historical observation.
-Clarifying text is added in the body and the conclusions.
+Clarifying text has been added in the body and in the conclusion.
 
 > Overall: Given that all the figures and tables use a lot of space, it may make
 > sense to move them to an appendix. Having to flick back and forth between text
@@ -162,7 +162,10 @@ Clarifying text is added in the body and the conclusions.
 > help. The solver version numbers are also repeated many times, they can be
 > abbreviated in most places I think.
 
-TODO
+Due to the changes discussed above, the figures now take up
+considerably less space than before. Moving all figures into an
+appendix is not without disadvantages; in the absence of a clear
+journal policy on this issue, we refrained from doing so.
 
 > Typos:
 
@@ -196,6 +199,8 @@ Fixed.
 > My first concern is that, having this report been submitted after 2014
 > FLOC Olympic games may make its content out of date.
 
+TODO
+
 Understand. The basic ideas were summarized in presentations at
 previous workshops, feedback received, and we then received
 encouragement to publish a report. But we will take the blame for
@@ -218,6 +223,8 @@ being slow. The 2014 report is not yet published.
 >   hence were not designed for it.
 > This issue cannot be left "for further study", rather it must be
 > properly addressed in this paper.
+
+TODO
 
 There indeed might be a mix of sequential vs. parallel configurations,
 as we used the historical, public versions of each solver. We added
@@ -255,11 +262,11 @@ timeout values of the StarExec configuration.
 > competitions, producing a bias in favour of those tools which run
 > better on big families.
 
-Comments added to clarify this. We did not consider this over-
-representation problem to be significant to our results because we
-were not trying to rank solvers, but rather to explore issues in
-competition design - all virtual competitions used the same set of
-material.
+We have added comments to clarify this point. We did not consider this
+over-representation problem to be particularly significant to our
+results because we were not trying to rank solvers, but rather to
+explore issues in competition design - all virtual competitions used
+the same set of benchmarks.
 
 > Finally, here is one suggestion.
 > It could be interesting to expand this evaluation by
@@ -272,9 +279,12 @@ material.
 > (iv) analyze the difference in performances by passing from a formula
 > to its core.
 
-Noted for the future, though not included in the paper. This is more a
-question about solver performance than about competition design,
-though it might say something about benchmark design.
+We have noted this as an interesting area for future investigation,
+though we did not include such an analysis in the paper. This is more
+a question about solver performance than about competition design
+(though it might say something about benchmark design); addressing it
+properly would require considerable additional data beyond what was
+computed as part of SMT-EVAL.
 
 > *  LOCAL POINTS
 
