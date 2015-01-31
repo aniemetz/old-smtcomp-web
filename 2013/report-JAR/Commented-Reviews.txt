@@ -199,12 +199,17 @@ Fixed.
 > My first concern is that, having this report been submitted after 2014
 > FLOC Olympic games may make its content out of date.
 
-TODO
+After the SMT-EVAL data had been collected, the main results were
+summarized in presentations at previous workshops, and the SMT
+community was given time to provide feedback (which was received,
+together with encouragement to publish a report).
 
-Understand. The basic ideas were summarized in presentations at
-previous workshops, feedback received, and we then received
-encouragement to publish a report. But we will take the blame for
-being slow. The 2014 report is not yet published.
+Of course, we take the blame for any delays. But (i) the 2014 SMT-COMP
+report is not yet published, and (ii) it has a quite different focus,
+meaning that the present report will remain relevant even after its
+publication: for instance, the 2014 competition did not include a
+comparison with historical solvers, and it did not investigate
+repeatability of results.
 
 > My major concern, however, is the following. My understanding from
 > section 3.7 (page 23 from row 42: "For this evaluation...")  is that:
@@ -224,26 +229,30 @@ being slow. The 2014 report is not yet published.
 > This issue cannot be left "for further study", rather it must be
 > properly addressed in this paper.
 
-TODO
-
 There indeed might be a mix of sequential vs. parallel configurations,
 as we used the historical, public versions of each solver. We added
 text to clarify that the results cannot be used to extrapolate to 2015
-versions of solvers for the reason raised here as well as other
-improvements in tools: the virtual competitions reported in the paper
-do not anoint winners but rather compare, for example, the variability
-in winners depending on various ways of executing a comparision. Also,
-nearly any current use of StarExec will use a 4-core environment,
-however the solver was configured, so we believe our configuration of
-StarExec is appropriate. In addition, as pointed out in the paper, the
-data available from StarExec at the time the evaluation began to run
-did not, in retrospect, appear to give reliable CPU time measurements -
-hence we used wall clock comparisons. We do not think that we can
-further evaluate the data to provide additional analysis - it would
-take a rerunning of the data in multiple modes, configuring old and
-new solvers in different ways. To my knowledge only CVC4 (and maybe
-CVC3) have configurations explicitly tuned to the number of cores and
-timeout values of the StarExec configuration.
+versions of solvers for the reason raised here (as well as other
+improvements in tools). We agree that a competition between solvers
+would need to distinguish between sequential and parallel performance;
+however, SMT-EVAL was not intended as a competition, and the
+(historical) solvers used in SMT-EVAL were generally _not_ optimized
+for the specific execution environment that was used anyway. (Note
+that nearly any current use of StarExec will use a 4-core environment,
+however the solver was configured.) Consequently, the virtual
+competitions reported in the paper do not elect winners but rather
+compare, for example, the variability in winners depending on various
+ways of executing a comparison.
+
+Unfortunately, as pointed out in the paper, the data available from
+StarExec at the time the evaluation began to run did not, in
+retrospect, appear to give reliable CPU time measurements; hence we
+are limited to reporting wall clock measurements. We do not think that
+we can further evaluate this data to provide additional analysis - it
+would take a rerunning of the job-pairs in multiple modes, configuring
+old and new solvers in different ways. To our knowledge only CVC4 (and
+maybe CVC3) have configurations explicitly tuned to the number of
+cores and timeout values of the StarExec configuration.
 
 > Another issue is the following. I notice first that the statement of page 15
 > row 48 "[In past competitions] the distribution is constrained to have
@@ -279,12 +288,13 @@ the same set of benchmarks.
 > (iv) analyze the difference in performances by passing from a formula
 > to its core.
 
-We have noted this as an interesting area for future investigation,
-though we did not include such an analysis in the paper. This is more
-a question about solver performance than about competition design
-(though it might say something about benchmark design); addressing it
-properly would require considerable additional data beyond what was
-computed as part of SMT-EVAL.
+We agree that such an investigation would be interesting, and have
+added a remark to this effect. We did not include such an analysis in
+the paper, since this is more a question about solver performance than
+about competition design (though it might say something about
+benchmark design), and addressing it properly would require
+considerable additional data beyond what was computed as part of
+SMT-EVAL.
 
 > *  LOCAL POINTS
 
@@ -292,9 +302,9 @@ computed as part of SMT-EVAL.
 > comparative assessments across years or solvers be more accurate."
 > This is disputable, see above.
 
-We merely wanted to point out that randomly selecting benchmarks
-introduces an element of non-determinism, which is eliminated when one
-considers all benchmarks. The sentence has been rephrased accordingly.
+Rephrased. (We merely wanted to point out that randomly selecting
+benchmarks introduces an element of non-determinism, which is
+eliminated when one considers all benchmarks.)
 
 > pag. 7 rows 15-18 "Each job pair...memory."
 > This sentence is incomprehensible until one reads section 3.7.
