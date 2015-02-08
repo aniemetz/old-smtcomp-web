@@ -1,12 +1,12 @@
 <!--#set var="title" value="SMT-COMP 2015" --><!--#include virtual="smt-comp-prelude.shtml" -->
 
 <p>
-The <i>10th International Satisfiability Modulo Theories
-Competition</i> (July&nbsp;19, 2015) is part of
+The <i>10th International Satisfiability Modulo Theories Competition
+(SMT-COMP 2015)</i> is part of
 the <a href="http://smt2015.csl.sri.com/">SMT Workshop 2015</a>,
 associated with <a href="http://i-cav.org/2015/">CAV 2015</a>.  The
 results of the competition will be presented at the SMT Workshop and
-at the main CAV conference event.
+at the main CAV conference.
 </p>
 
 <ul>
@@ -19,12 +19,16 @@ at the main CAV conference event.
   <li> Key dates (see the rules for the complete timeline):
     <ul>
       <li> Feb&nbsp;22: Deadline for comments </li>
+      <li> Further deadlines TBA </li>
       <li> July&nbsp;18-19: SMT Workshop (presentation of results) </li>
     </ul>
   </li>
+  <li> Competition rules and timeline: TBA </li>
+  <li> Benchmarks: TBA </li>
   <li> <a href="tools.shtml">Tools</a> </li>
-  <li> <a href="specs.shtml">Machine Specifications</a> </li>
-  <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a> </li>
+  <li> <a href="specs.shtml">Machine specifications</a> </li>
+  <li> Participants: TBA </li>
+  <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing list</a> </li>
   <li> <a href="docs.shtml">Papers</a> </li>
   <li> <a href="acknowledgments.shtml">Acknowledgments</a> </li>
   <li> <a href="http://www.smt-lib.org/">SMT-LIB</a> </li>
@@ -46,10 +50,7 @@ at the main CAV conference event.
   <li> <a href="difficulties.shtml">Benchmarks difficulties</a>
   <li> <a href="tools.shtml">Tools</a> </li>
   <li> <a href="specs.shtml">Machine Specifications</a></li>
-  <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a></li>
-
-      <li> <a href="http://www.smtexec.org/exec/competitors2012.php">Participants</a></li>
-  <li> <A href="participants.shtml">Participants</a></li>
+<li> <a href="http://www.smtexec.org/exec/competitors2012.php">Participants</a></li>
 
       <li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)</li>
 
