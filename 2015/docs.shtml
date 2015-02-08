@@ -2,14 +2,9 @@
 
 <ul>
 
-<li>
-<strong>The 2012 SMT Competition.</strong> David R. Cok, Alberto Griggio, Roberto Bruttomesso, Morgan Deters. <a href="reports/SMTCOMP2012.pdf">To appear.</a>
+<li> <strong>The 2012 SMT Competition.</strong> David R. Cok, Alberto Griggio, Roberto Bruttomesso, Morgan Deters. <a href="../2012/reports/SMTCOMP2012.pdf">To appear.</a> </li>
 
-</li>
-
-<li> <strong>6 Years of SMT-COMP.</strong> Clark Barrett, Morgan Deters, Leonardo de Moura, Albert Oliveras, and Aaron Stump. 
-</li>
-
+<li> <strong>6 Years of SMT-COMP.</strong> Clark Barrett, Morgan Deters, Leonardo de Moura, Albert Oliveras, and Aaron Stump.
 <pre>
 @article{Barrettetal2012JAR,
   author = {Clark Barrett and
@@ -28,6 +23,7 @@
    note = {10.1007/s10817-012-9246-5}
 }
 </pre>
+</li>
 
 <li> <strong>Design and Results of the 4th Annual Satisfiability Modulo Theories Competition (SMT-COMP 2008).</strong> Clark Barrett, Morgan Deters, Albert Oliveras, and Aaron Stump.  To appear.
 </li>
