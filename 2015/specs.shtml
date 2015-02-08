@@ -1,11 +1,13 @@
-<!--#set var="title" value="Specifications"
---><!--#include virtual="smt-comp-prelude.shtml" -->
-
+<!--#set var="title" value="Specifications" -->
+<!--#include virtual="smt-comp-prelude.shtml" -->
 
 <p>
-The competition will run on the <a href="http://www.starexec.org">Star-Exec</a> cluster of machines at
-<a href="http://www.uiowa.edu/">The University of Iowa</a>.
+The competition will run on
+the <a href="http://www.starexec.org">StarExec</a> cluster of machines
+at the
+<a href="http://www.uiowa.edu/">University of Iowa</a>.
 </p>
+
 <p>
 The machines have these specifications:
 <PRE>
@@ -25,14 +27,18 @@ kernel:	2.6.32-431.1.2.el6.x86_64
 glibc:	gcc-4.4.6-4.el6.x86_64
 	        glibc-2.12-1.132.el6.i686
 </PRE>
-The machines have 2 processors each and 4 cores per processor.
-For the competition, only one job-pair will be run on a given machine at a given time, on one processor, with 4 cores available, and the available memory will be capped at 129022MB.
+</p>
 
-<p><b>
-However, please note that we may make software and configuration changes
-before the competition. As part of setting up the solvers, the solvers
-will be exercized on a few benchmarks to be sure they run successfully.
-</b></p>
+<p>
+The machines have 2 processors each and 4 cores per processor.  For
+the competition, only one job-pair will be run on a given machine at a
+given time, on one processor, with 4 cores available, and the
+available memory will be capped at 129022&nbsp;MB.
 
+<p><b>However, please note that we may make software and configuration
+changes before the competition. As part of setting up the solvers, the
+solvers will be exercized on a few benchmarks to be sure they run
+successfully.</b>
+</p>
 
 <!--#include virtual="smt-comp-postlude.shtml" -->

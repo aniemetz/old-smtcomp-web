@@ -10,15 +10,29 @@ competitors and results of the competition will be presented at the
 SMT Workshop and at the main CAV conference.
 </p>
 
-<!--
 <ul>
   <li> <a href="introduction.shtml">Introduction</a> </li>
   <li> News
     <ul>
-      <li> Jan 21 : <a href="call14.txt">Call for comments</A> issued
-      <li> May 1: Deadlines posted
-      <li> May 19: revised deadlines, revised rules posted
+      <li> Feb&nbsp;8: <a href="call-for-comments.txt">Call for Comments</A> issued </li>
     </ul>
+  </li>
+  <li> Key dates (see the rules for the complete timeline):
+    <ul>
+      <li> Feb&nbsp;22: Deadline for comments </li>
+    </ul>
+  </li>
+  <li> <a href="tools.shtml">Tools</a> </li>
+  <li> <a href="specs.shtml">Machine Specifications</a> </li>
+  <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a> </li>
+  <li> <a href="docs.shtml">Papers</a> </li>
+  <li> <a href="acknowledgments.shtml">Acknowledgments</a> </li>
+  <li> <a href="http://www.smt-lib.org/">SMT-LIB</a> </li>
+  <li> <a href="previous.shtml">Previous SMT-COMPs</a> </li>
+</ul>
+
+<!--
+<ul>
   </li>
   <li>Key dates (see the rules document for the complete timeline):
     <ul>
@@ -48,11 +62,6 @@ SMT Workshop and at the main CAV conference.
   <li> The competition results are available <a href="results-toc.shtml">here</a>
 
         <li> <a href="reports/SMTCOMP2012.pdf">Competition report</a> and <a href="reports">final system descriptions</a></li>
-
-<li> <a href="docs.shtml">Papers</a></li>
-<li> <a href="acknowledgments.shtml">Acknowledgments</a></li>
-<li> <a href="http://www.smtlib.org/">SMT-LIB</a> </li>
-<li> <a href="previous.shtml">Previous SMT-COMPs</a></li>
 </ul>
 -->
 
