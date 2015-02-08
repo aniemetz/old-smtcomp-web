@@ -1,0 +1,8 @@
+<!--#set var="title" value="SMT-COMP 2014 benchmarks"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The list of tools for 2014 has not yet been updated. Check back later.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

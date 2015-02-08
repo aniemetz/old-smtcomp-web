@@ -1,0 +1,64 @@
+<!--#set var="title" value="SMT-COMP 2015"-->
+<!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The 2015 edition of the Satisfiability Modulo Theories Competition
+(SMT-COMP) (July&nbsp;19, 2015) is part of
+the <a href="http://smt2015.csl.sri.com/">SMT Workshop 2015</a>,
+associated with <a href="http://i-cav.org/2015/">CAV 2015</a>.  The
+competitors and results of the competition will be presented at the
+SMT Workshop and at the main CAV conference.
+</p>
+
+<!--
+<ul>
+  <li> <a href="introduction.shtml">Introduction</a> </li>
+  <li> News
+    <ul>
+      <li> Jan 21 : <a href="call14.txt">Call for comments</A> issued
+      <li> May 1: Deadlines posted
+      <li> May 19: revised deadlines, revised rules posted
+    </ul>
+  </li>
+  <li>Key dates (see the rules document for the complete timeline):
+    <ul>
+      <li>May 15 - deadline for submission of new benchmarks
+      <li>June 1 - deadline for initial solver submission
+      <li>June 15 - deadline for final solver versions
+    </ul>
+    <li> <a href="rules.shtml">Rules</a> </li>
+  <li> <a href="rules14.pdf">Competition rules and timeline</a> </li>
+  <li> <a href="application.shtml">Benchmarks</a> </li>
+  <li> <a href="difficulties.shtml">Benchmarks difficulties</a>
+  <li> <a href="tools.shtml">Tools</a> </li>
+  <li> <a href="specs.shtml">Machine Specifications</a></li>
+  <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing List</a></li>
+
+      <li> <a href="http://www.smtexec.org/exec/competitors2012.php">Participants</a></li>
+  <li> <A href="participants.shtml">Participants</a></li>
+
+      <li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)</li>
+
+     <li> The competition is complete: Final status: 
+       [&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1004"><B>main track</B></a>&nbsp;
+       |&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1005"><B>application track</B></a>&nbsp; 
+       |&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1006"><B>unsat core track</B></a>&nbsp; 
+       |&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1007"><B>exhibition tracks</B></a>&nbsp;] </li>
+
+  <li> The competition results are available <a href="results-toc.shtml">here</a>
+
+        <li> <a href="reports/SMTCOMP2012.pdf">Competition report</a> and <a href="reports">final system descriptions</a></li>
+
+<li> <a href="docs.shtml">Papers</a></li>
+<li> <a href="acknowledgments.shtml">Acknowledgments</a></li>
+<li> <a href="http://www.smtlib.org/">SMT-LIB</a> </li>
+<li> <a href="previous.shtml">Previous SMT-COMPs</a></li>
+</ul>
+-->
+
+<p>
+The organizers of SMT-COMP 2015 are Sylvain Conchon, David Deharbe,
+and Tjark Weber.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

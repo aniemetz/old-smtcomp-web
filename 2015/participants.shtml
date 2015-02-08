@@ -1,0 +1,532 @@
+<!--#set var="title" value="SMT-COMP 2014 Participants"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<style>
+table{
+    table-layout:fixed;
+    border-collapse:collapse;
+    border-spacing:0;
+    border:1px solid black;
+}
+td {
+    padding:0.25em;
+    border: 1px solid black
+}
+
+</style>
+
+These solvers have expressed intention to participate in SMT-COMP 2014.
+
+<table>
+<tr>
+  <td>Solver</td>
+  <td>main track</td>
+  <td>application track</td>
+  <td>Preliminary version solver id</td>
+  <td>Final version solver id</td>
+  <td>Seed</td>
+  <td>System description</td>
+  <td>Contacts</td>
+<tr>
+  <td>4Simp</td>
+  <td>X</td>
+  <td>-</td>
+  <td>916</td>
+  <td>1228 (4-Simp 2014) <br>config 1720 default</td>
+  <td>20324</td>
+  <td>?</td>
+  <td>thansen@csse.unimelb.edu.au</td>
+</tr>
+<tr>
+  <td>abziz_portfolio_all_features</td>
+  <td>X</td>
+  <td>-</td>
+  <td>912</td>
+  <td>1275 abziz_portfolio_all_features<br>config 1803 default</td>
+  <td>21381</td>
+  <td>?</td>
+  <td>Mohammad Abdul Aziz &lt;mohammad.abdulaziz8@gmail.com&gt;</td>
+</tr>
+<tr>
+  <td>abziz_portfolio_min_features</td>
+  <td>X</td>
+  <td>-</td>
+  <td>950</td>
+  <td>1273 abziz_portfolio_min_features<br>config 1801 default</td>
+  <td>21381</td>
+  <td>?</td>
+  <td>Mohammad Abdul Aziz &lt;mohammad.abdulaziz8@gmail.com&gt;</td>
+</tr>
+<tr>
+  <td>AProVE</td>
+  <td>X</td>
+  <td>-</td>
+  <td>865</td>
+  <td>1229 <br>config 1721 default</td>
+  <td>2094937</td>
+  <td><a href="systemDescriptions/AProVE14.pdf">AProVE</a></td>
+  <td>Carsten Fuhs &lt;c.fuhs@cs.ucl.ac.uk&gt;</td>
+</tr>
+<tr>
+  <td>Boolector</td>
+  <td>X</td>
+  <td>-</td>
+  <td>911 : config 1136:</td>
+  <td>1218 <br>config 1703 boolector</td>
+  <td>42</td>
+  <td><a href="systemDescriptions/boolector-sc2014.pdf">Boolector</a></td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
+</tr>
+<tr>
+  <td>Boolector (dual propagation)</td>
+  <td>X</td>
+  <td>-</td>
+  <td>911 : config 1134 </td>
+  <td>1218 <br>config 1701 boolectord</td>
+  <td>42</td>
+  <td><a href="systemDescriptions/boolector-sc2014.pdf">Boolector</a></td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
+</tr>
+<tr>
+  <td>Boolector (justification)</td>
+  <td>X</td>
+  <td>-</td>
+  <td>911 : config 1135 </td>
+  <td>1218 <br>config 1702 boolectorj</td>
+  <td>42</td>
+  <td><a href="systemDescriptions/boolector-sc2014.pdf">Boolector</a></td>
+  <td>Mathias Preiner &lt;mathias.preiner@jku.at&gt;; Aina Niemetz &lt;aina.niemetz@jku.at&gt;; Armin Biere &lt;biere@jku.at&gt;</td>
+</tr>
+<tr>
+  <td>CVC3</td>
+  <td>X</td>
+  <td>X</td>
+  <td>900</td>
+  <td>1262 <br>config 1785 default</td>
+  <td>33333</td>
+  <td><a href="systemDescriptions/cvc3.pdf">CVC3</a></td>
+  <td>Clark Barrett &lt;barrett@cs.nyu.edu&gt;;Morgan Deters &lt;mdeters@cs.nyu.edu&gt;</td>
+</tr>
+<tr>
+  <td>CVC4</td>
+  <td>X</td>
+  <td>X</td>
+  <td>898; application track=899</td>
+  <td>1257 CVC4 f7118b2: <br>config 1778 <br>app config 1779 application</td>
+  <td>44444</td>
+  <td><a href="systemDescriptions/cvc4.pdf">CVC4</a></td>
+  <td>Clark Barrett &lt;barrett@cs.nyu.edu&gt;;Morgan Deters &lt;mdeters@cs.nyu.edu&gt;</td>
+</tr>
+<tr>
+  <td>Kleaver-STP</td>
+  <td>X</td>
+  <td>-</td>
+  <td>893</td>
+  <td>1196 Kleaver-indie-more-typed <br>config 1738 kleaver_indie_1</td>
+  <td>12739</td>
+  <td><a href="systemDescriptions/kleaver-description.txt">Kleaver</a></td>
+  <td>Hristina Palikareva &lt;h.palikareva@imperial.ac.uk&gt;; Cristian Cadar &lt;c.cadar@imperial.ac.uk&gt;</td>
+</tr>
+<tr>
+  <td>Kleaver-portfolio</td>
+  <td>X</td>
+  <td>-</td>
+  <td>894</td>
+  <td>1196 Kleaver-indie-more-typed <br>config 1740 kleaver_portfolio</td>
+  <td>12739</td>
+  <td><a href="systemDescriptions/kleaver-description.txt">Kleaver</a></td>
+  <td>Hristina Palikareva &lt;h.palikareva@imperial.ac.uk&gt;; Cristian Cadar &lt;c.cadar@imperial.ac.uk&gt;</td>
+</tr>
+<tr>
+  <td>OpenSMT2</td>
+  <td>X</td>
+  <td>-</td>
+  <td>921</td>
+  <td>1204 OpenSMT2-2014-06-14b <br>config 1789 default</td>
+  <td>1984</td>
+  <td><a href="systemDescriptions/OpenSMT.txt">OpenSMT</a></td>
+  <td>antti.hyvarinen@gmail.com</td>
+</tr>
+<tr>
+  <td>raSAT</td>
+  <td>X</td>
+  <td>-</td>
+  <td>922</td>
+  <td>1199 raSAT-main-track-final <br>config 1654 default.sh</td>
+  <td>18643</td>
+  <td><a href="http://www.jaist.ac.jp/~mizuhito/tools/rasat.html">raSAT</a></td>
+  <td>Tung Vu Xuan &lt;tungvx@jaist.ac.jp&gt;</td>
+</tr>
+<tr>
+  <td>SMTInterpol</td>
+  <td>X</td>
+  <td>X</td>
+  <td>1075 smtinterpol-2.1-118-g3dada2f</td>
+  <td>1075 smtinterpol-2.1-118-g3dada2f <br>config 1375 default</td>
+  <td>3154861623</td>
+  <td><a href="systemDescriptions/SMTInterpol-2014.pdf">SMTInterpol</a></td>
+  <td>hoenicke@informatik.uni-freiburg.de;christj@informatik.uni-freiburg.de</td>
+</tr>
+<!-- 
+<tr>
+  <td>SMT-RAT</td>
+  <td>X</td>
+  <td>-</td>
+  <td>917</td>
+  <td></td>
+  <td>52074</td>
+  <td>?</td>
+  <td>Florian Corzilius &lt;corzilius@informatik.rwth-aachen.de&gt;</td>
+</tr>
+-->
+<tr>
+  <td>sonolar (sonolar_smtcomp-2014)</td>
+  <td>X</td>
+  <td>-</td>
+  <td>938</td>
+  <td>938 <br>config 1173 default</td>
+  <td>4</td>
+  <td><a href="systemDescriptions/sonolar-smtcomp2014.pdf">SONOLAR</a></td>
+  <td>florian@informatik.uni-bremen.de</td>
+</tr>
+<!-- 
+<tr>
+  <td>STP</td>
+  <td>X</td>
+  <td>X</td>
+  <td>914</td>
+  <td></td>
+  <td>20324</td>
+  <td>?</td>
+  <td>thansen@csse.unimelb.edu.au</td>
+</tr>
+-->
+<tr>
+  <td>STP-CryptoMiniSat4</td>
+  <td>X</td>
+  <td>-</td>
+  <td>968</td>
+  <td>1240 stp-cryptominisat4<br>config 1750 default</td>
+  <td>1337</td>
+  <td><a href="systemDescriptions/STP-descr.pdf">STP-CryptoMiniSat4</a></td>
+  <td>soos.mate@gmail.com</td>
+</tr>
+<tr>
+  <td>veriT</td>
+  <td>X</td>
+  <td>-</td>
+  <td>860</td>
+  <td>1269 veriT-smtcomp2014 <br>config 1797 default</td>
+  <td>1027</td>
+  <td><a href="systemDescriptions/veriT.pdf">veriT</a></td>
+  <td>david.deharbe@loria.fr; Pascal.Fontaine@inria.fr</td>
+</tr>
+<tr>
+  <td>Yices2</td>
+  <td>X</td>
+  <td>X</td>
+  <td>1095 (config=default); app track config=incremental</td>
+  <td>1259 Yices-2.2.1-smtcomp2014 <br>config 1781 default <br>app config 1782 incremental</td>
+  <td>22908</td>
+  <td><a href="systemDescriptions/Yices2-description.pdf">Yices</a></td>
+  <td>bruno@csl.sri.com</td>
+</tr>
+<tr>
+  <td>MathSAT 5 (non-competitive)</td>
+  <td>X</td>
+  <td>?</td>
+  <td>174</td>
+  <td>1079 <br>config 1384 default</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td>Z3 (non-competitive)</td>
+  <td>X</td>
+  <td>X</td>
+  <td>1286 config 1815 default;<br>app ?</td>
+  <td></td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+</tr>
+
+</table>
+
+These are the logic divisions in which each solver is competing.
+
+<table>
+<tr>
+  <td>Solver</td>
+    <td>ALIA</td>
+  <td>AUFLIA</td>
+  <td>AUFLIRA</td>
+  <td>AUFNIRA</td> 
+  <td>BV</td>        <!-- 5 -->
+    <td>LIA</td> 
+  <td>LRA</td>         
+    <td>NIA</td>          
+    <td>NRA</td> 
+  <td>QF_ABV</td>         <!-- 10 -->
+    <td>QF_ALIA</td>
+  <td>QF_AUFBV</td>
+  <td>QF_AUFLIA</td>
+  <td>QF_AX</td>
+  <td>QF_BV</td>        <!-- 15 -->
+  <td>QF_IDL</td>
+  <td>QF_LIA</td>
+  <td>QF_LRA</td>
+  <td>QF_NIA</td>
+  <td>QF_NRA</td>       <!-- 20 -->
+  <td>QF_RDL</td>
+  <td>QF_UF</td>
+  <td>QF_UFBV</td>
+  <td>QF_UFIDL</td>
+  <td>QF_UFLIA</td>     <!-- 25 -->
+  <td>QF_UFLRA</td>
+  <td>QF_UFNIA</td>
+  <td>QF_UFNRA</td>
+    <td>UF</td>
+  <td>UFBV</td>         <!-- 30 -->
+    <td>UFIDL</td>
+    <td>UFLIA</td>
+  <td>UFLRA</td> 
+  <td>UFNIA</td>
+
+</tr>
+<tr>
+  <td>4Simp</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Abziz</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> 
+</tr>
+<tr>
+  <td>Abziz2</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> 
+</tr>
+<tr>
+  <td>AProVE</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector-d</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector-j</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>CVC3</td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> 
+</tr>
+<tr>
+  <td>CVC4</td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+<tr>
+  <td>Kleaver-STP</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Kleaver-portfolio</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>OpenSMT2</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>raSAT</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>SMTInterpol</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<!-- 
+<tr>
+  <td>SMT-RAT</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+-->
+<tr>
+  <td>SONOLAR</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<!-- 
+<tr>
+  <td>STP</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+-->
+<tr>
+  <td>STP-CryptoMiniSat4</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>veriT</td>
+  <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td>
+</tr>
+<tr>
+  <td>Yices2</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>MathSAT5 (non-competitive)</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Z3 (non-competitive)</td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+
+</table>
+
+<br>
+These are the solvers participating in the Separation Logic competition. 
+This is a separate competition being conducted with SMT-like solvers that solve encodings of separation logic problems. 
+It is separate from SMT-COMP, though it is using the same infrastructure and being conducted by the same organizing committee.
+The relationship of the associated logic to SMT-LIB is currently under discussion.
+
+<table>
+<tr>
+  <td>Solver</td>
+  <td>Preliminary version solver id</td>
+  <td>Final version solver id</td>
+  <td>System description</td>
+  <td>Contacts</td>
+<tr>
+  <td>Cyclist-SL</td>
+  <td>1136</td>
+  <td>1136<br>config 1487 default<br>pre: 113 SL-CYCLIST3</td>
+  <td><a href="systemDescriptions/Cyclist-SL.txt">Cyclist-SL</a></td>
+  <td>Nikos Gorogiannis &lt;nikos.gorogiannis@gmail.com&gt;</td>
+</tr>
+<tr>
+  <td>SLSAT</td>
+  <td>1137</td>
+  <td>1137<br>config 1488 default<br> pre: 117 SL-SAT3</td>
+  <td><a href="systemDescriptions/SLSAT.txt">SLSAT</a></td>
+  <td>Nikos Gorogiannis &lt;nikos.gorogiannis@gmail.com&gt;</td>
+</tr>
+<tr>
+  <td>Asterix</td>
+  <td>986</td>
+  <td>986<br>config 1233 default.sh<br>pre: none</td>
+  <td><a href="systemDescriptions/Asterix.txt">Asterix</a></td>
+  <td>Juan A. Navarro Perez &lt;juan.navarro@ucl.ac.uk&gt;; Andrey Rybalchenko &lt;rybal@microsoft.com&gt;</td>
+</tr>
+<!-- 
+<tr>
+  <td>SeLoger 0.5</td>
+  <td>892</td>
+  <td></td>
+  <td>?</td>
+  <td>Christoph Haase &lt;haase@lsv.ens-cachan.fr&gt;;</td>
+</tr>
+-->
+<tr>
+  <td>SLEEK</td>
+  <td>1084 (default configuration)</td>
+  <td>1277 sleek-05<br>config 1806 default<br>pre: 115 SL-SLEEK3;<br> late correction for output format: 1297 sleek-06, config 1834 default</td>
+  <td><a href="http://loris-7.ddns.comp.nus.edu.sg/~project/hip/">SLEEK</a></td>
+  <td>Le Quang Loc &lt;locle@comp.nus.edu.sg&gt;; Chin Wei Ngan &lt;chinwn@comp.nus.edu.sg&gt;</td>
+</tr>
+<tr>
+  <td>SLIDE</td>
+  <td>920</td>
+  <td>1255 (SLIDE-final)<br>config 1775 SLD_Input<br>pre: 116 SL-SLIDE3</td>
+  <td><a href="systemDescriptions/SLIDE.txt">SLIDE</a></td>
+  <td>Adam Rogalewicz &lt;rogalew@fit.vutbr.cz&gt;Radu IOSIF &lt;; Radu.Iosif@imag.fr&gt;; Tomas Vojnar &lt;vojnar@fit.vutbr.cz&gt; </td>
+</tr>
+<tr>
+  <td>SPEN</td>
+  <td>971</td>
+  <td>1280 SPEN 1.09<br>config 1809 spen.sh<br>pre: 118 SL-SPEN3</td>
+  <td><a href="systemDescriptions/spen-smtcomp14b.pdf">SPEN</a></td>
+  <td>Mihaela Sighireanu &lt;mihaela.sighireanu@gmail.com&gt;</td>
+</tr>
+
+</table>
+
+These are the benchmark divisions in which each solver is competing.
+
+<!--  https://github.com/mihasighi/smtcomp14-sl/blob/master/divisions.html
+ -->
+
+<table>
+    <tr>
+    <td>Solver</td>
+<!------------>
+<td>UDB_sat</td>
+<td>UDB_entl</td>
+<!------------>
+<td>sll0a_sat</td>
+<td>sll0a_entl</td>
+<!------------>
+<td>FDB_entl</td>
+<!------------>
+    </tr>
+<tr>
+  <td>Asterix</td>
+  <td></td> <td></td> 
+  <td>X</td> <td>X</td>
+  <td></td> 
+</tr>
+
+<tr>
+  <td>Cyclist-SL</td>
+  <td></td> <td>X</td> 
+  <td></td> <td>X</td>
+  <td>X</td> 
+</tr>
+
+<tr>
+  <td>SLSAT</td>
+  <td>X</td> <td></td> 
+  <td>X</td> <td></td>
+  <td></td> 
+</tr>
+
+<!-- 
+<tr>
+  <td>SeLoger 0.5</td>
+  <td></td> <td></td> 
+  <td></td> <td>X</td>
+  <td></td> 
+</tr>
+-->
+
+<tr>
+  <td>SLEEK</td>
+  <td>X</td> <td>X</td> 
+  <td>X</td> <td>X</td>
+  <td>X</td> 
+</tr>
+
+<tr>
+  <td>SLIDE</td>
+  <td></td> <td>X</td> 
+  <td></td> <td></td>
+  <td>X</td> 
+</tr>
+
+<tr>
+  <td>SPEN</td>
+  <td></td> <td></td> 
+  <td>X</td> <td>X</td>
+  <td>X</td> 
+</tr>
+
+</table>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
+

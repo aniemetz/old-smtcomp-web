@@ -1,0 +1,37 @@
+<!--#set var="title" value="SMT-COMP 2014 benchmarks"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The SMT Competition will use a subset of the benchmarks available within SMT-LIB, as described
+in the competition rules. New benchmarks are especially encouraged by the May 15 deadline. The set of benchmarks will be announced as soon as is feasible after that deadline. Please adhere to the following instructions in submitting new benchmarks:
+
+<UL>
+<LI>Benchmarks should be organized into separate directories by logic.
+<LI>Within each logic, there should be one or more directories containing
+the benchmarks - you can choose the names of the directories, but they
+should be different from any names currently existing in SMT-LIB for
+that logic.
+<IL>Each benchmark should contain the following metadata:
+<PRE>
+(set-logic &lt;logic&gt;)
+(set-info :source |&lt;information about where the benchmark came from
+including author contact, paper citations, etc.&gt;|)
+(set-info :smt-lib-version 2.0)
+(set-info :category &lt;either "industrial", "crafted", or "random"&gt;) 
+(set-info :status &lt;either sat, unsat, or unknown&gt;)
+</PRE>
+In :category, the quotes are needed in the benchmark file.
+</UL>
+<p>
+Thanks to the following for new benchmarks in 2014:
+<UL>
+<LI>Clark Barrett
+<LI>Philipp Wendler -rec'd
+<LI>Aaron Tomb et al. (Galois) -rec'd
+<LI>Gergely Kovasznai
+<LI>Matthias Heizmann
+<LI>Hristina Palikareva
+<LI> ...
+</UL>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

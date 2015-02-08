@@ -1,0 +1,37 @@
+<!--#set var="title" value="Acknowledgments"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+
+<p>
+SMT-COMP 2014 is co-organized by:
+</p>
+
+<ul>
+  <li> David Cok : GrammaTech, USA </li>
+  <LI> David Deharbe : Federal University of Rio Grande do Norte, Brazil </li>
+  <li> Tjark Weber : Uppsala University, Sweden
+
+
+</ul>
+
+<p>
+The competition uses the 
+<a href="https://www.starexec.org">STAR-EXEC</a> server, which is hosted at
+<a href="http://www.cs.uiowa.edu/">The University of Iowa</a>.
+</p>
+<p>
+The U.S. <a href="http://www.nsf.gov">National Science
+Foundation</a>, under grant CNS-0551697 supported the earlier SMTExec computational cluster.
+</p>
+<p>Cok's contribution is supported by GrammaTech, Inc. and by the NSF under grant ACI-1314674.
+</p>
+<p>
+The SMTCOMP web site is hosted on sourceforge, at smtcomp.sourceforge.net, currently maintained by David Cok.
+</p>
+<p>
+Any opinions,
+findings, and conclusions or recommendations expressed in this material are those of the author(s) and
+do not necessarily reflect the views of the National Science Foundation.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

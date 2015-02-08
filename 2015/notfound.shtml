@@ -1,0 +1,18 @@
+<!--#set var="base" value="/"
+--><!--#set var="title" value="Page not found"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+<b>The page you tried to access does not exist.</b>
+</p>
+
+<p>
+Please write to <a href="mailto:cok@frontiernet.net">David Cok</a>
+for support if you reached this page through what should be a valid link.
+</p>
+
+<p>
+<a href="http://www.smtcomp.org/">Back to the SMT-COMP main page.</a>
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
