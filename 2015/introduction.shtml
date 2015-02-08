@@ -1,5 +1,4 @@
-<!--#set var="title" value="Introduction" -->
-<!--#include virtual="smt-comp-prelude.shtml" -->
+<!--#set var="title" value="Introduction" --><!--#include virtual="smt-comp-prelude.shtml" -->
 
 <p>
 <b>Decision procedures.</b>  Decision procedures for Satisfiability

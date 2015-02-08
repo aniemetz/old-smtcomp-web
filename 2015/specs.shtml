@@ -1,5 +1,4 @@
-<!--#set var="title" value="Machine Specifications" -->
-<!--#include virtual="smt-comp-prelude.shtml" -->
+<!--#set var="title" value="Machine Specifications" --><!--#include virtual="smt-comp-prelude.shtml" -->
 
 <p>
 The competition will run on

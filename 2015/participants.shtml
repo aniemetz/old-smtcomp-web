@@ -1,5 +1,4 @@
-<!--#set var="title" value="SMT-COMP 2014 Participants"
---><!--#include virtual="smt-comp-prelude.shtml" -->
+<!--#set var="title" value="Participants" --><!--#include virtual="smt-comp-prelude.shtml" -->
 
 <style>
 table{
@@ -529,4 +528,3 @@ These are the benchmark divisions in which each solver is competing.
 </table>
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
-

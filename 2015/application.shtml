@@ -1,5 +1,4 @@
-<!--#set var="title" value="SMT-COMP 2014 benchmarks"
---><!--#include virtual="smt-comp-prelude.shtml" -->
+<!--#set var="title" value="Benchmarks" --><!--#include virtual="smt-comp-prelude.shtml" -->
 
 <p>
 The SMT Competition will use a subset of the benchmarks available within SMT-LIB, as described
