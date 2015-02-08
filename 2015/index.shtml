@@ -2,12 +2,12 @@
 <!--#include virtual="smt-comp-prelude.shtml" -->
 
 <p>
-The 2015 edition of the Satisfiability Modulo Theories Competition
-(SMT-COMP) (July&nbsp;19, 2015) is part of
+The 10th International Satisfiability Modulo Theories Competition
+(SMT-COMP 2015) (July&nbsp;19, 2015) is part of
 the <a href="http://smt2015.csl.sri.com/">SMT Workshop 2015</a>,
 associated with <a href="http://i-cav.org/2015/">CAV 2015</a>.  The
-competitors and results of the competition will be presented at the
-SMT Workshop and at the main CAV conference event.
+results of the competition will be presented at the SMT Workshop and
+at the main CAV conference event.
 </p>
 
 <ul>
