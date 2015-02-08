@@ -9,7 +9,9 @@ at the
 
 <p>
 The machines have these specifications:
-<PRE>
+</p>
+
+<pre>
 # Starexec stats nodes 0 - 32:
 Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz (2393 MHZ)
     10240  KB Cache
@@ -25,8 +27,7 @@ OS:	Red Hat Enterprise Linux Workstation release 6.3 (Santiago)
 kernel:	2.6.32-431.1.2.el6.x86_64
 glibc:	gcc-4.4.6-4.el6.x86_64
 	        glibc-2.12-1.132.el6.i686
-</PRE>
-</p>
+</pre>
 
 <p>
 The machines have 2 processors each and 4 cores per processor.  For
