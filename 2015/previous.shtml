@@ -1,4 +1,4 @@
-<!--#set var="title" value="Previous Competitions"-->
+<!--#set var="title" value="Previous Competitions" -->
 <!--#include virtual="smt-comp-prelude.shtml" -->
 
 <ul>

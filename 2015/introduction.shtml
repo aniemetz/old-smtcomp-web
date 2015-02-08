@@ -51,19 +51,12 @@ the <a href="http://www.cav2005.inf.ed.ac.uk/">17th International
 Conference on Computer-Aided Verification (CAV)</a>.  The experience
 with SMT-COMP 2005 confirmed the community's expectations that a
 public competition would indeed motivate implementors of SMT solvers
-to adopt the common SMT-LIB input format.  Subsequent SMT-COMPs, held
-as satellite events of CAV&nbsp;2006,
-<a href="http://www.cav2007.org/">CAV&nbsp;2007</a>, 
-<a href="http://www.princeton.edu/cav2008/">CAV&nbsp;2008</a>,
-<a href="http://complogic.cs.mcgill.ca/cade22/">CADE-22</a>, 
-<a href="http://www.floc-conference.org/CAV-home.html">CAV&nbsp;2010</a>,
-CAV&nbsp;2011, <a href="http://ijcar.cs.manchester.ac.uk/">IJCAR&nbsp;2012</a>,
-and <a href="http://baldur.iti.kit.edu/sat2014/">SAT&nbsp;2014</a>
-have provided further evidence that such a competition can stimulate
+to adopt the common SMT-LIB input
+format.  <a href="previous.shtml">Subsequent SMT-COMPs</a> have
+provided further evidence that such a competition can stimulate
 improvement in solver implementations: solvers entered in each
 competition have improved significantly over those in previous
-competitions.  (In 2013, an <a href="../2013">evaluation</a> was
-conducted, rather than a competition.)
+competitions.
 </p>
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
