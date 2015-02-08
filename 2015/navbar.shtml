@@ -21,7 +21,7 @@
     <th> &bull; </th>-->
     <th> <a href="<!--#echo var="base" -->acknowledgments.shtml">Thanks</a></th>
     <th> &bull; </th>
-    <th> <a href="http://www.smtlib.org/">SMT-LIB</a> </th>
+    <th> <a href="http://www.smt-lib.org/">SMT-LIB</a> </th>
     <th> &bull; </th>
     <th> <a href="<!--#echo var="base" -->previous.shtml">Previous</a> </th>
   </tr>
