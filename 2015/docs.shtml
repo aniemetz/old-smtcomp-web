@@ -2,7 +2,22 @@
 
 <ul>
 
-<li> <strong>The 2012 SMT Competition.</strong> David R. Cok, Alberto Griggio, Roberto Bruttomesso, Morgan Deters. <a href="../2012/reports/SMTCOMP2012.pdf">To appear.</a> </li>
+<li> <a href="http://www.it.uu.se/research/publications/reports/2014-017/"><strong>The 2013 SMT Evaluation.</strong></a> David R. Cok, Aaron Stump, and Tjark Weber. Technical Report 2014-017, Department of Information Technology, Uppsala University, July 2014.
+<pre>
+@techreport{cok14the,
+  author      = {David R. Cok and Aaron Stump and Tjark Weber},
+  title       = {The 2013 {SMT} Evaluation},
+  number      = {2014-017},
+  institution = {Department of Information Technology, Uppsala University},
+  department  = {Computing Science Division},
+  month       = jul,
+  year        = 2014,
+  url         = {http://www.it.uu.se/research/publications/reports/2014-017/},
+}
+</pre>
+</li>
+
+<li> <strong>The 2012 SMT Competition.</strong> David R. Cok, Alberto Griggio, Roberto Bruttomesso, and Morgan Deters. <a href="../2012/reports/SMTCOMP2012.pdf">To appear.</a> </li>
 
 <li> <strong>6 Years of SMT-COMP.</strong> Clark Barrett, Morgan Deters, Leonardo de Moura, Albert Oliveras, and Aaron Stump.
 <pre>
