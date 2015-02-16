@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<meta http-equiv="pragma" content="no-cache" />
+
+<head>
+
+<style type="text/css">
+body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+iframe { border: none; }
+</style>
+<script type="text/javascript">
+var Dash = {
+    nextIndex: 0,
+
+    dashboards: [
+        {url: "results-summary.shtml?v=1403902163", time: 8},
+        {url: "results-gold.shtml?v=1403902163", time: 5},
+        {url: "results-ALIA.shtml?v=1403902163", time: 2},
+        {url: "results-AUFLIA.shtml?v=1403902163", time: 2},
+        {url: "results-AUFLIRA.shtml?v=1403902163", time: 2},
+        {url: "results-AUFNIRA.shtml?v=1403902163", time: 2},
+        {url: "results-BV.shtml?v=1403902163", time: 2},
+        {url: "results-LIA.shtml?v=1403902163", time: 2},
+        {url: "results-LRA.shtml?v=1403902163", time: 2},
+        {url: "results-NIA.shtml?v=1403902163", time: 2},
+        {url: "results-NRA.shtml?v=1403902163", time: 2},
+        {url: "results-QF_ABV.shtml?v=1403902163", time: 2},
+        {url: "results-QF_ALIA.shtml?v=1403902163", time: 2},
+        {url: "results-QF_AUFBV.shtml?v=1403902163", time: 2},
+        {url: "results-QF_AUFLIA.shtml?v=1403902163", time: 2},
+        {url: "results-QF_AX.shtml?v=1403902163", time: 2},
+        {url: "results-QF_BV.shtml?v=1403902163", time: 2},
+        {url: "results-QF_IDL.shtml?v=1403902163", time: 2},
+        {url: "results-QF_LIA.shtml?v=1403902163", time: 2},
+        {url: "results-QF_LRA.shtml?v=1403902163", time: 2},
+        {url: "results-QF_NIA.shtml?v=1403902163", time: 2},
+        {url: "results-QF_NRA.shtml?v=1403902163", time: 2},
+        {url: "results-QF_RDL.shtml?v=1403902163", time: 2},
+        {url: "results-QF_UF.shtml?v=1403902163", time: 2},
+        {url: "results-QF_UFBV.shtml?v=1403902163", time: 2},
+        {url: "results-QF_UFIDL.shtml?v=1403902163", time: 2},
+        {url: "results-QF_UFLIA.shtml?v=1403902163", time: 2},
+        {url: "results-QF_UFLRA.shtml?v=1403902163", time: 2},
+        {url: "results-QF_NIA.shtml?v=1403902163", time: 2},
+        {url: "results-QF_NRA.shtml?v=1403902163", time: 2},
+        {url: "results-UF.shtml?v=1403902163", time: 2},
+        {url: "results-UFBV.shtml?v=1403902163", time: 2},
+        {url: "results-UFIDL.shtml?v=1403902163", time: 2},
+        {url: "results-UFLIA.shtml?v=1403902163", time: 2},
+        {url: "results-UFLRA.shtml?v=1403902163", time: 2},
+        {url: "results-UFNIA.shtml?v=1403902163", time: 2}
+    ],
+
+    display: function()
+    {
+        var dashboard = Dash.dashboards[Dash.nextIndex];
+        frames["displayArea"].location.href = dashboard.url;
+        Dash.nextIndex = (Dash.nextIndex + 1) % Dash.dashboards.length;
+        setTimeout(Dash.display, dashboard.time * 1000);
+    }
+};
+
+window.onload = Dash.display;
+</script>
+</head>
+
+<body>
+<iframe name="displayArea" width="100%" height="100%"></iframe>
+</body>
+
+</html>

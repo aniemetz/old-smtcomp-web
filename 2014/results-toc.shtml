@@ -1,0 +1,61 @@
+<!--#set var="title" value="SMT-COMP 2014 results"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+Individual results pages can be found from this list:
+<table>
+<tr>
+<td>
+<ul>
+<li><a href="results-control.shtml?v=1403902163">Auto-cycle through all pages</a>
+<li><a href="results-summary.shtml?v=1403902163">Summary</a>
+<li><a href="results-gold.shtml?v=1403902163">Medal standings</a>
+<li><a href="results-ALIA.shtml?v=1403902163">ALIA</a>
+<li><a href="results-AUFLIA.shtml?v=1403902163">AUFLIA</a>
+<li><a href="results-AUFLIRA.shtml?v=1403902163">AUFLIRA</a>
+<li><a href="results-AUFNIRA.shtml?v=1403902163">AUFNIRA</a>
+<li><a href="results-BV.shtml?v=1403902163">BV</a>
+<li><a href="results-LIA.shtml?v=1403902163">LIA</a>
+<li><a href="results-LRA.shtml?v=1403902163">LRA</a>
+<li><a href="results-NIA.shtml?v=1403902163">NIA</a>
+<li><a href="results-NRA.shtml?v=1403902163">NRA</a>
+<li><a href="results-QF_ABV.shtml?v=1403902163">QF_ABV</a>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="results-QF_ALIA.shtml?v=1403902163">QF_ALIA</a>
+<li><a href="results-QF_AUFBV.shtml?v=1403902163">QF_AUFBV</a>
+<li><a href="results-QF_AUFLIA.shtml?v=1403902163">QF_AUFLIA</a>
+<li><a href="results-QF_AX.shtml?v=1403902163">QF_AX</a>
+<li><a href="results-QF_BV.shtml?v=1403902163">QF_BV</a>
+<li><a href="results-QF_IDL.shtml?v=1403902163">QF_IDL</a>
+<li><a href="results-QF_LIA.shtml?v=1403902163">QF_LIA</a>
+<li><a href="results-QF_LRA.shtml?v=1403902163">QF_LRA</a>
+<li><a href="results-QF_NIA.shtml?v=1403902163">QF_NIA</a>
+<li><a href="results-QF_NRA.shtml?v=1403902163">QF_NRA</a>
+<li><a href="results-QF_RDL.shtml?v=1403902163">QF_RDL</a>
+<li><a href="results-QF_UF.shtml?v=1403902163">QF_UF</a>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="results-QF_UFBV.shtml?v=1403902163">QF_UFBV</a>
+<li><a href="results-QF_UFIDL.shtml?v=1403902163">QF_UFIDL</a>
+<li><a href="results-QF_UFLIA.shtml?v=1403902163">QF_UFLIA</a>
+<li><a href="results-QF_UFLRA.shtml?v=1403902163">QF_UFLRA</a>
+<li><a href="results-QF_UFNIA.shtml?v=1403902163">QF_UFNIA</a>
+<li><a href="results-QF_UFNRA.shtml?v=1403902163">QF_UFNRA</a>
+<li><a href="results-UF.shtml?v=1403902163">UF</a>
+<li><a href="results-UFBV.shtml?v=1403902163">UFBV</a>
+<li><a href="results-UFIDL.shtml?v=1403902163">UFIDL</a>
+<li><a href="results-UFLIA.shtml?v=1403902163">UFLIA</a>
+<li><a href="results-UFLRA.shtml?v=1403902163">UFLRA</a>
+<li><a href="results-UFNIA.shtml?v=1403902163">UFNIA</a>
+</ul>
+</td>
+</tr>
+</table>
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

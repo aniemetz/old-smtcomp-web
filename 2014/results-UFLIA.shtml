@@ -1,0 +1,63 @@
+<!--#set var="title" value="UFLIA"-->
+<!--#include virtual="results-prelude2.shtml" -->
+<meta http-equiv="pragma" content="no-cache" />
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+<META HTTP-EQUIV="Refresh" CONTENT="60;">
+<title>UFLIA</title>
+</head>
+<body>
+<!--#include file="navbar.shtml" -->
+<h1>UFLIA</h1>
+<p>Competition results for the UFLIA division as of Fri Jun 27 16:49:23 EDT 2014
+<p><B>Competition benchmarks = 5766</B> (total = 12138, unknown status = 5499, trivial = 873)
+<h3>Division COMPLETE: The winner is CVC4</h3>
+<style> table{ table-layout:fixed; border-collapse:collapse; border-spacing:0; border:1px solid black; } td { padding:0.25em; border: 1px solid black } </style>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+<td>Weighted medal score<br>weight =  3.761</td>
+</tr>
+<tr>
+<td>CVC4</td>
+<td align='right'>0</td>
+<td align='right'>5582</td>
+<td align='right'>184</td>
+<td align='right'>0</td>
+<td align='right'> 101235.79</td>
+<td align='right'> 3.525</td>
+</tr>
+<tr>
+<td>[Z3]</td>
+<td align='right'>0</td>
+<td align='right'>5145</td>
+<td align='right'>621</td>
+<td align='right'>0</td>
+<td align='right'>  45346.45</td>
+<td align='right'> 2.994</td>
+</tr>
+<tr>
+<td>veriT</td>
+<td align='right'>0</td>
+<td align='right'>3985</td>
+<td align='right'>1781</td>
+<td align='right'>0</td>
+<td align='right'>  21518.67</td>
+<td align='right'> 1.796</td>
+</tr>
+<tr>
+<td>CVC3</td>
+<td align='right'>0</td>
+<td align='right'>8</td>
+<td align='right'>5758</td>
+<td align='right'>0</td>
+<td align='right'>    177.79</td>
+<td align='right'> 0.000</td>
+</tr>
+</table>
+<!--#include virtual="smt-comp-postlude.shtml" -->

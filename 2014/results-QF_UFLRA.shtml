@@ -1,0 +1,81 @@
+<!--#set var="title" value="QF_UFLRA"-->
+<!--#include virtual="results-prelude2.shtml" -->
+<meta http-equiv="pragma" content="no-cache" />
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+<META HTTP-EQUIV="Refresh" CONTENT="60;">
+<title>QF_UFLRA</title>
+</head>
+<body>
+<!--#include file="navbar.shtml" -->
+<h1>QF_UFLRA</h1>
+<p>Competition results for the QF_UFLRA division as of Fri Jun 27 16:49:23 EDT 2014
+<p><B>Competition benchmarks = 1176</B> (total = 1630, unknown status = 87, trivial = 367)
+<h3>Division COMPLETE: The winner is Yices2</h3>
+<style> table{ table-layout:fixed; border-collapse:collapse; border-spacing:0; border:1px solid black; } td { padding:0.25em; border: 1px solid black } </style>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+<td>Weighted medal score<br>weight =  3.070</td>
+</tr>
+<tr>
+<td>[Z3]</td>
+<td align='right'>0</td>
+<td align='right'>1175</td>
+<td align='right'>1</td>
+<td align='right'>0</td>
+<td align='right'>   4232.16</td>
+<td align='right'> 3.065</td>
+</tr>
+<tr>
+<td>Yices2</td>
+<td align='right'>0</td>
+<td align='right'>1171</td>
+<td align='right'>5</td>
+<td align='right'>0</td>
+<td align='right'>     91.99</td>
+<td align='right'> 3.044</td>
+</tr>
+<tr>
+<td>[MathSAT]</td>
+<td align='right'>0</td>
+<td align='right'>1171</td>
+<td align='right'>5</td>
+<td align='right'>0</td>
+<td align='right'>    464.54</td>
+<td align='right'> 3.044</td>
+</tr>
+<tr>
+<td>CVC4</td>
+<td align='right'>0</td>
+<td align='right'>1171</td>
+<td align='right'>5</td>
+<td align='right'>0</td>
+<td align='right'>   1461.07</td>
+<td align='right'> 3.044</td>
+</tr>
+<tr>
+<td>SMTInterpol</td>
+<td align='right'>0</td>
+<td align='right'>1171</td>
+<td align='right'>5</td>
+<td align='right'>0</td>
+<td align='right'>   4124.91</td>
+<td align='right'> 3.044</td>
+</tr>
+<tr>
+<td>veriT</td>
+<td align='right'>0</td>
+<td align='right'>1099</td>
+<td align='right'>77</td>
+<td align='right'>0</td>
+<td align='right'>  26850.24</td>
+<td align='right'> 2.681</td>
+</tr>
+</table>
+<!--#include virtual="smt-comp-postlude.shtml" -->

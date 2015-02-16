@@ -1,0 +1,13 @@
+<!--#if expr="$base = ''"
+--><!--#set var="base" value=""
+--><!--#endif
+--><?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="author" content="David Cok, Aaron Stump, Morgan Deters" />
+<meta name="description" content="SMT-COMP: Satisfiability Modulo Theories Competition" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="keywords" content="satisfiability, decision procedures, first-order logic with equality, separation logic, difference logic, EUF, solvers" />
+<link rel="stylesheet" href="smt-style.css" type="text/css" />

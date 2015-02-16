@@ -1,0 +1,81 @@
+<!--#set var="title" value="QF_UFLIA"-->
+<!--#include virtual="results-prelude2.shtml" -->
+<meta http-equiv="pragma" content="no-cache" />
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+<META HTTP-EQUIV="Refresh" CONTENT="60;">
+<title>QF_UFLIA</title>
+</head>
+<body>
+<!--#include file="navbar.shtml" -->
+<h1>QF_UFLIA</h1>
+<p>Competition results for the QF_UFLIA division as of Fri Jun 27 16:49:23 EDT 2014
+<p><B>Competition benchmarks = 484</B> (total = 598, unknown status = 0, trivial = 114)
+<h3>Division COMPLETE: The winner is Yices2</h3>
+<style> table{ table-layout:fixed; border-collapse:collapse; border-spacing:0; border:1px solid black; } td { padding:0.25em; border: 1px solid black } </style>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+<td>Weighted medal score<br>weight =  2.685</td>
+</tr>
+<tr>
+<td>[Z3]</td>
+<td align='right'>0</td>
+<td align='right'>484</td>
+<td align='right'>0</td>
+<td align='right'>0</td>
+<td align='right'>    108.14</td>
+<td align='right'> 2.685</td>
+</tr>
+<tr>
+<td>Yices2</td>
+<td align='right'>0</td>
+<td align='right'>484</td>
+<td align='right'>0</td>
+<td align='right'>0</td>
+<td align='right'>    145.15</td>
+<td align='right'> 2.685</td>
+</tr>
+<tr>
+<td>CVC4</td>
+<td align='right'>0</td>
+<td align='right'>484</td>
+<td align='right'>0</td>
+<td align='right'>0</td>
+<td align='right'>    643.48</td>
+<td align='right'> 2.685</td>
+</tr>
+<tr>
+<td>SMTInterpol</td>
+<td align='right'>0</td>
+<td align='right'>484</td>
+<td align='right'>0</td>
+<td align='right'>0</td>
+<td align='right'>   1906.79</td>
+<td align='right'> 2.685</td>
+</tr>
+<tr>
+<td>[MathSAT]</td>
+<td align='right'>0</td>
+<td align='right'>484</td>
+<td align='right'>0</td>
+<td align='right'>0</td>
+<td align='right'>   2054.81</td>
+<td align='right'> 2.685</td>
+</tr>
+<tr>
+<td>veriT</td>
+<td align='right'>0</td>
+<td align='right'>438</td>
+<td align='right'>46</td>
+<td align='right'>0</td>
+<td align='right'>  86658.63</td>
+<td align='right'> 2.199</td>
+</tr>
+</table>
+<!--#include virtual="smt-comp-postlude.shtml" -->

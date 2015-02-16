@@ -1,0 +1,63 @@
+<!--#set var="title" value="QF_RDL"-->
+<!--#include virtual="results-prelude2.shtml" -->
+<meta http-equiv="pragma" content="no-cache" />
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+<META HTTP-EQUIV="Refresh" CONTENT="60;">
+<title>QF_RDL</title>
+</head>
+<body>
+<!--#include file="navbar.shtml" -->
+<h1>QF_RDL</h1>
+<p>Competition results for the QF_RDL division as of Fri Jun 27 16:49:23 EDT 2014
+<p><B>Competition benchmarks = 132</B> (total = 255, unknown status = 85, trivial = 38)
+<h3>Division COMPLETE: The winner is Yices2</h3>
+<style> table{ table-layout:fixed; border-collapse:collapse; border-spacing:0; border:1px solid black; } td { padding:0.25em; border: 1px solid black } </style>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+<td>Weighted medal score<br>weight =  2.121</td>
+</tr>
+<tr>
+<td>Yices2</td>
+<td align='right'>0</td>
+<td align='right'>132</td>
+<td align='right'>0</td>
+<td align='right'>0</td>
+<td align='right'>   6048.28</td>
+<td align='right'> 2.121</td>
+</tr>
+<tr>
+<td>[Z3]</td>
+<td align='right'>0</td>
+<td align='right'>128</td>
+<td align='right'>4</td>
+<td align='right'>0</td>
+<td align='right'>   5343.59</td>
+<td align='right'> 1.994</td>
+</tr>
+<tr>
+<td>veriT</td>
+<td align='right'>0</td>
+<td align='right'>128</td>
+<td align='right'>4</td>
+<td align='right'>0</td>
+<td align='right'>   9794.56</td>
+<td align='right'> 1.994</td>
+</tr>
+<tr>
+<td>CVC4</td>
+<td align='right'>0</td>
+<td align='right'>127</td>
+<td align='right'>5</td>
+<td align='right'>0</td>
+<td align='right'>   8457.03</td>
+<td align='right'> 1.963</td>
+</tr>
+</table>
+<!--#include virtual="smt-comp-postlude.shtml" -->

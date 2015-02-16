@@ -1,0 +1,90 @@
+<!--#set var="title" value="QF_LIA"-->
+<!--#include virtual="results-prelude2.shtml" -->
+<meta http-equiv="pragma" content="no-cache" />
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+<META HTTP-EQUIV="Refresh" CONTENT="60;">
+<title>QF_LIA</title>
+</head>
+<body>
+<!--#include file="navbar.shtml" -->
+<h1>QF_LIA</h1>
+<p>Competition results for the QF_LIA division as of Fri Jun 27 16:49:23 EDT 2014
+<p><B>Competition benchmarks = 4381</B> (total = 6141, unknown status = 1279, trivial = 481)
+<h3>Division COMPLETE: The winner is SMTInterpol</h3>
+<style> table{ table-layout:fixed; border-collapse:collapse; border-spacing:0; border:1px solid black; } td { padding:0.25em; border: 1px solid black } </style>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+<td>Weighted medal score<br>weight =  3.642</td>
+</tr>
+<tr>
+<td>[CVC4-with-bugfix]</td>
+<td align='right'>0</td>
+<td align='right'>4285</td>
+<td align='right'>96</td>
+<td align='right'>0</td>
+<td align='right'>  72542.23</td>
+<td align='right'> 3.484</td>
+</tr>
+<tr>
+<td>[MathSAT]</td>
+<td align='right'>0</td>
+<td align='right'>4258</td>
+<td align='right'>123</td>
+<td align='right'>0</td>
+<td align='right'>  49919.17</td>
+<td align='right'> 3.440</td>
+</tr>
+<tr>
+<td>SMTInterpol</td>
+<td align='right'>0</td>
+<td align='right'>4237</td>
+<td align='right'>144</td>
+<td align='right'>0</td>
+<td align='right'> 114008.95</td>
+<td align='right'> 3.406</td>
+</tr>
+<tr>
+<td>Yices2</td>
+<td align='right'>0</td>
+<td align='right'>4178</td>
+<td align='right'>203</td>
+<td align='right'>0</td>
+<td align='right'>  64264.51</td>
+<td align='right'> 3.312</td>
+</tr>
+<tr>
+<td>[Z3]</td>
+<td align='right'>0</td>
+<td align='right'>4159</td>
+<td align='right'>222</td>
+<td align='right'>0</td>
+<td align='right'>  90410.87</td>
+<td align='right'> 3.282</td>
+</tr>
+<tr>
+<td>veriT</td>
+<td align='right'>0</td>
+<td align='right'>1256</td>
+<td align='right'>3125</td>
+<td align='right'>0</td>
+<td align='right'> 220643.22</td>
+<td align='right'> 0.299</td>
+</tr>
+<tr>
+<td>CVC4</td>
+<td align='right'>2</td>
+<td align='right'>4208</td>
+<td align='right'>171</td>
+<td align='right'>0</td>
+<td align='right'>  72773.40</td>
+<td align='right'> 3.360</td>
+</tr>
+</table>
+<!--#include virtual="smt-comp-postlude.shtml" -->

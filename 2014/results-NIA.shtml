@@ -1,0 +1,50 @@
+<!--#set var="title" value="NIA"-->
+<!--#include virtual="results-prelude2.shtml" -->
+<meta http-equiv="pragma" content="no-cache" />
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+<META HTTP-EQUIV="Refresh" CONTENT="60;">
+<title>NIA</title>
+</head>
+<body>
+<!--#include file="navbar.shtml" -->
+<h1>NIA</h1>
+<p>Competition results for the NIA division as of Fri Jun 27 16:49:23 EDT 2014
+<p><B>Competition benchmarks = 9</B> (total = 9, unknown status = 0, trivial = 0)
+<h3>Division COMPLETE: The winner is CVC4</h3>
+<style> table{ table-layout:fixed; border-collapse:collapse; border-spacing:0; border:1px solid black; } td { padding:0.25em; border: 1px solid black } </style>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+</tr>
+<tr>
+<td>[Z3]</td>
+<td align='right'>0</td>
+<td align='right'>9</td>
+<td align='right'>0</td>
+<td align='right'>0</td>
+<td align='right'>      0.13</td>
+</tr>
+<tr>
+<td>CVC4</td>
+<td align='right'>0</td>
+<td align='right'>3</td>
+<td align='right'>6</td>
+<td align='right'>0</td>
+<td align='right'>      0.02</td>
+</tr>
+<tr>
+<td>CVC3</td>
+<td align='right'>0</td>
+<td align='right'>0</td>
+<td align='right'>9</td>
+<td align='right'>0</td>
+<td align='right'>      0.00</td>
+</tr>
+</table>
+<!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,108 @@
+<!--#set var="title" value="QF_ABV"-->
+<!--#include virtual="results-prelude2.shtml" -->
+<meta http-equiv="pragma" content="no-cache" />
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+<META HTTP-EQUIV="Refresh" CONTENT="60;">
+<title>QF_ABV</title>
+</head>
+<body>
+<!--#include file="navbar.shtml" -->
+<h1>QF_ABV</h1>
+<p>Competition results for the QF_ABV division as of Fri Jun 27 16:49:23 EDT 2014
+<p><B>Competition benchmarks = 6457</B> (total = 15091, unknown status = 4190, trivial = 4423)
+<h3>Division COMPLETE: The winner is Boolector (justification)</h3>
+<style> table{ table-layout:fixed; border-collapse:collapse; border-spacing:0; border:1px solid black; } td { padding:0.25em; border: 1px solid black } </style>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+<td>Weighted medal score<br>weight =  3.810</td>
+</tr>
+<tr>
+<td>Boolector (justification)</td>
+<td align='right'>0</td>
+<td align='right'>6413</td>
+<td align='right'>44</td>
+<td align='right'>0</td>
+<td align='right'>  53176.27</td>
+<td align='right'> 3.758</td>
+</tr>
+<tr>
+<td>Boolector (dual propagation)</td>
+<td align='right'>0</td>
+<td align='right'>6410</td>
+<td align='right'>47</td>
+<td align='right'>0</td>
+<td align='right'>  69040.03</td>
+<td align='right'> 3.755</td>
+</tr>
+<tr>
+<td>[MathSAT]</td>
+<td align='right'>0</td>
+<td align='right'>6394</td>
+<td align='right'>63</td>
+<td align='right'>0</td>
+<td align='right'>  73535.00</td>
+<td align='right'> 3.736</td>
+</tr>
+<tr>
+<td>SONOLAR</td>
+<td align='right'>0</td>
+<td align='right'>6386</td>
+<td align='right'>71</td>
+<td align='right'>0</td>
+<td align='right'>  53248.38</td>
+<td align='right'> 3.727</td>
+</tr>
+<tr>
+<td>CVC4</td>
+<td align='right'>0</td>
+<td align='right'>6352</td>
+<td align='right'>105</td>
+<td align='right'>0</td>
+<td align='right'>  78865.09</td>
+<td align='right'> 3.687</td>
+</tr>
+<tr>
+<td>[Z3]</td>
+<td align='right'>0</td>
+<td align='right'>6351</td>
+<td align='right'>106</td>
+<td align='right'>0</td>
+<td align='right'>  53957.15</td>
+<td align='right'> 3.686</td>
+</tr>
+<tr>
+<td>Yices2</td>
+<td align='right'>1</td>
+<td align='right'>6410</td>
+<td align='right'>46</td>
+<td align='right'>0</td>
+<td align='right'>  37112.15</td>
+<td align='right'> 3.755</td>
+</tr>
+<tr>
+<td>Kleaver-STP</td>
+<td align='right'>56</td>
+<td align='right'>5827</td>
+<td align='right'>574</td>
+<td align='right'>0</td>
+<td align='right'>   1120.08</td>
+<td align='right'> 3.103</td>
+</tr>
+<tr>
+<td>Kleaver-portfolio</td>
+<td align='right'>91</td>
+<td align='right'>5799</td>
+<td align='right'>567</td>
+<td align='right'>0</td>
+<td align='right'>   3403.29</td>
+<td align='right'> 3.073</td>
+</tr>
+</table>
+<!--#include virtual="smt-comp-postlude.shtml" -->

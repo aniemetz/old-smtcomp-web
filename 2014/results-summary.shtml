@@ -1,0 +1,298 @@
+<!--#set var="title" value="summary"-->
+<!--#include virtual="results-prelude2.shtml" -->
+<meta http-equiv="pragma" content="no-cache" />
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+<META HTTP-EQUIV="Refresh" CONTENT="60;">
+<title>summary</title>
+</head>
+<body>
+<!--#include file="navbar.shtml" -->
+<h1>summary</h1>
+<p>Competition results as of Fri Jun 27 16:49:23 EDT 2014
+<p>Completed 347147/347147 = 100.0%
+<p>
+<style> table{ table-layout:fixed; border-collapse:collapse; border-spacing:0; border:1px solid black; } td { padding:0.25em; border: 1px solid black } </style>
+<table>
+<tr>
+<td>Logic</td>
+<td>Solvers</td>
+<td>Benchmarks</td>
+<td># pairs Complete</td>
+<td>% Complete</td>
+<td>Order</td>
+</tr>
+<tr>
+<td><a href="results-ALIA.shtml?v=1403902163">ALIA</a></td>
+<td align='right'>4</td>
+<td align='right'>29</td>
+<td align='right'>116</td>
+<td align='right'>100%</td>
+<td>[Z3]; CVC4; veriT; CVC3; </td>
+</tr>
+<tr>
+<td><a href="results-AUFLIA.shtml?v=1403902163">AUFLIA</a></td>
+<td align='right'>4</td>
+<td align='right'>4</td>
+<td align='right'>16</td>
+<td align='right'>100%</td>
+<td>CVC4; [Z3]; CVC3; veriT; </td>
+</tr>
+<tr>
+<td><a href="results-AUFLIRA.shtml?v=1403902163">AUFLIRA</a></td>
+<td align='right'>4</td>
+<td align='right'>10791</td>
+<td align='right'>43164</td>
+<td align='right'>100%</td>
+<td>[Z3]; CVC4; CVC3; veriT; </td>
+</tr>
+<tr>
+<td><a href="results-AUFNIRA.shtml?v=1403902163">AUFNIRA</a></td>
+<td align='right'>4</td>
+<td align='right'>564</td>
+<td align='right'>2256</td>
+<td align='right'>100%</td>
+<td>[CVC4-with-bugfix]; [Z3]; CVC3; CVC4; </td>
+</tr>
+<tr>
+<td><a href="results-BV.shtml?v=1403902163">BV</a></td>
+<td align='right'></td>
+<td align='right'>0</td>
+<td align='right'>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="results-LIA.shtml?v=1403902163">LIA</a></td>
+<td align='right'>4</td>
+<td align='right'>46</td>
+<td align='right'>184</td>
+<td align='right'>100%</td>
+<td>[Z3]; CVC4; CVC3; veriT; </td>
+</tr>
+<tr>
+<td><a href="results-LRA.shtml?v=1403902163">LRA</a></td>
+<td align='right'>4</td>
+<td align='right'>171</td>
+<td align='right'>684</td>
+<td align='right'>100%</td>
+<td>CVC4; [Z3]; CVC3; veriT; </td>
+</tr>
+<tr>
+<td><a href="results-NIA.shtml?v=1403902163">NIA</a></td>
+<td align='right'>3</td>
+<td align='right'>9</td>
+<td align='right'>27</td>
+<td align='right'>100%</td>
+<td>[Z3]; CVC4; CVC3; </td>
+</tr>
+<tr>
+<td><a href="results-NRA.shtml?v=1403902163">NRA</a></td>
+<td align='right'>3</td>
+<td align='right'>3747</td>
+<td align='right'>11241</td>
+<td align='right'>100%</td>
+<td>[Z3]; CVC4; CVC3; </td>
+</tr>
+<tr>
+<td><a href="results-QF_ABV.shtml?v=1403902163">QF_ABV</a></td>
+<td align='right'>9</td>
+<td align='right'>6457</td>
+<td align='right'>58113</td>
+<td align='right'>100%</td>
+<td>Boolector (justification); Boolector (dual propagation); [MathSAT]; SONOLAR; CVC4; [Z3]; Yices2; Kleaver-STP; Kleaver-portfolio; </td>
+</tr>
+<tr>
+<td><a href="results-QF_ALIA.shtml?v=1403902163">QF_ALIA</a></td>
+<td align='right'>5</td>
+<td align='right'>97</td>
+<td align='right'>485</td>
+<td align='right'>100%</td>
+<td>Yices2; SMTInterpol; [Z3]; [MathSAT]; CVC4; </td>
+</tr>
+<tr>
+<td><a href="results-QF_AUFBV.shtml?v=1403902163">QF_AUFBV</a></td>
+<td align='right'>4</td>
+<td align='right'>37</td>
+<td align='right'>148</td>
+<td align='right'>100%</td>
+<td>CVC4; Yices2; [Z3]; [MathSAT]; </td>
+</tr>
+<tr>
+<td><a href="results-QF_AUFLIA.shtml?v=1403902163">QF_AUFLIA</a></td>
+<td align='right'>6</td>
+<td align='right'>610</td>
+<td align='right'>3660</td>
+<td align='right'>100%</td>
+<td>Yices2; [MathSAT]; [Z3]; SMTInterpol; CVC4; veriT; </td>
+</tr>
+<tr>
+<td><a href="results-QF_AX.shtml?v=1403902163">QF_AX</a></td>
+<td align='right'>5</td>
+<td align='right'>335</td>
+<td align='right'>1675</td>
+<td align='right'>100%</td>
+<td>Yices2; [MathSAT]; [Z3]; CVC4; SMTInterpol; </td>
+</tr>
+<tr>
+<td><a href="results-QF_BV.shtml?v=1403902163">QF_BV</a></td>
+<td align='right'>11</td>
+<td align='right'>2488</td>
+<td align='right'>27368</td>
+<td align='right'>100%</td>
+<td>Boolector; STP-CryptoMiniSat4; [CVC4-with-bugfix]; [MathSAT]; [Z3]; CVC4; 4Simp; SONOLAR; Yices2; abziz_min_features; abziz_all_features; </td>
+</tr>
+<tr>
+<td><a href="results-QF_IDL.shtml?v=1403902163">QF_IDL</a></td>
+<td align='right'>4</td>
+<td align='right'>1315</td>
+<td align='right'>5260</td>
+<td align='right'>100%</td>
+<td>[Z3]; Yices2; CVC4; veriT; </td>
+</tr>
+<tr>
+<td><a href="results-QF_LIA.shtml?v=1403902163">QF_LIA</a></td>
+<td align='right'>7</td>
+<td align='right'>4381</td>
+<td align='right'>30667</td>
+<td align='right'>100%</td>
+<td>[CVC4-with-bugfix]; [MathSAT]; SMTInterpol; Yices2; [Z3]; veriT; CVC4; </td>
+</tr>
+<tr>
+<td><a href="results-QF_LRA.shtml?v=1403902163">QF_LRA</a></td>
+<td align='right'>6</td>
+<td align='right'>1343</td>
+<td align='right'>8058</td>
+<td align='right'>100%</td>
+<td>CVC4; Yices2; [MathSAT]; SMTInterpol; veriT; [Z3]; </td>
+</tr>
+<tr>
+<td><a href="results-QF_NIA.shtml?v=1403902163">QF_NIA</a></td>
+<td align='right'>4</td>
+<td align='right'>8327</td>
+<td align='right'>33308</td>
+<td align='right'>100%</td>
+<td>[Z3]; AProVE; CVC3; CVC4; </td>
+</tr>
+<tr>
+<td><a href="results-QF_NRA.shtml?v=1403902163">QF_NRA</a></td>
+<td align='right'>4</td>
+<td align='right'>10121</td>
+<td align='right'>40484</td>
+<td align='right'>100%</td>
+<td>[Z3]; CVC3; CVC4; raSAT; </td>
+</tr>
+<tr>
+<td><a href="results-QF_RDL.shtml?v=1403902163">QF_RDL</a></td>
+<td align='right'>4</td>
+<td align='right'>132</td>
+<td align='right'>528</td>
+<td align='right'>100%</td>
+<td>Yices2; [Z3]; veriT; CVC4; </td>
+</tr>
+<tr>
+<td><a href="results-QF_UF.shtml?v=1403902163">QF_UF</a></td>
+<td align='right'>7</td>
+<td align='right'>4124</td>
+<td align='right'>28868</td>
+<td align='right'>100%</td>
+<td>Yices2; veriT; CVC4; OpenSMT2; [Z3]; [MathSAT]; SMTInterpol; </td>
+</tr>
+<tr>
+<td><a href="results-QF_UFBV.shtml?v=1403902163">QF_UFBV</a></td>
+<td align='right'>4</td>
+<td align='right'>31</td>
+<td align='right'>124</td>
+<td align='right'>100%</td>
+<td>Yices2; [Z3]; [MathSAT]; CVC4; </td>
+</tr>
+<tr>
+<td><a href="results-QF_UFIDL.shtml?v=1403902163">QF_UFIDL</a></td>
+<td align='right'>4</td>
+<td align='right'>311</td>
+<td align='right'>1244</td>
+<td align='right'>100%</td>
+<td>[Z3]; Yices2; CVC4; veriT; </td>
+</tr>
+<tr>
+<td><a href="results-QF_UFLIA.shtml?v=1403902163">QF_UFLIA</a></td>
+<td align='right'>6</td>
+<td align='right'>484</td>
+<td align='right'>2904</td>
+<td align='right'>100%</td>
+<td>[Z3]; Yices2; CVC4; SMTInterpol; [MathSAT]; veriT; </td>
+</tr>
+<tr>
+<td><a href="results-QF_UFLRA.shtml?v=1403902163">QF_UFLRA</a></td>
+<td align='right'>6</td>
+<td align='right'>1176</td>
+<td align='right'>7056</td>
+<td align='right'>100%</td>
+<td>[Z3]; Yices2; [MathSAT]; CVC4; SMTInterpol; veriT; </td>
+</tr>
+<tr>
+<td><a href="results-QF_UFNIA.shtml?v=1403902163">QF_UFNIA</a></td>
+<td align='right'>3</td>
+<td align='right'>7</td>
+<td align='right'>21</td>
+<td align='right'>100%</td>
+<td>CVC4; [Z3]; CVC3; </td>
+</tr>
+<tr>
+<td><a href="results-QF_UFNRA.shtml?v=1403902163">QF_UFNRA</a></td>
+<td align='right'>3</td>
+<td align='right'>32</td>
+<td align='right'>96</td>
+<td align='right'>100%</td>
+<td>[Z3]; CVC3; CVC4; </td>
+</tr>
+<tr>
+<td><a href="results-UF.shtml?v=1403902163">UF</a></td>
+<td align='right'>4</td>
+<td align='right'>2830</td>
+<td align='right'>11320</td>
+<td align='right'>100%</td>
+<td>CVC4; [Z3]; CVC3; veriT; </td>
+</tr>
+<tr>
+<td><a href="results-UFBV.shtml?v=1403902163">UFBV</a></td>
+<td align='right'></td>
+<td align='right'>0</td>
+<td align='right'>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="results-UFIDL.shtml?v=1403902163">UFIDL</a></td>
+<td align='right'>3</td>
+<td align='right'>49</td>
+<td align='right'>147</td>
+<td align='right'>100%</td>
+<td>[Z3]; CVC4; CVC3; </td>
+</tr>
+<tr>
+<td><a href="results-UFLIA.shtml?v=1403902163">UFLIA</a></td>
+<td align='right'>4</td>
+<td align='right'>5766</td>
+<td align='right'>23064</td>
+<td align='right'>100%</td>
+<td>CVC4; [Z3]; veriT; CVC3; </td>
+</tr>
+<tr>
+<td><a href="results-UFLRA.shtml?v=1403902163">UFLRA</a></td>
+<td align='right'>4</td>
+<td align='right'>25</td>
+<td align='right'>100</td>
+<td align='right'>100%</td>
+<td>[Z3]; veriT; CVC3; CVC4; </td>
+</tr>
+<tr>
+<td><a href="results-UFNIA.shtml?v=1403902163">UFNIA</a></td>
+<td align='right'>3</td>
+<td align='right'>1587</td>
+<td align='right'>4761</td>
+<td align='right'>100%</td>
+<td>[Z3]; CVC4; CVC3; </td>
+</tr>
+</table>
+<!--#include virtual="smt-comp-postlude.shtml" -->

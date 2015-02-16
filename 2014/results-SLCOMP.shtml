@@ -1,0 +1,210 @@
+<!--#set var="title" value="SL-COMP  2014"-->
+<!--#include virtual="results-prelude2.shtml" -->
+<meta http-equiv="pragma" content="no-cache" />
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+<META HTTP-EQUIV="Refresh" CONTENT="10;">
+<title>SL-COMP  2014</title>
+</head>
+<body>
+<!--#include file="navbar.shtml" -->
+<h1>SL-COMP  2014</h1>
+<p>Competition results as of Wed Jun 25 21:20:39 EDT 2014
+<style> table{ table-layout:fixed; border-collapse:collapse; border-spacing:0; border:1px solid black; } td { padding:0.25em; border: 1px solid black } </style>
+<h2>FDB_entl</h2>
+<h3>Division COMPLETE: The winner is SPEN</h3>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+</tr>
+<tr>
+<td>SPEN</td>
+<td>0</td>
+<td>43</td>
+<td>0</td>
+<td>0</td>
+<td>      0.61</td>
+</tr>
+<tr>
+<td>Cyclist-SL</td>
+<td>0</td>
+<td>19</td>
+<td>24</td>
+<td>0</td>
+<td>    141.78</td>
+</tr>
+<tr>
+<td>SLIDE</td>
+<td>0</td>
+<td>0</td>
+<td>43</td>
+<td>0</td>
+<td>      0.00</td>
+</tr>
+<tr>
+<td>SLEEK-06</td>
+<td>1</td>
+<td>31</td>
+<td>11</td>
+<td>0</td>
+<td>     43.65</td>
+</tr>
+</table>
+<h2>UDB_entl</h2>
+<h3>Division COMPLETE: The winner is Cyclist-SL</h3>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+</tr>
+<tr>
+<td>Cyclist-SL</td>
+<td>0</td>
+<td>120</td>
+<td>52</td>
+<td>0</td>
+<td>    145.33</td>
+</tr>
+<tr>
+<td>SLIDE</td>
+<td>0</td>
+<td>36</td>
+<td>136</td>
+<td>0</td>
+<td>    195.61</td>
+</tr>
+<tr>
+<td>SLEEK-06</td>
+<td>4</td>
+<td>131</td>
+<td>37</td>
+<td>0</td>
+<td>     80.60</td>
+</tr>
+</table>
+<h2>UDB_sat</h2>
+<h3>Division COMPLETE: The winner is SLEEK-06</h3>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+</tr>
+<tr>
+<td>SLEEK-06</td>
+<td>0</td>
+<td>61</td>
+<td>0</td>
+<td>0</td>
+<td>     30.84</td>
+</tr>
+<tr>
+<td>SLSAT</td>
+<td>0</td>
+<td>37</td>
+<td>24</td>
+<td>0</td>
+<td>   2620.52</td>
+</tr>
+</table>
+<h2>sll0a_entl</h2>
+<h3>Division COMPLETE: The winner is Asterix</h3>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+</tr>
+<tr>
+<td>Asterix</td>
+<td>0</td>
+<td>292</td>
+<td>0</td>
+<td>0</td>
+<td>      2.98</td>
+</tr>
+<tr>
+<td>SPEN</td>
+<td>0</td>
+<td>292</td>
+<td>0</td>
+<td>0</td>
+<td>      7.58</td>
+</tr>
+<tr>
+<td>SLEEK-06</td>
+<td>0</td>
+<td>292</td>
+<td>0</td>
+<td>0</td>
+<td>     14.13</td>
+</tr>
+<tr>
+<td>Cyclist-SL</td>
+<td>0</td>
+<td>55</td>
+<td>237</td>
+<td>0</td>
+<td>     11.78</td>
+</tr>
+</table>
+<h2>sll0a_sat</h2>
+<h3>Division COMPLETE: The winner is Asterix</h3>
+<table>
+<tr>
+<td>Solver</td>
+<td>Errors</td>
+<td>Solved</td>
+<td>Not Solved</td>
+<td>Remaining</td>
+<td>CPU Time (on <br>solved instances)</td>
+</tr>
+<tr>
+<td>Asterix</td>
+<td>0</td>
+<td>110</td>
+<td>0</td>
+<td>0</td>
+<td>      1.06</td>
+</tr>
+<tr>
+<td>SPEN</td>
+<td>0</td>
+<td>110</td>
+<td>0</td>
+<td>0</td>
+<td>      3.27</td>
+</tr>
+<tr>
+<td>SLEEK-06</td>
+<td>0</td>
+<td>110</td>
+<td>0</td>
+<td>0</td>
+<td>      4.99</td>
+</tr>
+<tr>
+<td>SLSAT</td>
+<td>55</td>
+<td>55</td>
+<td>0</td>
+<td>0</td>
+<td>      0.55</td>
+</tr>
+</table>
+<!--#include virtual="smt-comp-postlude.shtml" -->
