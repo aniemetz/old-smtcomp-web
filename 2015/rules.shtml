@@ -1,7 +1,0 @@
-<!--#set var="title" value="SMT-COMP 2014 benchmarks" --><!--#include virtual="smt-comp-prelude.shtml" -->
-
-<p>
-The draft rules will be released soon.
-</p>
-
-<!--#include virtual="smt-comp-postlude.shtml" -->
