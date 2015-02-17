@@ -451,7 +451,7 @@ The relationship of the associated logic to SMT-LIB is currently under discussio
   <td>SPEN</td>
   <td>971</td>
   <td>1280 SPEN 1.09<br>config 1809 spen.sh<br>pre: 118 SL-SPEN3</td>
-  <td><a href="systemDescriptions/spen-smtcomp14b.pdf">SPEN</a></td>
+  <td><a href="systemDescriptions/spen-smtcomp14.pdf">SPEN</a></td>
   <td>Mihaela Sighireanu &lt;mihaela.sighireanu@gmail.com&gt;</td>
 </tr>
 
