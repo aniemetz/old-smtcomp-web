@@ -18,8 +18,9 @@ to present the competitors and results of the competition.
   </li>
   <li> Key dates (see the <a href="rules15.pdf">rules</a> for the complete timeline):
     <ul>
-      <li> Feb&nbsp;22: Deadline for comments </li>
-      <li> Further deadlines TBA </li>
+      <li> May&nbsp;1: Deadline for new benchmark contributions </li>
+      <li> June&nbsp;1: Deadline for first versions of solvers </li>
+      <li> June&nbsp;14: Deadline for final versions of solvers </li>
       <li> July&nbsp;18-19: SMT Workshop (presentation of results) </li>
     </ul>
   </li>
@@ -38,32 +39,19 @@ to present the competitors and results of the competition.
 
 <!--
 <ul>
-  </li>
   <li>Key dates (see the rules document for the complete timeline):
-    <ul>
-      <li>May 15 - deadline for submission of new benchmarks
-      <li>June 1 - deadline for initial solver submission
-      <li>June 15 - deadline for final solver versions
-    </ul>
-    <li> <a href="rules.shtml">Rules</a> </li>
-  <li> <a href="rules14.pdf">Competition rules and timeline</a> </li>
-  <li> <a href="application.shtml">Benchmarks</a> </li>
   <li> <a href="difficulties.shtml">Benchmarks difficulties</a>
-  <li> <a href="tools.shtml">Tools</a> </li>
-  <li> <a href="specs.shtml">Machine Specifications</a></li>
-<li> <a href="http://www.smtexec.org/exec/competitors2012.php">Participants</a></li>
+  <li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)</li>
 
-      <li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)</li>
-
-     <li> The competition is complete: Final status: 
-       [&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1004"><B>main track</B></a>&nbsp;
-       |&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1005"><B>application track</B></a>&nbsp; 
-       |&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1006"><B>unsat core track</B></a>&nbsp; 
-       |&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1007"><B>exhibition tracks</B></a>&nbsp;] </li>
+  <li> The competition is complete: Final status: 
+    [&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1004"><B>main track</B></a>&nbsp;
+    |&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1005"><B>application track</B></a>&nbsp; 
+    |&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1006"><B>unsat core track</B></a>&nbsp; 
+    |&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1007"><B>exhibition tracks</B></a>&nbsp;] </li>
 
   <li> The competition results are available <a href="results-toc.shtml">here</a>
 
-        <li> <a href="reports/SMTCOMP2012.pdf">Competition report</a> and <a href="reports">final system descriptions</a></li>
+  <li> <a href="reports/SMTCOMP2012.pdf">Competition report</a> and <a href="reports">final system descriptions</a></li>
 </ul>
 -->
 
