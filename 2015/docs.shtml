@@ -2,99 +2,98 @@
 
 <ul>
 
-<li> <a href="http://www.it.uu.se/research/publications/reports/2014-017/"><strong>The 2013 SMT Evaluation.</strong></a> David R. Cok, Aaron Stump, and Tjark Weber. Technical Report 2014-017, Department of Information Technology, Uppsala University, July 2014.
+<li> <a href="http://dx.doi.org/10.1007/s10817-015-9328-2"><strong>The 2013 Evaluation of SMT-COMP and SMT-LIB.</strong></a> David R. Cok, Aaron Stump, and Tjark Weber.
 <pre>
-@techreport{cok14the,
-  author      = {David R. Cok and Aaron Stump and Tjark Weber},
-  title       = {The 2013 {SMT} Evaluation},
-  number      = {2014-017},
-  institution = {Department of Information Technology, Uppsala University},
-  department  = {Computing Science Division},
-  month       = jul,
-  year        = 2014,
-  url         = {http://www.it.uu.se/research/publications/reports/2014-017/},
+@article{CSW15,
+  author    = {David R. Cok and Aaron Stump and Tjark Weber},
+  title     = {The 2013 Evaluation of {SMT-COMP} and {SMT-LIB}},
+  journal   = {Journal of Automated Reasoning},
+  volume    = {55},
+  number    = {1},
+  pages     = {61-90},
+  publisher = {Springer Netherlands},
+  year      = {2015},
+  url       = {http://dx.doi.org/10.1007/s10817-015-9328-2}
 }
 </pre>
 </li>
 
-<li> <strong>The 2012 SMT Competition.</strong> David R. Cok, Alberto Griggio, Roberto Bruttomesso, and Morgan Deters. <a href="../2012/reports/SMTCOMP2012.pdf">To appear.</a> </li>
-
-<li> <strong>6 Years of SMT-COMP.</strong> Clark Barrett, Morgan Deters, Leonardo de Moura, Albert Oliveras, and Aaron Stump.
+<li> <a href="http://smtcomp.sourceforge.net/2012/reports/SMTCOMP2012.pdf"><strong>The 2012 SMT Competition.</strong></a> David R. Cok, Alberto Griggio, Roberto Bruttomesso, and Morgan Deters.
 <pre>
-@article{Barrettetal2012JAR,
-  author = {Clark Barrett and
-               Morgan Deters and
-               Leonardo de Moura and
-               Albert Oliveras and
-               Aaron Stump},
-  year = {2012},
-  title = { {6 Years of SMT-COMP} },
-   journal = {{Journal of Automated Reasoning}},
-   publisher = {Springer Netherlands},
-   issn = {0168-7433},
-   keyword = {Computer Science},
-   pages = {1-35},
-   url = {http://dx.doi.org/10.1007/s10817-012-9246-5},
-   note = {10.1007/s10817-012-9246-5}
+@misc{CGBD12,
+  author = {David R. Cok and Alberto Griggio and Roberto Bruttomesso and Morgan Deters},
+  title  = {The 2012 {SMT} Competition},
+  year   = {2012},
+  note   = {Available online at \url{http://smtcomp.sourceforge.net/2012/reports/SMTCOMP2012.pdf}}
 }
 </pre>
 </li>
 
-<li> <strong>Design and Results of the 4th Annual Satisfiability Modulo Theories Competition (SMT-COMP 2008).</strong> Clark Barrett, Morgan Deters, Albert Oliveras, and Aaron Stump.  To appear.
+<li> <a href="http://dx.doi.org/10.1007/s10817-012-9246-5"><strong>6 Years of SMT-COMP.</strong></a> Clark Barrett, Morgan Deters, Leonardo de Moura, Albert Oliveras, and Aaron Stump.
+<pre>
+@article{BDdMOS13,
+  author    = {Barrett, Clark and Deters, Morgan and de Moura, Leonardo and Oliveras, Albert and Stump, Aaron},
+  title     = {6 Years of {SMT-COMP}},
+  journal   = {Journal of Automated Reasoning},
+  volume    = {50},
+  number    = {3},
+  pages     = {243-277},
+  publisher = {Springer Netherlands},
+  year      = {2013},
+  url       = {http://dx.doi.org/10.1007/s10817-012-9246-5}
+}
+</pre>
+</li>
+
+<li> <a href="https://www.cs.nyu.edu/~barrett/pubs/BDOS10-TR.pdf"><strong>Design and Results of the 4th Annual Satisfiability Modulo Theories Competition (SMT-COMP 2008).</strong></a> Clark Barrett, Morgan Deters, Albert Oliveras, and Aaron Stump.
+<pre>
+@techreport{BDOS10,
+  author      = {Clark Barrett and Morgan Deters and Albert Oliveras and Aaron Stump},
+  title       = {Design and Results of the 4th {A}nnual {S}atisfiability {M}odulo {T}heories {C}ompetition ({SMT-COMP} 2008)},
+  number      = {TR2010-931},
+  institution = {New York University},
+  year        = {2010}
+}
+</pre>
 </li>
 
 <li> <strong><a href="http://www.worldscinet.com/cgi-bin/details.cgi?id=pii:S0218213008004060&amp;type=html">Design and Results of the 3rd Annual Satisfiability Modulo Theories Competition (SMT-COMP 2007).</a></strong> Clark Barrett, Morgan Deters, Albert Oliveras, and Aaron Stump.
 <pre>
 @article{BDOS08,
-    author  = "Clark Barrett and Morgan Deters and Albert Oliveras and Aaron Stump",
-    title   = "Design and Results of the 3rd Annual Satisfiability Modulo Theories Competition ({SMT-COMP} 2007)",
-    journal = "International Journal on Artificial Intelligence Tools",
-    volume  = {17},
-    number  = {4},
-    year    = {2008},
-    pages   = {569--606},
+  author  = {Clark Barrett and Morgan Deters and Albert Oliveras and Aaron Stump},
+  title   = {Design and Results of the 3rd {A}nnual {S}atisfiability {M}odulo {T}heories {C}ompetition ({SMT-COMP} 2007)},
+  journal = {International Journal on Artificial Intelligence Tools},
+  volume  = {17},
+  number  = {4},
+  pages   = {569-606},
+  year    = {2008}
 }
 </pre>
 </li>
 
-<li> <strong><a href="/papers/smtcomp06_fmsd.pdf">Design and Results of the 2nd Annual Satisfiability Modulo Theories Competition (SMT-COMP 2006).</a></strong> Clark Barrett, Leonardo de Moura, and Aaron Stump.
+<li> <strong>Design and Results of the 2nd Annual Satisfiability Modulo Theories Competition (SMT-COMP 2006).</strong> Clark Barrett, Leonardo de Moura, and Aaron Stump.
 <pre>
 @article{BdMS07,
-  author    = "Clark Barrett and Leonardo de Moura and Aaron Stump",
-  title     = "Design and Results of the 2nd Annual Satisfiability Modulo Theories Competition ({SMT-COMP} 2006)",
-  journal   = "Formal Methods in System Design",
-  publisher = "Springer Netherlands",
-  year      = 2007
+  author    = {Clark Barrett and Leonardo de Moura and Aaron Stump},
+  title     = {Design and Results of the 2nd {A}nnual {S}atisfiability {M}odulo {T}heories {C}ompetition ({SMT-COMP} 2006)},
+  journal   = {Formal Methods in System Design},
+  publisher = {Springer Netherlands},
+  year      = {2007}
 }
 </pre>
 </li>
 
-<li> <strong><a href="/papers/smtcomp05_jar.pdf">Design and Results of the 1st Satisfiability Modulo Theories Competition (SMT-COMP 2005).</a></strong> Clark Barrett, Leonardo de Moura, and Aaron Stump.
+<li> <strong>Design and Results of the 1st Satisfiability Modulo Theories Competition (SMT-COMP 2005).</strong> Clark Barrett, Leonardo de Moura, and Aaron Stump.
 <pre>
 @article{BdMS05,
-    author    = "C. Barrett and L. de Moura and A. Stump",
-    title     = {{Design and Results of the 1st Satisfiability Modulo Theories Competition (SMT-COMP 2005)}},
-    journal   = "Journal of Automated Reasoning",
-    pages     = {373--390},
-    publisher = "Springer",
-    volume    = 35,
-    number    = 4,
-    year      = "2005"
-}
-</pre>
-</li>
-
-<li> <strong><a href="/papers/smtcomp05_short_paper.pdf">SMT-COMP: Satisfiability Modulo Theories Competition.</a></strong>
-Clark Barrett, Leonardo de Moura, and Aaron Stump. [<a href="/papers/smtcomp05_slides.pdf">Slides</a>]
-<pre>
-@inproceedings{BdMS05short,
-    author= "C. Barrett and L. de Moura and A. Stump",
-    title={{SMT-COMP: Satisfiability Modulo Theories Competition}},
-    booktitle="17th International Conference on Computer Aided Verification",
-    editor="K. Etessami and S. Rajamani",
-    pages={20--23},
-    publisher="Springer",
-    year="2005"
+  author    = {Clark Barrett and Leonardo de Moura and Aaron Stump},
+  title     = {Design and Results of the 1st {S}atisfiability {M}odulo {T}heories {C}ompetition ({SMT-COMP} 2005)},
+  journal   = {Journal of Automated Reasoning},
+  volume    = {35},
+  number    = {4},
+  pages     = {373-390},
+  publisher = {Springer},
+  year      = {2005}
 }
 </pre>
 </li>
