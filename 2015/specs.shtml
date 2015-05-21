@@ -30,6 +30,11 @@ glibc:	gcc-4.4.6-4.el6.x86_64
 </pre>
 
 <p>
+A StarExec virtual machine image is available
+<a href="https://www.starexec.org/vmimage/">here</a>.
+</p>
+
+<p>
 The machines have 2 processors each and 4 cores per processor.  For
 the competition, two job-pairs will be run on a given machine at a
 given time (one on each processor, with 4 cores available), and the
