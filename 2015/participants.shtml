@@ -1,0 +1,385 @@
+<!--#set var="title" value="SMT-COMP 2015 Participants"
+--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<style type="text/css">
+table{
+    table-layout:fixed;
+    border-collapse:collapse;
+    border-spacing:0;
+    border:1px solid black;
+}
+td {
+    padding:0.25em;
+    border: 1px solid black
+}
+</style>
+
+<p>These solvers have been submitted to SMT-COMP 2015.  The organizers
+reserve the right to include other solvers of interest in the
+competition.</p>
+
+<table>
+<tr>
+  <td>Solver</td>
+  <td>Main track</td>
+  <td>Application track</td>
+  <td>Preliminary version solver id</td>
+  <td>Final version solver id</td>
+  <td>Seed</td>
+  <td>System description</td>
+  <td>Contact(s)</td>
+</tr>
+<tr>
+  <td>AProVE</td>
+  <td>X</td>
+  <td>-</td>
+  <td>1229 (configuration: default)</td>
+  <td></td>
+  <td>127956425</td>
+  <td></td>
+  <td>Carsten Fuhs (<a href="mailto:c.fuhs@cs.ucl.ac.uk">c.fuhs@cs.ucl.ac.uk</a>)</td>
+</tr>
+<tr>
+  <td>Boolector (QF_AUFBV)</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2818</td>
+  <td></td>
+  <td>42</td>
+  <td></td>
+  <td>Mathias Preiner (<a href="mailto:mathias.preiner@jku.at">mathias.preiner@jku.at</a>)</td>
+</tr>
+<tr>
+  <td>Boolector (QF_BV)</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2819</td>
+  <td></td>
+  <td>42</td>
+  <td></td>
+  <td>Mathias Preiner (<a href="mailto:mathias.preiner@jku.at">mathias.preiner@jku.at</a>)</td>
+</tr>
+<tr>
+  <td>Boolector (QF_BV incremental)</td>
+  <td>-</td>
+  <td>X</td>
+  <td>2820</td>
+  <td></td>
+  <td>42</td>
+  <td></td>
+  <td>Mathias Preiner (<a href="mailto:mathias.preiner@jku.at">mathias.preiner@jku.at</a>)</td>
+</tr>
+<tr>
+  <td>CVC3 (Main track)</td>
+  <td>X</td>
+  <td>-</td>
+  <td>1262 (configuration: default)</td>
+  <td></td>
+  <td>33333</td>
+  <td><a href="systemDescriptions/CVC3.pdf">CVC3</a></td>
+  <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
+</tr>
+<tr>
+  <td>CVC3 (Application track)</td>
+  <td>-</td>
+  <td>X</td>
+  <td>1363</td>
+  <td></td>
+  <td>33333</td>
+  <td><a href="systemDescriptions/CVC3.pdf">CVC3</a></td>
+  <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
+</tr>
+<tr>
+  <td>CVC4 (Main track)</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2830 (configuration: default)</td>
+  <td></td>
+  <td>44444</td>
+  <td><a href="systemDescriptions/CVC4.pdf">CVC4</a></td>
+  <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
+</tr>
+<tr>
+  <td>CVC4 (Application track)</td>
+  <td>-</td>
+  <td>X</td>
+  <td>2830 (configuration: application)</td>
+  <td></td>
+  <td>44444</td>
+  <td><a href="systemDescriptions/CVC4.pdf">CVC4</a></td>
+  <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
+</tr>
+<tr>
+  <td>micro-z3</td>
+  <td>X</td>
+  <td>?</td>
+  <td>?</td>
+  <td></td>
+  <td>340066123</td>
+  <td></td>
+  <td>Andrey Kupriyanov (<a href="mailto:andrey.kuprianov@ist.ac.at">andrey.kuprianov@ist.ac.at</a>)</td>
+</tr>
+<tr>
+  <td>OpenSMT2</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2817</td>
+  <td></td>
+  <td>2817</td>
+  <td></td>
+  <td>Matteo Marescotti (<a href="mailto:matteseo@gmail.com">matteseo@gmail.com</a>)</td>
+</tr>
+<tr>
+  <td>OpenSMT2-lra</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2827</td>
+  <td></td>
+  <td>2827</td>
+  <td></td>
+  <td>Matteo Marescotti (<a href="mailto:matteseo@gmail.com">matteseo@gmail.com</a>)</td>
+</tr>
+<tr>
+  <td>OpenSMT2-parallel</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2825</td>
+  <td></td>
+  <td>2825</td>
+  <td></td>
+  <td>Matteo Marescotti (<a href="mailto:matteseo@gmail.com">matteseo@gmail.com</a>)</td>
+</tr>
+<tr>
+  <td>raSAT</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2768</td>
+  <td></td>
+  <td>889</td>
+  <td><a href="systemDescriptions/raSAT.pdf">raSAT</a></td>
+  <td>Tung Vu Xuan (<a href="mailto:tungvx@jaist.ac.jp">tungvx@jaist.ac.jp</a>)</td>
+</tr>
+<tr>
+  <td>SMTInterpol</td>
+  <td>X</td>
+  <td>X</td>
+  <td>2791</td>
+  <td></td>
+  <td>2072868739</td>
+  <td><a href="systemDescriptions/SMTInterpol.pdf">SMTInterpol</a></td>
+  <td>J&uuml;rgen Christ (<a href="mailto:christj@informatik.uni-freiburg.de">christj@informatik.uni-freiburg.de</a>)</td>
+</tr>
+<tr>
+  <td>STP-CryptoMiniSat4</td>
+  <td>X</td>
+  <td>X</td>
+  <td>?</td>
+  <td></td>
+  <td>0</td>
+  <td><a href="systemDescriptions/STP.pdf">STP</a></td>
+  <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
+</tr>
+<tr>
+  <td>STP-CryptoMiniSat4-v15</td>
+  <td>X</td>
+  <td>X</td>
+  <td>?</td>
+  <td></td>
+  <td>0</td>
+  <td><a href="systemDescriptions/STP.pdf">STP</a></td>
+  <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
+</tr>
+<tr>
+  <td>STP-CryptoMiniSat4-mt-v15</td>
+  <td>X</td>
+  <td>X</td>
+  <td>?</td>
+  <td></td>
+  <td>0</td>
+  <td><a href="systemDescriptions/STP.pdf">STP</a></td>
+  <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
+</tr>
+<tr>
+  <td>STP-MiniSat-v15</td>
+  <td>X</td>
+  <td>X</td>
+  <td>?</td>
+  <td></td>
+  <td>0</td>
+  <td><a href="systemDescriptions/STP.pdf">STP</a></td>
+  <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
+</tr>
+<tr>
+  <td>veriT</td>
+  <td>X</td>
+  <td>-</td>
+  <td>?</td>
+  <td></td>
+  <td>5459</td>
+  <td></td>
+  <td>David D&eacute;harbe (<a href="mailto:david@dimap.ufrn.br">david@dimap.ufrn.br</a>)</td>
+</tr>
+<tr>
+  <td>Yices2 (Main track)</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2832 (configuration: default)</td>
+  <td></td>
+  <td>0</td>
+  <td></td>
+  <td>Bruno Dutertre (<a href="mailto:bruno.dutertre@sri.com">bruno.dutertre@sri.com</a>)</td>
+</tr>
+<tr>
+  <td>Yices2 (Application track)</td>
+  <td>-</td>
+  <td>X</td>
+  <td>2832 (configuration: incremental)</td>
+  <td></td>
+  <td>0</td>
+  <td></td>
+  <td>Bruno Dutertre (<a href="mailto:bruno.dutertre@sri.com">bruno.dutertre@sri.com</a>)</td>
+</tr>
+<tr>
+  <td>?</td>
+  <td>?</td>
+  <td>?</td>
+  <td>?</td>
+  <td></td>
+  <td>0</td>
+  <td></td>
+  <td>Dejan Jovanovi&cacute; (<a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a>)</td>
+</tr>
+</table>
+
+<p>These are the logic divisions in which each solver is competing.</p>
+
+<table>
+<tr>
+  <td>Solver</td>
+  <td>ALIA</td>
+  <td>ANIA</td>
+  <td>AUFLIA</td>
+  <td>AUFLIRA</td>
+  <td>AUFNIRA</td>
+  <td>BV</td>
+  <td>LIA</td>
+  <td>LRA</td>
+  <td>NIA</td>
+  <td>NRA</td>     <!-- 10 -->
+  <td>QF_ABV</td>
+  <td>QF_ALIA</td>
+  <td>QF_ANIA</td>
+  <td>QF_AUFBV</td>
+  <td>QF_AUFLIA</td>
+  <td>QF_AUFNIA</td>
+  <td>QF_AX</td>
+  <td>QF_BV</td>
+  <td>QF_IDL</td>
+  <td>QF_LIA</td>     <!-- 20 -->
+  <td>QF_LIRA</td>
+  <td>QF_LRA</td>
+  <td>QF_NIA</td>
+  <td>QF_NIRA</td>
+  <td>QF_NRA</td>
+  <td>QF_RDL</td>
+  <td>QF_UF</td>
+  <td>QF_UFBV</td>
+  <td>QF_UFIDL</td>
+  <td>QF_UFLIA</td>     <!-- 30 -->
+  <td>QF_UFLRA</td>
+  <td>QF_UFNIA</td>
+  <td>QF_UFNRA</td>
+  <td>UF</td>
+  <td>UFBV</td>
+  <td>UFIDL</td>
+  <td>UFLIA</td>
+  <td>UFLRA</td>
+  <td>UFNIA</td>
+</tr>
+<tr>
+  <td>AProVE</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector (QF_AUFBV)</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector (QF_BV)</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector (QF_BV incremental)</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>CVC3 (Main track)</td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+<tr>
+  <td>CVC3 (Application track)</td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+<tr>
+  <td>CVC4 (Main track)</td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+<tr>
+  <td>CVC4 (Application track)</td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+<tr>
+  <td>micro-z3</td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+<tr>
+  <td>OpenSMT2</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>OpenSMT2-lra</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>OpenSMT2-parallel</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>raSAT</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>SMTInterpol</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>STP-CryptoMiniSat4</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>STP-CryptoMiniSat4-v15</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>STP-CryptoMiniSat4-mt-v15</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>STP-MiniSat-v15</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>veriT</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td>
+</tr>
+<tr>
+  <td>Yices2 (Main track)</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Yices2 (Application track)</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+</table>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

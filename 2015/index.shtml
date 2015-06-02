@@ -29,7 +29,7 @@ to present the competitors and results of the competition.
   <li> Benchmarks: TBA </li>
   <li> <a href="tools.shtml">Tools</a> </li>
   <li> <a href="specs.shtml">Machine specifications</a> </li>
-  <li> Participants: TBA </li>
+  <li> <a href="participants.shtml">Participants</a> </li>
   <li> Results: TBA </li>
   <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing list</a> </li>
   <li> <a href="docs.shtml">Papers</a> </li>
@@ -40,9 +40,6 @@ to present the competitors and results of the competition.
 
 <!--
 <ul>
-  <li>Key dates (see the rules document for the complete timeline):
-  <li> <a href="difficulties.shtml">Benchmarks difficulties</a>
-  <li> <a href="benchmarks.shtml">Benchmarks</a> (<a href="selected-benchmarks.shtml">Selected</a>&nbsp;| <a href="smtcomp2010.scrambled.tgz">Tarball</a>)</li>
 
   <li> The competition is complete: Final status: 
     [&nbsp;<a href="http://www.smtexec.org/exec/?jobs=1004"><B>main track</B></a>&nbsp;
