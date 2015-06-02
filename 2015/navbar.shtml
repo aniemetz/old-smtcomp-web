@@ -5,20 +5,10 @@
     <th> &bull; </th>
     <th> <a href="<!--#echo var="base" -->introduction.shtml">Intro</a> </th>
     <th> &bull; </th>
-    <!--<th> <a href="<!--#echo var="base" -->rules.shtml">Rules &amp; Submission</a> </th>
-    <th> &bull; </th>
-    <th> <a href="http://www.smtexec.org/exec/competitors2014.php">Participants</a> </th>
-    <th> &bull; </th>-->
-    <!--
-    <th> Results </th>
-    <th> &bull; </th>
-    -->
     <th> <a href="<!--#echo var="base" -->tools.shtml">Tools</a> </th>
     <th> &bull; </th>
     <th> <a href="<!--#echo var="base" -->specs.shtml">Specs</a> </th>
     <th> &bull; </th>
-    <!--<th> <a href="<!--#echo var="base" -->travel.shtml">Travel Grants</a> </th>
-    <th> &bull; </th>-->
     <th> <a href="<!--#echo var="base" -->acknowledgments.shtml">Thanks</a></th>
     <th> &bull; </th>
     <th> <a href="http://www.smt-lib.org/">SMT-LIB</a> </th>
@@ -26,4 +16,3 @@
     <th> <a href="<!--#echo var="base" -->previous.shtml">Previous</a> </th>
   </tr>
 </table>
-
