@@ -183,7 +183,7 @@ competition.</p>
   <td>STP-CryptoMiniSat4</td>
   <td>X</td>
   <td>X</td>
-  <td>?</td>
+  <td>1305</td>
   <td></td>
   <td>0</td>
   <td><a href="systemDescriptions/STP.pdf">STP</a></td>
@@ -193,7 +193,7 @@ competition.</p>
   <td>STP-CryptoMiniSat4-v15</td>
   <td>X</td>
   <td>X</td>
-  <td>?</td>
+  <td>2804</td>
   <td></td>
   <td>0</td>
   <td><a href="systemDescriptions/STP.pdf">STP</a></td>
@@ -203,7 +203,7 @@ competition.</p>
   <td>STP-CryptoMiniSat4-mt-v15</td>
   <td>X</td>
   <td>X</td>
-  <td>?</td>
+  <td>2805</td>
   <td></td>
   <td>0</td>
   <td><a href="systemDescriptions/STP.pdf">STP</a></td>
@@ -213,7 +213,7 @@ competition.</p>
   <td>STP-MiniSat-v15</td>
   <td>X</td>
   <td>X</td>
-  <td>?</td>
+  <td>2806</td>
   <td></td>
   <td>0</td>
   <td><a href="systemDescriptions/STP.pdf">STP</a></td>
