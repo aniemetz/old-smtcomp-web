@@ -250,10 +250,10 @@ competition.</p>
   <td>Bruno Dutertre (<a href="mailto:bruno.dutertre@sri.com">bruno.dutertre@sri.com</a>)</td>
 </tr>
 <tr>
-  <td>?</td>
-  <td>?</td>
-  <td>?</td>
-  <td>?</td>
+  <td>Yices2-NL</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2870</td>
   <td></td>
   <td>0</td>
   <td></td>
@@ -393,6 +393,10 @@ competition.</p>
 <tr>
   <td>Yices2 (Application track)</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Yices2-NL</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 </table>
 
