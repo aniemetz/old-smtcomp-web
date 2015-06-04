@@ -93,7 +93,7 @@ competition.</p>
   <td>CVC4 (Main track)</td>
   <td>X</td>
   <td>-</td>
-  <td>2830 (configuration: default)</td>
+  <td>2877</td>
   <td></td>
   <td>44444</td>
   <td><a href="systemDescriptions/CVC4.pdf">CVC4</a></td>
@@ -103,9 +103,29 @@ competition.</p>
   <td>CVC4 (Application track)</td>
   <td>-</td>
   <td>X</td>
-  <td>2830 (configuration: application)</td>
+  <td>2878</td>
   <td></td>
   <td>44444</td>
+  <td><a href="systemDescriptions/CVC4.pdf">CVC4</a></td>
+  <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
+</tr>
+<tr>
+  <td>CVC4 (Main track) Experimental</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2879</td>
+  <td></td>
+  <td>0</td>
+  <td><a href="systemDescriptions/CVC4.pdf">CVC4</a></td>
+  <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
+</tr>
+<tr>
+  <td>CVC4 (Application track) Experimental</td>
+  <td>-</td>
+  <td>X</td>
+  <td>2880</td>
+  <td></td>
+  <td>0</td>
   <td><a href="systemDescriptions/CVC4.pdf">CVC4</a></td>
   <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
 </tr>
@@ -336,6 +356,14 @@ competition.</p>
 </tr>
 <tr>
   <td>CVC4 (Application track)</td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+<tr>
+  <td>CVC4 (Main track) Experimental</td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+<tr>
+  <td>CVC4 (Application track) Experimental</td>
   <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 <tr>
