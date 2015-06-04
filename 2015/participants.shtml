@@ -132,7 +132,7 @@ competition.</p>
 <tr>
   <td>micro-Z3</td>
   <td>X</td>
-  <td>?</td>
+  <td>X</td>
   <td>2838</td>
   <td></td>
   <td>340066123</td>
@@ -368,7 +368,7 @@ competition.</p>
 </tr>
 <tr>
   <td>micro-Z3</td>
-  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>OpenSMT2</td>
