@@ -8,6 +8,10 @@ table{
     border-spacing:0;
     border:1px solid black;
 }
+th {
+    padding:0.25em;
+    border: 1px solid black
+}
 td {
     padding:0.25em;
     border: 1px solid black
@@ -20,14 +24,14 @@ competition.</p>
 
 <table>
 <tr>
-  <td>Solver</td>
-  <td>Main track</td>
-  <td>Application track</td>
-  <td>Preliminary version solver id</td>
-  <td>Final version solver id</td>
-  <td>Seed</td>
-  <td>System description</td>
-  <td>Contact(s)</td>
+  <th>Solver</th>
+  <th>Main track</th>
+  <th>Application track</th>
+  <th>Preliminary version solver id</th>
+  <th>Final version solver id</th>
+  <th>Seed</th>
+  <th>System description</th>
+  <th>Contact(s)</th>
 </tr>
 <tr>
   <td>AProVE</td>
@@ -285,46 +289,46 @@ competition.</p>
 
 <table>
 <tr>
-  <td>Solver</td>
-  <td>ALIA</td>
-  <td>ANIA</td>
-  <td>AUFLIA</td>
-  <td>AUFLIRA</td>
-  <td>AUFNIRA</td>
-  <td>BV</td>
-  <td>LIA</td>
-  <td>LRA</td>
-  <td>NIA</td>
-  <td>NRA</td>     <!-- 10 -->
-  <td>QF_ABV</td>
-  <td>QF_ALIA</td>
-  <td>QF_ANIA</td>
-  <td>QF_AUFBV</td>
-  <td>QF_AUFLIA</td>
-  <td>QF_AUFNIA</td>
-  <td>QF_AX</td>
-  <td>QF_BV</td>
-  <td>QF_IDL</td>
-  <td>QF_LIA</td>     <!-- 20 -->
-  <td>QF_LIRA</td>
-  <td>QF_LRA</td>
-  <td>QF_NIA</td>
-  <td>QF_NIRA</td>
-  <td>QF_NRA</td>
-  <td>QF_RDL</td>
-  <td>QF_UF</td>
-  <td>QF_UFBV</td>
-  <td>QF_UFIDL</td>
-  <td>QF_UFLIA</td>     <!-- 30 -->
-  <td>QF_UFLRA</td>
-  <td>QF_UFNIA</td>
-  <td>QF_UFNRA</td>
-  <td>UF</td>
-  <td>UFBV</td>
-  <td>UFIDL</td>
-  <td>UFLIA</td>
-  <td>UFLRA</td>
-  <td>UFNIA</td>
+  <th>Solver</th>
+  <th>ALIA</th>
+  <th>ANIA</th>
+  <th>AUFLIA</th>
+  <th>AUFLIRA</th>
+  <th>AUFNIRA</th>
+  <th>BV</th>
+  <th>LIA</th>
+  <th>LRA</th>
+  <th>NIA</th>
+  <th>NRA</th>     <!-- 10 -->
+  <th>QF_ABV</th>
+  <th>QF_ALIA</th>
+  <th>QF_ANIA</th>
+  <th>QF_AUFBV</th>
+  <th>QF_AUFLIA</th>
+  <th>QF_AUFNIA</th>
+  <th>QF_AX</th>
+  <th>QF_BV</th>
+  <th>QF_IDL</th>
+  <th>QF_LIA</th>     <!-- 20 -->
+  <th>QF_LIRA</th>
+  <th>QF_LRA</th>
+  <th>QF_NIA</th>
+  <th>QF_NIRA</th>
+  <th>QF_NRA</th>
+  <th>QF_RDL</th>
+  <th>QF_UF</th>
+  <th>QF_UFBV</th>
+  <th>QF_UFIDL</th>
+  <th>QF_UFLIA</th>     <!-- 30 -->
+  <th>QF_UFLRA</th>
+  <th>QF_UFNIA</th>
+  <th>QF_UFNRA</th>
+  <th>UF</th>
+  <th>UFBV</th>
+  <th>UFIDL</th>
+  <th>UFLIA</th>
+  <th>UFLRA</th>
+  <th>UFNIA</th>
 </tr>
 <tr>
   <td>AProVE</td>
