@@ -1,18 +1,14 @@
-<!--#set var="title" value="SMT-COMP 2015 Participants"
+<!--#set var="title" value="Participants"
 --><!--#include virtual="smt-comp-prelude.shtml" -->
 
 <style type="text/css">
-table{
+table.participants {
     table-layout:fixed;
     border-collapse:collapse;
     border-spacing:0;
     border:1px solid black;
 }
-th {
-    padding:0.25em;
-    border: 1px solid black
-}
-td {
+table.participants tbody tr th, table.participants tbody tr td {
     padding:0.25em;
     border: 1px solid black
 }
@@ -22,7 +18,7 @@ td {
 reserve the right to include other solvers of interest in the
 competition.</p>
 
-<table>
+<table class="participants">
 <tr>
   <th>Solver</th>
   <th>Main track</th>
@@ -287,7 +283,7 @@ competition.</p>
 
 <p>These are the logic divisions in which each solver is competing.</p>
 
-<table>
+<table class="participants">
 <tr>
   <th>Solver</th>
   <th>ALIA</th>
