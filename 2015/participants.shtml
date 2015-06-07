@@ -15,9 +15,8 @@ table.participants tr th, table.participants tr td {
 }
 </style>
 
-<p>These solvers have been submitted to SMT-COMP 2015.  The organizers
-reserve the right to include other solvers of interest in the
-competition.</p>
+<p>These solvers have been submitted to SMT-COMP 2015 or were entered
+  non-competitively by the organizers for comparison.</p>
 
 <table class="participants">
 <tr>
@@ -129,6 +128,16 @@ competition.</p>
   <td>0</td>
   <td><a href="systemDescriptions/CVC4.pdf">CVC4</a></td>
   <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
+</tr>
+<tr>
+  <td>MathSAT 5</td>
+  <td>X</td>
+  <td>X</td>
+  <td></td>
+  <td></td>
+  <td>-</td>
+  <td></td>
+  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.5-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.5-linux-x86_64.tar.gz</a></td>
 </tr>
 <tr>
   <td>micro-Z3</td>
@@ -279,6 +288,16 @@ competition.</p>
   <td>0</td>
   <td></td>
   <td>Dejan Jovanovi&#263; (<a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a>)</td>
+</tr>
+<tr>
+  <td>Z3</td>
+  <td>X</td>
+  <td>X</td>
+  <td></td>
+  <td></td>
+  <td>-</td>
+  <td></td>
+  <td><a href="https://github.com/Z3Prover/z3">https://github.com/Z3Prover/z3</a> (branch: master)</td>
 </tr>
 </table>
 
