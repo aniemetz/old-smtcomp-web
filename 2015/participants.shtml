@@ -308,6 +308,7 @@ table.participants tr th, table.participants tr td {
   <td><b>265466031</b> (mod 2<sup>30</sup>)</td>
   <td></td>
   <td></td>
+</tr>
 </table>
 
 <p>These are the logic divisions in which each solver is competing.</p>
