@@ -130,7 +130,7 @@ table.participants tr th, table.participants tr td {
   <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
 </tr>
 <tr>
-  <td>MathSAT 5</td>
+  <td>MathSAT 5 [non-competitive]</td>
   <td>X</td>
   <td>X</td>
   <td></td>
@@ -290,7 +290,7 @@ table.participants tr th, table.participants tr td {
   <td>Dejan Jovanovi&#263; (<a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a>)</td>
 </tr>
 <tr>
-  <td>Z3</td>
+  <td>Z3 [non-competitive]</td>
   <td>X</td>
   <td>X</td>
   <td></td>
@@ -306,47 +306,47 @@ table.participants tr th, table.participants tr td {
 <table class="participants">
 <tr>
   <th>Solver</th>
-  <th>ALIA</th>
-  <th>ANIA</th>
-  <th>AUFLIA</th>
-  <th>AUFLIRA</th>
-  <th>AUFNIRA</th>
-  <th>BV</th>
-  <th>LIA</th>
-  <th>LRA</th>
-  <th>NIA</th>
-  <th>NRA</th>     <!-- 10 -->
-  <th>QF_ABV</th>
-  <th>QF_ALIA</th>
-  <th>QF_ANIA</th>
-  <th>QF_AUFBV</th>
-  <th>QF_AUFLIA</th>
-  <th>QF_AUFNIA</th>
-  <th>QF_AX</th>
-  <th>QF_BV</th>
-  <th>QF_BVFP</th>
-  <th>QF_FP</th>     <!-- 20 -->
-  <th>QF_IDL</th>
-  <th>QF_LIA</th>
-  <th>QF_LIRA</th>
-  <th>QF_LRA</th>
-  <th>QF_NIA</th>
-  <th>QF_NIRA</th>
-  <th>QF_NRA</th>
-  <th>QF_RDL</th>
-  <th>QF_UF</th>
-  <th>QF_UFBV</th>     <!-- 30 -->
-  <th>QF_UFIDL</th>
-  <th>QF_UFLIA</th>
-  <th>QF_UFLRA</th>
-  <th>QF_UFNIA</th>
-  <th>QF_UFNRA</th>
-  <th>UF</th>
-  <th>UFBV</th>
-  <th>UFIDL</th>
-  <th>UFLIA</th>
-  <th>UFLRA</th>     <!-- 40 -->
-  <th>UFNIA</th>
+  <th>ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>ANIA<sup><a href="#fn2">2</a></sup></th>
+  <th>AUFLIA<sup><a href="#fn1">1</a></sup></th>
+  <th>AUFLIRA<sup><a href="#fn1">1</a></sup></th>
+  <th>AUFNIRA<sup><a href="#fn1">1</a></sup></th>
+  <th>BV<sup><a href="#fn1">1</a></sup></th>
+  <th>LIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>LRA<sup><a href="#fn1">1</a></sup></th>
+  <th>NIA<sup><a href="#fn1">1</a></sup></th>
+  <th>NRA<sup><a href="#fn1">1</a></sup></th>     <!-- 10 -->
+  <th>QF_ABV<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>QF_ANIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>QF_AUFBV<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_AUFLIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>QF_AUFNIA<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_AX<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_BV<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>QF_BVFP<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_FP<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>     <!-- 20 -->
+  <th>QF_IDL<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_LIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>QF_LIRA<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_LRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>QF_NIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>QF_NIRA<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_NRA<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_RDL<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_UF<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_UFBV<sup><a href="#fn1">1</a></sup></th>     <!-- 30 -->
+  <th>QF_UFIDL<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_UFLIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>QF_UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>QF_UFNIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>QF_UFNRA<sup><a href="#fn1">1</a></sup></th>
+  <th>UF<sup><a href="#fn1">1</a></sup></th>
+  <th>UFBV<sup><a href="#fn1">1</a></sup></th>
+  <th>UFIDL<sup><a href="#fn1">1</a></sup></th>
+  <th>UFLIA<sup><a href="#fn1">1</a></sup></th>
+  <th>UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>     <!-- 40 -->
+  <th>UFNIA<sup><a href="#fn1">1</a></sup></th>
 </tr>
 <tr>
   <td>AProVE</td>
@@ -449,5 +449,17 @@ table.participants tr th, table.participants tr td {
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 </table>
+
+<p>
+  <span id="fn1">
+    1. Main track division.
+  </span><br/>
+  <span id="fn2">
+    2. Application track division.
+  </span><br/>  
+  <span id="fn3">
+    3. Floating-point divisions are considered experimental in 2015.
+  </span>
+</p>
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
