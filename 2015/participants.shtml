@@ -299,6 +299,15 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td><a href="https://github.com/Z3Prover/z3">https://github.com/Z3Prover/z3</a> (branch: master)</td>
 </tr>
+<tr>
+  <td><b>Total</b></td>
+  <td><b>22</b></td>
+  <td><b>13</b></td>
+  <td></td>
+  <td></td>
+  <td><b>265466031</b> (mod 2<sup>30</sup>)</td>
+  <td></td>
+  <td></td>
 </table>
 
 <p>These are the logic divisions in which each solver is competing.</p>
