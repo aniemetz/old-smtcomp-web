@@ -164,13 +164,13 @@ respectively.
     <td>QF_BVFP<sup><a href="#fn2">2</a></sup></td>
     <td>4 (1 excluded<sup><a href="#fn1">1</a></sup>)</td>
     <td>0</td>
-    <td>5</td>
+    <td>5 [expected: 3]</td>
   </tr>
   <tr>
     <td>QF_FP<sup><a href="#fn2">2</a></sup></td>
     <td>40113</td>
     <td>215</td>
-    <td>40328</td>
+    <td>40328 [expected: 40326]</td>
   </tr>
   <tr>
     <td>QF_IDL</td>
@@ -302,7 +302,7 @@ respectively.
     <td><b>Total</b></td>
     <td><b>159935 (6260 excluded<sup><a href="#fn1">1</a></sup>)</b></td>
     <td><b>30171</b></td>
-    <td><b>196366</b></td>
+    <td><b>196366 [expected: 196362]</b></td>
   </tr>
 </table>
 
