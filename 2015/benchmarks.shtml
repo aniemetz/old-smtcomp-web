@@ -28,8 +28,9 @@ SMT-COMP 2015 will use a subset of the benchmarks available within the
 2015-06-01 release
 of <a href="http://smtlib.cs.uiowa.edu/">SMT-LIB</a>, as described in
 the competition rules.  Specifically, benchmarks with unknown status,
-and benchmarks that contain partial bit-vector operations (e.g.,
-bit-vector division), will not be used.
+bit-vector benchmarks that contain partial operations (e.g.,
+bit-vector division), and floating-point benchmarks that contain
+underspecified operations (e.g., <tt>fp.min</tt>) will not be used.
 </p>
 
 <p>
@@ -162,15 +163,15 @@ respectively.
   </tr>
   <tr>
     <td>QF_BVFP<sup><a href="#fn2">2</a></sup></td>
-    <td>4 (1 excluded<sup><a href="#fn1">1</a></sup>)</td>
+    <td>7 (1 excluded<sup><a href="#fn1">1</a></sup>)</td>
     <td>0</td>
-    <td>5 [expected: 3]</td>
+    <td>8</td>
   </tr>
   <tr>
     <td>QF_FP<sup><a href="#fn2">2</a></sup></td>
-    <td>40113</td>
+    <td>34413 (5706 excluded<sup><a href="#fn1">1</a></sup>)</td>
     <td>215</td>
-    <td>40328 [expected: 40326]</td>
+    <td>40334</td>
   </tr>
   <tr>
     <td>QF_IDL</td>
@@ -300,16 +301,16 @@ respectively.
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>159935 (6260 excluded<sup><a href="#fn1">1</a></sup>)</b></td>
+    <td><b>154238 (11966 excluded<sup><a href="#fn1">1</a></sup>)</b></td>
     <td><b>30171</b></td>
-    <td><b>196366 [expected: 196362]</b></td>
+    <td><b>196375</b></td>
   </tr>
 </table>
 
 <p>
   <span id="fn1">
-    1. Excluded because they contain partial bit-vector operations
-    (e.g., bit-vector division).
+    1. Excluded because they contain partial or underspecified
+    operations (e.g., bit-vector division, <tt>fp.min</tt>).
   </span><br/>
   <span id="fn2">
     2. Floating-point divisions are considered experimental in 2015.
