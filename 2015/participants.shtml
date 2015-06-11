@@ -133,7 +133,7 @@ table.participants tr th, table.participants tr td {
   <td>MathSAT 5 [non-competitive]</td>
   <td>X</td>
   <td>X</td>
-  <td></td>
+  <td>2900</td>
   <td></td>
   <td>-</td>
   <td></td>
@@ -293,11 +293,11 @@ table.participants tr th, table.participants tr td {
   <td>Z3 [non-competitive]</td>
   <td>X</td>
   <td>X</td>
-  <td></td>
+  <td>2908</td>
   <td></td>
   <td>-</td>
   <td></td>
-  <td><a href="https://github.com/Z3Prover/z3">https://github.com/Z3Prover/z3</a> (branch: master)</td>
+  <td><a href="https://github.com/Z3Prover/z3/archive/z3-4.4.0.tar.gz">https://github.com/Z3Prover/z3/archive/z3-4.4.0.tar.gz</a></td>
 </tr>
 <tr>
   <td><b>Total</b></td>
@@ -399,6 +399,10 @@ table.participants tr th, table.participants tr td {
   <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 <tr>
+  <td>MathSAT 5</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
   <td>micro-Z3</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
@@ -457,6 +461,10 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td>Yices2-NL</td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Z3</td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 </table>
 
