@@ -140,7 +140,7 @@ table.participants tr th, table.participants tr td {
   <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.5-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.5-linux-x86_64.tar.gz</a></td>
 </tr>
 <tr>
-  <td>micro-Z3</td>
+  <td>micro-Z3<sup><a href="#fnw">w</a></sup></td>
   <td>X</td>
   <td>X</td>
   <td>2838</td>
@@ -280,7 +280,7 @@ table.participants tr th, table.participants tr td {
   <td>Bruno Dutertre (<a href="mailto:bruno.dutertre@sri.com">bruno.dutertre@sri.com</a>)</td>
 </tr>
 <tr>
-  <td>Yices2-NL</td>
+  <td>Yices2-NL<sup><a href="#fnw">w</a></sup></td>
   <td>X</td>
   <td>-</td>
   <td>2870</td>
@@ -310,6 +310,12 @@ table.participants tr th, table.participants tr td {
   <td></td>
 </tr>
 </table>
+
+<p>
+  <span id="fnw">
+    w. Wrapper tool.
+  </span>
+</p>
 
 <p>These are the logic divisions in which each solver is competing.</p>
 
