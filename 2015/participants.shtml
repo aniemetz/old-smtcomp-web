@@ -130,14 +130,24 @@ table.participants tr th, table.participants tr td {
   <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
 </tr>
 <tr>
-  <td>MathSAT 5 [non-competitive]</td>
+  <td>MathSAT 5 (Main Track) [non-competitive]</td>
   <td>X</td>
-  <td>X</td>
+  <td>-</td>
   <td>2900</td>
-  <td></td>
+  <td>2968</td>
   <td>-</td>
   <td></td>
-  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.5-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.5-linux-x86_64.tar.gz</a></td>
+  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.6-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.6-linux-x86_64.tar.gz</a></td>
+</tr>
+<tr>
+  <td>MathSAT 5 (Application Track) [non-competitive]</td>
+  <td>-</td>
+  <td>X</td>
+  <td>2900</td>
+  <td>2970</td>
+  <td>-</td>
+  <td></td>
+  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.6-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.6-linux-x86_64.tar.gz</a></td>
 </tr>
 <tr>
   <td>micro-Z3<sup><a href="#fnw">w</a></sup></td>
@@ -405,8 +415,12 @@ table.participants tr th, table.participants tr td {
   <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td>
 </tr>
 <tr>
-  <td>MathSAT 5 [non-competitive]<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>MathSAT 5 (Main track) [non-competitive]<sup><a href="#fn1">1</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>MathSAT 5 (Application track) [non-competitive]<sup><a href="#fn2">2</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>micro-Z3<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
