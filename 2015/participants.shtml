@@ -254,9 +254,9 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>2864</td>
-  <td></td>
+  <td>2965</td>
   <td>5459</td>
-  <td></td>
+  <td><a href="systemDescriptions/veriT.pdf">veriT</a></td>
   <td>David D&eacute;harbe (<a href="mailto:david@dimap.ufrn.br">david@dimap.ufrn.br</a>)</td>
 </tr>
 <tr>
@@ -454,7 +454,7 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td>veriT<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td>
+  <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Yices2 (Main track)<sup><a href="#fn1">1</a></sup></td>
