@@ -264,8 +264,8 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>2832 (configuration: default)</td>
-  <td></td>
-  <td>0</td>
+  <td>2956</td>
+  <td>40278</td>
   <td></td>
   <td>Bruno Dutertre (<a href="mailto:bruno.dutertre@sri.com">bruno.dutertre@sri.com</a>)</td>
 </tr>
@@ -274,8 +274,8 @@ table.participants tr th, table.participants tr td {
   <td>-</td>
   <td>X</td>
   <td>2832 (configuration: incremental)</td>
-  <td></td>
-  <td>0</td>
+  <td>2957</td>
+  <td>40278</td>
   <td></td>
   <td>Bruno Dutertre (<a href="mailto:bruno.dutertre@sri.com">bruno.dutertre@sri.com</a>)</td>
 </tr>
@@ -305,7 +305,7 @@ table.participants tr th, table.participants tr td {
   <td><b>13</b></td>
   <td></td>
   <td></td>
-  <td><b>265466031</b> (mod 2<sup>30</sup>)</td>
+  <td><b>265546587</b> (mod 2<sup>30</sup>)</td>
   <td></td>
   <td></td>
 </tr>
@@ -458,11 +458,11 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td>Yices2 (Main track)<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Yices2 (Application track)<sup><a href="#fn2">2</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Yices2-NL<sup><a href="#fn1">1</a></sup></td>
