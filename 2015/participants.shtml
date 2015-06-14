@@ -264,7 +264,7 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>2832 (configuration: default)</td>
-  <td>2956</td>
+  <td>3054</td>
   <td>40278</td>
   <td></td>
   <td>Bruno Dutertre (<a href="mailto:bruno.dutertre@sri.com">bruno.dutertre@sri.com</a>)</td>
@@ -274,7 +274,7 @@ table.participants tr th, table.participants tr td {
   <td>-</td>
   <td>X</td>
   <td>2832 (configuration: incremental)</td>
-  <td>2957</td>
+  <td>3056</td>
   <td>40278</td>
   <td></td>
   <td>Bruno Dutertre (<a href="mailto:bruno.dutertre@sri.com">bruno.dutertre@sri.com</a>)</td>
