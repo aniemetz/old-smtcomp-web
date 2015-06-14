@@ -154,7 +154,7 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>2817 (configuration: default)</td>
-  <td>3047</td>
+  <td>3049</td>
   <td>2817</td>
   <td></td>
   <td>Matteo Marescotti (<a href="mailto:matteseo@gmail.com">matteseo@gmail.com</a>)</td>
@@ -164,7 +164,7 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>2827</td>
-  <td>3048</td>
+  <td>3047</td>
   <td>2827</td>
   <td></td>
   <td>Matteo Marescotti (<a href="mailto:matteseo@gmail.com">matteseo@gmail.com</a>)</td>
@@ -174,7 +174,7 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>2825</td>
-  <td>3049</td>
+  <td>3048</td>
   <td>2825</td>
   <td></td>
   <td>Matteo Marescotti (<a href="mailto:matteseo@gmail.com">matteseo@gmail.com</a>)</td>
@@ -303,7 +303,7 @@ table.participants tr th, table.participants tr td {
   <td>Z3 (unstable)</td>
   <td>X</td>
   <td>-</td>
-  <td></td>
+  <td>2983</td>
   <td></td>
   <td>0</td>
   <td></td>
