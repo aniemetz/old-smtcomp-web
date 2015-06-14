@@ -36,7 +36,7 @@ table.participants tr th, table.participants tr td {
   <td>1229 (configuration: default)</td>
   <td></td>
   <td>127956425</td>
-  <td></td>
+  <td><a href="systemDescriptions/AProVE.pdf">AProVE</a></td>
   <td>Carsten Fuhs (<a href="mailto:c.fuhs@cs.ucl.ac.uk">c.fuhs@cs.ucl.ac.uk</a>)</td>
 </tr>
 <tr>
@@ -148,16 +148,6 @@ table.participants tr th, table.participants tr td {
   <td>-</td>
   <td></td>
   <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.6-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.6-linux-x86_64.tar.gz</a></td>
-</tr>
-<tr>
-  <td>micro-Z3<sup><a href="#fnw">w</a></sup></td>
-  <td>X</td>
-  <td>X</td>
-  <td>2838</td>
-  <td></td>
-  <td>340066123</td>
-  <td></td>
-  <td>Andrey Kupriyanov (<a href="mailto:andrey.kuprianov@ist.ac.at">andrey.kuprianov@ist.ac.at</a>)</td>
 </tr>
 <tr>
   <td>OpenSMT2</td>
@@ -331,8 +321,8 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td><b>Total</b></td>
-  <td><b>24</b></td>
-  <td><b>13</b></td>
+  <td><b>23</b></td>
+  <td><b>12</b></td>
   <td></td>
   <td></td>
   <td><b>265546587</b> (mod 2<sup>30</sup>)</td>
@@ -344,9 +334,6 @@ table.participants tr th, table.participants tr td {
 <p>
   <span id="fnn">
     n. Non-competitive.
-  </span><br/>
-  <span id="fnw">
-    w. Wrapper tool.
   </span>
 </p>
 
@@ -444,10 +431,6 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td>MathSAT 5 (Application track)<sup><a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>micro-Z3<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>OpenSMT2<sup><a href="#fn1">1</a></sup></td>
