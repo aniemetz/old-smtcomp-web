@@ -44,9 +44,8 @@ from <a href="http://www.cs.nyu.edu/~barrett/smtlib/">http://www.cs.nyu.edu/~bar
 <p>
 The subset of benchmarks eligible for SMT-COMP 2015 is available
 on <a href="https://www.starexec.org/">StarExec</a>, in spaces
-<tt>root/SMT/Competitions and evaluations/SMT-COMP 2015/Main
-Track</tt> and <tt>root/SMT/Competitions and evaluations/SMT-COMP
-2015/Application Track</tt> for the main and application track,
+<tt>root/SMT/Competitions and evaluations/SMT-COMP 2015/Benchmarks -
+{Application,Main} Track</tt> for the application and main track,
 respectively.
 </p>
 
