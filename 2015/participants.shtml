@@ -300,22 +300,22 @@ table.participants tr th, table.participants tr td {
   <td><a href="https://github.com/Z3Prover/z3/archive/z3-4.4.0.tar.gz">https://github.com/Z3Prover/z3/archive/z3-4.4.0.tar.gz</a></td>
 </tr>
 <tr>
-  <td>Z3 (unstable)<sup><a href="#fnn">n</a></sup></td>
+  <td>Z3 (unstable)</td>
   <td>X</td>
   <td>-</td>
   <td></td>
   <td></td>
-  <td>-</td>
+  <td>0</td>
   <td></td>
-  <td></td>
+  <td>Christoph Wintersteiger (<a href="mailto:cwinter@microsoft.com">cwinter@microsoft.com</a>)</td>
 </tr>
 <tr>
-  <td>Z3 (FP approximation)<sup><a href="#fnn">n</a></sup></td>
+  <td>Z3 (IJCAR'14)</td>
   <td>X</td>
   <td>-</td>
   <td></td>
   <td></td>
-  <td>-</td>
+  <td>0</td>
   <td></td>
   <td></td>
 </tr>
