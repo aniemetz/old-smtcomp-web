@@ -115,7 +115,7 @@ table.participants tr th, table.participants tr td {
   <td>-</td>
   <td>2879</td>
   <td>3079</td>
-  <td>0</td>
+  <td>44444</td>
   <td><a href="systemDescriptions/CVC4.pdf">CVC4</a></td>
   <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
 </tr>
@@ -125,7 +125,7 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>2880</td>
   <td>3080</td>
-  <td>0</td>
+  <td>44444</td>
   <td><a href="systemDescriptions/CVC4.pdf">CVC4</a></td>
   <td>Kshitij Bansal (<a href="mailto:kshitij@cs.nyu.edu">kshitij@cs.nyu.edu</a>)</td>
 </tr>
