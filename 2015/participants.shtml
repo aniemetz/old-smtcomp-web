@@ -190,6 +190,16 @@ table.participants tr th, table.participants tr td {
   <td>Florian Corzilius (<a href="mailto:corzilius@informatik.rwth-aachen.de">corzilius@informatik.rwth-aachen.de</a>)</td>
 </tr>
 <tr>
+  <td>SMT-RAT-PARL</td>
+  <td>X</td>
+  <td>-</td>
+  <td>2793</td>
+  <td>3086</td>
+  <td>0</td>
+  <td></td>
+  <td>Florian Corzilius (<a href="mailto:corzilius@informatik.rwth-aachen.de">corzilius@informatik.rwth-aachen.de</a>)</td>
+</tr>
+<tr>
   <td>SMTInterpol</td>
   <td>X</td>
   <td>X</td>
@@ -437,6 +447,10 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td>SMT-RAT<sup><a href="#fn1">1</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>SMT-RAT-PARL<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>SMTInterpol<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
