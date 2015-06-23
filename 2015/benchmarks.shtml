@@ -35,7 +35,7 @@ underspecified operations (e.g., <tt>fp.min</tt>) will not be used.
 
 <p>
 The SMT-LIB benchmarks are available in space
-<a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=73907"><tt>/root/SMT/SMT-LIB
+<a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=73907"><tt>root/SMT/SMT-LIB
 benchmarks/2015-06-01</tt></a> on StarExec.  They may also be
 downloaded
 from <a href="http://www.cs.nyu.edu/~barrett/smtlib/">http://www.cs.nyu.edu/~barrett/smtlib/</a>.
@@ -44,9 +44,9 @@ from <a href="http://www.cs.nyu.edu/~barrett/smtlib/">http://www.cs.nyu.edu/~bar
 <p>
 The subset of benchmarks eligible for SMT-COMP 2015 is available in
 StarExec spaces
-<a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=85819"><tt>/root/SMT/Competitions
+<a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=85819"><tt>root/SMT/Competitions
 and evaluations/SMT-COMP 2015/Benchmarks - Application Track</tt></a>
-and <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=86692"><tt>/root/SMT/Competitions
+and <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=86692"><tt>root/SMT/Competitions
 and evaluations/SMT-COMP 2015/Benchmarks - Main Track</tt></a> for the
 application and main track, respectively.
 </p>
