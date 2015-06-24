@@ -70,6 +70,16 @@ table.participants tr th, table.participants tr td {
   <td>Mathias Preiner (<a href="mailto:mathias.preiner@jku.at">mathias.preiner@jku.at</a>)</td>
 </tr>
 <tr>
+  <td>Boolector (QF_BV incremental fixed)<sup><a href="#fnn">n</a></sup></td>
+  <td>-</td>
+  <td>X</td>
+  <td>-</td>
+  <td>3219</td>
+  <td>-</td>
+  <td><a href="systemDescriptions/Boolector.pdf">Boolector</a></td>
+  <td>Mathias Preiner (<a href="mailto:mathias.preiner@jku.at">mathias.preiner@jku.at</a>)</td>
+</tr>
+<tr>
   <td>CVC3 (Main track)</td>
   <td>X</td>
   <td>-</td>
@@ -322,7 +332,7 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td><b>Total</b></td>
   <td><b>23</b></td>
-  <td><b>12</b></td>
+  <td><b>13</b></td>
   <td></td>
   <td></td>
   <td><b>53678630</b> (mod 2<sup>30</sup>)</td>
@@ -400,6 +410,10 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td>Boolector (QF_BV incremental)<sup><a href="#fn2">2</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Boolector (QF_BV incremental fixed)<sup><a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
