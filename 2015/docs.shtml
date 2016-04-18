@@ -2,6 +2,20 @@
 
 <ul>
 
+<li> <a href="https://satassociation.org/jsat/index.php/jsat/article/view/122"><strong>The 2014 SMT Competition.</strong></a>  David R. Cok, David D&eacute;harbe, and Tjark Weber.
+<pre>
+@article{CDW14,
+  author   = {Cok, David R. and David D{\'{e}}harbe and Tjark Weber},
+  title    = {The 2014 {SMT} Competition},
+  journal  = {Journal on Satisfiability, Boolean Modeling and Computation},
+  volume   = {9},
+  pages    = {207-242},
+  year     = {2014},
+  url      = {https://satassociation.org/jsat/index.php/jsat/article/view/122}
+}
+</pre>
+</li>
+
 <li> <a href="http://dx.doi.org/10.1007/s10817-015-9328-2"><strong>The 2013 Evaluation of SMT-COMP and SMT-LIB.</strong></a> David R. Cok, Aaron Stump, and Tjark Weber.
 <pre>
 @article{CSW15,
