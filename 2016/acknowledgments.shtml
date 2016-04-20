@@ -1,0 +1,26 @@
+<!--#set var="title" value="Acknowledgments" --><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+SMT-COMP 2016 is organized under the direction of the SMT Steering
+Committee.  The organizing team is
+</p>
+
+<ul>
+  <li> <a href="https://www.lri.fr/~conchon/">Sylvain Conchon</a> - Paris-Sud University, France (co-organizer) </li>
+  <li> <a href="https://www.sites.google.com/site/deharbe/">David D&eacute;harbe</a> - Clearsy, France and Federal University of Rio Grande do Norte, Brazil (co-organizer) </li>
+  <li> <a href="http://user.it.uu.se/~tjawe125/">Tjark Weber</a> - Uppsala University, Sweden (chair) </li>
+</ul>
+
+<p>
+The competition uses the
+<a href="https://www.starexec.org">StarExec</a> service, which is
+hosted at the
+<a href="http://www.cs.uiowa.edu/">University of Iowa</a>.
+</p>
+
+<p>
+The SMT-COMP web site is hosted on SourceForge, at
+<a href="http://smtcomp.sourceforge.net/">smtcomp.sourceforge.net</a>.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

@@ -1,0 +1,56 @@
+<!--#set var="title" value="SMT-COMP 2016" --><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The <i>11th International Satisfiability Modulo Theories Competition
+(SMT-COMP 2016)</i> is part of
+the <a href="http://smt-workshop.cs.uiowa.edu/2016/">SMT Workshop
+2016</a>, associated with <a href="http://ijcar-2016.info/">IJCAR
+2016</a>.  The SMT Workshop will include a block of time to present
+the competitors and results of the competition.
+</p>
+
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li> <a href="introduction.shtml">Introduction</a> </li>
+        <li> <!--a href="rules15.pdf"-->Competition rules and timeline<!--/a--> </li>
+        <li> <!--a href="benchmarks.shtml"-->Benchmarks<!--/a--> </li>
+        <li> <!--a href="tools.shtml"-->Tools<!--/a--> </li>
+        <li> <a href="specs.shtml">Machine specifications</a> </li>
+        <li> <!--a href="participants.shtml"-->Participants<!--/a--> </li>
+        <li> <!--a href="results-toc.shtml"-->Results<!--/a--> </li>
+        <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing list</a> </li>
+        <li> <a href="docs.shtml">Papers</a> </li>
+        <li> <a href="acknowledgments.shtml">Acknowledgments</a> </li>
+        <li> <a href="http://www.smt-lib.org/">SMT-LIB</a> </li>
+        <li> <a href="previous.shtml">Previous SMT-COMPs</a> </li>
+      </ul>
+    </td>
+    <td style="width:100px"></td>
+    <td>
+      <h2>News</h2>
+      <ul>
+        <li> Feb&nbsp;16: <a href="call-for-comments.txt">Call for Comments</a> issued </li>
+        <!--li> May&nbsp;11: Revised rules posted </li-->
+        <!--li> June&nbsp;15: Competition jobs started </li-->
+      </ul>
+      <br/>
+      <h2 style="display:inline">Key dates</h2>&nbsp;&nbsp;(see the <!--a href="rules15.pdf"-->rules<!--/a--> for the complete timeline)
+      <ul>
+        <li> TBA </li>
+        <!--li> May&nbsp;1: Deadline for new benchmark contributions </li-->
+        <!--li> June&nbsp;1: Deadline for first versions of solvers </li-->
+        <!--li> June&nbsp;14: Deadline for final versions of solvers </li-->
+        <!--li> July&nbsp;18-19: SMT Workshop (presentation of results) </li-->
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<p>
+The organizers of SMT-COMP 2016 are Sylvain Conchon, David D&eacute;harbe,
+and Tjark Weber.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
