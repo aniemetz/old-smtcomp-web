@@ -22,11 +22,11 @@ Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz (2393 MHZ)
     10240  KB Cache
     258294 MB main memory
 
-# Software (TO BE REVISED):
-OS:	Red Hat Enterprise Linux Workstation release 6.3 (Santiago)
-kernel:	2.6.32-431.1.2.el6.x86_64
-glibc:	gcc-4.4.6-4.el6.x86_64
-	glibc-2.12-1.132.el6.i686
+# Software:
+OS:     Red Hat Enterprise Linux Server release 7.2 (Maipo)
+kernel: 3.10.0-327.10.1.el7.x86_64
+glibc:  gcc-4.8.5-4.el7.x86_64
+        glibc-2.17-106.el7_2.4.i686
 </pre>
 
 <p>
