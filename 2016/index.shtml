@@ -14,7 +14,7 @@ the competitors and results of the competition.
     <td>
       <ul>
         <li> <a href="introduction.shtml">Introduction</a> </li>
-        <li> <!--a href="rules15.pdf"-->Competition rules and timeline<!--/a--> </li>
+        <li> <a href="rules16.pdf"-->Competition rules and timeline</a> </li>
         <li> <!--a href="benchmarks.shtml"-->Benchmarks<!--/a--> </li>
         <li> <!--a href="tools.shtml"-->Tools<!--/a--> </li>
         <li> <a href="specs.shtml">Machine specifications</a> </li>
@@ -36,13 +36,12 @@ the competitors and results of the competition.
         <!--li> June&nbsp;15: Competition jobs started </li-->
       </ul>
       <br/>
-      <h2 style="display:inline">Key dates</h2>&nbsp;&nbsp;(see the <!--a href="rules15.pdf"-->rules<!--/a--> for the complete timeline)
+      <h2 style="display:inline">Key dates</h2>&nbsp;&nbsp;(see the <a href="rules16.pdf">rules</a> for the complete timeline)
       <ul>
-        <li> TBA </li>
-        <!--li> May&nbsp;1: Deadline for new benchmark contributions </li-->
-        <!--li> June&nbsp;1: Deadline for first versions of solvers </li-->
-        <!--li> June&nbsp;14: Deadline for final versions of solvers </li-->
-        <!--li> July&nbsp;18-19: SMT Workshop (presentation of results) </li-->
+        <li> May&nbsp;1: Deadline for new benchmark contributions </li>
+        <li> May&nbsp;15: Deadline for first versions of solvers </li>
+        <li> May&nbsp;29: Deadline for final versions of solvers </li>
+        <li> July&nbsp;1-2: SMT Workshop (presentation of results) </li>
       </ul>
     </td>
   </tr>
