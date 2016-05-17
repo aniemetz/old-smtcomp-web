@@ -24,16 +24,22 @@ table.benchmarks tr td:first-child + td + td + td {
 </style>
 
 <p>
-SMT-COMP 2015 will use a subset of the benchmarks available within the
-2015-06-01 release
-of <a href="http://smtlib.cs.uiowa.edu/">SMT-LIB</a>, as described in
-the competition rules.  Specifically, benchmarks with unknown status,
-bit-vector benchmarks that contain partial operations (e.g.,
-bit-vector division), and floating-point benchmarks that contain
-underspecified operations (e.g., <tt>fp.min</tt>) will not be used.
+SMT-COMP 2016 will use a subset of the benchmarks available within the
+2016-TBA release of <a href="http://smtlib.cs.uiowa.edu/">SMT-LIB</a>,
+as described in the competition rules.  Specifically, benchmarks with
+unknown status, bit-vector benchmarks that contain partial operations
+(i.e., <tt>bvudiv</tt>, <tt>bvurem</tt>, <tt>bvsdiv</tt>, <tt>bvsrem</tt>
+or <tt>bvsmod</tt>), and floating-point benchmarks that contain
+underspecified operations
+(i.e., <tt>fp.min</tt>, <tt>fp.max</tt>, <tt>fp.to_ubv</tt>,
+<tt>fp.to_sbv</tt> or <tt>fp.to_real</tt>) will not be used.
 </p>
 
 <p>
+All figures are preliminary.
+</p>
+
+<!--<p>
 The SMT-LIB benchmarks are available in space
 <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=73907"><tt>root/SMT/SMT-LIB
 benchmarks/2015-06-01</tt></a> on StarExec.  They may also be
@@ -49,7 +55,7 @@ and evaluations/SMT-COMP 2015/Benchmarks - Application Track</tt></a>
 and <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=86692"><tt>root/SMT/Competitions
 and evaluations/SMT-COMP 2015/Benchmarks - Main Track</tt></a> for the
 application and main track, respectively.
-</p>
+</p>-->
 
 <h2>Main Track</h2>
 
@@ -116,21 +122,21 @@ application and main track, respectively.
   </tr>
   <tr>
     <td>QF_ABV</td>
-    <td>14720 (197 excluded<sup><a href="#fn1">1</a></sup>)</td>
+    <td>14799 (208 excluded<sup><a href="#fn1">1</a></sup>)</td>
     <td>174</td>
-    <td>15091</td>
+    <td>15181</td>
   </tr>
   <tr>
     <td>QF_ALIA</td>
-    <td>134</td>
+    <td>321</td>
     <td>0</td>
-    <td>134</td>
+    <td>321</td>
   </tr>
   <tr>
     <td>QF_ANIA</td>
-    <td>6</td>
+    <td>8</td>
     <td>0</td>
-    <td>6</td>
+    <td>8</td>
   </tr>
   <tr>
     <td>QF_AUFBV</td>
@@ -158,18 +164,18 @@ application and main track, respectively.
   </tr>
   <tr>
     <td>QF_BV</td>
-    <td>26414 (6062 excluded<sup><a href="#fn1">1</a></sup>)</td>
-    <td>17953</td>
-    <td>50429</td>
+    <td>26414 (6062 excluded<sup><a href="#fn1">1</a></sup>) (?)</td>
+    <td>17953 (?)</td>
+    <td>17920 / 50429 (?)</td>
   </tr>
   <tr>
-    <td>QF_BVFP<sup><a href="#fn2">2</a></sup></td>
+    <td>QF_BVFP</td>
     <td>7 (1 excluded<sup><a href="#fn1">1</a></sup>)</td>
     <td>0</td>
     <td>8</td>
   </tr>
   <tr>
-    <td>QF_FP<sup><a href="#fn2">2</a></sup></td>
+    <td>QF_FP</td>
     <td>34413 (5706 excluded<sup><a href="#fn1">1</a></sup>)</td>
     <td>215</td>
     <td>40334</td>
@@ -178,7 +184,7 @@ application and main track, respectively.
     <td>QF_IDL</td>
     <td>2094</td>
     <td>104</td>
-    <td>2198</td>
+    <td>2198 / 2189 (?)</td>
   </tr>
   <tr>
     <td>QF_LIA</td>
@@ -200,9 +206,9 @@ application and main track, respectively.
   </tr>
   <tr>
     <td>QF_NIA</td>
-    <td>8475</td>
-    <td>925</td>
-    <td>9400</td>
+    <td>8593</td>
+    <td>927</td>
+    <td>9520</td>
   </tr>
   <tr>
     <td>QF_NIRA</td>
@@ -212,9 +218,9 @@ application and main track, respectively.
   </tr>
   <tr>
     <td>QF_NRA</td>
-    <td>10184</td>
+    <td>10245</td>
     <td>1356</td>
-    <td>11540</td>
+    <td>11601</td>
   </tr>
   <tr>
     <td>QF_RDL</td>
@@ -302,9 +308,9 @@ application and main track, respectively.
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>154238 (11966 excluded<sup><a href="#fn1">1</a></sup>)</b></td>
-    <td><b>30171</b></td>
-    <td><b>196375</b></td>
+    <td><b>154238 (11966 excluded<sup><a href="#fn1">1</a></sup>) (?)</b></td>
+    <td><b>30171 (?)</b></td>
+    <td><b>196375 / 164317 (?)</b></td>
   </tr>
 </table>
 
@@ -312,9 +318,6 @@ application and main track, respectively.
   <span id="fn1">
     1. Excluded because they contain partial or underspecified
     operations (e.g., bit-vector division, <tt>fp.min</tt>).
-  </span><br/>
-  <span id="fn2">
-    2. Floating-point divisions are considered experimental in 2015.
   </span>
 </p>
 
@@ -324,7 +327,7 @@ application and main track, respectively.
   <tr>
     <th>Logic</th>
     <th>Benchmarks eligible for SMT-COMP</th>
-    <th>Benchmarks with unknown status<sup><a href="#fn3">3</a></sup></th>
+    <th>Benchmarks with unknown status<sup><a href="#fn2">2</a></sup></th>
     <th>Benchmarks in SMT-LIB</th>
   </tr>
   <tr>
@@ -340,7 +343,7 @@ application and main track, respectively.
     <td>3</td>
   </tr>
   <tr>
-    <td>AUFNIRA<sup><a href="#fn4">4</a></sup></td>
+    <td>AUFNIRA<sup><a href="#fn3">3</a></sup></td>
     <td>0</td>
     <td>165</td>
     <td>165</td>
@@ -377,9 +380,9 @@ application and main track, respectively.
   </tr>
   <tr>
     <td>QF_LIA</td>
-    <td>65</td>
+    <td>71</td>
     <td>0</td>
-    <td>65</td>
+    <td>71</td>
   </tr>
   <tr>
     <td>QF_LRA</td>
@@ -419,22 +422,45 @@ application and main track, respectively.
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>9852</b></td>
+    <td><b>9858</b></td>
     <td><b>167</b></td>
-    <td><b>10019</b></td>
+    <td><b>10025</b></td>
   </tr>
 </table>
 
 <p>
-  <span id="fn3">
-    3. For the application track, a benchmark is ineligible if its
+  <span id="fn2">
+    2. For the application track, a benchmark is ineligible if its
     <u>first</u> <tt>check-sat</tt> command has unknown status.
     Otherwise, (some non-empty prefix of) the benchmark is eligible.
   </span><br/>
-  <span id="fn4">
-    4. As there are no eligible benchmarks in SMT-LIB, AUFNIRA is not
-    actually an application track division in SMT-COMP 2015.
+  <span id="fn3">
+    3. As there are no eligible benchmarks in SMT-LIB, AUFNIRA is not
+    actually an application track division in SMT-COMP 2016.
   </span>
 </p>
+
+<h2>Unsat-Core Track</h2>
+
+<p>
+All <u>unsatisfiable</u> main track benchmarks are eligible for the
+unsat-core track (with minor modifications, e.g., named assertions).
+The unsat-core track is experimental in 2016.
+</p>
+
+<table class="benchmarks">
+  <tr>
+    <th>Logic</th>
+    <th>Benchmarks eligible for SMT-COMP</th>
+    <th>Satisfiable main track benchmarks</th>
+    <th>All main track benchmarks</th>
+  </tr>
+  <tr>
+    <td><b>Total</b></td>
+    <td><b></b></td>
+    <td><b></b></td>
+    <td><b></b></td>
+  </tr>
+</table>
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
