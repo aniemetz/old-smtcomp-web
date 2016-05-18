@@ -13,9 +13,9 @@
 -->
     <th style="width:10%"> <a href="<!--#echo var="base" -->specs.shtml">Specs</a> </th>
     <th> &bull; </th>
-<!--
-    <th style="width:10%"> <a href="<!-echo var="base" ->participants.shtml">Participants</a> </th>
+    <th style="width:10%"> <a href="<!--#echo var="base" -->participants.shtml">Participants</a> </th>
     <th> &bull; </th>
+<!--
     <th style="width:10%"> <a href="<!-echo var="base" ->results-toc.shtml">Results</a> </th>
     <th> &bull; </th>
 -->
