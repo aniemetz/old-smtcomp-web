@@ -150,7 +150,7 @@ FEW HOURS.</p>
   <td>?</td>
   <td>?</td>
   <td></td>
-  <td></td>
+  <td>-</td>
   <td></td>
   <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz</a></td>
 </tr>
@@ -238,7 +238,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>?</td>
   <td></td>
-  <td>?</td>
+  <td>3536504</td>
   <td><a href="systemDescriptions/SMTInterpol.pdf">SMTInterpol</a></td>
   <td>Jochen Hoenicke (<a href="mailto:hoenicke@gmail.com">hoenicke@gmail.com</a>)</td>
 </tr>
