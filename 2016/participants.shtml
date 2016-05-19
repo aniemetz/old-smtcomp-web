@@ -141,11 +141,22 @@ table.participants tr th, table.participants tr td {
   <td>Jimmy Liang (<a href="mailto:jliang@gsd.uwaterloo.ca">jliang@gsd.uwaterloo.ca</a>)</td>
 </tr>
 <tr>
-  <td>MathSAT 5 (5.3.11)<sup><a href="#fnn">n</a></sup></td>
+  <td>MathSAT 5 (Main track)<sup><a href="#fnn">n</a></sup></td>
   <td>X</td>
+  <td>-</td>
+  <td>?</td>
+  <td>7873</td>
+  <td></td>
+  <td>-</td>
+  <td></td>
+  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz</a></td>
+</tr>
+<tr>
+  <td>MathSAT 5 (Application track)<sup><a href="#fnn">n</a></sup></td>
+  <td>-</td>
   <td>X</td>
-  <td>?</td>
-  <td>?</td>
+  <td>-</td>
+  <td>7874</td>
   <td></td>
   <td>-</td>
   <td></td>
@@ -343,11 +354,11 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>X</td>
   <td>?</td>
-  <td>?</td>
+  <td>7375</td>
   <td></td>
   <td>-</td>
   <td></td>
-  <td><a href="https://github.com/Z3Prover/z3/releases/download/z3-4.4.1/z3-4.4.1-x64-debian-8.2.zip">https://github.com/Z3Prover/z3/releases/download/z3-4.4.1/z3-4.4.1-x64-debian-8.2.zip</a></td>
+  <td><a href="https://github.com/Z3Prover/z3/archive/z3-4.4.1.tar.gz">https://github.com/Z3Prover/z3/archive/z3-4.4.1.tar.gz</a></td>
 </tr>
 <tr>
   <td><b>Total</b></td>
