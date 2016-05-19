@@ -38,7 +38,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td>?</td>
+  <td><font color="red">?</font></td>
   <td></td>
   <td>2402498868</td>
   <td><a href="systemDescriptions/ABC.pdf">ABC</a></td>
@@ -49,7 +49,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td>?</td>
+  <td><font color="red">?</font></td>
   <td></td>
   <td>2402498868</td>
   <td><a href="systemDescriptions/ABC.pdf">ABC</a></td>
@@ -93,7 +93,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td>?</td>
+  <td>7804</td>
   <td></td>
   <td>468618742</td>
   <td></td>
@@ -104,7 +104,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td>7811</td>
+  <td><font color="red">7811</font></td>
   <td></td>
   <td>823514</td>
   <td></td>
@@ -115,7 +115,7 @@ FEW HOURS.</p>
   <td>-</td>
   <td>X</td>
   <td>-</td>
-  <td>7812</td>
+  <td><font color="red">7812</font></td>
   <td></td>
   <td>823514</td>
   <td></td>
@@ -126,7 +126,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>X</td>
   <td>-</td>
-  <td>?</td>
+  <td><font color="red">?</font></td>
   <td></td>
   <td>?</td>
   <td></td>
@@ -137,7 +137,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>X</td>
   <td>-</td>
-  <td>?</td>
+  <td><font color="red">?</font></td>
   <td></td>
   <td>?</td>
   <td></td>
@@ -160,8 +160,8 @@ FEW HOURS.</p>
   <td>-</td>
   <td>-</td>
   <td>7793</td>
-  <td></td>
-  <td>8123052016</td>
+  <td>7869</td>
+  <td>3828084720</td>
   <td></td>
   <td>Trevor Hansen (<a href="mailto:trev_abroad@yahoo.com">trev_abroad@yahoo.com</a>)</td>
 </tr>
@@ -181,7 +181,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td>?</td>
+  <td><font color="red">?</font></td>
   <td></td>
   <td>?</td>
   <td></td>
@@ -236,18 +236,29 @@ FEW HOURS.</p>
   <td>X</td>
   <td>X</td>
   <td>X</td>
-  <td>?</td>
+  <td>7795</td>
   <td></td>
   <td>3536504</td>
   <td><a href="systemDescriptions/SMTInterpol.pdf">SMTInterpol</a></td>
   <td>Jochen Hoenicke (<a href="mailto:hoenicke@gmail.com">hoenicke@gmail.com</a>)</td>
 </tr>
 <tr>
-  <td>STP-minisat-st-2016</td>
+  <td>STP-cms-exp-2016</td>
   <td>X</td>
   <td>X</td>
   <td>-</td>
+  <td>7790</td>
+  <td></td>
   <td>?</td>
+  <td><a href="systemDescriptions/.pdf">STP</a></td>
+  <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
+</tr>
+<tr>
+  <td>STP-cms-mt-2016</td>
+  <td>X</td>
+  <td>X</td>
+  <td>-</td>
+  <td>7739</td>
   <td></td>
   <td>?</td>
   <td><a href="systemDescriptions/STP.pdf">STP</a></td>
@@ -258,32 +269,21 @@ FEW HOURS.</p>
   <td>X</td>
   <td>X</td>
   <td>-</td>
-  <td>?</td>
+  <td>7738</td>
   <td></td>
   <td>?</td>
   <td><a href="systemDescriptions/STP.pdf">STP</a></td>
   <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
 </tr>
 <tr>
-  <td>STP-cms-mt-2016</td>
+  <td>STP-minisat-st-2016</td>
   <td>X</td>
   <td>X</td>
   <td>-</td>
-  <td>?</td>
+  <td>7740</td>
   <td></td>
   <td>?</td>
   <td><a href="systemDescriptions/STP.pdf">STP</a></td>
-  <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
-</tr>
-<tr>
-  <td>STP-cms-exp-2016</td>
-  <td>X</td>
-  <td>X</td>
-  <td>-</td>
-  <td>?</td>
-  <td></td>
-  <td>?</td>
-  <td><a href="systemDescriptions/.pdf">STP</a></td>
   <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
 </tr>
 <tr>
@@ -291,7 +291,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td>7813</td>
+  <td><font color="red">7813</font></td>
   <td></td>
   <td>1863866937</td>
   <td><a href="systemDescriptions/STP.pdf"></a></td>
@@ -302,7 +302,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td>?</td>
+  <td>7819</td>
   <td></td>
   <td>3163</td>
   <td></td>
@@ -313,7 +313,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td>?</td>
+  <td><font color="red">?</font></td>
   <td></td>
   <td>20151003</td>
   <td><a href="systemDescriptions/veriT.pdf">veriT</a></td>
@@ -324,14 +324,14 @@ FEW HOURS.</p>
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td>?</td>
+  <td><font color="red">?</font></td>
   <td></td>
   <td>20151003</td>
   <td><a href="systemDescriptions/veriT.pdf">veriT</a></td>
   <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
 </tr>
 <tr>
-  <td>Yices-2.4.2</td>
+  <td>Yices 2.4.2</td>
   <td>X</td>
   <td>?</td>
   <td>?</td>
@@ -346,7 +346,7 @@ FEW HOURS.</p>
   <td>X</td>
   <td>X</td>
   <td>?</td>
-  <td></td>
+  <td>?</td>
   <td></td>
   <td>-</td>
   <td></td>
