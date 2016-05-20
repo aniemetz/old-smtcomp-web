@@ -349,6 +349,8 @@ table.participants tr th, table.participants tr td {
 
 <p>The opening value of the NYSE Composite Index on 2015-06-15 was 10942.51, resulting in a competition seed of 53678630 + 10942 = <b>53689572</b>.</p>
 
+<h2>Divisions</h2>
+
 <p>These are the logic divisions in which each solver is participating.</p>
 
 <table class="participants">
