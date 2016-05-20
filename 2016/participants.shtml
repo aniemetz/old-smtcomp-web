@@ -204,7 +204,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>2784434708</td>
   <td></td>
-  <td>Martin Jonas (<a href="mailto:359542@mail.muni.cz">359542@mail.muni.cz</a>)</td>
+  <td>Martin Jon&aacute;&#353; (<a href="mailto:359542@mail.muni.cz">359542@mail.muni.cz</a>)</td>
 </tr>
 <tr>
   <td>raSAT 0.3</td>
@@ -317,7 +317,7 @@ table.participants tr th, table.participants tr td {
   <td>Giles Reger (<a href="mailto:giles.reger@manchester.ac.uk">giles.reger@manchester.ac.uk</a>)</td>
 </tr>
 <tr>
-  <td>veriT (SMTCOMP 2016)</td>
+  <td>veriT (SMT-COMP 2016)</td>
   <td>X</td>
   <td>-</td>
   <td>-</td>
@@ -381,81 +381,78 @@ table.participants tr th, table.participants tr td {
 
 <p>The opening value of the NYSE Composite Index on 2016-06-30 was XXXXX.XX, resulting in a competition seed of TBA + XXXXX = <b>TBA</b>.</p>
 
-<!--
+<h2>Divisions</h2>
+
 <p>These are the logic divisions in which each solver is participating.</p>
 
 <table class="participants">
 <tr>
   <th>Solver</th>
-  <th>ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
   <th>ANIA<sup><a href="#fn2">2</a></sup></th>
-  <th>AUFLIA<sup><a href="#fn1">1</a></sup></th>
-  <th>AUFLIRA<sup><a href="#fn1">1</a></sup></th>
-  <th>AUFNIRA<sup><a href="#fn1">1</a></sup></th>
-  <th>BV<sup><a href="#fn1">1</a></sup></th>
-  <th>LIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
-  <th>LRA<sup><a href="#fn1">1</a></sup></th>
-  <th>NIA<sup><a href="#fn1">1</a></sup></th>
-  <th>NRA<sup><a href="#fn1">1</a></sup></th>     <!- 10 ->
-  <th>QF_ABV<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
-  <th>QF_ANIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
-  <th>QF_AUFBV<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_AUFLIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
-  <th>QF_AUFNIA<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_AX<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_BV<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
+  <th>AUFLIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>AUFLIRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>AUFNIRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>BV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>LIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+  <th>LRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>NIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>NRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>     <!- 10 ->
+  <th>QF_ABV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_ANIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_AUFBV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_AUFLIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_AUFNIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_AX<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_BV<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_BVFP<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_FP<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>     <!- 20 ->
-  <th>QF_IDL<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_LIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
-  <th>QF_LIRA<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_LRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
-  <th>QF_NIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
-  <th>QF_NIRA<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_NRA<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_RDL<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_UF<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_UFBV<sup><a href="#fn1">1</a></sup></th>     <!- 30 ->
-  <th>QF_UFIDL<sup><a href="#fn1">1</a></sup></th>
-  <th>QF_UFLIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
-  <th>QF_UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
-  <th>QF_UFNIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>
-  <th>QF_UFNRA<sup><a href="#fn1">1</a></sup></th>
-  <th>UF<sup><a href="#fn1">1</a></sup></th>
-  <th>UFBV<sup><a href="#fn1">1</a></sup></th>
-  <th>UFIDL<sup><a href="#fn1">1</a></sup></th>
-  <th>UFLIA<sup><a href="#fn1">1</a></sup></th>
-  <th>UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></th>     <!- 40 ->
-  <th>UFNIA<sup><a href="#fn1">1</a></sup></th>
+  <th>QF_IDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_LIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_LIRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_LRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_NIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_NIRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_NRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_RDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_UF<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_UFBV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>     <!- 30 ->
+  <th>QF_UFIDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_UFLIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_UFNIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+  <th>QF_UFNRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>UF<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>UFBV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>UFIDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>UFLIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>     <!- 40 ->
+  <th>UFNIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+</tr>
+<tr>
+  <td>ABC_default<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>ABC_glucose<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>AProVE<sup><a href="#fn1">1</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>Boolector (QF_AUFBV)<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td>Boolector<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>Boolector (QF_BV)<sup><a href="#fn1">1</a></sup></td>
+  <td>Boolector (preprop)<sup><a href="#fn1">1</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>Boolector (QF_BV incremental)<sup><a href="#fn2">2</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>Boolector (QF_BV incremental fixed)<sup><a href="#fn2">2</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>CVC3 (Main track)<sup><a href="#fn1">1</a></sup></td>
-  <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
-</tr>
-<tr>
-  <td>CVC3 (Application track)<sup><a href="#fn2">2</a></sup></td>
-  <td>X</td> <td></td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td>
+  <td>Colibri<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>CVC4 (Main track)<sup><a href="#fn1">1</a></sup></td>
@@ -466,12 +463,12 @@ table.participants tr th, table.participants tr td {
   <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td>
 </tr>
 <tr>
-  <td>CVC4 (Main track) Experimental<sup><a href="#fn1">1</a></sup></td>
-  <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+  <td>MapleSTP<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>CVC4 (Application track) Experimental<sup><a href="#fn2">2</a></sup></td>
-  <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td>
+  <td>MapleSTP-mt<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>MathSAT 5 (Main track)<sup><a href="#fn1">1</a></sup></td>
@@ -482,72 +479,76 @@ table.participants tr th, table.participants tr td {
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>OpenSMT2<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td>Minkeyrink<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>OpenSMT2-parallel<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td>OpenSMT2 (2016-05-12)<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>raSAT<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td>ProB<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>Q3B<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>raSAT 0.3<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>raSAT 0.4 exp<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>SMT-RAT<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>SMT-RAT-PARL<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>SMTInterpol<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>SMTInterpol<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>STP-CryptoMiniSat4<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>STP-cms-exp-2016<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>STP-CryptoMiniSat4-v15<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>STP-cms-mt-2016<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>STP-CryptoMiniSat4-mt-v15<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>STP-cms-st-2016<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>STP-MiniSat-v15<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>STP-minisat-st-2016<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>veriT<sup><a href="#fn1">1</a></sup></td>
-  <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td>
+  <td>toysmt<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>Yices2 (Main track)<sup><a href="#fn1">1</a></sup></td>
+  <td>Vampire<sup><a href="#fn1">1</a></sup></td>
+  <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+<tr>
+  <td>veriT (SMT-COMP 2016)<sup><a href="#fn1">1</a></sup></td>
+  <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td>
+</tr>
+<tr>
+  <td>veriT (exp)<sup><a href="#fn1">1</a></sup></td>
+  <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td>
+</tr>
+<tr>
+  <td>Yices2 2.4.2<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>Yices2 (Application track)<sup><a href="#fn2">2</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td></td> <td></td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>Yices2-NL<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>Z3 (4.4.0)<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
-  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
-</tr>
-<tr>
-  <td>Z3 (unstable)<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>Z3 (IJCAR'14)<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td>Z3 (4.4.1)<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 </table>
 
@@ -562,6 +563,5 @@ table.participants tr th, table.participants tr td {
     3. Unsat-core track (experimental in 2016).
   </span>
 </p>
--->
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
