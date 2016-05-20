@@ -362,9 +362,9 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td><b>Total</b></td>
-  <td><b>TBA</b></td>
-  <td><b>TBA</b></td>
-  <td><b>TBA</b></td>
+  <td><b>28</b></td>
+  <td><b>10 (+?)</b></td>
+  <td><b>1 (+?)</b></td>
   <td></td>
   <td></td>
   <td><b>TBA</b> (mod 2<sup>30</sup>)</td>
