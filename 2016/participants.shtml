@@ -144,7 +144,7 @@ table.participants tr th, table.participants tr td {
   <td>MathSAT 5 (Main track)<sup><a href="#fnn">n</a></sup></td>
   <td>X</td>
   <td>-</td>
-  <td>?</td>
+  <td>X</td>
   <td>7873</td>
   <td></td>
   <td>-</td>
@@ -353,7 +353,7 @@ table.participants tr th, table.participants tr td {
   <td>Z3 (4.4.1)<sup><a href="#fnn">n</a></sup></td>
   <td>X</td>
   <td>X</td>
-  <td>?</td>
+  <td>X</td>
   <td>7875</td>
   <td></td>
   <td>-</td>
@@ -364,7 +364,7 @@ table.participants tr th, table.participants tr td {
   <td><b>Total</b></td>
   <td><b>28</b></td>
   <td><b>10 (+?)</b></td>
-  <td><b>1 (+?)</b></td>
+  <td><b>3 (+?)</b></td>
   <td></td>
   <td></td>
   <td><b>TBA</b> (mod 2<sup>30</sup>)</td>
@@ -471,7 +471,7 @@ table.participants tr th, table.participants tr td {
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>MathSAT 5 (Main track)<sup><a href="#fn1">1</a></sup></td>
+  <td>MathSAT 5 (Main track)<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
@@ -547,7 +547,7 @@ table.participants tr th, table.participants tr td {
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>Z3 (4.4.1)<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>Z3 (4.4.1)<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></td>
   <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 </table>
