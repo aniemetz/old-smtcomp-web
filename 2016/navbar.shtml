@@ -7,10 +7,8 @@
     <th> &bull; </th>
     <th style="width:10%"> <a href="<!--#echo var="base" -->benchmarks.shtml">Benchmarks</a> </th>
     <th> &bull; </th>
-<!--
-    <th style="width:10%"> <a href="<!-echo var="base" ->tools.shtml">Tools</a> </th>
+    <th style="width:10%"> <a href="<!--#echo var="base" -->tools.shtml">Tools</a> </th>
     <th> &bull; </th>
--->
     <th style="width:10%"> <a href="<!--#echo var="base" -->specs.shtml">Specs</a> </th>
     <th> &bull; </th>
     <th style="width:10%"> <a href="<!--#echo var="base" -->participants.shtml">Participants</a> </th>
