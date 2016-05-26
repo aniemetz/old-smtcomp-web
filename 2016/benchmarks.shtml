@@ -41,10 +41,6 @@ The SMT-LIB benchmarks are available in space
 benchmarks/2016-05-23</tt></a> on StarExec.
 </p>
 
-<p>
-All figures are preliminary.
-</p>
-
 <!--
 <p>
 The subset of benchmarks eligible for SMT-COMP 2015 is available in
@@ -121,7 +117,7 @@ application and main track, respectively.
   </tr>
   <tr>
     <td>QF_ABV</td>
-    <td>14799 (208 excluded<sup><a href="#fn1">1</a></sup>)</td>
+    <td>14709 (298 excluded<sup><a href="#fn1">1</a></sup>)</td>
     <td>174</td>
     <td>15181</td>
   </tr>
@@ -307,7 +303,7 @@ application and main track, respectively.
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>154685 (11977 excluded<sup><a href="#fn1">1</a></sup>)</b></td>
+    <td><b>154595 (12067 excluded<sup><a href="#fn1">1</a></sup>)</b></td>
     <td><b>29724</b></td>
     <td><b>196386</b></td>
   </tr>
@@ -317,6 +313,8 @@ application and main track, respectively.
   <span id="fn1">
     1. Excluded because they contain partial or underspecified
     operations (e.g., bit-vector division, <tt>fp.min</tt>).
+    Moreover, all 90 benchmarks in <tt>QF_ABV/UltimateAutomizer</tt>
+    were excluded because they use multi-dimensional arrays.
   </span>
 </p>
 
