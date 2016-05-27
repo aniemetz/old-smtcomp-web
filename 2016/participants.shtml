@@ -341,10 +341,10 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td>Yices 2.4.2</td>
   <td>X</td>
-  <td>?</td>
-  <td>?</td>
+  <td>X</td>
+  <td>-</td>
   <td>7767</td>
-  <td></td>
+  <td>8012</td>
   <td>?</td>
   <td></td>
   <td>Bruno Dutertre (<a href="mailto:bruno.dutertre@sri.com">bruno.dutertre@sri.com</a>)</td>
@@ -363,8 +363,8 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td><b>Total</b></td>
   <td><b>28</b></td>
-  <td><b>10 (+?)</b></td>
-  <td><b>3 (+?)</b></td>
+  <td><b>11</b></td>
+  <td><b>3</b></td>
   <td></td>
   <td></td>
   <td><b>TBA</b> (mod 2<sup>30</sup>)</td>
