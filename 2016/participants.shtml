@@ -203,7 +203,7 @@ table.participants tr th, table.participants tr td {
   <td>5594</td>
   <td></td>
   <td>5594</td>
-  <td></td>
+  <td><a href="systemDescriptions/raSAT.pdf">raSAT</a></td>
   <td>Tung Vu Xuan (<a href="mailto:tungvx@jaist.ac.jp">tungvx@jaist.ac.jp</a>)</td>
 </tr>
 <tr>
@@ -212,9 +212,9 @@ table.participants tr th, table.participants tr td {
   <td>-</td>
   <td>-</td>
   <td>7814</td>
-  <td></td>
-  <td>7814</td>
   <td>8014</td>
+  <td>7814</td>
+  <td><a href="systemDescriptions/raSAT.pdf">raSAT</a></td>
   <td>Tung Vu Xuan (<a href="mailto:tungvx@jaist.ac.jp">tungvx@jaist.ac.jp</a>)</td>
 </tr>
 <tr>
