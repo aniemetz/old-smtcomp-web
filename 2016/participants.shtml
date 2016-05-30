@@ -306,23 +306,12 @@ table.participants tr th, table.participants tr td {
   <td>Giles Reger (<a href="mailto:giles.reger@manchester.ac.uk">giles.reger@manchester.ac.uk</a>)</td>
 </tr>
 <tr>
-  <td>veriT (SMT-COMP 2016)</td>
-  <td>X</td>
-  <td>-</td>
-  <td>-</td>
-  <td>7798</td>
-  <td></td>
-  <td>20151003</td>
-  <td><a href="systemDescriptions/veriT.pdf">veriT</a></td>
-  <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
-</tr>
-<tr>
-  <td>veriT (exp)</td>
+  <td>veriT</td>
   <td>X</td>
   <td>-</td>
   <td>-</td>
   <td>7797</td>
-  <td></td>
+  <td>8013</td>
   <td>20151003</td>
   <td><a href="systemDescriptions/veriT.pdf">veriT</a></td>
   <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
@@ -520,11 +509,7 @@ table.participants tr th, table.participants tr td {
   <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 <tr>
-  <td>veriT (SMT-COMP 2016)<sup><a href="#fn1">1</a></sup></td>
-  <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td>
-</tr>
-<tr>
-  <td>veriT (exp)<sup><a href="#fn1">1</a></sup></td>
+  <td>veriT-dev<sup><a href="#fn1">1</a></sup></td>
   <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td>
 </tr>
 <tr>
