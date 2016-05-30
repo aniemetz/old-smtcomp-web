@@ -86,17 +86,6 @@ table.participants tr th, table.participants tr td {
   <td>Mathias Preiner (<a href="mailto:mathias.preiner@jku.at">mathias.preiner@jku.at</a>)</td>
 </tr>
 <tr>
-  <td>Colibri</td>
-  <td>X</td>
-  <td>-</td>
-  <td>-</td>
-  <td>7804</td>
-  <td></td>
-  <td>468618742</td>
-  <td></td>
-  <td>Francois Bobot (<a href="mailto:Francois.BOBOT@cea.fr">Francois.BOBOT@cea.fr</a>)</td>
-</tr>
-<tr>
   <td>CVC4 (Main track)</td>
   <td>X</td>
   <td>-</td>
@@ -449,10 +438,6 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td>Boolector (preprop)<sup><a href="#fn1">1</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
-</tr>
-<tr>
-  <td>Colibri<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>CVC4 (Main track)<sup><a href="#fn1">1</a></sup></td>
