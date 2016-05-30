@@ -223,8 +223,8 @@ table.participants tr th, table.participants tr td {
   <td>-</td>
   <td>-</td>
   <td>7763</td>
-  <td></td>
-  <td>?</td>
+  <td>8068</td>
+  <td>17</td>
   <td><a href="systemDescriptions/SMT-RAT.pdf">SMT-RAT</a></td>
   <td>Florian Corzilius (<a href="mailto:corzilius@informatik.rwth-aachen.de">corzilius@informatik.rwth-aachen.de</a>)</td>
 </tr>
