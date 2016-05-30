@@ -91,21 +91,21 @@ table.participants tr th, table.participants tr td {
   <td>-</td>
   <td>-</td>
   <td>7811</td>
-  <td></td>
+  <td>8018</td>
   <td>823514</td>
   <td></td>
   <td>Clark Barrett (<a href="mailto:barrett@cs.nyu.edu">barrett@cs.nyu.edu</a>)</td>
 </tr>
 <tr>
-  <td>CVC4 (Application track)</td>
+  <td>CVC4 (Application track)<sup><a href="#fnn">n</a></sup></td>
   <td>-</td>
   <td>X</td>
   <td>-</td>
-  <td>7812</td>
+  <td>3091</td>
   <td></td>
-  <td>823514</td>
+  <td>-</td>
   <td></td>
-  <td>Clark Barrett (<a href="mailto:barrett@cs.nyu.edu">barrett@cs.nyu.edu</a>)</td>
+  <td><a href="https://www.starexec.org/starexec/secure/details/solver.jsp?id=3091">https://www.starexec.org/starexec/secure/details/solver.jsp?id=3091</a></td>
 </tr>
 <tr>
   <td>MapleSTP</td>
