@@ -300,7 +300,18 @@ table.participants tr th, table.participants tr td {
   <td>-</td>
   <td>-</td>
   <td>7819</td>
+  <td>8097</td>
+  <td>3163</td>
   <td></td>
+  <td>Giles Reger (<a href="mailto:giles.reger@manchester.ac.uk">giles.reger@manchester.ac.uk</a>)</td>
+</tr>
+<tr>
+  <td>Vampire (parallel)</td>
+  <td>X</td>
+  <td>-</td>
+  <td>-</td>
+  <td>7819</td>
+  <td>8098</td>
   <td>3163</td>
   <td></td>
   <td>Giles Reger (<a href="mailto:giles.reger@manchester.ac.uk">giles.reger@manchester.ac.uk</a>)</td>
@@ -506,6 +517,10 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td>Vampire<sup><a href="#fn1">1</a></sup></td>
+  <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+</tr>
+<tr>
+  <td>Vampire (parallel)<sup><a href="#fn1">1</a></sup></td>
   <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 <tr>
