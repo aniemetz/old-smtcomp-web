@@ -397,7 +397,7 @@ table.participants tr th, table.participants tr td {
   <th>LIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
   <th>LRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>NIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
-  <th>NRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>     <!- 10 ->
+  <th>NRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>     <!-- 10 -->
   <th>QF_ABV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_ANIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
@@ -407,7 +407,7 @@ table.participants tr th, table.participants tr td {
   <th>QF_AX<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_BV<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_BVFP<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
-  <th>QF_FP<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>     <!- 20 ->
+  <th>QF_FP<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>     <!-- 20 -->
   <th>QF_IDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_LIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_LIRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
@@ -417,7 +417,7 @@ table.participants tr th, table.participants tr td {
   <th>QF_NRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_RDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_UF<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
-  <th>QF_UFBV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>     <!- 30 ->
+  <th>QF_UFBV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>     <!-- 30 -->
   <th>QF_UFIDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_UFLIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
   <th>QF_UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
@@ -427,7 +427,7 @@ table.participants tr th, table.participants tr td {
   <th>UFBV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>UFIDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>UFLIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
-  <th>UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>     <!- 40 ->
+  <th>UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>     <!-- 40 -->
   <th>UFNIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
 </tr>
 <tr>
