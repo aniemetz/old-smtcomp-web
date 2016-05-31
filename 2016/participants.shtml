@@ -540,7 +540,7 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td>Yices-2.4.2<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Yices-2.4.2 incremental<sup><a href="#fn2">2</a></sup></td>
