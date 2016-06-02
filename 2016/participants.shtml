@@ -291,7 +291,7 @@ table.participants tr th, table.participants tr td {
   <td>7813</td>
   <td></td>
   <td>1863866937</td>
-  <td><a href="systemDescriptions/STP.pdf"></a></td>
+  <td></td>
   <td>Masahiro Sakai (<a href="mailto:masahiro.sakai@gmail.com">masahiro.sakai@gmail.com</a>)</td>
 </tr>
 <tr>
@@ -302,7 +302,7 @@ table.participants tr th, table.participants tr td {
   <td>7819</td>
   <td>8097</td>
   <td>3163</td>
-  <td></td>
+  <td><a href="systemDescriptions/Vampire.pdf">Vampire</a></td>
   <td>Giles Reger (<a href="mailto:giles.reger@manchester.ac.uk">giles.reger@manchester.ac.uk</a>)</td>
 </tr>
 <tr>
@@ -313,7 +313,7 @@ table.participants tr th, table.participants tr td {
   <td>7819</td>
   <td>8098</td>
   <td>3163</td>
-  <td></td>
+  <td><a href="systemDescriptions/Vampire.pdf">Vampire</a></td>
   <td>Giles Reger (<a href="mailto:giles.reger@manchester.ac.uk">giles.reger@manchester.ac.uk</a>)</td>
 </tr>
 <tr>
