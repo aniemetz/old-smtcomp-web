@@ -375,7 +375,7 @@ application and main track, respectively.
   </tr>
   <tr>
     <td>QF_LIA</td>
-    <td>70</td>
+    <td>69 (1 excluded<sup><a href="#fn4">4</a></sup>)</td>
     <td>0</td>
     <td>70</td>
   </tr>
@@ -417,7 +417,7 @@ application and main track, respectively.
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>9857</b></td>
+    <td><b>9856 (1 excluded<sup><a href="#fn4">4</a></sup>)</b></td>
     <td><b>167</b></td>
     <td><b>10024</b></td>
   </tr>
@@ -432,6 +432,11 @@ application and main track, respectively.
   <span id="fn3">
     3. As there are no eligible benchmarks in SMT-LIB, AUFNIRA is not
     actually an application track division in SMT-COMP 2016.
+  </span><br/>
+  <span id="fn4">
+    4. Benchmark <tt>incremental/QF_LIA/UltimateBuchiAutomizer/AliasDarteFeautrierGonnord-SAS2010-loops_true-termination.c.smt2</tt>
+    was excluded because it contained incorrect <tt>:status</tt>
+    information.
   </span>
 </p>
 
