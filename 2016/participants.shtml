@@ -110,7 +110,7 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td>MapleSTP</td>
   <td>X</td>
-  <td>X</td>
+  <td>-</td>
   <td>-</td>
   <td>7809</td>
   <td>8069</td>
@@ -119,13 +119,35 @@ table.participants tr th, table.participants tr td {
   <td>Jimmy Liang (<a href="mailto:jliang@gsd.uwaterloo.ca">jliang@gsd.uwaterloo.ca</a>)</td>
 </tr>
 <tr>
+  <td>MapleSTP-final</td>
+  <td>-</td>
+  <td>X</td>
+  <td>-</td>
+  <td>7809</td>
+  <td>8270</td>
+  <td>-</td>
+  <td></td>
+  <td>Jimmy Liang (<a href="mailto:jliang@gsd.uwaterloo.ca">jliang@gsd.uwaterloo.ca</a>)</td>
+</tr>
+<tr>
   <td>MapleSTP-mt</td>
   <td>X</td>
-  <td>X</td>
+  <td>-</td>
   <td>-</td>
   <td>7810</td>
   <td>8070</td>
   <td>0</td>
+  <td></td>
+  <td>Jimmy Liang (<a href="mailto:jliang@gsd.uwaterloo.ca">jliang@gsd.uwaterloo.ca</a>)</td>
+</tr>
+<tr>
+  <td>MapleSTP-mt-final</td>
+  <td>-</td>
+  <td>X</td>
+  <td>-</td>
+  <td>7810</td>
+  <td>8269</td>
+  <td>-</td>
   <td></td>
   <td>Jimmy Liang (<a href="mailto:jliang@gsd.uwaterloo.ca">jliang@gsd.uwaterloo.ca</a>)</td>
 </tr>
@@ -242,18 +264,29 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td>STP-cms-exp-2016</td>
   <td>X</td>
-  <td>X</td>
+  <td>-</td>
   <td>-</td>
   <td>7790</td>
   <td>7979</td>
   <td>0</td>
-  <td><a href="systemDescriptions/.pdf">STP</a></td>
+  <td><a href="systemDescriptions/STP.pdf">STP</a></td>
+  <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
+</tr>
+<tr>
+  <td>STP-cms-exp-fixed-2016</td>
+  <td>-</td>
+  <td>X</td>
+  <td>-</td>
+  <td>7790</td>
+  <td>8244</td>
+  <td>-</td>
+  <td><a href="systemDescriptions/STP.pdf">STP</a></td>
   <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
 </tr>
 <tr>
   <td>STP-cms-mt-2016</td>
   <td>X</td>
-  <td>X</td>
+  <td>-</td>
   <td>-</td>
   <td>7739</td>
   <td>7976</td>
@@ -262,9 +295,20 @@ table.participants tr th, table.participants tr td {
   <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
 </tr>
 <tr>
+  <td>STP-cms-mt-fixed-2016</td>
+  <td>-</td>
+  <td>X</td>
+  <td>-</td>
+  <td>7739</td>
+  <td>8241</td>
+  <td>-</td>
+  <td><a href="systemDescriptions/STP.pdf">STP</a></td>
+  <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
+</tr>
+<tr>
   <td>STP-cms-st-2016</td>
   <td>X</td>
-  <td>X</td>
+  <td>-</td>
   <td>-</td>
   <td>7738</td>
   <td>7977</td>
@@ -273,13 +317,35 @@ table.participants tr th, table.participants tr td {
   <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
 </tr>
 <tr>
+  <td>STP-cms-st-fixed-2016</td>
+  <td>-</td>
+  <td>X</td>
+  <td>-</td>
+  <td>7738</td>
+  <td>8242</td>
+  <td>-</td>
+  <td><a href="systemDescriptions/STP.pdf">STP</a></td>
+  <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
+</tr>
+<tr>
   <td>STP-minisat-st-2016</td>
   <td>X</td>
-  <td>X</td>
+  <td>-</td>
   <td>-</td>
   <td>7740</td>
   <td>7978</td>
   <td>0</td>
+  <td><a href="systemDescriptions/STP.pdf">STP</a></td>
+  <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
+</tr>
+<tr>
+  <td>STP-minisat-st-fixed-2016</td>
+  <td>-</td>
+  <td>X</td>
+  <td>-</td>
+  <td>7740</td>
+  <td>8243</td>
+  <td>-</td>
   <td><a href="systemDescriptions/STP.pdf">STP</a></td>
   <td>Mate Soos (<a href="mailto:soos.mate@gmail.com">soos.mate@gmail.com</a>)</td>
 </tr>
@@ -459,11 +525,19 @@ table.participants tr th, table.participants tr td {
   <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td>
 </tr>
 <tr>
-  <td>MapleSTP<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>MapleSTP<sup><a href="#fn1">1</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>MapleSTP-mt<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>MapleSTP-final<sup><a href="#fn2">2</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>MapleSTP-mt<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>MapleSTP-mt-final<sup><a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
@@ -507,19 +581,35 @@ table.participants tr th, table.participants tr td {
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>STP-cms-exp-2016<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>STP-cms-exp-2016<sup><a href="#fn1">1</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>STP-cms-mt-2016<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>STP-cms-exp-fixed-2016<sup><a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>STP-cms-st-2016<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>STP-cms-mt-2016<sup><a href="#fn1">1</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>STP-minisat-st-2016<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+  <td>STP-cms-mt-fixed-2016<sup><a href="#fn2">2</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>STP-cms-st-2016<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>STP-cms-st-fixed-2016<sup><a href="#fn2">2</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>STP-minisat-st-2016<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>STP-minisat-st-fixed-2016<sup><a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
