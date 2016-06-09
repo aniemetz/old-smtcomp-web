@@ -155,7 +155,7 @@ table.participants tr th, table.participants tr td {
   <td>MathSAT 5 (Main track)<sup><a href="#fnn">n</a></sup></td>
   <td>X</td>
   <td>-</td>
-  <td>X</td>
+  <td>-</td>
   <td>7873</td>
   <td></td>
   <td>-</td>
@@ -168,6 +168,17 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>7874</td>
+  <td></td>
+  <td>-</td>
+  <td></td>
+  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz</a></td>
+</tr>
+<tr>
+  <td>MathSAT 5 (Unsat-core track)<sup><a href="#fnn">n</a></sup></td>
+  <td>-</td>
+  <td>-</td>
+  <td>X</td>
+  <td>8267</td>
   <td></td>
   <td>-</td>
   <td></td>
@@ -353,7 +364,7 @@ table.participants tr th, table.participants tr td {
   <td>toysmt</td>
   <td>X</td>
   <td>-</td>
-  <td>-</td>
+  <td>X<sup><a href="#fnn">n</a></sup></td>
   <td>7813</td>
   <td></td>
   <td>1863866937</td>
@@ -386,7 +397,7 @@ table.participants tr th, table.participants tr td {
   <td>veriT</td>
   <td>X</td>
   <td>-</td>
-  <td>-</td>
+  <td>X<sup><a href="#fnn">n</a></sup></td>
   <td>7797</td>
   <td>8013</td>
   <td>20151003</td>
@@ -430,7 +441,7 @@ table.participants tr th, table.participants tr td {
   <td><b>Total</b></td>
   <td><b>27</b></td>
   <td><b>11</b></td>
-  <td><b>3</b></td>
+  <td><b>5</b></td>
   <td></td>
   <td></td>
   <td><b>908312613</b> (mod 2<sup>30</sup>)</td>
@@ -541,12 +552,16 @@ table.participants tr th, table.participants tr td {
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>MathSAT 5 (Main track)<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></td>
+  <td>MathSAT 5 (Main track)<sup><a href="#fn1">1</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>MathSAT 5 (Application track)<sup><a href="#fn2">2</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+</tr>
+<tr>
+  <td>MathSAT 5 (Unsat-core track)<sup><a href="#fn3">3</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>Minkeyrink<sup><a href="#fn1">1</a></sup></td>
@@ -613,7 +628,7 @@ table.participants tr th, table.participants tr td {
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
-  <td>toysmt<sup><a href="#fn1">1</a></sup></td>
+  <td>toysmt<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></td>
   <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
@@ -625,7 +640,7 @@ table.participants tr th, table.participants tr td {
   <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 <tr>
-  <td>veriT<sup><a href="#fn1">1</a></sup></td>
+  <td>veriT<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></td>
   <td>X</td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td>
 </tr>
 <tr>
