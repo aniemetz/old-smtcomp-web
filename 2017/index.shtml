@@ -1,0 +1,56 @@
+<!--#set var="title" value="SMT-COMP 2017" --><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The <i>12th International Satisfiability Modulo Theories Competition
+(SMT-COMP 2017)</i> is part of
+the <a href="http://smt-workshop.cs.uiowa.edu/2017/">SMT Workshop
+2017</a>, affiliated with <a href="http://cavconference.org/2017/">CAV
+2017</a>.  The SMT Workshop will include a block of time to present
+the competitors and results of the competition.
+</p>
+
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li> <a href="introduction.shtml">Introduction</a> </li>
+        <!-- <li> <a href="rules16.pdf">Competition rules and timeline</a> </li>
+        <li> <a href="benchmarks.shtml">Benchmarks</a> </li>
+        <li> <a href="tools.shtml">Tools</a> </li>
+        <li> <a href="specs.shtml">Machine specifications</a> </li>
+        <li> <a href="participants.shtml">Participants</a> </li>
+        <li> <a href="results-toc.shtml">Results</a> </li> -->
+        <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing list</a> </li>
+        <li> <a href="docs.shtml">Papers</a> </li>
+        <li> <a href="acknowledgments.shtml">Acknowledgments</a> </li>
+        <li> <a href="http://www.smt-lib.org/">SMT-LIB</a> </li>
+        <li> <a href="previous.shtml">Previous SMT-COMPs</a> </li>
+      </ul>
+    </td>
+    <!-- <td style="width:100px"></td>
+    <td>
+      <h2>News</h2>
+      <ul>
+        <li> Feb&nbsp;16: <a href="call-for-comments.txt">Call for Comments</a> issued </li>
+        <li> April&nbsp;23: Draft <a href="rules16.pdf">rules</a> posted </li>
+        <li> May&nbsp;31: <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=161208">Competition jobs</a> started </li>
+        <li> July&nbsp;2: Results <a href="SMT-COMP-2016.pdf">presented</a> </li>
+      </ul>
+      <br/>
+      <h2 style="display:inline">Key dates</h2>&nbsp;&nbsp;(see the <a href="rules16.pdf">rules</a> for the complete timeline)
+      <ul>
+        <li> May&nbsp;1: Deadline for new benchmark contributions </li>
+        <li> May&nbsp;15: Deadline for first versions of solvers </li>
+        <li> May&nbsp;29: Deadline for final versions of solvers </li>
+        <li> July&nbsp;1-2: SMT Workshop (presentation of results) </li>
+      </ul>
+    </td> -->
+  </tr>
+</table>
+
+<p>
+The organizers of SMT-COMP 2017 are Matthias Heizmann, Giles Reger,
+and Tjark Weber.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
