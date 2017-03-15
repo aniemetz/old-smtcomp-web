@@ -27,24 +27,24 @@ the competitors and results of the competition.
         <li> <a href="previous.shtml">Previous SMT-COMPs</a> </li>
       </ul>
     </td>
-    <!-- <td style="width:100px"></td>
+    <td style="width:100px"></td>
     <td>
       <h2>News</h2>
       <ul>
-        <li> Feb&nbsp;16: <a href="call-for-comments.txt">Call for Comments</a> issued </li>
-        <li> April&nbsp;23: Draft <a href="rules16.pdf">rules</a> posted </li>
+        <li> March&nbsp;15: <a href="call-for-comments.txt">Call for Comments</a> issued </li>
+        <!--<li> April&nbsp;23: Draft <a href="rules16.pdf">rules</a> posted </li>
         <li> May&nbsp;31: <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=161208">Competition jobs</a> started </li>
-        <li> July&nbsp;2: Results <a href="SMT-COMP-2016.pdf">presented</a> </li>
+        <li> July&nbsp;2: Results <a href="SMT-COMP-2016.pdf">presented</a> </li>-->
       </ul>
       <br/>
-      <h2 style="display:inline">Key dates</h2>&nbsp;&nbsp;(see the <a href="rules16.pdf">rules</a> for the complete timeline)
+      <h2 style="display:inline">Key dates</h2><!--&nbsp;&nbsp;(see the <a href="rules16.pdf">rules</a> for the complete timeline)-->
       <ul>
-        <li> May&nbsp;1: Deadline for new benchmark contributions </li>
+        <!--<li> May&nbsp;1: Deadline for new benchmark contributions </li>
         <li> May&nbsp;15: Deadline for first versions of solvers </li>
-        <li> May&nbsp;29: Deadline for final versions of solvers </li>
-        <li> July&nbsp;1-2: SMT Workshop (presentation of results) </li>
+        <li> May&nbsp;29: Deadline for final versions of solvers </li>-->
+        <li> July&nbsp;22-23: SMT Workshop (presentation of results) </li>
       </ul>
-    </td> -->
+    </td>
   </tr>
 </table>
 
