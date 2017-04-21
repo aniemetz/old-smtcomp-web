@@ -9,13 +9,17 @@ the <a href="http://smt-workshop.cs.uiowa.edu/2017/">SMT Workshop
 the competitors and results of the competition.
 </p>
 
+<p>
+<strong>Please use <a href="https://goo.gl/forms/HL6rbOywqW4sFo1D2">this form</a> to notify the organizers of solver submissions.</strong>
+</p>
+
 <table>
   <tr>
     <td>
       <ul>
         <li> <a href="introduction.shtml">Introduction</a> </li>
-        <!-- <li> <a href="rules16.pdf">Competition rules and timeline</a> </li>
-        <li> <a href="benchmarks.shtml">Benchmarks</a> </li>
+        <li> <a href="rules17.pdf">Competition rules and timeline</a> </li>
+        <!-- <li> <a href="benchmarks.shtml">Benchmarks</a> </li>
         <li> <a href="tools.shtml">Tools</a> </li>
         <li> <a href="specs.shtml">Machine specifications</a> </li>
         <li> <a href="participants.shtml">Participants</a> </li>
@@ -32,16 +36,16 @@ the competitors and results of the competition.
       <h2>News</h2>
       <ul>
         <li> March&nbsp;15: <a href="call-for-comments.txt">Call for Comments</a> issued </li>
-        <!--<li> April&nbsp;23: Draft <a href="rules16.pdf">rules</a> posted </li>
-        <li> May&nbsp;31: <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=161208">Competition jobs</a> started </li>
+        <li> April&nbsp;21: Draft <a href="rules17.pdf">rules</a> posted </li>
+        <!--<li> May&nbsp;31: <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=161208">Competition jobs</a> started </li>
         <li> July&nbsp;2: Results <a href="SMT-COMP-2016.pdf">presented</a> </li>-->
       </ul>
       <br/>
-      <h2 style="display:inline">Key dates</h2><!--&nbsp;&nbsp;(see the <a href="rules16.pdf">rules</a> for the complete timeline)-->
+      <h2 style="display:inline">Key dates</h2>&nbsp;&nbsp;(see the <a href="rules17.pdf">rules</a> for the complete timeline)
       <ul>
-        <!--<li> May&nbsp;1: Deadline for new benchmark contributions </li>
-        <li> May&nbsp;15: Deadline for first versions of solvers </li>
-        <li> May&nbsp;29: Deadline for final versions of solvers </li>-->
+        <li> May&nbsp;1: Deadline for new benchmark contributions </li>
+        <li> June&nbsp;4: Deadline for first versions of solvers </li>
+        <li> June&nbsp;18: Deadline for final versions of solvers </li>
         <li> July&nbsp;22-23: SMT Workshop (presentation of results) </li>
       </ul>
     </td>
