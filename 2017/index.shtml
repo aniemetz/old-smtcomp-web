@@ -20,9 +20,9 @@ the competitors and results of the competition.
         <li> <a href="introduction.shtml">Introduction</a> </li>
         <li> <a href="rules17.pdf">Competition rules and timeline</a> </li>
         <!-- <li> <a href="benchmarks.shtml">Benchmarks</a> </li>
-        <li> <a href="tools.shtml">Tools</a> </li>
+        <li> <a href="tools.shtml">Tools</a> </li> -->
         <li> <a href="specs.shtml">Machine specifications</a> </li>
-        <li> <a href="participants.shtml">Participants</a> </li>
+        <!-- <li> <a href="participants.shtml">Participants</a> </li>
         <li> <a href="results-toc.shtml">Results</a> </li> -->
         <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing list</a> </li>
         <li> <a href="docs.shtml">Papers</a> </li>

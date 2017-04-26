@@ -5,6 +5,8 @@
     <th> &bull; </th>
     <th style="width:10%"> <a href="rules17.pdf">Rules</a> </th>
     <th> &bull; </th>
+    <th style="width:10%"> <a href="specs.shtml">Specs</a> </th>
+    <th> &bull; </th>
     <th style="width:10%"> <a href="http://www.smt-lib.org/">SMT-LIB</a> </th>
     <th> &bull; </th>
     <th style="width:10%"> <a href="<!--#echo var="base" -->previous.shtml">Previous</a> </th>
