@@ -41,17 +41,6 @@ The SMT-LIB benchmarks are available in space
 benchmarks/2016-05-23</tt></a> on StarExec.
 </p>
 
-<!--
-<p>
-The subset of benchmarks eligible for SMT-COMP 2015 is available in
-StarExec spaces
-<a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=85819"><tt>root/SMT/Competitions
-and evaluations/SMT-COMP 2015/Benchmarks - Application Track</tt></a>
-and <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=86692"><tt>root/SMT/Competitions
-and evaluations/SMT-COMP 2015/Benchmarks - Main Track</tt></a> for the
-application and main track, respectively.
-</p>-->
-
 <h2>Main Track</h2>
 
 <table class="benchmarks">
