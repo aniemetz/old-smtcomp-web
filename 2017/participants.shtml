@@ -196,6 +196,17 @@ table.participants tr th, table.participants tr td {
   <td><a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a></td>
 </tr>
 <tr>
+  <td>STP-st</td>
+  <td>X</td>
+  <td>-</td>
+  <td>-</td>
+  <td><font color="red">1234</font></td>
+  <td></td>
+  <td>734534</td>
+  <td><a href="systemDescriptions/.pdf"></a></td>
+  <td><a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a></td>
+</tr>
+<tr>
   <td>Vampire</td>
   <td>X</td>
   <td>-</td>
@@ -274,12 +285,12 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td><b>Total</b></td>
-  <td><b>19</b></td>
+  <td><b>20</b></td>
   <td><b>6</b></td>
   <td><b>4</b></td>
   <td></td>
   <td></td>
-  <td><b>997354752</b> (mod 2<sup>30</sup>)</td>
+  <td><b>998089286</b> (mod 2<sup>30</sup>)</td>
   <td></td>
   <td></td>
 </tr>
@@ -291,7 +302,7 @@ table.participants tr th, table.participants tr td {
   </span>
 </p>
 
-<p>The opening value of the NYSE Composite Index on 2017-06-19 was XXXXX.XX, resulting in a competition seed of 997354752 + XXXXX = <b>XXXXX</b>.</p>
+<p>The opening value of the NYSE Composite Index on 2017-06-19 was XXXXX.XX, resulting in a competition seed of 998089286 + XXXXX = <b>XXXXX</b>.</p>
 
 <!-- <h2>Divisions</h2> -->
 
