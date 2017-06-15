@@ -39,7 +39,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>935243</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:carsten@dcs.bbk.ac.uk">carsten@dcs.bbk.ac.uk</a></td>
+  <td>Carsten Fuhs (<a href="mailto:carsten@dcs.bbk.ac.uk">carsten@dcs.bbk.ac.uk</a>)</td>
 </tr>
 <tr>
   <td>Boolector</td>
@@ -50,7 +50,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>424242</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:mathias.preiner@jku.at">mathias.preiner@jku.at</a></td>
+  <td>Mathias Preiner (<a href="mailto:mathias.preiner@jku.at">mathias.preiner@jku.at</a>)</td>
 </tr>
 <tr>
   <td>COLIBRI</td>
@@ -61,7 +61,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>385141</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:francois.bobot@cea.fr">francois.bobot@cea.fr</a></td>
+  <td>Fran&ccedil;ois Bobot (<a href="mailto:francois.bobot@cea.fr">francois.bobot@cea.fr</a>)</td>
 </tr>
 <tr>
   <td>cvc4</td>
@@ -72,7 +72,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>4261980</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:barrett@cs.stanford.edu">barrett@cs.stanford.edu</a></td>
+  <td>Clark Barrett (<a href="mailto:barrett@cs.stanford.edu">barrett@cs.stanford.edu</a>)</td>
 </tr>
 <tr>
   <td>jfs</td>
@@ -83,7 +83,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>127</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:dan@su-root.co.uk">dan@su-root.co.uk</a></td>
+  <td>Dan Liew (<a href="mailto:dan@su-root.co.uk">dan@su-root.co.uk</a>)</td>
 </tr>
 <tr>
   <td>MathSAT 5.4.1 (Main)<sup><a href="#fnn">n</a></sup></td>
@@ -127,7 +127,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>2355432</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a></td>
+  <td>Trevor Hansen (<a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a>)</td>
 </tr>
 <tr>
   <td>opensmt2</td>
@@ -138,7 +138,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>31415</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:antti.hyvaerinen@usi.ch">antti.hyvaerinen@usi.ch</a></td>
+  <td>Antti Hyv&auml;rinen (<a href="mailto:antti.hyvaerinen@usi.ch">antti.hyvaerinen@usi.ch</a>)</td>
 </tr>
 <tr>
   <td>Q3B</td>
@@ -149,7 +149,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>18661329</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:martin.jonas@mail.muni.cz">martin.jonas@mail.muni.cz</a></td>
+  <td>Martin Jonas (<a href="mailto:martin.jonas@mail.muni.cz">martin.jonas@mail.muni.cz</a>)</td>
 </tr>
 <tr>
   <td>Redlog</td>
@@ -160,7 +160,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>20170704</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a></td>
+  <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
 </tr>
 <tr>
   <td>SMT-RAT</td>
@@ -171,7 +171,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>4711</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:gereon.kremer@cs.rwth-aachen.de">gereon.kremer@cs.rwth-aachen.de</a></td>
+  <td>Gereon Kremer (<a href="mailto:gereon.kremer@cs.rwth-aachen.de">gereon.kremer@cs.rwth-aachen.de</a>)</td>
 </tr>
 <tr>
   <td>SMTInterpol</td>
@@ -182,7 +182,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>1953339634</td>
   <td><a href="systemDescriptions/SMTInterpol.pdf">SMTInterpol</a></td>
-  <td><a href="mailto:hoenicke@informatik.uni-freiburg.de">hoenicke@informatik.uni-freiburg.de</a></td>
+  <td>Jochen Hoenicke (<a href="mailto:hoenicke@informatik.uni-freiburg.de">hoenicke@informatik.uni-freiburg.de</a>)</td>
 </tr>
 <tr>
   <td>STP-mt</td>
@@ -193,7 +193,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>433324</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a></td>
+  <td>Trevor Hansen (<a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a>)</td>
 </tr>
 <tr>
   <td>STP-st</td>
@@ -204,7 +204,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>734534</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a></td>
+  <td>Trevor Hansen (<a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a>)</td>
 </tr>
 <tr>
   <td>Vampire</td>
@@ -215,7 +215,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>3648</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:giles.reger@manchester.ac.uk">giles.reger@manchester.ac.uk</a></td>
+  <td>Giles Reger (<a href="mailto:giles.reger@manchester.ac.uk">giles.reger@manchester.ac.uk</a>)</td>
 </tr>
 <tr>
   <td>veriT</td>
@@ -226,7 +226,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>20151003</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a></td>
+  <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
 </tr>
 <tr>
   <td>veriT+raSAT+Reduce</td>
@@ -237,7 +237,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>19061999</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a></td>
+  <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
 </tr>
 <tr>
   <td>XSat</td>
@@ -248,7 +248,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>1164700</td>
   <td><a href="systemDescriptions/XSat.pdf">XSat</a></td>
-  <td><a href="mailto:marvelez@ucdavis.edu">marvelez@ucdavis.edu</a></td>
+  <td>Martin Velez (<a href="mailto:marvelez@ucdavis.edu">marvelez@ucdavis.edu</a>)</td>
 </tr>
 <tr>
   <td>Yices2 (Main)</td>
@@ -259,7 +259,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>11976743</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a></td>
+  <td>Dejan Jovanovi&cacute; (<a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a>)</td>
 </tr>
 <tr>
   <td>Yices2 (Application)</td>
@@ -270,7 +270,7 @@ table.participants tr th, table.participants tr td {
   <td></td>
   <td>17735201</td>
   <td><a href="systemDescriptions/.pdf"></a></td>
-  <td><a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a></td>
+  <td>Dejan Jovanovi&cacute; (<a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a>)</td>
 </tr>
 <tr>
   <td>Z3 (4.5.0)<sup><a href="#fnn">n</a></sup></td>
