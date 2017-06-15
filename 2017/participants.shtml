@@ -86,37 +86,37 @@ table.participants tr th, table.participants tr td {
   <td><a href="mailto:dan@su-root.co.uk">dan@su-root.co.uk</a></td>
 </tr>
 <tr>
-  <td>MathSAT 5 (Main track)<sup><a href="#fnn">n</a></sup></td>
+  <td>MathSAT 5.4.1 (Main)<sup><a href="#fnn">n</a></sup></td>
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td>7873</td>
+  <td>?</td>
   <td></td>
   <td>-</td>
   <td></td>
-  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz</a></td>
+  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.4.1-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.4.1-linux-x86_64.tar.gz</a></td>
 </tr>
 <tr>
-  <td>MathSAT 5 (Application track)<sup><a href="#fnn">n</a></sup></td>
+  <td>MathSAT 5.4.1 (Application)<sup><a href="#fnn">n</a></sup></td>
   <td>-</td>
   <td>X</td>
   <td>-</td>
-  <td>7874</td>
+  <td>?</td>
   <td></td>
   <td>-</td>
   <td></td>
-  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz</a></td>
+  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.4.1-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.4.1-linux-x86_64.tar.gz</a></td>
 </tr>
 <tr>
-  <td>MathSAT 5 (Unsat-core track)<sup><a href="#fnn">n</a></sup></td>
+  <td>MathSAT 5.4.1 (Unsat-core)<sup><a href="#fnn">n</a></sup></td>
   <td>-</td>
   <td>-</td>
   <td>X</td>
-  <td>8321</td>
+  <td>?</td>
   <td></td>
   <td>-</td>
   <td></td>
-  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.3.11-linux-x86_64.tar.gz</a></td>
+  <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.4.1-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.4.1-linux-x86_64.tar.gz</a></td>
 </tr>
 <tr>
   <td>MinkeyRink</td>
