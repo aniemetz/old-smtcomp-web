@@ -52,7 +52,8 @@ table.benchmarks tr td:first-child + td + td + td {
 <h2>Main Track</h2>
 
 <p>
-  All non-incremental SMT-LIB benchmarks are eligible for the main
+  All non-incremental SMT-LIB benchmarks (except those excluded
+  because they were syntactically invalid) are eligible for the main
   track.  In total, there are 49 main track divisions.  Divisions
   containing datatypes (DT) are experimental in 2017.
 </p>
