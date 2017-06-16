@@ -167,8 +167,8 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td><font color="red">11282</font></td>
-  <td></td>
+  <td>11282</td>
+  <td>11977</td>
   <td>4711</td>
   <td><a href="systemDescriptions/SMT-RAT.pdf">SMT-RAT</a></td>
   <td>Gereon Kremer (<a href="mailto:gereon.kremer@cs.rwth-aachen.de">gereon.kremer@cs.rwth-aachen.de</a>)</td>
