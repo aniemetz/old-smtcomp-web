@@ -229,7 +229,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>UF</td>
-    <td>8086</td>
+    <td>7562 (524 excluded<sup><a href="#fn1">1</a></sup>)</td>
   </tr>
   <tr>
     <td>UFBV</td>
@@ -261,7 +261,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>257499 (580 excluded)</b></td>
+    <td><b>256975 (1104 excluded)</b></td>
   </tr>
 </table>
 
@@ -671,7 +671,7 @@ table.benchmarks tr td:first-child + td + td + td {
   <tr>
     <td>UF</td>
     <td>3316</td>
-    <td>8086</td>
+    <td>7562</td>
   </tr>
   <tr>
     <td>UFBV</td>
@@ -711,7 +711,7 @@ table.benchmarks tr td:first-child + td + td + td {
   <tr>
     <td><b>Total</b></td>
     <td><b>114690</b></td>
-    <td><b>257499</b></td>
+    <td><b>256975</b></td>
   </tr>
 </table>
 
