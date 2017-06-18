@@ -538,7 +538,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>NRA</td>
-    <td>3803</td>
+    <td>3801</td>
     <td>3813</td>
   </tr>
   <tr>
@@ -718,7 +718,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>114690</b></td>
+    <td><b>114688</b></td>
     <td><b>256973</b></td>
   </tr>
 </table>
