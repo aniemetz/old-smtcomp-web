@@ -123,8 +123,8 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td><font color="red">1234</font></td>
-  <td></td>
+  <td>1234</td>
+  <td>11999</td>
   <td>2355432</td>
   <td></td>
   <td>Trevor Hansen (<a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a>)</td>
@@ -189,8 +189,8 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td><font color="red">1234</font></td>
-  <td></td>
+  <td>1234</td>
+  <td>12002</td>
   <td>433324</td>
   <td></td>
   <td>Trevor Hansen (<a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a>)</td>
@@ -200,8 +200,8 @@ table.participants tr th, table.participants tr td {
   <td>X</td>
   <td>-</td>
   <td>-</td>
-  <td><font color="red">1234</font></td>
-  <td></td>
+  <td>1234</td>
+  <td>12001</td>
   <td>734534</td>
   <td></td>
   <td>Trevor Hansen (<a href="mailto:trev_Abroad@yahoo.com">trev_Abroad@yahoo.com</a>)</td>
