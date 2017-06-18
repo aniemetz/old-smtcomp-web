@@ -117,7 +117,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>NRA</td>
-    <td>3813</td>
+    <td>3811 (2 excluded<sup><a href="#fn2">2</a></sup>)</td>
   </tr>
   <tr>
     <td>QF_ABV</td>
@@ -261,13 +261,21 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>256975 (1104 excluded)</b></td>
+    <td><b>256973 (1106 excluded)</b></td>
   </tr>
 </table>
 
 <p>
   <span id="fn1">
-    1. These benchmarks were excluded because they contained sorts or operations that are unavailable in the respective logic.  Thanks to Andres N&ouml;tzli who reported the issue.
+    1. These benchmarks were excluded because they contained sorts or
+    operations that are unavailable in the respective logic.  Thanks
+    to Andres N&ouml;tzli who reported the issue.
+  </span><br/>
+  <span id="fn2">
+    2. Benchmarks <tt>non-incremental/NRA/keymaera/ETCS-essentials-live-range2.proof-node1046.smt2</tt>
+    and <tt>non-incremental/NRA/keymaera/reactivity-lemma-node2938.smt2</tt>
+    were excluded because they contained possibly
+    incorrect <tt>:status</tt> information.
   </span>
 </p>
 
@@ -281,11 +289,11 @@ table.benchmarks tr td:first-child + td + td + td {
   <tr>
     <th>Logic</th>
     <th>Benchmarks eligible for SMT-COMP</th>
-    <th>Benchmarks with unknown status<sup><a href="#fn2">2</a></sup></th>
+    <th>Benchmarks with unknown status<sup><a href="#fn3">3</a></sup></th>
     <th>Benchmarks in SMT-LIB</th>
   </tr>
   <tr>
-    <td>ABVFP<sup><a href="#fn3">3</a></sup></td>
+    <td>ABVFP<sup><a href="#fn4">4</a></sup></td>
     <td>0</td>
     <td>4</td>
     <td>4</td>
@@ -303,19 +311,19 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>3</td>
   </tr>
   <tr>
-    <td>AUFNIRA<sup><a href="#fn3">3</a></sup></td>
+    <td>AUFNIRA<sup><a href="#fn4">4</a></sup></td>
     <td>0</td>
     <td>165</td>
     <td>165</td>
   </tr>
   <tr>
-    <td>BV<sup><a href="#fn3">3</a></sup></td>
+    <td>BV<sup><a href="#fn4">4</a></sup></td>
     <td>0</td>
     <td>18</td>
     <td>18</td>
   </tr>
   <tr>
-    <td>BVFP<sup><a href="#fn3">3</a></sup></td>
+    <td>BVFP<sup><a href="#fn4">4</a></sup></td>
     <td>0</td>
     <td>10</td>
     <td>10</td>
@@ -327,13 +335,13 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>6</td>
   </tr>
   <tr>
-    <td>LRA<sup><a href="#fn3">3</a></sup></td>
-    <td>0 (5 excluded<sup><a href="#fn4">4</a></sup>)</td>
+    <td>LRA<sup><a href="#fn4">4</a></sup></td>
+    <td>0 (5 excluded<sup><a href="#fn5">5</a></sup>)</td>
     <td>0</td>
     <td>5</td>
   </tr>
   <tr>
-    <td>QF_ABVFP<sup><a href="#fn3">3</a></sup></td>
+    <td>QF_ABVFP<sup><a href="#fn4">4</a></sup></td>
     <td>0</td>
     <td>9</td>
     <td>9</td>
@@ -376,7 +384,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>QF_LIA</td>
-    <td>68 (1 excluded<sup><a href="#fn5">5</a></sup>)</td>
+    <td>68 (1 excluded<sup><a href="#fn6">6</a></sup>)</td>
     <td>0</td>
     <td>69</td>
   </tr>
@@ -425,24 +433,24 @@ table.benchmarks tr td:first-child + td + td + td {
 </table>
 
 <p>
-  <span id="fn2">
-    2. For the application track, a benchmark is ineligible if its
+  <span id="fn3">
+    3. For the application track, a benchmark is ineligible if its
     <u>first</u> <tt>check-sat</tt> command has unknown status.
     Otherwise, (some non-empty prefix of) the benchmark is eligible.
   </span><br/>
-  <span id="fn3">
-    3. As there are no eligible benchmarks in SMT-LIB, ABVFP, AUFNIRA,
+  <span id="fn4">
+    4. As there are no eligible benchmarks in SMT-LIB, ABVFP, AUFNIRA,
     BV, BVFP, LRA and QF_ABVFP are not actually application track
     divisions in SMT-COMP 2017.
   </span><br/>
-  <span id="fn4">
-    4. The five benchmarks
+  <span id="fn5">
+    5. The five benchmarks
     in <tt>incremental/LRA/20160930-Kopczynski-LOIS/</tt> were
     excluded because they did not contain <tt>:status</tt>
     information.
   </span><br/>
-  <span id="fn5">
-    5. Benchmark <tt>incremental/QF_LIA/UltimateBuchiAutomizer/AliasDarteFeautrierGonnord-SAS2010-loops_true-termination.c.smt2</tt>
+  <span id="fn6">
+    6. Benchmark <tt>incremental/QF_LIA/UltimateBuchiAutomizer/AliasDarteFeautrierGonnord-SAS2010-loops_true-termination.c.smt2</tt>
     was excluded because it contained incorrect <tt>:status</tt>
     information.
   </span>
@@ -464,7 +472,7 @@ table.benchmarks tr td:first-child + td + td + td {
     <th>All main track benchmarks</th>
   </tr>
   <tr>
-    <td>ABVFP<sup><a href="#fn6">6</a></sup></td>
+    <td>ABVFP<sup><a href="#fn7">7</a></sup></td>
     <td>0</td>
     <td>1</td>
   </tr>
@@ -479,7 +487,7 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>1709</td>
   </tr>
   <tr>
-    <td>AUFDTLIA<sup><a href="#fn6">6</a></sup></td>
+    <td>AUFDTLIA<sup><a href="#fn7">7</a></sup></td>
     <td>0</td>
     <td>728</td>
   </tr>
@@ -504,12 +512,12 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>5151</td>
   </tr>
   <tr>
-    <td>BVFP<sup><a href="#fn6">6</a></sup></td>
+    <td>BVFP<sup><a href="#fn7">7</a></sup></td>
     <td>0</td>
     <td>24</td>
   </tr>
   <tr>
-    <td>FP<sup><a href="#fn6">6</a></sup></td>
+    <td>FP<sup><a href="#fn7">7</a></sup></td>
     <td>0</td>
     <td>61</td>
   </tr>
@@ -584,7 +592,7 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>17215</td>
   </tr>
   <tr>
-    <td>QF_DT<sup><a href="#fn6">6</a></sup></td>
+    <td>QF_DT<sup><a href="#fn7">7</a></sup></td>
     <td>0</td>
     <td>8000</td>
   </tr>
@@ -684,7 +692,7 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>4535</td>
   </tr>
   <tr>
-    <td>UFDTLIA<sup><a href="#fn6">6</a></sup></td>
+    <td>UFDTLIA<sup><a href="#fn7">7</a></sup></td>
     <td>0</td>
     <td>303</td>
   </tr>
@@ -711,13 +719,13 @@ table.benchmarks tr td:first-child + td + td + td {
   <tr>
     <td><b>Total</b></td>
     <td><b>114690</b></td>
-    <td><b>256975</b></td>
+    <td><b>256973</b></td>
   </tr>
 </table>
 
 <p>
-  <span id="fn6">
-    6. As there are no eligible benchmarks in SMT-LIB, ABVFP,
+  <span id="fn7">
+    7. As there are no eligible benchmarks in SMT-LIB, ABVFP,
     AUFDTLIA, BVFP, FP, QF_DT and UFDTLIA are not actually unsat-core
     track divisions in SMT-COMP 2017.
   </span>
