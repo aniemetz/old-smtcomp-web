@@ -240,6 +240,17 @@ table.participants tr th, table.participants tr td {
   <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
 </tr>
 <tr>
+  <td>veriT+Redlog</td>
+  <td>X</td>
+  <td>-</td>
+  <td>-</td>
+  <td>11466</td>
+  <td>12005</td>
+  <td>0</td>
+  <td></td>
+  <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
+</tr>
+<tr>
   <td>veriT+raSAT+Redlog</td>
   <td>X</td>
   <td>-</td>
@@ -296,7 +307,7 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td><b>Total</b></td>
-  <td><b>19</b></td>
+  <td><b>20</b></td>
   <td><b>6</b></td>
   <td><b>4</b></td>
   <td></td>
@@ -448,6 +459,10 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td>veriT<sup><a href="#fn1">1</a></sup></td>
   <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td></td>
+</tr>
+<tr>
+  <td>veriT+Redlog<sup><a href="#fn1">1</a></sup></td>
+  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>veriT+raSAT+Redlog<sup><a href="#fn1">1</a></sup></td>
