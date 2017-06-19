@@ -10,7 +10,7 @@
 <h2>Application Track</h2>
 
 <ul>
-  <li> Benchmark scrambler: <a href="smtcomp2015_scrambler.tar.gz">sources</a> <a href="SMT-COMP-2016-Application-Track-Scrambler.tgz">StarExec binary</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li>
+  <li> Benchmark scrambler: <a href="smtcomp2015_scrambler.tar.gz">sources</a> <a href="SMT-COMP-2016-Application-Scrambler.tgz">StarExec binary</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li>
   <li> <a href="SMT-COMP-2016-Application-Track-Postprocessor.tgz">Postprocessor</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li>
   <li> <a href="SMT-COMP-2016-Trace-Executor.tgz">Trace executor</a> (sources) </li>
 </ul>
