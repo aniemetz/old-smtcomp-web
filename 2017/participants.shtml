@@ -75,17 +75,6 @@ table.participants tr th, table.participants tr td {
   <td>Clark Barrett (<a href="mailto:barrett@cs.stanford.edu">barrett@cs.stanford.edu</a>)</td>
 </tr>
 <tr>
-  <td>jfs</td>
-  <td>X</td>
-  <td>-</td>
-  <td>-</td>
-  <td>11639</td>
-  <td></td>
-  <td>127</td>
-  <td></td>
-  <td>Dan Liew (<a href="mailto:dan@su-root.co.uk">dan@su-root.co.uk</a>)</td>
-</tr>
-<tr>
   <td>MathSAT 5.4.1 (Main)<sup><a href="#fnn">n</a></sup></td>
   <td>X</td>
   <td>-</td>
@@ -285,12 +274,12 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td><b>Total</b></td>
-  <td><b>20</b></td>
+  <td><b>19</b></td>
   <td><b>6</b></td>
   <td><b>4</b></td>
   <td></td>
   <td></td>
-  <td><b>998089286</b> (mod 2<sup>30</sup>)</td>
+  <td><b>998089159</b> (mod 2<sup>30</sup>)</td>
   <td></td>
   <td></td>
 </tr>
@@ -302,7 +291,7 @@ table.participants tr th, table.participants tr td {
   </span>
 </p>
 
-<p>The opening value of the NYSE Composite Index on 2017-06-20 was XXXXX.XX, resulting in a competition seed of 998089286 + XXXXX = <b>XXXXX</b>.</p>
+<p>The opening value of the NYSE Composite Index on 2017-06-20 was XXXXX.XX, resulting in a competition seed of 998089159 + XXXXX = <b>XXXXX</b>.</p>
 
 <h2>Divisions</h2>
 
@@ -377,10 +366,6 @@ table.participants tr th, table.participants tr td {
 <tr>
   <td>cvc4<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></td>
   <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
-</tr>
-<tr>
-  <td>jfs<sup><a href="#fn1">1</a></sup></td>
-  <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
 </tr>
 <tr>
   <td>MathSAT 5.4.1 (Main)<sup><a href="#fn1">1</a></sup></td>
