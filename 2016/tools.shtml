@@ -15,4 +15,11 @@
   <li> <a href="SMT-COMP-2016-Trace-Executor.tgz">Trace executor</a> (sources) </li>
 </ul>
 
+<h2>Unsat-Core Track</h2>
+
+<ul>
+  <li> Benchmark scrambler: <a href="generate_unsat_core_benchmark.patch">sources</a> (patch relative to <a href="smtcomp2016_scrambler.tar.gz">main track scrambler</a> <a href="SMT-COMP-2016-Unsat-Core-Scrambler.tgz">StarExec binary</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li>
+  <li> <a href="SMT-COMP-2016-Unsat-Core-Track-Postprocessor.tgz">Postprocessor</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li>
+</ul>
+
 <!--#include virtual="smt-comp-postlude.shtml" -->
