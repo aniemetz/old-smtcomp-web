@@ -170,7 +170,7 @@ table.participants tr th, table.participants tr td {
   <td>11654</td>
   <td>11892</td>
   <td>20170704</td>
-  <td></td>
+  <td><a href="systemDescriptions/Redlog.pdf">Redlog</a></td>
   <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
 </tr>
 <tr>
@@ -236,7 +236,7 @@ table.participants tr th, table.participants tr td {
   <td>11466</td>
   <td>11989</td>
   <td>20151003</td>
-  <td></td>
+  <td><a href="systemDescriptions/veriT.pdf">veriT</a></td>
   <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
 </tr>
 <tr>
@@ -246,8 +246,8 @@ table.participants tr th, table.participants tr td {
   <td>-</td>
   <td>11466</td>
   <td>12005</td>
-  <td>0</td>
-  <td></td>
+  <td>20170605</td>
+  <td><a href="systemDescriptions/veriT+Redlog.pdf">veriT+Redlog</a></td>
   <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
 </tr>
 <tr>
@@ -258,7 +258,7 @@ table.participants tr th, table.participants tr td {
   <td>11469</td>
   <td></td>
   <td>19061999</td>
-  <td></td>
+  <td><a href="systemDescriptions/veriT+raSAT+Redlog.pdf">veriT+raSAT+Redlog</a></td>
   <td>Haniel Barbosa (<a href="mailto:haniel.barbosa@inria.fr">haniel.barbosa@inria.fr</a>)</td>
 </tr>
 <tr>
@@ -312,7 +312,7 @@ table.participants tr th, table.participants tr td {
   <td><b>4</b></td>
   <td></td>
   <td></td>
-  <td><b>998089159</b> (mod 2<sup>30</sup>)</td>
+  <td><b>1018259764</b> (mod 2<sup>30</sup>)</td>
   <td></td>
   <td></td>
 </tr>
@@ -324,7 +324,7 @@ table.participants tr th, table.participants tr td {
   </span>
 </p>
 
-<p>The opening value of the NYSE Composite Index on 2017-06-20 was XXXXX.XX, resulting in a competition seed of 998089159 + XXXXX = <b>XXXXX</b>.</p>
+<p>The opening value of the NYSE Composite Index on 2017-06-20 was XXXXX.XX, resulting in a competition seed of 1018259764 + XXXXX = <b>XXXXX</b>.</p>
 
 <h2>Divisions</h2>
 
