@@ -461,8 +461,9 @@ table.benchmarks tr td:first-child + td + td + td {
 <p>
   All <u>unsatisfiable</u> main track benchmarks are eligible for the
   unsat-core track (with minor modifications, e.g., named assertions).
-  In total, there are 43 unsat-core track divisions.  Divisions
-  containing datatypes (DT) are experimental in 2017.
+  Divisions containing datatypes (DT) were excluded from the
+  unsat-core track due to lacking tool support.  In total, there are
+  41 unsat-core track divisions.
 </p>
 
 <table class="benchmarks">
@@ -482,8 +483,8 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>42</td>
   </tr>
   <tr>
-    <td>AUFBVDTLIA</td>
-    <td>25</td>
+    <td>AUFBVDTLIA<sup><a href="#fn7">7</a></sup></td>
+    <td>0 (25 excluded)</td>
     <td>1709</td>
   </tr>
   <tr>
@@ -687,8 +688,8 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>200</td>
   </tr>
   <tr>
-    <td>UFDT</td>
-    <td>430</td>
+    <td>UFDT<sup><a href="#fn7">7</a></sup></td>
+    <td>0 (430 excluded)</td>
     <td>4535</td>
   </tr>
   <tr>
@@ -718,7 +719,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>114688</b></td>
+    <td><b>114233 (455 excluded)</b></td>
     <td><b>256973</b></td>
   </tr>
 </table>
@@ -726,8 +727,8 @@ table.benchmarks tr td:first-child + td + td + td {
 <p>
   <span id="fn7">
     7. As there are no eligible benchmarks in SMT-LIB, ABVFP,
-    AUFDTLIA, BVFP, FP, QF_DT and UFDTLIA are not actually unsat-core
-    track divisions in SMT-COMP 2017.
+    AUFBVDTLIA, AUFDTLIA, BVFP, FP, QF_DT, UFDT and UFDTLIA are not
+    actually unsat-core track divisions in SMT-COMP 2017.
   </span>
 </p>
 

@@ -347,7 +347,7 @@ table.participants tr th, table.participants tr td {
   <th>ABVFP<sup><a href="#fn1">1</a></th>
   <th>ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
   <th>ANIA<sup><a href="#fn2">2</a></sup></th>
-  <th>AUFBVDTLIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>AUFBVDTLIA<sup><a href="#fn1">1</a></sup></th>
   <th>AUFDTLIA<sup><a href="#fn1">1</a></sup></th>
   <th>AUFLIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>AUFLIRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
@@ -388,7 +388,7 @@ table.participants tr th, table.participants tr td {
   <th>QF_UFNRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>UF<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>UFBV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
-  <th>UFDT<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+  <th>UFDT<sup><a href="#fn1">1</a></sup></th>
   <th>UFDTLIA<sup><a href="#fn1">1</a></sup></th>
   <th>UFIDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   <th>UFLIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
@@ -421,7 +421,7 @@ table.participants tr th, table.participants tr td {
 </tr>
 <tr>
   <td>CVC4 (Unsat-core)<sup><a href="#fn3">3</a></sup></td>
-  <td></td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
+  <td></td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td></td> <td style="color:LightGray">x</td> <td></td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td> <td style="color:LightGray">x</td> <td style="color:LightGray">x</td> <td>X</td> <td>X</td> <td>X</td> <td>X</td>
 </tr>
 <tr>
   <td>MathSAT 5.4.1 (Main)<sup><a href="#fn1">1</a></sup></td>
