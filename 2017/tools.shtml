@@ -9,13 +9,13 @@
 
 <h2>Application Track</h2>
 
-<p>Please check back later.</p>
+<p>The application track is using the same tools (benchmark scrambler, trace executor and postprocessor) as in <a href="../2016/tools.shtml">2016</a>.</p>
 
 <h2>Unsat-Core Track</h2>
 
 <ul>
   <li> Benchmark scrambler: <a href="smtcomp2017_scrambler.tar.gz">sources</a> <a href="SMT-COMP-2017-Unsat-Core-Scrambler.tgz">StarExec binary</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li>
-  <!-- <li> <a href="SMT-COMP-2017-Main-Track-Postprocessor.tgz">Postprocessor</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li> -->
+  <li> <a href="SMT-COMP-2017-Unsat-Core-Track-Postprocessor.tgz">Postprocessor</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li>
 </ul>
 
 <!--#include virtual="smt-comp-postlude.shtml" -->
