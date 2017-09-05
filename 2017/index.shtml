@@ -9,9 +9,9 @@ the <a href="http://smt-workshop.cs.uiowa.edu/2017/">SMT Workshop
 the competitors and results of the competition.
 </p>
 
-<p>
+<!-- <p>
 <strong>Please use <a href="https://goo.gl/forms/HL6rbOywqW4sFo1D2">this form</a> to notify the organizers of solver submissions.</strong>
-</p>
+</p> -->
 
 <table>
   <tr>
@@ -38,7 +38,7 @@ the competitors and results of the competition.
         <li> March&nbsp;15: <a href="call-for-comments.txt">Call for Comments</a> issued </li>
         <li> April&nbsp;21: Draft <a href="rules17.pdf">rules</a> posted </li>
         <li> June&nbsp;20: <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=236827">Competition jobs</a> started </li>
-        <!-- <li> July&nbsp;2: Results <a href="SMT-COMP-2016.pdf">presented</a> </li> -->
+        <li> July&nbsp;23: Results <a href="SMT-COMP-2017.pdf">presented</a> </li>
       </ul>
       <br/>
       <h2 style="display:inline">Key dates</h2>&nbsp;&nbsp;(see the <a href="rules17.pdf">rules</a> for the complete timeline)
