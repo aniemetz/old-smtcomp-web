@@ -1,0 +1,64 @@
+<!--#set var="title" value="SMT-COMP 2018" --><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+The <i>13th International Satisfiability Modulo Theories Competition
+(SMT-COMP 2018)</i> is part of
+the <a href="http://smt-workshop.cs.uiowa.edu/2018/">SMT Workshop
+2018</a>, affiliated with <a href="http://www.floc2018.org/">FLoC 2018</a>.
+The SMT Workshop will include a block of time to present
+the competitors and results of the competition.
+</p>
+
+<!-- <p>
+<strong>Please use <a href="https://goo.gl/forms/HL6rbOywqW4sFo1D2">this form</a> to notify the organizers of solver submissions.</strong>
+</p> -->
+
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li> <a href="introduction.shtml">Introduction</a> </li>
+<!--        <li> <a href="rules18.pdf">Competition rules and timeline</a> </li>
+        <li> <a href="benchmarks.shtml">Benchmarks</a> </li>
+        <li> <a href="tools.shtml">Tools</a> </li>
+        <li> <a href="specs.shtml">Machine specifications</a> </li>
+        <li> <a href="participants.shtml">Participants</a> </li>
+        <li> <a href="results-toc.shtml">Results</a> </li> 
+-->
+        <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing list</a> </li>
+        <li> <a href="docs.shtml">Papers</a> </li>
+        <li> <a href="acknowledgments.shtml">Acknowledgments</a> </li>
+        <li> <a href="http://www.smt-lib.org/">SMT-LIB</a> </li>
+        <li> <a href="previous.shtml">Previous SMT-COMPs</a> </li>
+      </ul>
+    </td>
+    <td style="width:100px"></td>
+    <td>
+      <h2>News</h2>
+      <ul>
+        <li> March&nbsp;16: <a href="call-for-comments.txt">Call for Comments</a> issued </li>
+      </ul>
+      <br/>
+      <h2 style="display:inline">Key dates</h2>
+      To be confirmed. The deadline for solver submissions will be around the start of June.
+<!--      <h2 style="display:inline">Key dates</h2>&nbsp;&nbsp;(see the <a href="rules18.pdf">rules</a> for the complete timeline)
+      <ul>
+        <li> May&nbsp;1: Deadline for new benchmark contributions </li>
+        <li> June&nbsp;4: Deadline for first versions of solvers </li>
+        <li> June&nbsp;19: Deadline for final versions of solvers </li>
+        <li> July&nbsp;22-23: SMT Workshop (presentation of results) </li>
+      </ul>
+-->
+    </td>
+  </tr>
+</table>
+
+<p>
+The organizers of SMT-COMP 2018 are 
+<a href="https://swt.informatik.uni-freiburg.de/staff/heizmann">Matthias Heizmann</a>, 
+<a href="http://fmv.jku.at/niemetz/">Aina Niemetz</a>,
+<a href="http://www.cs.man.ac.uk/~regerg/">Giles Reger</a>,
+and <a href="http://user.it.uu.se/~tjawe125/">Tjark Weber</a>.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->

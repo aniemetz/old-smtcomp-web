@@ -1,0 +1,27 @@
+<!--#set var="title" value="Acknowledgments" --><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<p>
+SMT-COMP 2018 is organized under the direction of the SMT Steering
+Committee.  The organizing team is
+</p>
+
+<ul>
+  <li> <a href="https://swt.informatik.uni-freiburg.de/staff/heizmann">Matthias Heizmann</a> - University of Freiburg, Germany (co-organizer) </li>
+  <li><a href="http://fmv.jku.at/niemetz/">Aina Niemetz</a> - Standford University, USA (co-organizer) </li>
+  <li> <a href="http://www.cs.man.ac.uk/~regerg/">Giles Reger</a> - University of Manchester, UK (co-organizer) </li>
+  <li> <a href="http://user.it.uu.se/~tjawe125/">Tjark Weber</a> - Uppsala University, Sweden (chair) </li>
+</ul>
+
+<p>
+The competition uses the
+<a href="https://www.starexec.org">StarExec</a> service, which is
+hosted at the
+<a href="http://www.cs.uiowa.edu/">University of Iowa</a>.
+</p>
+
+<p>
+The SMT-COMP web site is hosted on SourceForge, at
+<a href="http://smtcomp.sourceforge.net/">smtcomp.sourceforge.net</a>.
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
