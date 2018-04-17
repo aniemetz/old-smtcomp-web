@@ -3,8 +3,9 @@
   <tr>
     <th style="width:10%"> <a href="<!--#echo var="base" -->index.shtml">Home</a> </th>
     <th> &bull; </th>
-<!--    <th style="width:10%"> <a href="rules17.pdf">Rules</a> </th>
+    <th style="width:10%"> <a href="rules18.pdf">Rules</a> </th>
     <th> &bull; </th>
+<!--
     <th style="width:10%"> <a href="benchmarks.shtml">Benchmarks</a> </th>
     <th> &bull; </th>
     <th style="width:10%"> <a href="tools.shtml">Tools</a> </th>
