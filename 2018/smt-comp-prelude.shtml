@@ -3,7 +3,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<meta name="author" content="Sylvain Conchon, David Deharbe, Tjark Weber" />
+<meta name="author" content="Matthias Heizmann, Aina Niemetz, Giles Reger, Tjark Weber" />
 <meta name="description" content="SMT-COMP: Satisfiability Modulo Theories Competition" />
 <meta name="keywords" content="satisfiability, decision procedures, first-order logic with equality, separation logic, difference logic, EUF, solvers" />
 <link rel="stylesheet" href="smt-style.css" type="text/css" />
