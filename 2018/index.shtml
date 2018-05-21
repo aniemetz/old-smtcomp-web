@@ -4,14 +4,16 @@
 The <i>13th International Satisfiability Modulo Theories Competition
 (SMT-COMP 2018)</i> is part of
 the <a href="http://smt-workshop.cs.uiowa.edu/2018/">SMT Workshop
-2018</a>, affiliated with <a href="http://www.floc2018.org/">FLoC 2018</a>.
-The SMT Workshop will include a block of time to present
+2018</a>, affiliated with <a href="http://www.floc2018.org/">FLoC
+2018</a>.  The SMT Workshop will include a block of time to present
 the competitors and results of the competition.
 </p>
 
-<!-- <p>
-<strong>Please use <a href="https://goo.gl/forms/HL6rbOywqW4sFo1D2">this form</a> to notify the organizers of solver submissions.</strong>
-</p> -->
+<p>
+<strong>Please
+use <a href="https://goo.gl/forms/3pAMFHsfDJqGqucR2">this form</a> to
+submit your solver to the competition.</strong>
+</p>
 
 <table>
   <tr>
