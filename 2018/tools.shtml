@@ -1,0 +1,24 @@
+<!--#set var="title" value="Tools"--><!--#include virtual="smt-comp-prelude.shtml" -->
+
+<h2>Main Track</h2>
+
+<ul>
+  <li> Benchmark scrambler: <a href="smtcomp2018_scrambler.tar.gz">sources</a> <a href="SMT-COMP-2018-Scrambler.tgz">StarExec binary</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li>
+  <li> Postprocessor: TBA <!--<a href="SMT-COMP-2018-Main-Track-Postprocessor.tgz">Postprocessor</a> (also available on <a href="http://www.starexec.org">StarExec</a>)--> </li>
+</ul>
+
+<h2>Application Track</h2>
+
+<ul>
+  <li> Benchmark scrambler: <a href="smtcomp2018_scrambler.tar.gz">sources</a> <a href="SMT-COMP-2018-Application-Scrambler.tgz">StarExec binary</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li>
+  <li> Postprocessor: TBA <!--<a href="SMT-COMP-2018-Application-Postprocessor.tgz">Postprocessor</a> (also available on <a href="http://www.starexec.org">StarExec</a>)--> </li>
+</ul>
+
+<h2>Unsat-Core Track</h2>
+
+<ul>
+  <li> Benchmark scrambler: <a href="smtcomp2018_scrambler.tar.gz">sources</a> <a href="SMT-COMP-2018-Unsat-Core-Scrambler.tgz">StarExec binary</a> (also available on <a href="http://www.starexec.org">StarExec</a>) </li>
+  <li> Postprocessor: TBA <!--<a href="SMT-COMP-2017-Unsat-Core-Track-Postprocessor.tgz">Postprocessor</a> (also available on <a href="http://www.starexec.org">StarExec</a>)--> </li>
+</ul>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
