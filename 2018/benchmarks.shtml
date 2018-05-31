@@ -154,7 +154,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>QF_FP</td>
-    <td>40302</td>
+    <td>40300</td>
   </tr>
   <tr>
     <td>QF_IDL</td>
@@ -250,7 +250,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>264141</b></td>
+    <td><b>264139</b></td>
   </tr>
 </table>
 
@@ -596,8 +596,8 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>QF_FP</td>
-    <td>20028</td>
-    <td>40302</td>
+    <td>20026</td>
+    <td>40300</td>
   </tr>
   <tr>
     <td>QF_IDL</td>
@@ -641,7 +641,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>QF_UF</td>
-    <td>4364</td>
+    <td>4350</td>
     <td>7457</td>
   </tr>
   <tr>
@@ -716,8 +716,8 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>133490</b></td>
-    <td><b>264141</b></td>
+    <td><b>133474</b></td>
+    <td><b>264139</b></td>
   </tr>
 </table>
 
