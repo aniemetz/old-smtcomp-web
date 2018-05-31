@@ -40,7 +40,7 @@ table.benchmarks tr td:first-child + td + td + td {
 
 <p>
   All non-incremental SMT-LIB benchmarks are eligible for the main
-  track.  In total, there are 50 main track divisions.
+  track. In total, there are 49 main track divisions.
 </p>
 
 <table class="benchmarks">
@@ -66,15 +66,15 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>AUFLIA</td>
-    <td>3276</td>
+    <td>4 (3272 excluded<sup><a href="#fn1">1</a></sup>)</td>
   </tr>
   <tr>
     <td>AUFLIRA</td>
     <td>20011</td>
   </tr>
   <tr>
-    <td>AUFNIA</td>
-    <td>3</td>
+    <td>AUFNIA<sup><a href="#fn2">2</a></sup></td>
+    <td>0 (3 excluded<sup><a href="#fn1">1</a></sup>)</td>
   </tr>
   <tr>
     <td>AUFNIRA</td>
@@ -130,7 +130,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>QF_AUFLIA</td>
-    <td>1303</td>
+    <td>1009 (294 excluded<sup><a href="#fn1">1</a></sup>)</td>
   </tr>
   <tr>
     <td>QF_AUFNIA</td>
@@ -190,7 +190,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>QF_UF</td>
-    <td>7457</td>
+    <td>7423 (34 excluded<sup><a href="#fn1">1</a></sup>)</td>
   </tr>
   <tr>
     <td>QF_UFBV</td>
@@ -250,9 +250,20 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>264139</b></td>
+    <td><b>260536 (3603 excluded)</b></td>
   </tr>
 </table>
+
+<p>
+  <span id="fn1">
+    1. All benchmarks in family <tt>20170829-Rodin/</tt> were excluded
+    because they contained <tt>:named</tt> terms.
+  </span><br/>
+  <span id="fn2">
+    2. As there are no eligible benchmarks in SMT-LIB, AUFNIA is not
+    actually a main track division in SMT-COMP 2018.
+  </span>
+</p>
 
 <h2>Application Track</h2>
 
@@ -264,11 +275,11 @@ table.benchmarks tr td:first-child + td + td + td {
   <tr>
     <th>Logic</th>
     <th>Benchmarks eligible for SMT-COMP</th>
-    <th>Benchmarks with unknown status<sup><a href="#fn1">1</a></sup></th>
+    <th>Benchmarks with unknown status<sup><a href="#fn3">3</a></sup></th>
     <th>Benchmarks in SMT-LIB</th>
   </tr>
   <tr>
-    <td>ABVFP<sup><a href="#fn2">2</a></sup></td>
+    <td>ABVFP<sup><a href="#fn4">4</a></sup></td>
     <td>0</td>
     <td>4</td>
     <td>4</td>
@@ -298,7 +309,7 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>18</td>
   </tr>
   <tr>
-    <td>BVFP<sup><a href="#fn2">2</a></sup></td>
+    <td>BVFP<sup><a href="#fn4">4</a></sup></td>
     <td>0</td>
     <td>10</td>
     <td>10</td>
@@ -310,8 +321,8 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>6</td>
   </tr>
   <tr>
-    <td>LRA<sup><a href="#fn2">2</a></sup></td>
-    <td>0 (5 excluded<sup><a href="#fn3">3</a></sup>)</td>
+    <td>LRA<sup><a href="#fn4">4</a></sup></td>
+    <td>0 (5 excluded<sup><a href="#fn5">5</a></sup>)</td>
     <td>0</td>
     <td>5</td>
   </tr>
@@ -322,7 +333,7 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>15</td>
   </tr>
   <tr>
-    <td>QF_ABVFP<sup><a href="#fn2">2</a></sup></td>
+    <td>QF_ABVFP<sup><a href="#fn4">4</a></sup></td>
     <td>0</td>
     <td>9</td>
     <td>9</td>
@@ -388,7 +399,7 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>10</td>
   </tr>
   <tr>
-    <td>QF_UF<sup><a href="#fn2">2</a></sup></td>
+    <td>QF_UF<sup><a href="#fn4">4</a></sup></td>
     <td>0</td>
     <td>766</td>
     <td>766</td>
@@ -432,18 +443,18 @@ table.benchmarks tr td:first-child + td + td + td {
 </table>
 
 <p>
-  <span id="fn1">
-    1. For the application track, a benchmark is ineligible if its
+  <span id="fn3">
+    3. For the application track, a benchmark is ineligible if its
     <u>first</u> <tt>check-sat</tt> command has unknown status.
     Otherwise, (some non-empty prefix of) the benchmark is eligible.
   </span><br/>
-  <span id="fn2">
-    2. As there are no eligible benchmarks in SMT-LIB, ABVFP, BVFP,
+  <span id="fn4">
+    4. As there are no eligible benchmarks in SMT-LIB, ABVFP, BVFP,
     LRA, QF_ABVFP and QF_UF are not actually application track
     divisions in SMT-COMP 2018.
   </span><br/>
-  <span id="fn3">
-    3. The five benchmarks
+  <span id="fn5">
+    5. The five benchmarks
     in <tt>incremental/LRA/20160930-Kopczynski-LOIS/</tt> were
     excluded because they did not contain <tt>:status</tt>
     information.
@@ -455,7 +466,7 @@ table.benchmarks tr td:first-child + td + td + td {
 <p>
   All <u>unsatisfiable</u> main track benchmarks are eligible for the
   unsat-core track (with minor modifications, e.g., named assertions).
-  In total, there are 45 unsat-core track divisions.
+  In total, there are 44 unsat-core track divisions.
 </p>
 
 <table class="benchmarks">
@@ -465,7 +476,7 @@ table.benchmarks tr td:first-child + td + td + td {
     <th>All main track benchmarks</th>
   </tr>
   <tr>
-    <td>ABVFP<sup><a href="#fn4">4</a></sup></td>
+    <td>ABVFP<sup><a href="#fn6">6</a></sup></td>
     <td>0</td>
     <td>1</td>
   </tr>
@@ -480,14 +491,14 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>1709</td>
   </tr>
   <tr>
-    <td>AUFDTLIA<sup><a href="#fn4">4</a></sup></td>
+    <td>AUFDTLIA<sup><a href="#fn6">6</a></sup></td>
     <td>0</td>
     <td>728</td>
   </tr>
   <tr>
     <td>AUFLIA</td>
-    <td>2505</td>
-    <td>3276</td>
+    <td>3</td>
+    <td>4</td>
   </tr>
   <tr>
     <td>AUFLIRA</td>
@@ -495,9 +506,9 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>20011</td>
   </tr>
   <tr>
-    <td>AUFNIA</td>
-    <td>3</td>
-    <td>3</td>
+    <td>AUFNIA<sup><a href="#fn6">6</a></sup></td>
+    <td>0</td>
+    <td>0</td>
   </tr>
   <tr>
     <td>AUFNIRA</td>
@@ -510,12 +521,12 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>5751</td>
   </tr>
   <tr>
-    <td>BVFP<sup><a href="#fn4">4</a></sup></td>
+    <td>BVFP<sup><a href="#fn6">6</a></sup></td>
     <td>0</td>
     <td>24</td>
   </tr>
   <tr>
-    <td>FP<sup><a href="#fn4">4</a></sup></td>
+    <td>FP<sup><a href="#fn6">6</a></sup></td>
     <td>0</td>
     <td>61</td>
   </tr>
@@ -566,8 +577,8 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>QF_AUFLIA</td>
-    <td>760</td>
-    <td>1303</td>
+    <td>516</td>
+    <td>1009</td>
   </tr>
   <tr>
     <td>QF_AUFNIA</td>
@@ -641,8 +652,8 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td>QF_UF</td>
-    <td>4350</td>
-    <td>7457</td>
+    <td>4330</td>
+    <td>7423</td>
   </tr>
   <tr>
     <td>QF_UFBV</td>
@@ -690,7 +701,7 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>4527</td>
   </tr>
   <tr>
-    <td>UFDTLIA<sup><a href="#fn4">4</a></sup></td>
+    <td>UFDTLIA<sup><a href="#fn6">6</a></sup></td>
     <td>0</td>
     <td>303</td>
   </tr>
@@ -716,16 +727,16 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>133474</b></td>
-    <td><b>264139</b></td>
+    <td><b>130705</b></td>
+    <td><b>260536</b></td>
   </tr>
 </table>
 
 <p>
-  <span id="fn4">
-    4. As there are no eligible benchmarks in SMT-LIB, ABVFP,
-    AUFDTLIA, BVFP, FP and UFDTLIA are not actually unsat-core track
-    divisions in SMT-COMP 2018.
+  <span id="fn6">
+    6. As there are no eligible benchmarks in SMT-LIB, ABVFP,
+    AUFDTLIA, AUFNIA, BVFP, FP and UFDTLIA are not actually unsat-core
+    track divisions in SMT-COMP 2018.
   </span>
 </p>
 
