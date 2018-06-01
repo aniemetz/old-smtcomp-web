@@ -40,7 +40,8 @@ table.benchmarks tr td:first-child + td + td + td {
 
 <p>
   All non-incremental SMT-LIB benchmarks are eligible for the main
-  track. In total, there are 49 main track divisions.
+  track. In total, there are 50 main track divisions. Division
+  QF_SLIA, which contains strings, is experimental in 2018.
 </p>
 
 <table class="benchmarks">
@@ -189,6 +190,10 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>255</td>
   </tr>
   <tr>
+    <td>QF_SLIA</td>
+    <td>72705</td>
+  </tr>
+  <tr>
     <td>QF_UF</td>
     <td>7423 (34 excluded<sup><a href="#fn1">1</a></sup>)</td>
   </tr>
@@ -250,7 +255,7 @@ table.benchmarks tr td:first-child + td + td + td {
   </tr>
   <tr>
     <td><b>Total</b></td>
-    <td><b>260536 (3603 excluded)</b></td>
+    <td><b>333241 (3603 excluded)</b></td>
   </tr>
 </table>
 
@@ -651,6 +656,11 @@ table.benchmarks tr td:first-child + td + td + td {
     <td>255</td>
   </tr>
   <tr>
+    <td>QF_SLIA<sup><a href="#fn6">6</a></sup></td>
+    <td>0</td>
+    <td>72705</td>
+  </tr>
+  <tr>
     <td>QF_UF</td>
     <td>4330</td>
     <td>7423</td>
@@ -728,15 +738,15 @@ table.benchmarks tr td:first-child + td + td + td {
   <tr>
     <td><b>Total</b></td>
     <td><b>130705</b></td>
-    <td><b>260536</b></td>
+    <td><b>333241</b></td>
   </tr>
 </table>
 
 <p>
   <span id="fn6">
     6. As there are no eligible benchmarks in SMT-LIB, ABVFP,
-    AUFDTLIA, AUFNIA, BVFP, FP and UFDTLIA are not actually unsat-core
-    track divisions in SMT-COMP 2018.
+    AUFDTLIA, AUFNIA, BVFP, FP, QF_SLIA and UFDTLIA are not actually
+    unsat-core track divisions in SMT-COMP 2018.
   </span>
 </p>
 
