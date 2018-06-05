@@ -17,9 +17,13 @@ table.divisions td {
     text-align: center;
 }
 </style>
+
+<p>These solvers have been submitted to SMT-COMP 2018 or were entered
+  as non-competing solvers by the organizers for comparison.</p>
+
 <table class="participants">
   <tr>
-    <th>Solver Name</th>
+    <th>Solver</th>
     <th>Main Track</th>
     <th>Application Track</th>
     <th>Unsat-Core Track</th>
@@ -82,14 +86,14 @@ table.divisions td {
     <td></td>
     <td>2187327402</td>
     <td></td>
-    <td>Francois Bobot (<a href="mailto:francois.bobot@cea.fr">francois.bobot@cea.fr</a>)</td>
+    <td>Fran&ccedil;ois Bobot (<a href="mailto:francois.bobot@cea.fr">francois.bobot@cea.fr</a>)</td>
   </tr>
   <tr>
     <td>Ctrl-Ergo</td>
     <td>X</td>
     <td></td>
     <td></td>
-    <td>16401</td>
+    <td>16616</td>
     <td></td>
     <td>16</td>
     <td></td>
@@ -129,7 +133,40 @@ table.divisions td {
     <td>Andres N&ouml;tzli (<a href="mailto:noetzli@stanford.edu">noetzli@stanford.edu</a>)</td>
   </tr>
   <tr>
-    <td>MineyRink 2018.1 MT</td>
+    <td>MathSAT 5.5.2 (Application)<sup><a href="#fnn">n</a></sup></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>17271</td>
+    <td></td>
+    <td>-</td>
+    <td></td>
+    <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.5.2-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.5.2-linux-x86_64.tar.gz</a></td>
+  </tr>
+  <tr>
+    <td>MathSAT 5.5.2 (Main)<sup><a href="#fnn">n</a></sup></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>17270</td>
+    <td></td>
+    <td>-</td>
+    <td></td>
+    <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.5.2-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.5.2-linux-x86_64.tar.gz</a></td>
+  </tr>
+  <tr>
+    <td>MathSAT 5.5.2 (Unsat-core)<sup><a href="#fnn">n</a></sup></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>17272</td>
+    <td></td>
+    <td>-</td>
+    <td></td>
+    <td><a href="http://mathsat.fbk.eu/download.php?file=mathsat-5.5.2-linux-x86_64.tar.gz">http://mathsat.fbk.eu/download.php?file=mathsat-5.5.2-linux-x86_64.tar.gz</a></td>
+  </tr>
+  <tr>
+    <td>MinkeyRink 2018.1 MT</td>
     <td>X</td>
     <td></td>
     <td></td>
@@ -169,7 +206,7 @@ table.divisions td {
     <td>16351</td>
     <td></td>
     <td>716484617</td>
-    <td><a href="https://github.com/ultimate-pa/smtinterpol/raw/62a8304c/SMTInterpol/doc/sysdesc/sysdesc.pdf">SMTInterpol</a></td>
+    <td><a href="systemDescriptions/SMTInterpol.pdf">SMTInterpol</a></td>
     <td>Jochen Hoenicke (<a href="mailto:hoenicke@informatik.uni-freiburg.de">hoenicke@informatik.uni-freiburg.de</a>)</td>
   </tr>
   <tr>
@@ -228,17 +265,6 @@ table.divisions td {
     <td>Martin Bromberger (<a href="mailto:mbromber@mpi-inf.mpg.de">mbromber@mpi-inf.mpg.de</a>)</td>
   </tr>
   <tr>
-    <td>STP-CMS-st</td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td>16370</td>
-    <td></td>
-    <td>5</td>
-    <td></td>
-    <td>Norbert Manthey (<a href="mailto:nmanthey@conp-solutions.com">nmanthey@conp-solutions.com</a>)</td>
-  </tr>
-  <tr>
     <td>STP-CMS-mt</td>
     <td>X</td>
     <td></td>
@@ -246,6 +272,17 @@ table.divisions td {
     <td>16372</td>
     <td></td>
     <td>2015</td>
+    <td></td>
+    <td>Norbert Manthey (<a href="mailto:nmanthey@conp-solutions.com">nmanthey@conp-solutions.com</a>)</td>
+  </tr>
+  <tr>
+    <td>STP-CMS-st</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>16370</td>
+    <td></td>
+    <td>5</td>
     <td></td>
     <td>Norbert Manthey (<a href="mailto:nmanthey@conp-solutions.com">nmanthey@conp-solutions.com</a>)</td>
   </tr>
@@ -294,17 +331,6 @@ table.divisions td {
     <td>Hans-J&ouml;rg Schurr (<a href="mailto:hans-jorg.schurr@inria.fr">hans-jorg.schurr@inria.fr</a>)</td>
   </tr>
   <tr>
-    <td>Yices-2.6.0 (Main)</td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td>16355</td>
-    <td></td>
-    <td>256528</td>
-    <td></td>
-    <td>Bruno Dutertre (<a href="mailto:Bruno.Dutertre@sri.com">Bruno.Dutertre@sri.com</a>)</td>
-  </tr>
-  <tr>
     <td>Yices-2.6.0 (Application)</td>
     <td></td>
     <td>X</td>
@@ -312,6 +338,17 @@ table.divisions td {
     <td>16356</td>
     <td></td>
     <td>258528</td>
+    <td></td>
+    <td>Bruno Dutertre (<a href="mailto:Bruno.Dutertre@sri.com">Bruno.Dutertre@sri.com</a>)</td>
+  </tr>
+  <tr>
+    <td>Yices-2.6.0 (Main)</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>16355</td>
+    <td></td>
+    <td>256528</td>
     <td></td>
     <td>Bruno Dutertre (<a href="mailto:Bruno.Dutertre@sri.com">Bruno.Dutertre@sri.com</a>)</td>
   </tr>
@@ -326,7 +363,37 @@ table.divisions td {
     <td></td>
     <td>Bruno Dutertre (<a href="mailto:Bruno.Dutertre@sri.com">Bruno.Dutertre@sri.com</a>)</td>
   </tr>
+  <tr>
+    <td>Z3 (4.7.1)<sup><a href="#fnn">n</a></sup></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>16764</td>
+    <td></td>
+    <td>-</td>
+    <td></td>
+    <td><a href="https://github.com/Z3Prover/z3/releases/download/z3-4.7.1/z3-4.7.1.tar.gz">https://github.com/Z3Prover/z3/releases/download/z3-4.7.1/z3-4.7.1.tar.gz</a></td>
+  </tr>
+  <tr>
+    <td><b>Total</b></td>
+    <td><b>24</b></td>
+    <td><b>6</b></td>
+    <td><b>5</b></td>
+    <td></td>
+    <td></td>
+    <td><b>773039129</b> (mod 2<sup>30</sup>)</td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
+
+<p>
+  <span id="fnn">
+    n. Non-competing.
+  </span>
+</p>
+
+<p>The opening value of the NYSE Composite Index on 2018-06-11 was XXXXX.XX, resulting in a competition seed of 773039129 + XXXXX = <b>SSSSS</b>.</p>
 
 <h2>Divisions</h2>
 
@@ -334,113 +401,61 @@ table.divisions td {
 
 <table class="participants divisions">
   <tr>
-    <th>Solver Name</th>
-    <th>ABVFP</th>
-    <th>ALIA</th>
-    <th>ANIA</th>
-    <th>AUFBVDTLIA</th>
-    <th>AUFDTLIA</th>
-    <th>AUFLIA</th>
-    <th>AUFLIRA</th>
-    <th>AUFNIA</th>
-    <th>AUFNIRA</th>
-    <th>BV</th>
-    <th>BVFP</th>
-    <th>FP</th>
-    <th>LIA</th>
-    <th>LRA</th>
-    <th>NIA</th>
-    <th>NRA</th>
-    <th>QF_ABV</th>
-    <th>QF_ABVFP</th>
-    <th>QF_ALIA</th>
-    <th>QF_ANIA</th>
-    <th>QF_AUFBV</th>
-    <th>QF_AUFLIA</th>
-    <th>QF_AX</th>
-    <th>QF_BV</th>
-    <th>QF_BVFP</th>
-    <th>QF_DT</th>
-    <th>QF_IDL</th>
-    <th>QF_FP</th>
-    <th>QF_LIA</th>
-    <th>QF_LIRA</th>
-    <th>QF_LRA</th>
-    <th>QF_NIA</th>
-    <th>QF_NIRA</th>
-    <th>QF_NRA</th>
-    <th>QF_RDL</th>
-    <th>QF_UF</th>
-    <th>QF_UFBV</th>
-    <th>QF_UFIDL</th>
-    <th>QF_UFLIA</th>
-    <th>QF_UFLRA</th>
-    <th>QF_UFNIA</th>
-    <th>QF_UFNRA</th>
-    <th>UF</th>
-    <th>UFBV</th>
-    <th>UFDT</th>
-    <th>UFDTLIA</th>
-    <th>UFIDL</th>
-    <th>UFLIA</th>
-    <th>UFLRA</th>
-    <th>UFNIA</th>
+    <th>Solver</th>
+    <th>ABVFP<sup><a href="#fn1">1</a></sup></th>
+    <th>ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>ANIA<sup><a href="#fn2">2</a></sup></th>
+    <th>AUFBVDTLIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>AUFDTLIA<sup><a href="#fn1">1</a></sup></th>
+    <th>AUFLIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>AUFLIRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>AUFNIRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>BV<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>BVFP<sup><a href="#fn1">1</a></sup></th>
+    <th>FP<sup><a href="#fn1">1</a></sup></th>
+    <th>LIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>LRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>NIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>NRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_ABV<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_ABVFP<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_ANIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_AUFBV<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_AUFLIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_AUFNIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_AX<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_BV<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_BVFP<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_DT<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_FP<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_IDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_LIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_LIRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_LRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_NIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_NIRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_NRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_RDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_SLIA<sup><a href="#fn1">1</a></sup></th>    
+    <th>QF_UF<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_UFBV<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_UFIDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_UFLIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_UFNIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>QF_UFNRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>UF<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>UFBV<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>UFDT<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>UFDTLIA<sup><a href="#fn1">1</a></sup></th>
+    <th>UFIDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>UFLIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
+    <th>UFLRA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
+    <th>UFNIA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
   </tr>
   <tr>
-    <td style="text-align:left;">AProVE</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">Alt-Ergo-SMTComp-2018</td>
+    <td style="text-align:left;">Alt-Ergo-SMTComp-2018<sup><a href="#fn1">1</a></sup></td>
     <td></td>
     <td>X</td>
     <td></td>
@@ -449,7 +464,8 @@ table.divisions td {
     <td>X</td>
     <td>X</td>
     <td>X</td>
-    <td>X</td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -493,8 +509,61 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">Boolector</td>
+    <td style="text-align:left;">AProVE<sup><a href="#fn1">1</a></sup></td>
     <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Boolector<sup><a href="#fn1">1</a></sup></td>
     <td></td>
     <td></td>
     <td></td>
@@ -517,7 +586,9 @@ table.divisions td {
     <td>X</td>
     <td></td>
     <td></td>
+    <td></td>
     <td>X</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -546,8 +617,7 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">Boolector (application track)</td>
-    <td></td>
+    <td style="text-align:left;">Boolector (application track)<sup><a href="#fn2">2</a></sup></td>
     <td></td>
     <td></td>
     <td></td>
@@ -570,7 +640,9 @@ table.divisions td {
     <td>X</td>
     <td></td>
     <td></td>
+    <td></td>
     <td>X</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -599,15 +671,7 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">COLIBRI</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td style="text-align:left;">COLIBRI<sup><a href="#fn1">1</a></sup></td>
     <td></td>
     <td></td>
     <td></td>
@@ -627,7 +691,16 @@ table.divisions td {
     <td>X</td>
     <td></td>
     <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -652,7 +725,7 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">Ctrl-Ergo</td>
+    <td style="text-align:left;">Ctrl-Ergo<sup><a href="#fn1">1</a></sup></td>
     <td></td>
     <td></td>
     <td></td>
@@ -684,6 +757,7 @@ table.divisions td {
     <td>X</td>
     <td></td>
     <td>X</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -705,60 +779,8 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">CVC4-application</td>
+    <td style="text-align:left;">CVC4-application<sup><a href="#fn2">2</a></sup></td>
     <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">CVC4-main</td>
     <td>X</td>
     <td>X</td>
     <td>X</td>
@@ -811,7 +833,8 @@ table.divisions td {
     <td>X</td>
   </tr>
   <tr>
-    <td style="text-align:left;">CVC4-uc</td>
+    <td style="text-align:left;">CVC4-main<sup><a href="#fn1">1</a></sup></td>
+    <td>X</td>
     <td>X</td>
     <td>X</td>
     <td>X</td>
@@ -864,7 +887,69 @@ table.divisions td {
     <td>X</td>
   </tr>
   <tr>
-    <td style="text-align:left;">Q3B</td>
+    <td style="text-align:left;">CVC4-uc<sup><a href="#fn3">3</a></sup></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">MathSAT 5.5.2 (Application)<sup><a href="#fn2">2</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -875,6 +960,269 @@ table.divisions td {
     <td></td>
     <td></td>
     <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">MathSAT 5.5.2 (Main)<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">MathSAT 5.5.2 (Unsat-core)<sup><a href="#fn3">3</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">MinkeyRink 2018.1 MT<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">MinkeyRink 2018.1 ST<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Q3B<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -917,7 +1265,65 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">MineyRink 2018.1 MT</td>
+    <td style="text-align:left;">SMTInterpol<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">SMTRAT<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -942,6 +1348,57 @@ table.divisions td {
     <td></td>
     <td></td>
     <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">SMTRAT-BV<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -970,7 +1427,11 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">MinkeyRink 2018.1 ST</td>
+    <td style="text-align:left;">SMTRAT-DL<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -995,6 +1456,165 @@ table.divisions td {
     <td></td>
     <td></td>
     <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">SMTRAT-MCSAT<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">SPASS-SATT<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">STP-CMS-mt<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -1023,63 +1643,7 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">SMTInterpol</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">SMTRAT</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td style="text-align:left;">STP-CMS-st<sup><a href="#fn1">1</a></sup></td>
     <td></td>
     <td></td>
     <td></td>
@@ -1105,55 +1669,6 @@ table.divisions td {
     <td></td>
     <td>X</td>
     <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">SMTRAT-BV</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -1182,67 +1697,7 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">SMTRAT-DL</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">SMTRAT-MCSAT</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td style="text-align:left;">STP-Riss-st<sup><a href="#fn1">1</a></sup></td>
     <td></td>
     <td></td>
     <td></td>
@@ -1268,104 +1723,6 @@ table.divisions td {
     <td></td>
     <td>X</td>
     <td></td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">SPASS-SATT</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">STP-CMS-mt</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -1394,118 +1751,11 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">STP-CMS-st</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">STP-Riss-st</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">Vampire 4.3</td>
+    <td style="text-align:left;">Vampire 4.3<sup><a href="#fn1">1</a></sup></td>
     <td></td>
     <td>X</td>
     <td>X</td>
     <td></td>
-    <td>X</td>
     <td>X</td>
     <td>X</td>
     <td>X</td>
@@ -1517,6 +1767,8 @@ table.divisions td {
     <td>X</td>
     <td>X</td>
     <td>X</td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -1553,7 +1805,7 @@ table.divisions td {
     <td>X</td>
   </tr>
   <tr>
-    <td style="text-align:left;">veriT</td>
+    <td style="text-align:left;">veriT<sup><a href="#fn1">1</a></sup></td>
     <td></td>
     <td>X</td>
     <td></td>
@@ -1565,7 +1817,6 @@ table.divisions td {
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
     <td>X</td>
     <td></td>
     <td></td>
@@ -1580,15 +1831,17 @@ table.divisions td {
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
     <td>X</td>
     <td></td>
     <td>X</td>
     <td></td>
+    <td></td>
+    <td></td>
     <td>X</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
     <td>X</td>
     <td></td>
     <td>X</td>
@@ -1606,7 +1859,7 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">veriT+raSAT+Reduce</td>
+    <td style="text-align:left;">veriT+raSAT+Reduce<sup><a href="#fn1">1</a></sup></td>
     <td></td>
     <td></td>
     <td></td>
@@ -1648,112 +1901,7 @@ table.divisions td {
     <td></td>
     <td></td>
     <td></td>
-    <td>X</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">Yices-2.6.0 (Application)</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="text-align:left;">Yices-2.6.0 (Main)</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td></td>
-    <td></td>
-    <td>X</td>
-    <td></td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
-    <td>X</td>
     <td>X</td>
     <td></td>
     <td></td>
@@ -1765,8 +1913,7 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">Yices-2.6.0 (Unsat-Core)</td>
-    <td></td>
+    <td style="text-align:left;">Yices-2.6.0 (Application)<sup><a href="#fn2">2</a></sup></td>
     <td></td>
     <td></td>
     <td></td>
@@ -1788,12 +1935,66 @@ table.divisions td {
     <td></td>
     <td>X</td>
     <td>X</td>
-    <td>X</td>
-    <td>X</td>
     <td></td>
     <td></td>
     <td>X</td>
     <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Yices-2.6.0 (Main)<sup><a href="#fn1">1</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td>X</td>
     <td>X</td>
     <td>X</td>
@@ -1801,6 +2002,8 @@ table.divisions td {
     <td>X</td>
     <td>X</td>
     <td>X</td>
+    <td>X</td>
+    <td></td>
     <td>X</td>
     <td>X</td>
     <td>X</td>
@@ -1817,5 +2020,126 @@ table.divisions td {
     <td></td>
     <td></td>
   </tr>
-
+  <tr>
+    <td style="text-align:left;">Yices-2.6.0 (Unsat-Core)<sup><a href="#fn3">3</a></sup></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Z3 (4.7.1)<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+  </tr>
 </table>
+
+<p>
+  <span id="fn1">
+    1. Main track.
+  </span><br/>
+  <span id="fn2">
+    2. Application track.
+  </span><br/>
+  <span id="fn3">
+    3. Unsat-core track.
+  </span>
+</p>
+
+<!--#include virtual="smt-comp-postlude.shtml" -->
