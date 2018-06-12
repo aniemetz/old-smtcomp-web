@@ -292,7 +292,7 @@ table.participants tr th, table.participants tr td {
   <td>12010</td>
   <td>11976743</td>
   <td></td>
-  <td>Dejan Jovanovi&cacute; (<a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a>)</td>
+  <td>Dejan Jovanovi&#263; (<a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a>)</td>
 </tr>
 <tr>
   <td>Yices2 (Application)</td>
@@ -303,7 +303,7 @@ table.participants tr th, table.participants tr td {
   <td>12011</td>
   <td>17735201</td>
   <td></td>
-  <td>Dejan Jovanovi&cacute; (<a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a>)</td>
+  <td>Dejan Jovanovi&#263; (<a href="mailto:dejan.jovanovic@sri.com">dejan.jovanovic@sri.com</a>)</td>
 </tr>
 <tr>
   <td>Z3 (4.5.0)<sup><a href="#fnn">n</a></sup></td>
@@ -344,7 +344,7 @@ table.participants tr th, table.participants tr td {
 <table class="participants">
 <tr>
   <th>Solver</th>
-  <th>ABVFP<sup><a href="#fn1">1</a></th>
+  <th>ABVFP<sup><a href="#fn1">1</a></sup></th>
   <th>ALIA<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
   <th>ANIA<sup><a href="#fn2">2</a></sup></th>
   <th>AUFBVDTLIA<sup><a href="#fn1">1</a></sup></th>
