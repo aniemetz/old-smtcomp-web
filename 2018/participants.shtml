@@ -170,7 +170,7 @@ table.divisions td {
     <td></td>
     <td></td>
     <td>X</td>
-    <td>17272</td>
+    <td>19826</td>
     <td></td>
     <td>-</td>
     <td></td>
@@ -437,7 +437,7 @@ table.divisions td {
     <th>QF_NIRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
     <th>QF_NRA<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
     <th>QF_RDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
-    <th>QF_SLIA<sup><a href="#fn1">1</a></sup></th>    
+    <th>QF_SLIA<sup><a href="#fn1">1</a></sup></th>
     <th>QF_UF<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
     <th>QF_UFBV<sup><a href="#fn1">1</a>,<a href="#fn2">2</a>,<a href="#fn3">3</a></sup></th>
     <th>QF_UFIDL<sup><a href="#fn1">1</a>,<a href="#fn3">3</a></sup></th>
@@ -1023,18 +1023,18 @@ table.divisions td {
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>X</td>
     <td>X</td>
     <td></td>
     <td>X</td>
     <td></td>
     <td></td>
     <td></td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
     <td>X</td>
     <td>X</td>
     <td></td>
@@ -1077,18 +1077,18 @@ table.divisions td {
     <td></td>
     <td></td>
     <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
     <td></td>
     <td>X</td>
     <td></td>
     <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>X</td>
     <td>X</td>
-    <td></td>
     <td>X</td>
     <td>X</td>
     <td></td>
@@ -1131,18 +1131,18 @@ table.divisions td {
     <td></td>
     <td></td>
     <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
     <td></td>
     <td>X</td>
     <td></td>
     <td>X</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
     <td>X</td>
     <td>X</td>
-    <td></td>
     <td>X</td>
     <td>X</td>
     <td></td>
