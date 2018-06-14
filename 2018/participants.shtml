@@ -63,7 +63,7 @@ table.divisions td {
     <td>16381</td>
     <td>19729</td>
     <td>42</td>
-    <td></td>
+    <td><a href="systemDescriptions/Boolector.pdf">Boolector</a></td>
     <td>Mathias Preiner (<a href="mailto:mathias.preiner@gmail.com">mathias.preiner@gmail.com</a>)</td>
   </tr>
   <tr>
@@ -74,7 +74,7 @@ table.divisions td {
     <td>16384</td>
     <td>19730</td>
     <td>42</td>
-    <td></td>
+    <td><a href="systemDescriptions/Boolector.pdf">Boolector</a></td>
     <td>Mathias Preiner (<a href="mailto:mathias.preiner@gmail.com">mathias.preiner@gmail.com</a>)</td>
   </tr>
   <tr>
