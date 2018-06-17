@@ -201,7 +201,7 @@ table.divisions td {
   <tr>
     <td>opensmt2<sup><a href="#fnn">n</a></sup></td>
     <td>X</td>
-    <td>X</td>
+    <td></td>
     <td></td>
     <td>16651</td>
     <td>19938</td>
@@ -377,7 +377,7 @@ table.divisions td {
   <tr>
     <td><b>Total</b></td>
     <td><b>24</b></td>
-    <td><b>7</b></td>
+    <td><b>6</b></td>
     <td><b>5</b></td>
     <td></td>
     <td></td>
@@ -1265,7 +1265,7 @@ table.divisions td {
     <td></td>
   </tr>
   <tr>
-    <td style="text-align:left;">opensmt2<sup><a href="#fn1">1</a>,<a href="#fn2">2</a></sup></td>
+    <td style="text-align:left;">opensmt2<sup><a href="#fn1">1</a></sup></td>
     <td></td>
     <td></td>
     <td></td>
