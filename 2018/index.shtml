@@ -27,9 +27,7 @@ submit your solver to the competition.</strong>
         <li> <a href="tools.shtml">Tools</a> </li>
         <li> <a href="specs.shtml">Machine specifications</a> </li>
         <li> <a href="participants.shtml">Participants</a> </li>
-<!--
         <li> <a href="results-toc.shtml">Results</a> </li>
--->
         <li> <a href="http://cs.nyu.edu/mailman/listinfo/smt-comp">Mailing list</a> </li>
         <li> <a href="docs.shtml">Papers</a> </li>
         <li> <a href="acknowledgments.shtml">Acknowledgments</a> </li>
@@ -45,6 +43,7 @@ submit your solver to the competition.</strong>
         <li> April&nbsp;17: Draft <a href="rules18.pdf">rules</a> posted </li>
         <li> May&nbsp;21: Final <a href="call-for-solvers.txt">Call for Solvers</a> issued </li>
         <li> June&nbsp;12: <a href="https://www.starexec.org/starexec/secure/explore/spaces.jsp?id=303339">Competition jobs</a> started </li>
+        <li> July&nbsp;3: <a href="results-toc.shtml">Results online</a>
       </ul>
       <br/>
       <h2 style="display:inline">Key dates</h2>&nbsp;&nbsp;(see the <a href="rules18.pdf">rules</a> for the complete timeline)
