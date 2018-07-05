@@ -7,6 +7,9 @@
 <meta name="description" content="SMT-COMP: Satisfiability Modulo Theories Competition" />
 <meta name="keywords" content="satisfiability, decision procedures, first-order logic with equality, separation logic, difference logic, EUF, solvers" />
 <link rel="stylesheet" href="smt-style.css" type="text/css" />
+<script type="text/javascript" src="../jquery-latest.js"></script>
+<script type="text/javascript" src="../jquery.tablesorter.js"></script>
+<script>$(document).ready(function() { $("#sequential").tablesorter(); } )</script>
 <title><!--#echo var="title" --></title>
 </head>
 

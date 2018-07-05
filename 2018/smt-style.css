@@ -5,9 +5,9 @@ hr { padding-bottom: 0em; margin: .5em 0em;
      text-align: left; clear: both; }
 h1, h2, h3, h4, h5, h6 { text-align: left;
                          font-weight: normal;
-                         color: #4D1F00; }
-h2.hilite { color: #FFFFFF;
-            background-color: #4D1F00;
+                         color: #3F1A02; }
+h2.hilite { color: #ffffff;
+            background-color: #3F1A02;
 	    font-weight: bold;
 	    line-height: 1.1em;
 	    padding-left: .2em; }
@@ -19,7 +19,7 @@ li em { font-style: normal; font-size: larger; font-weight: normal; }
 tt, pre { font-family: Courier, monospace; font-size: 1.1em}
 td.label {font-style: italic; font-weight: bold; text-align: right;}
 pre.block {font-family: ariel, helvetica, sans-serif; padding-left: 2em; }
-table.centered-small { width: 100%; background-color: #55af4b;
+table.centered-small { width: 100%; background-color: #D9A360;
                        border-style: solid; border-width: thin;
                        font-size: small; text-decoration: none;
                        margin:20px 0px 0px 0px; }
@@ -32,18 +32,64 @@ table.centered-small a:link { text-decoration: none; }
 table.centered-small a:visited { text-decoration: none; }
 table.centered-small a:active { text-decoration: none; }
 
-table.score { width: 80%; background-color: #55af4b;
+table.score { width: 80%; background-color: #D9A360;
               border-style: solid; border-width: thin; 
               text-decoration: none; margin: 1em} 
 
-table.score2 { width: 90%; background-color: #55af4b;
+table.score2 { width: 90%; background-color: #D9A360;
               border-style: solid; border-width: thin; 
               text-decoration: none; margin: 1em} 
 
+table.result {
+  table-layout:fixed;
+  border-collapse:collapse;
+  border-spacing:0;
+  border:1px solid black;
+} 
+table.result td {
+  padding:0.5em;
+  border: 1px solid black;
+}
+
+table.sorted {
+ font-family:arial;
+ background-color: #CDCDCD;
+ width: 100%;
+ text-align: left;
+}
+table.sorted thead tr th, table.sorted tfoot tr th {
+ background-color: #e6EEEE;
+ padding: 4px;
+ border: 1px solid black;
+}
+table.sorted thead tr .header {
+ background-image: url(img/bg.gif);
+ background-repeat: no-repeat;
+ background-position: center right;
+ cursor: pointer;
+}
+table.sorted tbody td {
+ color: #3D3D3D;
+ padding: 4px;
+ background-color: #FFF;
+ vertical-align: top;
+}
+table.sorted tbody tr.odd td {
+ background-color:#F0F0F6;
+}
+table.sorted thead tr .headerSortUp {
+ background-image: url(img/asc.gif);
+}
+table.sorted thead tr .headerSortDown {
+ background-image: url(img/desc.gif);
+}
+table.sorted thead tr .headerSortDown, table.sorted thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
 
 p.bottom { font-size: small; text-align: right; margin:5px 0px; }
 p.bottom img { border:0px; }
 pre sup { font-size:inherit; }
-a { color: #4D1F00; }
+a {color: #3F1A02; }
 img.rfloat { float: right; padding: 1ex; }
 img.lfloat { float: left; padding: 1ex; background: white; }
