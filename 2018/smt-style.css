@@ -53,7 +53,6 @@ table.result td {
 
 table.sorted {
  font-family:arial;
- background-color: #CDCDCD;
  width: 100%;
  text-align: left;
 }
@@ -84,7 +83,7 @@ table.sorted thead tr .headerSortDown {
  background-image: url(img/desc.gif);
 }
 table.sorted thead tr .headerSortDown, table.sorted thead tr .headerSortUp {
-background-color: #8dbdd8;
+background-color: #d5d9d9;
 }
 
 p.bottom { font-size: small; text-align: right; margin:5px 0px; }

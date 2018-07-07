@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="smt-style.css" type="text/css" />
 <script type="text/javascript" src="../jquery-latest.js"></script>
 <script type="text/javascript" src="../jquery.tablesorter.js"></script>
-<script>$(document).ready(function() { $("#sequential").tablesorter(); } )</script>
+  <script>$(document).ready(function() { $("#sequential").tablesorter({sortList: [[1,0],[2,1]]}); } )</script>
+  <script>$(document).ready(function() { $("#parallel").tablesorter({sortList: [[1,0],[2,1]]}); } )</script>
 <title><!--#echo var="title" --></title>
 </head>
 
